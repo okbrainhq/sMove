@@ -1,0 +1,402 @@
+{
+  "status": "FAIL",
+  "scope": "Native CAD checks only. Exact-part screens and primary pin/footprint audit recorded in ../electrical-completion; no manufacture/charging approval.",
+  "checks": {
+    "all_schematic_physical_pad_and_handoff_nets_match": false,
+    "exact_36_footprints_35_fitted": true,
+    "top_smt_only_except_unpopulated_debug": true,
+    "four_copper_layers_one_mm": true,
+    "outline_exact_25x35": true,
+    "TI_BQ24074_all_17_functions_including_PGOOD7_VSS8_EP17": false,
+    "TI_RGT_physical_numbering_not_legacy_symbol_labels": true,
+    "J4_frozen_pinout_no_host_pullups": false,
+    "local_PHY_series_resistors": true,
+    "L2_no_signal_tracks": true,
+    "all_pad_track_via_copper_outside_antenna": true,
+    "filled_copper_outside_antenna_all_layers": true,
+    "RF_and_retention_rules_active_all_layers": true,
+    "retention_pour_voids_all_layers": true,
+    "interface_component_centers_and_rotations_match_native": true,
+    "native_ERC_zero_errors_zero_warnings": true,
+    "native_DRC_zero_violations_zero_opens_zero_parity": true
+  },
+  "not_applicable": {
+    "historical_preservation": "RETIRED, NOT PASSED; see docs/cleanup/README.md"
+  },
+  "physical_numbered_pads": 183,
+  "fitted": 35,
+  "0402_count": 20,
+  "track_segments_by_layer": {
+    "F.Cu": 268,
+    "In2.Cu": 121,
+    "B.Cu": 72
+  },
+  "via_count": 77,
+  "usb_total_copper_lengths_mm_including_branches": {
+    "/USB_DM": 31.598,
+    "/USB_DP": 30.107,
+    "/USB_DM_MCU": 0,
+    "/USB_DP_MCU": 0
+  },
+  "pad_errors": [
+    [
+      "R9",
+      "2",
+      "/Compute/STRAP2",
+      "STRAP2"
+    ],
+    [
+      "SW2",
+      "1",
+      "/Compute/MCU_EN",
+      "MCU_EN"
+    ],
+    [
+      "R4",
+      "2",
+      "/Compute/USB_DP_MCU",
+      "USB_DP_MCU"
+    ],
+    [
+      "C10",
+      "1",
+      "/Compute/MCU_EN",
+      "MCU_EN"
+    ],
+    [
+      "D1",
+      "1",
+      "/Compute/LED_R_K",
+      "LED_R_K"
+    ],
+    [
+      "D1",
+      "2",
+      "/Compute/LED_G_K",
+      "LED_G_K"
+    ],
+    [
+      "D1",
+      "3",
+      "/Compute/LED_B_K",
+      "LED_B_K"
+    ],
+    [
+      "J1",
+      "A5",
+      "/USB/CC1",
+      "CC1"
+    ],
+    [
+      "J1",
+      "B5",
+      "/USB/CC2",
+      "CC2"
+    ],
+    [
+      "R23",
+      "1",
+      "/Power/TS_NO_CELL_SENSING",
+      "TS_NO_CELL_SENSING"
+    ],
+    [
+      "R3",
+      "2",
+      "/Compute/USB_DM_MCU",
+      "USB_DM_MCU"
+    ],
+    [
+      "R2",
+      "1",
+      "/USB/CC2",
+      "CC2"
+    ],
+    [
+      "R7",
+      "2",
+      "/Compute/MCU_EN",
+      "MCU_EN"
+    ],
+    [
+      "J2",
+      "1",
+      "/Power/PACK_P",
+      "PACK_P"
+    ],
+    [
+      "U4",
+      "1",
+      "/Power/SYS",
+      "SYS"
+    ],
+    [
+      "U4",
+      "3",
+      "/Power/SYS",
+      "SYS"
+    ],
+    [
+      "J4",
+      "3",
+      "/Compute/SDA_HOST",
+      "SDA_HOST"
+    ],
+    [
+      "J4",
+      "4",
+      "/Compute/SCL_HOST",
+      "SCL_HOST"
+    ],
+    [
+      "R8",
+      "2",
+      "/Compute/BOOT",
+      "BOOT"
+    ],
+    [
+      "U1",
+      "5",
+      "/Compute/STRAP2",
+      "STRAP2"
+    ],
+    [
+      "U1",
+      "8",
+      "/Compute/MCU_EN",
+      "MCU_EN"
+    ],
+    [
+      "U1",
+      "16",
+      "/Compute/LED_B",
+      "LED_B"
+    ],
+    [
+      "U1",
+      "18",
+      "/Compute/SCL_HOST",
+      "SCL_HOST"
+    ],
+    [
+      "U1",
+      "19",
+      "/Compute/SDA_HOST",
+      "SDA_HOST"
+    ],
+    [
+      "U1",
+      "20",
+      "/Compute/LED_R",
+      "LED_R"
+    ],
+    [
+      "U1",
+      "21",
+      "/Compute/LED_G",
+      "LED_G"
+    ],
+    [
+      "U1",
+      "22",
+      "/Compute/STRAP8",
+      "STRAP8"
+    ],
+    [
+      "U1",
+      "23",
+      "/Compute/BOOT",
+      "BOOT"
+    ],
+    [
+      "U1",
+      "26",
+      "/Compute/USB_DM_MCU",
+      "USB_DM_MCU"
+    ],
+    [
+      "U1",
+      "27",
+      "/Compute/USB_DP_MCU",
+      "USB_DP_MCU"
+    ],
+    [
+      "U1",
+      "30",
+      "/Compute/UART_RX",
+      "UART_RX"
+    ],
+    [
+      "U1",
+      "31",
+      "/Compute/UART_TX",
+      "UART_TX"
+    ],
+    [
+      "R10",
+      "2",
+      "/Compute/STRAP8",
+      "STRAP8"
+    ],
+    [
+      "C13",
+      "1",
+      "/Power/SYS",
+      "SYS"
+    ],
+    [
+      "R13",
+      "1",
+      "/Compute/LED_B",
+      "LED_B"
+    ],
+    [
+      "R13",
+      "2",
+      "/Compute/LED_B_K",
+      "LED_B_K"
+    ],
+    [
+      "R22",
+      "1",
+      "/Power/CHG_ILIM",
+      "CHG_ILIM"
+    ],
+    [
+      "U9",
+      "1",
+      "/USB/CC1",
+      "CC1"
+    ],
+    [
+      "U9",
+      "2",
+      "/USB/CC2",
+      "CC2"
+    ],
+    [
+      "U6",
+      "1",
+      "/Power/TS_NO_CELL_SENSING",
+      "TS_NO_CELL_SENSING"
+    ],
+    [
+      "U6",
+      "2",
+      "/Power/PACK_P",
+      "PACK_P"
+    ],
+    [
+      "U6",
+      "3",
+      "/Power/PACK_P",
+      "PACK_P"
+    ],
+    [
+      "U6",
+      "10",
+      "/Power/SYS",
+      "SYS"
+    ],
+    [
+      "U6",
+      "11",
+      "/Power/SYS",
+      "SYS"
+    ],
+    [
+      "U6",
+      "12",
+      "/Power/CHG_ILIM",
+      "CHG_ILIM"
+    ],
+    [
+      "U6",
+      "16",
+      "/Power/CHG_ISET",
+      "CHG_ISET"
+    ],
+    [
+      "J3",
+      "2",
+      "/Compute/UART_RX",
+      "UART_RX"
+    ],
+    [
+      "J3",
+      "3",
+      "/Compute/UART_TX",
+      "UART_TX"
+    ],
+    [
+      "J3",
+      "4",
+      "/Compute/MCU_EN",
+      "MCU_EN"
+    ],
+    [
+      "J3",
+      "5",
+      "/Compute/BOOT",
+      "BOOT"
+    ],
+    [
+      "R12",
+      "1",
+      "/Compute/LED_G",
+      "LED_G"
+    ],
+    [
+      "R12",
+      "2",
+      "/Compute/LED_G_K",
+      "LED_G_K"
+    ],
+    [
+      "R11",
+      "1",
+      "/Compute/LED_R",
+      "LED_R"
+    ],
+    [
+      "R11",
+      "2",
+      "/Compute/LED_R_K",
+      "LED_R_K"
+    ],
+    [
+      "R1",
+      "1",
+      "/USB/CC1",
+      "CC1"
+    ],
+    [
+      "C2",
+      "1",
+      "/Power/PACK_P",
+      "PACK_P"
+    ],
+    [
+      "R21",
+      "1",
+      "/Power/CHG_ISET",
+      "CHG_ISET"
+    ],
+    [
+      "SW3",
+      "1",
+      "/Compute/BOOT",
+      "BOOT"
+    ],
+    [
+      "R14",
+      "1",
+      "/Power/PACK_P",
+      "PACK_P"
+    ]
+  ],
+  "pcb_sha256": "8b3cedbc8c2aac448760997b04a7a50050cb4ccf4ee1a24ebdf91a6dac293dca",
+  "schematic_sha256": "ea66baa25a6d91cf17270b92c28386b96409df4e3aee3439cd2fca41c3c45221",
+  "interface_sha256": "92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba",
+  "geometry_sha256": "691548fe3c56018bd2b98a6eccfc27f21f769ce186f16e52c794fda56ed7be60",
+  "cleanup_design_changes": "none"
+}
