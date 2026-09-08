@@ -1,60 +1,51 @@
 {
   "status": "GENERATED_REQUIRE_INDEPENDENT_VERIFY",
   "parameters_mm": {
-    "XMin": -17.5,
-    "XMax": 34.2,
-    "YMin": -16.8,
-    "YMax": 42.1,
-    "Floor": 1.2,
-    "Wall": 1.4,
-    "BaseTop": 11.5,
-    "ShelfTop": 12.9,
-    "RoofBottom": 20.4,
-    "Height": 21.8,
-    "StepY": -2.0,
-    "BayX": 1.0,
-    "BayY": -14.5,
+    "XMin": -38.0,
+    "XMax": 71.0,
+    "YMin": -5.0,
+    "YMax": 43.0,
+    "Floor": 1.6,
+    "Wall": 2.0,
+    "RoofBottom": 12.5,
+    "Roof": 2.0,
+    "MainBottom": 4.0,
+    "CarrierX": -27.5,
+    "CarrierY": 16.0,
+    "CarrierTop": 5.0,
+    "BayX": 36.0,
+    "BayY": -1.0,
     "BayWidth": 23.0,
     "BayLength": 34.0,
     "BayHeight": 8.0,
-    "Barrier": 1.2,
-    "CarrierX": -9.3,
-    "CarrierZ": 1.5,
-    "MainBottom": 12.4,
     "SeatRadius": 1.6,
-    "HolePilot": 0.85,
-    "MainClampTop": 13.4,
-    "LipGap": 0.2
+    "LocatorRadius": 0.9,
+    "NutTop": 10.5,
+    "NutSlotBottom": 7.7,
+    "BoreBottom": 5.8,
+    "BossRadius": 5.0,
+    "ScrewLength": 8.0,
+    "ScrewHeadRadius": 2.84,
+    "ScrewHeadHeight": 3.0
   },
   "size_mm": [
-    51.7,
-    58.9,
-    21.8
+    109.0,
+    48.0,
+    14.5
   ],
-  "outside_bounds_mm": [
-    [
-      -17.5,
-      -16.8,
-      0
-    ],
-    [
-      34.2,
-      42.1,
-      21.8
-    ]
-  ],
+  "height_with_screw_heads_mm": 17.5,
   "parts": {
     "base": {
       "object": "Base",
-      "volume_mm3": 8483.486496211297,
-      "triangles": 7096,
+      "volume_mm3": 18679.91459432483,
+      "triangles": 7592,
       "print_orientation": "floor down"
     },
     "lid": {
       "object": "Lid",
-      "volume_mm3": 7846.206155938475,
-      "triangles": 7436,
-      "print_orientation": "roof down, rotated180X"
+      "volume_mm3": 10742.022946565365,
+      "triangles": 5620,
+      "print_orientation": "roof down"
     }
   },
   "reference_objects": [
@@ -115,12 +106,14 @@
     "PH2_PairedProtectedPackLeads"
   ],
   "hardware_objects": [
-    "NylonClosureScrew1",
-    "NylonClosureScrew2",
-    "NylonClosureScrew3",
-    "NylonClosureScrew4",
-    "NylonCarrierScrew1",
-    "NylonCarrierScrew2"
+    "ClosureScrew1",
+    "ClosureNut1",
+    "ClosureScrew2",
+    "ClosureNut2",
+    "ClosureScrew3",
+    "ClosureNut3",
+    "ClosureScrew4",
+    "ClosureNut4"
   ],
   "clearance_objects": [
     "BatteryBay_23x34x8",
@@ -131,6 +124,33 @@
     "Carrier_aabb_mm",
     "Carrier_wire_strain_relief_aabb_mm",
     "Carrier_NoSupport"
+  ],
+  "inspection_groups": [
+    "ViewBase",
+    "ViewLid",
+    "ViewMain",
+    "ViewCarrier",
+    "ViewBattery",
+    "ViewCables",
+    "ViewHardware"
+  ],
+  "fastener_xy_mm": [
+    [
+      -33.0,
+      1.0
+    ],
+    [
+      -33.0,
+      30.0
+    ],
+    [
+      66.0,
+      1.0
+    ],
+    [
+      66.0,
+      30.0
+    ]
   ],
   "main_transform": [
     [
@@ -149,7 +169,7 @@
       0,
       0,
       1,
-      12.4
+      4
     ],
     [
       0,
@@ -160,22 +180,22 @@
   ],
   "carrier_transform": [
     [
+      1,
       0,
       0,
-      -1,
-      -9.3
+      -27.5
     ],
     [
       0,
       1,
       0,
-      0
+      16
     ],
     [
+      0,
+      0,
       1,
-      0,
-      0,
-      1.5
+      5
     ],
     [
       0,
@@ -184,142 +204,77 @@
       1
     ]
   ],
-  "sensor_axes": {
-    "accel_to_carrier": [
-      [
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        1,
-        0
-      ],
-      [
-        0,
-        0,
-        1
-      ]
+  "body_frame": {
+    "contact_face": "flat base underside Z=0; main BOTTOM toward body through floor",
+    "origin_mm": [
+      0,
+      0,
+      0
     ],
-    "carrier_to_enclosure": null,
-    "datasheet": "DS-000189 rev1.3 p19 fig3 and p83 figs12/13, archived primary",
-    "enclosure_note": "Case worker records installed transform; do not assume installation alignment; bench six-face/positive-rotation/magnetic-axis validation required",
-    "gyro_to_carrier": [
-      [
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        1,
-        0
-      ],
-      [
-        0,
-        0,
-        1
-      ]
-    ],
-    "mag_to_carrier": [
-      [
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        -1,
-        0
-      ],
-      [
-        0,
-        0,
-        -1
-      ]
-    ],
-    "operation": "v_carrier = R * v_sensor (column vectors)",
-    "package_pin1": "upper-left in carrier top view; footprint angle0deg"
+    "X": "main local +X, native PCB +X",
+    "Y": "toward main antenna, native PCB -Y; convenience, NOT anatomical up",
+    "Z": "outward away from body"
   },
-  "ph4_centerline_mm": 42.860461037103065,
+  "ph4_centerline_mm": 34.637166941154064,
   "ph4_route_points_mm": [
     [
       0.5,
-      9,
-      16.4
+      9.0,
+      8.0
     ],
     [
-      -5.8,
-      9,
-      16.4
+      -10.0,
+      9.0,
+      8.0
     ],
     [
-      -5.8,
-      0,
-      10.1
+      -10.0,
+      3.0,
+      8.0
     ],
     [
-      -8,
-      -7,
-      10.1
+      -18.5,
+      3.0,
+      8.0
     ],
     [
-      -12.3,
-      -11.5,
-      10.5
-    ],
-    [
-      -12.3,
-      0.5,
-      10.5
+      -18.5,
+      16.5,
+      8.0
     ]
   ],
+  "ph4_bend_radius_mm": 3.0,
   "pack_route_points_mm": [
     [
-      23,
-      -8,
-      6
+      37.0,
+      6.0,
+      8.0
     ],
     [
-      26,
-      -8,
-      6
+      29.0,
+      6.0,
+      8.0
     ],
     [
-      26,
-      -4.5,
-      6
-    ],
-    [
-      31,
-      -4.5,
-      6
-    ],
-    [
-      31,
-      4,
-      6
-    ],
-    [
-      29,
-      7,
-      9
-    ],
-    [
-      29,
+      29.0,
       18.5,
-      16.4
+      8.0
     ],
     [
       24.5,
       18.5,
-      16.4
+      8.0
     ]
   ],
   "input_warnings": [
     "main/U4: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part.",
     "main/U9: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part.",
     "main/U8: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part."
-  ]
+  ],
+  "sources_sha256": {
+    "scripts/r2/enclosure/generate.py": "8050121648845474cd028586f4309d7d0270d3dedb8d1cc68ef840ff1b5d4aa3",
+    "scripts/r2/enclosure/extract.py": "af9dde4e3caeef206a6595e7543a3cc86feac0e04fbd1f8aed2e38b308085efa",
+    "PCB/main/interface.json": "92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba",
+    "PCB/imu-carrier/interface.json": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872"
+  }
 }

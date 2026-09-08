@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/azero/.okbrain/workspaces/smove-files/020/PCB/imu-carrier/smove-imu-carrier.kicad_sch</source>
+    <date>2026-09-08T18:48:21+0530</date>
+    <tool>Eeschema 9.0.8+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>sMove reusable ICM-20948 carrier</title>
+        <company/>
+        <rev>C1</rev>
+        <date/>
+        <source>smove-imu-carrier.kicad_sch</source>
+        <comment number="1" value="Independent carrier / no host voltage-translation components required"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C5">
+      <value>4.7u / 16V X5R</value>
+      <footprint>carrier:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="LCSC">C19666</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">carrier:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="LCSC" value="C19666"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>233b5195-817d-59f5-a8a5-fd09904effb2</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>4.7u / 16V X5R</value>
+      <footprint>carrier:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="LCSC">C19666</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">carrier:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="LCSC" value="C19666"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0e5e196-799d-568b-9f13-d0b86b3acb28</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n / 16V</value>
+      <footprint>carrier:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">carrier:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6c91d7c-828d-5826-ac88-825c40550a8e</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100n / 16V</value>
+      <footprint>carrier:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">carrier:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97308083-8385-5225-9589-49e45fabfbe5</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100n / 16V</value>
+      <footprint>carrier:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">carrier:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a3b94375-6e80-51cc-861b-2aa5457c1e57</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>S4B-PH-SM4-TB(LF)(SN)</value>
+      <footprint>carrier:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">S4B-PH-SM4-TB(LF)(SN)</field>
+        <field name="LCSC">C265102</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Footprint">carrier:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="carrier" part="PH4_S4B_SM4" description=""/>
+      <property name="MPN" value="S4B-PH-SM4-TB(LF)(SN)"/>
+      <property name="LCSC" value="C265102"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b23db668-de40-576c-a691-53f1d5ad6ee1</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>4.7k 1%</value>
+      <footprint>carrier:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">carrier:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c0cb9d7-c976-5f84-ba13-35cde8486f38</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>4.7k 1%</value>
+      <footprint>carrier:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">carrier:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08b5ed5b-5585-5ebd-a635-c71220b1469c</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>4.7k 1%</value>
+      <footprint>carrier:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">carrier:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5995901a-b35a-54ae-b43d-34fc4bedb784</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>4.7k 1%</value>
+      <footprint>carrier:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">carrier:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ab8e99a-4337-5ed4-a3a2-9bdff8556150</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>200k 1%</value>
+      <footprint>carrier:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF2003TCE</field>
+        <field name="LCSC">C25764</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">carrier:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF2003TCE"/>
+      <property name="LCSC" value="C25764"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90276661-e7fa-53b4-aea3-f9152012f3e7</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ICM-20948</value>
+      <footprint>carrier:InvenSense_QFN-24_3x3mm_P0.4mm</footprint>
+      <fields>
+        <field name="MPN">ICM-20948</field>
+        <field name="LCSC">C726001</field>
+        <field name="Manufacturer">TDK InvenSense</field>
+        <field name="Footprint">carrier:InvenSense_QFN-24_3x3mm_P0.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="carrier" part="ICM20948_verified" description=""/>
+      <property name="MPN" value="ICM-20948"/>
+      <property name="LCSC" value="C726001"/>
+      <property name="Manufacturer" value="TDK InvenSense"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a0b2ccb6-671b-58db-a6a5-f217c29f4636</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>PCA9306DCUR</value>
+      <footprint>carrier:PCA9306_DCU0008A</footprint>
+      <fields>
+        <field name="MPN">PCA9306DCUR</field>
+        <field name="LCSC">C33196</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint">carrier:PCA9306_DCU0008A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="carrier" part="PCA9306DCU" description=""/>
+      <property name="MPN" value="PCA9306DCUR"/>
+      <property name="LCSC" value="C33196"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9efab111-371d-5cab-946e-8f794e2f2b41</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>AP2112K-1.8TRG1</value>
+      <footprint>carrier:SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">AP2112K-1.8TRG1</field>
+        <field name="LCSC">C176944</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Footprint">carrier:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="carrier" part="AP2112K_1V8" description=""/>
+      <property name="MPN" value="AP2112K-1.8TRG1"/>
+      <property name="LCSC" value="C176944"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="smove-imu-carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60195a43-d98b-5930-b7e8-3badfc088a6e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="carrier" part="AP2112K_1V8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2112K-1.8TRG1</field>
+        <field name="Footprint">carrier:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="1V8_OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="carrier" part="ICM20948_verified">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ICM-20948</field>
+        <field name="Footprint">carrier:InvenSense_QFN-24_3x3mm_P0.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="NC" type="no_connect"/>
+        <pin num="7" name="AUX_CL" type="output"/>
+        <pin num="8" name="VDDIO" type="power_in"/>
+        <pin num="9" name="AD0" type="input"/>
+        <pin num="10" name="REGOUT" type="power_out"/>
+        <pin num="11" name="FSYNC" type="input"/>
+        <pin num="12" name="INT1" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="NC" type="no_connect"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="NC" type="no_connect"/>
+        <pin num="17" name="NC" type="no_connect"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="RESV_NC" type="no_connect"/>
+        <pin num="20" name="RESV_GND" type="power_in"/>
+        <pin num="21" name="AUX_DA" type="bidirectional"/>
+        <pin num="22" name="nCS" type="input"/>
+        <pin num="23" name="SCL" type="input"/>
+        <pin num="24" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="carrier" part="PCA9306DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCA9306DCUR</field>
+        <field name="Footprint">carrier:PCA9306_DCU0008A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VREF1" type="input"/>
+        <pin num="3" name="SCL1" type="bidirectional"/>
+        <pin num="4" name="SDA1" type="bidirectional"/>
+        <pin num="5" name="SDA2" type="bidirectional"/>
+        <pin num="6" name="SCL2" type="bidirectional"/>
+        <pin num="7" name="VREF2" type="input"/>
+        <pin num="8" name="EN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="carrier" part="PH4_S4B_SM4">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">S4B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Footprint">carrier:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SDA" type="passive"/>
+        <pin num="4" name="SCL" type="passive"/>
+        <pin num="MP" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/home/azero/.okbrain/workspaces/smove-files/020/PCB/imu-carrier/Device.kicad_sym</uri>
+    </library>
+    <library logical="carrier">
+      <uri>/home/azero/.okbrain/workspaces/smove-files/020/PCB/imu-carrier/carrier.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/1V8_IMU" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="22" pinfunction="nCS" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="VDDIO" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VREF1" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="1V8_OUT" pintype="power_out"/>
+    </net>
+    <net code="2" name="/3V3_IMU_IN" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="3V3" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="3" name="/GND" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="MP" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="FSYNC" pintype="input"/>
+      <node ref="U2" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="RESV_GND" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="AD0" pintype="input"/>
+      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="4" name="/I2C_BIAS" class="Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="VREF2" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="5" name="/IMU_REGOUT" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="REGOUT" pintype="power_out"/>
+    </net>
+    <net code="6" name="/SCL_1V8" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="SCL" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="SCL1" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/SCL_3V3" class="Default">
+      <node ref="J5" pin="4" pinfunction="SCL" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="SCL2" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/SDA_1V8" class="Default">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U2" pin="24" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U3" pin="4" pinfunction="SDA1" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/SDA_3V3" class="Default">
+      <node ref="J5" pin="3" pinfunction="SDA" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SDA2" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="unconnected-(U2-AUX_CL-Pad7)" class="Default">
+      <node ref="U2" pin="7" pinfunction="AUX_CL" pintype="output+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(U2-AUX_DA-Pad21)" class="Default">
+      <node ref="U2" pin="21" pinfunction="AUX_DA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(U2-INT1-Pad12)" class="Default">
+      <node ref="U2" pin="12" pinfunction="INT1" pintype="output+no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(U2-NC-Pad1)" class="Default">
+      <node ref="U2" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U2-NC-Pad2)" class="Default">
+      <node ref="U2" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U2-NC-Pad3)" class="Default">
+      <node ref="U2" pin="3" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U2-NC-Pad4)" class="Default">
+      <node ref="U2" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U2-NC-Pad5)" class="Default">
+      <node ref="U2" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U2-NC-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U2-NC-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U2-NC-Pad15)" class="Default">
+      <node ref="U2" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U2-NC-Pad16)" class="Default">
+      <node ref="U2" pin="16" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U2-NC-Pad17)" class="Default">
+      <node ref="U2" pin="17" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U2-RESV_NC-Pad19)" class="Default">
+      <node ref="U2" pin="19" pinfunction="RESV_NC" pintype="no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U5-NC-Pad4)" class="Default">
+      <node ref="U5" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

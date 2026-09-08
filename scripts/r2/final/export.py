@@ -27,7 +27,7 @@ def ignored(d,path=''):
 for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carrier','smove-imu-carrier',14,{'J5'})]:
  h=ROOT/'PCB'/key;m=ROOT/'PCB'/key/'dist';m.mkdir(parents=True,exist_ok=True)
  cad=h/(name+'.kicad_pcb');sch=h/(name+'.kicad_sch');pro=h/(name+'.kicad_pro')
- hashes={str(f.relative_to(ROOT)):sha(f) for f in [cad,sch,pro,h/'interface.json']}
+ hashes={str(f.relative_to(ROOT)):sha(f) for f in [cad,pro,h/'interface.json',*sorted(h.glob('*.kicad_sch')),*sorted(h.glob('*.kicad_sym'))]}
  b=p.LoadBoard(str(cad));parts=json.loads((h/('parts-main.json' if key=='main' else 'parts.json')).read_text());parts={r:v for r,v in parts.items() if v.get('fitted',True)}
  fps={f.GetReference():f for f in b.GetFootprints() if not f.IsExcludedFromBOM() and not f.IsDNP()}
  assert set(fps)==set(parts) and len(fps)==count,(key,len(fps),set(fps)^set(parts))
@@ -76,8 +76,10 @@ for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carr
  run(key+'-pdf',['kicad-cli','sch','export','pdf','-o',m/'schematic.pdf',sch])
  sd=m/'schematic-svg';sd.mkdir(exist_ok=True)
  run(key+'-svg',['kicad-cli','sch','export','svg','-o',str(sd)+'/',sch])
- run(key+'-png',['pdftoppm','-png','-scale-to','2600','-singlefile',m/'schematic.pdf',m/'schematic'])
- assert re.search(r'Pages:\s+1\b',run(key+'-pdfinfo',['pdfinfo',m/'schematic.pdf']))
+ pages=['schematic','schematic-usb','schematic-power','schematic-compute'] if key=='main' else ['schematic']
+ assert re.search(rf'Pages:\s+{len(pages)}\b',run(key+'-pdfinfo',['pdfinfo',m/'schematic.pdf']))
+ for page,png in enumerate(pages,1):
+  run(key+'-'+png+'-png',['pdftoppm','-f',page,'-l',page,'-png','-scale-to','2600','-singlefile',m/'schematic.pdf',m/png])
  for side,layers in [('top','F.Cu,F.SilkS,F.Fab,Edge.Cuts'),('bottom','B.Cu,B.SilkS,Edge.Cuts')]:
   run(key+'-'+side,['kicad-cli','pcb','export','svg','--layers',layers,'--page-size-mode','2','-o',m/(side+'.svg'),cad])
   run(key+'-'+side+'-png',['kicad-cli','pcb','render','--width','1200','--height','1400','--side',side,'--zoom','.8','-o',m/(side+'-3d.png'),cad])

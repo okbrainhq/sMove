@@ -1,0 +1,101 @@
+{
+  "status": "SCOPED_ELECTRICAL_MECHANICAL_GUI_CHECKS_PASS_WITH_INHERITED_LEGACY_FAILURES",
+  "baseline_commit": "fcbf69674c16e1a262ea21fec5447508a549ae40",
+  "legacy_main_failed_assertions": [
+    "all_schematic_physical_pad_and_handoff_nets_match",
+    "TI_BQ24074_all_17_functions_including_PGOOD7_VSS8_EP17",
+    "J4_frozen_pinout_no_host_pullups"
+  ],
+  "legacy_main_failures_unchanged": true,
+  "baseline_missing_links": [
+    [
+      "PCB/main/README.md",
+      "../../docs/revision-r2/hierarchy-alignment/README.md"
+    ],
+    [
+      "README.md",
+      "docs/revision-r2/hierarchy-alignment/README.md"
+    ],
+    [
+      "docs/revision-r2/FINAL-ELECTRICAL.md",
+      "hierarchy-alignment/README.md"
+    ],
+    [
+      "docs/revision-r2/final-export/README.md",
+      "../hierarchy-alignment/README.md"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "../../../housing/alignment-reference.json"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "evidence/icm-axes.png"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "evidence/icm-pinout.png"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "evidence/icm-source.json"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "validation/alignment.json"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "views/assembly-alignment.png"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "views/carrier-mount-alignment.png"
+    ],
+    [
+      "docs/revision-r2/hierarchy-alignment/ALIGNMENT.md",
+      "views/carrier-top.png"
+    ]
+  ],
+  "post_missing_links": [
+    [
+      "PCB/main/README.md",
+      "../../docs/revision-r2/hierarchy-alignment/README.md"
+    ],
+    [
+      "README.md",
+      "docs/revision-r2/hierarchy-alignment/README.md"
+    ],
+    [
+      "docs/revision-r2/FINAL-ELECTRICAL.md",
+      "hierarchy-alignment/README.md"
+    ]
+  ],
+  "new_missing_links": [],
+  "native_mechanical_recompute": true,
+  "body_contact_resolved": "User: main BOTTOM through base toward body; in-plane up unimportant",
+  "mechanical_checks": 4565,
+  "gui_check_status": "PASS_REAL_FREECAD_GUI_CONTROLS",
+  "visual_review": {
+    "rgb_close_up": "All three channels in one body; wiring and four pin numbers readable.",
+    "assembly": "Fresh real FreeCAD viewport: both boards coplanar, orange +Z outward, body face identified.",
+    "top": "Opaque closed lid with RGB optical opening, BOOT/RESET access and M3 heads.",
+    "body_side": "Uninterrupted flat underside and explicit body-facing label.",
+    "section": "Native Y=30 Boolean section: both boards at same height, M3 nut engagement and blind bottom, separate battery.",
+    "gui": "Actual FreeCAD window, named movable groups, tested macro/Qt controls, exploded state labelled DISPLAY ONLY."
+  },
+  "gui_limit": "Desktop-agent PipeWire capture inhibited. Programmatic real-GUI button/macro tests and app-owned screenshots, not manual mouse review.",
+  "geometry_qualification": "CAD envelope/prototype verification, not physical fit or manufacturing/charge approval",
+  "electrical_checks": "PASS",
+  "clearance_metrics_mm": {
+    "board_edge_to_board_edge_mm": 9.5,
+    "RF_boundary_to_carrier_mm": 0.40000000000000036,
+    "USB_plug_reserve_to_lid_mm": 0.29999999999999893,
+    "PH4_plug_reserve_to_lid_mm": 1.0,
+    "PH4_bundle_to_case_mm": 3.5999999999999996,
+    "PH2_bundle_to_case_mm": 0.5999999999999996,
+    "hardware_to_electronics_mm": 3.8832975677895187,
+    "hardware_to_IMU_package_mm": 10.894608758463976
+  },
+  "final_STEP_comparison": "All per-solid positions/bounds/centres/volumes match within absolute 1e-5; initial rounded-string comparison failed only at 0.31185 mm3 rounding boundaries. No geometry changed to resolve it."
+}

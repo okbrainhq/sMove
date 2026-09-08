@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-08T17:34:46+0530",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2104ccb9-4472-5565-b758-0254aae0bc38",
+            "violations": []
+        }
+    ],
+    "source": "smove-imu-carrier.kicad_sch"
+}

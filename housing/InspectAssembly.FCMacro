@@ -1,0 +1,9 @@
+# Run explicitly in FreeCAD: Macro > Macros > select this file > Execute.
+# Local inspection only. Does not save files, export geometry or move engineering sources.
+from pathlib import Path
+import sys
+import FreeCAD as App
+root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(root/'scripts/r2/enclosure'))
+import inspection
+smove_inspection_panel = inspection.show(App.ActiveDocument)

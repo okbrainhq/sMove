@@ -26,3 +26,7 @@ Top-side **RESET (SW2 / EN)** and **BOOT (SW3 / GPIO9)** labels are stored in th
 canonical PCB, not an export-only overlay. See the [mapping, close-up and baseline
 validation](../../docs/revision-r2/button-labels/README.md), including the RGB
 inspection handoff (D1 is already one common-anode RGB package).
+
+## Unified RGB symbol
+
+D1 remains one LTST-C19HE1WT common-anode RGB package; all three channels are now enclosed in one schematic body. The local library and Compute cache are generated together by `scripts/r2/main/unify_rgb.py`; all instance/pin UUIDs, electrical endpoints, wiring and PCB association are retained. [Close-up, exact mapping and regression checks](../../docs/revision-r2/rgb-body/README.md). BOOT/RESET silk and PCB/fabrication outputs remain unchanged.

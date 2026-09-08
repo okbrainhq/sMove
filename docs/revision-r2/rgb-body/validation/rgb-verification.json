@@ -1,0 +1,592 @@
+{
+  "status": "PASS",
+  "baseline_commit": "fcbf69674c16e1a262ea21fec5447508a549ae40",
+  "scope": "RGB presentation and exact PCB/electrical/fabrication preservation. Revised housing has independent native mechanical and body-frame receipts.",
+  "kicad_cli": "9.0.8",
+  "checks": {
+    "baseline_main_configured_ERC_zero": true,
+    "baseline_main_DRC_opens_parity_zero": true,
+    "post_main_configured_ERC_zero": true,
+    "post_main_DRC_opens_parity_zero": true,
+    "main_all_named_nets_pin_functions_types_identical": true,
+    "main_all_component_metadata_and_UUIDs_identical": true,
+    "baseline_carrier_configured_ERC_zero": true,
+    "baseline_carrier_DRC_opens_parity_zero": true,
+    "post_carrier_configured_ERC_zero": true,
+    "post_carrier_DRC_opens_parity_zero": true,
+    "carrier_all_named_nets_pin_functions_types_identical": true,
+    "carrier_all_component_metadata_and_UUIDs_identical": true,
+    "PCB/main/compute.kicad_sch_only_RGB_presentation_changed": true,
+    "PCB/main/compute.kicad_sch_generator_idempotent": true,
+    "PCB/main/compute.kicad_sch_one_body_and_one_pin_unit": true,
+    "PCB/main/compute.kicad_sch_four_original_pin_endpoints_numbers_functions": true,
+    "PCB/main/compute.kicad_sch_single_enclosing_package_body": true,
+    "PCB/main/compute.kicad_sch_all_RGB_channels_in_same_body": true,
+    "PCB/main/compute.kicad_sch_internal_drawing_inside_body": true,
+    "PCB/main/smove-r2-main.kicad_sym_only_RGB_presentation_changed": true,
+    "PCB/main/smove-r2-main.kicad_sym_generator_idempotent": true,
+    "PCB/main/smove-r2-main.kicad_sym_one_body_and_one_pin_unit": true,
+    "PCB/main/smove-r2-main.kicad_sym_four_original_pin_endpoints_numbers_functions": true,
+    "PCB/main/smove-r2-main.kicad_sym_single_enclosing_package_body": true,
+    "PCB/main/smove-r2-main.kicad_sym_all_RGB_channels_in_same_body": true,
+    "PCB/main/smove-r2-main.kicad_sym_internal_drawing_inside_body": true,
+    "library_and_embedded_symbol_identical": true,
+    "D1_physical_part_and_four_pad_map": true,
+    "D1_original_PCB_schematic_association": true,
+    "all_numbered_PCB_pads_match_exact_hierarchical_XML_nets": true,
+    "RGB_R_unchanged_series_drive": true,
+    "RGB_G_unchanged_series_drive": true,
+    "RGB_B_unchanged_series_drive": true,
+    "D1_one_item_in_BOM.csv": true,
+    "D1_one_item_in_pick-and-place.csv": true,
+    "BOOT_silk_preserved": true,
+    "RESET_silk_preserved": true,
+    "byte_preserved:PCB/imu-carrier/Device.kicad_sym": true,
+    "byte_preserved:PCB/imu-carrier/carrier.kicad_sym": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/C_0402_1005Metric.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/C_0603_1608Metric.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/H1_Locator.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/H2_Locator.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/PCA9306_DCU0008A.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/R_0402_1005Metric.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/carrier.pretty/SOT-23-5.kicad_mod": true,
+    "byte_preserved:PCB/imu-carrier/dist/BOM.csv": true,
+    "byte_preserved:PCB/imu-carrier/dist/assembly-placements.json": true,
+    "byte_preserved:PCB/imu-carrier/dist/assembly-top.pdf": true,
+    "byte_preserved:PCB/imu-carrier/dist/bottom-3d.png": true,
+    "byte_preserved:PCB/imu-carrier/dist/bottom.svg": true,
+    "byte_preserved:PCB/imu-carrier/dist/carrier-assembly.step": true,
+    "byte_preserved:PCB/imu-carrier/dist/carrier-board-only.step": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers.zip": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Cu.gbl": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Mask.gbs": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Silkscreen.gbo": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-Edge_Cuts.gm1": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Cu.gtl": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Mask.gts": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Paste.gtp": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Silkscreen.gto": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In1_Cu.g1": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In2_Cu.g2": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-NPTH.drl": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-PTH.drl": true,
+    "byte_preserved:PCB/imu-carrier/dist/gerbers/smove-imu-carrier-job.gbrjob": true,
+    "byte_preserved:PCB/imu-carrier/dist/pick-and-place.csv": true,
+    "byte_preserved:PCB/imu-carrier/dist/schematic-svg/smove-imu-carrier.svg": true,
+    "byte_preserved:PCB/imu-carrier/dist/schematic.pdf": true,
+    "byte_preserved:PCB/imu-carrier/dist/schematic.png": true,
+    "byte_preserved:PCB/imu-carrier/dist/top-3d.png": true,
+    "byte_preserved:PCB/imu-carrier/dist/top.svg": true,
+    "byte_preserved:PCB/imu-carrier/electrical-contract.json": true,
+    "byte_preserved:PCB/imu-carrier/fp-lib-table": true,
+    "byte_preserved:PCB/imu-carrier/interface.json": true,
+    "byte_preserved:PCB/imu-carrier/models/C_0402_1005Metric.step": true,
+    "byte_preserved:PCB/imu-carrier/models/C_0603_1608Metric.step": true,
+    "byte_preserved:PCB/imu-carrier/models/J5_MAX_HEADER_ENVELOPE.step": true,
+    "byte_preserved:PCB/imu-carrier/models/R_0402_1005Metric.step": true,
+    "byte_preserved:PCB/imu-carrier/models/SOT-23-5.step": true,
+    "byte_preserved:PCB/imu-carrier/models/U2_MAX_PACKAGE_ENVELOPE.step": true,
+    "byte_preserved:PCB/imu-carrier/models/VSSOP-8_2.3x2mm_P0.5mm.step": true,
+    "byte_preserved:PCB/imu-carrier/models/model-status.json": true,
+    "byte_preserved:PCB/imu-carrier/parts.json": true,
+    "byte_preserved:PCB/imu-carrier/power.kicad_sym": true,
+    "byte_preserved:PCB/imu-carrier/smove-imu-carrier.kicad_dru": true,
+    "byte_preserved:PCB/imu-carrier/smove-imu-carrier.kicad_pcb": true,
+    "byte_preserved:PCB/imu-carrier/smove-imu-carrier.kicad_pro": true,
+    "byte_preserved:PCB/imu-carrier/smove-imu-carrier.kicad_sch": true,
+    "byte_preserved:PCB/imu-carrier/sym-lib-table": true,
+    "byte_preserved:PCB/main/dist/BOM.csv": true,
+    "byte_preserved:PCB/main/dist/assembly-placements.json": true,
+    "byte_preserved:PCB/main/dist/assembly-top.pdf": true,
+    "byte_preserved:PCB/main/dist/bottom-3d.png": true,
+    "byte_preserved:PCB/main/dist/bottom.svg": true,
+    "byte_preserved:PCB/main/dist/gerbers.zip": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-NPTH.drl": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-PTH.drl": true,
+    "byte_preserved:PCB/main/dist/gerbers/smove-r2-main-job.gbrjob": true,
+    "byte_preserved:PCB/main/dist/main-board-only.step": true,
+    "byte_preserved:PCB/main/dist/main-populated-with-conservative-envelopes.step": true,
+    "byte_preserved:PCB/main/dist/pick-and-place.csv": true,
+    "byte_preserved:PCB/main/dist/top-3d.png": true,
+    "byte_preserved:PCB/main/dist/top.svg": true,
+    "byte_preserved:PCB/main/fp-lib-table": true,
+    "byte_preserved:PCB/main/interface.json": true,
+    "byte_preserved:PCB/main/parts-main.json": true,
+    "byte_preserved:PCB/main/power.kicad_sch": true,
+    "byte_preserved:PCB/main/smove-r2-main.kicad_dru": true,
+    "byte_preserved:PCB/main/smove-r2-main.kicad_pcb": true,
+    "byte_preserved:PCB/main/smove-r2-main.kicad_pro": true,
+    "byte_preserved:PCB/main/smove-r2-main.kicad_sch": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/Debug_5.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/TS1088.kicad_mod": true,
+    "byte_preserved:PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod": true,
+    "byte_preserved:PCB/main/sym-lib-table": true,
+    "byte_preserved:PCB/main/usb.kicad_sch": true,
+    "PCB/main_manifest_matches_sources_and_outputs": true,
+    "PCB/imu-carrier_manifest_matches_sources_and_outputs": true,
+    "housing_manifest_matches_sources_and_outputs": true,
+    "exactly_one_placed_D1_symbol": true
+  },
+  "unchanged_files": [
+    {
+      "path": "PCB/imu-carrier/Device.kicad_sym",
+      "sha256": "76dd998e245970b48ede2ae086edfb0e1b1a88dbc9e08d8e3268bd34f451385b"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.kicad_sym",
+      "sha256": "594f6b323e68430c820e0ead317a6f9a480357c2d00a63f4d76a8ce329a64d99"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/C_0402_1005Metric.kicad_mod",
+      "sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/H1_Locator.kicad_mod",
+      "sha256": "323071d3fb5e87562fc254ee86b6cd179d029dd3b6d6dd38f261113291992702"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/H2_Locator.kicad_mod",
+      "sha256": "02aee33964c171b3302a5053bd76749240b2a51b1d06e804adc6843a12783cdc"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod",
+      "sha256": "c6b70ca9b53699f4f166e443198a7592d45b69489cf4a4725cb7f733b51cb330"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+      "sha256": "f9e45dcf004b53f4ab981101854a02b9838eac0b62d317cd5389b5f7d6c4ba10"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/PCA9306_DCU0008A.kicad_mod",
+      "sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/R_0402_1005Metric.kicad_mod",
+      "sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d"
+    },
+    {
+      "path": "PCB/imu-carrier/carrier.pretty/SOT-23-5.kicad_mod",
+      "sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/BOM.csv",
+      "sha256": "deb6f633e8148842fbf713828b081dd4a589149c61f24c1c53e4ed7d274f7fd5"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/assembly-placements.json",
+      "sha256": "b037eceeb8d6409dbde19260dd0d4d0bb561f0f47837eb797c200695eb533761"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/assembly-top.pdf",
+      "sha256": "593b5ab4e0c0edf99471de218e499f529d960024fa19ef85ada8831aa700d32f"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/bottom-3d.png",
+      "sha256": "9d492d5092eef1396ca8e6c31393e5c8dbcf4b230835b820f21d9db6f18637e2"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/bottom.svg",
+      "sha256": "8048236ffc3ce59bcfb192a54742cd8d27ea9ac6027e59811fc3fd1c0706a089"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/carrier-assembly.step",
+      "sha256": "e2aa41c39bafd56c41e889067aff3b8405f9b4fc1a3a61a15c685de81c2ed871"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/carrier-board-only.step",
+      "sha256": "b10ad64f04dfdcd265ca4773111d6e3184b059a04b0c78198c15e5d3dd430a76"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers.zip",
+      "sha256": "e60bc7770e2c88654b3033f09dbb2abc7dfb291916ad1105dd1e767a0d2ab7ac"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Cu.gbl",
+      "sha256": "65614389d57d07da9b9e1a7e8056e724a96af7800008d5074d3eb6e61e77329d"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Mask.gbs",
+      "sha256": "7cbbacf09e357bd792b2641c3eac9621ba5bbc56e57f8321da4c3cc81cee74ab"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Silkscreen.gbo",
+      "sha256": "5aad98d9b42ce12c25a61a4c373477959e4e1126b792bbdaca59746a9a1a4d5b"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-Edge_Cuts.gm1",
+      "sha256": "e6de8193d1a56800c623274feb8e315359c0cd58e340a81458bc6aa8f4f9b13e"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Cu.gtl",
+      "sha256": "e904d2dad3688c676c9c065b3de411ae4389e5b75d6fdb175be499bdc7913a42"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Mask.gts",
+      "sha256": "599184a5e60330f4b1fa40097bebdc413c6aa935d9730bc3bf409a91806a5848"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Paste.gtp",
+      "sha256": "acf5a4a69a6ff5b5cc847381aa87d23bdd65283298aec20b7751d99b90d7aa8a"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Silkscreen.gto",
+      "sha256": "01f3e819c7b686d4a155d3252daddf7c997e654b9a028b7878d02d814a7ee528"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In1_Cu.g1",
+      "sha256": "4e8404f4765f8517669c506eacb144af48fe74ad0b4a2a768cf9ef85b141272a"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In2_Cu.g2",
+      "sha256": "10a14dd8856333940bcebfaa15b8bbb37857d5158b0821c93efeb4a1c7bca4c0"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-NPTH.drl",
+      "sha256": "58f0174ca309c9bad974a529f754ddf808be6b33f2426e68d87789d53c5cd7ce"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-PTH.drl",
+      "sha256": "b0f241a97ac2b57cbf5b8ee1777d53a7c7fc4734af71c90177ba3ab5e6950a38"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-job.gbrjob",
+      "sha256": "9b76f9ad5ba06afed25bdba57a42fc632a045cbc4e4ae3e0473534b6f7211af5"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/pick-and-place.csv",
+      "sha256": "554b2593a1417573d4455b37aeb66a11bd2b668e1b81d09729025b9eb1321390"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/schematic-svg/smove-imu-carrier.svg",
+      "sha256": "36b524d3b3515f4d4c143688c4d7f20f0aa20468da3f273644a58e679430dc97"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/schematic.pdf",
+      "sha256": "de52928cebdddd3ae7005b02628ee461b64bc28d3a613365b8b9179b12afb9af"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/schematic.png",
+      "sha256": "78381f4d8daa25396301b08e17d60ea7772645d3e25104664b7ddcf8ca9f15ac"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/top-3d.png",
+      "sha256": "b10bae6fc1133f15aac1623a453c714ccf6dcb5409631e1414f70d946bfd8184"
+    },
+    {
+      "path": "PCB/imu-carrier/dist/top.svg",
+      "sha256": "b839aa8c17c21ae3e41c33616a7e00896f8edb64f8287879b044bc1f598fd044"
+    },
+    {
+      "path": "PCB/imu-carrier/electrical-contract.json",
+      "sha256": "54de4bc55ef9b3f5050df79568e7c66b832a6d9479468d9db40ddd8ee1f894e7"
+    },
+    {
+      "path": "PCB/imu-carrier/fp-lib-table",
+      "sha256": "a2b3011d152e9481a1ec1f37d1f2fb6fb1ed56d6769d037d529ed2428552efe6"
+    },
+    {
+      "path": "PCB/imu-carrier/interface.json",
+      "sha256": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872"
+    },
+    {
+      "path": "PCB/imu-carrier/models/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2"
+    },
+    {
+      "path": "PCB/imu-carrier/models/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "path": "PCB/imu-carrier/models/J5_MAX_HEADER_ENVELOPE.step",
+      "sha256": "c3fb020b1b768f0b3a65932ae6b74a157c599a004d42f7d865038be2fb0da599"
+    },
+    {
+      "path": "PCB/imu-carrier/models/R_0402_1005Metric.step",
+      "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+    },
+    {
+      "path": "PCB/imu-carrier/models/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    {
+      "path": "PCB/imu-carrier/models/U2_MAX_PACKAGE_ENVELOPE.step",
+      "sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4"
+    },
+    {
+      "path": "PCB/imu-carrier/models/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    {
+      "path": "PCB/imu-carrier/models/model-status.json",
+      "sha256": "cca1877ae9db64df231578e071847a8a45af485c5e0fdfec0797433607357555"
+    },
+    {
+      "path": "PCB/imu-carrier/parts.json",
+      "sha256": "863fb30ef48c908f492008078e45711ae1079e6a1dac827d60793e3d326166fa"
+    },
+    {
+      "path": "PCB/imu-carrier/power.kicad_sym",
+      "sha256": "348559c3c251be2ac0ced4092f7d5d5a98d45bbc1bb826c70dff7f9b886b846a"
+    },
+    {
+      "path": "PCB/imu-carrier/smove-imu-carrier.kicad_dru",
+      "sha256": "e8c23dc0a34e75dc027305fc64fa6bf2786674137e4069e5b8e1b03b3f6490be"
+    },
+    {
+      "path": "PCB/imu-carrier/smove-imu-carrier.kicad_pcb",
+      "sha256": "c9848c265e3002c91836c12b921f81c09929de486f18651b46f4fe70ff783fb8"
+    },
+    {
+      "path": "PCB/imu-carrier/smove-imu-carrier.kicad_pro",
+      "sha256": "aab7f217cc0d1d3e158895d5d65f8de0350efb80b4dd5b1c874c8955c0e74d1d"
+    },
+    {
+      "path": "PCB/imu-carrier/smove-imu-carrier.kicad_sch",
+      "sha256": "9b41ec3a0799c6f7dc1e2ef1ec23598b86c95d5b8e67702766b995f6eb12ff6c"
+    },
+    {
+      "path": "PCB/imu-carrier/sym-lib-table",
+      "sha256": "ec00a7766215cd965c5df32ae02fbed4b7361e4b670879c1f67b49c2af164a69"
+    },
+    {
+      "path": "PCB/main/dist/BOM.csv",
+      "sha256": "3ef7757e1de266f353077583d917af764691c147eb784d9a033f094c893a74d2"
+    },
+    {
+      "path": "PCB/main/dist/assembly-placements.json",
+      "sha256": "f1909eb36dad473cd434d1001531e60209fff653356600c113ffaa288752e0c3"
+    },
+    {
+      "path": "PCB/main/dist/assembly-top.pdf",
+      "sha256": "683942fbe3456d1fffd9ced5700d8436a98ab112e96b301d464353c7369d1687"
+    },
+    {
+      "path": "PCB/main/dist/bottom-3d.png",
+      "sha256": "7a4b5860099c1d22bba5e7867f4a106102b974a0f6dd605f709359ad8de70cb6"
+    },
+    {
+      "path": "PCB/main/dist/bottom.svg",
+      "sha256": "1564dc745697618d31d2cd16a040b96655b2b9bf28904330e455a50af23df452"
+    },
+    {
+      "path": "PCB/main/dist/gerbers.zip",
+      "sha256": "28f2d2ae105a7f68367b10fa0562b5f2a77aa9193fc8e26e215e52f9b2ec62d3"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "sha256": "7547def54af38aacf7eb7ff10bd537cc0a78ffc3379eef615bef38ea4f910dd0"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "sha256": "b393ad870c0c451f9afff4faf22c8d5f5c8925ce1b4c1aab8f9ff0f3ad2546c7"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "sha256": "cc8439490d0da07f0d9c38af447cf49c63d3a3028d29dcf5fd91aade43c5e9fb"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "sha256": "f9e2a93d2e39e4842af5f7f9927b91d3ca90ce47e1953571933ec46028ae1b3a"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "sha256": "2cda611555f188e2c857c574ccb82b3a0e8ebd64fc54dfb69a54c990a89c1011"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "sha256": "ed4c4fac88c522fad343fd575bb7171ed5dfef110ed34e66e02d77b11436fb7d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "sha256": "f0e0555706037196cd8a2198a676030343b79ecf06b7ca254ee467ca8a86c814"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "sha256": "6ae0bfa0708b8876aca0cf2b0afeb2c011318bae2725690d8db4fe0525419871"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "sha256": "eb33cbd6310a830830c244b0f54a472d24282a20d80e7187ad5f340d7df949af"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "sha256": "0b0ce28112de6fbd9ffcdd1722ae904b436f1b18eee51dc37384621ad10b66e6"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "sha256": "ec8b7a179a6f65e9f9eccfcdc3e747fb99a7c6d62cec58132fc22d9c2e372895"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "sha256": "79a230b9754dd5ec6930fc020524976e079b95f90913c62f7c0c393812792908"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "sha256": "e6eae6133876cdb0a3a4e1612b3680f62b5f51c0cb9ddc6f9bb7ffcbcf11c721"
+    },
+    {
+      "path": "PCB/main/dist/main-board-only.step",
+      "sha256": "9d14df465c493c28f6e408232dc4b58edc6ae02fe7fab32ca91971be68fc0c6a"
+    },
+    {
+      "path": "PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "sha256": "e2d5d98ec1ae96b737795ec88088209f9cacd622be30de11eec61510780c0378"
+    },
+    {
+      "path": "PCB/main/dist/pick-and-place.csv",
+      "sha256": "6c5f670d9315525b5581eabc739e081838e8bca50e36034f19091c58b5727bfa"
+    },
+    {
+      "path": "PCB/main/dist/top-3d.png",
+      "sha256": "246a61aac8ffa08a194afc0a698460d8545303dd6e4f5d6f8e0463d74d672f7c"
+    },
+    {
+      "path": "PCB/main/dist/top.svg",
+      "sha256": "68ed09d9209c8ed458ad52e172021d054cf08a5a449eebf8b7d0572a0794fa7a"
+    },
+    {
+      "path": "PCB/main/fp-lib-table",
+      "sha256": "d61b83f03f9e3ca03227b8adeca31a4223caf63facc777c5752cd90d7e3a1a6b"
+    },
+    {
+      "path": "PCB/main/interface.json",
+      "sha256": "92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba"
+    },
+    {
+      "path": "PCB/main/parts-main.json",
+      "sha256": "a5f7ff57f3063855aa1a38f08867d62f6c7d6062f3ea9d602f463a67db34e8de"
+    },
+    {
+      "path": "PCB/main/power.kicad_sch",
+      "sha256": "50d1cda1787b8207c3afbc7a21e8dabea0324e26da30cba9eed31e053e7a79d4"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_dru",
+      "sha256": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_pcb",
+      "sha256": "73209f1f47744f41ec7a5a1395bf43c2041d906baecfd4d5f3b281f9d553cd75"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_pro",
+      "sha256": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_sch",
+      "sha256": "ea66baa25a6d91cf17270b92c28386b96409df4e3aee3439cd2fca41c3c45221"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod",
+      "sha256": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod",
+      "sha256": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/Debug_5.kicad_mod",
+      "sha256": "c558adc11b51476c855d463deca3d1671e9eaadc6f6396d073af2a33b18c150c"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod",
+      "sha256": "d62b385a9b9d0886ce050db386e641c039ba34ca46a78356d783ad3d0e9d9d1d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "sha256": "e68ca0479cd85251db0c4621f10abb7a65e627be83ea652e664ba6d964a651f5"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+      "sha256": "63154b8816179deca97a4f378a449d43daee6f2862a546c33c76d344ebb4cfea"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod",
+      "sha256": "011511e068b2c7d875615f0990e037f789240c85516a73006ff62f3cca7daf07"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod",
+      "sha256": "2b563e2f9ee44cdbd1c99712ad098d0207acd42f2efd6a156c31348f47b75ff9"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod",
+      "sha256": "0d0a48fa074dad16293e0818ea42ac06a64763cb4fd2b2f11400906745a3910b"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod",
+      "sha256": "7ad52d37b14c5f2720f209f8e729a981dc96529db5832199b1b0f058dc351e75"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod",
+      "sha256": "f387640293b6382cd818af98d207fa9bf364fb4d63d9d1b12df042859632ca22"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/TS1088.kicad_mod",
+      "sha256": "2dd9a2bed110746122621c35a5fae01fc2af554227af60d05a11505bb09980ba"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "sha256": "d1000f83ff7f664e35bca685d1ddfbf1460b253b15b71df595cc04d041146c59"
+    },
+    {
+      "path": "PCB/main/sym-lib-table",
+      "sha256": "ddfc009cc8872b6d5e296e62f88f26f98548836967b5202f750ef2452b6a8a71"
+    },
+    {
+      "path": "PCB/main/usb.kicad_sch",
+      "sha256": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f"
+    }
+  ],
+  "D1": {
+    "footprint": "smove-r2-main:LED_LiteOn_LTST-C19HE1WT",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/02ba7497-9a8d-56fa-99a3-83e5b10889a3",
+    "pads": {
+      "1": "/Compute/LED_R_K",
+      "2": "/Compute/LED_G_K",
+      "3": "/Compute/LED_B_K",
+      "4": "/3V3_MAIN"
+    }
+  },
+  "limitations": [
+    "Configured ERC/DRC severities only; existing ignores unchanged.",
+    "Legacy main/verify.py has three baseline hierarchy-name failures; see baseline-main-invariants.json.",
+    "Package link audit has a pre-existing missing hierarchy-alignment/README.md.",
+    "Mechanical geometry revised separately; CAD and electrical checks do not establish physical qualification."
+  ]
+}
