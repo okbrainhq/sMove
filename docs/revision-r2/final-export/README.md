@@ -4,6 +4,8 @@
 
 [Main](../../../PCB/main/README.md), [IMU carrier](../../../PCB/imu-carrier/README.md), [housing](../../../housing/README.md), [qualification gates](../FINAL-ELECTRICAL.md), [cleanup evidence](../../cleanup/README.md).
 
+**Subsequent presentation change:** [wired three-child hierarchy and alignment review](../hierarchy-alignment/README.md). This supersedes the historical single-page main schematic and blocked-render-review status below, not the release/physical qualification limits. A fresh native enclosure verification was completed; no physical geometry changed. Main schematic exports now contain four pages including the overview; the carrier remains a single root page.
+
 ## Read-only verification from repository root
 
 Requires installed KiCad CLI/Python pcbnew and Python. Run with the system interpreter, not a Python missing pcbnew:

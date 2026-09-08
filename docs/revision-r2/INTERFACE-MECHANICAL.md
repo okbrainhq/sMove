@@ -1,6 +1,6 @@
 # Reusable IMU carrier contract / two-piece case handoff
 
-**No CAD or physical fit is implemented.** This document freezes electrical interface meaning, not unplaced dimensions. Main-board iterations must retain this interface without moving the carrier's voltage translation onto the host.
+**Historical pre-layout architecture handoff — not current geometry.** Native CAD now exists; dimensions and frame intentions in this old study are superseded by [the current assembly guide](../../housing/PRINTING-ASSEMBLY.md) and [the measured-from-artifacts alignment review](hierarchy-alignment/ALIGNMENT.md). Physical fit and wearer alignment are still unqualified. This document originally froze electrical interface meaning, not unplaced dimensions. Main-board iterations must retain this interface without moving the carrier's voltage translation onto the host.
 
 ## Connector / cable contract v1
 
