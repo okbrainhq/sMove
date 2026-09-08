@@ -1,0 +1,47 @@
+[
+  {
+    "key": "led",
+    "url": "https://optoelectronics.liteon.com/upload/download/ds22-2008-0044/ltst-c19he1wt.pdf",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+  },
+  {
+    "key": "icm-v15",
+    "url": "https://product.tdk.com/system/files/dam/doc/product/sensor/mortion-inertial/imu/data_sheet/ds-000189-icm-20948-v1.5.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "icm-v13",
+    "url": "https://cdn.sparkfun.com/assets/7/f/e/c/d/DS-000189-ICM-20948-v1.3.pdf",
+    "final_url": "https://cdn.sparkfun.com/assets/7/f/e/c/d/DS-000189-ICM-20948-v1.3.pdf",
+    "status": 200,
+    "bytes": 1142045,
+    "sha256": "5a6c1b7b71633986bec05439335844a91769e46f9d90c2602d0f7c1a559ae016",
+    "pdf_cache": ".cache/rgb-body/evidence/icm-v13.pdf"
+  },
+  {
+    "key": "led-mirror",
+    "url": "https://lcsc.com/datasheet/lcsc_datasheet_2204251545_Lite-On-LTST-C19HE1WT_C458749.pdf",
+    "error": "b'<!doctype html>\\n<html data-n-head-ssr lang=\"en\" data-n-head=\"%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%'"
+  },
+  {
+    "key": "led-mirror",
+    "url": "https://www.mouser.com/datasheet/2/239/LTST-C19HE1WT-1140260.pdf",
+    "error": "b'\\r\\n\\r\\n\\r\\n<!DOCTYPE html>\\r\\n <html lang=\"en\">\\r\\n <head>\\r\\n <meta charset=\"utf-8\">\\r\\n <meta name=\"viewport\" c'"
+  },
+  {
+    "key": "led-lcsc-datasheet",
+    "url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204251545_Lite-On-LTST-C19HE1WT_C458749.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "led-primary-extracted",
+    "url": "https://optoelectronics.liteon.com/upload/download/ds22-2008-0044/ltst-c19he1wt.pdf",
+    "method": "read_url extracted manufacturer datasheet text successfully; no local PDF download or pin-diagram image obtained",
+    "manufacturer_pin_assignment": {
+      "1": "Red",
+      "2": "Green",
+      "3": "Blue"
+    },
+    "limitation": "Local HTTPS download failed certificate-chain validation; mirror downloads blocked. Common-anode topology corroborated by exact-part JLC data and native circuit, not a newly visually inspected LED pin diagram."
+  }
+]

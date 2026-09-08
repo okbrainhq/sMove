@@ -4,9 +4,9 @@
     "main": {
       "interface_sha256": "92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba",
       "requested_interface_sha256": "92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba",
-      "board_sha256": "8a8fcdcb835654f137e984420b3b601c1f27adddac62a32c3f4d79ee5b803ff8",
-      "board_path": "mechanical/r2/inputs/main/smove-r2-main.kicad_pcb",
-      "interface_path": "mechanical/r2/inputs/main/interface.json",
+      "board_sha256": "73209f1f47744f41ec7a5a1395bf43c2041d906baecfd4d5f3b281f9d553cd75",
+      "board_path": "PCB/main/smove-r2-main.kicad_pcb",
+      "interface_path": "PCB/main/interface.json",
       "outline_xy": [
         [
           0,
@@ -6129,8 +6129,8 @@
       "interface_sha256": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872",
       "requested_interface_sha256": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872",
       "board_sha256": "c9848c265e3002c91836c12b921f81c09929de486f18651b46f4fe70ff783fb8",
-      "board_path": "mechanical/r2/inputs/imu-carrier/smove-imu-carrier.kicad_pcb",
-      "interface_path": "mechanical/r2/inputs/imu-carrier/interface.json",
+      "board_path": "PCB/imu-carrier/smove-imu-carrier.kicad_pcb",
+      "interface_path": "PCB/imu-carrier/interface.json",
       "outline_xy": [
         [
           0,

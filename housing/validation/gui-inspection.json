@@ -1,0 +1,32 @@
+{
+  "status": "PASS_REAL_FREECAD_GUI_CONTROLS",
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "checks": [
+    "Delivered InspectAssembly.FCMacro executed successfully",
+    "FCStd opened with real OpenGL viewport",
+    "Lift lid preserves both board placements",
+    "Explode button and slider move native groups",
+    "Selected base offset changes group only",
+    "Restore returns ALL group/link transforms to assembled",
+    "Fixed engineering source placements and volumes unchanged",
+    "Native saved with assembled default and distinct named parts"
+  ],
+  "method": "Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.",
+  "desktop_agent": "ubuntu_see was unavailable: PipeWire session creation inhibited. No desktop mouse-driven review claimed.",
+  "exploded_display_is_not_alignment_geometry": true,
+  "native_sha256": "fe27f87a167274ef7853aa46a4db9e6767421a3a9184d6e86f11fbbec5ed7a83",
+  "source_sha256": {
+    "scripts/r2/enclosure/present.py": "806ea322d714760f7bd4b1f27998d1b8f464278b2199fd43718b1e1057d0912b",
+    "scripts/r2/enclosure/inspection.py": "2ba5714898c9191061380ef02318e5985274e313225bf4dda2b20b96a35ba5c5",
+    "housing/InspectAssembly.FCMacro": "c9cae705788c891bc9b66612c3379082b4529102e94fe2a09136cb983f28114b"
+  }
+}

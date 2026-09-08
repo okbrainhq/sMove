@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "checks_count": 4565,
+  "failures": [],
+  "meshes": {
+    "base": {
+      "facets": 7592,
+      "watertight": true,
+      "consistent_normals": true,
+      "connected": true,
+      "signed_volume_mm3": 18678.873077994933,
+      "self_intersects": false
+    },
+    "lid": {
+      "facets": 5620,
+      "watertight": true,
+      "consistent_normals": true,
+      "connected": true,
+      "signed_volume_mm3": 10742.051670948453,
+      "self_intersects": false
+    }
+  },
+  "clearance_metrics": {
+    "board_edge_to_board_edge_mm": 9.5,
+    "RF_boundary_to_carrier_mm": 0.40000000000000036,
+    "USB_plug_reserve_to_lid_mm": 0.29999999999999893,
+    "PH4_plug_reserve_to_lid_mm": 1.0,
+    "PH4_bundle_to_case_mm": 3.5999999999999996,
+    "PH2_bundle_to_case_mm": 0.5999999999999996,
+    "hardware_to_electronics_mm": 3.8832975677895187,
+    "hardware_to_IMU_package_mm": 10.894608758463976
+  },
+  "method": "Fresh FCStd recompute and exact BRep common volumes; fresh STEP import; mesh topology. All individual interference pairs retained in cache.",
+  "intentional_contacts": "Zero-volume PCB reserved annuli/lands, floor/bay boundaries and screw/nut thread major diameter contacts. Harness overlaps own mating interfaces only.",
+  "limitations": [
+    "NOT physical fit or structural/torque/preload validation",
+    "Insertion samples, not a full continuous sweep",
+    "Contract envelopes, not measured plugs or flexing wires",
+    "No magnetic/current/RF/thermal/skin qualification",
+    "Printer tolerances, nut bridging and main clamp rigidity must be tested"
+  ],
+  "categories": {
+    "J3_bottom_2mm": {
+      "tested": 0,
+      "failed": 0
+    },
+    "M3": {
+      "tested": 12,
+      "failed": 0
+    },
+    "PH4_centerline_plus_10mm_reserve_under_50": {
+      "tested": 0,
+      "failed": 0
+    },
+    "PH4_mating_endpoints": {
+      "tested": 0,
+      "failed": 0
+    },
+    "RF": {
+      "tested": 61,
+      "failed": 0
+    },
+    "STEP": {
+      "tested": 2,
+      "failed": 0
+    },
+    "STEP_positions_and_each_solid": {
+      "tested": 2,
+      "failed": 0
+    },
+    "STEP_volume": {
+      "tested": 2,
+      "failed": 0
+    },
+    "STL": {
+      "tested": 2,
+      "failed": 0
+    },
+    "STL_volume": {
+      "tested": 2,
+      "failed": 0
+    },
+    "USB_tail_floor_reserve": {
+      "tested": 0,
+      "failed": 0
+    },
+    "battery": {
+      "tested": 52,
+      "failed": 0
+    },
+    "boards": {
+      "tested": 555,
+      "failed": 0
+    },
+    "body_contact_floor_intact": {
+      "tested": 0,
+      "failed": 0
+    },
+    "carrier_contact_annulus": {
+      "tested": 2,
+      "failed": 0
+    },
+    "carrier_wrong_way_key_rejection": {
+      "tested": 0,
+      "failed": 0
+    },
+    "case": {
+      "tested": 141,
+      "failed": 0
+    },
+    "driver": {
+      "tested": 228,
+      "failed": 0
+    },
+    "hardware": {
+      "tested": 452,
+      "failed": 0
+    },
+    "inspection_default": {
+      "tested": 7,
+      "failed": 0
+    },
+    "inspection_link": {
+      "tested": 65,
+      "failed": 0
+    },
+    "inspection_move": {
+      "tested": 65,
+      "failed": 0
+    },
+    "inspection_restore_source": {
+      "tested": 65,
+      "failed": 0
+    },
+    "lid_lift": {
+      "tested": 336,
+      "failed": 0
+    },
+    "minimum_wall_and_mount_sections": {
+      "tested": 0,
+      "failed": 0
+    },
+    "native_closed_solid": {
+      "tested": 65,
+      "failed": 0
+    },
+    "native_editable_CSG": {
+      "tested": 0,
+      "failed": 0
+    },
+    "no_sensor_support": {
+      "tested": 8,
+      "failed": 0
+    },
+    "nut_insertion": {
+      "tested": 20,
+      "failed": 0
+    },
+    "outward_access": {
+      "tested": 192,
+      "failed": 0
+    },
+    "outward_normal": {
+      "tested": 2,
+      "failed": 0
+    },
+    "planes": {
+      "tested": 2,
+      "failed": 0
+    },
+    "plug": {
+      "tested": 164,
+      "failed": 0
+    },
+    "positive_clearance": {
+      "tested": 8,
+      "failed": 0
+    },
+    "screw_max": {
+      "tested": 228,
+      "failed": 0
+    },
+    "vertical_insertion": {
+      "tested": 1696,
+      "failed": 0
+    },
+    "wire": {
+      "tested": 120,
+      "failed": 0
+    },
+    "wires": {
+      "tested": 1,
+      "failed": 0
+    }
+  },
+  "key_checks": [
+    {
+      "check": "M3:1:full_nut_engagement",
+      "passed": true,
+      "detail": {
+        "min_tip_beyond_nut_mm": 1.3099999999999996,
+        "nut_threaded_thickness_mm": [
+          2.15,
+          2.4
+        ]
+      }
+    },
+    {
+      "check": "M3:1:blind_bottom_clearance",
+      "passed": true,
+      "detail": {
+        "worst_tip_to_bore_floor_mm": 0.41000000000000103,
+        "tip_to_body_plane_mm": 6.210000000000001
+      }
+    },
+    {
+      "check": "M3:1:roof_and_lid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3:2:full_nut_engagement",
+      "passed": true,
+      "detail": {
+        "min_tip_beyond_nut_mm": 1.3099999999999996,
+        "nut_threaded_thickness_mm": [
+          2.15,
+          2.4
+        ]
+      }
+    },
+    {
+      "check": "M3:2:blind_bottom_clearance",
+      "passed": true,
+      "detail": {
+        "worst_tip_to_bore_floor_mm": 0.41000000000000103,
+        "tip_to_body_plane_mm": 6.210000000000001
+      }
+    },
+    {
+      "check": "M3:2:roof_and_lid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3:3:full_nut_engagement",
+      "passed": true,
+      "detail": {
+        "min_tip_beyond_nut_mm": 1.3099999999999996,
+        "nut_threaded_thickness_mm": [
+          2.15,
+          2.4
+        ]
+      }
+    },
+    {
+      "check": "M3:3:blind_bottom_clearance",
+      "passed": true,
+      "detail": {
+        "worst_tip_to_bore_floor_mm": 0.41000000000000103,
+        "tip_to_body_plane_mm": 6.210000000000001
+      }
+    },
+    {
+      "check": "M3:3:roof_and_lid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3:4:full_nut_engagement",
+      "passed": true,
+      "detail": {
+        "min_tip_beyond_nut_mm": 1.3099999999999996,
+        "nut_threaded_thickness_mm": [
+          2.15,
+          2.4
+        ]
+      }
+    },
+    {
+      "check": "M3:4:blind_bottom_clearance",
+      "passed": true,
+      "detail": {
+        "worst_tip_to_bore_floor_mm": 0.41000000000000103,
+        "tip_to_body_plane_mm": 6.210000000000001
+      }
+    },
+    {
+      "check": "M3:4:roof_and_lid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planes:Main",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outward_normal:Main",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "planes:Carrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outward_normal:Carrier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "body_contact_floor_intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "minimum_wall_and_mount_sections",
+      "passed": true,
+      "detail": {
+        "wall_mm": 2.0,
+        "floor_mm": 1.6,
+        "nut_pocket_radial_wall_mm": 1.5358983848622452,
+        "nut_roof_mm": 2.0,
+        "carrier_seat_diameter_mm": 3.2,
+        "main_bearing_width_mm": 0.7,
+        "main_bearing_note": "Only existing 1.1x1.8mm copper-free lands; small bearings require a measured print/retention trial."
+      }
+    },
+    {
+      "check": "USB_tail_floor_reserve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PH4_centerline_plus_10mm_reserve_under_50",
+      "passed": true,
+      "detail": {
+        "route_mm": 34.637166941154064,
+        "budget_remaining_mm": 15.362833058845936,
+        "bend_radius_mm": 3.0
+      }
+    },
+    {
+      "check": "PH4_mating_endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "carrier_wrong_way_key_rejection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "STEP:smove-r2-printable.step",
+      "passed": true,
+      "detail": {
+        "solids": 2,
+        "expected": 2
+      }
+    },
+    {
+      "check": "STEP_volume:smove-r2-printable.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "STEP_positions_and_each_solid:smove-r2-printable.step",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unmatched_count": 0,
+        "absolute_tolerance_mm_and_mm3": 1e-05
+      }
+    },
+    {
+      "check": "STEP:smove-r2-assembly.step",
+      "passed": true,
+      "detail": {
+        "solids": 65,
+        "expected": 65
+      }
+    },
+    {
+      "check": "STEP_volume:smove-r2-assembly.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "STEP_positions_and_each_solid:smove-r2-assembly.step",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unmatched_count": 0,
+        "absolute_tolerance_mm_and_mm3": 1e-05
+      }
+    },
+    {
+      "check": "STL:base",
+      "passed": true,
+      "detail": {
+        "facets": 7592,
+        "watertight": true,
+        "consistent_normals": true,
+        "connected": true,
+        "signed_volume_mm3": 18678.873077994933,
+        "self_intersects": false
+      }
+    },
+    {
+      "check": "STL_volume:base",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "STL:lid",
+      "passed": true,
+      "detail": {
+        "facets": 5620,
+        "watertight": true,
+        "consistent_normals": true,
+        "connected": true,
+        "signed_volume_mm3": 10742.051670948453,
+        "self_intersects": false
+      }
+    },
+    {
+      "check": "STL_volume:lid",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "inputs_sha256": {
+    "scripts/r2/enclosure/verify.py": "fa2e9493f8c405fa6a89c1f5e6ac9e4e62f4f800e01679565541472fb06a44a1",
+    "housing/smove-r2-enclosure.FCStd": "fe27f87a167274ef7853aa46a4db9e6767421a3a9184d6e86f11fbbec5ed7a83",
+    "housing/dist/smove-r2-assembly.step": "95ae8a3f3f2b8b2390fda9a9fab0103514090db3369c21d2019cb44e2359b0b0",
+    "housing/dist/smove-r2-printable.step": "d4a4b0db786cdbb18309de3f596c4da0be84cc1ff2cfa013e3133b10cdaa2b0e",
+    "housing/dist/base.stl": "974582d91571b1194b034d281c72a4757e2633a851bb1f15a3f5683b7635dca2",
+    "housing/dist/lid.stl": "c5a4c5d38c10beea9b819db687a4a3f49f332a87d6099f3fe986e89a56acb2c5"
+  }
+}

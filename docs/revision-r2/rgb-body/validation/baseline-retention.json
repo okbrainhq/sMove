@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "method": "Conservative pad AABBs; exact effective track/via shape collision (AABB broad phase), exact stored filled-copper polygon intersection in all four layers. Not electrical DRC or new refill.",
+  "lands": [
+    {
+      "land": "west",
+      "collisions": [],
+      "filled_zone_layers_inspected": 4,
+      "passed": true
+    },
+    {
+      "land": "east",
+      "collisions": [],
+      "filled_zone_layers_inspected": 4,
+      "passed": true
+    }
+  ]
+}

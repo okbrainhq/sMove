@@ -1,5 +1,7 @@
 # sMove R2 — engineering prototype
 
+**Current request status:** D1 has one unified RGB symbol; PCB connectivity/association and BOOT/RESET silk are preserved. The actual enclosure now has **coplanar main/IMU boards, main BOTTOM toward the body, sensor +Z and visible RGB outward**, with a simple base/lid and M3×8/standard-nut closure. [Implementation, evidence and checks](docs/revision-r2/rgb-body/README.md) · [movable native FreeCAD assembly/UI](housing/README.md).
+
 **No manufacturing or charge approval (`manufacturing_release=false`).** Current design is R2 at policy baseline `9c7bb84`. Unsafe CFIX and obsolete revisions are removed from this tree; Local `main` contains only the current parentless root snapshot; saved CodeChat workspaces and the remote are retained with their histories.
 
 - [PCB projects](PCB/README.md): [main](PCB/main/README.md), **35 JLC-fitted parts**, and [IMU carrier](PCB/imu-carrier/README.md), **14 JLC-fitted parts**.
@@ -14,4 +16,4 @@ JLC fits **all SMT headers J2/J4/J5**. No manual-SMT alternative. Sourcing board
 
 Use only a qualified protected **1S 4.2V** pack, with **121mA / 4.23V acceptance**, supervised off-body charging and **no TS cell-temperature monitoring**. Cable, fit, radio, thermal, USB and bench gates remain open.
 
-The main schematic now has a **wired overview plus USB / Power / Compute child pages**. See [the hierarchy and alignment change record](docs/revision-r2/hierarchy-alignment/README.md) for baseline/post electrical equivalence, preserved identifiers/physical layout, fresh rendered views and native enclosure checks. No nested IMU sheets or physical relocation. Rendered artifacts were inspected; interactive GUI, physical-fit and sensor/body calibration approval remain unclaimed.
+The main schematic now has a **wired overview plus USB / Power / Compute child pages**. See [the hierarchy and alignment change record](docs/revision-r2/hierarchy-alignment/README.md) for baseline/post electrical equivalence, preserved identifiers/physical layout, fresh rendered views and native enclosure checks. No nested IMU sheets. The subsequent housing ECO physically relocates the carrier and provides tested FreeCAD inspection controls; physical fit and sensor/body calibration remain unqualified.

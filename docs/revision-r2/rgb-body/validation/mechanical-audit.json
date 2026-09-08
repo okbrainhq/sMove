@@ -1,0 +1,362 @@
+{
+  "status": "PASS_BODY_FRAME_AND_PACKAGE_SIGNS",
+  "geometry_changed": true,
+  "requirement_satisfied": true,
+  "requirement": "Coplanar boards parallel to base contact plane; accel/gyro +Z outward; D1 top and unobstructed lid aperture.",
+  "body_frame": {
+    "contact_face": "flat base underside Z=0; main BOTTOM toward body through floor",
+    "origin_mm": [
+      0,
+      0,
+      0
+    ],
+    "X": "main local +X, native PCB +X",
+    "Y": "toward main antenna, native PCB -Y; convenience, NOT anatomical up",
+    "Z": "outward away from body"
+  },
+  "user_authority": "Main BOTTOM faces body through housing base. Worn-up antenna/USB choice explicitly unimportant.",
+  "enclosure_to_body": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "accel_gyro_to_body": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "mag_to_body": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "inspection_scope": "Saved native placements plus actual U2 pads, pin-1 and D1 side. Fresh BRep/STEP/STL checks are housing/validation/mechanical.json.",
+  "saved_object_placements": {
+    "MainPCB": {
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "CarrierPCB": {
+      "translation_mm": [
+        -27.5,
+        16.0,
+        5.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "normals": {
+    "main": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "carrier": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "dot_product": 1.0,
+    "acute_angle_degrees": 0.0
+  },
+  "substrates_z_mm": [
+    4.0,
+    5.0
+  ],
+  "body_contact_z_mm": 0.0,
+  "main_bottom_toward_body": true,
+  "led_top_outward": true,
+  "sensor": {
+    "part": "ICM-20948",
+    "reference": "U2",
+    "top": true,
+    "rotation_deg": 0,
+    "anchor_native_mm": [
+      109.5,
+      103.8
+    ],
+    "all_24_pin_positions_match_datasheet": true,
+    "pads_native_mm": {
+      "1": [
+        108.0,
+        102.8
+      ],
+      "2": [
+        108.0,
+        103.2
+      ],
+      "3": [
+        108.0,
+        103.6
+      ],
+      "4": [
+        108.0,
+        104.0
+      ],
+      "5": [
+        108.0,
+        104.4
+      ],
+      "6": [
+        108.0,
+        104.8
+      ],
+      "7": [
+        108.5,
+        105.3
+      ],
+      "8": [
+        108.9,
+        105.3
+      ],
+      "9": [
+        109.3,
+        105.3
+      ],
+      "10": [
+        109.7,
+        105.3
+      ],
+      "11": [
+        110.1,
+        105.3
+      ],
+      "12": [
+        110.5,
+        105.3
+      ],
+      "13": [
+        111.0,
+        104.8
+      ],
+      "14": [
+        111.0,
+        104.4
+      ],
+      "15": [
+        111.0,
+        104.0
+      ],
+      "16": [
+        111.0,
+        103.6
+      ],
+      "17": [
+        111.0,
+        103.2
+      ],
+      "18": [
+        111.0,
+        102.8
+      ],
+      "19": [
+        110.5,
+        102.3
+      ],
+      "20": [
+        110.1,
+        102.3
+      ],
+      "21": [
+        109.7,
+        102.3
+      ],
+      "22": [
+        109.3,
+        102.3
+      ],
+      "23": [
+        108.9,
+        102.3
+      ],
+      "24": [
+        108.5,
+        102.3
+      ]
+    },
+    "evidence": "../evidence/icm-pinout.png and ../evidence/icm-axes.png",
+    "accel_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "gyro_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "mag_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "accel_gyro_to_current_enclosure": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "mag_to_current_enclosure": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "positive_gyro_rotation": "Manufacturer Fig12 signed rotations, right-hand convention; not Euler angle remapping"
+  },
+  "limitations": [
+    "All axes use column vectors; do not apply accelerometer rotation blindly to raw magnetometer.",
+    "In-plane +Y toward antenna is a convenient device axis, not anatomical up.",
+    "Mechanical CAD cannot establish printed fit, clamp stiffness, true harness slack, screw material or magnetic/RF suitability.",
+    "Bench six-face acceleration, positive gyro rotation and finished-case magnetometer calibration still required."
+  ],
+  "sources_sha256": {
+    "housing/smove-r2-enclosure.FCStd": "fe27f87a167274ef7853aa46a4db9e6767421a3a9184d6e86f11fbbec5ed7a83",
+    "scripts/r2/enclosure/generate.py": "8050121648845474cd028586f4309d7d0270d3dedb8d1cc68ef840ff1b5d4aa3",
+    "PCB/imu-carrier/smove-imu-carrier.kicad_pcb": "c9848c265e3002c91836c12b921f81c09929de486f18651b46f4fe70ff783fb8",
+    "PCB/main/smove-r2-main.kicad_pcb": "73209f1f47744f41ec7a5a1395bf43c2041d906baecfd4d5f3b281f9d553cd75",
+    "PCB/imu-carrier/interface.json": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872"
+  }
+}

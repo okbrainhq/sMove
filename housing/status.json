@@ -2,5 +2,5 @@
   "allow_generate_or_export": true,
   "manufacturing_release": false,
   "source": "Canonical PCB/main and PCB/imu-carrier; no copied board inputs",
-  "qualification": "Engineering prototype only; FreeCAD reproduction not rerun by cleanup"
+  "qualification": "Coplanar/body-outward engineering prototype; native recompute and GUI controls tested; no physical-fit, magnetic, RF, skin, manufacturing or charging approval."
 }

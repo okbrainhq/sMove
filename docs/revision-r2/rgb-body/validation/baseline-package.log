@@ -1,0 +1,23 @@
+17:36:40: Debug: Adding duplicate image handler for 'PNG file'
+17:36:40: Debug: Adding duplicate image handler for 'JPEG file'
+17:36:40: Debug: Adding duplicate image handler for 'TIFF file'
+17:36:40: Debug: Adding duplicate image handler for 'GIF file'
+17:36:40: Debug: Adding duplicate image handler for 'PNM file'
+17:36:40: Debug: Adding duplicate image handler for 'PCX file'
+17:36:40: Debug: Adding duplicate image handler for 'IFF file'
+17:36:40: Debug: Adding duplicate image handler for 'Windows icon file'
+17:36:40: Debug: Adding duplicate image handler for 'Windows cursor file'
+17:36:40: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+17:36:40: Debug: Adding duplicate image handler for 'TGA file'
+17:36:40: Debug: Adding duplicate image handler for 'XPM file'
+Traceback (most recent call last):
+  File "/home/azero/.okbrain/workspaces/smove-files/020/scripts/r2/final/package.py", line 77, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/home/azero/.okbrain/workspaces/smove-files/020/scripts/r2/final/package.py", line 71, in main
+    check(str(f.relative_to(ROOT))+' link '+url,(f.parent/url.split('#')[0]).exists())
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/azero/.okbrain/workspaces/smove-files/020/scripts/r2/final/package.py", line 23, in check
+    if not value: raise AssertionError(name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: docs/revision-r2/FINAL-ELECTRICAL.md link hierarchy-alignment/README.md

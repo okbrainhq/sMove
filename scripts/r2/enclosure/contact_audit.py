@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
-"""Read-only contact gate on copied native main PCB: pad AABBs, exact track/via shapes and actual fills."""
-import json
+"""Read-only canonical PCB contact audit: main lands and installed carrier annular seats."""
+import json, math
 from pathlib import Path
 import pcbnew
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing'
 (ROOT/'.cache/housing').mkdir(parents=True,exist_ok=True)
 d=json.loads((ROOT/'PCB/main/interface.json').read_text());b=pcbnew.LoadBoard(str(ROOT/'PCB/main/smove-r2-main.kicad_pcb'))
 rows=[];fail=[]
-for r in d['retention']:
+carrier=pcbnew.LoadBoard(str(ROOT/'PCB/imu-carrier/smove-imu-carrier.kicad_pcb'))
+carrier_contract=json.loads((ROOT/'PCB/imu-carrier/interface.json').read_text())
+regions=[(b,r) for r in d['retention']]
+for mount in carrier_contract['mounting_features']:
+    x,y=mount['center_mm'];x+=100;y=120-y
+    # Circumscribed 64-gon covers the complete actual R1.6-mm seat/upper bearing.
+    radius=1.6/math.cos(math.pi/64)
+    points=[[x+radius*math.cos(i*2*math.pi/64),y+radius*math.sin(i*2*math.pi/64)] for i in range(64)]
+    regions.append((carrier,dict(name='carrier_'+mount['ref'],xy=points)))
+for b,r in regions:
     poly=pcbnew.SHAPE_POLY_SET();poly.NewOutline()
     for x,y in r['xy']:poly.Append(round(x*1e6),round(y*1e6))
     x0=min(p[0] for p in r['xy']);x1=max(p[0] for p in r['xy']);y0=min(p[1] for p in r['xy']);y1=max(p[1] for p in r['xy'])
@@ -16,7 +25,7 @@ for r in d['retention']:
     hits=[]
     for f in b.GetFootprints():
         for pad in f.Pads():
-            if pad.IsOnCopperLayer() and hit(pad):hits.append('pad:'+f.GetReference()+':'+pad.GetNumber())
+            if pad.GetAttribute()!=pcbnew.PAD_ATTRIB_NPTH and pad.IsOnCopperLayer() and hit(pad):hits.append('pad:'+f.GetReference()+':'+pad.GetNumber())
     for t in b.GetTracks():
         if hit(t) and poly.Collide(t.GetEffectiveShape()):hits.append('track_or_via:'+str(t.GetNetCode()))
     fill_layers=0

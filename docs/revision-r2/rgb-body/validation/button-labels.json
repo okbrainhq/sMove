@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "RESET_mapping": true,
+    "RESET_visible_geometry": true,
+    "BOOT_mapping": true,
+    "BOOT_visible_geometry": true
+  },
+  "labels": [
+    {
+      "text": "RESET",
+      "reference": "SW2",
+      "signal": "/Compute/MCU_EN",
+      "mcu_pin": "8",
+      "mcu_function": "EN",
+      "xy_mm": [
+        110.2,
+        123.7
+      ],
+      "rotation_deg": 90,
+      "size_mm": 0.8,
+      "stroke_mm": 0.15,
+      "layer": "F.SilkS"
+    },
+    {
+      "text": "BOOT",
+      "reference": "SW3",
+      "signal": "/Compute/BOOT",
+      "mcu_pin": "23",
+      "mcu_function": "GPIO9_/_BOOT",
+      "xy_mm": [
+        110.2,
+        130.0
+      ],
+      "rotation_deg": 90,
+      "size_mm": 0.8,
+      "stroke_mm": 0.15,
+      "layer": "F.SilkS"
+    }
+  ]
+}
