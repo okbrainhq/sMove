@@ -1,3 +1,5 @@
+> **Historical/superseded topology.** Current integrated main-PCB design and release gates: [integrated ECO](../../docs/revision-r2/integrated/README.md). Carrier/PH4/old enclosure/count/hash claims below are archival, not current build instructions.
+
 # R2 imu-carrier
 
 Native editable project: [smove-imu-carrier.kicad_pro](smove-imu-carrier.kicad_pro), [board](smove-imu-carrier.kicad_pcb), [schematic](smove-imu-carrier.kicad_sch). Local libraries, parts data and mechanical interface are source dependencies; do not replace them with older revisions.

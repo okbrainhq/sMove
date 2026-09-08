@@ -1,32 +1,14 @@
-# R2 main
+# sMove main — centered integrated IMU / two-M3 revision
 
-Native editable project: [smove-r2-main.kicad_pro](smove-r2-main.kicad_pro), [board](smove-r2-main.kicad_pcb), [schematic](smove-r2-main.kicad_sch). Local libraries, parts data and mechanical interface are source dependencies; do not replace them with older revisions.
+Native **25×39×1mm bounding substrate, four copper layers**, with east USB and south PH2 access reliefs. U2 **ICM-20948** is on F.Cu at **(112.50,117.50)mm**, −90°, upper centre; signed AG +Z outward, raw magnetometer +Z inward. Original PCA9306/U5/C5–C9/R16–R20 circuitry retained. No J3/UART header, J4/J5 harness or TP footprints. U1 UART pins30/31 and U2 INT1 restored NC; USB programming and BOOT/RESET remain functional connections.
 
-## Functional schematic hierarchy
+47 fitted electronic BOM/CPL entries; two non-BOM **H1/H2 M3 3.2mm NPTH holes** at (103.60,103.60)/(121.40,135.40)mm. Copper reserves radius3.45mm on every layer. See [full handoff and intentional net migrations](../../docs/revision-r2/integrated/README.md).
 
-The root is a **wired system-flow page** with three non-nested children: [USB](usb.kicad_sch), [Power](power.kicad_sch), and [Compute](compute.kicad_sch). Open the root through this project, not child sheets as standalone projects. Related child circuitry remains visibly wired. J4 connects the separate carrier PCB; its U2 IMU remains on that board's own root schematic, not a nested main-project sheet.
+- [Root schematic](smove-r2-main.kicad_sch), [dedicated IMU page](imu.kicad_sch), [native PCB](smove-r2-main.kicad_pcb)
+- [PDF schematic](dist/schematic.pdf), [wired IMU image](dist/schematic-imu.png), [top PCB image](dist/top-3d.png), [assembly drawing](dist/assembly-top.pdf)
+- [BOM](dist/BOM.csv), [pick-and-place](dist/pick-and-place.csv), [assembly guide](dist/ASSEMBLY.md), [Gerbers/drills](dist/gerbers.zip)
+- [Current mechanical interface](interface.json), [actual native layout contract](native-layout-contract.json), [current electrical report](../../docs/revision-r2/integrated/validation/electrical.json)
 
-[Change record, images and validation](../../docs/revision-r2/hierarchy-alignment/README.md). All original schematic UUIDs/references and electrical pin groups are retained. PCB hierarchy paths and 23 internal net scope names changed, but physical layout bytes are unchanged after reversing only those exact metadata changes. Fabrication/BOM/CPL outputs remain the same circuit; historical internal net spellings map explicitly in the change record.
+**Manufacturing release=false.** Native rules pass, but impedance/USB downloads, RF, sensor noise/magnetic bias, rail transients, actual package assembly and PH2 mate fit still need qualification. No claim of native GUI routing: locked desktop prevented that; current routing used the existing constrained toolchain and native DRC.
 
-## Separate fabrication / assembly inputs
-
-- [gerbers.zip](dist/gerbers.zip): fabrication only, with exact raw Gerbers/drills in `dist/gerbers/`.
-- [BOM.csv](dist/BOM.csv): **35 fitted parts, all fitted by JLC**, including SMT headers.
-- [pick-and-place.csv](dist/pick-and-place.csv): unchanged original CPL columns/data; filename only renamed.
-
-## Non-JLC reference outputs
-
-[Schematic PDF](dist/schematic.pdf), [assembly guide](dist/ASSEMBLY.md), SVG/PNG previews and STEP files in `dist/` are reference outputs, not JLC upload bundles. Conservative component envelopes are not exact connector/part fit models. [Manifest](dist/manifest.json) covers source dependencies and outputs.
-
-**Engineering prototype, not manufacturing/charge approval.** No manual-SMT alternative or interchangeable THT headers. [Connector policy](../../docs/revision-r2/CONNECTORS.md) and [verification](../../docs/revision-r2/final-export/README.md).
-
-## Button silkscreen
-
-Top-side **RESET (SW2 / EN)** and **BOOT (SW3 / GPIO9)** labels are stored in the
-canonical PCB, not an export-only overlay. See the [mapping, close-up and baseline
-validation](../../docs/revision-r2/button-labels/README.md), including the RGB
-inspection handoff (D1 is already one common-anode RGB package).
-
-## Unified RGB symbol
-
-D1 remains one LTST-C19HE1WT common-anode RGB package; all three channels are now enclosed in one schematic body. The local library and Compute cache are generated together by `scripts/r2/main/unify_rgb.py`; all instance/pin UUIDs, electrical endpoints, wiring and PCB association are retained. [Close-up, exact mapping and regression checks](../../docs/revision-r2/rgb-body/README.md). BOOT/RESET silk and PCB/fabrication outputs remain unchanged.
+`parts-main.json` and routed native CAD are canonical. Geometry source JSON files preserve original package envelopes/poses for migration only; never use them as current placements. The documented rebuild exports from the native board rather than rerunning destructive historical ECO placement helpers.
