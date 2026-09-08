@@ -2,7 +2,7 @@
   "manufacturing_release": false,
   "files": {
     "PCB/imu-carrier/Device.kicad_sym": "76dd998e245970b48ede2ae086edfb0e1b1a88dbc9e08d8e3268bd34f451385b",
-    "PCB/imu-carrier/README.md": "dbd54b074842e8e20e4b9ae37eaa96acc97392cc8a83f445cc00d97f9870cef3",
+    "PCB/imu-carrier/README.md": "27f601eb129bc93ed5cffe29e23c3b62defa3e50158b852db82fc9a960651b49",
     "PCB/imu-carrier/carrier.kicad_sym": "594f6b323e68430c820e0ead317a6f9a480357c2d00a63f4d76a8ce329a64d99",
     "PCB/imu-carrier/carrier.pretty/C_0402_1005Metric.kicad_mod": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7",
     "PCB/imu-carrier/carrier.pretty/C_0603_1608Metric.kicad_mod": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee",

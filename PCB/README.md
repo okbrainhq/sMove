@@ -1,8 +1,8 @@
-# Current R2 PCB projects
+# Sports tracker PCB
 
-- [Main](main/README.md): one editable KiCad project, 35 fitted parts.
-- [IMU carrier](imu-carrier/README.md): one editable KiCad project, 14 fitted parts.
+- **Active:** [main](main/README.md), now includes the actual ICM-20948/PCA9306/1.8V circuitry, 47 fitted electronic parts, two diagonal M3 mounting holes, no external UART or testpoints.
+- **Frozen provenance only:** [imu-carrier](imu-carrier/README.md). Do not order/assemble this board or PH4 harness for the integrated design.
 
-Open each native `.kicad_pro` in its own directory. Local symbol/footprint libraries travel with the project; source model dependencies live in `models/` where supplied. Standard main-board models require the installed KiCad model library.
+Open `main/smove-r2-main.kicad_pro`; overview + USB/Power/Compute/IMU pages are wired hierarchically. Project-local IMU libraries are supplied. Installed 3D models are incomplete; conservative FreeCAD component envelopes are not exact populated STEP models.
 
-Each board owns its own `dist/`: Gerber ZIP, BOM and pick-and-place CSV are separate JLC inputs. PDF, SVG, PNG and STEP are non-JLC reference outputs, not physical-fit approval. See [qualification](../docs/revision-r2/FINAL-ELECTRICAL.md). No manual-SMT variants; all headers are JLC-fitted.
+Main `dist/gerbers.zip`, `BOM.csv`, `pick-and-place.csv` are separate prototype fabrication/assembly inputs, not release approval. See [current gates](../docs/revision-r2/integrated/README.md).
