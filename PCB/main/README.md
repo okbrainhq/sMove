@@ -19,3 +19,10 @@ The root is a **wired system-flow page** with three non-nested children: [USB](u
 [Schematic PDF](dist/schematic.pdf), [assembly guide](dist/ASSEMBLY.md), SVG/PNG previews and STEP files in `dist/` are reference outputs, not JLC upload bundles. Conservative component envelopes are not exact connector/part fit models. [Manifest](dist/manifest.json) covers source dependencies and outputs.
 
 **Engineering prototype, not manufacturing/charge approval.** No manual-SMT alternative or interchangeable THT headers. [Connector policy](../../docs/revision-r2/CONNECTORS.md) and [verification](../../docs/revision-r2/final-export/README.md).
+
+## Button silkscreen
+
+Top-side **RESET (SW2 / EN)** and **BOOT (SW3 / GPIO9)** labels are stored in the
+canonical PCB, not an export-only overlay. See the [mapping, close-up and baseline
+validation](../../docs/revision-r2/button-labels/README.md), including the RGB
+inspection handoff (D1 is already one common-anode RGB package).

@@ -16801,4 +16801,16 @@
 		)
 	)
 	(embedded_fonts no)
+	(gr_text "RESET"
+		(at 110.2 123.7 90)
+		(layer "F.SilkS")
+		(uuid "e7ba28cf-29a8-4ef1-b887-1036ed03ef09")
+		(effects (font (size 0.8 0.8) (thickness 0.15)))
+	)
+	(gr_text "BOOT"
+		(at 110.2 130 90)
+		(layer "F.SilkS")
+		(uuid "582ff803-284a-4b39-86a9-5aae8bc51019")
+		(effects (font (size 0.8 0.8) (thickness 0.15)))
+	)
 )

@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_PRE_EXISTING_DOCUMENTATION_LINK",
+  "package_command": "/usr/bin/python3 scripts/r2/final/package.py --seal",
+  "failure": "docs/revision-r2/FINAL-ELECTRICAL.md link hierarchy-alignment/README.md",
+  "baseline_missing_target_verified_in_HEAD": true,
+  "main_manifest_matches_current_inventory": true,
+  "fabrication_zip_crc_and_raw_equality": true,
+  "note": "Package execution passed native BOM/CPL, fabrication ZIP, library/model and manifest checks before reaching the unrelated missing Markdown target. No complete package PASS claimed."
+}
