@@ -26,6 +26,8 @@ C2/C13 are47uF,6.3V,X5R,20%,0805. **Maximum body height above PCB=1.45mm; maximu
 
 ## Current layout limits
 
+**Presentation-only update:** the main schematic now has a wired overview and USB / Power / Compute children. [Baseline/post-change electrical and alignment evidence](hierarchy-alignment/README.md) covers preserved pin groups/UUIDs, explicit internal-net scope and PCB path metadata changes, unchanged physical layout, and fresh rendered/native checks. Statements below about cleanup byte preservation describe that historical cleanup; they are not the current schematic/PCB-file hashes. No electrical qualification gate was waived.
+
 Cleanup changes no circuitry, placement, outlines, routing or native source bytes. Existing routing is not certified differential-impedance/SI/ESD performance. L2 is signal-free ground. Typical-cap screens are not bench measurements. Existing previews are retained; GUI review remains blocked/not performed.
 
 ## Remaining physical/firmware acceptance gates
