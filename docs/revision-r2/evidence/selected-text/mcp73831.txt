@@ -1,0 +1,589 @@
+PDF_PAGE 1
+                                                             MCP73831/2
+           Miniature Single-Cell, Fully Integrated Li-Ion,
+           Li-Polymer Charge Management Controllers
+Features                                                    Description
+• Linear Charge Management Controller:                      The MCP73831/2 devices are highly advanced linear
+  - Integrated Pass Transistor                              charge management controllers for use in space-
+  - Integrated Current Sense                                limited, cost-sensitive applications. The MCP73831/2
+                                                            are available in an 8-Lead, 2 mm x 3 mm DFN package
+  - Reverse Discharge Protection
+                                                            or a 5-Lead, SOT-23 package. Along with their small
+• High-Accuracy Preset Voltage Regulation: + 0.75%          physical size, the low number of external components
+• Four Voltage Regulation Options:                          required make the MCP73831/2 ideally suited for
+  - 4.20V, 4.35V, 4.40V, 4.50V                              portable applications. For applications charging from a
+• Programmable Charge Current: 15 mA to 500 mA              USB port, the MCP73831/2 adhere to all the
+                                                            specifications governing the USB power bus.
+• Selectable Preconditioning:
+  - 10%, 20%, 40%, or Disable                               The MCP73831/2 employ a constant-current/constant-
+                                                            voltage    charge       algorithm    with     selectable
+• Selectable End-of-Charge Control:
+                                                            preconditioning and charge termination. The constant
+  - 5%, 7.5%, 10%, or 20%                                   voltage regulation is fixed with four available options:
+• Charge Status Output                                      4.20V, 4.35V, 4.40V or 4.50V, to accommodate new,
+  - Tri-State Output - MCP73831                             emerging battery charging requirements. The constant
+  - Open-Drain Output - MCP73832                            current value is set with one external resistor. The
+• Automatic Power-Down                                      MCP73831/2 devices limit the charge current based on
+                                                            die temperature during high power or high ambient
+• Thermal Regulation
+                                                            conditions. This thermal regulation optimizes the
+• Temperature Range: -40°C to +85°C                         charge cycle time while maintaining device reliability.
+• Packaging:
+                                                            Several options are available for the preconditioning
+  - 8-Lead, 2 mm x 3 mm DFN                                 threshold, preconditioning current value, charge
+  - 5-Lead, SOT-23                                          termination value and automatic recharge threshold.
+                                                            The preconditioning value and charge termination
+Applications                                                value are set as a ratio or percentage of the
+                                                            programmed constant current value. Preconditioning
+• Lithium-Ion/Lithium-Polymer Battery Chargers
+                                                            can be disabled. Refer to Section 1.0 “Electrical
+• Personal Data Assistants                                  Characteristics” for available options and the
+• Cellular Telephones                                       Product Identification System for standard options.
+• Digital Cameras                                           The MCP73831/2 devices are fully specified over the
+• MP3 Players                                               ambient temperature range of -40°C to +85°C.
+• Bluetooth Headsets
+• USB Chargers                                              Package Types
+Typical Application                                               MCP73831/2                   MCP73831/2
+                                                                   2×3 DFN*                     SOT-23-5
+          500 mA Li-Ion Battery Charger
+  VIN                                                        VDD 1            8 PROG      STAT 1           5 PROG
+                 4 V
+                    DD      VBAT 3               + Single    VDD 2     EP     7 NC         VSS 2
+ 4.7 F                          4.7 F            Li-Ion
+                                                 - Cell                 9                 VBAT 3           4 VDD
+                                                            VBAT 3            6 VSS
+                                   5
+                            PROG                            VBAT 4            5 STAT
+        470                              2 k                 * Includes Exposed Thermal Pad (EP); see Table 3-1.
+                 1           VSS 2
+                     STAT
+
+                     MCP73831
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                           DS20001984H-page 1
+
+PDF_PAGE 3
+                                                                                                                           MCP73831/2
+1.0            ELECTRICAL                                                                           † Notice: Stresses above those listed under “Maximum
+                                                                                                    Ratings” may cause permanent damage to the device.
+               CHARACTERISTICS
+                                                                                                    This is a stress rating only and functional operation of
+                                                                                                    the device at those or any other conditions above those
+Absolute Maximum Ratings†                                                                           indicated in the operational listings of this specification
+VDD...................................................................................7.0V          is not implied. Exposure to maximum rating conditions
+                                                                                                    for extended periods may affect device reliability.
+All Inputs and Outputs w.r.t. VSS ............... -0.3 to (VDD+0.3)V
+Maximum Junction Temperature, TJ ............ Internally Limited
+Storage temperature .....................................-65°C to +150°C
+ESD protection on all pins:
+Human Body Model (1.5 k in Series with 100 pF)4 kV
+Machine Model (200 pF, No Series Resistance) .............400V
+
+
+DC CHARACTERISTICS
+ Electrical Specifications: Unless otherwise indicated, all limits apply for VDD= [VREG(typical) + 1.0V] to 6V, TA = -40°C to +85°C.
+ Typical values are at +25°C.
+           Parameters                           Sym.                    Min.                 Typ.             Max.        Units           Conditions
+ Supply Input
+ Supply Voltage                                  VDD                    3.75                  —                 6           V
+ Supply Current                                   ISS                     —                  510              1500         µA     Charging
+                                                                          —                  53                200         µA     Charge Complete,
+                                                                                                                                  No Battery
+                                                                          —                  25                50          µA     PROG Floating
+                                                                          —                   1                 5          µA     VDD < (VBAT - 50 mV)
+                                                                          —                  0.1                2          µA     VDD < VSTOP
+ UVLO Start Threshold                          VSTART                    3.3                 3.45              3.6          V     VDD Low-to-High
+ UVLO Stop Threshold                           VSTOP                     3.2                 3.38              3.5          V     VDD High-to-Low
+ UVLO Hysteresis                                VHYS                      —                  70                —           mV
+ Voltage Regulation (Constant-Voltage Mode)
+ Regulated Output Voltage                       VREG                   4.168                 4.20             4.232         V     MCP7383X-2
+                                                                       4.317                 4.35             4.383         V     MCP7383X-3
+                                                                       4.367                 4.40             4.433         V     MCP7383X-4
+                                                                       4.466                 4.50             4.534         V     MCP7383X-5
+                                                                                                                                  VDD = [VREG(typical)+1V]
+                                                                                                                                  IOUT = 10 mA
+                                                                                                                                  TA = -5°C to +55°C
+ Line Regulation                            VBAT/                      —                  0.09             0.30        %/V     VDD = [VREG(typical)+1V] to
+                                           VBAT)/VDD|                                                                            6V, IOUT = 10 mA
+ Load Regulation                           VBAT/VBAT|                   —                  0.05             0.30         %      IOUT = 10 mA to 50 mA
+                                                                                                                                  VDD = [VREG(typical)+1V]
+ Supply Ripple Attenuation                     PSRR                       —                  52                —-          dB     IOUT=10 mA, 10Hz to 1 kHz
+                                                                          —                  47                —           dB     IOUT=10 mA, 10Hz to 10 kHz
+                                                                          —                  22                —           dB     IOUT=10 mA, 10Hz to 1 MHz
+ Current Regulation (Fast Charge Constant-Current Mode)
+ Fast Charge Current                             IREG                     90                 100               110         mA     PROG = 10 k
+ Regulation                                                              450                 505               550         mA     PROG = 2.0 kNote 1
+                                                                        12.5                 14.5             16.5         mA     PROG = 67 k
+                                                                                                                                  TA = -5°C to +55°C
+ Note 1:           Not production tested. Ensured by design.
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                                                                    DS20001984H-page 3
+
+PDF_PAGE 4
+MCP73831/2
+DC CHARACTERISTICS (CONTINUED)
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD= [VREG(typical) + 1.0V] to 6V, TA = -40°C to +85°C.
+Typical values are at +25°C.
+       Parameters               Sym.             Min.            Typ.             Max.        Units            Conditions
+Preconditioning Current Regulation (Trickle Charge Constant-Current Mode)
+Precondition Current         IPREG / IREG        7.5              10              12.5          %     PROG = 2.0 kto 10 k
+Ratio                                             15              20               25           %     PROG = 2.0 kto 10 k
+                                                  30              40               50           %     PROG = 2.0 kto 10 k
+                                                  —               100              —            %     No Preconditioning
+                                                                                                      TA = -5°C to +55°C
+Precondition Voltage        VPTH / VREG           64             66.5              69           %     VBAT Low-to-High
+Threshold Ratio                                   69             71.5              74           %     VBAT Low-to-High
+Precondition Hysteresis         VPHYS             —               110              —           mV     VBAT High-to-Low
+Charge Termination
+Charge Termination           ITERM / IREG        3.75              5              6.25          %     PROG = 2.0 kto 10 k
+Current Ratio                                    5.6              7.5              9.4          %     PROG = 2.0 kto 10 k
+                                                 8.5              10              11.5          %     PROG = 2.0 kto 10 k
+                                                  15              20               25           %     PROG = 2.0 kto 10 k
+                                                                                                      TA = -5°C to +55°C
+Automatic Recharge
+Recharge Voltage            VRTH / VREG          91.5            94.0             96.5          %     VBAT High-to-Low
+Threshold Ratio                                   94             96.5              99           %     VBAT High-to-Low
+Pass Transistor ON-Resistance
+ON-Resistance                  RDSON              —               350              —           m     VDD = 3.75V, TJ = 105°C
+Battery Detection
+Battery Detection Current     IBAT_DET           0.6               6               —            µA    VBAT Source Current
+No-Battery-Present            VNO_BAT             —             VREG +             —            V     VBAT Voltage ≥ VNO_BAT for
+Threshold                                                       100 mV                                No Battery condition
+No-Battery-Present            ZNO_BAT             7                —               —           M     VBAT Impedance ≥ ZNO_BAT
+Impedance                                                                                             for No Battery condition,
+                                                                                                      Note 1
+Battery Discharge Current
+Output Reverse Leakage       IDISCHARGE           —              0.15               2           µA    PROG Floating
+Current                                           —              0.25               2           µA    VDD Floating
+                                                  —              0.15               2           µA    VDD < VSTOP
+                                                  —               -5.5             -15          µA    Charge Complete
+Status Indicator – STAT
+Sink Current                    ISINK             —                —               25          mA
+Low Output Voltage               VOL              —               0.4               1           V     ISINK = 4 mA
+Source Current                 ISOURCE            —                —               35          mA
+High Output Voltage              VOH              —             VDD-0.4          VDD - 1        V     ISOURCE = 4 mA (MCP73831)
+Input Leakage Current            ILK              —              0.03               1           µA    High-Impedance
+PROG Input
+Charge Impedance               RPROG              2                —               67           k
+Range
+Minimum Shutdown               RPROG              70               —               200          k
+Impedance
+Automatic Power Down
+Automatic Power Down          VPDENTER       VDD<(VBAT        VDD<(VBAT            —                  3.5V  VBAT  VREG
+Entry Threshold                               +20 mV)          +50 mV)                                VDD Falling
+Note 1:     Not production tested. Ensured by design.
+
+
+
+
+DS20001984H-page 4                                                                           2005-2020 Microchip Technology Inc.
+
+PDF_PAGE 5
+                                                                                                             MCP73831/2
+DC CHARACTERISTICS (CONTINUED)
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD= [VREG(typical) + 1.0V] to 6V, TA = -40°C to +85°C.
+Typical values are at +25°C.
+       Parameters               Sym.              Min.                   Typ.               Max.           Units           Conditions
+Automatic Power Down           VPDEXIT                —                VDD<(VBAT          VDD<(VBAT                3.5V  VBAT  VREG
+Exit Threshold                                                         +150 mV)           +200 mV)                 VDD Rising
+Thermal Shutdown
+Die Temperature                  TSD                  —                  150                    —           C
+Die Temperature                TSDHYS                 —                      10                 —           C
+Hysteresis
+Note 1:     Not production tested. Ensured by design.
+
+
+AC CHARACTERISTICS
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD = [VREG (typical) + 1.0V] to 6V
+TA = -40°C to +85°C. Typical values are at +25°C.
+          Parameters                   Sym.               Min.         Typ.       Max.      Units                    Conditions
+UVLO Start Delay                       tSTART              —            —            5          ms    VDD Low-to-High
+Constant-Current Regulation
+Transition Time Out of                 tDELAY              —            —            1          ms    VBAT < VPTH to VBAT > VPTH
+Preconditioning
+Current Rise Time Out of                tRISE              —            —            1          ms    IOUT Rising to 90% of IREG
+Preconditioning
+Termination Comparator                 tTERM              0.4          1.3          3.2         ms    Average IOUT Falling
+Filter
+Charge Comparator Filter             tCHARGE              0.4          1.3          3.2         ms    Average VBAT
+Status Indicator
+Status Output Turn-Off                   tOFF              —            —           200         µs    ISINK = 1 mA to 0 mA
+Status Output Turn-On                    tON               —            —           200         µs    ISINK = 0 mA to 1 mA
+
+TEMPERATURE SPECIFICATIONS
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD = [VREG (typical) + 1.0V] to 6V.
+Typical values are at +25°C, VDD = [VREG (typical) + 1.0V]
+              Parameters                        Sym.            Min.          Typ.        Max.       Units               Conditions
+Temperature Ranges
+Specified Temperature Range                      TA              -40          —           +85         °C
+Operating Temperature Range                      TJ              -40          —           +125        °C
+Storage Temperature Range                        TA              -65          —           +150        °C
+Thermal Package Resistances
+5-Lead, SOT-23                                  JA              —            230          —         °C/W        4-Layer JC51-7 Standard
+                                                                                                                 Board, Natural Convection
+                                                                                                                 (Note 2)
+8-Lead, 2 mm x 3 mm, DFN                        JA              —            76           —         °C/W        4-Layer JC51-7 Standard
+                                                                                                                 Board, Natural Convection
+                                                                                                                 (Note 1)
+Note 1:     This represents the minimum copper condition on the PCB (Printed Circuit Board).
+     2:     With large copper area on the PCB, the SOT-23-5 thermal resistance (JA) can reach a typical value of
+            130°C/W or better.
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                                                    DS20001984H-page 5
+
+PDF_PAGE 14
+MCP73831/2
+4.5      Fast Charge Constant-Current                         4.9                       Thermal Regulation
+         Mode                                                 The MCP73831/2 limit the charge current based on the
+During the Constant-Current mode, the programmed              die temperature. The thermal regulation optimizes the
+charge current is supplied to the battery or load. The        charge cycle time while maintaining device reliability.
+charge current is established using a single resistor         Figure 4-2 depicts the thermal regulation for the
+from PROG to VSS. Constant-Current mode is                    MCP73831/2.
+maintained until the voltage at the VBAT pin reaches the
+regulation voltage, VREG.                                                              525
+                                                                                                                                            RPROG = 2 k
+                                                                                       450
+
+
+
+
+                                                                 Charge Current (mA)
+4.6      Constant-Voltage Mode                                                         375
+When the voltage at the VBAT pin reaches the                                           300
+regulation voltage, VREG, constant voltage regulation                                  225
+begins. The regulation voltage is factory set to 4.2V,                                 150
+4.35V, 4.40V or 4.50V with a tolerance of ±0.75%.
+                                                                                       75
+                                                                                        0
+4.7      Charge Termination                                                                  25   35   45   55   65   75   85   95   105   115   125   135   145   155
+The charge cycle is terminated when, during Constant-                                                        Junction Temperature (°C)
+Voltage mode, the average charge current diminishes
+below a percentage of the programmed charge current
+                                                              FIGURE 4-2:                                        Thermal Regulation.
+(established with the value of the resistor connected to
+the PROG pin). A 1 ms filter time on the termination
+comparator ensures that transient load conditions do          4.10                      Thermal Shutdown
+not result in premature charge cycle termination. The         The MCP73831/2 suspend charge if the die
+percentage or ratio of the current is factory set. Refer to   temperature exceeds 150°C. Charging will resume
+Section 1.0 “Electrical Characteristics” for charge           when the die temperature has cooled by approximately
+termination current options and the Product                   10°C.
+Identification System for standard options.
+The charge current is latched off and the MCP73831/2
+enter a Charge Complete mode.
+
+4.8      Automatic Recharge
+The MCP73831/2 continuously monitor the voltage at
+the VBAT pin in the Charge Complete mode. If the
+voltage drops below the recharge threshold, another
+charge cycle begins and current is once again supplied
+to the battery or load. The recharge threshold is factory
+set. Refer to Section 1.0 “Electrical Characteristics”
+for recharge threshold options and the Product
+Identification System for standard options.
+
+
+
+
+DS20001984H-page 14                                                                                          2005-2020 Microchip Technology Inc.
+
+PDF_PAGE 15
+                                                                                 MCP73831/2
+5.0       DETAILED DESCRIPTION                            5.2       Digital Circuitry
+
+5.1       Analog Circuitry                                5.2.1       STATUS INDICATOR (STAT)
+                                                          The charge status output of the MCP73831 has three
+5.1.1        BATTERY MANAGEMENT INPUT                     different states: High (H), Low (L), and High-
+             SUPPLY (VDD)                                 Impedance (High Z). The charge status output of the
+                                                          MCP73832 is open-drain. It has two different states:
+The VDD pin is the input supply pin for the MCP73831/
+                                                          Low (L) and High-Impedance (High Z). The charge sta-
+2 devices. The MCP73831/2 automatically enter a
+                                                          tus output can be used to illuminate one, two or tri-color
+Power-Down mode if the voltage on the VDD input falls
+                                                          LEDs. Optionally, the charge status output can be used
+below the UVLO voltage (VSTOP). This feature prevents
+                                                          as an interface to a host microcontroller.
+draining the battery pack when the VDD supply is not
+present.                                                  Table 5-1 summarizes the state of the status output
+                                                          during a charge cycle.
+5.1.2        CURRENT REGULATION SET
+                                                          TABLE 5-1:         STATUS OUTPUT
+             (PROG)
+Fast charge current regulation can be scaled by placing                                           STAT1
+                                                                Charge Cycle State
+a programming resistor (RPROG) from the PROG input                                       MCP73831 MCP73832
+to VSS. The program resistor and the charge current
+are calculated using the following equation:              Shutdown                         High Z        High Z
+                                                          No Battery Present               High Z        High Z
+                             1000V                        Preconditioning                     L             L
+                    I REG = ----------------
+                            RPROG
+                                                          Constant-Current Fast               L             L
+                                                          Charge
+ Where:
+                                                          Constant Voltage                    L             L
+  RPROG       =     kOhms
+                                                          Charge Complete –                   H          High Z
+      IREG    =     milliampere                           Standby
+
+The preconditioning trickle charge current and the        5.2.2       DEVICE DISABLE (PROG)
+charge termination current are ratiometric to the fast
+                                                          The current regulation set input pin (PROG) can be
+charge current based on the selected device options.
+                                                          used to terminate a charge at any time during the
+5.1.3        BATTERY CHARGE CONTROL                       charge cycle, as well as to initiate a charge cycle or
+             OUTPUT (VBAT)                                initiate a recharge cycle.
+                                                          Placing a programming resistor from the PROG input to
+The battery charge control output is the drain terminal
+                                                          VSS enables the device. Allowing the PROG input to
+of an internal P-channel MOSFET. The MCP73831/2
+provide constant current and voltage regulation to the    float or by applying a logic-high input signal, disables
+                                                          the device and terminates a charge cycle. When
+battery pack by controlling this MOSFET in the linear
+                                                          disabled, the device’s supply current is reduced to
+region. The battery charge control output should be
+connected to the positive terminal of the battery pack.   25 µA, typically.
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                        DS20001984H-page 15
+
+PDF_PAGE 17
+                                                                                                                                                                           MCP73831/2
+6.0                           APPLICATIONS                                                                               followed by a constant voltage charging method.
+                                                                                                                         Figure 6-1 depicts a typical stand-alone application
+The MCP73831/2 are designed to operate in                                                                                circuit, while Figure 6-2 and Figure 6-3 depict the
+conjunction with a host microcontroller or in a stand-                                                                   accompanying charge profile.
+alone application. The MCP73831/2 provide the
+preferred charge algorithm for Lithium-Ion and Lithium-
+Polymer cells. The algorithm uses a constant current
+
+
+                                                                                                                Li-Ion Battery Charger
+                                                                                                                   4                                            3
+                                                                                                                       VDD                          VBAT                                + Single
+                                                                                    RLED                                                                                   COUT           Li-Ion
+                                                             CIN                                                                                                                        - Cell
+                                                                                                                                                                5
+                                                                                                                                                PROG
+                                       REGULATED                        SMAJ5.0A/AC
+                                       WALL CUBE                                    LED                                                                                   RPROG
+                                                                                                                   1                                 VSS        2
+                                                                                                                       STAT
+                                                                                                                        SOT-23-5
+                                                                                                                       MCP73831/2
+
+FIGURE 6-1:                                      Typical Application Circuit.
+
+
+                        6.0                                                         120                                                             6.0                                                         600
+
+                        5.0                                                         100                                                             5.0                                                         500
+
+
+
+
+  Battery Voltage (V)                                                                     Charge Current (mA)                 Battery Voltage (V)                                                                     Charge Current (mA)
+                        4.0                                                         80                                                              4.0                                                         400
+
+                        3.0                                                         60                                                              3.0                                                         300
+
+                        2.0                                                         40                                                              2.0                                                         200
+                                   MCP73831-2AC/IOT                                                                                                           MCP73831-2AC/IOT
+                        1.0        VDD = 5.2V                                       20                                                              1.0       VDD = 5.2V                                        100
+                                   RPROG = 10 kΩ                                                                                                              RPROG = 2 kΩ
+                        0.0                                                         0                                                               0.0                                                         0
+                              0   20   40   60   80   100   120   140   160   180
+                                                                                                                                                          0     30   60   90     120   150    180   210   240
+                                             Time (minutes)                                                                                                               Time (minutes)
+
+
+FIGURE 6-2:        Typical Charge Profile                                                                                FIGURE 6-3:        Typical Charge Profile in
+(180 mAh Battery).                                                                                                       Thermal Regulation (1000 mAh Battery).
+
+6.1                           Application Circuit Design
+Due to the low efficiency of linear charging, the most                                                                   6.1.1.1                                 Current Programming Resistor
+important factors are thermal design and cost, which                                                                                                             (RPROG)
+are a direct function of the input voltage, output current
+                                                                                                                         The preferred fast charge current for Lithium-Ion cells
+and thermal impedance between the battery charger
+                                                                                                                         is at the 1C rate, with an absolute maximum current at
+and the ambient cooling air. The worst-case situation is
+                                                                                                                         the 2C rate. For example, a 500 mAh battery pack has
+when the device has transitioned from the
+                                                                                                                         a preferred fast charge current of 500 mA. Charging at
+Preconditioning mode to the Constant-Current mode.
+                                                                                                                         this rate provides the shortest charge cycle times
+In this situation, the battery charger has to dissipate the
+                                                                                                                         without degradation to the battery pack performance or
+maximum power. A trade-off must be made between
+                                                                                                                         life.
+the charge current, cost and thermal requirements of
+the charger.
+
+6.1.1                             COMPONENT SELECTION
+Selection of the external components in Figure 6-1 is
+crucial to the integrity and reliability of the charging
+system. The following discussion is intended as a guide
+for the component selection process.
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                                                                                                                        DS20001984H-page 17
+
+PDF_PAGE 18
+MCP73831/2
+6.1.1.2       Input Overvoltage Protection (IOVP)             6.1.1.5         Reverse-Blocking Protection
+Input overvoltage protection must be used when the            The MCP73831/2 provide protection from a faulted or
+input power source is hot-pluggable. This includes USB        shorted input. Without the protection, a faulted or
+cables and Wall-type power supplies. The cabling of           shorted input would discharge the battery pack through
+these supplies acts as an inductor. When the supplies         the body diode of the internal pass transistor.
+are connected/disconnected from the system, large
+voltage transients are created which may damage the           6.1.1.6         Charge Inhibit
+system circuitry. These transients should be snubbed          The current regulation set input pin (PROG) can be
+out. A transzorb connected from the V+ input supply           used to terminate a charge at any time during the
+connector to the 0V ground reference will snub the            charge cycle, as well as to initiate a charge cycle or
+transients.                                                   initiate a recharge cycle.
+                                                              Placing a programming resistor from the PROG input to
+6.1.1.3       Thermal Considerations
+                                                              VSS enables the device. Allowing the PROG input to
+The worst-case power dissipation in the battery               float or by applying a logic-high input signal, disables
+charger occurs when the input voltage is at the               the device and terminates a charge cycle. When
+maximum and the device has transitioned from the              disabled, the device’s supply current is reduced to
+Preconditioning mode to the Constant-Current mode.            25 µA, typically.
+In this case, the power dissipation is:
+                                                              6.1.1.7         Charge Status Interface
+   PowerDissipation =  V DDMAX – VPTHMIN   I REGMAX        A status output provides information on the state of
+                                                              charge. The output can be used to illuminate external
+ Where:                                                       LEDs or interface to a host microcontroller. Refer to
+   VDDMAX      =   the maximum input voltage                  Table 5-1 for a summary of the state of the status
+                                                              output during a charge cycle.
+   IREGMAX     =   the maximum fast charge current
+   VPTHMIN     =   the minimum transition threshold           6.2       PCB Layout Issues
+                   voltage
+                                                              For optimum voltage regulation, place the battery pack
+                                                              as close as possible to the device’s VBAT and VSS pins.
+Power dissipation with a 5V, ±10% input voltage source
+                                                              This is recommended to minimize voltage drops along
+is:
+                                                              the high current-carrying PCB traces.
+   PowerDissipation =  5.5V – 2.7V   550mA = 1.54W         If the PCB layout is used as a heat sink, adding many
+                                                              vias in the heat sink pad can help conduct more heat to
+                                                              the PCB backplane, thus reducing the maximum
+This power dissipation with the battery charger in the
+SOT-23-5 package will cause thermal regulation to be          junction temperature. Figure 6-4 and Figure 6-5 depict
+                                                              a typical layout with PCB heatsinking.
+entered as depicted in Figure 6-3. Alternatively, the
+2mm x 3mm DFN package could be utilized to reduce
+charge cycle times.                                                                   RLED LED
+
+                                                                                                 RPROG
+6.1.1.4       External Capacitors                                       VSS
+
+The MCP73831/2 are stable with or without a battery
+load. In order to maintain good AC stability in the
+                                                                        VBAT     COUT MCP73831 C         VDD
+Constant-Voltage mode, a minimum capacitance of                                                  IN
+4.7 µF is recommended to bypass the VBAT pin to VSS.
+This capacitance provides compensation when there is
+no battery load. In addition, the battery and
+                                                              FIGURE 6-4:             Typical Layout (Top).
+interconnections appear inductive at high frequencies.
+These elements are in the control feedback loop during
+Constant-Voltage mode. Therefore, the bypass
+capacitance may be necessary to compensate for the
+inductive nature of the battery pack.                                   VSS
+Virtually any good quality output filter capacitor can be
+used, independent of the capacitor’s minimum
+Effective Series Resistance (ESR) value. The actual                     VBAT                             VDD
+value of the capacitor (and its associated ESR)
+depends on the output load current. A 4.7 µF ceramic,
+tantalum or aluminum electrolytic capacitor at the
+                                                              FIGURE 6-5:             Typical Layout (Bottom).
+output is usually sufficient to ensure stability for output
+currents up to a 500 mA.
+
+
+DS20001984H-page 18                                                                2005-2020 Microchip Technology Inc.
+
+PDF_PAGE 19
+                                                                                       MCP73831/2
+7.0      PACKAGING INFORMATION
+7.1      Package Marking Information
+
+      8-Lead DFN (2x3x0.9 mm)                     Device            Code                         Example
+                                          MCP73831T-2ACI/MC         AAE
+                                          MCP73831T-2ATI/MC         AAF
+                                          MCP73831T-2DCI/MC         AAG                         AAE
+                                          MCP73831T-3ACI/MC
+                                          MCP73831T-4ADI/MC
+                                                                    AAH
+                                                                    AAJ                         739
+                                          MCP73831T-5ACI/MC
+                                          MCP73832T-2ACI/MC
+                                                                    AAK
+                                                                    AAL
+                                                                                                 25
+                                          MCP73832T-2ATI/MC         AAM
+                                          MCP73832T-2DCI/MC         AAP
+                                          MCP73832T-3ACI/MC         AAQ
+                                          MCP73832T-4ADI/MC         AAR
+                                          MCP73832T-5ACI/MC         AAS
+                                            Note: Applies to 8-Lead DFN
+
+
+
+
+               5-Lead SOT-23                      Device            Code
+                                                                                             Example
+                                          MCP73831T-2ACI/OT        KDNN
+                                          MCP73831T-2ATI/OT        KENN
+                                          MCP73831T-2DCI/OT        KFNN
+
+
+                                                                                         KD25
+                                          MCP73831T-3ACI/OT        KGNN
+
+          XXNN                            MCP73831T-4ADI/OT
+                                          MCP73831T-5ACI/OT
+                                                                   KHNN
+                                                                   KJNN
+                                          MCP73832T-2ACI/OT        KKNN
+                                          MCP73832T-2ATI/OT        KLNN
+                                          MCP73832T-2DCI/OT        KMNN
+                                          MCP73832T-3ACI/OT        KPNN
+                                          MCP73832T-4ADI/OT        KQNN
+                                          MCP73832T-5ACI/OT        KRNN
+                                          MCP73832T-2DFI/OT        LUNN
+                                            Note: Applies to 5-Lead SOT-23
+
+
+
+       Legend: XX...X      Customer-specific information
+               Y           Year code (last digit of calendar year)
+               YY          Year code (last 2 digits of calendar year)
+               WW          Week code (week of January 1 is week ‘01’)
+               NNN         Alphanumeric traceability code
+                   e3      Pb-free Compliant JEDEC® designator for Matte Tin (Sn)
+                  *        This package is Pb-free. The Pb-free JEDEC designator ( e3 )
+                           can be found on the outer packaging for this package.
+
+       Note:    In the event the full Microchip part number cannot be marked on one line, it will be carried over
+                to the next line, thus limiting the number of available characters for customer-specific
+                information.
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                             DS20001984H-page 19

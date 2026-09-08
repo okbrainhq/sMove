@@ -1,0 +1,23 @@
+refs,quantity,mpn,manufacturer,jlc,value,package,purpose,notes,board
+U1,1,ESP32-C3-MINI-1-N4,Espressif Systems,C2838502,ESP32-C3-MINI-1-N4,Espressif MINI-1 13.2x16.6mm,Wireless/native USB,N4 specifically; Standard Only/MSL3/X-ray; all-layer antenna keepout,main
+U4,1,AP2112K-3.3TRG1,Diodes Incorporated,C51118,AP2112K-3.3TRG1,SOT-25,Main 3.3V LDO,IN/EN from BQ OUT/SYS; partial battery range; thermal/burst qualification mandatory,main
+U6,1,BQ24074RGTR,Texas Instruments,C54313,BQ24074RGTR,VQFN-16 RGT 3x3mm + EP,4.2V power-path charger,USB100 fixed; OUT feeds LDO; default timers; 10k TS bias means NO cell-temperature sensing,main
+U8,1,USBLC6-2SC6,STMicroelectronics,C7519,USBLC6-2SC6,SOT-23-6,USB data/VBUS ESD,"Rail clamp to VBUS, not 3V3; no sustained overvoltage guarantee",main
+U9,1,"PESD5V0S2BT,215",Nexperia,C49338,"PESD5V0S2BT,215",SOT-23,CC1/CC2 ESD,"One dual array, not duplicate TVS layers",main
+J1,1,TYPE-C-31-M-12,Korean Hroparts Elec,C165948,TYPE-C-31-M-12,HRO USB-C 16-contact SMT with shell anchors,Single USB port,Native USB data plus charge input; no PD,main
+J2,1,S2B-PH-SM4-TB(LF)(SN),JST,C295747,S2B-PH-SM4-TB(LF)(SN),JST PH 2.0mm right-angle SMT,Protected-pack connection,Pin1 PACK_P; pin2 GND; verify mating polarity; 5.8mm height reserve,main
+SW2 SW3,2,TS-1088-AR02016,XUNPU,C720477,TS-1088-AR02016,4x3mm SMT,Reset and boot/user buttons,Verify contact-pair footprint mapping; preserve separate physical actions,main
+D1,1,LTST-C19HE1WT,Lite-On,C458749,LTST-C19HE1WT,1.6x1.6mm 4-pad RGB,RGB status,Common anode; 1k per cathode; low-current indication; off while charging,main
+R1 R2,2,0402WGF5101TCE,UNI-ROYAL(Uniroyal Elec),C25905,5.1k 1%,0402,USB-C Rd,Separate CC resistors; never join CC1 and CC2,main
+R3 R4,2,0402WGF220JTCE,UNI-ROYAL(Uniroyal Elec),C25092,22R 1%,0402,USB series damping,"Near MCU, one per data line; validate signal integrity",main
+R5 R14 R15,3,0402WGF1003TCE,UNI-ROYAL(Uniroyal Elec),C25741,100k 1%,0402,USB valid-power pull-up and battery ADC divider,R5 pulls BQ PGOOD to 3V3 for GPIO1; R14/R15 PACK_P/2 to GPIO0; no raw VBUS GPIO,main
+R7 R8 R9 R10 R23,5,0402WGF1002TCE,UNI-ROYAL(Uniroyal Elec),C25744,10k 1%,0402,EN and GPIO9/2/8 pulls; charger TS bias,"R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",main
+R11 R12 R13,3,0402WGF1001TCE,UNI-ROYAL(Uniroyal Elec),C11702,1k 1%,0402,RGB current limiting,No LED on boot-strapping pins,main
+R22,1,0402WGF4701TCE,UNI-ROYAL(Uniroyal Elec),C25900,4.7k 1%,0402,I2C pull-ups and charger ILIM,R16/R17 low side; R18/R19 high side; R22 ILIM-to-GND required even in fixed USB100 mode,main
+R21,1,0402WGF8201TCE,UNI-ROYAL(Uniroyal Elec),C25924,8.2k 1%,0402,BQ fast-charge programming,108.5mA nominal before input limiting; actual USB input <=100mA including system; validate qualified cell,main
+C1,1,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,4.7uF 16V X5R 10%,0603,VBUS bypass and 1.8V LDO input/output,Bias/stability gates; C5/C6 effective >=1uF; C1 USB attach/stability test,main
+C2 C13,2,CL21A476MQYNNNE,Samsung Electro-Mechanics,C16780,47uF 6.3V X5R 20%,0805,BQ BAT and SYS reservoirs,C2 PACK_P at 4.23V; C13 SYS at 4.5V max. Exact Samsung biased-capacitance screen closed; see FINAL-ELECTRICAL.md.,main
+C3,1,CL21A226MPQNNNE,Samsung Electro-Mechanics,C29277,22uF 10V X5R 20%,0805,3V3 reservoir at MCU/LDO output,Require >=10uF effective at 3.3V plus burst test; not a substitute for current capability,main
+C4 C11,2,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,100nF 16V X7R 10%,0402,"Local bypass, IMU REGOUT and ADC filter",C7 VDD; C8 VDDIO; C9 REGOUT; C11 battery ADC,main
+C10,1,CL05A105KA5NQNC,Samsung Electro-Mechanics,C52923,1uF 25V X5R 10%,0402,MCU EN reset RC,10k nominal RC ~10ms; bias tolerance/timing bench check,main
+J4,1,S4B-PH-SM4-TB(LF)(SN),JST,C265102,S4B-PH-SM4-TB(LF)(SN),JST PH 2.0mm 1x4 side-entry SMT,Reusable carrier interface,Main J4 / carrier J5; 1=3V3 2=GND 3=SDA 4=SCL; PHR-4 keyed housing; <=50mm straight-through harness; local variant/pitch/polarity/availability pending,main

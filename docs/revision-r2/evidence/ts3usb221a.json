@@ -1,0 +1,12 @@
+{
+  "id": "ts3usb221a",
+  "url": "https://www.ti.com/lit/ds/symlink/ts3usb221a.pdf",
+  "retrieved_at_utc": "2026-09-08T00:20:52.906374+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/ts3usb221a.body.gz",
+  "final_url": "https://www.ti.com/lit/ds/symlink/ts3usb221a.pdf",
+  "content_type": "application/pdf",
+  "sha256": "cccebf8c10df605133d24bd3ab3abeb97a19dbf539d3465b53562fc19f7a242e",
+  "bytes": 1462357,
+  "is_pdf": true
+}

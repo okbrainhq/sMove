@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "product": "FreeCAD",
+  "version": "1.1.3",
+  "platform": "Linux-x86_64",
+  "distribution": "Official FreeCAD AppImage (bundled Python 3.11)",
+  "official_download_page": "https://www.freecad.org/downloads.php",
+  "release_url": "https://github.com/FreeCAD/FreeCAD/releases/tag/1.1.3",
+  "release_api_url": "https://api.github.com/repos/FreeCAD/FreeCAD/releases/tags/1.1.3",
+  "asset_id": 489243034,
+  "filename": "FreeCAD_1.1.3-Linux-x86_64-py311.AppImage",
+  "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-Linux-x86_64-py311.AppImage",
+  "size_bytes": 820795896,
+  "sha256": "3a853eb69ee595f779f2255dbf80a765926981d8ff68903cefee4dfb03a8f5ef",
+  "checksum_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-Linux-x86_64-py311.AppImage-SHA256.txt",
+  "checksum_file_sha256": "a6b1dacc0304ad37a280fb39a6947bcb6f94c984dfb821d019296cd8efe3048b",
+  "runtime_relative_path": ".tools/freecad/1.1.3/squashfs-root",
+  "trust_note": "Pinned to official HTTPS release metadata and publisher SHA256 sidecar. Checksum equality is integrity/provenance evidence, not an independently verified digital signature. No automatic latest-version substitution."
+}

@@ -1,0 +1,81 @@
+Primary archive: docs/research/raw/icm20948-ds-mirror.body.gz
+Archive SHA256: cb6305abf640c42290f6924495c8445e91bd9777a9b898f72ecf5d334951f80f
+
+PIN NUMBER           PIN NAME                                     PIN DESCRIPTION
+                       7              AUX_CL           I2C Master serial clock, for connecting to external sensors
+                       8               VDDIO           Digital I/O supply voltage
+                       9             AD0 / SDO         I2C Slave Address LSB (AD0); SPI serial data output (SDO)
+                      10              REGOUT           Regulator filter capacitor connection
+                      11               FSYNC           Frame synchronization digital input. Connect to GND if unused
+                      12                INT1           Interrupt 1
+                      13                VDD            Power supply voltage
+                      18                GND            Power supply ground
+                      19                RESV           Reserved. Do not connect.
+                      20                RESV           Reserved. Connect to GND.
+                      21              AUX_DA           I2C master serial data, for connecting to external sensors
+                      22                 nCS           Chip select (SPI mode only)
+                      23             SCL / SCLK        I2C serial clock (SCL); SPI serial clock (SCLK)
+                      24             SDA / SDI         I2C serial data (SDA); SPI serial data input (SDI)
+                1 – 6, 14 - 17           NC            Do not connect
+
+                                                      Table 10. Signal Descriptions
+NOTE: Power up with SCL/SCLK and nCS pins held low is not a supported use case. In case this power up approach is used, software
+reset is required using the PWR_MGMT_1 register, prior to initialization.
+
+
+
+
+                                                        SDA / SDI   SCL / SCLK               AUX_DA
+                                                                                 nCS                   RESV     RESV
+
+                                                        24          23           22          21        20       19
+
+                                           NC     1                                                                    18 GND
+
+                                           NC     2                                                                    17 NC
+
+                                           NC     3                                                                    16 NC
+                                                                    ICM-20948
+                                           NC     4                                                                    15 NC
+
+                                           NC     5                                                                    14 NC
+
+                                           NC     6                                                                    13 VDD
+
+                                                         7           8           9           10        11       12
+
+
+
+                                                          AUX_CL
+                                                                      VDDIO
+                                                                                 SDO / AD0
+                                                                                              REGOUT
+                                                                                                                INT1
+                                                                                                        FSYNC
+
+
+
+                                 Figure 3. Pin out Diagram for ICM-20948 3 mm x 3 mm x 1 mm QFN
+
+
+
+
+Document Number: DS-000189                             Page 19 of 89
+Revision: 1.3
+                                                                                                                                                                                                                             ICM-20948
+4.2      TYPICAL OPERATING CIRCUIT
+                                                                                                                                                 nCS
+                                                         VDDIO
+          SCL                                                                                                                                  SCLK
+
+
+
+                                            SCL / SCLK                                                                                                                            SCL / SCLK
+          SDA                                                                                                                                   SDI
+
+
+                               SDA / SDI                  nCS          AUX_DA           RESV       RESV                                                              SDA / SDI                 nCS          AUX_DA           RESV       RESV
+
+                                       24          23       22              21            20      19                                                                         24          23      22              21            20      19
+
+                     NC   1                                                                                    GND                                         NC   1              

@@ -1,0 +1,17 @@
+# Project-local portable CAD runtime, downloads and isolated user configuration
+/.tools/
+
+__pycache__/
+*.py[cod]
+*.kicad_prl
+*.FCBak
+
+/.cache/
+/.cleanup/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+!PCB/*/dist/
+!PCB/*/dist/**
+!housing/dist/
+!housing/dist/**

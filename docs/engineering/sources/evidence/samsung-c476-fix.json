@@ -1,0 +1,19 @@
+{
+  "id": "samsung-c476-fix",
+  "url": "https://product.samsungsem.com/mlcc/CL21A476MQYNNN.do",
+  "request_method": "GET",
+  "request_user_agent": "Mozilla/5.0 (compatible; sMove-engineering-preflight/1.0; public-document-research)",
+  "started_at_utc": "2026-09-07T20:38:00.626051Z",
+  "http_status": 200,
+  "final_url": "https://product.samsungsem.com/mlcc/CL21A476MQYNNN.do",
+  "headers": {
+    "Date": "Mon, 07 Sep 2026 20:38:01 GMT",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "retrieved_at_utc": "2026-09-07T20:38:01.957020Z",
+  "sha256_body": "effb4aea6851e1105b954f62d4f6efd3590b0e43283b6cdd88e552d5c1a64430",
+  "body_bytes": 180703,
+  "raw_response": "raw/samsung-c476-fix.body.gz",
+  "text_response": "extracted/samsung-c476-fix.txt",
+  "text_parsing_method": "Python html.parser; script/style excluded; text nodes joined with newline"
+}

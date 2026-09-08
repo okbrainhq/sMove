@@ -1,0 +1,23 @@
+{
+  "id": "pesd5v0s2bt-ds",
+  "url": "https://assets.nexperia.com/documents/data-sheet/PESD5V0S2BT.pdf",
+  "request_method": "GET",
+  "request_user_agent": "Mozilla/5.0 (compatible; sMove-engineering-preflight/1.0; public-document-research)",
+  "started_at_utc": "2026-09-07T19:10:04.855652Z",
+  "http_status": 200,
+  "final_url": "https://assets.nexperia.com/documents/data-sheet/PESD5V0S2BT.pdf",
+  "headers": {
+    "Content-Type": "application/pdf",
+    "ETag": "\"67121292-336e3\"",
+    "Last-Modified": "Fri, 18 Oct 2024 07:47:30 GMT",
+    "Cache-Control": "max-age=39540",
+    "Date": "Mon, 07 Sep 2026 19:10:05 GMT"
+  },
+  "retrieved_at_utc": "2026-09-07T19:10:05.891422Z",
+  "sha256_body": "3dfa7d4ff7182ccb3e7303a13f06324d11dd232a575d29cf20c7edf5673650b6",
+  "body_bytes": 210659,
+  "raw_response": "raw/pesd5v0s2bt-ds.body.gz",
+  "pdf_text_exit_code": 0,
+  "text_response": "extracted/pesd5v0s2bt-ds.txt",
+  "text_parsing_method": "pdftotext -layout - -"
+}

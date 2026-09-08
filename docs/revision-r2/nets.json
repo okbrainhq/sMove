@@ -1,0 +1,571 @@
+{
+  "status": "architecture contract only; not a KiCad netlist or ERC approval",
+  "fitted_count": 49,
+  "main_fitted": 35,
+  "carrier_fitted": 14,
+  "connector_contract": "PH4 2.0mm <=50mm 1:1; pin1 3V3,2 GND,3 SDA,4 SCL",
+  "harness": [
+    {
+      "from": "J4.1",
+      "to": "J5.1"
+    },
+    {
+      "from": "J4.2",
+      "to": "J5.2"
+    },
+    {
+      "from": "J4.3",
+      "to": "J5.3"
+    },
+    {
+      "from": "J4.4",
+      "to": "J5.4"
+    }
+  ],
+  "gates": [
+    "battery and supervised TS-bypass policy",
+    "BQ legacy pin7/8 conflict independently resolved before layout",
+    "footprints/capacitor bias/load steps",
+    "USB100-only ROM/flash and host-off/ROM data behavior",
+    "carrier harness, mechanical fit, axes/RF"
+  ],
+  "components": {
+    "U1": {
+      "board": "main",
+      "mpn": "ESP32-C3-MINI-1-N4",
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "3V3_MAIN",
+        "4": null,
+        "5": "STRAP2",
+        "6": null,
+        "7": null,
+        "8": "MCU_EN",
+        "9": null,
+        "10": null,
+        "11": "GND",
+        "12": "BAT_ADC",
+        "13": "USB_POWER_N",
+        "14": "GND",
+        "15": null,
+        "16": "LED_B",
+        "17": null,
+        "18": "SCL_HOST",
+        "19": "SDA_HOST",
+        "20": "LED_R",
+        "21": "LED_G",
+        "22": "STRAP8",
+        "23": "BOOT",
+        "24": null,
+        "25": null,
+        "26": "USB_DM_MCU",
+        "27": "USB_DP_MCU",
+        "28": null,
+        "29": null,
+        "30": "UART_RX",
+        "31": "UART_TX",
+        "32": null,
+        "33": null,
+        "34": null,
+        "35": null,
+        "36": "GND",
+        "37": "GND",
+        "38": "GND",
+        "39": "GND",
+        "40": "GND",
+        "41": "GND",
+        "42": "GND",
+        "43": "GND",
+        "44": "GND",
+        "45": "GND",
+        "46": "GND",
+        "47": "GND",
+        "48": "GND",
+        "49": "GND",
+        "50": "GND",
+        "51": "GND",
+        "52": "GND",
+        "53": "GND"
+      }
+    },
+    "U2": {
+      "board": "imu-carrier",
+      "mpn": "ICM-20948",
+      "pins": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": "1V8_IMU",
+        "9": "GND",
+        "10": "IMU_REGOUT",
+        "11": "GND",
+        "12": null,
+        "13": "1V8_IMU",
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": "GND",
+        "19": null,
+        "20": "GND",
+        "21": null,
+        "22": "1V8_IMU",
+        "23": "SCL_1V8",
+        "24": "SDA_1V8"
+      }
+    },
+    "U3": {
+      "board": "imu-carrier",
+      "mpn": "PCA9306DCUR",
+      "pins": {
+        "1": "GND",
+        "2": "1V8_IMU",
+        "3": "SCL_1V8",
+        "4": "SDA_1V8",
+        "5": "SDA_3V3",
+        "6": "SCL_3V3",
+        "7": "I2C_BIAS",
+        "8": "I2C_BIAS"
+      }
+    },
+    "U4": {
+      "board": "main",
+      "mpn": "AP2112K-3.3TRG1",
+      "pins": {
+        "1": "SYS",
+        "2": "GND",
+        "3": "SYS",
+        "4": null,
+        "5": "3V3_MAIN"
+      }
+    },
+    "U5": {
+      "board": "imu-carrier",
+      "mpn": "AP2112K-1.8TRG1",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "GND",
+        "3": "3V3_IMU_IN",
+        "4": null,
+        "5": "1V8_IMU"
+      }
+    },
+    "U6": {
+      "board": "main",
+      "mpn": "BQ24074RGTR",
+      "pins": {
+        "1": "TS_NO_CELL_SENSING",
+        "2": "PACK_P",
+        "3": "PACK_P",
+        "4": "GND",
+        "5": "GND",
+        "6": "GND",
+        "7": "USB_POWER_N",
+        "8": "GND",
+        "9": null,
+        "10": "SYS",
+        "11": "SYS",
+        "12": "CHG_ILIM",
+        "13": "VBUS",
+        "14": null,
+        "15": null,
+        "16": "CHG_ISET",
+        "17": "GND"
+      },
+      "critical_note": "Primary TI map:7=PGOOD,8=VSS; old design.py reverses them. Confirm symbol/land independently. TMR open keeps default timers; no TD pin on this variant."
+    },
+    "U8": {
+      "board": "main",
+      "mpn": "USBLC6-2SC6",
+      "pins": {
+        "1": "USB_DM",
+        "2": "GND",
+        "3": "USB_DP",
+        "4": "USB_DP",
+        "5": "VBUS",
+        "6": "USB_DM"
+      }
+    },
+    "U9": {
+      "board": "main",
+      "mpn": "PESD5V0S2BT,215",
+      "pins": {
+        "1": "CC1",
+        "2": "CC2",
+        "3": "GND"
+      }
+    },
+    "J1": {
+      "board": "main",
+      "mpn": "TYPE-C-31-M-12",
+      "pins": {
+        "A1": "GND",
+        "A4": "VBUS",
+        "A5": "CC1",
+        "A6": "USB_DP",
+        "A7": "USB_DM",
+        "A8": null,
+        "A9": "VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "VBUS",
+        "B5": "CC2",
+        "B6": "USB_DP",
+        "B7": "USB_DM",
+        "B8": null,
+        "B9": "VBUS",
+        "B12": "GND",
+        "S1": "GND"
+      },
+      "footprint_gate": "Preserve every duplicated physical contact and all shell anchors; S1 is logical shell net."
+    },
+    "J2": {
+      "board": "main",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "pins": {
+        "1": "PACK_P",
+        "2": "GND",
+        "MP": "GND"
+      }
+    },
+    "J4": {
+      "board": "main",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "GND",
+        "3": "SDA_HOST",
+        "4": "SCL_HOST",
+        "MP": "GND"
+      }
+    },
+    "J5": {
+      "board": "imu-carrier",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "GND",
+        "3": "SDA_3V3",
+        "4": "SCL_3V3",
+        "MP": "GND"
+      }
+    },
+    "J3": {
+      "board": "main",
+      "mpn": null,
+      "pins": {
+        "1": "GND",
+        "2": "UART_RX",
+        "3": "UART_TX",
+        "4": "MCU_EN",
+        "5": "BOOT"
+      },
+      "population": "unpopulated TH debug pads; no power input"
+    },
+    "SW2": {
+      "board": "main",
+      "mpn": "TS-1088-AR02016",
+      "pins": {
+        "contact_a": "MCU_EN",
+        "contact_b": "GND"
+      },
+      "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers."
+    },
+    "SW3": {
+      "board": "main",
+      "mpn": "TS-1088-AR02016",
+      "pins": {
+        "contact_a": "BOOT",
+        "contact_b": "GND"
+      },
+      "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers."
+    },
+    "D1": {
+      "board": "main",
+      "mpn": "LTST-C19HE1WT",
+      "pins": {
+        "1": "LED_R_K",
+        "2": "LED_G_K",
+        "3": "LED_B_K",
+        "4": "3V3_MAIN"
+      }
+    },
+    "R1": {
+      "board": "main",
+      "mpn": "0402WGF5101TCE",
+      "pins": {
+        "1": "CC1",
+        "2": "GND"
+      }
+    },
+    "R2": {
+      "board": "main",
+      "mpn": "0402WGF5101TCE",
+      "pins": {
+        "1": "CC2",
+        "2": "GND"
+      }
+    },
+    "R3": {
+      "board": "main",
+      "mpn": "0402WGF220JTCE",
+      "pins": {
+        "1": "USB_DM",
+        "2": "USB_DM_MCU"
+      }
+    },
+    "R4": {
+      "board": "main",
+      "mpn": "0402WGF220JTCE",
+      "pins": {
+        "1": "USB_DP",
+        "2": "USB_DP_MCU"
+      }
+    },
+    "R5": {
+      "board": "main",
+      "mpn": "0402WGF1003TCE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "USB_POWER_N"
+      }
+    },
+    "R7": {
+      "board": "main",
+      "mpn": "0402WGF1002TCE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "MCU_EN"
+      }
+    },
+    "R8": {
+      "board": "main",
+      "mpn": "0402WGF1002TCE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "BOOT"
+      }
+    },
+    "R9": {
+      "board": "main",
+      "mpn": "0402WGF1002TCE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "STRAP2"
+      }
+    },
+    "R10": {
+      "board": "main",
+      "mpn": "0402WGF1002TCE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "STRAP8"
+      }
+    },
+    "R11": {
+      "board": "main",
+      "mpn": "0402WGF1001TCE",
+      "pins": {
+        "1": "LED_R",
+        "2": "LED_R_K"
+      }
+    },
+    "R12": {
+      "board": "main",
+      "mpn": "0402WGF1001TCE",
+      "pins": {
+        "1": "LED_G",
+        "2": "LED_G_K"
+      }
+    },
+    "R13": {
+      "board": "main",
+      "mpn": "0402WGF1001TCE",
+      "pins": {
+        "1": "LED_B",
+        "2": "LED_B_K"
+      }
+    },
+    "R14": {
+      "board": "main",
+      "mpn": "0402WGF1003TCE",
+      "pins": {
+        "1": "PACK_P",
+        "2": "BAT_ADC"
+      }
+    },
+    "R15": {
+      "board": "main",
+      "mpn": "0402WGF1003TCE",
+      "pins": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      }
+    },
+    "R16": {
+      "board": "imu-carrier",
+      "mpn": "0402WGF4701TCE",
+      "pins": {
+        "1": "1V8_IMU",
+        "2": "SCL_1V8"
+      }
+    },
+    "R17": {
+      "board": "imu-carrier",
+      "mpn": "0402WGF4701TCE",
+      "pins": {
+        "1": "1V8_IMU",
+        "2": "SDA_1V8"
+      }
+    },
+    "R18": {
+      "board": "imu-carrier",
+      "mpn": "0402WGF4701TCE",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "SCL_3V3"
+      }
+    },
+    "R19": {
+      "board": "imu-carrier",
+      "mpn": "0402WGF4701TCE",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "SDA_3V3"
+      }
+    },
+    "R20": {
+      "board": "imu-carrier",
+      "mpn": "0402WGF2003TCE",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "I2C_BIAS"
+      }
+    },
+    "R21": {
+      "board": "main",
+      "mpn": "0402WGF8201TCE",
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      }
+    },
+    "R22": {
+      "board": "main",
+      "mpn": "0402WGF4701TCE",
+      "pins": {
+        "1": "CHG_ILIM",
+        "2": "GND"
+      }
+    },
+    "R23": {
+      "board": "main",
+      "mpn": "0402WGF1002TCE",
+      "pins": {
+        "1": "TS_NO_CELL_SENSING",
+        "2": "GND"
+      }
+    },
+    "C1": {
+      "board": "main",
+      "mpn": "CL10A475KO8NNNC",
+      "pins": {
+        "1": "VBUS",
+        "2": "GND"
+      }
+    },
+    "C2": {
+      "board": "main",
+      "mpn": "CL21A476MQYNNNE",
+      "pins": {
+        "1": "PACK_P",
+        "2": "GND"
+      }
+    },
+    "C3": {
+      "board": "main",
+      "mpn": "CL21A226MPQNNNE",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "GND"
+      }
+    },
+    "C4": {
+      "board": "main",
+      "mpn": "CL05B104KO5NNNC",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "GND"
+      }
+    },
+    "C5": {
+      "board": "imu-carrier",
+      "mpn": "CL10A475KO8NNNC",
+      "pins": {
+        "1": "3V3_IMU_IN",
+        "2": "GND"
+      }
+    },
+    "C6": {
+      "board": "imu-carrier",
+      "mpn": "CL10A475KO8NNNC",
+      "pins": {
+        "1": "1V8_IMU",
+        "2": "GND"
+      }
+    },
+    "C7": {
+      "board": "imu-carrier",
+      "mpn": "CL05B104KO5NNNC",
+      "pins": {
+        "1": "1V8_IMU",
+        "2": "GND"
+      }
+    },
+    "C8": {
+      "board": "imu-carrier",
+      "mpn": "CL05B104KO5NNNC",
+      "pins": {
+        "1": "1V8_IMU",
+        "2": "GND"
+      }
+    },
+    "C9": {
+      "board": "imu-carrier",
+      "mpn": "CL05B104KO5NNNC",
+      "pins": {
+        "1": "IMU_REGOUT",
+        "2": "GND"
+      }
+    },
+    "C10": {
+      "board": "main",
+      "mpn": "CL05A105KA5NQNC",
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      }
+    },
+    "C11": {
+      "board": "main",
+      "mpn": "CL05B104KO5NNNC",
+      "pins": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      }
+    },
+    "C13": {
+      "board": "main",
+      "mpn": "CL21A476MQYNNNE",
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      }
+    }
+  }
+}

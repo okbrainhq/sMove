@@ -1,0 +1,64 @@
+(footprint "H2_Locator"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "H2"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9d2b48b4-1b8e-4479-b42d-1770df71cdb5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "NYLON_LOCATOR_NPTH"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e0539681-9b87-4881-a34b-f70a63ac339f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "23db3037-6af7-40a0-b3e0-fb16a275e06b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd895400-2edf-4f57-ba6f-3682c2901b51")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(pad "" np_thru_hole oval
+		(at 0 0)
+		(size 2.7 2.2)
+		(drill oval 2.7 2.2)
+		(layers "*.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "0fcf42dd-ff4c-4bf2-accb-4ffac9cd4f15")
+	)
+	(embedded_fonts no)
+)

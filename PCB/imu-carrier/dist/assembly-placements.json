@@ -1,0 +1,793 @@
+{
+  "frame": "mm, top view, native auxiliary origin; X right, Y up; native footprint anchor/centroid, CCW angle. No guessed vendor rotation offsets.",
+  "aux_origin_native_mm": [
+    100.0,
+    120.0
+  ],
+  "parts": [
+    {
+      "reference": "C5",
+      "mpn": "CL10A475KO8NNNC",
+      "jlc": "C19666",
+      "footprint": "C_0603_1608Metric",
+      "value": "4.7u / 16V X5R",
+      "xy_mm": [
+        0.95,
+        11.9
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        0.95,
+        11.125
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            0.95,
+            11.125
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.95,
+            12.675
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "C6",
+      "mpn": "CL10A475KO8NNNC",
+      "jlc": "C19666",
+      "footprint": "C_0603_1608Metric",
+      "value": "4.7u / 16V X5R",
+      "xy_mm": [
+        5.0,
+        14.3
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        4.225,
+        14.3
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            4.225,
+            14.3
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            5.775,
+            14.3
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "C7",
+      "mpn": "CL05B104KO5NNNC",
+      "jlc": "C1525",
+      "footprint": "C_0402_1005Metric",
+      "value": "100n / 16V",
+      "xy_mm": [
+        12.6,
+        15.0
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.12,
+        15.0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.12,
+            15.0
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            13.08,
+            15.0
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "C8",
+      "mpn": "CL05B104KO5NNNC",
+      "jlc": "C1525",
+      "footprint": "C_0402_1005Metric",
+      "value": "100n / 16V",
+      "xy_mm": [
+        7.6,
+        13.4
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        7.12,
+        13.4
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            7.12,
+            13.4
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.08,
+            13.4
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "C9",
+      "mpn": "CL05B104KO5NNNC",
+      "jlc": "C1525",
+      "footprint": "C_0402_1005Metric",
+      "value": "100n / 16V",
+      "xy_mm": [
+        9.7,
+        13.05
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        9.22,
+        13.05
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            9.22,
+            13.05
+          ],
+          "net": "/IMU_REGOUT"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            10.18,
+            13.05
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "J5",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "jlc": "C265102",
+      "footprint": "JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal",
+      "value": "S4B-PH-SM4-TB(LF)(SN)",
+      "xy_mm": [
+        9.0,
+        4.9
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        6.0,
+        7.75
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            6.0,
+            7.75
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.0,
+            7.75
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            10.0,
+            7.75
+          ],
+          "net": "/SDA_3V3"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            12.0,
+            7.75
+          ],
+          "net": "/SCL_3V3"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            3.65,
+            2.0
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            14.35,
+            2.0
+          ],
+          "net": "/GND"
+        }
+      ]
+    },
+    {
+      "reference": "R16",
+      "mpn": "0402WGF4701TCE",
+      "jlc": "C25900",
+      "footprint": "R_0402_1005Metric",
+      "value": "4.7k 1%",
+      "xy_mm": [
+        14.7,
+        13.9
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        14.19,
+        13.9
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            14.19,
+            13.9
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            15.21,
+            13.9
+          ],
+          "net": "/SCL_1V8"
+        }
+      ]
+    },
+    {
+      "reference": "R17",
+      "mpn": "0402WGF4701TCE",
+      "jlc": "C25900",
+      "footprint": "R_0402_1005Metric",
+      "value": "4.7k 1%",
+      "xy_mm": [
+        14.7,
+        15.2
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        14.19,
+        15.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            14.19,
+            15.2
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            15.21,
+            15.2
+          ],
+          "net": "/SDA_1V8"
+        }
+      ]
+    },
+    {
+      "reference": "R18",
+      "mpn": "0402WGF4701TCE",
+      "jlc": "C25900",
+      "footprint": "R_0402_1005Metric",
+      "value": "4.7k 1%",
+      "xy_mm": [
+        8.8,
+        10.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        8.29,
+        10.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            8.29,
+            10.6
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            9.31,
+            10.6
+          ],
+          "net": "/SCL_3V3"
+        }
+      ]
+    },
+    {
+      "reference": "R19",
+      "mpn": "0402WGF4701TCE",
+      "jlc": "C25900",
+      "footprint": "R_0402_1005Metric",
+      "value": "4.7k 1%",
+      "xy_mm": [
+        8.15,
+        11.8
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        7.64,
+        11.8
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            7.64,
+            11.8
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.66,
+            11.8
+          ],
+          "net": "/SDA_3V3"
+        }
+      ]
+    },
+    {
+      "reference": "R20",
+      "mpn": "0402WGF2003TCE",
+      "jlc": "C25764",
+      "footprint": "R_0402_1005Metric",
+      "value": "200k 1%",
+      "xy_mm": [
+        16.4,
+        11.7
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        16.4,
+        11.19
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            16.4,
+            11.19
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            16.4,
+            12.21
+          ],
+          "net": "/I2C_BIAS"
+        }
+      ]
+    },
+    {
+      "reference": "U2",
+      "mpn": "ICM-20948",
+      "jlc": "C726001",
+      "footprint": "InvenSense_QFN-24_3x3mm_P0.4mm",
+      "value": "ICM-20948",
+      "xy_mm": [
+        9.5,
+        16.2
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        8.0,
+        17.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            8.0,
+            17.2
+          ],
+          "net": "unconnected-(U2-NC-Pad1)"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.0,
+            16.8
+          ],
+          "net": "unconnected-(U2-NC-Pad2)"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            8.0,
+            16.4
+          ],
+          "net": "unconnected-(U2-NC-Pad3)"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            8.0,
+            16.0
+          ],
+          "net": "unconnected-(U2-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            8.0,
+            15.6
+          ],
+          "net": "unconnected-(U2-NC-Pad5)"
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            8.0,
+            15.2
+          ],
+          "net": "unconnected-(U2-NC-Pad6)"
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            8.5,
+            14.7
+          ],
+          "net": "unconnected-(U2-AUX_CL-Pad7)"
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            8.9,
+            14.7
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            9.3,
+            14.7
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            9.7,
+            14.7
+          ],
+          "net": "/IMU_REGOUT"
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            10.1,
+            14.7
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "12",
+          "xy_mm": [
+            10.5,
+            14.7
+          ],
+          "net": "unconnected-(U2-INT1-Pad12)"
+        },
+        {
+          "number": "13",
+          "xy_mm": [
+            11.0,
+            15.2
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "14",
+          "xy_mm": [
+            11.0,
+            15.6
+          ],
+          "net": "unconnected-(U2-NC-Pad14)"
+        },
+        {
+          "number": "15",
+          "xy_mm": [
+            11.0,
+            16.0
+          ],
+          "net": "unconnected-(U2-NC-Pad15)"
+        },
+        {
+          "number": "16",
+          "xy_mm": [
+            11.0,
+            16.4
+          ],
+          "net": "unconnected-(U2-NC-Pad16)"
+        },
+        {
+          "number": "17",
+          "xy_mm": [
+            11.0,
+            16.8
+          ],
+          "net": "unconnected-(U2-NC-Pad17)"
+        },
+        {
+          "number": "18",
+          "xy_mm": [
+            11.0,
+            17.2
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "19",
+          "xy_mm": [
+            10.5,
+            17.7
+          ],
+          "net": "unconnected-(U2-RESV_NC-Pad19)"
+        },
+        {
+          "number": "20",
+          "xy_mm": [
+            10.1,
+            17.7
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "21",
+          "xy_mm": [
+            9.7,
+            17.7
+          ],
+          "net": "unconnected-(U2-AUX_DA-Pad21)"
+        },
+        {
+          "number": "22",
+          "xy_mm": [
+            9.3,
+            17.7
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "23",
+          "xy_mm": [
+            8.9,
+            17.7
+          ],
+          "net": "/SCL_1V8"
+        },
+        {
+          "number": "24",
+          "xy_mm": [
+            8.5,
+            17.7
+          ],
+          "net": "/SDA_1V8"
+        }
+      ]
+    },
+    {
+      "reference": "U3",
+      "mpn": "PCA9306DCUR",
+      "jlc": "C33196",
+      "footprint": "PCA9306_DCU0008A",
+      "value": "PCA9306DCUR",
+      "xy_mm": [
+        12.9,
+        11.7
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        11.35,
+        12.45
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            11.35,
+            12.45
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            11.35,
+            11.95
+          ],
+          "net": "/1V8_IMU"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            11.35,
+            11.45
+          ],
+          "net": "/SCL_1V8"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            11.35,
+            10.95
+          ],
+          "net": "/SDA_1V8"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            14.45,
+            10.95
+          ],
+          "net": "/SDA_3V3"
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            14.45,
+            11.45
+          ],
+          "net": "/SCL_3V3"
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            14.45,
+            11.95
+          ],
+          "net": "/I2C_BIAS"
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            14.45,
+            12.45
+          ],
+          "net": "/I2C_BIAS"
+        }
+      ]
+    },
+    {
+      "reference": "U5",
+      "mpn": "AP2112K-1.8TRG1",
+      "jlc": "C176944",
+      "footprint": "SOT-23-5",
+      "value": "AP2112K-1.8TRG1",
+      "xy_mm": [
+        3.8,
+        11.7
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        2.6625,
+        12.65
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            2.6625,
+            12.65
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            2.6625,
+            11.7
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            2.6625,
+            10.75
+          ],
+          "net": "/3V3_IMU_IN"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            4.9375,
+            10.75
+          ],
+          "net": "unconnected-(U5-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            4.9375,
+            12.65
+          ],
+          "net": "/1V8_IMU"
+        }
+      ]
+    }
+  ]
+}

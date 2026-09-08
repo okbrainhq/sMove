@@ -1,0 +1,12 @@
+{
+  "id": "js202",
+  "url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_C-K-JS202011SCQN_C221666.pdf",
+  "retrieved_at_utc": "2026-09-08T00:22:57.435577+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/js202.body.gz",
+  "final_url": "https://www.lcsc.com/datasheet/C221666.pdf",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "f3d051e63c6b533bf31243c233b831c4a0fe3f000edf01454fe9f59a4406fb6d",
+  "bytes": 51927,
+  "is_pdf": false
+}

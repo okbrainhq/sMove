@@ -1,0 +1,21 @@
+{
+  "id": "usblc6-ds2",
+  "url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf",
+  "request_method": "GET",
+  "request_user_agent": "Mozilla/5.0 (compatible; sMove-engineering-preflight/1.0; public-document-research)",
+  "started_at_utc": "2026-09-07T19:12:38.856010Z",
+  "http_status": 200,
+  "final_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf",
+  "headers": {
+    "Content-Type": "application/pdf",
+    "Content-Encoding": "",
+    "Date": "Mon, 07 Sep 2026 19:12:39 GMT"
+  },
+  "retrieved_at_utc": "2026-09-07T19:12:40.286703Z",
+  "sha256_body": "8ba7ab4ec1781b7f6052f5999a2304bd611c0ed2b5e8f36ffa5092552932a42e",
+  "body_bytes": 224255,
+  "raw_response": "raw/usblc6-ds2.body.gz",
+  "pdf_text_exit_code": 0,
+  "text_response": "extracted/usblc6-ds2.txt",
+  "text_parsing_method": "pdftotext -layout - -"
+}

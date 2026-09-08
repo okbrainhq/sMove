@@ -1,0 +1,6 @@
+(version 1)
+# Explicit intended 0.15mm design clearance; router uses 0.155mm. No exclusions.
+(rule "R2 design copper clearance" (constraint clearance (min 0.15mm)))
+(rule "No other component in antenna keepout"
+ (condition "A.Type == 'Footprint' && A.Reference != 'U1' && A.intersectsArea('ANTENNA_ALL_LAYERS')")
+ (constraint disallow footprint))

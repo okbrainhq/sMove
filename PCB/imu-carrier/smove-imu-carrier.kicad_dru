@@ -1,0 +1,4 @@
+(version 1)
+(rule "Carrier fabrication 0.15mm unlike-net copper clearance"
+  (condition "A.NetName != B.NetName")
+  (constraint clearance (min 0.15mm)))

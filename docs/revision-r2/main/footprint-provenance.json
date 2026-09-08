@@ -1,0 +1,77 @@
+{
+  "BQ24074_RGT": {
+    "source": "hardware/smove.pretty/BQ24074_RGT.kicad_mod",
+    "source_sha256": "7b6bac33555489a98d662a7c2a92b2425fcfff5d5b0656bb1d5586146f89f0c5",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "C_0402_1005Metric": {
+    "source": "/usr/share/kicad/footprints/Capacitor_SMD.pretty/C_0402_1005Metric.kicad_mod",
+    "source_sha256": "88232454c8ab84afbcda21beeeccc8a2b0b745b15c0515a83e3d56ff9be2d412",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "C_0603_1608Metric": {
+    "source": "/usr/share/kicad/footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+    "source_sha256": "86a101f1dbc512aa9a73532f4b837db141edd5bded65094b0d13dca3fc3f6c68",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "C_0805_2012Metric": {
+    "source": "/usr/share/kicad/footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod",
+    "source_sha256": "1e9871a31457c9d9932d22edb68ed91c275a6270066239b08d192eead990c301",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "Debug_5": {
+    "source": "hardware/smove.pretty/Debug_5.kicad_mod",
+    "source_sha256": "f6f320861156df101e973710660d666163d4c193035da7d38d666669004e91aa",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "ESP32-C3-MINI-1": {
+    "source": "hardware/smove.pretty/ESP32-C3-MINI-1.kicad_mod",
+    "source_sha256": "7946c7fb7f8357b9eee004abbff04e5ef765e09f7df28723f6d686284a45a98f",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal": {
+    "source": "/usr/share/kicad/footprints/Connector_JST.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+    "source_sha256": "241f1b2109c9276e6e6f3062f0b6fd23d0681ef0bb50034bf817bf20df2a7a4d",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal": {
+    "source": "/usr/share/kicad/footprints/Connector_JST.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+    "source_sha256": "3486f30edc8e25e161e93fe692ee41f21b7efb74e30b037b744be6f91bde497a",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "LED_LiteOn_LTST-C19HE1WT": {
+    "source": "/usr/share/kicad/footprints/LED_SMD.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod",
+    "source_sha256": "dc814470443cea7ba65535778d919ea029fba0af815d485dabcc1f7171907fcf",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "R_0402_1005Metric": {
+    "source": "/usr/share/kicad/footprints/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod",
+    "source_sha256": "3d0936db48c6ab489699460947c0404419ffeb7b715a627460c54e101212ce02",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "SOT-23": {
+    "source": "/usr/share/kicad/footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+    "source_sha256": "5fbcd830e62b2a7096210c50f4507b6110c79a844412200da276e0ee2e27ed14",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "SOT-23-5": {
+    "source": "/usr/share/kicad/footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod",
+    "source_sha256": "2a5c9e030fb192cd2393b5f95872fe796deb29ae7570c83050e19f7b78ceea71",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "SOT-23-6": {
+    "source": "/usr/share/kicad/footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod",
+    "source_sha256": "84743605d3330f6c4825d699837b02d3db0b862006bc4e2d57ee55f55eec54a0",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "TS1088": {
+    "source": "hardware/smove.pretty/TS1088.kicad_mod",
+    "source_sha256": "84094b58b41e0c6b318ccc81bd85f1ee8c8ff0ae63cff30b06f781a6a50237a8",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  },
+  "USB_C_Receptacle_HRO_TYPE-C-31-M-12": {
+    "source": "/usr/share/kicad/footprints/Connector_USB.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+    "source_sha256": "8baa7a751db21e6ee93e037d73d5d48b3d449d731edff1d085272ae34ab1bf93",
+    "note": "Geometry copied only; no legacy nets, symbols, approvals or release hashes."
+  }
+}

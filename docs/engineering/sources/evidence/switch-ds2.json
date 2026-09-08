@@ -1,0 +1,21 @@
+{
+  "id": "switch-ds2",
+  "url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_XUNPU-TS-1088-AR02016_C720477.pdf",
+  "request_method": "GET",
+  "request_user_agent": "Mozilla/5.0 (compatible; sMove-engineering-preflight/1.0; public-document-research)",
+  "started_at_utc": "2026-09-07T19:12:38.855475Z",
+  "http_status": 200,
+  "final_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_XUNPU-TS-1088-AR02016_C720477.pdf",
+  "headers": {
+    "Content-Type": "application/pdf",
+    "Content-Encoding": "",
+    "Date": "Mon, 07 Sep 2026 19:12:40 GMT"
+  },
+  "retrieved_at_utc": "2026-09-07T19:12:40.444602Z",
+  "sha256_body": "368d4cc2c26b08cb63e1b67193f671d0860b6d3fb2e6b9f2696ffade401afc30",
+  "body_bytes": 123213,
+  "raw_response": "raw/switch-ds2.body.gz",
+  "pdf_text_exit_code": 0,
+  "text_response": "extracted/switch-ds2.txt",
+  "text_parsing_method": "pdftotext -layout - -"
+}

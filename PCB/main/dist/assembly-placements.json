@@ -1,0 +1,2181 @@
+{
+  "frame": "mm, top view, native auxiliary origin; X right, Y up; native footprint anchor/centroid, CCW angle. No guessed vendor rotation offsets.",
+  "aux_origin_native_mm": [
+    100.0,
+    135.0
+  ],
+  "parts": [
+    {
+      "reference": "C1",
+      "mpn": "CL10A475KO8NNNC",
+      "jlc": "C19666",
+      "footprint": "C_0603_1608Metric",
+      "value": "4.7uF / 16V",
+      "xy_mm": [
+        7.8,
+        16.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        7.025,
+        16.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            7.025,
+            16.6
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.575,
+            16.6
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C2",
+      "mpn": "CL21A476MQYNNNE",
+      "jlc": "C16780",
+      "footprint": "C_0805_2012Metric",
+      "value": "47uF / 6.3V",
+      "xy_mm": [
+        12.8,
+        16.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.8,
+        15.05
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.8,
+            15.05
+          ],
+          "net": "/PACK_P"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            12.8,
+            16.95
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C3",
+      "mpn": "CL21A226MPQNNNE",
+      "jlc": "C29277",
+      "footprint": "C_0805_2012Metric",
+      "value": "22uF / 10V",
+      "xy_mm": [
+        2.8,
+        32.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        2.8,
+        31.05
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            2.8,
+            31.05
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            2.8,
+            32.95
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C4",
+      "mpn": "CL05B104KO5NNNC",
+      "jlc": "C1525",
+      "footprint": "C_0402_1005Metric",
+      "value": "100nF / 16V",
+      "xy_mm": [
+        5.0,
+        31.8
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        5.0,
+        31.32
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            5.0,
+            31.32
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            5.0,
+            32.28
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C10",
+      "mpn": "CL05A105KA5NQNC",
+      "jlc": "C52923",
+      "footprint": "C_0402_1005Metric",
+      "value": "1uF / 25V",
+      "xy_mm": [
+        3.8,
+        20.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        3.8,
+        19.52
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            3.8,
+            19.52
+          ],
+          "net": "/MCU_EN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            3.8,
+            20.48
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C11",
+      "mpn": "CL05B104KO5NNNC",
+      "jlc": "C1525",
+      "footprint": "C_0402_1005Metric",
+      "value": "100nF / 16V",
+      "xy_mm": [
+        6.2,
+        22.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        5.72,
+        22.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            5.72,
+            22.6
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            6.68,
+            22.6
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C13",
+      "mpn": "CL21A476MQYNNNE",
+      "jlc": "C16780",
+      "footprint": "C_0805_2012Metric",
+      "value": "47uF / 6.3V",
+      "xy_mm": [
+        3.2,
+        24.0
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        2.25,
+        24.0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            2.25,
+            24.0
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            4.15,
+            24.0
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "D1",
+      "mpn": "LTST-C19HE1WT",
+      "jlc": "C458749",
+      "footprint": "LED_LiteOn_LTST-C19HE1WT",
+      "value": "LTST-C19HE1WT / CA",
+      "xy_mm": [
+        19.15,
+        12.3
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        18.725,
+        13.025
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            18.725,
+            13.025
+          ],
+          "net": "/LED_R_K"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            19.575,
+            13.025
+          ],
+          "net": "/LED_G_K"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            19.575,
+            11.575
+          ],
+          "net": "/LED_B_K"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            18.725,
+            11.575
+          ],
+          "net": "/3V3_MAIN"
+        }
+      ]
+    },
+    {
+      "reference": "J1",
+      "mpn": "TYPE-C-31-M-12",
+      "jlc": "C165948",
+      "footprint": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "value": "TYPE-C-31-M-12",
+      "xy_mm": [
+        19.88,
+        3.0
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "A1",
+      "pad_reference_mm": [
+        16.63,
+        7.045
+      ],
+      "pads": [
+        {
+          "number": "",
+          "xy_mm": [
+            16.99,
+            5.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            22.77,
+            5.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "A1",
+          "xy_mm": [
+            16.63,
+            7.045
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "A4",
+          "xy_mm": [
+            17.43,
+            7.045
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "A5",
+          "xy_mm": [
+            18.63,
+            7.045
+          ],
+          "net": "/CC1"
+        },
+        {
+          "number": "A6",
+          "xy_mm": [
+            19.63,
+            7.045
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "A7",
+          "xy_mm": [
+            20.13,
+            7.045
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "A8",
+          "xy_mm": [
+            21.13,
+            7.045
+          ],
+          "net": "unconnected-(J1-SBU1-PadA8)"
+        },
+        {
+          "number": "A9",
+          "xy_mm": [
+            22.33,
+            7.045
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "A12",
+          "xy_mm": [
+            23.13,
+            7.045
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "B1",
+          "xy_mm": [
+            23.13,
+            7.045
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "B4",
+          "xy_mm": [
+            22.33,
+            7.045
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "B5",
+          "xy_mm": [
+            21.63,
+            7.045
+          ],
+          "net": "/CC2"
+        },
+        {
+          "number": "B6",
+          "xy_mm": [
+            20.63,
+            7.045
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "B7",
+          "xy_mm": [
+            19.13,
+            7.045
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "B8",
+          "xy_mm": [
+            18.13,
+            7.045
+          ],
+          "net": "unconnected-(J1-SBU2-PadB8)"
+        },
+        {
+          "number": "B9",
+          "xy_mm": [
+            17.43,
+            7.045
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "B12",
+          "xy_mm": [
+            16.63,
+            7.045
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "xy_mm": [
+            15.56,
+            6.13
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "xy_mm": [
+            15.56,
+            1.95
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "xy_mm": [
+            24.2,
+            6.13
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "xy_mm": [
+            24.2,
+            1.95
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "J2",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "jlc": "C295747",
+      "footprint": "JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "value": "PH2 protected pack",
+      "xy_mm": [
+        20.1,
+        18.5
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        17.25,
+        17.5
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            17.25,
+            17.5
+          ],
+          "net": "/PACK_P"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            17.25,
+            19.5
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            23.0,
+            15.15
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            23.0,
+            21.85
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "J4",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "jlc": "C265102",
+      "footprint": "JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal",
+      "value": "PH4 to carrier",
+      "xy_mm": [
+        4.9,
+        9.0
+      ],
+      "rotation_deg": 270.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        7.75,
+        12.0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            7.75,
+            12.0
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            7.75,
+            10.0
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            7.75,
+            8.0
+          ],
+          "net": "/SDA_HOST"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            7.75,
+            6.0
+          ],
+          "net": "/SCL_HOST"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            2.0,
+            14.35
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            2.0,
+            3.65
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R1",
+      "mpn": "0402WGF5101TCE",
+      "jlc": "C25905",
+      "footprint": "R_0402_1005Metric",
+      "value": "5.1k",
+      "xy_mm": [
+        15.4,
+        9.2
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        14.89,
+        9.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            14.89,
+            9.2
+          ],
+          "net": "/CC1"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            15.91,
+            9.2
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R2",
+      "mpn": "0402WGF5101TCE",
+      "jlc": "C25905",
+      "footprint": "R_0402_1005Metric",
+      "value": "5.1k",
+      "xy_mm": [
+        18.2,
+        9.2
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        17.69,
+        9.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            17.69,
+            9.2
+          ],
+          "net": "/CC2"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            18.71,
+            9.2
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R3",
+      "mpn": "0402WGF220JTCE",
+      "jlc": "C25092",
+      "footprint": "R_0402_1005Metric",
+      "value": "22R",
+      "xy_mm": [
+        20.4,
+        26.0
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        19.89,
+        26.0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            19.89,
+            26.0
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            20.91,
+            26.0
+          ],
+          "net": "/USB_DM_MCU"
+        }
+      ]
+    },
+    {
+      "reference": "R4",
+      "mpn": "0402WGF220JTCE",
+      "jlc": "C25092",
+      "footprint": "R_0402_1005Metric",
+      "value": "22R",
+      "xy_mm": [
+        20.4,
+        27.2
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        19.89,
+        27.2
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            19.89,
+            27.2
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            20.91,
+            27.2
+          ],
+          "net": "/USB_DP_MCU"
+        }
+      ]
+    },
+    {
+      "reference": "R5",
+      "mpn": "0402WGF1003TCE",
+      "jlc": "C25741",
+      "footprint": "R_0402_1005Metric",
+      "value": "100k",
+      "xy_mm": [
+        12.8,
+        22.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.29,
+        22.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.29,
+            22.6
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            13.31,
+            22.6
+          ],
+          "net": "/USB_POWER_N"
+        }
+      ]
+    },
+    {
+      "reference": "R7",
+      "mpn": "0402WGF1002TCE",
+      "jlc": "C25744",
+      "footprint": "R_0402_1005Metric",
+      "value": "10k",
+      "xy_mm": [
+        2.0,
+        20.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        2.0,
+        19.49
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            2.0,
+            19.49
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            2.0,
+            20.51
+          ],
+          "net": "/MCU_EN"
+        }
+      ]
+    },
+    {
+      "reference": "R8",
+      "mpn": "0402WGF1002TCE",
+      "jlc": "C25744",
+      "footprint": "R_0402_1005Metric",
+      "value": "10k",
+      "xy_mm": [
+        14.4,
+        22.4
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        14.4,
+        21.89
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            14.4,
+            21.89
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            14.4,
+            22.91
+          ],
+          "net": "/BOOT"
+        }
+      ]
+    },
+    {
+      "reference": "R9",
+      "mpn": "0402WGF1002TCE",
+      "jlc": "C25744",
+      "footprint": "R_0402_1005Metric",
+      "value": "10k",
+      "xy_mm": [
+        1.2,
+        32.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        1.2,
+        31.49
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            1.2,
+            31.49
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.2,
+            32.51
+          ],
+          "net": "/STRAP2"
+        }
+      ]
+    },
+    {
+      "reference": "R10",
+      "mpn": "0402WGF1002TCE",
+      "jlc": "C25744",
+      "footprint": "R_0402_1005Metric",
+      "value": "10k",
+      "xy_mm": [
+        14.0,
+        20.8
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        13.49,
+        20.8
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            13.49,
+            20.8
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            14.51,
+            20.8
+          ],
+          "net": "/STRAP8"
+        }
+      ]
+    },
+    {
+      "reference": "R11",
+      "mpn": "0402WGF1001TCE",
+      "jlc": "C11702",
+      "footprint": "R_0402_1005Metric",
+      "value": "1k",
+      "xy_mm": [
+        19.8,
+        9.4
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        19.8,
+        8.89
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            19.8,
+            8.89
+          ],
+          "net": "/LED_R"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            19.8,
+            9.91
+          ],
+          "net": "/LED_R_K"
+        }
+      ]
+    },
+    {
+      "reference": "R12",
+      "mpn": "0402WGF1001TCE",
+      "jlc": "C11702",
+      "footprint": "R_0402_1005Metric",
+      "value": "1k",
+      "xy_mm": [
+        13.4,
+        1.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.89,
+        1.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.89,
+            1.6
+          ],
+          "net": "/LED_G"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            13.91,
+            1.6
+          ],
+          "net": "/LED_G_K"
+        }
+      ]
+    },
+    {
+      "reference": "R13",
+      "mpn": "0402WGF1001TCE",
+      "jlc": "C11702",
+      "footprint": "R_0402_1005Metric",
+      "value": "1k",
+      "xy_mm": [
+        11.2,
+        1.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        10.69,
+        1.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            10.69,
+            1.6
+          ],
+          "net": "/LED_B"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            11.71,
+            1.6
+          ],
+          "net": "/LED_B_K"
+        }
+      ]
+    },
+    {
+      "reference": "R14",
+      "mpn": "0402WGF1003TCE",
+      "jlc": "C25741",
+      "footprint": "R_0402_1005Metric",
+      "value": "100k",
+      "xy_mm": [
+        8.2,
+        22.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        7.69,
+        22.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            7.69,
+            22.6
+          ],
+          "net": "/PACK_P"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            8.71,
+            22.6
+          ],
+          "net": "/BAT_ADC"
+        }
+      ]
+    },
+    {
+      "reference": "R15",
+      "mpn": "0402WGF1003TCE",
+      "jlc": "C25741",
+      "footprint": "R_0402_1005Metric",
+      "value": "100k",
+      "xy_mm": [
+        10.4,
+        22.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        9.89,
+        22.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            9.89,
+            22.6
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            10.91,
+            22.6
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R21",
+      "mpn": "0402WGF8201TCE",
+      "jlc": "C25924",
+      "footprint": "R_0402_1005Metric",
+      "value": "8.2k",
+      "xy_mm": [
+        11.0,
+        20.6
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        11.0,
+        20.09
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            11.0,
+            20.09
+          ],
+          "net": "/CHG_ISET"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            11.0,
+            21.11
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R22",
+      "mpn": "0402WGF4701TCE",
+      "jlc": "C25900",
+      "footprint": "R_0402_1005Metric",
+      "value": "4.7k",
+      "xy_mm": [
+        11.0,
+        18.0
+      ],
+      "rotation_deg": 270.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        11.0,
+        18.51
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            11.0,
+            18.51
+          ],
+          "net": "/CHG_ILIM"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            11.0,
+            17.49
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R23",
+      "mpn": "0402WGF1002TCE",
+      "jlc": "C25744",
+      "footprint": "R_0402_1005Metric",
+      "value": "10k",
+      "xy_mm": [
+        4.8,
+        17.6
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        4.29,
+        17.6
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            4.29,
+            17.6
+          ],
+          "net": "/TS_NO_CELL_SENSING"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            5.31,
+            17.6
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "SW2",
+      "mpn": "TS-1088-AR02016",
+      "jlc": "C720477",
+      "footprint": "TS1088",
+      "value": "RESET",
+      "xy_mm": [
+        12.3,
+        11.3
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.3,
+        9.075
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.3,
+            9.075
+          ],
+          "net": "/MCU_EN"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            12.3,
+            13.525
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "SW3",
+      "mpn": "TS-1088-AR02016",
+      "jlc": "C720477",
+      "footprint": "TS1088",
+      "value": "BOOT / USER",
+      "xy_mm": [
+        12.3,
+        5.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        12.3,
+        2.775
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            12.3,
+            2.775
+          ],
+          "net": "/BOOT"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            12.3,
+            7.225
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "U1",
+      "mpn": "ESP32-C3-MINI-1-N4",
+      "jlc": "C2838502",
+      "footprint": "ESP32-C3-MINI-1",
+      "value": "ESP32-C3-MINI-1-N4",
+      "xy_mm": [
+        12.5,
+        32.1
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        6.6,
+        33.4
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            6.6,
+            33.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            6.6,
+            32.6
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            6.6,
+            31.8
+          ],
+          "net": "/3V3_MAIN"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            6.6,
+            31.0
+          ],
+          "net": "unconnected-(U1-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            6.6,
+            30.2
+          ],
+          "net": "/STRAP2"
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            6.6,
+            29.4
+          ],
+          "net": "unconnected-(U1-GPIO3-Pad6)"
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            6.6,
+            28.6
+          ],
+          "net": "unconnected-(U1-NC-Pad7)"
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            6.6,
+            27.8
+          ],
+          "net": "/MCU_EN"
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            6.6,
+            27.0
+          ],
+          "net": "unconnected-(U1-NC-Pad9)"
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            6.6,
+            26.2
+          ],
+          "net": "unconnected-(U1-NC-Pad10)"
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            6.6,
+            25.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "12",
+          "xy_mm": [
+            7.7,
+            24.5
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "13",
+          "xy_mm": [
+            8.5,
+            24.5
+          ],
+          "net": "/USB_POWER_N"
+        },
+        {
+          "number": "14",
+          "xy_mm": [
+            9.3,
+            24.5
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "xy_mm": [
+            10.1,
+            24.5
+          ],
+          "net": "unconnected-(U1-NC-Pad15)"
+        },
+        {
+          "number": "16",
+          "xy_mm": [
+            10.9,
+            24.5
+          ],
+          "net": "/LED_B"
+        },
+        {
+          "number": "17",
+          "xy_mm": [
+            11.7,
+            24.5
+          ],
+          "net": "unconnected-(U1-NC-Pad17)"
+        },
+        {
+          "number": "18",
+          "xy_mm": [
+            12.5,
+            24.5
+          ],
+          "net": "/SCL_HOST"
+        },
+        {
+          "number": "19",
+          "xy_mm": [
+            13.3,
+            24.5
+          ],
+          "net": "/SDA_HOST"
+        },
+        {
+          "number": "20",
+          "xy_mm": [
+            14.1,
+            24.5
+          ],
+          "net": "/LED_R"
+        },
+        {
+          "number": "21",
+          "xy_mm": [
+            14.9,
+            24.5
+          ],
+          "net": "/LED_G"
+        },
+        {
+          "number": "22",
+          "xy_mm": [
+            15.7,
+            24.5
+          ],
+          "net": "/STRAP8"
+        },
+        {
+          "number": "23",
+          "xy_mm": [
+            16.5,
+            24.5
+          ],
+          "net": "/BOOT"
+        },
+        {
+          "number": "24",
+          "xy_mm": [
+            17.3,
+            24.5
+          ],
+          "net": "unconnected-(U1-NC-Pad24)"
+        },
+        {
+          "number": "25",
+          "xy_mm": [
+            18.4,
+            25.4
+          ],
+          "net": "unconnected-(U1-NC-Pad25)"
+        },
+        {
+          "number": "26",
+          "xy_mm": [
+            18.4,
+            26.2
+          ],
+          "net": "/USB_DM_MCU"
+        },
+        {
+          "number": "27",
+          "xy_mm": [
+            18.4,
+            27.0
+          ],
+          "net": "/USB_DP_MCU"
+        },
+        {
+          "number": "28",
+          "xy_mm": [
+            18.4,
+            27.8
+          ],
+          "net": "unconnected-(U1-NC-Pad28)"
+        },
+        {
+          "number": "29",
+          "xy_mm": [
+            18.4,
+            28.6
+          ],
+          "net": "unconnected-(U1-NC-Pad29)"
+        },
+        {
+          "number": "30",
+          "xy_mm": [
+            18.4,
+            29.4
+          ],
+          "net": "/UART_RX"
+        },
+        {
+          "number": "31",
+          "xy_mm": [
+            18.4,
+            30.2
+          ],
+          "net": "/UART_TX"
+        },
+        {
+          "number": "32",
+          "xy_mm": [
+            18.4,
+            31.0
+          ],
+          "net": "unconnected-(U1-NC-Pad32)"
+        },
+        {
+          "number": "33",
+          "xy_mm": [
+            18.4,
+            31.8
+          ],
+          "net": "unconnected-(U1-NC-Pad33)"
+        },
+        {
+          "number": "34",
+          "xy_mm": [
+            18.4,
+            32.6
+          ],
+          "net": "unconnected-(U1-NC-Pad34)"
+        },
+        {
+          "number": "35",
+          "xy_mm": [
+            18.4,
+            33.4
+          ],
+          "net": "unconnected-(U1-NC-Pad35)"
+        },
+        {
+          "number": "36",
+          "xy_mm": [
+            17.3,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "37",
+          "xy_mm": [
+            16.5,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "38",
+          "xy_mm": [
+            15.7,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "39",
+          "xy_mm": [
+            14.9,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "40",
+          "xy_mm": [
+            14.1,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "41",
+          "xy_mm": [
+            13.3,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "42",
+          "xy_mm": [
+            12.5,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "43",
+          "xy_mm": [
+            11.7,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "44",
+          "xy_mm": [
+            10.9,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "45",
+          "xy_mm": [
+            10.1,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "46",
+          "xy_mm": [
+            9.3,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "47",
+          "xy_mm": [
+            8.5,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "48",
+          "xy_mm": [
+            7.7,
+            34.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            10.525,
+            31.375
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            10.525,
+            29.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            10.525,
+            27.425
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            12.5,
+            31.375
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            12.5,
+            29.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            12.5,
+            27.425
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            14.475,
+            31.375
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            14.475,
+            29.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            14.475,
+            27.425
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "50",
+          "xy_mm": [
+            18.45,
+            34.35
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "51",
+          "xy_mm": [
+            18.45,
+            24.45
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "52",
+          "xy_mm": [
+            6.55,
+            24.45
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "53",
+          "xy_mm": [
+            6.55,
+            34.35
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "U4",
+      "mpn": "AP2112K-3.3TRG1",
+      "jlc": "C51118",
+      "footprint": "SOT-23-5",
+      "value": "AP2112K-3.3TRG1",
+      "xy_mm": [
+        2.8,
+        27.3
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        1.6625,
+        28.25
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            1.6625,
+            28.25
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.6625,
+            27.3
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            1.6625,
+            26.35
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            3.9375,
+            26.35
+          ],
+          "net": "unconnected-(U4-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            3.9375,
+            28.25
+          ],
+          "net": "/3V3_MAIN"
+        }
+      ]
+    },
+    {
+      "reference": "U6",
+      "mpn": "BQ24074RGTR",
+      "jlc": "C54313",
+      "footprint": "BQ24074_RGT",
+      "value": "BQ24074RGTR",
+      "xy_mm": [
+        8.0,
+        19.9
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        6.6,
+        20.65
+      ],
+      "pads": [
+        {
+          "number": "",
+          "xy_mm": [
+            7.57,
+            20.33
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            7.57,
+            19.47
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            8.43,
+            20.33
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            8.43,
+            19.47
+          ],
+          "net": ""
+        },
+        {
+          "number": "1",
+          "xy_mm": [
+            6.6,
+            20.65
+          ],
+          "net": "/TS_NO_CELL_SENSING"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            6.6,
+            20.15
+          ],
+          "net": "/PACK_P"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            6.6,
+            19.65
+          ],
+          "net": "/PACK_P"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            6.6,
+            19.15
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            7.25,
+            18.5
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            7.75,
+            18.5
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            8.25,
+            18.5
+          ],
+          "net": "/USB_POWER_N"
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            8.75,
+            18.5
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            9.4,
+            19.15
+          ],
+          "net": "unconnected-(U6-CHG_N-Pad9)"
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            9.4,
+            19.65
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            9.4,
+            20.15
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "12",
+          "xy_mm": [
+            9.4,
+            20.65
+          ],
+          "net": "/CHG_ILIM"
+        },
+        {
+          "number": "13",
+          "xy_mm": [
+            8.75,
+            21.3
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "14",
+          "xy_mm": [
+            8.25,
+            21.3
+          ],
+          "net": "unconnected-(U6-TMR-Pad14)"
+        },
+        {
+          "number": "15",
+          "xy_mm": [
+            7.75,
+            21.3
+          ],
+          "net": "unconnected-(U6-ITERM-Pad15)"
+        },
+        {
+          "number": "16",
+          "xy_mm": [
+            7.25,
+            21.3
+          ],
+          "net": "/CHG_ISET"
+        },
+        {
+          "number": "17",
+          "xy_mm": [
+            8.0,
+            19.9
+          ],
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "U8",
+      "mpn": "USBLC6-2SC6",
+      "jlc": "C7519",
+      "footprint": "SOT-23-6",
+      "value": "USBLC6-2SC6",
+      "xy_mm": [
+        22.5,
+        10.4
+      ],
+      "rotation_deg": 0.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        21.3625,
+        11.35
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            21.3625,
+            11.35
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            21.3625,
+            10.4
+          ],
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            21.3625,
+            9.45
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            23.6375,
+            9.45
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            23.6375,
+            10.4
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            23.6375,
+            11.35
+          ],
+          "net": "/USB_DM"
+        }
+      ]
+    },
+    {
+      "reference": "U9",
+      "mpn": "PESD5V0S2BT,215",
+      "jlc": "C49338",
+      "footprint": "SOT-23",
+      "value": "PESD5V0S2BT,215",
+      "xy_mm": [
+        16.2,
+        12.0
+      ],
+      "rotation_deg": 90.0,
+      "layer": "Top",
+      "pad_reference": "1",
+      "pad_reference_mm": [
+        15.25,
+        11.0625
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            15.25,
+            11.0625
+          ],
+          "net": "/CC1"
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            17.15,
+            11.0625
+          ],
+          "net": "/CC2"
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            16.2,
+            12.9375
+          ],
+          "net": "GND"
+        }
+      ]
+    }
+  ]
+}

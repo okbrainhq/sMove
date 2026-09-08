@@ -1,0 +1,353 @@
+PDF_PAGE 1
+                                                                                                                           TS3USB221A
+                                                                                     SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024
+
+    TS3USB221A ESD Protected, High-Speed USB 2.0 (480Mbps) 1:2 Multiplexer and
+                    Demultiplexer Switch With Single Enable
+1 Features                                                             3 Description
+•   VCC operation at 2.5V to 3.3V                                      The TS3USB221A device is a high-bandwidth
+•   VI/O accepts signals up to 5.5V                                    switch specially designed for the switching of high-
+•   1.8V compatible control-pin inputs                                 speed USB 2.0 signals in handset and consumer
+•   Low-power mode when OE is disabled (1μA)                           applications, such as cell phones, digital cameras,
+•   RON = 6Ω maximum                                                   and notebooks with hubs or controllers with limited
+•   ΔRON = 0.2Ω typical                                                USB I/Os. The wide bandwidth (900MHz) of this
+•   CIO(ON) = 6pf typical                                              switch allows signals to pass with minimum edge and
+•   Low power consumption (30μA maximum)                               phase distortion. The device multiplexes differential
+•   High bandwidth (900MHz typical)                                    outputs from a USB host device to one of two
+•   Latch-up performance exceeds 100mA                                 corresponding outputs. The switch is bidirectional and
+    per JESD 78, Class II                                              offers little or no attenuation of the high-speed signals
+•   ESD performance tested per JEDEC JS-001                            at the outputs. The device also has a low power
+    – 7000V human-body model                                           mode that can reduce the power consumption to
+    – 1000V charged-device model (JEDEC JS-002)                        1μA for portable applications with a battery or limited
+•   ESD performance I/O to GND                                         power budget. The device is designed for low bit-to-bit
+    – 12kV human-body model                                            skew and high channel-to-channel noise isolation, and
+                                                                       is compatible with various standards, such as high-
+2 Applications                                                         speed USB 2.0 (480Mbps).
+•   Routes signals for USB 1.0, 1.1, and 2.0                           The TS3USB221A device integrates ESD protection
+•   Mobile phones                                                      cells on all pins, is available in a tiny μQFN package
+•   Cameras                                                            (2mm × 1.5mm) and is characterized over the free air
+•   Notebooks                                                          temperature range from –40°C to 85°C.
+•   USB I/O expansion
+                                                                                           Package Information
+                                                                             PART NUMBER            PACKAGE(1)        PACKAGE SIZE(2)
+                                                                       TS3USB221A             RSE (UQFN, 10)         2mm × 1.5mm
+
+                                                                       (1)    For all available packages, see Section 11.
+                                                                       (2)    The package size (length × width) is a nominal value and
+                                                                              includes pins, where applicable.
+                                         D+                                                   1D+
+                                         D−                                                   1D−
+
+                                                                                              2D+
+                                                                                              2D−
+
+
+                                                                                              S
+                                                                                              OE
+    EN is the internal enable signal applied to the switch.
+
+                                                         Simplified Schematic
+
+
+
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+     intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+PDF_PAGE 3
+                                                                                                                               TS3USB221A
+www.ti.com                                                                                   SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024
+
+
+4 Pin Configuration and Functions
+
+                                    VCC                                                                   VCC
+
+                                         10                                                                 10
+                   1D+         1                  9        S                                 S       9              1    1D+
+
+                   1D–         2                  8        D+                                D+      8              2    1D–
+
+                   2D+         3                  7        D–                                D–      7              3    2D+
+
+                   2D–         4         5        6        OE                                OE      6      5       4    2D–
+
+                                    GND                                                                   GND
+   Figure 4-1. RSE Package, 10-Pin µQFN (Top View)                                  Figure 4-2. RSE Package, 10-Pin µQFN (Bottom
+                                                                                                        View)
+
+                                                                Table 4-1. Pin Functions
+                    PIN
+                                                  TYPE(1)                                         DESCRIPTION
+ NAME                              NO.
+ 1D+                                1                 I/O
+                                                                   USB port 1
+ 1D–                                2                 I/O
+ 2D+                                3                 I/O
+                                                                   USB port 2
+ 2D–                                4                 I/O
+ GND                                5                 —            Ground
+ OE                                 6                  I           Bus-switch enable
+ D+                                 8                 I/O
+                                                                   Common USB port
+ D—                                 7                 I/O
+ S                                  9                  I           Select input
+ VCC                               10                 —            Supply voltage
+
+(1)    I = input, O = output
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                              Submit Document Feedback     3
+                                                               Product Folder Links: TS3USB221A
+
+PDF_PAGE 4
+TS3USB221A
+SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024                                                                                               www.ti.com
+
+5 Specifications
+5.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted) (1)
+                                                                                                                     MIN         MAX            UNIT
+    Supply voltage, VCC                                                                                              –0.5         4.6             V
+    Control input voltage, VS, V OE (2) (3)                                                                          –0.5          7              V
+    Switch I/O voltage, VI/O   (2) (3) (4)                                                                           –0.5          7              V
+    Control input clamp current, IIK                        VIN < 0                                                               –50            mA
+    I/O port clamp current, II/OK                           VI/O < 0                                                              –50            mA
+    ON-state switch current, II/O (5)                                                                                            ±120            mA
+    Continuous current through VCC or GND                                                                                        ±100            mA
+    Tstg         Storage temperature range                                                                           –65          150            °C
+
+(1)        Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply
+           functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions.
+           If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully
+           functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2)        All voltages are with respect to ground, unless otherwise specified.
+(3)        The input and output voltage ratings may be exceeded if the input and output clamp-current ratings are observed.
+(4)        VI and VO are used to denote specific conditions for VI/O.
+(5)        II and IO are used to denote specific conditions for II/O.
+5.2 ESD Ratings
+                                                                                                                             VALUE             UNIT
+                                                  Human-body model (HBM), per ANSI/         All pins except I/O to GND       ±7000
+                                                  ESDA/JEDEC JS-001(1)
+                                                                                            I/O to GND                       ±12000
+    V(ESD)      Electrostatic discharge                                                                                                          V
+                                                  Charged-device model (CDM), per ANSI/
+                                                                                            All pins                         ±1000
+                                                  ESDA/JEDEC JS-002(2)
+
+(1)        JEDEC document JEP155 states that 500V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with
+           less than 500V HBM is possible with the necessary precautions.
+(2)        JEDEC document JEP157 states that 250V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with
+           less than 250V CDM is possible with the necessary precautions.
+5.3 Recommended Operating Conditions
+                                                                                                                      MIN              MAX      UNIT
+    VCC        Supply voltage                                                                                          2.3              3.6       V
+                                                                            VCC = 2.3V to 2.7V                0.46 × VCC                VCC
+               High-level control input voltage                                                                                                   V
+    VS, V                                                                   VCC = 2.7V to 3.6V                0.46 × VCC                VCC
+    OE                                                                      VCC = 2.3V to 2.7V                           0    0.25 × VCC
+               Low-level control input voltage                                                                                                    V
+                                                                            VCC = 2.7V to 3.6V                           0    0.25 × VCC
+    VI/O       Data input/output voltage(1)                                                                              0              5.5       V
+    TA         Operating free-air temperature                                                                         –40                85      °C
+
+(1)        The I/O pins are 5.5V tolerant and functional for the entire range. However, for VI/O > 3.6V, channel RON will be high (up to 100Ω).
+
+
+
+
+4           Submit Document Feedback                                                                     Copyright © 2024 Texas Instruments Incorporated
+
+                                                           Product Folder Links: TS3USB221A
+
+PDF_PAGE 5
+                                                                                                                                  TS3USB221A
+www.ti.com                                                                                   SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024
+
+
+5.4 Thermal Information
+                                                                                                              RSE (UQFN)
+                                              THERMAL METRIC(1)                                                                          UNIT
+                                                                                                                10 PINS
+ RθJA               Junction-to-ambient thermal resistance                                                          204.8
+ RθJC(top)          Junction-to-case (top) thermal resistance                                                       118.1
+ RθJB               Junction-to-board thermal resistance                                                            121.5                °C/W
+ ψJT                Junction-to-top characterization parameter                                                      13.9
+ ψJB                Junction-to-board characterization parameter                                                    121.2
+
+(1)       For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+          note.
+5.5 Electrical Characteristics
+over operating free-air temperature range (unless otherwise noted) (1)
+                    PARAMETER                                        TEST CONDITIONS                         MIN      TYP(2)      MAX      UNIT
+ VIK              Input-Source Clamp Voltage        VCC = 3.6V, 2.7V, II = –18 mA                            –1.8                           V
+                  Input leakage current, control
+ IIN                                                VCC = 3.6V, 2.7V, 0V, VIN = 0V to 3.6V                                         ±1       μA
+                  inputs
+                                                    VCC = 3.6V, 2.7V, VO = 0V to 5.25V, VI = 0V,
+ IOZ (3)          Off-state leakage current                                                                                        ±1       μA
+                                                    VIN = VCC or GND, Switch OFF
+                                                                          VI/O = 0V to 5.25V                                       ±2
+ I(OFF)           Power-off leakage current         VCC = 0V              VI/O = 0V to 3.6V                                        ±2       μA
+                                                                          VI/O = 0V to 2.7V                                        ±1
+                                                    VCC = 3.6V, 2.7V, VIN = VCC or GND,
+ ICC              Supply Current                                                                                                   30       μA
+                                                    II/O = 0V, Switch ON or OFF
+                  Supply Current (low power         VCC = 3.6V, 2.7V, VIN = VCC or GND,
+ ICC                                                                                                                                1       μA
+                  mode)                             Switch disabled, OE in high state
+                                                    One input at 1.8V,    VCC = 3.6V                                               20
+                  Supply-current change, control
+ ΔICC (4)                                           Other inputs at VCC                                                                     μA
+                  inputs                                                  VCC = 2.7V                                               0.5
+                                                    or GND
+                  Input capacitance, control
+ Cin                                                VCC = 3.3V, 2.5V, VIN = VCC or 0V                                       1.5    2.5      pF
+                  inputs
+ Cio(OFF)         OFF capacitance                   VCC = 3.3V, 2.5V, VI/O = VCC or 0V, Switch OFF                          3.5     5       pF
+ Cio(ON)          ON capacitance                    VCC = 3.3V, 2.5V, VI/O = VCC or 0V, Switch ON                            6     7.5      pF
+                                                                          VI = 0V, IO = 30mA                                 3      6
+ RON (5)          ON-state resistance               VCC = 3V, 2.3V                                                                          Ω
+                                                                          VI = 2.4V, IO = –15mA                             3.4     6
+
+                  ON-state resistance match                               VI = 0V, IO = 30mA                                0.2
+ ΔRON                                               VCC = 3V, 2.3V                                                                          Ω
+                  between channels                                        VI = 1.7, IO = –15mA                              0.2
+                                                                          VI = 0V, IO = 30mA                                 1
+ RON(flat)        ON-state resistance flatness      VCC = 3V, 2.3V                                                                          Ω
+                                                                          VI = 1.7, IO = –15mA                               1
+
+(1)       VIN and IIN refer to control inputs. VI, VO, II, and IO refer to data pins.
+(2)       All typical values are at VCC = 3.3V (unless otherwise noted), TA = 25°C.
+(3)       For I/O ports, the parameter IOZ includes the input leakage current.
+(4)       This is the increase in supply current for each input that is at the specified TTL voltage level, rather than VCC or GND.
+(5)       Measured by the voltage drop between the A and B terminals at the indicated current through the switch. ON-state resistance is
+          determined by the lower of the voltages of the two (A or B) terminals.
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                                                              Submit Document Feedback             5
+                                                       Product Folder Links: TS3USB221A
+
+PDF_PAGE 6
+TS3USB221A
+SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024                                                                                                www.ti.com
+
+5.6 Dynamic Electrical Characteristics, VCC = 3.3V ±10%
+over operating range, TA = –40°C to 85°C, VCC = 3.3V ±10%, GND = 0V
+                         PARAMETER                                      TEST CONDITIONS                            MIN         TYP      MAX       UNIT
+    XTALK            Crosstalk                             RL = 50 , f = 250MHz                                                   –40              dB
+    OIRR             OFF isolation                         RL = 50 , f = 250MHz                                                   –41              dB
+    BW               Bandwidth (–3 dB)                     RL = 50                                                                0.9             GHz
+
+
+5.7 Dynamic Electrical Characteristics, VCC = 2.5V ±10%
+over operating range, TA = –40°C to 85°C, VCC = 2.5V ±10%, GND = 0V
+                         PARAMETER                                      TEST CONDITIONS                            MIN         TYP       MAX      UNIT
+    XTALK            Crosstalk                             RL = 50 , f = 250MHz                                                 –39                dB
+    OIRR             OFF isolation                         RL = 50 , f = 250MHz                                                   -40              dB
+    BW               Bandwidth (3 dB)                      RL = 50                                                                0.9             GHz
+
+
+5.8 Switching Characteristics, VCC = 3.3V ±10%
+over operating range, TA = –40°C to 85°C, VCC = 3.3V ±10%, GND = 0V
+                                                 PARAMETER                                                      MIN      TYP(1)         MAX      UNIT
+    tpd             Propagation delay(2) (3)                                                                               0.25                   ns
+                                                                               S to D, nD                                                30
+    tON             Line enable time                                                                                                              ns
+                                                                               OE to D, nD                                               17
+                                                                               S to D, nD                                                12
+    tOFF            Line disable time                                                                                                             ns
+                                                                               OE to D, nD                                               10
+    tSK(O)          Output skew between center port to any other port(2)                                                    0.1          0.2      ns
+    tSK(P)          Skew between opposite transitions of the same output (tPHL– tPLH   )(2)                                 0.1          0.2      ns
+
+(1)          For Max or Min conditions, use the appropriate value specified under Electrical Characteristics for the applicable device type.
+(2)          Specified by design
+(3)          The bus switch contributes no propagational delay other than the RC delay of the on resistance of the switch and the load capacitance.
+             The time constant for the switch alone is of the order of 0.25ns for 10pF load. This time constant is much smaller than the rise/fall
+             times of typical driving signals, therefore the time adds very little propagational delay to the system. Propagational delay of the bus
+             switch, when used in a system, is determined by the driving circuit on the driving side of the switch and the switch interactions with the
+             load on the driven side.
+5.9 Switching Characteristics, VCC = 2.5V ±10%
+over operating range, TA = –40°C to 85°C, VCC = 2.5V ±10%, GND = 0V
+                                                  PARAMETER                                                       MIN     TYP(1)        MAX       UNIT
+    tpd             Propagation delay(2) (3)                                                                                 0.25                  ns
+                                                                       S to D, nD                                                         50
+    tON             Line enable time                                                                                                               ns
+                                                                       OE to D, nD                                                        32
+                                                                       S to D, nD                                                         23
+    tOFF            Line disable time                                                                                                              ns
+                                                                       OE to D, nD                                                        12
+    tSK(O)          Output skew between center port to any other port(2)                                                      0.1        0.2       ns
+    tSK(P)          Skew between opposite transitions of the same output (tPHL– tPLH)(2)                                      0.1        0.2       ns
+
+(1)          For Max or Min conditions, use the appropriate value specified under Electrical Characteristics for the applicable device type.
+(2)          Specified by design
+(3)          The bus switch contributes no propagational delay other than the RC delay of the on resistance of the switch and the load capacitance.
+             The time constant for the switch alone is of the order of 0.25ns for 10pF load. This time constant is much smaller than the rise/fall
+             times of typical driving signals, therefore the time adds very little propagational delay to the system. Propagational delay of the bus
+             switch, when used in a system, is determined by the driving circuit on the driving side of the switch and the switch interactions with the
+             load on the driven side.
+
+
+
+
+6            Submit Document Feedback                                                                      Copyright © 2024 Texas Instruments Incorporated
+
+                                                            Product Folder Links: TS3USB221A
+
+PDF_PAGE 12
+TS3USB221A
+SCDS277C – NOVEMBER 2008 – REVISED OCTOBER 2024                                                                            www.ti.com
+
+7 Detailed Description
+7.1 Overview
+The TS3USB221A device is a 2-channel SPDT switch specially designed for the switching of high-speed USB
+2.0 signals in handset and consumer applications, such as cell phones, digital cameras, and notebooks with
+hubs or controllers with limited USB I/Os. The wide bandwidth (900MHz) of this switch allows signals to pass
+with minimum edge and phase distortion. The device multiplexes differential outputs from a USB host device to
+one of two corresponding outputs. The switch is bidirectional and offers little or no attenuation of the high-speed
+signals at the outputs. The device also has a low power mode that can reduce the power consumption to 1μA for
+portable applications with a battery or limited power budget.
+The device is designed for low bit-to-bit skew and high channel-to-channel noise isolation, and is compatible with
+various standards, such as high-speed USB 2.0 (480Mbps).
+The TS3USB221A device integrates ESD protection cells on all pins, is available in a tiny μQFN package (2mm
+× 1.5mm) and is characterized over the free air temperature range from –40°C to 85°C.
+7.2 Functional Block Diagram
+                                          D+                                             1D+
+                                          D−                                             1D−
+
+                                                                                         2D+
+                                                                                         2D−
+
+
+                                                                                         S
+                                                                                         OE
+
+
+                                           A                                             B
+                                                           VCC
+
+
+                                                         Charge
+                                                         Pump
+
+
+
+
+                                                                 EN (see Note A)
+
+A.   EN is the internal enable signal applied to the switch.
+
+                                Figure 7-1. Simplified Schematic of Each FET Switch (SW)
+
+
+
+
+12    Submit Document Feedback                                                            Copyright © 2024 Texas Instruments Incorporated
+
+                                                      Product Folder Links: TS3USB221A

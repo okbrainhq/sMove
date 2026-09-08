@@ -1,0 +1,8 @@
+{
+  "id": "icm-current",
+  "url": "https://product.tdk.com/system/files/dam/doc/product/sensor/mortion-inertial/imu/data_sheet/ds-000189-icm-20948-v1.5.pdf",
+  "retrieved_at_utc": "2026-09-08T00:22:57.082745+00:00",
+  "http_status": null,
+  "raw_response": null,
+  "error": "HTTP Error 403: Forbidden"
+}

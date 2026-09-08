@@ -1,0 +1,148 @@
+{
+  "C5": {
+    "board": "imu-carrier",
+    "mpn": "CL10A475KO8NNNC",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "GND"
+    }
+  },
+  "C6": {
+    "board": "imu-carrier",
+    "mpn": "CL10A475KO8NNNC",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    }
+  },
+  "C7": {
+    "board": "imu-carrier",
+    "mpn": "CL05B104KO5NNNC",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    }
+  },
+  "C8": {
+    "board": "imu-carrier",
+    "mpn": "CL05B104KO5NNNC",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    }
+  },
+  "C9": {
+    "board": "imu-carrier",
+    "mpn": "CL05B104KO5NNNC",
+    "pins": {
+      "1": "IMU_REGOUT",
+      "2": "GND"
+    }
+  },
+  "J5": {
+    "board": "imu-carrier",
+    "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "GND",
+      "3": "SDA_3V3",
+      "4": "SCL_3V3",
+      "MP": "GND"
+    }
+  },
+  "R16": {
+    "board": "imu-carrier",
+    "mpn": "0402WGF4701TCE",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "SCL_1V8"
+    }
+  },
+  "R17": {
+    "board": "imu-carrier",
+    "mpn": "0402WGF4701TCE",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "SDA_1V8"
+    }
+  },
+  "R18": {
+    "board": "imu-carrier",
+    "mpn": "0402WGF4701TCE",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "SCL_3V3"
+    }
+  },
+  "R19": {
+    "board": "imu-carrier",
+    "mpn": "0402WGF4701TCE",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "SDA_3V3"
+    }
+  },
+  "R20": {
+    "board": "imu-carrier",
+    "mpn": "0402WGF2003TCE",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "I2C_BIAS"
+    }
+  },
+  "U2": {
+    "board": "imu-carrier",
+    "mpn": "ICM-20948",
+    "pins": {
+      "1": null,
+      "10": "IMU_REGOUT",
+      "11": "GND",
+      "12": null,
+      "13": "1V8_IMU",
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": "GND",
+      "19": null,
+      "2": null,
+      "20": "GND",
+      "21": null,
+      "22": "1V8_IMU",
+      "23": "SCL_1V8",
+      "24": "SDA_1V8",
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": "1V8_IMU",
+      "9": "GND"
+    }
+  },
+  "U3": {
+    "board": "imu-carrier",
+    "mpn": "PCA9306DCUR",
+    "pins": {
+      "1": "GND",
+      "2": "1V8_IMU",
+      "3": "SCL_1V8",
+      "4": "SDA_1V8",
+      "5": "SDA_3V3",
+      "6": "SCL_3V3",
+      "7": "I2C_BIAS",
+      "8": "I2C_BIAS"
+    }
+  },
+  "U5": {
+    "board": "imu-carrier",
+    "mpn": "AP2112K-1.8TRG1",
+    "pins": {
+      "1": "3V3_IMU_IN",
+      "2": "GND",
+      "3": "3V3_IMU_IN",
+      "4": null,
+      "5": "1V8_IMU"
+    }
+  }
+}

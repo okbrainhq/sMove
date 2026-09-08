@@ -1,0 +1,509 @@
+{
+  "basis": "5 complete main+carrier sets; per-type spares=max(2,ceil(20% of five-set quantity)); archived public JLC evidence only, not live/reserved. C16780 capture lacks timestamp: age UNKNOWN; filesystem time not substituted. All stock needs recheck before ordering.",
+  "fitted_per_set": 49,
+  "unique_part_types": 26,
+  "total_planning_pieces": 309,
+  "parts_cost_usd_five_sets_at_planning_tiers": 144.8485,
+  "parts_cost_usd_including_spares": 201.5939,
+  "per_set_parts_cost_usd_at_planning_tiers": 28.9697,
+  "unknown_or_blocked_CIDs": [],
+  "external_stock_unknown": [
+    "protected qualified battery",
+    "PHR-2/PHR-4 precrimped cables",
+    "reduced-head nylon M2 carrier screws OD<=3.2mm"
+  ],
+  "excludes": "PCB, assembly/setup/MSL/X-ray, stencil, tax, shipping, battery, cable, hardware, enclosure. Not a quote.",
+  "rows": [
+    {
+      "jlc": "C11702",
+      "mpn": "0402WGF1001TCE",
+      "refs": [
+        "main/R11",
+        "main/R12",
+        "main/R13"
+      ],
+      "per_set": 3,
+      "five_sets": 15,
+      "spares": 3,
+      "planning_need": 18,
+      "stock_snapshot": 11201598,
+      "source_timestamp_utc": "2026-09-08T00:20:49.400154+00:00",
+      "source": "https://jlcpcb.com/partdetail/C11702",
+      "evidence": "docs/revision-r2/evidence/raw/C11702.body.gz",
+      "evidence_sha256": "77d5421b6c8860be9dd61f881ea72e108eb16c041e9447fc73f64c059b3f57d6",
+      "unit_price_usd": 0.0039,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C1525",
+      "mpn": "CL05B104KO5NNNC",
+      "refs": [
+        "main/C4",
+        "main/C11",
+        "imu-carrier/C7",
+        "imu-carrier/C8",
+        "imu-carrier/C9"
+      ],
+      "per_set": 5,
+      "five_sets": 25,
+      "spares": 5,
+      "planning_need": 30,
+      "stock_snapshot": 36581471,
+      "source_timestamp_utc": "2026-09-08T00:20:50.410107+00:00",
+      "source": "https://jlcpcb.com/partdetail/C1525",
+      "evidence": "docs/revision-r2/evidence/raw/C1525.body.gz",
+      "evidence_sha256": "2e29dedf2075cdd298fbc9522ce559025ecf25f5c8876db505b3ba064d05b4bb",
+      "unit_price_usd": 0.0046,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "refs": [
+        "main/J1"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 293622,
+      "source_timestamp_utc": "2026-09-08T00:20:45.317999+00:00",
+      "source": "https://jlcpcb.com/partdetail/C165948",
+      "evidence": "docs/revision-r2/evidence/raw/C165948.body.gz",
+      "evidence_sha256": "0ec37b41b255ba57b740de4adf81edabb6b8df5e51afa94236862a48aff33044",
+      "unit_price_usd": 0.1856,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C16780",
+      "mpn": "CL21A476MQYNNNE",
+      "refs": [
+        "main/C2",
+        "main/C13"
+      ],
+      "per_set": 2,
+      "five_sets": 10,
+      "spares": 2,
+      "planning_need": 12,
+      "stock_snapshot": 2002508,
+      "source_timestamp_utc": null,
+      "source": "https://jlcpcb.com/partdetail/17511-CL21A476MQYNNNE/C16780",
+      "evidence": "docs/revision-r2/electrical-completion/evidence/c16780-stock.body.gz",
+      "evidence_sha256": "7989536d2dccb415bac1ab961813ffbbda7a71da069591c31f0de51dac181148",
+      "unit_price_usd": 0.1432,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C176944",
+      "mpn": "AP2112K-1.8TRG1",
+      "refs": [
+        "imu-carrier/U5"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 48017,
+      "source_timestamp_utc": "2026-09-08T00:20:44.382194+00:00",
+      "source": "https://jlcpcb.com/partdetail/C176944",
+      "evidence": "docs/revision-r2/evidence/raw/C176944.body.gz",
+      "evidence_sha256": "eb108a3fa982d81a3a9779d0f7d263e9ecc1769321bfa2a5f056f631d7e8bab2",
+      "unit_price_usd": 0.1714,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "refs": [
+        "main/C1",
+        "imu-carrier/C5",
+        "imu-carrier/C6"
+      ],
+      "per_set": 3,
+      "five_sets": 15,
+      "spares": 3,
+      "planning_need": 18,
+      "stock_snapshot": 3946402,
+      "source_timestamp_utc": "2026-09-08T00:20:51.295470+00:00",
+      "source": "https://jlcpcb.com/partdetail/C19666",
+      "evidence": "docs/revision-r2/evidence/raw/C19666.body.gz",
+      "evidence_sha256": "1cc4b15923e829a55596094bbc17b85b6ccf69acfb5d47ca083135c78dbb9c12",
+      "unit_price_usd": 0.0329,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25092",
+      "mpn": "0402WGF220JTCE",
+      "refs": [
+        "main/R3",
+        "main/R4"
+      ],
+      "per_set": 2,
+      "five_sets": 10,
+      "spares": 2,
+      "planning_need": 12,
+      "stock_snapshot": 7229717,
+      "source_timestamp_utc": "2026-09-08T00:20:49.034886+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25092",
+      "evidence": "docs/revision-r2/evidence/raw/C25092.body.gz",
+      "evidence_sha256": "120ab59159eabcd01acac1b52d0d05edd4c9d379f46ea8928167b5801932760e",
+      "unit_price_usd": 0.0033,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25741",
+      "mpn": "0402WGF1003TCE",
+      "refs": [
+        "main/R5",
+        "main/R14",
+        "main/R15"
+      ],
+      "per_set": 3,
+      "five_sets": 15,
+      "spares": 3,
+      "planning_need": 18,
+      "stock_snapshot": 12715118,
+      "source_timestamp_utc": "2026-09-08T00:20:47.815196+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25741",
+      "evidence": "docs/revision-r2/evidence/raw/C25741.body.gz",
+      "evidence_sha256": "1a9fcf6b2a9b9b6246bfb400d00315073c989b766c6007f2589bf0b719b55117",
+      "unit_price_usd": 0.0028,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25744",
+      "mpn": "0402WGF1002TCE",
+      "refs": [
+        "main/R7",
+        "main/R8",
+        "main/R9",
+        "main/R10",
+        "main/R23"
+      ],
+      "per_set": 5,
+      "five_sets": 25,
+      "spares": 5,
+      "planning_need": 30,
+      "stock_snapshot": 30261401,
+      "source_timestamp_utc": "2026-09-08T00:20:47.532382+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25744",
+      "evidence": "docs/revision-r2/evidence/raw/C25744.body.gz",
+      "evidence_sha256": "b20556ded074fd998d59efc2e38b4ab2030353f2a248b6361ebf4355d64fa053",
+      "unit_price_usd": 0.0031,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25764",
+      "mpn": "0402WGF2003TCE",
+      "refs": [
+        "imu-carrier/R20"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 1089048,
+      "source_timestamp_utc": "2026-09-08T00:25:11.014105+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25764",
+      "evidence": "docs/revision-r2/evidence/raw/C25764.body.gz",
+      "evidence_sha256": "1de7973e87c4219a22aa67747c79610b2e45adcdbe21cf85e9d6d5285c770d81",
+      "unit_price_usd": 0.0021,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25900",
+      "mpn": "0402WGF4701TCE",
+      "refs": [
+        "main/R22",
+        "imu-carrier/R16",
+        "imu-carrier/R17",
+        "imu-carrier/R18",
+        "imu-carrier/R19"
+      ],
+      "per_set": 5,
+      "five_sets": 25,
+      "spares": 5,
+      "planning_need": 30,
+      "stock_snapshot": 19700436,
+      "source_timestamp_utc": "2026-09-08T00:20:48.227270+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25900",
+      "evidence": "docs/revision-r2/evidence/raw/C25900.body.gz",
+      "evidence_sha256": "33164d4165dc30ad09cb2adafc8c9a191001b4980c79e4d889a8c9eb1150cff9",
+      "unit_price_usd": 0.0029,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25905",
+      "mpn": "0402WGF5101TCE",
+      "refs": [
+        "main/R1",
+        "main/R2"
+      ],
+      "per_set": 2,
+      "five_sets": 10,
+      "spares": 2,
+      "planning_need": 12,
+      "stock_snapshot": 8034614,
+      "source_timestamp_utc": "2026-09-08T00:20:48.742255+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25905",
+      "evidence": "docs/revision-r2/evidence/raw/C25905.body.gz",
+      "evidence_sha256": "78b9e33f99b40c06b8942752db6521be4a61c6976f3ec3b23c09f93a0a74d9fd",
+      "unit_price_usd": 0.0026,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C25924",
+      "mpn": "0402WGF8201TCE",
+      "refs": [
+        "main/R21"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 259312,
+      "source_timestamp_utc": "2026-09-08T00:43:33.105544+00:00",
+      "source": "https://jlcpcb.com/partdetail/C25924",
+      "evidence": "docs/revision-r2/evidence/raw/C25924.body.gz",
+      "evidence_sha256": "ccca73f90ee3c54718ac940ee6cd8586efd0002da0c0af1d9eff417710841f8b",
+      "unit_price_usd": 0.0021,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C265102",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "refs": [
+        "main/J4",
+        "imu-carrier/J5"
+      ],
+      "per_set": 2,
+      "five_sets": 10,
+      "spares": 2,
+      "planning_need": 12,
+      "stock_snapshot": 35961,
+      "source_timestamp_utc": "2026-09-08T00:32:34.745109+00:00",
+      "source": "https://jlcpcb.com/partdetail/C265102",
+      "evidence": "docs/revision-r2/evidence/raw/C265102.body.gz",
+      "evidence_sha256": "627f27ceb4b1523f112b6abba183c2959a219654e1b893f88c4419ccf42d237e",
+      "unit_price_usd": 0.3064,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C2838502",
+      "mpn": "ESP32-C3-MINI-1-N4",
+      "refs": [
+        "main/U1"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 17877,
+      "source_timestamp_utc": "2026-09-08T00:20:42.492803+00:00",
+      "source": "https://jlcpcb.com/partdetail/C2838502",
+      "evidence": "docs/revision-r2/evidence/raw/C2838502.body.gz",
+      "evidence_sha256": "96841657bf9b1d3d36a4e68689064689436d6acf87caf0318fe181c86aaef72e",
+      "unit_price_usd": 3.8336,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C29277",
+      "mpn": "CL21A226MPQNNNE",
+      "refs": [
+        "main/C3"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 893220,
+      "source_timestamp_utc": "2026-09-08T00:20:50.895627+00:00",
+      "source": "https://jlcpcb.com/partdetail/C29277",
+      "evidence": "docs/revision-r2/evidence/raw/C29277.body.gz",
+      "evidence_sha256": "89160ded803fc1d0df443cbc9335dbabccaac6b3fad4cd005a2e54e8b5f1a261",
+      "unit_price_usd": 0.151,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C295747",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "refs": [
+        "main/J2"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 29200,
+      "source_timestamp_utc": "2026-09-08T00:20:45.758974+00:00",
+      "source": "https://jlcpcb.com/partdetail/C295747",
+      "evidence": "docs/revision-r2/evidence/raw/C295747.body.gz",
+      "evidence_sha256": "cf7228b0f5a63de9f2281d7e825b8391e059d3b26691a31881307ff3e82ee5b4",
+      "unit_price_usd": 0.2396,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C33196",
+      "mpn": "PCA9306DCUR",
+      "refs": [
+        "imu-carrier/U3"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 3892,
+      "source_timestamp_utc": "2026-09-08T00:20:42.494117+00:00",
+      "source": "https://jlcpcb.com/partdetail/C33196",
+      "evidence": "docs/revision-r2/evidence/raw/C33196.body.gz",
+      "evidence_sha256": "0759fd32145aaa49cff705c90756efec368b384da290ac4239930357f974aa37",
+      "unit_price_usd": 0.7164,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C458749",
+      "mpn": "LTST-C19HE1WT",
+      "refs": [
+        "main/D1"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 129566,
+      "source_timestamp_utc": "2026-09-08T00:20:46.081432+00:00",
+      "source": "https://jlcpcb.com/partdetail/C458749",
+      "evidence": "docs/revision-r2/evidence/raw/C458749.body.gz",
+      "evidence_sha256": "0d81d2e15337c114dfca2ede2148bbf550519e67e86deb16d81c0b063ee907e9",
+      "unit_price_usd": 0.0727,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C49338",
+      "mpn": "PESD5V0S2BT,215",
+      "refs": [
+        "main/U9"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 27792,
+      "source_timestamp_utc": "2026-09-08T00:20:47.304475+00:00",
+      "source": "https://jlcpcb.com/partdetail/C49338",
+      "evidence": "docs/revision-r2/evidence/raw/C49338.body.gz",
+      "evidence_sha256": "5eb2dce741cc0b5d4dc45406a7a9b7ef9262e49ff2097c481439e4b31d40490f",
+      "unit_price_usd": 0.092,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C51118",
+      "mpn": "AP2112K-3.3TRG1",
+      "refs": [
+        "main/U4"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 64276,
+      "source_timestamp_utc": "2026-09-08T00:21:38.649761+00:00",
+      "source": "https://jlcpcb.com/partdetail/C51118",
+      "evidence": "docs/revision-r2/evidence/raw/C51118.body.gz",
+      "evidence_sha256": "6d24d28f5e5a2a5d09e053f9f02baee08e161950bf248113d244ef271396ed1d",
+      "unit_price_usd": 0.1709,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C52923",
+      "mpn": "CL05A105KA5NQNC",
+      "refs": [
+        "main/C10"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 10442857,
+      "source_timestamp_utc": "2026-09-08T00:20:50.639102+00:00",
+      "source": "https://jlcpcb.com/partdetail/C52923",
+      "evidence": "docs/revision-r2/evidence/raw/C52923.body.gz",
+      "evidence_sha256": "c93a1077c3f7ff79a7871b2c3c3fb0a5a4954976c9e28479326e84e19d97614a",
+      "unit_price_usd": 0.0121,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C54313",
+      "mpn": "BQ24074RGTR",
+      "refs": [
+        "main/U6"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 915,
+      "source_timestamp_utc": "2026-09-08T00:43:33.105018+00:00",
+      "source": "https://jlcpcb.com/partdetail/C54313",
+      "evidence": "docs/revision-r2/evidence/raw/C54313.body.gz",
+      "evidence_sha256": "e438b04dd4340bc1086516662fe7ff9d9afc1c5908630040804babebd91255a5",
+      "unit_price_usd": 2.1215,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C720477",
+      "mpn": "TS-1088-AR02016",
+      "refs": [
+        "main/SW2",
+        "main/SW3"
+      ],
+      "per_set": 2,
+      "five_sets": 10,
+      "spares": 2,
+      "planning_need": 12,
+      "stock_snapshot": 816344,
+      "source_timestamp_utc": "2026-09-08T00:20:45.964228+00:00",
+      "source": "https://jlcpcb.com/partdetail/C720477",
+      "evidence": "docs/revision-r2/evidence/raw/C720477.body.gz",
+      "evidence_sha256": "02d92f216f17fd4f00890b4d6e75d43adbc833547209b51fe5eb64568ad3c64e",
+      "unit_price_usd": 0.0556,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C726001",
+      "mpn": "ICM-20948",
+      "refs": [
+        "imu-carrier/U2"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 5031,
+      "source_timestamp_utc": "2026-09-08T00:20:42.493369+00:00",
+      "source": "https://jlcpcb.com/partdetail/C726001",
+      "evidence": "docs/revision-r2/evidence/raw/C726001.body.gz",
+      "evidence_sha256": "8a2261f96fdc323ad9524676565a3ca048a8942dccc5bb4dc685f5bb662ac851",
+      "unit_price_usd": 19.8222,
+      "status": "SNAPSHOT_SUFFICIENT"
+    },
+    {
+      "jlc": "C7519",
+      "mpn": "USBLC6-2SC6",
+      "refs": [
+        "main/U8"
+      ],
+      "per_set": 1,
+      "five_sets": 5,
+      "spares": 2,
+      "planning_need": 7,
+      "stock_snapshot": 44815,
+      "source_timestamp_utc": "2026-09-08T00:20:46.796515+00:00",
+      "source": "https://jlcpcb.com/partdetail/C7519",
+      "evidence": "docs/revision-r2/evidence/raw/C7519.body.gz",
+      "evidence_sha256": "9d0f82d002f5c538dd38c095a596863dc7b30f5bdbcf60913180fe45fd7f42a4",
+      "unit_price_usd": 0.1825,
+      "status": "SNAPSHOT_SUFFICIENT"
+    }
+  ]
+}

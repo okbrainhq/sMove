@@ -1,0 +1,12 @@
+{
+  "id": "cap4u7-mirror",
+  "url": "https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.pdf",
+  "retrieved_at_utc": "2026-09-08T00:24:08.257425+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/cap4u7-mirror.body.gz",
+  "final_url": "https://www.lcsc.com/datasheet/C19666.pdf",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "f3e885a0bc302a9fbf683461970643896dd2cc4e7ff300470a7d744b5458d593",
+  "bytes": 132478,
+  "is_pdf": false
+}

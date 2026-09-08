@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "smove-r2-main")(type "KiCad")(uri "${KIPRJMOD}/smove-r2-main.pretty")(options "")(descr "R2 main local footprints")))

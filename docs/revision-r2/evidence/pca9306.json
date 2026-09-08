@@ -1,0 +1,12 @@
+{
+  "id": "pca9306",
+  "url": "https://www.ti.com/lit/ds/symlink/pca9306.pdf",
+  "retrieved_at_utc": "2026-09-08T00:20:58.794013+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/pca9306.body.gz",
+  "final_url": "https://www.ti.com/lit/ds/symlink/pca9306.pdf",
+  "content_type": "application/pdf",
+  "sha256": "1cd97c734729f2bfca26ccaa93521c04c373568e4ebe6d892267dba2571e21e6",
+  "bytes": 1546898,
+  "is_pdf": true
+}

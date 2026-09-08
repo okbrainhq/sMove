@@ -1,0 +1,215 @@
+(footprint "LED_LiteOn_LTST-C19HE1WT"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "LiteOn RGB LED; https://optoelectronics.liteon.com/upload/download/DS22-2008-0044/LTST-C19HE1WT.pdf")
+	(tags "LED RGB Chip SMD")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.Fab")
+		(uuid "e14831f7-d402-4a35-827a-d60fa56d1217")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LED_LiteOn_LTST-C19HE1WT"
+		(at 0 1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "39f54fc5-0e9f-4dec-a00b-f6c991b2f01d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2280448-14c3-489c-bdee-f3a4064ac736")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6235190-f1ca-4e4b-8876-f154fb0c0a66")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.95 -0.35)
+		(end -0.95 0.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8a4354f-efb8-4526-a4f7-0f576685b0e8")
+	)
+	(fp_line
+		(start 0.95 -0.8)
+		(end 0.95 0.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a11cddd-8a91-46a5-b353-afc18ba56405")
+	)
+	(fp_line
+		(start -1.05 -1.4)
+		(end 1.05 -1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "86910b74-5ea2-4392-8dcc-7113246e8bac")
+	)
+	(fp_line
+		(start -1.05 1.4)
+		(end -1.05 -1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "19a38fb3-1a6d-41cd-b805-d86ee68e4a5c")
+	)
+	(fp_line
+		(start 1.05 -1.4)
+		(end 1.05 1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "20278903-3f4a-4ffe-b2e8-b7b4ae51c782")
+	)
+	(fp_line
+		(start 1.05 1.4)
+		(end -1.05 1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11d8941b-4ec4-4c9b-9570-24b7388ed47d")
+	)
+	(fp_line
+		(start -0.8 -0.4)
+		(end -0.8 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a9a7717e-978a-44c0-b487-fae75606de86")
+	)
+	(fp_line
+		(start -0.8 0.8)
+		(end 0.8 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a79a055c-567d-488d-9305-90468718614e")
+	)
+	(fp_line
+		(start -0.4 -0.8)
+		(end -0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5feb1609-72e1-438b-b5d8-a4504c0cfdee")
+	)
+	(fp_line
+		(start 0.8 -0.8)
+		(end -0.4 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f9ddf8f-9cf1-42b6-9e7a-86c3f84a6c82")
+	)
+	(fp_line
+		(start 0.8 0.8)
+		(end 0.8 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9712c7a6-5813-40bc-aac7-1eb799c04fb3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "41afbee9-68c6-438c-b914-a29bd9cb22fd")
+		(effects
+			(font
+				(size 0.3 0.3)
+				(thickness 0.05)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.425 -0.725)
+		(size 0.65 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "94b3b6ca-e1d3-4a0d-9de0-2a65e8bbf5b9")
+	)
+	(pad "2" smd rect
+		(at 0.425 -0.725)
+		(size 0.65 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6752bd4d-67fe-4e96-9295-d32f7ddcb0b5")
+	)
+	(pad "3" smd rect
+		(at 0.425 0.725)
+		(size 0.65 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3f786afc-7776-4150-be60-e86aa5b3d3c0")
+	)
+	(pad "4" smd rect
+		(at -0.425 0.725)
+		(size 0.65 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "898cec6f-0699-4695-9a2d-612effb0fcf4")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_LiteOn_LTST-C19HE1WT.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

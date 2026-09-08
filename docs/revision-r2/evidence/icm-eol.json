@@ -1,0 +1,12 @@
+{
+  "id": "icm-eol",
+  "url": "https://www.mouser.com/PCN/TDK_PCN_000570.pdf",
+  "retrieved_at_utc": "2026-09-08T00:20:59.527396+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/icm-eol.body.gz",
+  "final_url": "https://www.mouser.com/PCN/TDK_PCN_000570.pdf",
+  "content_type": "text/html",
+  "sha256": "a9d48e728c293fb3596df88afdd7bd52a63b76821c2cc9926996b648384b5422",
+  "bytes": 13895,
+  "is_pdf": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "bulk22u",
+  "url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A226MPQNNNE_C29277.pdf",
+  "retrieved_at_utc": "2026-09-08T00:22:58.275957+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/bulk22u.body.gz",
+  "final_url": "https://www.lcsc.com/datasheet/C29277.pdf",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "99783437b208acb02a0c8c46206bcf22143bc1c762f3743204284870a991bbc6",
+  "bytes": 130524,
+  "is_pdf": false
+}

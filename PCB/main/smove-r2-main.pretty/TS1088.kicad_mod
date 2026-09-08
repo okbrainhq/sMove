@@ -1,0 +1,95 @@
+(footprint "TS1088"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6b7eb671-e4c7-4711-9834-6a00ab800035")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TS1088"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "74df8bd4-de5d-4c9c-9283-6af4eda67fd1")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16034cb5-bc42-4ee1-a479-43aaeb8a75ca")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d7fa008-d1d5-4617-897f-e588adb1aaad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.75 -1.75)
+		(end 2.75 1.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a53e67e7-bdc5-439e-bf68-48b2c30eaaaa")
+	)
+	(fp_rect
+		(start -2.5 -1.5)
+		(end 2.5 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0a2c81ff-18cb-4ad4-ad1b-0a6fc9820250")
+	)
+	(pad "1" smd roundrect
+		(at -2.225 0)
+		(size 1.05 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.04)
+		(zone_connect 2)
+		(uuid "064cba64-037e-4666-bdf1-72c55ba0f8ad")
+	)
+	(pad "2" smd roundrect
+		(at 2.225 0)
+		(size 1.05 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.04)
+		(zone_connect 2)
+		(uuid "b7e75dc5-901c-4887-909e-ce775c8a5c6d")
+	)
+	(embedded_fonts no)
+)

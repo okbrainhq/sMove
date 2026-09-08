@@ -1,0 +1,1556 @@
+{
+  "schema": "smove.r2.main.interface.v1",
+  "status": "ELECTRICAL CAD HANDOFF; PH2.0 selected; physical qualification and manufacturing release NOT granted",
+  "geometry_sha256": "691548fe3c56018bd2b98a6eccfc27f21f769ce186f16e52c794fda56ed7be60",
+  "native_board": "hardware/r2/main/smove-r2-main.kicad_pcb",
+  "coordinate_system": {
+    "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
+    "mechanical": "right-handed XYZ mm; origin southwest PCB corner at bottom surface; +X east,+Y north,+Z up",
+    "native_to_mechanical_4x4": [
+      [
+        1,
+        0,
+        0,
+        -100
+      ],
+      [
+        0,
+        -1,
+        0,
+        135
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "board_bottom_z": 0,
+    "board_top_z": 1
+  },
+  "board_size_mm": [
+    25,
+    35
+  ],
+  "outline_native_xy_mm": [
+    [
+      100,
+      100
+    ],
+    [
+      125,
+      100
+    ],
+    [
+      125,
+      135
+    ],
+    [
+      100,
+      135
+    ]
+  ],
+  "thickness_mm": 1.0,
+  "components": {
+    "R9": {
+      "mpn": "0402WGF1002TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        101.2,
+        103.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        100.93,
+        102.475,
+        101.47,
+        103.525
+      ],
+      "courtyard_native_xy_mm": [
+        100.685,
+        102.025,
+        101.715,
+        103.975
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "SW2": {
+      "mpn": "TS-1088-AR02016",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        112.3,
+        123.7
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        110.8,
+        121.2,
+        113.8,
+        126.2
+      ],
+      "courtyard_native_xy_mm": [
+        110.505,
+        120.905,
+        114.095,
+        126.495
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        3.1
+      ],
+      "height_bound_mm": 2.1,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R4": {
+      "mpn": "0402WGF220JTCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        120.4,
+        107.8
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        119.875,
+        107.53,
+        120.925,
+        108.07
+      ],
+      "courtyard_native_xy_mm": [
+        119.425,
+        107.285,
+        121.375,
+        108.315
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C10": {
+      "mpn": "CL05A105KA5NQNC",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        103.8,
+        115.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        103.55,
+        114.5,
+        104.05,
+        115.5
+      ],
+      "courtyard_native_xy_mm": [
+        103.295,
+        114.045,
+        104.305,
+        115.955
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "D1": {
+      "mpn": "LTST-C19HE1WT",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        119.15,
+        122.7
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        118.35,
+        121.9,
+        119.95,
+        123.5
+      ],
+      "courtyard_native_xy_mm": [
+        118.055,
+        121.255,
+        120.245,
+        124.145
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.7
+      ],
+      "height_bound_mm": 0.7,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C4": {
+      "mpn": "CL05B104KO5NNNC",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        105.0,
+        103.2
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        104.75,
+        102.7,
+        105.25,
+        103.7
+      ],
+      "courtyard_native_xy_mm": [
+        104.495,
+        102.245,
+        105.505,
+        104.155
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R5": {
+      "mpn": "0402WGF1003TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        112.8,
+        112.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        112.275,
+        112.13,
+        113.325,
+        112.67
+      ],
+      "courtyard_native_xy_mm": [
+        111.825,
+        111.885,
+        113.775,
+        112.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "J1": {
+      "mpn": "TYPE-C-31-M-12",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        119.88,
+        132.0
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        115.18,
+        128.35,
+        124.58,
+        135.9
+      ],
+      "courtyard_native_xy_mm": [
+        114.515,
+        126.685,
+        125.245,
+        136.195
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        4.3
+      ],
+      "height_bound_mm": 3.3,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R23": {
+      "mpn": "0402WGF1002TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        104.8,
+        117.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        104.275,
+        117.13,
+        105.325,
+        117.67
+      ],
+      "courtyard_native_xy_mm": [
+        103.825,
+        116.885,
+        105.775,
+        117.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R3": {
+      "mpn": "0402WGF220JTCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        120.4,
+        109.0
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        119.875,
+        108.73,
+        120.925,
+        109.27
+      ],
+      "courtyard_native_xy_mm": [
+        119.425,
+        108.485,
+        121.375,
+        109.515
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R2": {
+      "mpn": "0402WGF5101TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        118.2,
+        125.8
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        117.675,
+        125.53,
+        118.725,
+        126.07
+      ],
+      "courtyard_native_xy_mm": [
+        117.225,
+        125.285,
+        119.175,
+        126.315
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R15": {
+      "mpn": "0402WGF1003TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        110.4,
+        112.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        109.875,
+        112.13,
+        110.925,
+        112.67
+      ],
+      "courtyard_native_xy_mm": [
+        109.425,
+        111.885,
+        111.375,
+        112.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C3": {
+      "mpn": "CL21A226MPQNNNE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        102.8,
+        103.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        102.175,
+        102.0,
+        103.425,
+        104.0
+      ],
+      "courtyard_native_xy_mm": [
+        101.775,
+        101.255,
+        103.825,
+        104.745
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R7": {
+      "mpn": "0402WGF1002TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        102.0,
+        115.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        101.73,
+        114.475,
+        102.27,
+        115.525
+      ],
+      "courtyard_native_xy_mm": [
+        101.485,
+        114.025,
+        102.515,
+        115.975
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "J2": {
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        120.1,
+        116.5
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        115.5,
+        112.44,
+        124.61,
+        120.56
+      ],
+      "courtyard_native_xy_mm": [
+        114.955,
+        111.855,
+        125.245,
+        121.145
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        6.8
+      ],
+      "height_bound_mm": 5.8,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "U4": {
+      "mpn": "AP2112K-3.3TRG1",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        102.8,
+        107.7
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "courtyard_native_xy_mm": [
+        100.705,
+        105.955,
+        104.895,
+        109.445
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "J4": {
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        104.9,
+        126.0
+      ],
+      "rotation_ccw_deg": -90.0,
+      "body_aabb_native_xy_mm": [
+        100.39,
+        119.94,
+        109.5,
+        132.06
+      ],
+      "courtyard_native_xy_mm": [
+        99.755,
+        119.355,
+        110.045,
+        132.645
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        6.8
+      ],
+      "height_bound_mm": 5.8,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R8": {
+      "mpn": "0402WGF1002TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        114.4,
+        112.6
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        114.13,
+        112.075,
+        114.67,
+        113.125
+      ],
+      "courtyard_native_xy_mm": [
+        113.885,
+        111.625,
+        114.915,
+        113.575
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "U1": {
+      "mpn": "ESP32-C3-MINI-1-N4",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        112.5,
+        102.9
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        105.9,
+        94.6,
+        119.1,
+        111.2
+      ],
+      "courtyard_native_xy_mm": [
+        105.655,
+        94.355,
+        119.345,
+        111.445
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        3.4
+      ],
+      "height_bound_mm": 2.4,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C1": {
+      "mpn": "CL10A475KO8NNNC",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        107.8,
+        118.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        107.0,
+        118.0,
+        108.6,
+        118.8
+      ],
+      "courtyard_native_xy_mm": [
+        106.275,
+        117.625,
+        109.325,
+        119.175
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.95
+      ],
+      "height_bound_mm": 0.95,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R10": {
+      "mpn": "0402WGF1002TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        114.0,
+        114.2
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        113.475,
+        113.93,
+        114.525,
+        114.47
+      ],
+      "courtyard_native_xy_mm": [
+        113.025,
+        113.685,
+        114.975,
+        114.715
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C13": {
+      "mpn": "CL21A476MQYNNNE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        103.2,
+        111.0
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        102.2,
+        110.375,
+        104.2,
+        111.625
+      ],
+      "courtyard_native_xy_mm": [
+        101.455,
+        109.975,
+        104.945,
+        112.025
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R13": {
+      "mpn": "0402WGF1001TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        111.2,
+        133.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        110.675,
+        133.13,
+        111.725,
+        133.67
+      ],
+      "courtyard_native_xy_mm": [
+        110.225,
+        132.885,
+        112.175,
+        133.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R22": {
+      "mpn": "0402WGF4701TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        111.0,
+        117.0
+      ],
+      "rotation_ccw_deg": -90.0,
+      "body_aabb_native_xy_mm": [
+        110.73,
+        116.475,
+        111.27,
+        117.525
+      ],
+      "courtyard_native_xy_mm": [
+        110.485,
+        116.025,
+        111.515,
+        117.975
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "U9": {
+      "mpn": "PESD5V0S2BT,215",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        116.2,
+        123.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "courtyard_native_xy_mm": [
+        114.455,
+        121.025,
+        117.945,
+        124.975
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "U6": {
+      "mpn": "BQ24074RGTR",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        108.0,
+        115.1
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        106.5,
+        113.6,
+        109.5,
+        116.6
+      ],
+      "courtyard_native_xy_mm": [
+        106.205,
+        113.305,
+        109.795,
+        116.895
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.9
+      ],
+      "height_bound_mm": 0.9,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "J3": {
+      "mpn": null,
+      "fitted": false,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        122.0,
+        101.2
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        121.4,
+        100.6,
+        122.6,
+        106.88
+      ],
+      "courtyard_native_xy_mm": [
+        121.105,
+        100.305,
+        122.895,
+        107.175
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1
+      ],
+      "height_bound_mm": 0,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R12": {
+      "mpn": "0402WGF1001TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        113.4,
+        133.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        112.875,
+        133.13,
+        113.925,
+        133.67
+      ],
+      "courtyard_native_xy_mm": [
+        112.425,
+        132.885,
+        114.375,
+        133.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "U8": {
+      "mpn": "USBLC6-2SC6",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        122.5,
+        124.6
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "courtyard_native_xy_mm": [
+        120.405,
+        122.855,
+        124.595,
+        126.345
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R11": {
+      "mpn": "0402WGF1001TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        119.8,
+        125.6
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        119.53,
+        125.075,
+        120.07,
+        126.125
+      ],
+      "courtyard_native_xy_mm": [
+        119.285,
+        124.625,
+        120.315,
+        126.575
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R1": {
+      "mpn": "0402WGF5101TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        115.4,
+        125.8
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        114.875,
+        125.53,
+        115.925,
+        126.07
+      ],
+      "courtyard_native_xy_mm": [
+        114.425,
+        125.285,
+        116.375,
+        126.315
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C2": {
+      "mpn": "CL21A476MQYNNNE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        112.8,
+        119.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        112.175,
+        118.0,
+        113.425,
+        120.0
+      ],
+      "courtyard_native_xy_mm": [
+        111.775,
+        117.255,
+        113.825,
+        120.745
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        2.45
+      ],
+      "height_bound_mm": 1.45,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "C11": {
+      "mpn": "CL05B104KO5NNNC",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        106.2,
+        112.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        105.7,
+        112.15,
+        106.7,
+        112.65
+      ],
+      "courtyard_native_xy_mm": [
+        105.245,
+        111.895,
+        107.155,
+        112.905
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R21": {
+      "mpn": "0402WGF8201TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        111.0,
+        114.4
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        110.73,
+        113.875,
+        111.27,
+        114.925
+      ],
+      "courtyard_native_xy_mm": [
+        110.485,
+        113.425,
+        111.515,
+        115.375
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "SW3": {
+      "mpn": "TS-1088-AR02016",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        112.3,
+        130.0
+      ],
+      "rotation_ccw_deg": 90.0,
+      "body_aabb_native_xy_mm": [
+        110.8,
+        127.5,
+        113.8,
+        132.5
+      ],
+      "courtyard_native_xy_mm": [
+        110.505,
+        127.205,
+        114.095,
+        132.795
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        3.1
+      ],
+      "height_bound_mm": 2.1,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    },
+    "R14": {
+      "mpn": "0402WGF1003TCE",
+      "fitted": true,
+      "side": "top",
+      "anchor_native_xy_mm": [
+        108.2,
+        112.4
+      ],
+      "rotation_ccw_deg": 0.0,
+      "body_aabb_native_xy_mm": [
+        107.675,
+        112.13,
+        108.725,
+        112.67
+      ],
+      "courtyard_native_xy_mm": [
+        107.225,
+        111.885,
+        109.175,
+        112.915
+      ],
+      "z_mm_from_board_bottom": [
+        1,
+        1.55
+      ],
+      "height_bound_mm": 0.55,
+      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+    }
+  },
+  "anchors": {
+    "SW2": {
+      "center_native_xy_mm": [
+        112.3,
+        123.7
+      ],
+      "actuation_or_optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "surface_z_bound_mm": 3.1,
+      "function": "RESET",
+      "access_radius_mm": 1.3
+    },
+    "D1": {
+      "center_native_xy_mm": [
+        119.15,
+        122.7
+      ],
+      "actuation_or_optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "surface_z_bound_mm": 1.7,
+      "function": "RGB indicator",
+      "access_radius_mm": 1.0
+    },
+    "J1": {
+      "mating_face_center_native_xy_mm": [
+        119.88,
+        135.65
+      ],
+      "outward_unit_native_xy": [
+        0.0,
+        1.0
+      ],
+      "cavity_polygon_native_xy_mm": [
+        [
+          114.88,
+          135.65
+        ],
+        [
+          124.88,
+          135.65
+        ],
+        [
+          124.88,
+          150.65
+        ],
+        [
+          114.88,
+          150.65
+        ]
+      ],
+      "cavity_z_mm_from_board_bottom": [
+        0.7,
+        4.8
+      ],
+      "cavity_policy": "Conservative plug insertion/lead-bend reserve; keep plastic, battery and loose cables out. Local actual plug/harness remains acceptance gate. PH cavities are INTERNAL case wiring pockets, not assumed external user ports.",
+      "pins": {
+        "A1": {
+          "native_xy_mm": [
+            116.63,
+            127.955
+          ],
+          "net": "GND"
+        },
+        "A4": {
+          "native_xy_mm": [
+            117.43,
+            127.955
+          ],
+          "net": "/VBUS"
+        },
+        "A5": {
+          "native_xy_mm": [
+            118.63,
+            127.955
+          ],
+          "net": "/CC1"
+        },
+        "A6": {
+          "native_xy_mm": [
+            119.63,
+            127.955
+          ],
+          "net": "/USB_DP"
+        },
+        "A7": {
+          "native_xy_mm": [
+            120.13,
+            127.955
+          ],
+          "net": "/USB_DM"
+        },
+        "A8": {
+          "native_xy_mm": [
+            121.13,
+            127.955
+          ],
+          "net": "unconnected-(J1-SBU1-PadA8)"
+        },
+        "A9": {
+          "native_xy_mm": [
+            122.33,
+            127.955
+          ],
+          "net": "/VBUS"
+        },
+        "A12": {
+          "native_xy_mm": [
+            123.13,
+            127.955
+          ],
+          "net": "GND"
+        },
+        "B1": {
+          "native_xy_mm": [
+            123.13,
+            127.955
+          ],
+          "net": "GND"
+        },
+        "B4": {
+          "native_xy_mm": [
+            122.33,
+            127.955
+          ],
+          "net": "/VBUS"
+        },
+        "B5": {
+          "native_xy_mm": [
+            121.63,
+            127.955
+          ],
+          "net": "/CC2"
+        },
+        "B6": {
+          "native_xy_mm": [
+            120.63,
+            127.955
+          ],
+          "net": "/USB_DP"
+        },
+        "B7": {
+          "native_xy_mm": [
+            119.13,
+            127.955
+          ],
+          "net": "/USB_DM"
+        },
+        "B8": {
+          "native_xy_mm": [
+            118.13,
+            127.955
+          ],
+          "net": "unconnected-(J1-SBU2-PadB8)"
+        },
+        "B9": {
+          "native_xy_mm": [
+            117.43,
+            127.955
+          ],
+          "net": "/VBUS"
+        },
+        "B12": {
+          "native_xy_mm": [
+            116.63,
+            127.955
+          ],
+          "net": "GND"
+        }
+      }
+    },
+    "J2": {
+      "mating_face_center_native_xy_mm": [
+        124.5,
+        116.5
+      ],
+      "outward_unit_native_xy": [
+        1.0,
+        0.0
+      ],
+      "cavity_polygon_native_xy_mm": [
+        [
+          124.5,
+          121.0
+        ],
+        [
+          124.5,
+          112.0
+        ],
+        [
+          132.5,
+          112.0
+        ],
+        [
+          132.5,
+          121.0
+        ]
+      ],
+      "cavity_z_mm_from_board_bottom": [
+        0.7,
+        7.5
+      ],
+      "cavity_policy": "Conservative plug insertion/lead-bend reserve; keep plastic, battery and loose cables out. Local actual plug/harness remains acceptance gate. PH cavities are INTERNAL case wiring pockets, not assumed external user ports.",
+      "pins": {
+        "1": {
+          "native_xy_mm": [
+            117.25,
+            117.5
+          ],
+          "net": "/PACK_P"
+        },
+        "2": {
+          "native_xy_mm": [
+            117.25,
+            115.5
+          ],
+          "net": "GND"
+        }
+      }
+    },
+    "J4": {
+      "mating_face_center_native_xy_mm": [
+        100.5,
+        126.0
+      ],
+      "outward_unit_native_xy": [
+        -1.0,
+        0.0
+      ],
+      "cavity_polygon_native_xy_mm": [
+        [
+          100.5,
+          119.5
+        ],
+        [
+          100.5,
+          132.5
+        ],
+        [
+          92.5,
+          132.5
+        ],
+        [
+          92.5,
+          119.5
+        ]
+      ],
+      "cavity_z_mm_from_board_bottom": [
+        0.7,
+        7.5
+      ],
+      "cavity_policy": "Conservative plug insertion/lead-bend reserve; keep plastic, battery and loose cables out. Local actual plug/harness remains acceptance gate. PH cavities are INTERNAL case wiring pockets, not assumed external user ports.",
+      "pins": {
+        "1": {
+          "native_xy_mm": [
+            107.75,
+            123.0
+          ],
+          "net": "/3V3_MAIN"
+        },
+        "2": {
+          "native_xy_mm": [
+            107.75,
+            125.0
+          ],
+          "net": "GND"
+        },
+        "3": {
+          "native_xy_mm": [
+            107.75,
+            127.0
+          ],
+          "net": "/SDA_HOST"
+        },
+        "4": {
+          "native_xy_mm": [
+            107.75,
+            129.0
+          ],
+          "net": "/SCL_HOST"
+        }
+      }
+    },
+    "SW3": {
+      "center_native_xy_mm": [
+        112.3,
+        130.0
+      ],
+      "actuation_or_optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "surface_z_bound_mm": 3.1,
+      "function": "BOOT/USER",
+      "access_radius_mm": 1.3
+    },
+    "J3": {
+      "pads_native_xy_mm": {
+        "1": [
+          122.0,
+          101.2
+        ],
+        "2": [
+          122.0,
+          102.47
+        ],
+        "3": [
+          122.0,
+          103.74
+        ],
+        "4": [
+          122.0,
+          105.01
+        ],
+        "5": [
+          122.0,
+          106.28
+        ]
+      },
+      "pitch_mm": 1.27,
+      "population": "unpopulated plated holes, no header/no power pin; access only while case open",
+      "bottom_access_clearance_mm": 2.0
+    }
+  },
+  "antenna_body_native_xy_mm": [
+    [
+      105.9,
+      94.6
+    ],
+    [
+      119.1,
+      94.6
+    ],
+    [
+      119.1,
+      100
+    ],
+    [
+      105.9,
+      100
+    ]
+  ],
+  "antenna_all_layer_keepout_native_xy_mm": [
+    [
+      90.9,
+      79.6
+    ],
+    [
+      134.1,
+      79.6
+    ],
+    [
+      134.1,
+      100
+    ],
+    [
+      90.9,
+      100
+    ]
+  ],
+  "retention": [
+    {
+      "name": "west",
+      "xy": [
+        [
+          100,
+          104.2
+        ],
+        [
+          101.1,
+          104.2
+        ],
+        [
+          101.1,
+          106.0
+        ],
+        [
+          100,
+          106.0
+        ]
+      ]
+    },
+    {
+      "name": "east",
+      "xy": [
+        [
+          123.9,
+          104.2
+        ],
+        [
+          125,
+          104.2
+        ],
+        [
+          125,
+          106.0
+        ],
+        [
+          123.9,
+          106.0
+        ]
+      ]
+    }
+  ],
+  "antenna_3d": {
+    "physical_z_from_board_bottom_mm": [
+      1,
+      3.4
+    ],
+    "no_foreign_components_copper_traces_vias_on_any_copper_layer": true,
+    "clear_air_volume_native_xy_mm": [
+      [
+        90.9,
+        79.6
+      ],
+      [
+        134.1,
+        79.6
+      ],
+      [
+        134.1,
+        100
+      ],
+      [
+        90.9,
+        100
+      ]
+    ],
+    "clear_air_z_mm": [
+      -15,
+      18.4
+    ],
+    "exceptions": "Only U1 own antenna; no battery, harness, carrier, metal fasteners or enclosure conductor in volume. Antenna projects 5.4mm north of PCB."
+  },
+  "retention_policy": {
+    "material": "nonconductive plastic only",
+    "contacts": "two edge lands, not drilled mounts; full copper/pad/trace/via exclusion through all four copper layers",
+    "clip_z_reserve_mm": [
+      -1.0,
+      2.0
+    ],
+    "wear": "No exposed copper/edge plating in lands. Rounded plastic bearing surfaces; solder mask alone is not an abrasion barrier. No latch bearing on components or solder joints."
+  },
+  "bottom_envelope": {
+    "smt_parts": "none",
+    "J1_shell_tail_reserved_z_mm": [
+      -1.2,
+      0
+    ],
+    "J3": "unpopulated; exposed pads both faces, no clip contact",
+    "battery_barrier": "rigid insulating barrier and >=0.8mm clearance below worst shell-tail envelope; no pouch contact with PCB/solder/holes"
+  },
+  "not_claimed": [
+    "case fit",
+    "qualified battery/harness",
+    "populated exact STEP",
+    "USB host-off immunity",
+    "charging or manufacture release"
+  ],
+  "change_policy": "Any change to component anchors, outline or envelope requires republishing this file and reporting new hash to orchestrator.",
+  "connector_selection": {
+    "status": "ACCEPTED_FOR_HAND_SOLDERED_PROTOTYPE",
+    "pitch_mm": 2.0,
+    "J2": {
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C295747",
+      "mate": "PHR-2"
+    },
+    "J4_J5": {
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C265102",
+      "mate": "PHR-4"
+    },
+    "supply": "User purchases connectors and precrimped leads; no order/upload performed",
+    "hand_soldering": "Small SMD, accessible rear signal tails and side hold-downs; flux/fine iron and magnification. Not beginner THT. Solder with PCB out of enclosure, battery and USB disconnected.",
+    "harness": "1=3.3V,2=GND,3=SDA,4=SCL; straight 1:1, finished length <=50mm; check each purchased cable by continuity, never trust colors or listing polarity",
+    "authenticity": "No AliExpress product is promised genuine or correctly polarized",
+    "manufacturing_release": false
+  }
+}

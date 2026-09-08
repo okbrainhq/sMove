@@ -1,0 +1,19 @@
+{
+  "id": "samsung-c22-routing",
+  "url": "https://product.samsungsem.com/mlcc/CL21A226MPQNNN.do",
+  "request_method": "GET",
+  "request_user_agent": "Mozilla/5.0 (compatible; sMove-engineering-preflight/1.0; public-document-research)",
+  "started_at_utc": "2026-09-07T20:02:41.180759Z",
+  "http_status": 200,
+  "final_url": "https://product.samsungsem.com/mlcc/CL21A226MPQNNN.do",
+  "headers": {
+    "Date": "Mon, 07 Sep 2026 20:02:41 GMT",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "retrieved_at_utc": "2026-09-07T20:02:42.583172Z",
+  "sha256_body": "45f58ff264fb1bf32adcfc4c186e83c64a4984433ca5a0aa27e3e8a3b2b6640b",
+  "body_bytes": 180152,
+  "raw_response": "raw/samsung-c22-routing.body.gz",
+  "text_response": "extracted/samsung-c22-routing.txt",
+  "text_parsing_method": "Python html.parser; script/style excluded; text nodes joined with newline"
+}

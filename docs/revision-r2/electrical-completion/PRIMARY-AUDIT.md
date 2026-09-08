@@ -1,0 +1,18 @@
+# R2 primary drawing / pin audit
+
+Native assertions are in `scripts/r2/main/verify.py`, `scripts/r2/imu-carrier/verify.py` and `scripts/r2/electrical-completion/verify.py`. This is a source/CAD audit, not measured part qualification.
+
+| Item | Primary check and actual implementation |
+|---|---|
+| BQ24074 | TI SLUS810N Table7-1 / RGT drawing: 7 PGOOD,8 VSS,17 EP to GND; both BAT2/3 and OUT10/11 joined. Current R2 passes independent physical numbering. Legacy CFIX remains unsafe/unrepaired. |
+| AP2112 | Diodes AP2112 SOT25 top-view:1 IN,2 GND,3 EN,4 NC,5 OUT. Main SYS/3V3, carrier3V3/1V8. Stable-with-1uF ceramic requirement used, not a buck/buck-boost target. |
+| TS1088 | Xunpu manufacturer drawing `docs/engineering/sources/raw/switch-ds2.body.gz`, visually inspected: TWO opposing contacts, pad1 left/pad2 right at zero rotation; 1.05x2mm lands at4.45mm centers give5.5mm outer span/3.4mm inner gap. Both switches match; no four-leg contact-pair assumption. |
+| RGB | Lite-On LTST-C19HE1WT primary drawing p1 (PDFp2) visually inspected:1 red K upper-left,2 green K upper-right,3 blue K lower-right,4 common A lower-left. Actual4=3V3 and1/2/3 connect their series resistor/cathode nets. |
+| HRO USB-C | HRO TYPE-C-31-M-12 drawing visually inspected: A6/B6 DP, A7/B7 DM; four logical VBUS and four logical GND contacts share four physical wide lands; SBU1/2 NC; independent CC1/CC2 Rd/ESD. Exact installed KiCad footprint has all20 numbered pad entries including four shell stakes,12 distinct rear copper lands,2 NPTH locators. Library signal lands1.45mm long differ from drawing's1.64mm recommendation; contact positions/lead coverage,0.30mm signal widths,shared-land order and shell/locator pattern checked—not claimed byte-identical to the recommended artwork. Body8.94x7.35mm; height reserve3.3mm covers drawing3.26mm. Actual plug/enclosure mating remains mechanical acceptance. |
+| USBLC6-2SC6 | ST primary drawing, `usblc6-ds2.body.gz`:1/6 IO1=DM,3/4 IO2=DP,2 GND,5 VBUS. No promise of sustained overvoltage, host-off isolation or system ESD certification. |
+| PESD5V0S2BT,215 | Nexperia table2/SOT23:1 K1=CC1,2 K2=CC2,3 common=GND. Bidirectional CC suppressor, not a power protector. |
+| JST PH | JST ePH p2 mounting-surface land drawing and p4 side-entry SMT body drawing visually inspected. Exact S2B/S4B-PH-SM4-TB:2mm pitch,1x3.5mm signal lands; pad1 is left at0deg with mating face toward+Y. Main J2=90deg,J4=-90deg; carrierJ5=0deg. Rear exposed tails and side hold-downs are accessible, unlike hidden underbody pads. Native rear-tail0.25mm-radius access-point screens avoid all other F.Fab component bodies. Hand-iron access is an engineering finding, not a soldering trial. |
+| ICM-20948 | TDK/InvenSense DS-000189 rev1.3 full primary table excerpt archived in `evidence/icm-pin-table.txt`:18/20 GND,19 reserved/NC,8/13/22=1V8,9/11 GND,10 REGOUT toC9 only.24 perimeter lands, no invented EP; central manufacturer metal-region copper keepout retained. Carrier independent physical pin coordinates match the primary figure. |
+| PCA9306DCUR | TI table5-1 in `docs/revision-r2/evidence/selected-text/pca9306.txt`:1GND,2VREF1,3SCL1,4SDA1,5SDA2,6SCL2,7VREF2,8EN. VREF1=1V8; VREF2+EN biased through200k to3V3, not tied directly. DCU lands0.85x0.30mm/0.5mm pitch/3.1mm row spacing; four4.7k pull-ups remain on carrier. |
+
+Curve/stock evidence: `capacitance.json` and `evidence/c16780-stock-summary.json`. Manufacturer curves are typical, not guaranteed under combined bias/temperature/ageing. Replacement package maximum L/W/T=2.20/1.45/1.45mm fits existing0805 lands and the1.45mm height reserve.

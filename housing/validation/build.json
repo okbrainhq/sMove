@@ -1,0 +1,325 @@
+{
+  "status": "GENERATED_REQUIRE_INDEPENDENT_VERIFY",
+  "parameters_mm": {
+    "XMin": -17.5,
+    "XMax": 34.2,
+    "YMin": -16.8,
+    "YMax": 42.1,
+    "Floor": 1.2,
+    "Wall": 1.4,
+    "BaseTop": 11.5,
+    "ShelfTop": 12.9,
+    "RoofBottom": 20.4,
+    "Height": 21.8,
+    "StepY": -2.0,
+    "BayX": 1.0,
+    "BayY": -14.5,
+    "BayWidth": 23.0,
+    "BayLength": 34.0,
+    "BayHeight": 8.0,
+    "Barrier": 1.2,
+    "CarrierX": -9.3,
+    "CarrierZ": 1.5,
+    "MainBottom": 12.4,
+    "SeatRadius": 1.6,
+    "HolePilot": 0.85,
+    "MainClampTop": 13.4,
+    "LipGap": 0.2
+  },
+  "size_mm": [
+    51.7,
+    58.9,
+    21.8
+  ],
+  "outside_bounds_mm": [
+    [
+      -17.5,
+      -16.8,
+      0
+    ],
+    [
+      34.2,
+      42.1,
+      21.8
+    ]
+  ],
+  "parts": {
+    "base": {
+      "object": "Base",
+      "volume_mm3": 8483.486496211297,
+      "triangles": 7096,
+      "print_orientation": "floor down"
+    },
+    "lid": {
+      "object": "Lid",
+      "volume_mm3": 7846.206155938475,
+      "triangles": 7436,
+      "print_orientation": "roof down, rotated180X"
+    }
+  },
+  "reference_objects": [
+    "MainPCB",
+    "Main_R9",
+    "Main_SW2",
+    "Main_R4",
+    "Main_C10",
+    "Main_D1",
+    "Main_C4",
+    "Main_R5",
+    "Main_J1",
+    "Main_R23",
+    "Main_R3",
+    "Main_R2",
+    "Main_R15",
+    "Main_C3",
+    "Main_R7",
+    "Main_J2",
+    "Main_U4",
+    "Main_J4",
+    "Main_R8",
+    "Main_U1",
+    "Main_C1",
+    "Main_R10",
+    "Main_C13",
+    "Main_R13",
+    "Main_R22",
+    "Main_U9",
+    "Main_U6",
+    "Main_R12",
+    "Main_U8",
+    "Main_R11",
+    "Main_R1",
+    "Main_C2",
+    "Main_C11",
+    "Main_R21",
+    "Main_SW3",
+    "Main_R14",
+    "CarrierPCB",
+    "Carrier_U3",
+    "Carrier_R19",
+    "Carrier_R16",
+    "Carrier_U5",
+    "Carrier_C6",
+    "Carrier_R17",
+    "Carrier_R18",
+    "Carrier_U2",
+    "Carrier_C7",
+    "Carrier_C9",
+    "Carrier_J5",
+    "Carrier_C5",
+    "Carrier_C8",
+    "Carrier_R20",
+    "Main_USB_ShellTails",
+    "ProtectedPack_ACCEPTANCE_ONLY",
+    "PH4_1to1_LE50mm",
+    "PH2_PairedProtectedPackLeads"
+  ],
+  "hardware_objects": [
+    "NylonClosureScrew1",
+    "NylonClosureScrew2",
+    "NylonClosureScrew3",
+    "NylonClosureScrew4",
+    "NylonCarrierScrew1",
+    "NylonCarrierScrew2"
+  ],
+  "clearance_objects": [
+    "BatteryBay_23x34x8",
+    "RF_NO_BATTERY_HARNESS_CARRIER_METAL",
+    "Main_J1_MatingInsertion",
+    "Main_J2_MatingInsertion",
+    "Main_J4_MatingInsertion",
+    "Carrier_aabb_mm",
+    "Carrier_wire_strain_relief_aabb_mm",
+    "Carrier_NoSupport"
+  ],
+  "main_transform": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      12.4
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "carrier_transform": [
+    [
+      0,
+      0,
+      -1,
+      -9.3
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1.5
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "sensor_axes": {
+    "accel_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "carrier_to_enclosure": null,
+    "datasheet": "DS-000189 rev1.3 p19 fig3 and p83 figs12/13, archived primary",
+    "enclosure_note": "Case worker records installed transform; do not assume installation alignment; bench six-face/positive-rotation/magnetic-axis validation required",
+    "gyro_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "mag_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "operation": "v_carrier = R * v_sensor (column vectors)",
+    "package_pin1": "upper-left in carrier top view; footprint angle0deg"
+  },
+  "ph4_centerline_mm": 42.860461037103065,
+  "ph4_route_points_mm": [
+    [
+      0.5,
+      9,
+      16.4
+    ],
+    [
+      -5.8,
+      9,
+      16.4
+    ],
+    [
+      -5.8,
+      0,
+      10.1
+    ],
+    [
+      -8,
+      -7,
+      10.1
+    ],
+    [
+      -12.3,
+      -11.5,
+      10.5
+    ],
+    [
+      -12.3,
+      0.5,
+      10.5
+    ]
+  ],
+  "pack_route_points_mm": [
+    [
+      23,
+      -8,
+      6
+    ],
+    [
+      26,
+      -8,
+      6
+    ],
+    [
+      26,
+      -4.5,
+      6
+    ],
+    [
+      31,
+      -4.5,
+      6
+    ],
+    [
+      31,
+      4,
+      6
+    ],
+    [
+      29,
+      7,
+      9
+    ],
+    [
+      29,
+      18.5,
+      16.4
+    ],
+    [
+      24.5,
+      18.5,
+      16.4
+    ]
+  ],
+  "input_warnings": [
+    "main/U4: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part.",
+    "main/U9: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part.",
+    "main/U8: zero body AABB in contract; full declared courtyard used conservatively, not zero-sized part."
+  ]
+}

@@ -1,0 +1,1366 @@
+{
+  "assembly_side": "top",
+  "asymmetric_register": {
+    "edge_mm": [
+      [
+        0,
+        18.5
+      ],
+      [
+        1.5,
+        20
+      ]
+    ],
+    "feature": "upper-left 1.5x1.5mm chamfer",
+    "note": "Case must positively engage this corner; holes alone do not prevent 180deg assembly"
+  },
+  "axes": {
+    "accel_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "carrier_to_enclosure": null,
+    "datasheet": "DS-000189 rev1.3 p19 fig3 and p83 figs12/13, archived primary",
+    "enclosure_note": "Case worker records installed transform; do not assume installation alignment; bench six-face/positive-rotation/magnetic-axis validation required",
+    "gyro_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "mag_to_carrier": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "operation": "v_carrier = R * v_sensor (column vectors)",
+    "package_pin1": "upper-left in carrier top view; footprint angle0deg"
+  },
+  "bench_gates": [
+    "PH harness 1-to-1 polarity/length/crimp",
+    "real mating and case fit",
+    "rigid no-stress seating repeatability",
+    "accel/gyro/mag signs and finished-case calibration"
+  ],
+  "components": [
+    {
+      "center_mm": [
+        0.95,
+        11.9
+      ],
+      "envelope_xy_mm": [
+        0.45,
+        11.0,
+        1.45,
+        12.8
+      ],
+      "height_above_pcb_mm": 0.9,
+      "mpn": "CL10A475KO8NNNC",
+      "pad1_mm": [
+        [
+          0.95,
+          11.125
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            0.95,
+            11.125
+          ],
+          "number": "1",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "center_mm": [
+            0.95,
+            12.675
+          ],
+          "number": "2",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.9,
+            0.95
+          ]
+        }
+      ],
+      "ref": "C5",
+      "rotation_ccw_deg": 90.0
+    },
+    {
+      "center_mm": [
+        5.0,
+        14.3
+      ],
+      "envelope_xy_mm": [
+        4.1,
+        13.8,
+        5.9,
+        14.8
+      ],
+      "height_above_pcb_mm": 0.9,
+      "mpn": "CL10A475KO8NNNC",
+      "pad1_mm": [
+        [
+          4.225,
+          14.3
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            4.225,
+            14.3
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "center_mm": [
+            5.775,
+            14.3
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.9,
+            0.95
+          ]
+        }
+      ],
+      "ref": "C6",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        12.6,
+        15.0
+      ],
+      "envelope_xy_mm": [
+        12.05,
+        14.7,
+        13.15,
+        15.3
+      ],
+      "height_above_pcb_mm": 0.55,
+      "mpn": "CL05B104KO5NNNC",
+      "pad1_mm": [
+        [
+          12.12,
+          15.0
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            12.12,
+            15.0
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        },
+        {
+          "center_mm": [
+            13.08,
+            15.0
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        }
+      ],
+      "ref": "C7",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        7.6,
+        13.4
+      ],
+      "envelope_xy_mm": [
+        7.05,
+        13.1,
+        8.15,
+        13.7
+      ],
+      "height_above_pcb_mm": 0.55,
+      "mpn": "CL05B104KO5NNNC",
+      "pad1_mm": [
+        [
+          7.12,
+          13.4
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            7.12,
+            13.4
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        },
+        {
+          "center_mm": [
+            8.08,
+            13.4
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        }
+      ],
+      "ref": "C8",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        9.7,
+        13.05
+      ],
+      "envelope_xy_mm": [
+        9.15,
+        12.75,
+        10.25,
+        13.35
+      ],
+      "height_above_pcb_mm": 0.55,
+      "mpn": "CL05B104KO5NNNC",
+      "pad1_mm": [
+        [
+          9.22,
+          13.05
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            9.22,
+            13.05
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        },
+        {
+          "center_mm": [
+            10.18,
+            13.05
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.56,
+            0.62
+          ]
+        }
+      ],
+      "ref": "C9",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        9.0,
+        4.9
+      ],
+      "envelope_xy_mm": [
+        3.05,
+        0.5,
+        14.95,
+        8.1
+      ],
+      "height_above_pcb_mm": 5.8,
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "pad1_mm": [
+        [
+          6.0,
+          7.75
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            6.0,
+            7.75
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.0,
+            3.5
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            7.75
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.0,
+            3.5
+          ]
+        },
+        {
+          "center_mm": [
+            10.0,
+            7.75
+          ],
+          "number": "3",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.0,
+            3.5
+          ]
+        },
+        {
+          "center_mm": [
+            12.0,
+            7.75
+          ],
+          "number": "4",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.0,
+            3.5
+          ]
+        },
+        {
+          "center_mm": [
+            3.65,
+            2.0
+          ],
+          "number": "MP",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.5,
+            3.4
+          ]
+        },
+        {
+          "center_mm": [
+            14.35,
+            2.0
+          ],
+          "number": "MP",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.5,
+            3.4
+          ]
+        }
+      ],
+      "ref": "J5",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        14.7,
+        13.9
+      ],
+      "envelope_xy_mm": [
+        14.15,
+        13.6,
+        15.25,
+        14.2
+      ],
+      "height_above_pcb_mm": 0.4,
+      "mpn": "0402WGF4701TCE",
+      "pad1_mm": [
+        [
+          14.19,
+          13.9
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            14.19,
+            13.9
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        },
+        {
+          "center_mm": [
+            15.21,
+            13.9
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        }
+      ],
+      "ref": "R16",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        14.7,
+        15.2
+      ],
+      "envelope_xy_mm": [
+        14.15,
+        14.9,
+        15.25,
+        15.5
+      ],
+      "height_above_pcb_mm": 0.4,
+      "mpn": "0402WGF4701TCE",
+      "pad1_mm": [
+        [
+          14.19,
+          15.2
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            14.19,
+            15.2
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        },
+        {
+          "center_mm": [
+            15.21,
+            15.2
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        }
+      ],
+      "ref": "R17",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        8.8,
+        10.6
+      ],
+      "envelope_xy_mm": [
+        8.25,
+        10.3,
+        9.35,
+        10.9
+      ],
+      "height_above_pcb_mm": 0.4,
+      "mpn": "0402WGF4701TCE",
+      "pad1_mm": [
+        [
+          8.29,
+          10.6
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            8.29,
+            10.6
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        },
+        {
+          "center_mm": [
+            9.31,
+            10.6
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        }
+      ],
+      "ref": "R18",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        8.15,
+        11.8
+      ],
+      "envelope_xy_mm": [
+        7.6,
+        11.5,
+        8.7,
+        12.1
+      ],
+      "height_above_pcb_mm": 0.4,
+      "mpn": "0402WGF4701TCE",
+      "pad1_mm": [
+        [
+          7.64,
+          11.8
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            7.64,
+            11.8
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        },
+        {
+          "center_mm": [
+            8.66,
+            11.8
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        }
+      ],
+      "ref": "R19",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        16.4,
+        11.7
+      ],
+      "envelope_xy_mm": [
+        16.1,
+        11.15,
+        16.7,
+        12.25
+      ],
+      "height_above_pcb_mm": 0.4,
+      "mpn": "0402WGF2003TCE",
+      "pad1_mm": [
+        [
+          16.4,
+          11.19
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            16.4,
+            11.19
+          ],
+          "number": "1",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        },
+        {
+          "center_mm": [
+            16.4,
+            12.21
+          ],
+          "number": "2",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.54,
+            0.64
+          ]
+        }
+      ],
+      "ref": "R20",
+      "rotation_ccw_deg": 90.0
+    },
+    {
+      "center_mm": [
+        9.5,
+        16.2
+      ],
+      "envelope_xy_mm": [
+        7.95,
+        14.65,
+        11.05,
+        17.75
+      ],
+      "height_above_pcb_mm": 1.05,
+      "mpn": "ICM-20948",
+      "pad1_mm": [
+        [
+          8.0,
+          17.2
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            8.0,
+            17.2
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            16.8
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            16.4
+          ],
+          "number": "3",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            16.0
+          ],
+          "number": "4",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            15.6
+          ],
+          "number": "5",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.0,
+            15.2
+          ],
+          "number": "6",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.5,
+            14.7
+          ],
+          "number": "7",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.9,
+            14.7
+          ],
+          "number": "8",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            9.3,
+            14.7
+          ],
+          "number": "9",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            9.7,
+            14.7
+          ],
+          "number": "10",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            10.1,
+            14.7
+          ],
+          "number": "11",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            10.5,
+            14.7
+          ],
+          "number": "12",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            15.2
+          ],
+          "number": "13",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            15.6
+          ],
+          "number": "14",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            16.0
+          ],
+          "number": "15",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            16.4
+          ],
+          "number": "16",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            16.8
+          ],
+          "number": "17",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            11.0,
+            17.2
+          ],
+          "number": "18",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            10.5,
+            17.7
+          ],
+          "number": "19",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            10.1,
+            17.7
+          ],
+          "number": "20",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            9.7,
+            17.7
+          ],
+          "number": "21",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            9.3,
+            17.7
+          ],
+          "number": "22",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.9,
+            17.7
+          ],
+          "number": "23",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        },
+        {
+          "center_mm": [
+            8.5,
+            17.7
+          ],
+          "number": "24",
+          "rotation_deg": 90.0,
+          "size_mm": [
+            0.55,
+            0.2
+          ]
+        }
+      ],
+      "ref": "U2",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        12.9,
+        11.7
+      ],
+      "envelope_xy_mm": [
+        10.925,
+        10.5,
+        14.875,
+        12.9
+      ],
+      "height_above_pcb_mm": 0.9,
+      "mpn": "PCA9306DCUR",
+      "pad1_mm": [
+        [
+          11.35,
+          12.45
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            11.35,
+            12.45
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            11.35,
+            11.95
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            11.35,
+            11.45
+          ],
+          "number": "3",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            11.35,
+            10.95
+          ],
+          "number": "4",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            14.45,
+            10.95
+          ],
+          "number": "5",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            14.45,
+            11.45
+          ],
+          "number": "6",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            14.45,
+            11.95
+          ],
+          "number": "7",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        },
+        {
+          "center_mm": [
+            14.45,
+            12.45
+          ],
+          "number": "8",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            0.85,
+            0.3
+          ]
+        }
+      ],
+      "ref": "U3",
+      "rotation_ccw_deg": 0.0
+    },
+    {
+      "center_mm": [
+        3.8,
+        11.7
+      ],
+      "envelope_xy_mm": [
+        2,
+        10.1,
+        5.6,
+        13.3
+      ],
+      "height_above_pcb_mm": 1.45,
+      "mpn": "AP2112K-1.8TRG1",
+      "pad1_mm": [
+        [
+          2.6625,
+          12.65
+        ]
+      ],
+      "pads": [
+        {
+          "center_mm": [
+            2.6625,
+            12.65
+          ],
+          "number": "1",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "center_mm": [
+            2.6625,
+            11.7
+          ],
+          "number": "2",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "center_mm": [
+            2.6625,
+            10.75
+          ],
+          "number": "3",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "center_mm": [
+            4.9375,
+            10.75
+          ],
+          "number": "4",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "center_mm": [
+            4.9375,
+            12.65
+          ],
+          "number": "5",
+          "rotation_deg": 0.0,
+          "size_mm": [
+            1.325,
+            0.6
+          ]
+        }
+      ],
+      "ref": "U5",
+      "rotation_ccw_deg": 0.0
+    }
+  ],
+  "connector": {
+    "acceptance": "PROVISIONAL_NOT_ACCEPTED",
+    "body_xy_mm": [
+      3.05,
+      0.5,
+      14.95,
+      8.1
+    ],
+    "center_mm": [
+      9,
+      4.9
+    ],
+    "courtyard_xy_mm": [
+      2.4,
+      0,
+      15.6,
+      10.0
+    ],
+    "front_edge_mm": [
+      [
+        3.05,
+        0.5
+      ],
+      [
+        14.95,
+        0.5
+      ]
+    ],
+    "height_max_mm": 5.8,
+    "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+    "outward_mating_direction": [
+      0,
+      -1,
+      0
+    ],
+    "pin1_pad_center_mm": [
+      6,
+      7.75
+    ],
+    "pin4_pad_center_mm": [
+      12,
+      7.75
+    ],
+    "pinout": {
+      "1": "3V3 (3.0-3.6V)",
+      "2": "GND",
+      "3": "SDA_3V3",
+      "4": "SCL_3V3"
+    },
+    "reference": "J5",
+    "replacement_pending_confirmation": true
+  },
+  "coordinate_frame": {
+    "kicad_to_carrier": "x=x_kicad-100; y=120-y_kicad",
+    "kicad_xy_origin_mm": [
+      100,
+      120
+    ],
+    "origin": "lower-left outline corner on component face",
+    "pcb_bottom_z_mm": -1,
+    "pcb_top_z_mm": 0,
+    "x": "PH pin1 toward pin4",
+    "y": "away from connector mating face into PCB",
+    "z": "out of component face"
+  },
+  "copper_layers": 4,
+  "maximum_component_height_mm": 5.8,
+  "mounting_features": [
+    {
+      "center_mm": [
+        2.5,
+        17.5
+      ],
+      "drill_mm": [
+        2.2,
+        2.2
+      ],
+      "ref": "H1",
+      "support_radius_mm": 1.65
+    },
+    {
+      "center_mm": [
+        15.5,
+        17.5
+      ],
+      "drill_mm": [
+        2.7,
+        2.2
+      ],
+      "ref": "H2",
+      "support_radius_mm": 1.65
+    }
+  ],
+  "outline_mm": [
+    [
+      0,
+      0
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      18,
+      20
+    ],
+    [
+      1.5,
+      20
+    ],
+    [
+      0,
+      18.5
+    ]
+  ],
+  "plug_cavity": {
+    "aabb_mm": [
+      [
+        2,
+        -9,
+        0
+      ],
+      [
+        16,
+        1.0,
+        6.5
+      ]
+    ],
+    "allowance_note": "Includes 9.6mm nominal mated drawing depth and insertion/service allowance; verify genuine PHR-4 and actual crimped wire before case release",
+    "cable_length_max_mm": 50,
+    "kind": "CONSERVATIVE_CLEARANCE_ENVELOPE_NOT_MEASURED_HARNESS",
+    "wire_strain_relief_aabb_mm": [
+      [
+        3,
+        -15,
+        0
+      ],
+      [
+        15,
+        -9,
+        6.5
+      ]
+    ]
+  },
+  "revision": "C1",
+  "schema": "smove.imu-carrier.interface.v1",
+  "size_mm": [
+    18,
+    20
+  ],
+  "status": "ELECTRICAL CAD HANDOFF; PH2.0 selected; physical qualification and manufacturing release NOT granted",
+  "support": {
+    "material": "nonconductive nylon/plastic, no magnetic steel",
+    "no_stress_clamping": true,
+    "no_support_aabb_mm": [
+      [
+        6.5,
+        13.2,
+        -2
+      ],
+      [
+        12.5,
+        19.2,
+        1.1
+      ]
+    ],
+    "no_support_beneath_sensor": true,
+    "pcb_bottom_z_mm": -1,
+    "regions": "Peripheral annuli at H1/H2, radius1.65mm; seat with clearance, do not preload PCB"
+  },
+  "thickness_mm": 1,
+  "units": "mm",
+  "connector_selection": {
+    "status": "ACCEPTED_FOR_HAND_SOLDERED_PROTOTYPE",
+    "pitch_mm": 2.0,
+    "J2": {
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C295747",
+      "mate": "PHR-2"
+    },
+    "J4_J5": {
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C265102",
+      "mate": "PHR-4"
+    },
+    "supply": "User purchases connectors and precrimped leads; no order/upload performed",
+    "hand_soldering": "Small SMD, accessible rear signal tails and side hold-downs; flux/fine iron and magnification. Not beginner THT. Solder with PCB out of enclosure, battery and USB disconnected.",
+    "harness": "1=3.3V,2=GND,3=SDA,4=SCL; straight 1:1, finished length <=50mm; check each purchased cable by continuity, never trust colors or listing polarity",
+    "authenticity": "No AliExpress product is promised genuine or correctly polarized",
+    "manufacturing_release": false
+  }
+}

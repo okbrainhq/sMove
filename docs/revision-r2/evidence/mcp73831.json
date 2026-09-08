@@ -1,0 +1,12 @@
+{
+  "id": "mcp73831",
+  "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf",
+  "retrieved_at_utc": "2026-09-08T00:20:54.036389+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/mcp73831.body.gz",
+  "final_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf",
+  "content_type": "application/pdf",
+  "sha256": "75297f2a5235599368381adfb63df2652cc22d757f171f388147b2ab3d32776f",
+  "bytes": 889186,
+  "is_pdf": true
+}

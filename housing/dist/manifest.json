@@ -1,0 +1,20 @@
+{
+  "manufacturing_release": false,
+  "files": {
+    "housing/PRINTING-ASSEMBLY.md": "141b5600a2ed5d6972f801101ff7afd6ebd6782b0fbcda39664a4a9e1ad00e2c",
+    "housing/README.md": "4f42aa9b80d1915a2c1506de9f8d3b40fd4e81392e64a785029ef1b521d3fe3d",
+    "housing/dist/assembled.png": "3186b35bfd2f0e4aadcf380e0c8898d50ddfab24495dc866ce45a3e3e7916168",
+    "housing/dist/base.stl": "9024b2c169eca344532f803f6f620f842f093c04c3f0e1ff341a11fd32e57445",
+    "housing/dist/exploded.png": "bb757aac27f57a49f8718fb96338e44045e71d7da71afaf299ebb4b7dcb8fcf4",
+    "housing/dist/lid.stl": "ed7b1fd215a6cccbd1951a98a41870260971311ba4ee1031d4c6d1b445cd26c4",
+    "housing/dist/section.png": "b10cf26a5120b1a7d0a7597a39ae8157268b84653cc074380d2f0ddaabbce82a",
+    "housing/dist/smove-r2-assembly.step": "b99897579a7f74c743025b0addee61b575d10cb3a2f8a68b30bd550fb7cc55de",
+    "housing/dist/smove-r2-printable.step": "2160314ce6aba664e4e7a622dc31ccdf33457c46b62eb31bb7ed6a1812806376",
+    "housing/entry.py": "2d80a853ac013a6aa33c5d6573ec3284f97ee2298575bbf776dc722868921c6b",
+    "housing/smove-r2-enclosure.FCStd": "97239e3debd206c42781198ac3ccc1c3944c828df9c2e412a091c50e9f34a393",
+    "housing/status.json": "2d382ab390ab32ff5107229da3657a02683ecc8fe964a2ab849ca34897b89e07",
+    "housing/toolchain.lock.json": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
+    "housing/validation/build.json": "b1169766fe391f2ba45783a94cd2a34af05176b7206b3e61ab8307cd4878393f",
+    "housing/validation/input-geometry.json": "114e0270846441b4bcf16073cd0164b6c4173dbd9f352ce71227853e6b8c2886"
+  }
+}

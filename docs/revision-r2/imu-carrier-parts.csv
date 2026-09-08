@@ -1,0 +1,9 @@
+refs,quantity,mpn,manufacturer,jlc,value,package,purpose,notes,board
+U2,1,ICM-20948,TDK InvenSense,C726001,ICM-20948,TDK 24-pad 3x3x1mm,Integrated nine-axis IMU,VDD and VDDIO both 1.8V; exact manufacturer land pattern; lifecycle risk,imu-carrier
+U3,1,PCA9306DCUR,Texas Instruments,C33196,PCA9306DCUR,VSSOP-8 DCU,I2C 1.8V/3.3V translation,"VREF2 tied EN; 200k to 3V3, NOT directly to 3V3",imu-carrier
+U5,1,AP2112K-1.8TRG1,Diodes Incorporated,C176944,AP2112K-1.8TRG1,SOT-25,IMU 1.8V LDO,Input and enable 3V3; same supply for IMU VDD/VDDIO,imu-carrier
+R16 R17 R18 R19,4,0402WGF4701TCE,UNI-ROYAL(Uniroyal Elec),C25900,4.7k 1%,0402,I2C pull-ups and charger ILIM,R16/R17 low side; R18/R19 high side; R22 ILIM-to-GND required even in fixed USB100 mode,imu-carrier
+R20,1,0402WGF2003TCE,UNI-ROYAL(Uniroyal Elec),C25764,200k 1%,0402,PCA9306 bias,3V3 to joined VREF2/EN,imu-carrier
+C5 C6,2,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,4.7uF 16V X5R 10%,0603,VBUS bypass and 1.8V LDO input/output,Bias/stability gates; C5/C6 effective >=1uF; C1 USB attach/stability test,imu-carrier
+C7 C8 C9,3,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,100nF 16V X7R 10%,0402,"Local bypass, IMU REGOUT and ADC filter",C7 VDD; C8 VDDIO; C9 REGOUT; C11 battery ADC,imu-carrier
+J5,1,S4B-PH-SM4-TB(LF)(SN),JST,C265102,S4B-PH-SM4-TB(LF)(SN),JST PH 2.0mm 1x4 side-entry SMT,Reusable carrier interface,Main J4 / carrier J5; 1=3V3 2=GND 3=SDA 4=SCL; PHR-4 keyed housing; <=50mm straight-through harness; local variant/pitch/polarity/availability pending,imu-carrier

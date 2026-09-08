@@ -1,0 +1,1033 @@
+{
+  "U1": {
+    "board": "main",
+    "mpn": "ESP32-C3-MINI-1-N4",
+    "pins": {
+      "1": "GND",
+      "2": "GND",
+      "3": "3V3_MAIN",
+      "4": null,
+      "5": "STRAP2",
+      "6": null,
+      "7": null,
+      "8": "MCU_EN",
+      "9": null,
+      "10": null,
+      "11": "GND",
+      "12": "BAT_ADC",
+      "13": "USB_POWER_N",
+      "14": "GND",
+      "15": null,
+      "16": "LED_B",
+      "17": null,
+      "18": "SCL_HOST",
+      "19": "SDA_HOST",
+      "20": "LED_R",
+      "21": "LED_G",
+      "22": "STRAP8",
+      "23": "BOOT",
+      "24": null,
+      "25": null,
+      "26": "USB_DM_MCU",
+      "27": "USB_DP_MCU",
+      "28": null,
+      "29": null,
+      "30": "UART_RX",
+      "31": "UART_TX",
+      "32": null,
+      "33": null,
+      "34": null,
+      "35": null,
+      "36": "GND",
+      "37": "GND",
+      "38": "GND",
+      "39": "GND",
+      "40": "GND",
+      "41": "GND",
+      "42": "GND",
+      "43": "GND",
+      "44": "GND",
+      "45": "GND",
+      "46": "GND",
+      "47": "GND",
+      "48": "GND",
+      "49": "GND",
+      "50": "GND",
+      "51": "GND",
+      "52": "GND",
+      "53": "GND"
+    },
+    "refs": "U1",
+    "quantity": "1",
+    "manufacturer": "Espressif Systems",
+    "jlc": "C2838502",
+    "value": "ESP32-C3-MINI-1-N4",
+    "package": "Espressif MINI-1 13.2x16.6mm",
+    "purpose": "Wireless/native USB",
+    "notes": "N4 specifically; Standard Only/MSL3/X-ray; all-layer antenna keepout",
+    "ref": "U1",
+    "uuid": "679f3a43-46b0-5e0d-9e87-38b62fcad22e",
+    "fitted": true,
+    "fp": "ESP32-C3-MINI-1",
+    "placement": [
+      112.5,
+      102.9,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/679f3a43-46b0-5e0d-9e87-38b62fcad22e"
+  },
+  "U4": {
+    "board": "main",
+    "mpn": "AP2112K-3.3TRG1",
+    "pins": {
+      "1": "SYS",
+      "2": "GND",
+      "3": "SYS",
+      "4": null,
+      "5": "3V3_MAIN"
+    },
+    "refs": "U4",
+    "quantity": "1",
+    "manufacturer": "Diodes Incorporated",
+    "jlc": "C51118",
+    "value": "AP2112K-3.3TRG1",
+    "package": "SOT-25",
+    "purpose": "Main 3.3V LDO",
+    "notes": "IN/EN from BQ OUT/SYS; partial battery range; thermal/burst qualification mandatory",
+    "ref": "U4",
+    "uuid": "1555110c-1d31-53c3-9e59-bdb126c1727a",
+    "fitted": true,
+    "fp": "SOT-23-5",
+    "placement": [
+      102.8,
+      107.7,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/1555110c-1d31-53c3-9e59-bdb126c1727a"
+  },
+  "U6": {
+    "board": "main",
+    "mpn": "BQ24074RGTR",
+    "pins": {
+      "1": "TS_NO_CELL_SENSING",
+      "2": "PACK_P",
+      "3": "PACK_P",
+      "4": "GND",
+      "5": "GND",
+      "6": "GND",
+      "7": "USB_POWER_N",
+      "8": "GND",
+      "9": null,
+      "10": "SYS",
+      "11": "SYS",
+      "12": "CHG_ILIM",
+      "13": "VBUS",
+      "14": null,
+      "15": null,
+      "16": "CHG_ISET",
+      "17": "GND"
+    },
+    "critical_note": "Primary TI map:7=PGOOD,8=VSS; old design.py reverses them. Confirm symbol/land independently. TMR open keeps default timers; no TD pin on this variant.",
+    "refs": "U6",
+    "quantity": "1",
+    "manufacturer": "Texas Instruments",
+    "jlc": "C54313",
+    "value": "BQ24074RGTR",
+    "package": "VQFN-16 RGT 3x3mm + EP",
+    "purpose": "4.2V power-path charger",
+    "notes": "USB100 fixed; OUT feeds LDO; default timers; 10k TS bias means NO cell-temperature sensing",
+    "ref": "U6",
+    "uuid": "62e9e236-7ab7-5084-b6c7-72c70c5ebfa8",
+    "fitted": true,
+    "fp": "BQ24074_RGT",
+    "placement": [
+      108.0,
+      115.1,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/62e9e236-7ab7-5084-b6c7-72c70c5ebfa8"
+  },
+  "U8": {
+    "board": "main",
+    "mpn": "USBLC6-2SC6",
+    "pins": {
+      "1": "USB_DM",
+      "2": "GND",
+      "3": "USB_DP",
+      "4": "USB_DP",
+      "5": "VBUS",
+      "6": "USB_DM"
+    },
+    "refs": "U8",
+    "quantity": "1",
+    "manufacturer": "STMicroelectronics",
+    "jlc": "C7519",
+    "value": "USBLC6-2SC6",
+    "package": "SOT-23-6",
+    "purpose": "USB data/VBUS ESD",
+    "notes": "Rail clamp to VBUS, not 3V3; no sustained overvoltage guarantee",
+    "ref": "U8",
+    "uuid": "33e55572-782d-5572-9428-75a8ad7f3520",
+    "fitted": true,
+    "fp": "SOT-23-6",
+    "placement": [
+      122.5,
+      124.6,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/33e55572-782d-5572-9428-75a8ad7f3520"
+  },
+  "U9": {
+    "board": "main",
+    "mpn": "PESD5V0S2BT,215",
+    "pins": {
+      "1": "CC1",
+      "2": "CC2",
+      "3": "GND"
+    },
+    "refs": "U9",
+    "quantity": "1",
+    "manufacturer": "Nexperia",
+    "jlc": "C49338",
+    "value": "PESD5V0S2BT,215",
+    "package": "SOT-23",
+    "purpose": "CC1/CC2 ESD",
+    "notes": "One dual array, not duplicate TVS layers",
+    "ref": "U9",
+    "uuid": "fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411",
+    "fitted": true,
+    "fp": "SOT-23",
+    "placement": [
+      116.2,
+      123.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411"
+  },
+  "J1": {
+    "board": "main",
+    "mpn": "TYPE-C-31-M-12",
+    "pins": {
+      "A1": "GND",
+      "A4": "VBUS",
+      "A5": "CC1",
+      "A6": "USB_DP",
+      "A7": "USB_DM",
+      "A8": null,
+      "A9": "VBUS",
+      "A12": "GND",
+      "B1": "GND",
+      "B4": "VBUS",
+      "B5": "CC2",
+      "B6": "USB_DP",
+      "B7": "USB_DM",
+      "B8": null,
+      "B9": "VBUS",
+      "B12": "GND",
+      "S1": "GND"
+    },
+    "footprint_gate": "Preserve every duplicated physical contact and all shell anchors; S1 is logical shell net.",
+    "refs": "J1",
+    "quantity": "1",
+    "manufacturer": "Korean Hroparts Elec",
+    "jlc": "C165948",
+    "value": "TYPE-C-31-M-12",
+    "package": "HRO USB-C 16-contact SMT with shell anchors",
+    "purpose": "Single USB port",
+    "notes": "Native USB data plus charge input; no PD",
+    "ref": "J1",
+    "uuid": "824b74bc-0f6b-5073-82be-ae83843f2769",
+    "fitted": true,
+    "fp": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "placement": [
+      119.88,
+      132.0,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/824b74bc-0f6b-5073-82be-ae83843f2769"
+  },
+  "J2": {
+    "board": "main",
+    "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+    "pins": {
+      "1": "PACK_P",
+      "2": "GND",
+      "MP": "GND"
+    },
+    "refs": "J2",
+    "quantity": "1",
+    "manufacturer": "JST",
+    "jlc": "C295747",
+    "value": "S2B-PH-SM4-TB(LF)(SN)",
+    "package": "JST PH 2.0mm right-angle SMT",
+    "purpose": "Protected-pack connection",
+    "notes": "Pin1 PACK_P; pin2 GND; verify mating polarity; 5.8mm height reserve",
+    "ref": "J2",
+    "uuid": "21368572-48a5-5c87-8fc4-78e6b3ab2ef1",
+    "fitted": true,
+    "fp": "JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+    "placement": [
+      120.1,
+      116.5,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/21368572-48a5-5c87-8fc4-78e6b3ab2ef1"
+  },
+  "J4": {
+    "board": "main",
+    "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "GND",
+      "3": "SDA_HOST",
+      "4": "SCL_HOST",
+      "MP": "GND"
+    },
+    "refs": "J4",
+    "quantity": "1",
+    "manufacturer": "JST",
+    "jlc": "C265102",
+    "value": "S4B-PH-SM4-TB(LF)(SN)",
+    "package": "JST PH 2.0mm 1x4 side-entry SMT",
+    "purpose": "Reusable carrier interface",
+    "notes": "Main J4 / carrier J5; 1=3V3 2=GND 3=SDA 4=SCL; PHR-4 keyed housing; <=50mm straight-through harness; local variant/pitch/polarity/availability pending",
+    "ref": "J4",
+    "uuid": "e38f931c-31cf-5415-b8ef-0c238d514c2d",
+    "fitted": true,
+    "fp": "JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal",
+    "placement": [
+      104.9,
+      126.0,
+      -90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e38f931c-31cf-5415-b8ef-0c238d514c2d"
+  },
+  "J3": {
+    "board": "main",
+    "mpn": null,
+    "pins": {
+      "1": "GND",
+      "2": "UART_RX",
+      "3": "UART_TX",
+      "4": "MCU_EN",
+      "5": "BOOT"
+    },
+    "population": "unpopulated TH debug pads; no power input",
+    "ref": "J3",
+    "uuid": "86d7e0fa-4f35-5447-94e9-db13adbc2dd9",
+    "fitted": false,
+    "fp": "Debug_5",
+    "placement": [
+      122.0,
+      101.2,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/86d7e0fa-4f35-5447-94e9-db13adbc2dd9"
+  },
+  "SW2": {
+    "board": "main",
+    "mpn": "TS-1088-AR02016",
+    "pins": {
+      "1": "MCU_EN",
+      "2": "GND"
+    },
+    "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers.",
+    "refs": "SW2 SW3",
+    "quantity": "2",
+    "manufacturer": "XUNPU",
+    "jlc": "C720477",
+    "value": "TS-1088-AR02016",
+    "package": "4x3mm SMT",
+    "purpose": "Reset and boot/user buttons",
+    "notes": "Verify contact-pair footprint mapping; preserve separate physical actions",
+    "ref": "SW2",
+    "uuid": "2a670366-1936-5aec-8f5e-8c3d3571a6ea",
+    "fitted": true,
+    "fp": "TS1088",
+    "placement": [
+      112.3,
+      123.7,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2a670366-1936-5aec-8f5e-8c3d3571a6ea"
+  },
+  "SW3": {
+    "board": "main",
+    "mpn": "TS-1088-AR02016",
+    "pins": {
+      "1": "BOOT",
+      "2": "GND"
+    },
+    "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers.",
+    "refs": "SW2 SW3",
+    "quantity": "2",
+    "manufacturer": "XUNPU",
+    "jlc": "C720477",
+    "value": "TS-1088-AR02016",
+    "package": "4x3mm SMT",
+    "purpose": "Reset and boot/user buttons",
+    "notes": "Verify contact-pair footprint mapping; preserve separate physical actions",
+    "ref": "SW3",
+    "uuid": "430fa0ba-1038-54cf-a2e1-fa5681823db9",
+    "fitted": true,
+    "fp": "TS1088",
+    "placement": [
+      112.3,
+      130.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/430fa0ba-1038-54cf-a2e1-fa5681823db9"
+  },
+  "D1": {
+    "board": "main",
+    "mpn": "LTST-C19HE1WT",
+    "pins": {
+      "1": "LED_R_K",
+      "2": "LED_G_K",
+      "3": "LED_B_K",
+      "4": "3V3_MAIN"
+    },
+    "refs": "D1",
+    "quantity": "1",
+    "manufacturer": "Lite-On",
+    "jlc": "C458749",
+    "value": "LTST-C19HE1WT",
+    "package": "1.6x1.6mm 4-pad RGB",
+    "purpose": "RGB status",
+    "notes": "Common anode; 1k per cathode; low-current indication; off while charging",
+    "ref": "D1",
+    "uuid": "02ba7497-9a8d-56fa-99a3-83e5b10889a3",
+    "fitted": true,
+    "fp": "LED_LiteOn_LTST-C19HE1WT",
+    "placement": [
+      119.15,
+      122.7,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/02ba7497-9a8d-56fa-99a3-83e5b10889a3"
+  },
+  "R1": {
+    "board": "main",
+    "mpn": "0402WGF5101TCE",
+    "pins": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "refs": "R1 R2",
+    "quantity": "2",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25905",
+    "value": "5.1k 1%",
+    "package": "0402",
+    "purpose": "USB-C Rd",
+    "notes": "Separate CC resistors; never join CC1 and CC2",
+    "ref": "R1",
+    "uuid": "bf0c67d8-bf71-531a-9bff-17cf9ae2ecc1",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      115.4,
+      125.8,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/bf0c67d8-bf71-531a-9bff-17cf9ae2ecc1"
+  },
+  "R2": {
+    "board": "main",
+    "mpn": "0402WGF5101TCE",
+    "pins": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "refs": "R1 R2",
+    "quantity": "2",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25905",
+    "value": "5.1k 1%",
+    "package": "0402",
+    "purpose": "USB-C Rd",
+    "notes": "Separate CC resistors; never join CC1 and CC2",
+    "ref": "R2",
+    "uuid": "62249a3d-7c44-50d3-9b93-def511549c3b",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      118.2,
+      125.8,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/62249a3d-7c44-50d3-9b93-def511549c3b"
+  },
+  "R3": {
+    "board": "main",
+    "mpn": "0402WGF220JTCE",
+    "pins": {
+      "1": "USB_DM",
+      "2": "USB_DM_MCU"
+    },
+    "refs": "R3 R4",
+    "quantity": "2",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25092",
+    "value": "22R 1%",
+    "package": "0402",
+    "purpose": "USB series damping",
+    "notes": "Near MCU, one per data line; validate signal integrity",
+    "ref": "R3",
+    "uuid": "d702c535-6d67-5fa9-9a0a-121a3ab9aa51",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      120.4,
+      109.0,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d702c535-6d67-5fa9-9a0a-121a3ab9aa51"
+  },
+  "R4": {
+    "board": "main",
+    "mpn": "0402WGF220JTCE",
+    "pins": {
+      "1": "USB_DP",
+      "2": "USB_DP_MCU"
+    },
+    "refs": "R3 R4",
+    "quantity": "2",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25092",
+    "value": "22R 1%",
+    "package": "0402",
+    "purpose": "USB series damping",
+    "notes": "Near MCU, one per data line; validate signal integrity",
+    "ref": "R4",
+    "uuid": "afad6a5c-42da-5eff-9c63-4a7089ab9b38",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      120.4,
+      107.8,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/afad6a5c-42da-5eff-9c63-4a7089ab9b38"
+  },
+  "R5": {
+    "board": "main",
+    "mpn": "0402WGF1003TCE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "USB_POWER_N"
+    },
+    "refs": "R5 R14 R15",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25741",
+    "value": "100k 1%",
+    "package": "0402",
+    "purpose": "USB valid-power pull-up and battery ADC divider",
+    "notes": "R5 pulls BQ PGOOD to 3V3 for GPIO1; R14/R15 PACK_P/2 to GPIO0; no raw VBUS GPIO",
+    "ref": "R5",
+    "uuid": "e8977b6c-9dc7-5070-8fd6-38378bcab1ac",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      112.8,
+      112.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e8977b6c-9dc7-5070-8fd6-38378bcab1ac"
+  },
+  "R7": {
+    "board": "main",
+    "mpn": "0402WGF1002TCE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "MCU_EN"
+    },
+    "refs": "R7 R8 R9 R10 R23",
+    "quantity": "5",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25744",
+    "value": "10k 1%",
+    "package": "0402",
+    "purpose": "EN and GPIO9/2/8 pulls; charger TS bias",
+    "notes": "R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",
+    "ref": "R7",
+    "uuid": "117d08c6-bf29-5779-83ba-3cece792d5b9",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      102.0,
+      115.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/117d08c6-bf29-5779-83ba-3cece792d5b9"
+  },
+  "R8": {
+    "board": "main",
+    "mpn": "0402WGF1002TCE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "BOOT"
+    },
+    "refs": "R7 R8 R9 R10 R23",
+    "quantity": "5",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25744",
+    "value": "10k 1%",
+    "package": "0402",
+    "purpose": "EN and GPIO9/2/8 pulls; charger TS bias",
+    "notes": "R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",
+    "ref": "R8",
+    "uuid": "484aaf4f-18bd-50d2-88d3-31683e9707e2",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      114.4,
+      112.6,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/484aaf4f-18bd-50d2-88d3-31683e9707e2"
+  },
+  "R9": {
+    "board": "main",
+    "mpn": "0402WGF1002TCE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "STRAP2"
+    },
+    "refs": "R7 R8 R9 R10 R23",
+    "quantity": "5",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25744",
+    "value": "10k 1%",
+    "package": "0402",
+    "purpose": "EN and GPIO9/2/8 pulls; charger TS bias",
+    "notes": "R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",
+    "ref": "R9",
+    "uuid": "1dc23bb5-2a78-5f55-a0e6-529fa725fe87",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      101.2,
+      103.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/1dc23bb5-2a78-5f55-a0e6-529fa725fe87"
+  },
+  "R10": {
+    "board": "main",
+    "mpn": "0402WGF1002TCE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "STRAP8"
+    },
+    "refs": "R7 R8 R9 R10 R23",
+    "quantity": "5",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25744",
+    "value": "10k 1%",
+    "package": "0402",
+    "purpose": "EN and GPIO9/2/8 pulls; charger TS bias",
+    "notes": "R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",
+    "ref": "R10",
+    "uuid": "f6011e9d-b5fe-58a3-9fca-949710662cde",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      114.0,
+      114.2,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/f6011e9d-b5fe-58a3-9fca-949710662cde"
+  },
+  "R11": {
+    "board": "main",
+    "mpn": "0402WGF1001TCE",
+    "pins": {
+      "1": "LED_R",
+      "2": "LED_R_K"
+    },
+    "refs": "R11 R12 R13",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C11702",
+    "value": "1k 1%",
+    "package": "0402",
+    "purpose": "RGB current limiting",
+    "notes": "No LED on boot-strapping pins",
+    "ref": "R11",
+    "uuid": "e88b45c9-cf79-581f-9355-e93b103f9884",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      119.8,
+      125.6,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e88b45c9-cf79-581f-9355-e93b103f9884"
+  },
+  "R12": {
+    "board": "main",
+    "mpn": "0402WGF1001TCE",
+    "pins": {
+      "1": "LED_G",
+      "2": "LED_G_K"
+    },
+    "refs": "R11 R12 R13",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C11702",
+    "value": "1k 1%",
+    "package": "0402",
+    "purpose": "RGB current limiting",
+    "notes": "No LED on boot-strapping pins",
+    "ref": "R12",
+    "uuid": "3c3f9172-c3a6-5be5-b617-559c8cf23058",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      113.4,
+      133.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/3c3f9172-c3a6-5be5-b617-559c8cf23058"
+  },
+  "R13": {
+    "board": "main",
+    "mpn": "0402WGF1001TCE",
+    "pins": {
+      "1": "LED_B",
+      "2": "LED_B_K"
+    },
+    "refs": "R11 R12 R13",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C11702",
+    "value": "1k 1%",
+    "package": "0402",
+    "purpose": "RGB current limiting",
+    "notes": "No LED on boot-strapping pins",
+    "ref": "R13",
+    "uuid": "eb1928cd-42fe-596f-b55e-9356c3c99c22",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      111.2,
+      133.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eb1928cd-42fe-596f-b55e-9356c3c99c22"
+  },
+  "R14": {
+    "board": "main",
+    "mpn": "0402WGF1003TCE",
+    "pins": {
+      "1": "PACK_P",
+      "2": "BAT_ADC"
+    },
+    "refs": "R5 R14 R15",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25741",
+    "value": "100k 1%",
+    "package": "0402",
+    "purpose": "USB valid-power pull-up and battery ADC divider",
+    "notes": "R5 pulls BQ PGOOD to 3V3 for GPIO1; R14/R15 PACK_P/2 to GPIO0; no raw VBUS GPIO",
+    "ref": "R14",
+    "uuid": "da7f29a5-3074-5719-a2d9-6aed95089931",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      108.2,
+      112.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/da7f29a5-3074-5719-a2d9-6aed95089931"
+  },
+  "R15": {
+    "board": "main",
+    "mpn": "0402WGF1003TCE",
+    "pins": {
+      "1": "BAT_ADC",
+      "2": "GND"
+    },
+    "refs": "R5 R14 R15",
+    "quantity": "3",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25741",
+    "value": "100k 1%",
+    "package": "0402",
+    "purpose": "USB valid-power pull-up and battery ADC divider",
+    "notes": "R5 pulls BQ PGOOD to 3V3 for GPIO1; R14/R15 PACK_P/2 to GPIO0; no raw VBUS GPIO",
+    "ref": "R15",
+    "uuid": "8f10a7e0-9fbe-5b5c-b185-00a79eb35593",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      110.4,
+      112.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/8f10a7e0-9fbe-5b5c-b185-00a79eb35593"
+  },
+  "R21": {
+    "board": "main",
+    "mpn": "0402WGF8201TCE",
+    "pins": {
+      "1": "CHG_ISET",
+      "2": "GND"
+    },
+    "refs": "R21",
+    "quantity": "1",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25924",
+    "value": "8.2k 1%",
+    "package": "0402",
+    "purpose": "BQ fast-charge programming",
+    "notes": "108.5mA nominal before input limiting; actual USB input <=100mA including system; validate qualified cell",
+    "ref": "R21",
+    "uuid": "c05f7deb-ba06-589e-88ff-ec1466f550a8",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      111.0,
+      114.4,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/c05f7deb-ba06-589e-88ff-ec1466f550a8"
+  },
+  "R22": {
+    "board": "main",
+    "mpn": "0402WGF4701TCE",
+    "pins": {
+      "1": "CHG_ILIM",
+      "2": "GND"
+    },
+    "refs": "R22",
+    "quantity": "1",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25900",
+    "value": "4.7k 1%",
+    "package": "0402",
+    "purpose": "I2C pull-ups and charger ILIM",
+    "notes": "R16/R17 low side; R18/R19 high side; R22 ILIM-to-GND required even in fixed USB100 mode",
+    "ref": "R22",
+    "uuid": "be66b532-05c7-557a-89c5-f2d94d130905",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      111.0,
+      117.0,
+      -90.0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/be66b532-05c7-557a-89c5-f2d94d130905"
+  },
+  "R23": {
+    "board": "main",
+    "mpn": "0402WGF1002TCE",
+    "pins": {
+      "1": "TS_NO_CELL_SENSING",
+      "2": "GND"
+    },
+    "refs": "R7 R8 R9 R10 R23",
+    "quantity": "5",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "jlc": "C25744",
+    "value": "10k 1%",
+    "package": "0402",
+    "purpose": "EN and GPIO9/2/8 pulls; charger TS bias",
+    "notes": "R23 TS-to-GND is manufacturer-permitted NO-temperature-sensing bias, not a thermistor",
+    "ref": "R23",
+    "uuid": "a9c1b0ab-5977-568f-be58-0258ae3fea50",
+    "fitted": true,
+    "fp": "R_0402_1005Metric",
+    "placement": [
+      104.8,
+      117.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a9c1b0ab-5977-568f-be58-0258ae3fea50"
+  },
+  "C1": {
+    "board": "main",
+    "mpn": "CL10A475KO8NNNC",
+    "pins": {
+      "1": "VBUS",
+      "2": "GND"
+    },
+    "refs": "C1",
+    "quantity": "1",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C19666",
+    "value": "4.7uF 16V X5R 10%",
+    "package": "0603",
+    "purpose": "VBUS bypass and 1.8V LDO input/output",
+    "notes": "Bias/stability gates; C5/C6 effective >=1uF; C1 USB attach/stability test",
+    "ref": "C1",
+    "uuid": "d0826465-4b10-5286-85fd-e123cc439f08",
+    "fitted": true,
+    "fp": "C_0603_1608Metric",
+    "placement": [
+      107.8,
+      118.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d0826465-4b10-5286-85fd-e123cc439f08"
+  },
+  "C2": {
+    "board": "main",
+    "mpn": "CL21A476MQYNNNE",
+    "pins": {
+      "1": "PACK_P",
+      "2": "GND"
+    },
+    "refs": "C2 C13",
+    "quantity": "2",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C16780",
+    "value": "47uF 6.3V X5R 20%",
+    "package": "0805",
+    "purpose": "BQ BAT and SYS reservoirs",
+    "notes": "Exact-part DC bias/tolerance/X5R/age allocation screened at BAT4.23V/SYS4.5V. Maximum body height 1.45mm, same footprint.",
+    "ref": "C2",
+    "uuid": "fb41cc53-f5cb-5dc0-a04c-e60578c27ce9",
+    "fitted": true,
+    "fp": "C_0805_2012Metric",
+    "placement": [
+      112.8,
+      119.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/fb41cc53-f5cb-5dc0-a04c-e60578c27ce9"
+  },
+  "C3": {
+    "board": "main",
+    "mpn": "CL21A226MPQNNNE",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "GND"
+    },
+    "refs": "C3",
+    "quantity": "1",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C29277",
+    "value": "22uF 10V X5R 20%",
+    "package": "0805",
+    "purpose": "3V3 reservoir at MCU/LDO output",
+    "notes": "Require >=10uF effective at 3.3V plus burst test; not a substitute for current capability",
+    "ref": "C3",
+    "uuid": "d6a9d8a8-32d6-5c5f-9983-815f0addc56b",
+    "fitted": true,
+    "fp": "C_0805_2012Metric",
+    "placement": [
+      102.8,
+      103.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d6a9d8a8-32d6-5c5f-9983-815f0addc56b"
+  },
+  "C4": {
+    "board": "main",
+    "mpn": "CL05B104KO5NNNC",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "GND"
+    },
+    "refs": "C4 C11",
+    "quantity": "2",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C1525",
+    "value": "100nF 16V X7R 10%",
+    "package": "0402",
+    "purpose": "Local bypass, IMU REGOUT and ADC filter",
+    "notes": "C7 VDD; C8 VDDIO; C9 REGOUT; C11 battery ADC",
+    "ref": "C4",
+    "uuid": "58d45be0-cfbf-59e4-814d-527297a0ed4f",
+    "fitted": true,
+    "fp": "C_0402_1005Metric",
+    "placement": [
+      105.0,
+      103.2,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/58d45be0-cfbf-59e4-814d-527297a0ed4f"
+  },
+  "C10": {
+    "board": "main",
+    "mpn": "CL05A105KA5NQNC",
+    "pins": {
+      "1": "MCU_EN",
+      "2": "GND"
+    },
+    "refs": "C10",
+    "quantity": "1",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C52923",
+    "value": "1uF 25V X5R 10%",
+    "package": "0402",
+    "purpose": "MCU EN reset RC",
+    "notes": "10k nominal RC ~10ms; bias tolerance/timing bench check",
+    "ref": "C10",
+    "uuid": "ec09f9d9-c486-5e14-a578-95693b5aed08",
+    "fitted": true,
+    "fp": "C_0402_1005Metric",
+    "placement": [
+      103.8,
+      115.0,
+      90
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/ec09f9d9-c486-5e14-a578-95693b5aed08"
+  },
+  "C11": {
+    "board": "main",
+    "mpn": "CL05B104KO5NNNC",
+    "pins": {
+      "1": "BAT_ADC",
+      "2": "GND"
+    },
+    "refs": "C4 C11",
+    "quantity": "2",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C1525",
+    "value": "100nF 16V X7R 10%",
+    "package": "0402",
+    "purpose": "Local bypass, IMU REGOUT and ADC filter",
+    "notes": "C7 VDD; C8 VDDIO; C9 REGOUT; C11 battery ADC",
+    "ref": "C11",
+    "uuid": "9c09465d-3b1a-5618-8753-7dd88a3c8c8e",
+    "fitted": true,
+    "fp": "C_0402_1005Metric",
+    "placement": [
+      106.2,
+      112.4,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/9c09465d-3b1a-5618-8753-7dd88a3c8c8e"
+  },
+  "C13": {
+    "board": "main",
+    "mpn": "CL21A476MQYNNNE",
+    "pins": {
+      "1": "SYS",
+      "2": "GND"
+    },
+    "refs": "C2 C13",
+    "quantity": "2",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "jlc": "C16780",
+    "value": "47uF 6.3V X5R 20%",
+    "package": "0805",
+    "purpose": "BQ BAT and SYS reservoirs",
+    "notes": "Exact-part DC bias/tolerance/X5R/age allocation screened at BAT4.23V/SYS4.5V. Maximum body height 1.45mm, same footprint.",
+    "ref": "C13",
+    "uuid": "47e6bcb7-e31d-52ac-99bf-04a6f9153100",
+    "fitted": true,
+    "fp": "C_0805_2012Metric",
+    "placement": [
+      103.2,
+      111.0,
+      0
+    ],
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/47e6bcb7-e31d-52ac-99bf-04a6f9153100"
+  }
+}

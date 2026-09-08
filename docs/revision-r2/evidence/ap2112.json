@@ -1,0 +1,12 @@
+{
+  "id": "ap2112",
+  "url": "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+  "retrieved_at_utc": "2026-09-08T00:20:54.690488+00:00",
+  "http_status": 200,
+  "raw_response": "evidence/raw/ap2112.body.gz",
+  "final_url": "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+  "content_type": "application/pdf",
+  "sha256": "ef8d376f2ec356e29172eb9e053819a0ebdcc576dba7fc9ab0505c568427920f",
+  "bytes": 755270,
+  "is_pdf": true
+}

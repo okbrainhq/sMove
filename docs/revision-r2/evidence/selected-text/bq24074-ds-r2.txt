@@ -1,0 +1,148 @@
+ARCHIVED TEXT LINES 328-353
+                           Figure 7-1. BQ24072, BQ24073 RGT0016B Package 16 Pins Top View
+
+
+                                                            ISET   ITERM     TMR     IN
+
+
+
+
+                                                            16     15        14      13
+
+                                                   TS   1                                  12          ILIM
+
+                                                  BAT   2                                  11          OUT
+                                                                   Thermal
+                                                  BAT   3              Pad                 10          OUT
+
+                                                  CE    4                                  9           CHG
+
+                                                            5      6         7       8
+
+
+
+
+                                                            EN2    EN1
+                                                                             PGOOD
+                                                                                     VSS        Not to scale
+ARCHIVED TEXT LINES 392-430
+                                                                                                      VSS        Not to scale
+
+
+
+              Figure 7-3. BQ24075 RGT0016C Package, BQ24079 RGT0016B Package 16 Pins Top View
+
+                                                                   Table 7-1. Pin Functions
+                        PIN
+                                                  I/O                                                            DESCRIPTION
+    NAME       '72, '73        '74     '75, '79
+                                                        Charger Power Stage Output and Battery Voltage Sense Input. Connect BAT to the positive terminal of the
+    BAT          2, 3          2, 3     2, 3      I/O
+                                                        battery. Bypass BAT to VSS with a 4.7-μF to 47-μF ceramic capacitor.
+                                                        Charge Enable Active-Low Input. Connect CE to a high logic level to disable battery charging. OUT is active
+                                                        and battery supplement mode is still available. Connect CE to a low logic level to enable the battery charger.
+    CE            4             4         4        I
+                                                        CE is internally pulled down with approximately 285 kΩ. Do not leave CE unconnected to ensure proper
+                                                        operation.
+                                                        Open-Drain Charging Status Indication Output. CHG pulls to VSS when the battery is charging. CHG is high
+    CHG           9             9         9       O     impedance when charging is complete and when charger is disabled. Connect CHG to the desired logic
+                                                        voltage rail using a 1kΩ-100kΩ resistor, or use with an LED for visual indication.
+    EN1           6             6         6        I    Input Current Limit Configuration Inputs. Use EN1 and EN2 control the maximum input current and enable
+                                                        USB compliance. See Table 7-2 for the description of the operation states. EN1 and EN2 are internally pulled
+    EN2           5             5         5        I    down with ≉285 kΩ. Do not leave EN1 or EN2 unconnected to ensure proper operation.
+                                                        Adjustable Current Limit Programming Input. Connect a 1100-Ω to 8-kΩ resistor from ILIM to VSS to program
+    ILIM         12            12        12        I    the maximum input current (EN2=1, EN1=0). The input current includes the system load and the battery
+                                                        charge current. Leaving ILIM unconnected disables all charging.
+                                                        Input Power Connection. Connect IN to the external DC supply (AC adapter or USB port). The input operating
+                                                        range is 4.35 V to 6.6 V (BQ24072, BQ24073, BQ24075, and BQ24079) or 4.35 V to 10.5 V (bq24074). The
+    IN           13            13        13        I
+                                                        input can accept voltages up to 26 V without damage but operation is suspended. Connect bypass capacitor
+                                                        1 μF to 10 μF to VSS.
+                                                        Fast Charge Current Programming Input. Connect a 590-Ω to 8.9-kΩ resistor from ISET to VSS to program
+                                                        the fast charge current level. Charging is disabled if ISET is left unconnected. While charging, the voltage at
+    ISET         16            16        16       I/O
+                                                        ISET reflects the actual charging current and can be used to monitor charge current. See Section 9.3.5.1 for
+                                                        more details.
+                                                        Termination Current Programming Input. Connect a 0-Ω to 15-kΩ resistor from ITERM to VSS to program the
+    ITERM         –            15         –        I    termination current. Leave ITERM unconnected to set the termination current to the default 10% termination
+ARCHIVED TEXT LINES 468-483
+ Pad                                               use the thermal pad as the primary ground input for the device. VSS pin must be connected to ground at all
+                                                   times.
+                                                   Timer Programming Input. TMR controls the pre-charge and fast-charge safety timers. Connect TMR to VSS
+ TMR           14         14       14         I    to disable all safety timers. Connect a 18-kΩ to 72-kΩ resistor between TMR and VSS to program the timers a
+                                                   desired length. Leave TMR unconnected to set the timers to the default values.
+                                                   External NTC Thermistor Input. Connect the TS input to the NTC thermistor in the battery pack. TS monitors a
+ TS             1         1         1         I    10kΩ NTC thermistor. For applications that do not use the TS function, connect a 10-kΩ fixed resistor from TS
+                                                   to VSS to maintain a valid voltage level on TS.
+ VSS            8         8         8        –     Ground. Connect to the thermal pad and to the ground rail of the circuit.
+
+
+                                                            Table 7-2. EN1/EN2 Settings
+                                            EN2       EN1      MAXIMUM INPUT CURRENT INTO IN PIN
+                                             0          0      100 mA. USB100 mode
+                                             0          1      500 mA. USB500 mode
+                                             1          0      Set by an external resistor from ILIM to VSS
+ARCHIVED TEXT LINES 632-648
+                                                                       VIN > VOUT + VDO(IN-OUT), VBAT < 3.2 V                           3.3             3.4          3.5
+                OUT pin voltage regulation (BQ24072)                                                                                VBAT +          VBAT +       VBAT +
+                                                                       VIN > VOUT + VDO(IN-OUT), VBAT ≥ 3.2 V
+ VO(REG)                                                                                                                            150mV           225mV        270mV      V
+                OUT pin voltage regulation (BQ24073, BQ24074)          VIN > VOUT + VDO(IN-OUT)                                         4.3             4.4          4.5
+                OUT pin voltage regulation (BQ24075, BQ24079)          VIN > VOUT + VDO(IN-OUT)                                         5.4             5.5          5.6
+                                                                       EN1 = LO, EN2 = LO                                               90               95         100
+                                                                                                                                                                           mA
+ IINmax         Maximum input current                                  EN1 = HI, EN2 = LO                                              450             475          500
+                                                                       EN2 = HI, EN1 = LO                                                        KILIM/RILIM                A
+                                                                       ILIM = 500 mA to 1.5 A                                         1500            1610         1720
+ KILIM          Maximum input current factor                                                                                                                               AΩ
+                                                                       ILIM = 200 mA to 500 mA                                        1330            1525         1720
+ IINmax         Programmable input current limit range                 EN2 = HI, EN1 = LO, RILIM = 8 kΩ to 1.1 kΩ                      200                         1500    mA
+ VIN-DPM        Input voltage threshold when input current is reduced EN2 = LO, EN1 = X                                               4.35              4.5        4.63     V
+                                                                                                                                  VO(REG) –       VO(REG) –    VO(REG) –
+                Output voltage threshold when charging current is                                       (’72, ’73, ’74)                                                     V
+ARCHIVED TEXT LINES 680-724
+ VBAT(SC)       BAT pin short-circuit detection threshold               VBAT rising                                                          1.6               1.8             2     V
+                                                                                                        ('72, '73, '74, '75)                4.16              4.20           4.23
+ VBAT(REG)      Battery charge voltage                                                                                                                                               V
+                                                                                                        ('79)                              4.059            4.100          4.141
+ VLOWV          Pre-charge to fast-charge transition threshold          VIN > VUVLO and VIN > VBAT + VIN(DT)                                 2.9                    3         3.1    V
+ tDGL1(LOWV)    Deglitch time on pre-charge to fast-charge transition                                                                                          25                   ms
+ tDGL2(LOWV)    Deglitch time on fast-charge to pre-charge transition                                                                                          25                   ms
+                                                                        VBAT(REG) > VBAT > VLOWV, VIN = 5 V CE = LO,
+                Battery fast charge current range                                                                                            100                            1500    mA
+                                                                        EN1 = LO, EN2 = HI
+ ICHG                                                                   CE = LO, EN1= LO, EN2 = HI,
+                Battery fast charge current                             VBAT > VLOWV, VIN = 5 V, IINmax > ICHG, no load on OUT pin,                   KISET/RISET                    A
+                                                                        thermal loop and DPPM loop not active
+ KISET          Fast charge current factor                                                                                                   797              890            975    AΩ
+ IPRECHG        Pre-charge current                                                                                                                  KPRECHG/RISET                    A
+ KPRECHG        Pre-charge current factor                                                                                                     70               88            106    AΩ
+                                                                        CE = LO, (EN1, EN2) ≠ (LO, LO),
+                                                                        VBAT > VRCH, t < tMAXCH, VIN = 5 V, DPPM loop and thermal      0.09×ICHG         0.1×ICHG       0.11×ICHG
+                Termination comparator detection threshold              loop not active
+ ITERM                                                                                                                                                                               A
+                (internally set)                                        CE = LO, (EN1, EN2) = (LO, LO),
+                                                                        VBAT > VRCH, t < tMAXCH, VIN = 5 V, DPPM loop and thermal     0.027×ICHG       0.033×ICHG 0.040×ICHG
+                                                                        loop not active
+ IBIAS(ITERM)   Current for external termination-setting resistor       VIN > VUVLO and VIN > VBAT + VIN(DT)                                  72               75             78    μA
+                Termination current threshold (externally set)
+ ITERM                                                                                                                                       KITERM × RITERM / RISET                 A
+                (BQ24074)
+                                                                        USB500 or ISET mode(EN1, EN2) ≠ (LO, LO)
+                                                                        CE = LO, VBAT > VRCH, t < tMAXCH, VIN = 5 V, DPPM loop and        0.0225           0.0300         0.0375
+                K Factor for termination detection threshold            thermal loop not active
+ KITERM                                                                                                                                                                              A
+                (externally set) (BQ24074)                              USB100 mode (EN1, EN2) = (LO, LO),
+                                                                        CE = LO, VBAT > VRCH, t < tMAXCH, VIN = 5 V, DPPM loop and         0.008           0.0100          0.012
+                                                                        thermal loop not active
+ tDGL(TERM)     Deglitch time, termination detected                                                                                                            25                   ms
+                                                                                                                                      VBAT(REG) –      VBAT(REG) – VBAT(REG) –
+ VRCH           Recharge detection threshold                            VIN > VUVLO and VIN > VBAT + VIN(DT)                                                                         V
+                                                                                                                                          140mV            100mV        60mV
+ tDGL(RCH)      Deglitch time, recharge threshold detected                                                                                                    62.5                  ms
+                                                                        VBAT = 3.6 V. Time measured from
+ tDGL(NO-IN)    Delay time, input power loss to OUT LDO turn-off                                                                                               20                   ms
+                                                                        VIN: 5 V → 3 V 1 μs fall-time
+ IBAT(DET)      Sink current for battery detection                      VBAT = 2.5 V                                                           5               7.5            10    mA
+ tDET           Battery detection timer                                 BAT high or low                                                                       250                   ms
+ BATTERY CHARGING TIMERS

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bq24074-ds",
+    "metadata": "docs/research/evidence/bq24074-ds.json",
+    "raw": "docs/research/raw/bq24074-ds.body.gz",
+    "compressed_sha256": "077868fd055b5261eb7b2d0029043cfb8ad6716625cf44a962abb2212bd3a507",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "retrieved_at_utc": "2026-09-07T18:40:04.806233Z"
+  },
+  {
+    "id": "icm20948-ds-mirror",
+    "metadata": "docs/research/evidence/icm20948-ds-mirror.json",
+    "raw": "docs/research/raw/icm20948-ds-mirror.body.gz",
+    "compressed_sha256": "cb6305abf640c42290f6924495c8445e91bd9777a9b898f72ecf5d334951f80f",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588885225937625088",
+    "retrieved_at_utc": "2026-09-07T18:42:32.723229Z"
+  },
+  {
+    "id": "esp32-c3-mini-ds",
+    "metadata": "docs/research/evidence/esp32-c3-mini-ds.json",
+    "raw": "docs/research/raw/esp32-c3-mini-ds.body.gz",
+    "compressed_sha256": "e35234c0b043c9bd0b9bb8cf7e100d91403ce82510b11fc2bec0689446478d0c",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf",
+    "retrieved_at_utc": "2026-09-07T18:39:59.111869Z"
+  }
+]

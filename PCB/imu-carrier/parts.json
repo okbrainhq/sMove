@@ -1,0 +1,100 @@
+{
+  "C5": {
+    "jlc": "C19666",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL10A475KO8NNNC",
+    "package": "0603",
+    "value": "4.7uF 16V X5R 10%"
+  },
+  "C6": {
+    "jlc": "C19666",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL10A475KO8NNNC",
+    "package": "0603",
+    "value": "4.7uF 16V X5R 10%"
+  },
+  "C7": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%"
+  },
+  "C8": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%"
+  },
+  "C9": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%"
+  },
+  "J5": {
+    "jlc": "C265102",
+    "manufacturer": "JST",
+    "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+    "package": "JST PH 2.0mm 1x4 side-entry SMT",
+    "value": "S4B-PH-SM4-TB(LF)(SN)"
+  },
+  "R16": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%"
+  },
+  "R17": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%"
+  },
+  "R18": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%"
+  },
+  "R19": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%"
+  },
+  "R20": {
+    "jlc": "C25764",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF2003TCE",
+    "package": "0402",
+    "value": "200k 1%"
+  },
+  "U2": {
+    "jlc": "C726001",
+    "manufacturer": "TDK InvenSense",
+    "mpn": "ICM-20948",
+    "package": "TDK 24-pad 3x3x1mm",
+    "value": "ICM-20948"
+  },
+  "U3": {
+    "jlc": "C33196",
+    "manufacturer": "Texas Instruments",
+    "mpn": "PCA9306DCUR",
+    "package": "VSSOP-8 DCU",
+    "value": "PCA9306DCUR"
+  },
+  "U5": {
+    "jlc": "C176944",
+    "manufacturer": "Diodes Incorporated",
+    "mpn": "AP2112K-1.8TRG1",
+    "package": "SOT-25",
+    "value": "AP2112K-1.8TRG1"
+  }
+}

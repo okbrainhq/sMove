@@ -1,0 +1,630 @@
+                           PESD5V0S2BT
+                           Low capacitance bidirectional double ESD protection diode
+                           23 August 2018                                                     Product data sheet
+
+
+
+
+1. General description
+                       Low capacitance bidirectional double ElectroStatic Discharge (ESD) protection diode in a small
+                       SOT23 (TO-236AB) Surface-Mounted Device (SMD) plastic package designed to protect two data
+                       lines from the damage caused by ESD and other transients.
+
+
+2. Features and benefits
+                       •   Bidirectional ESD protection of two lines
+                       •   Low diode capacitance
+                       •   Max. peak pulse power: PPPM = 130 W at tp = 8/20 µs
+                       •   Low clamping voltage: VCL = 14 V at IPPM = 12 A
+                       •   Ultra low leakage current: IRM = 5 nA at VRWM = 5 V
+                       •   ESD protection up to 30 kV
+                       •   IEC 61000-4-2; level 4 (ESD)
+                       •   IEC 61000-4-5 (surge); IPPM = 12 A at tp = 8/20 µs
+                       •   AEC-Q101 qualified
+
+
+3. Applications
+                       •   Cellular handsets and accessories
+                       •   Portable electronics
+                       •   Computers and peripherals
+                       •   Communication systems
+                       •   Audio and video equipment
+
+
+4. Quick reference data
+Table 1. Quick reference data
+Symbol          Parameter              Conditions                                      Min     Typ     Max     Unit
+VRWM           reverse standoff        Tamb = 25 °C                                    -       -       5       V
+               voltage
+Cd             diode capacitance       f = 1 MHz; VR = 0 V; Tamb = 25 °C               -       35      45      pF
+Nexperia                                                                                                                              PESD5V0S2BT
+                                                                   Low capacitance bidirectional double ESD protection diode
+
+
+5. Pinning information
+Table 2. Pinning information
+Pin        Symbol Description                                    Simplified outline                                         Graphic symbol
+1             K1        cathode 1                                                                3
+                                                                                                                                      1
+2             K2        cathode 2
+3             K         double cathode                                                                                                                     3
+
+
+                                                                                                                                      2
+                                                                             1                             2
+
+                                                                                  TO-236AB (SOT23)                                           sym031
+
+
+
+
+6. Ordering information
+Table 3. Ordering information
+Type number             Package
+                            Name               Description                                                                                              Version
+PESD5V0S2BT                 TO-236AB           plastic, surface-mounted package; 3 terminals; 1.9 mm pitch; 2.9 SOT23
+                                               mm x 1.3 mm x 1 mm body
+
+
+7. Marking
+Table 4. Marking codes
+Type number                                                                          Marking code[1]
+PESD5V0S2BT                                                                          %G5
+
+[1]   % = placeholder for manufacturing site code
+
+
+
+
+PESD5V0S2BT                                    All information provided in this document is subject to legal disclaimers.                    © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                    23 August 2018                                                                                        2 / 12
+Nexperia                                                                                                                                                 PESD5V0S2BT
+                                                                             Low capacitance bidirectional double ESD protection diode
+
+
+8. Limiting values
+Table 5. Limiting values
+In accordance with the Absolute Maximum Rating System (IEC 60134).
+Symbol                Parameter                              Conditions                                                                                     Min            Max                Unit
+Per diode
+PPPM                  rated peak pulse power                 tp = 8/20 µs                                                                      [1] [2]      -              130                W
+IPPM                  rated peak pulse current                                                                                                 [1] [2]      -              12                 A
+Tj                    junction temperature                                                                                                                  -              150                °C
+Tamb                  ambient temperature                                                                                                                   -55            150                °C
+Tstg                  storage temperature                                                                                                                   -65            150                °C
+ESD maximum ratings
+VESD                  electrostatic discharge                IEC 61000-4-2 (contact discharge)                                                 [3] [2]      -              30                 kV
+                      voltage                                MIL-STD-883 (human body model)                                                                 -              10                 kV
+
+[1]    Non-repetitive current pulse 8/20 µs exponential decay waveform.
+[2]    Measured from pin 1 to 3 or pin 2 to 3.
+[3]    Device stressed with ten non-repetitive ESD pulses.
+
+                                                           001aaa630                                              IPP
+         120
+                                                                                                            100 %
+        IPP                 100 % IPP; 8 µs                                                                   90 %
+        (%)
+
+
+          80
+                                 e-t
+
+
+                                              50 % IPP; 20 µs
+
+          40
+
+
+
+                                                                                                              10 %
+
+
+              0                                                                                                                       tr = 0.6 ns to 1 ns                                 t
+                  0    10              20           30                 40                                                             30 ns
+                                                            t (µs)
+                                                                                                                                                 60 ns                         001aaa631
+
+                                                                                               Fig. 2.          ESD pulse waveform according to IEC
+Fig. 1.       8/20 µs pulse waveform according to                                                               61000-4-2
+              IEC 61000-4-5
+
+
+
+
+PESD5V0S2BT                                              All information provided in this document is subject to legal disclaimers.                               © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                              23 August 2018                                                                                                     3 / 12
+Nexperia                                                                                                                                      PESD5V0S2BT
+                                                                     Low capacitance bidirectional double ESD protection diode
+
+
+9. Characteristics
+Table 6. Characteristics
+Symbol          Parameter                       Conditions                                                                              Min    Typ            Max            Unit
+VRWM                reverse standoff            Tamb = 25 °C                                                                            -      -              5              V
+                    voltage
+VBR                 breakdown voltage           IR = 1 mA; Tamb = 25 °C                                                                 5.5    -              9.5            V
+IRM                 reverse leakage current VRWM = 5 V; Tamb = 25 °C                                                                    -      5              100            nA
+Cd                  diode capacitance           f = 1 MHz; VR = 0 V; Tamb = 25 °C                                                       -      35             45             pF
+VCL                 clamping voltage            IPP = 1 A; Tamb = 25 °C                                                       [1] [2]   -      -              10             V
+                                                IPPM = 12 A; Tamb = 25 °C                                                     [1] [2]   -      -              14             V
+rdif                differential resistance     IR = 1 mA; Tamb = 25 °C                                                                 -      -              50             Ω
+
+[1]    Non-repetitive current pulse 8/20 µs exponential decay waveform.
+[2]    Measured from pin 1 to 3 or pin 2 to 3.
+
+                                                    001aaa632                                                                                             001aaa633
+          103                                                                                      1.2
+
+                                                                                              PPP
+
+       PPP                                                                                PPP(25°C)
+       (W)
+                                                                                                   0.8
+
+
+          102
+
+
+                                                                                                   0.4
+
+
+
+
+          10                                                                                          0
+                1      10         102         103              104                                        0                  50         100        150               200
+                                                    t p (µs)                                                                                              Tj (°C)
+
+              Tamb = 25 °C
+                                                                                      Fig. 4.          Relative variation of peak pulse power as a
+              tp = 8/20 µs exponential decay waveform
+                                                                                                       function of junction temperature; typical values
+Fig. 3.       Peak pulse power dissipation as a function of
+              pulse duration; typical values
+
+
+
+
+PESD5V0S2BT                                     All information provided in this document is subject to legal disclaimers.                         © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                     23 August 2018                                                                                             4 / 12
+Nexperia                                                                                                                        PESD5V0S2BT
+                                                                 Low capacitance bidirectional double ESD protection diode
+
+                                               001aaa634                                                                                     001aaa635
+          38                                                                                   102
+
+       Cd
+                                                                                            IR
+      (pF)
+                                                                                       IR(85 °C)
+          34
+                                                                                                 10
+
+
+          30
+
+
+                                                                                                  1
+          26
+
+
+
+
+          22                                                                                 10- 1
+               0      1       2          3   4              5                                         75                  100   125                     150
+                                                 VR (V)                                                                                   Tj (°C)
+
+              Tamb = 25 °C ; f = 1 MHz                                                              IR < 1 nA measured at Tamb = 25 °C
+Fig. 5.       Diode capacitance as a function of reverse                           Fig. 6.          Relative variation of reverse current as a
+              voltage; typical values                                                               function of junction temperature; typical values
+
+
+
+
+PESD5V0S2BT                                  All information provided in this document is subject to legal disclaimers.               © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                  23 August 2018                                                                                   5 / 12
+Nexperia                                                                                                                                PESD5V0S2BT
+                                                                         Low capacitance bidirectional double ESD protection diode
+
+                               ESD TESTER                                                                                                4 GHz DIGITAL
+                                                                                      RG 223/U                                          OSCILLOSCOPE
+                                       RZ                                             50 Ω coax
+                                                                                                                       40 dB
+                                                                                                                    ATTENUATOR
+                                  CZ                                                                                                                50 Ω
+
+
+
+
+                         IEC 61000-4-2 network                                    PESD5V0S2BT
+                         CZ = 150 pF; RZ = 330 Ω
+
+
+
+
+                                             vertical scale = 200 V/div                                                           vertical scale = 10 V/div
+                                             horizontal scale = 50 ns/div                                                         horizontal scale = 50 ns/div
+
+
+
+
+                                                                                                GND
+
+
+
+
+              GND
+
+
+
+                    unclamped +1 kV ESD voltage waveform                                                clamped +1 kV ESD voltage waveform
+                    (IEC61000-4-2 network)                                                              (IEC61000-4-2 network)
+
+
+
+
+              GND
+
+
+
+
+                                                                                                GND
+
+
+
+
+                                             vertical scale = 200 V/div                                                           vertical scale = 10 V/div
+                                             horizontal scale = 50 ns/div                                                         horizontal scale = 50 ns/div
+
+                    unclamped -1 kV ESD voltage waveform                                                clamped -1 kV ESD voltage waveform
+                    (IEC61000-4-2 network)                                                              (IEC61000-4-2 network)                           aaa-028860
+
+Fig. 7.       ESD clamping test setup and waveforms
+
+
+
+
+PESD5V0S2BT                                          All information provided in this document is subject to legal disclaimers.                 © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                          23 August 2018                                                                                     6 / 12
+Nexperia                                                                                                                    PESD5V0S2BT
+                                                                   Low capacitance bidirectional double ESD protection diode
+
+
+10. Application information
+                             The PESD5V0S2BT is designed for the bidirectional protection of two lines from the damage
+                             caused by ElectroStatic Discharge (ESD) and surge pulses. The PESD5V0S2BT may be used
+                             on line where the signal polarities are both, positive and negative with respect to ground. The
+                             PESD5V0S2BT provides a surge capability of 130 W per line for an 8/20 µs waveform.
+
+
+                                                                                     line 1 to be protected
+
+                                                                                     line 2 to be protected
+
+
+
+
+                                                                                  PESD5V0S2BT
+
+
+
+
+                                                                                                            GND
+
+                                                                                                     001aaa636
+
+Fig. 8.       Typical application for bidirectional protection of two lines line
+
+                             Circuit board layout and protection device placement
+                             Circuit board layout is critical for the suppression of ESD, Electrical Fast Transient (EFT) and surge
+                             transients. The following guidelines are recommended:
+                             1.   Place the PESD5V0S2BT as close to the input terminal or connector as possible.
+                             2.   Minimize the path length between the PESD5V0S2BT and the protected line.
+                             3.   Keep parallel signal paths to a minimum.
+                             4.   Avoid running protected conductors in parallel with unprotected conductors.
+                             5.   Minimize all Printed-Circuit Board (PCB) conductive loops including power and ground loops.
+                             6.   Minimize the length of the transient return path to ground.
+                             7.   Avoid using shared transient return paths to a common ground point.
+                             8.   Use ground planes whenever possible. For multilayer PCBs, use ground vias.
+
+
+11. Test information
+
+                             Quality information
+                             This product has been qualified in accordance with the Automotive Electronics Council (AEC)
+                             standard Q101 - Stress test qualification for discrete semiconductors, and is suitable for use in
+                             automotive applications.
+
+
+
+
+PESD5V0S2BT                                    All information provided in this document is subject to legal disclaimers.     © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                    23 August 2018                                                                         7 / 12
+Nexperia                                                                                                                                 PESD5V0S2BT
+                                                                 Low capacitance bidirectional double ESD protection diode
+
+
+12. Package outline
+
+                                                                      3.0                                             1.1
+                                                                      2.8                                             0.9
+
+                                                                              3
+
+                                                                                                      0.45
+                                                                                                      0.15
+                                   2.5 1.4
+                                   2.1 1.2
+
+
+
+                                                  1                                          2
+                                                                                                 0.48                     0.15
+                                                                                                 0.38                     0.09
+                                                                      1.9
+
+                                    Dimensions in mm                                                                        18-03-12
+
+Fig. 9.       Package outline TO-236AB (SOT23)
+
+
+13. Soldering
+                                                3.3
+
+                                                2.9
+
+                                                1.9
+
+
+
+
+                                                                                                                                           solder lands
+
+
+                                                                                                                                           solder resist
+                  3   1.7                                                                         2
+
+                                                                                                                                           solder paste
+
+
+                             0.7                                                         0.6                                               occupied area
+                            (3×)                                                        (3×)
+                                                                                                                                  Dimensions in mm
+
+                                                 0.5
+                                                (3×)
+                                                 0.6
+                                                (3×)
+
+                                                  1                                                                                              sot023_fr
+
+Fig. 10. Reflow soldering footprint for TO-236AB (SOT23)
+
+
+
+
+PESD5V0S2BT                                  All information provided in this document is subject to legal disclaimers.                         © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                  23 August 2018                                                                                             8 / 12
+Nexperia                                                                                                                        PESD5V0S2BT
+                                                             Low capacitance bidirectional double ESD protection diode
+
+                                                     2.2
+                                   1.2
+                                  (2×)
+
+
+
+
+                            1.4
+                           (2×)
+
+
+                                                                                                                                   solder lands
+
+
+              4.6    2.6                                                                                                           solder resist
+
+
+                                                                                                                                   occupied area
+
+
+                                                                                                                        Dimensions in mm
+                           1.4
+
+
+
+
+                                                                                                  preferred transport direction during soldering
+
+                                                     2.8
+
+                                                     4.5                                                                                 sot023_fw
+
+Fig. 11. Wave soldering footprint for TO-236AB (SOT23)
+
+
+
+
+PESD5V0S2BT                              All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                              23 August 2018                                                                                         9 / 12
+Nexperia                                                                                                             PESD5V0S2BT
+                                                            Low capacitance bidirectional double ESD protection diode
+
+
+14. Revision history
+Table 7. Revision history
+Data sheet ID           Release date                  Data sheet status                              Change notice    Supersedes
+PESD5V0S2BT_v.4        20180823                       Product data sheet                             -                PESD5V0S2BT_v.3
+Modifications          •   AEC-Q101 qualification added.
+                       •   Limiting values; Tamb updated to -55°C.
+                       •   Application information: updated.
+                       •   The format of this data sheet has been redesigned to comply with the identity guidelines of
+                           Nexperia.
+                       •   Legal texts have been adapted to the new company name where appropriate.
+PESD5V0S2BT_v.3        20090209                       Product data sheet                             -                PESD5V0S2BT_v.2
+PESD5V0S2BT_v.2        20040527                       Product data sheet                             -                PESD5V0S2BT_v.1
+PESD5V0S2BT_v.1        20040517                       Product data sheet                             -                -
+
+
+
+
+PESD5V0S2BT                             All information provided in this document is subject to legal disclaimers.        © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                             23 August 2018                                                                          10 / 12
+Nexperia                                                                                                                                     PESD5V0S2BT
+                                                                               Low capacitance bidirectional double ESD protection diode
+                                                                                                   equipment, nor in applications where failure or malfunction of an Nexperia
+
+15. Legal information                                                                              product can reasonably be expected to result in personal injury, death or
+                                                                                                   severe property or environmental damage. Nexperia and its suppliers accept
+                                                                                                   no liability for inclusion and/or use of Nexperia products in such equipment or
+                                                                                                   applications and therefore such inclusion and/or use is at the customer's own
+Data sheet status                                                                                  risk.
+                                                                                                   Quick reference data — The Quick reference data is an extract of the
+ Document status         Product           Definition                                              product data given in the Limiting values and Characteristics sections of this
+ [1][2]                  status [3]                                                                document, and as such is not complete, exhaustive or legally binding.
+
+ Objective [short]       Development       This document contains data from                        Applications — Applications that are described herein for any of these
+ data sheet                                the objective specification for                         products are for illustrative purposes only. Nexperia makes no representation
+                                           product development.                                    or warranty that such applications will be suitable for the specified use
+                                                                                                   without further testing or modification.
+ Preliminary [short]     Qualification     This document contains data from
+                                                                                                   Customers are responsible for the design and operation of their applications
+ data sheet                                the preliminary specification.
+                                                                                                   and products using Nexperia products, and Nexperia accepts no liability for
+ Product [short]         Production        This document contains the product                      any assistance with applications or customer product design. It is customer’s
+ data sheet                                specification.                                          sole responsibility to determine whether the Nexperia product is suitable
+                                                                                                   and fit for the customer’s applications and products planned, as well as
+                                                                                                   for the planned application and use of customer’s third party customer(s).
+[1]   Please consult the most recently issued document before initiating or                        Customers should provide appropriate design and operating safeguards to
+      completing a design.                                                                         minimize the risks associated with their applications and products.
+[2]   The term 'short data sheet' is explained in section "Definitions".
+[3]   The product status of device(s) described in this document may have                          Nexperia does not accept any liability related to any default, damage, costs
+      changed since this document was published and may differ in case of                          or problem which is based on any weakness or default in the customer’s
+      multiple devices. The latest product status information is available on                      applications or products, or the application or use by customer’s third party
+      the internet at https://www.nexperia.com.                                                    customer(s). Customer is responsible for doing all necessary testing for the
+                                                                                                   customer’s applications and products using Nexperia products in order to
+                                                                                                   avoid a default of the applications and the products or of the application or
+Definitions                                                                                        use by customer’s third party customer(s). Nexperia does not accept any
+                                                                                                   liability in this respect.
+Draft — The document is a draft version only. The content is still under
+internal review and subject to formal approval, which may result in                                Limiting values — Stress above one or more limiting values (as defined in
+modifications or additions. Nexperia does not give any representations or                          the Absolute Maximum Ratings System of IEC 60134) will cause permanent
+warranties as to the accuracy or completeness of information included herein                       damage to the device. Limiting values are stress ratings only and (proper)
+and shall have no liability for the consequences of use of such information.                       operation of the device at these or any other conditions above those
+                                                                                                   given in the Recommended operating conditions section (if present) or the
+Short data sheet — A short data sheet is an extract from a full data sheet
+                                                                                                   Characteristics sections of this document is not warranted. Constant or
+with the same product type number(s) and title. A short data sheet is
+                                                                                                   repeated exposure to limiting values will permanently and irreversibly affect
+intended for quick reference only and should not be relied upon to contain
+                                                                                                   the quality and reliability of the device.
+detailed and full information. For detailed and full information see the relevant
+full data sheet, which is available on request via the local Nexperia sales                        Terms and conditions of commercial sale — Nexperia products are
+office. In case of any inconsistency or conflict with the short data sheet, the                    sold subject to the general terms and conditions of commercial sale, as
+full data sheet shall prevail.                                                                     published at http://www.nexperia.com/profile/terms, unless otherwise agreed
+                                                                                                   in a valid written individual agreement. In case an individual agreement is
+Product specification — The information and data provided in a Product
+                                                                                                   concluded only the terms and conditions of the respective agreement shall
+data sheet shall define the specification of the product as agreed between
+                                                                                                   apply. Nexperia hereby expressly objects to applying the customer’s general
+Nexperia and its customer, unless Nexperia and customer have explicitly
+                                                                                                   terms and conditions with regard to the purchase of Nexperia products by
+agreed otherwise in writing. In no event however, shall an agreement be
+                                                                                                   customer.
+valid in which the Nexperia product is deemed to offer functions and qualities
+beyond those described in the Product data sheet.                                                  No offer to sell or license — Nothing in this document may be interpreted
+                                                                                                   or construed as an offer to sell products that is open for acceptance or the
+                                                                                                   grant, conveyance or implication of any license under any copyrights, patents
+Disclaimers                                                                                        or other industrial or intellectual property rights.
+Limited warranty and liability — Information in this document is believed                          Export control — This document as well as the item(s) described herein
+to be accurate and reliable. However, Nexperia does not give any                                   may be subject to export control regulations. Export might require a prior
+representations or warranties, expressed or implied, as to the accuracy                            authorization from competent authorities.
+or completeness of such information and shall have no liability for the
+                                                                                                   Translations — A non-English (translated) version of a document is for
+consequences of use of such information. Nexperia takes no responsibility
+                                                                                                   reference only. The English version shall prevail in case of any discrepancy
+for the content in this document if provided by an information source outside
+                                                                                                   between the translated and English versions.
+of Nexperia.
+In no event shall Nexperia be liable for any indirect, incidental, punitive,
+special or consequential damages (including - without limitation - lost                            Trademarks
+profits, lost savings, business interruption, costs related to the removal
+                                                                                                   Notice: All referenced brands, product names, service names and
+or replacement of any products or rework charges) whether or not such
+                                                                                                   trademarks are the property of their respective owners.
+damages are based on tort (including negligence), warranty, breach of
+contract or any other legal theory.
+Notwithstanding any damages that customer might incur for any reason
+whatsoever, Nexperia’s aggregate and cumulative liability towards customer
+for the products described herein shall be limited in accordance with the
+Terms and conditions of commercial sale of Nexperia.
+Right to make changes — Nexperia reserves the right to make changes
+to information published in this document, including without limitation
+specifications and product descriptions, at any time and without notice. This
+document supersedes and replaces all information supplied prior to the
+publication hereof.
+Suitability for use in automotive applications — This Nexperia product
+has been qualified for use in automotive applications. Unless otherwise
+agreed in writing, the product is not designed, authorized or warranted to
+be suitable for use in life support, life-critical or safety-critical systems or
+
+
+
+
+PESD5V0S2BT                                                All information provided in this document is subject to legal disclaimers.               © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                                23 August 2018                                                                                 11 / 12
+Nexperia                                                                                                                                 PESD5V0S2BT
+                                                                                Low capacitance bidirectional double ESD protection diode
+
+
+Contents
+1. General description...................................................... 1
+2. Features and benefits.................................................. 1
+3. Applications.................................................................. 1
+4. Quick reference data....................................................1
+5. Pinning information......................................................2
+6. Ordering information....................................................2
+7. Marking.......................................................................... 2
+8. Limiting values............................................................. 3
+9. Characteristics.............................................................. 4
+10. Application information............................................. 7
+11. Test information.......................................................... 7
+12. Package outline.......................................................... 8
+13. Soldering..................................................................... 8
+14. Revision history........................................................10
+15. Legal information......................................................11
+
+© Nexperia B.V. 2018. All rights reserved
+
+For more information, please visit: http://www.nexperia.com
+For sales office addresses, please send an email to: salesaddresses@nexperia.com
+Date of release: 23 August 2018
+
+
+
+
+PESD5V0S2BT                                                 All information provided in this document is subject to legal disclaimers.     © Nexperia B.V. 2018. All rights reserved
+
+
+Product data sheet                                                                 23 August 2018                                                                       12 / 12
+

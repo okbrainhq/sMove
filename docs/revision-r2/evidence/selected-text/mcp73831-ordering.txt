@@ -1,0 +1,66 @@
+                                                                                                         MCP73831/2
+PRODUCT IDENTIFICATION SYSTEM
+To order or obtain information, e.g., on pricing or delivery, refer to the factory or the listed sales office.
+  PART NO.            X             XX                X              /XX                 Examples: *
+                                                                                        a)   MCP73831-2ACI/OT: 4.20V VREG,
+                                                                                             Options AC, 5LD SOT23 package
+    Device         VREG          Options Temperature Package                            b)   MCP73831T-2ACI/OT: Tape and Reel,
+                                           Range                                             4.20V VREG, Options AC, 5LD SOT23 package
+                                                                                        c)   MCP73832-2ACI/MC: 4.20V VREG,
+                                                                                             Options AC, 8LD DFN package
+  Device:               MCP73831:          Single-Cell Charge Controller                d)   MCP73832T-2ACI/MC: Tape and Reel,
+                        MCP73831T:         Single-Cell Charge Controller                     4.20V VREG, Options AC, 8LD DFN package
+                                           (Tape and Reel)
+                        MCP73832           Single-Cell Charge Controller                a)   MCP73831-2ATI/OT: 4.20V VREG,
+                        MCP73832T:         Single-Cell Charge Controller                     Options AT, 5LD SOT23 package
+                                           (Tape and Reel)                              b)   MCP73831T-2ATI/OT: Tape and Reel,
+                                                                                             4.20V VREG, Options AT, 5LD SOT23 package
+                                                                                        c)   MCP73832-2ATI/MC: 4.20V VREG,
+  Regulation            Code       VREG
+                                                                                             Options AT, 8LD DFN package
+  Voltage:
+                                                                                        d)   MCP73832T-2ATI/MC: Tape and Reel,
+                        2    =     4.20V                                                     4.20V VREG, Options AT, 8LD DFN package
+                        3    =     4.35V
+                        4    =     4.40V                                                a)   MCP73831-2DCI/OT: 4.20V VREG,
+                        5    =     4.50V                                                     Options DC, 5LD SOT23 package
+                                                                                        b)   MCP73831T-2DCI/OT: Tape and Reel,
+                                                                                             4.20V VREG, Options DC, 5LD SOT23 package
+  Options: *            Code       IPREG/IREG     VPTH/VREG    ITERM/IREG   VRTH/VREG   c)   MCP73832-2DCI/MC: 4.20V VREG,
+                            AC         10            66.5          7.5        96.5           Options DC, 8LD DFN package
+                            AD         10            66.5          7.5         94       d)   MCP73832T-2DCI/MC: Tape and Reel,
+                            AT         10            71.5          20          94            4.20V VREG, Options DC, 8LD DFN package
+                            DC         100            x            7.5        96.5
+                                                                                        a)   MCP73831-3ACI/OT: 4.35V VREG,
+                        * Consult Factory for Alternative Device Options                     Options AC, 5LD SOT23 package
+                                                                                        b)   MCP73831T-3ACI/OT: Tape and Reel,
+  Temperature           I        = -40C to +85C (Industrial)                               4.35V VREG, Options AC, 5LD SOT23 package
+  Range:                                                                                c)   MCP73832-3ACI/MC: 4.35V VREG,
+                                                                                             Options AC, 8LD DFN package
+                                                                                        d)   MCP73832T-3ACI/MC: Tape and Reel,
+  Package:              MC       = Dual-Flat, No-Lead (2x3 mm body), 8-Lead                  4.35V VREG, Options AC, 8LD DFN package
+                        OT       = Small Outline Transistor (SOT23), 5-Lead
+                                                                                        a)   MCP73831-4ADI/OT: 4.40V VREG,
+                                                                                             Options AD, 5LD SOT23 package
+                                                                                        b)   MCP73831T-4ADI/OT: Tape and Reel,
+                                                                                             4.40V VREG, Options AD, 5LD SOT23 package
+                                                                                        c)   MCP73832-4ADI/MC: 4.40V VREG,
+                                                                                             Options AD, 8LD DFN package
+                                                                                        d)   MCP73832T-4ADI/MC: Tape and Reel,
+                                                                                             4.40V VREG, Options AD, 8LD DFN package
+
+                                                                                        a)   MCP73831-5ACI/OT: 4.50V VREG,
+                                                                                             Options AC, 5LD SOT23 package
+                                                                                        b)   MCP73831T-5ACI/OT: Tape and Reel,
+                                                                                             4.50V VREG, Options AC, 5LD SOT23 package
+                                                                                        c)   MCP73832-5ACI/MC: 4.50V VREG,
+                                                                                             Options AC, 8LD DFN package
+                                                                                        d)   MCP73832T-5ACI/MC: Tape and Reel,
+                                                                                             4.50V VREG, Options AC, 8LD DFN package
+
+                                                                                        * Consult Factory for Alternate Device Options
+
+
+
+
+ 2005-2020 Microchip Technology Inc.                                                                                  DS20001984H-page 26

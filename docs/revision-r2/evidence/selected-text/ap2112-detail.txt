@@ -1,0 +1,201 @@
+PDF_PAGE 6
+                                                                                                                                    AP2112
+
+Electrical Characteristics (Cont.)
+AP2112-2.5 Electrical Characteristics (@VIN = 3.5V, CIN = 1.0µF (Ceramic), COUT = 1.0µF (Ceramic), Typical TA = +25°C,
+unless otherwise specified (Note 6))
+
+
+          Symbol                         Parameter                                  Conditions               Min     Typ     Max             Unit
+                                                                                                            VOUT             VOUT
+           VOUT              Output Voltage                          VIN = 3.5V, 1mA ≤ IOUT ≤ 30mA                   2.5                       V
+                                                                                                            *98.5%          *101.5%
+                                                                     VIN = 3.5V,
+          IOUT(MAX)          Maximum Output Current                                                          600      —       —               mA
+                                                                     VOUT = 2.463V to 2.537V
+                                                                     VOUT = 2.5V, VIN = VOUT+1V,
+  (∆VOUT/VOUT)/∆IOUT         Load Regulation                                                                  -1     0.2      1              %/A
+                                                                     1mA ≤ IOUT ≤ 600mA
+  (∆VOUT/VOUT)/∆VIN          Line Regulation                         3.5V ≤ VIN ≤ 6V, IOUT = 30mA            -0.1    0.02     0.1            %/V
+
+                                                                     IOUT = 10mA                              —       5       8
+
+           VDROP             Dropout Voltage                         IOUT = 300mA                             —      125     200              mV
+
+                                                                     IOUT = 600mA                             —      250     400
+
+             IQ              Quiescent Current                       VIN = 3.5V, IOUT = 0mA                   —       55      80              µA
+
+            ISTD             Standby Current                         VIN = 3.5V, VEN in OFF mode              —      0.01     1.0             µA
+
+                                                                     Ripple 0.5Vp-p             f = 100Hz     —       65      —
+           PSRR              Power Supply Rejection Ratio            VIN = 3.5V,                                                              dB
+                                                                     IOUT = 100mA               f = 1KHz      —       65      —
+                             Output Voltage Temperature              IOUT = 30mA
+   (∆VOUT/VOUT)/∆T                                                                                            —      ±100     —            ppm/°C
+                             Coefficient                             TA = -40°C to +85°C
+           ISHORT            Short Current Limit                     VOUT = 0V                                —       50      —               mA
+
+           VNOISE            RMS Output Noise                        No Load, 10Hz ≤ f ≤ 100kHz               —       50      —             µVRMS
+
+            VIH              VEN High Voltage                        Enable logic high, regulator on         1.5      —       6.0
+                                                                                                                                               V
+             VIL             VEN Low Voltage                         Enable logic low, regulator off          0       —       0.4
+
+             tS              Start-up Time                           No Load                                  —       20      —               µs
+
+            RPD              EN Pull Down Resistor                   —                                        —      3.0      —              MΩ
+
+           RDCHG             VOUT Discharge Resistor                 Set EN pin at Low                        —       60      —                Ω
+
+           TOTSD             Thermal Shutdown Temperature            —                                        —      +160     —
+                                                                                                                                              °C
+          THYOTSD            Thermal Shutdown Hysteresis             —                                        —      +25      —
+
+                                                                     SOT25                                    —       96      —
+                             Thermal Resistance
+            θJC                                                      SO-8                                     —       75      —             °C/W
+                             (Junction to Case)
+                                                                     SOT89-5                                  —       47      —
+
+Note 6:     Production testing at TA = +25°C. Over temperature specifications guaranteed by design only.
+
+
+
+
+AP2112                                                                       6 of 18                                                      June 2017
+Document number: DS39724 Rev. 2 - 2                                      www.diodes.com                                            © Diodes Incorporated
+
+PDF_PAGE 7
+                                                                                                                                   AP2112
+
+Electrical Characteristics (Cont.)
+AP2112-2.6 Electrical Characteristics (@VIN = 3.6V, CIN = 1.0µF (Ceramic), COUT = 1.0µF (Ceramic), Typical TA = +25°C,
+unless otherwise specified (Note 6))
+
+
+          Symbol                         Parameter                                  Conditions              Min     Typ     Max             Unit
+                                                                                                           VOUT             VOUT
+           VOUT              Output Voltage                          VIN = 3.6V, 1mA ≤ IOUT ≤ 30mA                  2.6                       V
+                                                                                                           *98.5%          *101.5%
+                                                                     VIN = 3.6V,
+          IOUT(MAX)          Maximum Output Current                                                         600      —       —               mA
+                                                                     VOUT = 2.561V to 2.639V
+                                                                     VOUT = 2.6V, VIN = VOUT+1V,
+  (∆VOUT/VOUT)/∆IOUT         Load Regulation                                                                 -1     0.2      1              %/A
+                                                                     1mA ≤ IOUT ≤ 600mA
+  (∆VOUT/VOUT)/∆VIN          Line Regulation                         3.6V ≤ VIN ≤ 6V, IOUT = 30mA           -0.1    0.02     0.1            %/V
+
+                                                                     IOUT = 10mA                             —       5       8
+
+           VDROP             Dropout Voltage                         IOUT = 300mA                            —      125     200              mV
+
+                                                                     IOUT = 600mA                            —      250     400
+
+             IQ              Quiescent Current                       VIN = 3.6V, IOUT = 0mA                  —       55      80              µA
+
+            ISTD             Standby Current                         VIN = 3.6V, VEN in OFF mode             —      0.01     1.0             µA
+
+                                                                     Ripple 0.5Vp-p           f = 100Hz      —       65      —
+           PSRR              Power Supply Rejection Ratio            VIN = 3.6V,                                                             dB
+                                                                     IOUT = 100mA             f = 1kHz       —       65      —
+                             Output Voltage                          IOUT = 30mA
+   (∆VOUT/VOUT)/∆T                                                                                           —      ±100     —            ppm/°C
+                             Temperature Coefficient                 TA = -40°C to +85°C
+           ISHORT            Short Current Limit                     VOUT = 0V                               —       50      —               mA
+
+           VNOISE            RMS Output Noise                        No Load, 10Hz ≤ f ≤ 100kHz              —       50      —             µVRMS
+
+            VIH              VEN High Voltage                        Enable logic high, regulator on        1.5      —       6.0
+                                                                                                                                              V
+             VIL             VEN Low Voltage                         Enable logic low, regulator off         0       —       0.4
+
+             tS              Start-up Time                           No Load                                 —       20      —               µs
+
+            RPD              EN Pull Down Resistor                   —                                       —      3.0      —              MΩ
+
+           RDCHG             VOUT Discharge Resistor                 Set EN pin at Low                       —       60      —                Ω
+
+           TOTSD             Thermal Shutdown Temperature            —                                       —      +160     —
+                                                                                                                                             °C
+          THYOTSD            Thermal Shutdown Hysteresis             —                                       —      +25      —
+
+                                                                     SOT25                                   —       96      —
+                             Thermal Resistance
+            θJC                                                      SO-8                                    —       75      —             °C/W
+                             (Junction to Case)
+                                                                     SOT89-5                                 —       47      —
+
+Note 6:     Production testing at TA = +25°C. Over temperature specifications guaranteed by design only.
+
+
+
+
+AP2112                                                                       7 of 18                                                     June 2017
+Document number: DS39724 Rev. 2 - 2                                      www.diodes.com                                           © Diodes Incorporated
+
+PDF_PAGE 8
+                                                                                                                                    AP2112
+
+Electrical Characteristics (Cont.)
+AP2112-3.3 Electrical Characteristics (@VIN = 4.3V, CIN = 1.0µF (Ceramic), COUT = 1.0µF (Ceramic), Typical TA = +25°C,
+unless otherwise specified (Note 6))
+
+
+          Symbol                         Parameter                                  Conditions               Min     Typ     Max             Unit
+                                                                                                            VOUT             VOUT
+           VOUT              Output Voltage                          VIN = 4.3V, 1mA ≤ IOUT ≤ 30mA                   3.3                       V
+                                                                                                            *98.5%          *101.5%
+          IOUT(MAX)          Maximum Output Current                  VIN = 4.3V, VOUT = 3.251V to 3.350V     600      —       —               mA
+
+  (∆VOUT/VOUT)/∆IOUT         Load Regulation                         VIN = 4.3V, 1mA ≤ IOUT ≤ 600mA           -1     0.2      1              %/A
+
+  (∆VOUT/VOUT)/∆VIN          Line Regulation                         4.3V≤ VIN ≤ 6V, IOUT = 30mA             -0.1    0.02     0.1            %/V
+
+                                                                     IOUT = 10mA                              —       5       8
+
+           VDROP             Dropout Voltage                         IOUT = 300mA                             —      125     200              mV
+
+                                                                     IOUT = 600mA                             —      250     400
+
+             IQ              Quiescent Current                       VIN = 4.3V, IOUT = 0mA                   —       55      80              µA
+
+            ISTD             Standby Current                         VIN = 4.3V, VEN in OFF mode              —      0.01     1.0             µA
+
+                                                                     Ripple 0.5Vp-p             f = 100Hz     —       65      —
+           PSRR              Power Supply Rejection Ratio            VIN = 4.3V,                                                              dB
+                                                                     IOUT = 100mA               f = 1kHz      —       65      —
+                             Output Voltage Temperature              IOUT = 30mA
+   (∆VOUT/VOUT)/∆T                                                                                            —      ±100     —            ppm/°C
+                             Coefficient                             TA = -40°C to +85°C
+           ISHORT            Short Current Limit                     VOUT = 0V                                —       50      —               mA
+
+           VNOISE            RMS Output Noise                        No Load, 10Hz ≤ f ≤ 100kHz               —       50      —             µVRMS
+
+            VIH              VEN High Voltage                        Enable logic high, regulator on         1.5      —       6.0
+                                                                                                                                               V
+             VIL             VEN Low Voltage                         Enable logic low, regulator off          0       —       0.4
+
+             tS              Start-up Time                           No Load                                  —       20      —               µs
+
+            RPD              EN Pull Down Resistor                   —                                        —      3.0      —              MΩ
+
+           RDCHG             VOUT Discharge Resistor                 Set EN pin at Low                        —       60      —                Ω
+
+           TOTSD             Thermal Shutdown Temperature            —                                        —      +160     —
+                                                                                                                                              °C
+          THYOTSD            Thermal Shutdown Hysteresis             —                                        —      +25      —
+
+                                                                     SOT25                                    —       96      —
+                             Thermal Resistance
+            θJC                                                      SO-8                                     —       75      —             °C/W
+                             (Junction to Case)
+                                                                     SOT89-5                                  —       47      —
+
+Note 6:     Production testing at TA = +25°C. Over temperature specifications guaranteed by design only.
+
+
+
+
+AP2112                                                                       8 of 18                                                      June 2017
+Document number: DS39724 Rev. 2 - 2                                      www.diodes.com                                            © Diodes Incorporated

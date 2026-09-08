@@ -1,0 +1,364 @@
+PDF_PAGE 1
+                                                                                                                                   PCA9306
+                                                                                       SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023
+
+         PCA9306 Dual Bidirectional I2C Bus and SMBus Voltage-Level Translator
+
+1 Features                                                               2 Applications
+•   2-Bit bidirectional translator for SDA and SCL lines                 •      I2C, SMBus, PMBus, MDIO, UART, low-speed
+    in mixed-mode I2C Applications                                              SDIO, GPIO, and other two-signal interfaces
+•   I2C and SMBus compatible                                             •      Servers
+•   Less than 1.5-ns maximum propagation delay to                        •      Routers (telecom switching equipment)
+    accommodate standard-mode and fast-mode I2C                          •      Personal Computers
+    devices and multiple controllers                                     •      Industrial Automation
+•   Allows voltage-level translation between
+                                                                         3 Description
+    – 1.2-V VREF1 and 1.8-V, 2.5-V, 3.3-V,
+        or 5-V VREF2                                                     The PCA9306 device is a dual bidirectional I2C and
+    – 1.8-V VREF1 and 2.5-V, 3.3-V, or 5-V VREF2                         SMBus voltage-level translator with an enable (EN)
+    – 2.5-V VREF1 and 3.3-V or 5-V VREF2                                 input, and is operational from 1.2-V to 3.3-V VREF1
+    – 3.3-V VREF1 and 5-V VREF2                                          and 1.8-V to 5.5-V VREF2.
+•   Provides bidirectional voltage translation with no                   The PCA9306 device allows bidirectional voltage
+    direction pin                                                        translations between 1.2 V and 5 V, without the use
+•   Low 3.5-Ω ON-state resistance between input and                      of a direction pin. The low ON-state resistance (RON)
+    output ports provides less signal distortion                         of the switch allows connections to be made with
+•   Open-drain I2C I/O ports (SCL1, SDA1, SCL2, and                      minimal propagation delay. When EN is high, the
+    SDA2)                                                                translator switch is ON, and the SCL1 and SDA1
+•   5-V Tolerant I2C I/O ports to support mixed-mode                     I/O are connected to the SCL2 and SDA2 I/O,
+    signal operation                                                     respectively, allowing bidirectional data flow between
+•   High-impedance SCL1, SDA1, SCL2, and SDA2                            ports. When EN is low, the translator switch is off, and
+    pins for EN = low                                                    a high-impedance state exists between ports.
+•   Lockup-free operation for isolation when EN = low
+•   Flow-through pinout for ease of printed-circuit-                     In addition to voltage translation, the PCA9306 device
+    board trace routing                                                  can be used to isolate a 400-kHz bus from a 100-kHz
+•   Latch-up performance exceeds 100 mA Per JESD                         bus by controlling the EN pin to disconnect the slower
+    78, class II                                                         bus during fast-mode communication.
+•   ESD protection exceeds JESD 22                                                            Package Information
+    – 2000-V Human-body model (A114-A)                                         PART NUMBER          PACKAGE(1)         PACKAGE SIZE(2)
+    – 1000-V Charged-device model (C101)
+                                                                                                    SSOP (8)           2.95 mm x 4 mm
+                                                                                                    VSSOP (8)          2.3 mm x 3.1 mm
+                                                                         PCA9306
+                                                                                                    X2SON (8)          1.4 mm x 1 mm
+                                                                                                    DSBGA (8)          1.98 mm x 0.98 mm
+
+                                                                         (1)     For all available packages, see the orderable addendum at
+                                                                                 the end of the datasheet.
+                                                                         (2)     The package size (length × width) is a nominal value and
+                                                                                 includes pins, where applicable.
+
+                                                                                         200 NŸ
+
+
+
+
+                                                      VREF1                    VREF2
+                                                                                  EN
+
+                                                               PCA9306
+                               I2C or SMBus          SCL1                       SCL2
+                                  controller                                                      I2C target devices
+                                 (processor)         SDA1                       SDA2
+                                                                GND
+
+
+
+
+                                               Simplified Application Diagram
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+     intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+PDF_PAGE 3
+                                                                                                                                                              PCA9306
+www.ti.com                                                                                              SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023
+
+•    Deleted RVH package from Pin Configuration and Functions section .............................................................. 4
+•    Moved Tstg from Handling Ratings to Absolute Maximum Ratings ....................................................................5
+•    Added a note following the Electrical Characteristics table................................................................................ 6
+•    Added Figure 7-1 to the Parameter Measurement Information section..............................................................9
+•    Changed Figure 7-2 ...........................................................................................................................................9
+•    Changed "repeater" to "level shifter" in second paragraph of the Overview section ....................................... 10
+•    Deleted the last row of the Design Requirements table. ..................................................................................18
+•    Corrected equation from fknee= 0.5 / RT (10%–80%) to fknee= 0.5 / RT (10%–90%)........................................ 19
+
+Changes from Revision J (October 2010) to Revision K (December 2012)                                                                                               Page
+• Added Pin Configuration and Functions section, Handling Rating table, Feature Description section, Device
+  Functional Modes, Application and Implementation section, Power Supply Recommendations section, Layout
+  section, Device and Documentation Support section, and Mechanical, Packaging, and Orderable Information
+  section ............................................................................................................................................................... 1
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                                 Submit Document Feedback                  3
+
+                                                                  Product Folder Links: PCA9306
+
+PDF_PAGE 4
+PCA9306
+SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023                                                                                           www.ti.com
+
+
+5 Pin Configuration and Functions
+
+
+                                                                                      GND      1                                       8     EN
+             GND              1                     8               EN
+                                                                                  V            2                                       7     V
+                                                                                      REF1                                                       REF2
+         V                    2                     7               V
+             REF1                                                       REF2          SCL1     3                                       6     SCL2
+
+             SCL1             3                     6               SCL2           SDA1        4                                       5     SDA2
+
+
+           SDA1               4                     5               SDA2
+                                                                                 Figure 5-2. DCU Package 8-Pin VSSOP (Top View)
+
+      Figure 5-1. DCT Package 8-Pin SSOP (Top View)
+                                                                                                             1              2
+
+
+
+
+                                                                                                   A     GND                EN
+                    GND             1          8              EN
+
+
+               V                    2          7              V
+                   REF1                                           REF2
+                                                                                                   B     V          !   V          !
+                                                                                                             REF1           REF2
+                   SCL1             3          6              SCL2
+
+
+                SDA1                4          5              SDA2
+                                                                                                   C     SCL1           SCL2
+
+
+
+
+     Figure 5-3. DQE Package 8-Pin X2SON (Top View)                                                D     SDA1           SDA2
+
+
+
+
+                                                                                 Figure 5-4. YZT Package 8-Pin DSBGA (Top View)
+
+                                                              Table 5-1. Pin Functions
+                      PIN
+                              NO.
+                                              I/O                                             DESCRIPTION
+     NAME             DCT,
+                      DCU,              YZT
+                      DQE
+    EN                    8             A2     I        Switch enable input
+    GND                   1             A1    —         Ground, 0 V
+    SCL1                  3             C1    I/O       Serial clock, low-voltage side
+    SCL2                  6             C2    I/O       Serial clock, high-voltage side
+    SDA1                  4             D1    I/O       Serial data, low-voltage side
+    SDA2                  5             D2    I/O       Serial data, high-voltage side
+    VREF1                 2             B1     I        Low-voltage-side reference supply voltage for SCL1 and SDA1
+    VREF2                 7             B2     I        High-voltage-side reference supply voltage for SCL2 and SDA2
+
+
+
+
+4          Submit Document Feedback                                                                    Copyright © 2023 Texas Instruments Incorporated
+
+                                                              Product Folder Links: PCA9306
+
+PDF_PAGE 5
+                                                                                                                                             PCA9306
+www.ti.com                                                                                SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023
+
+
+6 Specifications
+6.1 Absolute Maximum Ratings
+over operating ambient temperature range (unless otherwise noted) see (1)
+                                                                                                                          MIN      MAX        UNIT
+ VREF1 DC reference voltage range                                                                                         –0.5           7     V
+ VREF2 DC reference bias voltage range                                                                                    –0.5           7     V
+ VI         Input voltage range(2)                                                                                        –0.5           7     V
+ VI/O       Input/output voltage range(2)                                                                                 –0.5           7     V
+            Continuous channel current                                                                                              128        mA
+ IIK        Input clamp current                              VI < 0                                                                 –50        mA
+ Tj(max) Maximum junction temperature                                                                                              125         °C
+ Tstg       Storage temperature range                                                                                    –65       150         °C
+
+(1)      Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute maximum ratings do not imply
+         functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions.
+         If briefly operating outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not
+         sustain damage, but it may not be fully functional. Operating the device in this manner may affect device reliability, functionality,
+         performance, and shorten the device lifetime.
+(2)      The input and input/output negative voltage ratings may be exceeded if the input and output current ratings are observed.
+
+
+6.2 ESD Ratings
+                                                                                                                          VALUE              UNIT
+                                            Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins(1)               ±2000
+ V(ESD)         Electrostatic discharge     Charged device model (CDM), per ANSI/ESDA/JEDEC JS-0011, all                                      V
+                                                                                                                          ±1000
+                                            pins(2)
+
+(1)      JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)      JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+
+6.3 Recommended Operating Conditions
+                                                                                                                           MIN     MAX        UNIT
+ VI/O              Input/output voltage                                                SCL1, SDA1, SCL2, SDA2                  0     5.5          V
+ VREF1 (1)         Reference voltage                                                                                           0     5.5          V
+ VREF2    (1)      Reference voltage                                                                                           0     5.5          V
+ EN                Enable input voltage                                                                                        0     5.5          V
+ IPASS             Pass switch current                                                                                               64        mA
+ TA                Operating ambient temperature                                                                           –40       85        °C
+
+(1)      To support translation, VREF1 supports 1.2 V to VREF2 - 0.6 V. VREF2 must be between VREF1 + 0.6 V to 5.5 V. See Section 9.2 for more
+         information.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                Submit Document Feedback               5
+
+                                                          Product Folder Links: PCA9306
+
+PDF_PAGE 13
+                                                                                                                                             PCA9306
+www.ti.com                                                                                         SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023
+
+                                                                                            VCC2
+                                                                                                   GPIO: high logic does not
+                                                          VCC1                                       exceed Vref2 + Vth
+
+                                                                 Where Vcc2 = Vcc1              200 k
+
+
+                                  VCC1 VCC1              Vref1                     Vref2
+                                                                                                                  VCC2 VCC2
+
+                                                                                     EN
+                                      R       R
+                                                                    PCA9306                                                 R
+
+                                                         SCL1                      SCL2
+
+                                                         SDA1                      SDA2
+
+                                                      Switch Configuration: Vref1 = Vref2 and
+                                                          Enable is controlled by a GPIO
+
+
+                                                        Figure 8-5. Switch Configuration
+
+                                                                                                VCC2
+
+                                                             VCC1
+                                                                                                        200 k
+
+
+                                     VCC1 VCC1              Vref1                     Vref2
+                                                                                                                VCC2 VCC2
+
+                                                                                       EN
+                                          R       R                                                                  R
+                                                                       PCA9306
+                                                            SCL1                      SCL2
+
+                                                            SDA1                      SDA2
+
+                                                                Translation Configuration
+                                                               where Vcc2 >= Vref1 + 0.7 V
+
+
+                                                  Figure 8-6. Translation Configuration
+
+When PCA9306 is in the switch configuration (VREF1 = VREF2), the propagation delays are different compared
+to the translator configuration. Taking a look at the propagation delays, if the pull up resistance and capacitance
+on both sides of the bus are equal, then in switch mode the PCA9306 has the same propagation delay from
+side one to two and side two to one. The propagation delays become lower when VCC1/VCC2 is larger. For
+example, the propagation delay at 1.8 V is longer than at 5 V in the switching configuration. When PCA9306 is
+in translation mode, side one propagate lows to side two faster than side two can propagate lows to side 1. This
+time difference becomes larger the larger the difference between VCC2 and VCC1 becomes.
+8.1.6 Controller on Side 1 or Side 2 of Device
+I2C and SMBus are bidirectional protocol meaning devices on the bus can both transmit and receive data.
+PCA9306 was designed to allow for signals to be able to be transmitted from either side, thus allowing for the
+controller to be able to placed on either side of the device. Figure 8-7 shows the controller on side two as
+opposed to the diagram on page 1 of this data sheet.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                          Submit Document Feedback   13
+
+                                                              Product Folder Links: PCA9306
+
+PDF_PAGE 14
+PCA9306
+SCPS113O – OCTOBER 2004 – REVISED SEPTEMBER 2023                                                                                           www.ti.com
+
+                                                                                          VCC2
+
+                                                        VCC1
+                                                                                                 200 k
+
+
+                                                        Vref1                    Vref2
+
+                                                                                  EN
+                                                                PCA9306
+                                                        SCL1                     SCL2
+                                                                                                            I2C or SMBus
+                      I2C target devices
+                                                                                                         controller (processor)
+                                                        SDA1                     SDA2
+
+
+                                           Figure 8-7. Controller on side 2 of PCA9306
+
+8.1.7 LDO and PCA9306 Concerns
+The VREF1 pin can be supplied by a low-dropout regulator (LDO), but in some cases the LDO may lose its
+regulation because of the bias current from VREF2 to VREF1. If the LDO cannot sink the bias current, then the
+current has no other paths to ground and instead charges up the capacitance on the VREF1 node (both external
+and parasitic). This results in an increase in voltage on the VREF1 node. If no other paths for current to flow are
+established (such as back biasing of body diodes or clamping diodes through other devices on the VREF1 node),
+then the VREF1 voltage ends up stabilizing when Vgs of the pass FET is equal to Vth. This means VREF1 node
+voltage is VCC2 - Vth. Note that any targets/controllers running off of the LDO now see the VCC2 - Vth voltage
+which may cause damage to those targets/controllers if they are not rated to handle the increased voltage.
+                                       Translator Setup with Vref1                       VCC2 = +3.3 V
+                                      provided by LDO and no path
+                                             for bias current                                      200 kŸ
+
+                                                                      VCC1 < VCC2
+                                                                                                    Ven = Vref1 + VTH
+                                                                                           EN
+                                                                     PCA9306
+
+                                                  +                          +
+                                                                          Vgs
+                                                 VREF1 = Vcc2 - Vth        -
+                                    LDO Vout      -                 VREF1                VREF2
+                                                                    pin                    pin
+
+
+                                                                     Ibias = (Vcc2 ± Ven) / 200 k
+
+                                                CREF1
+
+
+
+                        Figure 8-8. Example of no leakage current path when using LDO
+
+To make sure the LDO does not lose regulation due to the bias current of PCA9306, a weak pull down resistor
+can be placed on VREF1 to ground to provide a path for the bias current to travel. The recommended pull down
+resistor is calculated by Equation 4 where 0.75 gives about 25% margin for error incase bias current increases
+during operation.
+
+
+
+
+14    Submit Document Feedback                                                                            Copyright © 2023 Texas Instruments Incorporated
+
+                                                        Product Folder Links: PCA9306
