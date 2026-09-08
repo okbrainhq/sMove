@@ -1,0 +1,1195 @@
+{
+  "partial_commit": "87913796a185f379374e7adadf464d674c40f12e",
+  "merge_commit": "f7c6bc0cd1c727314fc17b57df88e27d1f8647bd",
+  "pre_eco_commit": "c1050a07339897e7203f43137aec96de5bbc41cc",
+  "autostash": "a5e32962dd6f6561775f31e52b0cef898f6d3663",
+  "autostash_tree": "d335cd6dc690bb05a4014d4a0ec59af23648235f",
+  "partial_commit_path_count": 30,
+  "autostash_modifications_recovered": 51,
+  "autostash_deletion_not_applied": "PCB/main/smove-r2-main.pretty/Debug_5.kicad_mod",
+  "manifest_exact_hash_count": 138,
+  "preserved_object_pack": {
+    "path": "docs/recovery/preserved-unreachable.pack",
+    "objects": 1004,
+    "sha256": "a5dde2b8a925f334a6af3ef91c2eccbc92381cbb75b371743ec2a77e4a53d084"
+  },
+  "original_152_path_index_available": false,
+  "files": [
+    {
+      "path": "PCB/main/Device.kicad_sym",
+      "oid": "d1a76ba156297079eee70e89e9db16195e21bbef",
+      "sha256": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/README.md",
+      "oid": "6d28df86a473be2b33c86d0787601cf3fbd17b4f",
+      "sha256": "eb4e37cb305146700410af65fa3845bf3f1cf7459c5cb6618208a9033578fb85",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/compute.kicad_sch",
+      "oid": "274196def45212c9555fb2f9c7258a18519ee012",
+      "sha256": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/ASSEMBLY.md",
+      "oid": "1fe473ea03377e8218fd1a17a8c3f581875532a7",
+      "sha256": "455a2b34bff3e186b3ffe80468ca39bd4eef1b7994d7cf62b488eeb43805acad",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/BOM.csv",
+      "oid": "d232f4ef150016f352a524617328039950c4f1b3",
+      "sha256": "8cd6786adce84a2f67aaa2a2c8c0067d6b25aebac354307939fae58dd694c92a",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/assembly-placements.json",
+      "oid": "e44e3ab5543ac0590347a19e98945218cb8c8b80",
+      "sha256": "ea2a407ab4c2b63ab4a8c073dff771ddf1204268afa4e32470d41b180e0487cd",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/assembly-top.pdf",
+      "oid": "c5dd621ef2898a9b10c7d29dfef3ce17ece4cd9a",
+      "sha256": "996ade7955de3cad9070bc440b335919db8a2b7315c632d229ea47abc4774c31",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/bottom-3d.png",
+      "oid": "b4340e6209ef28b6a12e511e92320a8f9480afc7",
+      "sha256": "10f163c48a9e8ff87d31c74ddcf32566a01f63068b1b591b3c6af5fcb060e984",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/bottom.svg",
+      "oid": "d4cf3345a14eb6932ae0c9e3e7a798a9489379ad",
+      "sha256": "aa3acf0497b67d942e23249b6e05a132c71f22756649abb3d4dc4ae9debf2c61",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/conservative-step-frame.json",
+      "oid": "edb9ea332b2f2202179077acd7fcb96f76698932",
+      "sha256": "7c0b439fa1cb9a92083086fedb0a756583ec2964a7306511193dab6c241ff193",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers.zip",
+      "oid": "db2cb659e81732de75ab639bc41c1f6cd594c08d",
+      "sha256": "787a8ccc6d2dd6f813f7376442a4057a1f9d5e3f3b771dc36955f3c9ff81043a",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "oid": "ba43f64daf018edb9c6fe5ea54d38df90a6f54f9",
+      "sha256": "b2886eb1318045f918af2a5ed42b3238fd14d0bf66ac3d4efb9314384fe056d9",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "oid": "b0283fc20381b68754752c16d6df8f9b5da1e1b8",
+      "sha256": "9c5af7957e3ae6e5c3796f20fda1f025d7f2fbb1e02f902392a194fe2bfc15fe",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "oid": "210975c8fd3508841901cae1f7aa18dcc04b1bbc",
+      "sha256": "04841c8c5f6d31bc8fdaa5817cc334e5bbb570b13ab5ff06abeadbc67b72c107",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "oid": "a48ecd72e4dfe69b092c21f88d73faf4642f02a1",
+      "sha256": "faca483b08b3b0b61869fbaff08e810377f640c3f11e01bb2d9822712e0579b6",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "oid": "e0f0e2448e38f0b2fa9ad3fc28970faa2145bbf1",
+      "sha256": "106d73191439c8fde296b37081e4b92fc7dfe66b7807e810ac3c14ce14e52aa3",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "oid": "c468bb8f9f3a7282a8656da1d35f3c180b685036",
+      "sha256": "af23d16032e69f814f2a770cce0f21f6522c6f9d4a34c7c4dd4433342a87297c",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "oid": "ba3e5ef80bdf09626a5c4fc9136b56fad7a5e581",
+      "sha256": "0527a2212800c393a2e8a99f935656e204023be7c57942ebcd1db66e9d41bb23",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "oid": "6389be8a18074a372bd330e996eb7b3777962360",
+      "sha256": "ebeca9a50419e4a51692c3c8076a41bfaf6d2debe1134db2474e11d298eeba40",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "oid": "7da303f25a0648733d59160f3cf5cacfb9283db3",
+      "sha256": "a3733c4c4dd3742cb40cc47d9be5c80e830f906b67a2896d8aae93543c1a967f",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "oid": "4b3d035d9f0655d0e9a3806dcc89b1931e890e92",
+      "sha256": "62d80bcd2adbaaab3cc1fb130111651dd682868558eef59b7acda13ea4db8dc5",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "oid": "b7a9437d4049c14c193e19341d3462f97e3ca2f0",
+      "sha256": "80862c03158deec5df70e3b6eaa0baa7d5980f003b5948611769b2e06d5fb62a",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "oid": "4d1496e843c399e0f4dba49f499f469c702234fc",
+      "sha256": "01f5850e5f68e4a4de2dacbe90ca325a4472fa264a176ae2b461ec782e2a88f9",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "oid": "454ddb006730b3fa7b425fe45eadd36c01e7208e",
+      "sha256": "f0a6ff868fb529d083d9e9e6be7ed245ef3722914ca49d67f236d9f31615f6e5",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/main-board-only.step",
+      "oid": "d19da7cb1f0210ca3454578083f76f46c48f7912",
+      "sha256": "c9b484a6370cec8afd146d86cb86946ecd0f8576076ba1db054a79293ac3348e",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/main-installed-models.step",
+      "oid": "32b48cec5fc9b5b31e7cba3149e5da51e90f3ad1",
+      "sha256": "acc04453dd6d99746cb2d91dfa2c6ee5b5ef295ac37c8248bd0ece5365d72b30",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "oid": "d96c21c6808d5c79a3234368cd948083dbcf72f5",
+      "sha256": "961dea7ba9cebd1e0817d7cbd328a24eee4ccadd7368d2830e81395aa698d685",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/manifest.json",
+      "oid": "35c05eb96c18ad2c2208595ec26f30b88cc38cce",
+      "sha256": "acc456b239cb5c9e60c6d269cb40fbaf9d1341cf24c851263af96974a3e62c8f",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "PCB/main/dist/pick-and-place.csv",
+      "oid": "ef01409e9818fede3b9cdf4d4ec073553fe61ac5",
+      "sha256": "ba1e021479ee41cc12617dc26f893b497e924e94776d0285ab5e5bdd532fe851",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-compute.png",
+      "oid": "d82f6515759c7778a249c4fe43d8d8871284fe82",
+      "sha256": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-imu.png",
+      "oid": "532cc5179b4569d4b64a469f65b6376ea94eb8b8",
+      "sha256": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-power.png",
+      "oid": "66ad52d938289d5d0d76f81904b24a7f3cdd3614",
+      "sha256": "10d4c83c5daeda5110e46c8427bae85bc4e87214d7eca9010fae0bbf176f7294",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg",
+      "oid": "ec4d7b7719919651017af74f904683069f31cade",
+      "sha256": "54c60162f33a3a876a8a0d5b27f4db4b21f331f3b396073602c9d9d9b3a373c5",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg",
+      "oid": "5c1111151a564a4a890f342616ab533d29535de9",
+      "sha256": "039d22edcd3f42b257b8a506ada2fb793326faad320585e2f872ebe6c31c5e7a",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-Power.svg",
+      "oid": "6cf727fc8ba9fb39516acef3f0f299fe36390ecf",
+      "sha256": "056cf3c6d2fa3898f2eb169e43cfbce4b298e632684a01f5529b4d9cddcc78d8",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-USB.svg",
+      "oid": "7b7ce9911e29692da5d3059cbb27edc5937c2c9b",
+      "sha256": "0d1894f26e67ff76fbe6377fe205d43f9fe9ae4955c95c202f956d57eb0e6772",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main.svg",
+      "oid": "acd941f1d9a7f055ac1ffa26fa714d64e3ad0e81",
+      "sha256": "ec8c40691fc613b1e98899ffebe735d9b73f498cda586d5c064347077a81082e",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic-usb.png",
+      "oid": "de4215ef9f2297f5fa3d86e6c9f73566f4e8d716",
+      "sha256": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic.pdf",
+      "oid": "54d8248ecba0226ce84e0ac61b2c9ac371c57f7d",
+      "sha256": "52738f31a42ff9105422f4c19a50506dbdd988dfc2d218ece98581b439a012d5",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/schematic.png",
+      "oid": "e20aa2d662ff2ba8a9bfab317bfad5898057b6d4",
+      "sha256": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/top-3d.png",
+      "oid": "a53a1546028e31692b3702529c9bef2b02ebf4a9",
+      "sha256": "e52dc4d38e4e358683468780e09e23558a2dc859da213e232ff843dfe0b71bab",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/dist/top.svg",
+      "oid": "5d927a9094f5d7482d8d5b2da8d0f676b83e64c7",
+      "sha256": "04c0eee983454e660768f6efb0fb81f59c5d1c4892b4090d6c686b1a371f6049",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/fp-info-cache",
+      "oid": "573541ac9702dd3969c9bc859d2b91ec1f7e6e56",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/fp-lib-table",
+      "oid": "fd509b44a5e4c605dd2a3e7f24460a62f38b4dc7",
+      "sha256": "1de77361e02f417874116f76edbf1160de7945f89e532ee120525097762585ad",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/C_0402_1005Metric.step",
+      "oid": "a5840edc85f881d95be33a00451893c4600f8ba1",
+      "sha256": "a9d86e843af4234cc114a3c20794dd58f3f317ff3aaad7de03726b122d6da4b2",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/C_0603_1608Metric.step",
+      "oid": "4ae725c00ede8f759650b191e763792db34a7cb3",
+      "sha256": "e202db88bfc46496686a9b65ac164c084e6ef5e78c91250947c09515db5f9695",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/R_0402_1005Metric.step",
+      "oid": "ee318d797e394a3ffce48c30b3eccf5eb14f84f5",
+      "sha256": "728345c7f5ce90e9898faebf4958367db2c137b78ee9b9d6644d02dcdf7349a1",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/SOT-23-5.step",
+      "oid": "817d0a496347f0ccc8ada766dbab28fb85ebd5d1",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/U2_MAX_PACKAGE_ENVELOPE.step",
+      "oid": "d6acff6c10493160fb34cfd51cefd1841369a75a",
+      "sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "oid": "0a45d81f0fdbc8a760565cdb6719e4f785d7ed3f",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu-models/model-status.json",
+      "oid": "79b9277195415e16c5b554fb08157944160c20d6",
+      "sha256": "df74da29c71228b2f1ad6d4667f2a46f72bb38fd320d7cd3b6104d78328fabca",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.kicad_sch",
+      "oid": "fbe55576115388dd105dcd55b53cbb6c3373fc56",
+      "sha256": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.kicad_sym",
+      "oid": "f0d23aa7e234b586d806c2278369d12903a07d7b",
+      "sha256": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/C_0402_1005Metric.kicad_mod",
+      "oid": "a51216d1b5deddb7edaa1180e361374177eff689",
+      "sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/C_0603_1608Metric.kicad_mod",
+      "oid": "cc2156a208de144d40682506a84acad5344fea57",
+      "sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod",
+      "oid": "3a220bd1c773e78d3c29dcfce5d60d40ca9408b7",
+      "sha256": "61406e22b771708126107b1cd36150b2ac4c04d37e0906ddbfffb46058589c04",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod",
+      "oid": "02eb6fcb1d30ab41dc741f92b45f4720ecb484f5",
+      "sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod",
+      "oid": "58cfcb044c8c33486dce96138a51d9fcd94baa8e",
+      "sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/imu.pretty/SOT-23-5.kicad_mod",
+      "oid": "9fd6c65d991d9285117d0f432bfa00bb1bb56132",
+      "sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/interface.json",
+      "oid": "353367a039a42435872de7ed4a68fa2093bb0237",
+      "sha256": "76956372322a5ec99010bbd9912c15bae081b9cf9056e6f319009acc397c0023",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/mechanical-envelope-source.json",
+      "oid": "bb01e94595ab4f42478763f758f2bfe99c11b49e",
+      "sha256": "1dcf031308d4b96287ea089e88d0042d8f5591353dbded513e64ef21053e54c6",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/mechanical-pose-source.json",
+      "oid": "dfb7df8ebe5b757e7afb822b72fb8562e1b9b512",
+      "sha256": "2e5b747e43a540fc871173e850f220969498d6306490d32cc70608fb2450aaf3",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/native-layout-contract.json",
+      "oid": "db7ab2208c15f894faa49e9e16e9770376a05bd0",
+      "sha256": "2b7604b5a1042d348f8f8a2396957e012fac22e0edb36eafbba9729d4089cf73",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/parts-main.json",
+      "oid": "80f93753b880e8d53b337a856a2903210cd05dce",
+      "sha256": "62935e4882cfd8877ec7e408509db456be3f0b0a540b82be20de9a0342778707",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/power.kicad_sch",
+      "oid": "0032c23d051da1bd730c74b5fcf04262c1a7dbe9",
+      "sha256": "50d1cda1787b8207c3afbc7a21e8dabea0324e26da30cba9eed31e053e7a79d4",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/power.kicad_sym",
+      "oid": "5952abfbd5cb50208cd5f10bb8ebba0ae0d091b2",
+      "sha256": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip",
+      "oid": "69b206db0f6b574335566fe6cc52be034791b046",
+      "sha256": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_dru",
+      "oid": "1ec5803a4c24314539a213f067b090aba6b8030c",
+      "sha256": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_pcb",
+      "oid": "4518fffd3a1d036cac62f3fdd3802bae83b948e9",
+      "sha256": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_pro",
+      "oid": "3ab6ccd3ad49395dde2f400ff256143d1ceccbe3",
+      "sha256": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_sch",
+      "oid": "4c335a55f394fcb478fd48cbbfdfd0e202a2ac21",
+      "sha256": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_sym",
+      "oid": "eb50682950bfdfa0551f2698b0a1456fc01c1c81",
+      "sha256": "f779dbacb659e75cf59a15e5d182cc82d9de339b8d73f18064567867da112dc0",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod",
+      "oid": "6e71679c6f16ac950298d675aac123ec004a6296",
+      "sha256": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod",
+      "oid": "d493d23c77ceb0363cc63dbb0de60917a8153c59",
+      "sha256": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod",
+      "oid": "34d91eb947e83e30e5131879a6289b28fbb06af9",
+      "sha256": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod",
+      "oid": "4a7fefd142a8b1f8965704843bf2ab26bbc2cbd3",
+      "sha256": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod",
+      "oid": "e0ac2d3d0a42895b00acd47f62120871b36b23a0",
+      "sha256": "d62b385a9b9d0886ce050db386e641c039ba34ca46a78356d783ad3d0e9d9d1d",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "oid": "6d53c086b7a0d1d1568810be5fd8533a40a2a53d",
+      "sha256": "e68ca0479cd85251db0c4621f10abb7a65e627be83ea652e664ba6d964a651f5",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+      "oid": "9b61381437810c3e77ac07b62d59a546fe00da25",
+      "sha256": "63154b8816179deca97a4f378a449d43daee6f2862a546c33c76d344ebb4cfea",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod",
+      "oid": "a481d3244140ee8c13db3602e7ffc2d097670314",
+      "sha256": "011511e068b2c7d875615f0990e037f789240c85516a73006ff62f3cca7daf07",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod",
+      "oid": "794d79fc15a1df51a51abb37a2008913da3678e4",
+      "sha256": "2b563e2f9ee44cdbd1c99712ad098d0207acd42f2efd6a156c31348f47b75ff9",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod",
+      "oid": "359594aaac62dee4c7addf41dcf1b83d9efb96ce",
+      "sha256": "0d0a48fa074dad16293e0818ea42ac06a64763cb4fd2b2f11400906745a3910b",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod",
+      "oid": "bd8efef195310ea257e6228d92be0d53eaf32d94",
+      "sha256": "7ad52d37b14c5f2720f209f8e729a981dc96529db5832199b1b0f058dc351e75",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod",
+      "oid": "31962e65ac297e2de222ed04a52be1790d264673",
+      "sha256": "f387640293b6382cd818af98d207fa9bf364fb4d63d9d1b12df042859632ca22",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/TS1088.kicad_mod",
+      "oid": "9e69cece4894d00bbf9db32ca2598859d2717e13",
+      "sha256": "2dd9a2bed110746122621c35a5fae01fc2af554227af60d05a11505bb09980ba",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "oid": "e7f1b98e34971112147b0bfaa16c68b0a37b5234",
+      "sha256": "d1000f83ff7f664e35bca685d1ddfbf1460b253b15b71df595cc04d041146c59",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/sym-lib-table",
+      "oid": "1a006530cc1f0e8de1e437563c71afbca3557ac4",
+      "sha256": "a875526915ef20dc290fa69e6a5a4a228316b7a2513c551c977c00a888be230c",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "PCB/main/usb.kicad_sch",
+      "oid": "6fc947f9e80f2c92967b62555ddc319bf25f936f",
+      "sha256": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "README.md",
+      "oid": "a45701281f583b275e5dfea91ae4b38fedcb7849",
+      "sha256": "a6d93975509d7f19a5bc2d25950bbb438271ed3b71ba4fd93ddb736a748faeea",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "docs/recovery/original-reports/final-summary.json",
+      "oid": "d673c5d65f1a1518cb71e131417d39bdc431769e",
+      "sha256": "7205fa19204e171d89827c0df7f784c9f910daa7da79506e3d8d02623aa1c492",
+      "action": "add",
+      "evidence": "orphan report, original pathname unknown; recovery-only descriptive filename"
+    },
+    {
+      "path": "docs/recovery/original-reports/gui-review.json",
+      "oid": "54f000a4b401de24ea738795cba81d04e80158db",
+      "sha256": "9c81b111700337bfe6877ae2a44a05f371c5d1fa0698280da19de53d34023408",
+      "action": "add",
+      "evidence": "orphan report, original pathname unknown; recovery-only descriptive filename"
+    },
+    {
+      "path": "docs/recovery/original-reports/main-exports.json",
+      "oid": "444897a91df9e7c40be76f613b082175025c492f",
+      "sha256": "32b8671352b855f2ec79e86aafb7737da17e4953dcd9e3858a5c6558c5168c06",
+      "action": "add",
+      "evidence": "orphan report, original pathname unknown; recovery-only descriptive filename"
+    },
+    {
+      "path": "docs/revision-r2/CONNECTORS.md",
+      "oid": "d5f0f2fbd1668b03136b9e9b62077ae1d597803b",
+      "sha256": "d93f091d79bb594344c6afce60eb42f87050230c2f3c4480f10ba798bce52e87",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "docs/revision-r2/FINAL-ELECTRICAL.md",
+      "oid": "763fa30e8a34b8a1e303dd631bf5b9d37ae6254c",
+      "sha256": "4e80a5ff427628c1fdb5b345b25dd02d62bb01c7618b152b137d9bc366da5e08",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "docs/revision-r2/final-export/README.md",
+      "oid": "a71c0d9c4498caec09fcf31615071d46bd95bdc3",
+      "sha256": "5971313ffb2299fb0babaaedc3ad72bd1f059c58b466d756bd1117fc8f047446",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "docs/revision-r2/integrated/RADIO-BATTERY.md",
+      "oid": "091fb01c762f2a5d171d983d5121fd068a9031d4",
+      "sha256": "9c5c65911593ec5848a356991b1287d4177801a9e80188485397b240c4b883ba",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/README.md",
+      "oid": "829d301d8ab9346005aedeb4a152cb6ef076feda",
+      "sha256": "a28b4a6cebdde5f6224d8950ca0b9f4c78941e4806b5af395c8dd43f40cc3e49",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/TESTPOINTS.md",
+      "oid": "3ab884ae48ef827b57dc871548c3de47f341baf8",
+      "sha256": "6235ebb86569518af6c46c26a10307aeb738353fb9842cdac6b11f1cfabb30e3",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-carrier-drc.json",
+      "oid": "fbc0c66965424e7e5e8db831e0f465a682ad7dac",
+      "sha256": "d887b3aeba623ad7549a1203773a183180e5369160db883ba05e1bffae40b166",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-carrier-erc.json",
+      "oid": "a390eb7bd812e1923146053ca84bb70b823239a4",
+      "sha256": "f71d14fa2b889600c449159b15998fb3804ceeeaa9f1bc04be98e97b20207b05",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-carrier.xml",
+      "oid": "b395422d529093028f0c9a6711a38d036302bb66",
+      "sha256": "f6625eba3052d62099a3cfad2a343bd6506d6146117789a0c4685c3dbfe5b5fc",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-main-drc.json",
+      "oid": "79806e580ad6f44f760a4b850593cc48689edd9b",
+      "sha256": "579268b41f49ab0a45b49cee84f16ed71decad0b3d50753c400583c095a4a4d4",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-main-erc.json",
+      "oid": "e5ecd865750c1b726992b5409035b751aa790cbe",
+      "sha256": "545c4a70458faa84188b8f0271dc4b999665a1840abebedbf4d653ffe01b1eee",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/baseline-main.xml",
+      "oid": "fa4b8df537c4681494c88ddc2629e62ec0b300c9",
+      "sha256": "971e11eb283897b23f36865529b07a7af05fffd48b23892f12a359a8b7f1b4f0",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/battery-budget.json",
+      "oid": "90e958d29a00d4b7402074a16044fe2fb25a0818",
+      "sha256": "0f04497f772857dd4b963d29b24b99f12c66a015757a11aca3ea1219c69fbf15",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/centered/baseline-drc.json",
+      "oid": "11a2211a99a73d860fdf54a6c57b32889e0ef31e",
+      "sha256": "0ebb7d13d039d321939aad3c9f566ee6ef8c7545638bba2dad23bb0734fe401d",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/centered/baseline-erc.json",
+      "oid": "a04a697f49fa2f234d8d3246e3f998f4a7066040",
+      "sha256": "f35e08c62e27cb2fa4a8bd9a58b86c6e3f9f65c17179b75321865e0212056c4b",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/centered/baseline.xml",
+      "oid": "8282e6af000f5f18263b0abde1aaa9e32144c413",
+      "sha256": "2cd58941dcbdeb0a0543738012fc89010220bfe133e7c5eccdba8403cb6f2fb9",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/centered/net-migrations.json",
+      "oid": "768b8797503f7722c7e2e5529eae370ac06dc62d",
+      "sha256": "995eddfbb93e618de1f10749ef648b6a4ec3d5b2452e2af7f728961ee53a46fb",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/delivery-manifest.json",
+      "oid": "b4767a0d2e2fd8463130ff67ee8234fff10d200d",
+      "sha256": "40035e8043dbbf0f391eb67ba0ea4fd448958236d4b17492d78c8735f2431ce7",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/electrical.json",
+      "oid": "725f88a2668545efe511fb1d64a283bfe521d841",
+      "sha256": "dcb974f3f96e799059b0e6c3fd4e1baf098d793c1764de9b645d4146ed7a43b9",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/post-main-drc.json",
+      "oid": "c03830b2e5378336acfa1ca304c982c9893f5022",
+      "sha256": "828b57be12a28cf2cdc187154ffc6a9744192c953249e957c031c2aa85c3d13d",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/post-main-erc.json",
+      "oid": "5e5960b2094f47c0a06e225a7a9698eb18e058cd",
+      "sha256": "a92e07df00f1bb89084104f6ba05a372dd8ad4c46781adb3514d81b9685d6a5f",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/post-main.xml",
+      "oid": "ad31c75e4357e84cbf2d66c0fc4d52381ba1acc8",
+      "sha256": "92e13afe4d777953c202eb20113f2462987e60284934b2ee660033b597b83a49",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/integrated/validation/retention.json",
+      "oid": "23b68f78615b4297d25a0963fe00072618adc4ab",
+      "sha256": "0a9685c3c36c28c5f91094e44dff584fe1311e3d295c92e0ecbac31d101391de",
+      "action": "add",
+      "evidence": "orphan blob; path correlated from recovered script/Markdown references and report type/date; original index unavailable"
+    },
+    {
+      "path": "docs/revision-r2/rgb-body/README.md",
+      "oid": "7a0e4133d0bd2eaa65bfb11771e61520700e15ad",
+      "sha256": "77a9101a7c45b4223c49b0ab240b3d25a127478731dc31a1f09d12c191e0f88f",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "housing/InspectAssembly.FCMacro",
+      "oid": "54bbd63543f14608cac6f03378640d28b16a3e5a",
+      "sha256": "4416f469fd5d9c694105c007d92b4598b6f052cd9ab9429faf966ec9c9c910d3",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/PRINTING-ASSEMBLY.md",
+      "oid": "d1d57ffe8eb834616dac64cd59f995ddc597336b",
+      "sha256": "7af71b9faafab38d894cd7bdf7cad8880f167963439fbf61230e92347d746339",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/PresentAssembly.FCMacro",
+      "oid": "c84c7edaf589ff86a30f0c7f772e4a6632bec99c",
+      "sha256": "e407e000b8f51c203135260f9c3fb78af98de24e8c1677d9002ab6d48f3dab20",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/README.md",
+      "oid": "62e674b291c64f5e22481aa7c6a3d4f6a1244788",
+      "sha256": "3eb436b5777d4d8602f6c28248ffb55397595785a0f12e7894d34702fb77d436",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/assembled.png",
+      "oid": "cbbc7e469056b22852f086b60f881c297a4dea49",
+      "sha256": "cf8b29a01c9c3f6f1dcaf0267470ca16202da50a00e09d7706f9c45df8235d98",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/base.stl",
+      "oid": "e9e87e31adbdc5e5a5c374fcf6ceddfbb31b0fff",
+      "sha256": "ccc9a371e3e0c9001de56a9c469629c306576feacd9c05fdf27dce02685e99db",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/body-side.png",
+      "oid": "aac1db89836376abfeea6d838c5cdc9c0bf1eeef",
+      "sha256": "03040b7a3f731dd3223cf0acb9146d95f80c2c79ec27b18e1e429db4b022ac0f",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/dimensions.png",
+      "oid": "19a92789f2c596dc302d9e3b61c8a8c0f31a68f9",
+      "sha256": "6a580da007613ebbc43f475cff7a8664d1d3b199800d344706688beb69af3bb5",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/divider.stl",
+      "oid": "a23140373e796f4da7bf8894ab755520cd50b70b",
+      "sha256": "acde3ca7b47f26603be1f6569af5df107a5044576d91684b0c406413c6af9d06",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/exploded.png",
+      "oid": "5b44895a5d3cf2cafb9eaa2595056cf606150a5f",
+      "sha256": "70f3208656d5512e575383b4d40f24787d53cc9024808c453228b2a17b46cc3d",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/freecad-inspection.png",
+      "oid": "c66b9f149fc39c0959f591813d0d6ad28d772ba6",
+      "sha256": "0fc63002bc161370f76f2a73ced1be821ff700ae9e1d615c107525bc68f1bfaa",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/lid.stl",
+      "oid": "af4c821591757692e3184ee99e117f25e058a757",
+      "sha256": "851b3a7cde30360ec33cbcaed36233d1278864e46b3d168f3c296e5921fe95f4",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/manifest.json",
+      "oid": "917a06ce5b3b206e5897d851b01a0f1ca73071ab",
+      "sha256": "59aee4464bd6d9299e0bb0b3aafc48e42650317229ceb64cc557bef7875cd706",
+      "action": "restore",
+      "evidence": "autostash a5e32962dd6f6561775f31e52b0cef898f6d3663 tree d335cd6dc690bb05a4014d4a0ec59af23648235f"
+    },
+    {
+      "path": "housing/dist/section.png",
+      "oid": "3edd0abeb92c2dfda42a0a7938fd3eac2d647605",
+      "sha256": "5529e532bc2a4d18421147b30214b2edda60a8a275d08fa56b27eb1173ef58bb",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/smove-r2-assembly.step",
+      "oid": "9a94fef3a8bce3ac2d88ea73bb143adaf2b6c664",
+      "sha256": "68683466a96b9586ceb471c9d6ef6c078a87a4d624ad33995eba6c86696ba58f",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/smove-r2-printable.step",
+      "oid": "acec8cc0fbde626e28bbac24b88e66e788aa02fb",
+      "sha256": "d4767b2d95108009f221ed059fc9b0b57039406c3b93116032f1d929845706f0",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/dist/top.png",
+      "oid": "1b02790e7cd1b211dcb9ca7b297548d2f5ce5460",
+      "sha256": "fa160bebb0e5ade8c4596e203610b1aaf25bd4c1d85518747b01e0e6fff114b6",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/entry.py",
+      "oid": "75ebb4481370d0dd144a3c323c646b6d86e212cf",
+      "sha256": "2d80a853ac013a6aa33c5d6573ec3284f97ee2298575bbf776dc722868921c6b",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/export_main.py",
+      "oid": "babaa9ca4d4b6f5236d10f9d5b4ce2bba731b160",
+      "sha256": "a1ab3810261579b3f62ebb1a5a24aafd3a1dde743d0d9cf4ed0d670c22de5a46",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/insertion-check.py",
+      "oid": "f6cf661f13da676ab3dd7691774a9d642cda8fcb",
+      "sha256": "bec2682d3ebb82efe2ae28a3d079f9e39c64b6bd4b3fa026427807a9b449a547",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/smove-r2-enclosure.FCStd",
+      "oid": "7a2eb0d0b3a81622df1818d3835085fac7b946a0",
+      "sha256": "037a4d087d875608634a37078a7d8ee73333af7b75219f400ed673104e838379",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/status.json",
+      "oid": "65a7353cec502577d9c5dfc0b39547c2bfcaaa47",
+      "sha256": "ef6107477ac8378d6f637d34bb3c0890f5105006923d6d65cd69d8143a4e3ca5",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/toolchain.lock.json",
+      "oid": "81afa3a4ad921784a46370139d48d44fa23f0925",
+      "sha256": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/baseline-mechanical.json",
+      "oid": "6c9c7d03290ee39379cbec7e8924c0f6fe2df270",
+      "sha256": "cefc50da6666ec2bed044e40f486597d1f70b176b334c362ab9267e03286a0c5",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/battery-insertion.json",
+      "oid": "9028b59fe68dfb87cca6c2bd2c3218f51668b0a8",
+      "sha256": "82e8269b10c1319bc0f291a124ef4493efb430972d36cccc34ef5c2d5a8b3223",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/build.json",
+      "oid": "e76cbe8aa09c1f404e73a5254891feaa2ba79372",
+      "sha256": "934d90bcac8aec642dae6a3852dc76243b560157879623ad2dafdc844c152a31",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/gui-inspection.json",
+      "oid": "6f93509668bcc065c1c515dafe33db2b93669263",
+      "sha256": "97584e987128f08ce7e759ea6f367029e78fdb27fb2e1a42df7f6053e00761a0",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/input-geometry.json",
+      "oid": "ccd202ab750a6bed9f488eac325f6e0a26b0655a",
+      "sha256": "828d5674c64652d41dde5e60f609dac4027368929a81c73ecea6470f9a9543ca",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "housing/validation/mechanical.json",
+      "oid": "060312ea58a1e40b08f586dae17f3f7dbdad0427",
+      "sha256": "96bd79b33acbe08ab0e133186faebe849fafe6815fdee964c6e8bff3623901fb",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/audit_body_frame.py",
+      "oid": "172cfc023095860a73e92decf2f4fd5ac8503d4e",
+      "sha256": "680e441b0caaf9e7bec8c20f871d7ae88e7166e1fd05a33e93f1825ed88802f4",
+      "action": "unchanged",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/contact_audit.py",
+      "oid": "d60942a50edf002efeac32e220ccefeb792d02d8",
+      "sha256": "ac5fe7f4200f523f000eac624bc01240ffc3f023bb1dd477e02addf517a5de9e",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/extract.py",
+      "oid": "5ad0ed92907da8172e8249c91cca15f67d0549e4",
+      "sha256": "db5fde135a2ab5036508ff7ead652c857b286fbc6a281623cc787dd5215029e2",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/generate.py",
+      "oid": "2ccc8f8bd05263215b0052878b14f7087eb785fb",
+      "sha256": "61fb38462cafd6adb2cea060d883581e3c1bf0bc51637e3e3c9f84ea495a8591",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/inspection.py",
+      "oid": "2eaed431ac35f4a3df4c372cd747c84362fcceb9",
+      "sha256": "f8622e67f4f6b22002663bc77715d9b7a22519efff64b4373c331cbcd3786a4e",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/present.py",
+      "oid": "ca12888d42ef7608f071d724d5334dc658f649f2",
+      "sha256": "6dc14882fcffc64ca5b57ab0537b04e90d95bdbee992a677d33496e936fae3fd",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/enclosure/verify.py",
+      "oid": "961c14e69c9c47d15ad05b78d5edc1b89a10b29c",
+      "sha256": "a6c6532b4715435bd1465d7bafd13ee9e6679de71f0fed30865107fb61a5ab92",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/final/export.py",
+      "oid": "553e3fd13136a341f6c269bc47c7b843d4608d29",
+      "sha256": "35528008822bd31ef2ceac743b8a17f4461f36583d84aa2bf165367b715e48a8",
+      "action": "restore",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/axis_silk.py",
+      "oid": "8bd4641f90f2dda04ab2d51900080985c15399f8",
+      "sha256": "7431f4a19909bd0e518e37762752f89eff743b4e4fad77937708db11a46c4bae",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/budget.py",
+      "oid": "2314ee296f45765a8be30de29e3b893c3a93623c",
+      "sha256": "8af45a893e3b1a91e137856c634443f6d64eb676d158690e8a89e183e8eb35a5",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/centered.py",
+      "oid": "4a91755275a39d49eda9bb2afbb06f7fec94c0b1",
+      "sha256": "07b9bbf8274d55d628e898cc1a244d899abe1efb72aa1d4faa5818746970e1c8",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/finish_routes.py",
+      "oid": "5501ea78be4e48eb3b39f7a173999dcb8d2ee9fa",
+      "sha256": "16a555c5dad071efb5551b4d73d751ee43597287224561f4e9d75ef8bd3fc688",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/layout.py",
+      "oid": "9f12b2e4c58bc93f15fa751fe9cc760e1c82dc90",
+      "sha256": "0a07a229a622d2814fa51608bfa013c8857463ffe20a1869d00211aaebf41568",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/migrate.py",
+      "oid": "8c79e291aac4838a72918af7ef5c22cb6809f7b6",
+      "sha256": "6397b34c922726898e5e7b76bc539a418bfb39b6c54be425bd2b9b68252cf92e",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/pack.py",
+      "oid": "de18cc20365e2bcf168d8ee0474fc7614e601876",
+      "sha256": "2d145fb11d86e8d48a5edc773857204162fb726cb10e3eb3ffade57d35d8adba",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/route.py",
+      "oid": "137201736f3a2fc8c132899097351485f56b560d",
+      "sha256": "1c1ab08a1e544ef179bad3ac6e1583c53a71eba314d72fad51e2f14dc453b030",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/seal.py",
+      "oid": "5da36dadfbb0ee49fc0db617363ecd540baaa7d3",
+      "sha256": "dbe8c3d93a42e93b5c49dd68c6f0fd076680642d81189d7f9347cf43da33d627",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/sexp.py",
+      "oid": "3e3e7542795af65aee5d05c089f244177565c575",
+      "sha256": "3670311db6120bad6b334420e0d32aaea5d629925923640a47ee822edd75eeab",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/stitch.py",
+      "oid": "b9f2e78ee302f480880856b691e698147ee68c8f",
+      "sha256": "8cfca957700855c8432095447911641225124599ee3ec09148737de5030a2d18",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/sync.py",
+      "oid": "3e27d1f586d0553a12a4f9cbe22918b661b739d3",
+      "sha256": "b5ce64ddad5c6373814223b50a814f8556d5dd49e7f7a6170e27f2d6071e8533",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/tidy.py",
+      "oid": "3f0a9bc8ea08ffb300a9c8d118f14c12a7d77e86",
+      "sha256": "7bdcd4db6e463b08c82a0361a661206b8cd7a7fca5324a40a1a9c901b3b67e17",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/usb_access.py",
+      "oid": "f0d41a6888f31e5b5fe2208aa11f897d1d6257af",
+      "sha256": "d26e07456bed391345f1b45a8f6990d1ee7426a53ccda673fa48995fa873b7a8",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    },
+    {
+      "path": "scripts/r2/integrated/verify.py",
+      "oid": "364554b5e0922fb51f3477d9b2fe596211575400",
+      "sha256": "f56840617c3cd135c6a61db13abeecbe65f1d6b38fc4530131534492ce3a1248",
+      "action": "add",
+      "evidence": "preserved delivery-manifest blob b4767a0d2e2fd8463130ff67ee8234fff10d200d"
+    }
+  ]
+}

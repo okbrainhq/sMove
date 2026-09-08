@@ -1,3 +1,5 @@
+> **Historical/superseded topology.** Current integrated main-PCB design and release gates: [integrated ECO](../integrated/README.md). Carrier/PH4/old enclosure/count/hash claims below are archival, not current build instructions.
+
 # Unified RGB / coplanar body-outward assembly
 
 **RGB and real mechanical redesign implemented. Body-contact blocker resolved by explicit owner clarification.**

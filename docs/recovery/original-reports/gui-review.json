@@ -1,0 +1,17 @@
+{
+  "status": "CURRENT_EXPORTED_VIEWS_INSPECTED_AND_QT_GUI_TEST_PASS",
+  "desktop": "Locked desktop; PipeWire Session creation inhibited. No native GUI routing or desktop clicks claimed in this revision.",
+  "routing": "Existing constrained router plus explicit native corrections; zero configured DRC. USB impedance/return-path and bench qualification remain open.",
+  "freecad": "Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.",
+  "accessible_images": {
+    "imu": "/uploads/106fcc66-29b1-405e-a89f-4c2732c83dee.webp",
+    "pcb": "/uploads/d9146753-e05c-4582-871e-e912b2bc3d8f.webp",
+    "dimensions": "/uploads/968018a2-2c17-4c5f-ad65-55a9c18c076d.webp",
+    "freecad": "/uploads/9d27e813-b7b4-4e37-92cf-f9d32795353c.webp"
+  },
+  "caveats": [
+    "PCB renderer lacks several vendor models; conservative FreeCAD components are not exact vendor solids",
+    "Only nominal CAD dimensions meet target; PH2 overlap and physical/battery qualification remain open",
+    "No kiStack or KiCad skill installed; no new tooling installed"
+  ]
+}

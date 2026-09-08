@@ -1,0 +1,7524 @@
+{
+  "status": "PASS",
+  "baseline_commit": "c1050a07339897e7203f43137aec96de5bbc41cc",
+  "check_count": 1214,
+  "checks": [
+    {
+      "check": "exact_intentional_removal",
+      "passed": true,
+      "detail": [
+        [
+          "J3",
+          "1"
+        ],
+        [
+          "J3",
+          "2"
+        ],
+        [
+          "J3",
+          "3"
+        ],
+        [
+          "J3",
+          "4"
+        ],
+        [
+          "J3",
+          "5"
+        ],
+        [
+          "TP1",
+          "1"
+        ],
+        [
+          "TP10",
+          "1"
+        ],
+        [
+          "TP11",
+          "1"
+        ],
+        [
+          "TP12",
+          "1"
+        ],
+        [
+          "TP13",
+          "1"
+        ],
+        [
+          "TP14",
+          "1"
+        ],
+        [
+          "TP2",
+          "1"
+        ],
+        [
+          "TP3",
+          "1"
+        ],
+        [
+          "TP4",
+          "1"
+        ],
+        [
+          "TP5",
+          "1"
+        ],
+        [
+          "TP6",
+          "1"
+        ],
+        [
+          "TP7",
+          "1"
+        ],
+        [
+          "TP8",
+          "1"
+        ],
+        [
+          "TP9",
+          "1"
+        ]
+      ]
+    },
+    {
+      "check": "no_unrequested_new_electrical_parts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved_net_endpoints:C3.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C4.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C5.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:D1.4",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R10.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R18.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R19.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R20.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R5.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R7.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R8.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R9.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.3",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U4.5",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U5.1",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U5.3",
+      "passed": true,
+      "detail": {
+        "before": "/3V3_MAIN",
+        "after": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C11.1",
+      "passed": true,
+      "detail": {
+        "before": "/BAT_ADC",
+        "after": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R14.2",
+      "passed": true,
+      "detail": {
+        "before": "/BAT_ADC",
+        "after": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R15.1",
+      "passed": true,
+      "detail": {
+        "before": "/BAT_ADC",
+        "after": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.12",
+      "passed": true,
+      "detail": {
+        "before": "/BAT_ADC",
+        "after": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R8.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/BOOT",
+        "after": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:SW3.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/BOOT",
+        "after": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.23",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/BOOT",
+        "after": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R13.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_B",
+        "after": "/Compute/LED_B"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.16",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_B",
+        "after": "/Compute/LED_B"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:D1.3",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_B_K",
+        "after": "/Compute/LED_B_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R13.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_B_K",
+        "after": "/Compute/LED_B_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R12.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_G",
+        "after": "/Compute/LED_G"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.21",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_G",
+        "after": "/Compute/LED_G"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:D1.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_G_K",
+        "after": "/Compute/LED_G_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R12.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_G_K",
+        "after": "/Compute/LED_G_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R11.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_R",
+        "after": "/Compute/LED_R"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.20",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_R",
+        "after": "/Compute/LED_R"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:D1.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_R_K",
+        "after": "/Compute/LED_R_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R11.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/LED_R_K",
+        "after": "/Compute/LED_R_K"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C10.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/MCU_EN",
+        "after": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R7.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/MCU_EN",
+        "after": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:SW2.1",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/MCU_EN",
+        "after": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.8",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/MCU_EN",
+        "after": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R9.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/STRAP2",
+        "after": "/Compute/STRAP2"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.5",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/STRAP2",
+        "after": "/Compute/STRAP2"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R10.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/STRAP8",
+        "after": "/Compute/STRAP8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.22",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/STRAP8",
+        "after": "/Compute/STRAP8"
+      }
+    },
+    {
+      "check": "restored_NC:U1.30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "restored_NC:U1.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved_net_endpoints:R3.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/USB_DM_MCU",
+        "after": "/Compute/USB_DM_MCU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.26",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/USB_DM_MCU",
+        "after": "/Compute/USB_DM_MCU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R4.2",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/USB_DP_MCU",
+        "after": "/Compute/USB_DP_MCU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.27",
+      "passed": true,
+      "detail": {
+        "before": "/Compute/USB_DP_MCU",
+        "after": "/Compute/USB_DP_MCU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C6.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C7.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C8.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R16.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R17.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.13",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.22",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.8",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.2",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U5.5",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/1V8_IMU",
+        "after": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R20.2",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/I2C_BIAS",
+        "after": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.7",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/I2C_BIAS",
+        "after": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.8",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/I2C_BIAS",
+        "after": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C9.1",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/IMU_REGOUT",
+        "after": "/IMU/IMU_REGOUT"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.10",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/IMU_REGOUT",
+        "after": "/IMU/IMU_REGOUT"
+      }
+    },
+    {
+      "check": "restored_NC:U2.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved_net_endpoints:R16.2",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SCL_1V8",
+        "after": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.23",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SCL_1V8",
+        "after": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.3",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SCL_1V8",
+        "after": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R17.2",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SDA_1V8",
+        "after": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.24",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SDA_1V8",
+        "after": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.4",
+      "passed": true,
+      "detail": {
+        "before": "/IMU/SDA_1V8",
+        "after": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R22.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/CHG_ILIM",
+        "after": "/Power/CHG_ILIM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.12",
+      "passed": true,
+      "detail": {
+        "before": "/Power/CHG_ILIM",
+        "after": "/Power/CHG_ILIM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R21.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/CHG_ISET",
+        "after": "/Power/CHG_ISET"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.16",
+      "passed": true,
+      "detail": {
+        "before": "/Power/CHG_ISET",
+        "after": "/Power/CHG_ISET"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C2.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/PACK_P",
+        "after": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J2.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/PACK_P",
+        "after": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R14.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/PACK_P",
+        "after": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.2",
+      "passed": true,
+      "detail": {
+        "before": "/Power/PACK_P",
+        "after": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.3",
+      "passed": true,
+      "detail": {
+        "before": "/Power/PACK_P",
+        "after": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C13.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/SYS",
+        "after": "/Power/SYS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U4.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/SYS",
+        "after": "/Power/SYS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U4.3",
+      "passed": true,
+      "detail": {
+        "before": "/Power/SYS",
+        "after": "/Power/SYS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.10",
+      "passed": true,
+      "detail": {
+        "before": "/Power/SYS",
+        "after": "/Power/SYS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.11",
+      "passed": true,
+      "detail": {
+        "before": "/Power/SYS",
+        "after": "/Power/SYS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R23.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/TS_NO_CELL_SENSING",
+        "after": "/Power/TS_NO_CELL_SENSING"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.1",
+      "passed": true,
+      "detail": {
+        "before": "/Power/TS_NO_CELL_SENSING",
+        "after": "/Power/TS_NO_CELL_SENSING"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R18.2",
+      "passed": true,
+      "detail": {
+        "before": "/SCL_HOST",
+        "after": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.18",
+      "passed": true,
+      "detail": {
+        "before": "/SCL_HOST",
+        "after": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.6",
+      "passed": true,
+      "detail": {
+        "before": "/SCL_HOST",
+        "after": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R19.2",
+      "passed": true,
+      "detail": {
+        "before": "/SDA_HOST",
+        "after": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.19",
+      "passed": true,
+      "detail": {
+        "before": "/SDA_HOST",
+        "after": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.5",
+      "passed": true,
+      "detail": {
+        "before": "/SDA_HOST",
+        "after": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A5",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC1",
+        "after": "/USB/CC1"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R1.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC1",
+        "after": "/USB/CC1"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U9.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC1",
+        "after": "/USB/CC1"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B5",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC2",
+        "after": "/USB/CC2"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R2.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC2",
+        "after": "/USB/CC2"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U9.2",
+      "passed": true,
+      "detail": {
+        "before": "/USB/CC2",
+        "after": "/USB/CC2"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A7",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DM",
+        "after": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B7",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DM",
+        "after": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R3.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DM",
+        "after": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DM",
+        "after": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.6",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DM",
+        "after": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A6",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DP",
+        "after": "/USB_DP"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B6",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DP",
+        "after": "/USB_DP"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R4.1",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DP",
+        "after": "/USB_DP"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.3",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DP",
+        "after": "/USB_DP"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.4",
+      "passed": true,
+      "detail": {
+        "before": "/USB_DP",
+        "after": "/USB_DP"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R5.2",
+      "passed": true,
+      "detail": {
+        "before": "/USB_POWER_N",
+        "after": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.13",
+      "passed": true,
+      "detail": {
+        "before": "/USB_POWER_N",
+        "after": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.7",
+      "passed": true,
+      "detail": {
+        "before": "/USB_POWER_N",
+        "after": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C1.1",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A4",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A9",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B4",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B9",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.13",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.5",
+      "passed": true,
+      "detail": {
+        "before": "/VBUS",
+        "after": "/VBUS"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C1.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C10.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C11.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C13.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C2.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C3.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C4.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C5.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C6.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C7.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C8.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:C9.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A1",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A12",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B1",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B12",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.S1",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J2.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J2.MP",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R1.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R15.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R2.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R21.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R22.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:R23.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:SW2.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:SW3.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.1",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.11",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.14",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.36",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.37",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.38",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.39",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.40",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.41",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.42",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.43",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.44",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.45",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.46",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.47",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.48",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.49",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.50",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.51",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.52",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.53",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.11",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.18",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.20",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.9",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U3.1",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U4.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U5.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.17",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.4",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.5",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.6",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.8",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U8.2",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U9.3",
+      "passed": true,
+      "detail": {
+        "before": "GND",
+        "after": "GND"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.A8",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(J1-SBU1-PadA8)",
+        "after": "unconnected-(J1-SBU1-PadA8)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:J1.B8",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(J1-SBU2-PadB8)",
+        "after": "unconnected-(J1-SBU2-PadB8)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.6",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-GPIO3-Pad6)",
+        "after": "unconnected-(U1-GPIO3-Pad6)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.4",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad4)",
+        "after": "unconnected-(U1-NC-Pad4)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.7",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad7)",
+        "after": "unconnected-(U1-NC-Pad7)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.9",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad9)",
+        "after": "unconnected-(U1-NC-Pad9)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.10",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad10)",
+        "after": "unconnected-(U1-NC-Pad10)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.15",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad15)",
+        "after": "unconnected-(U1-NC-Pad15)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.17",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad17)",
+        "after": "unconnected-(U1-NC-Pad17)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.24",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad24)",
+        "after": "unconnected-(U1-NC-Pad24)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.25",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad25)",
+        "after": "unconnected-(U1-NC-Pad25)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.28",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad28)",
+        "after": "unconnected-(U1-NC-Pad28)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.29",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad29)",
+        "after": "unconnected-(U1-NC-Pad29)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.32",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad32)",
+        "after": "unconnected-(U1-NC-Pad32)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.33",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad33)",
+        "after": "unconnected-(U1-NC-Pad33)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.34",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad34)",
+        "after": "unconnected-(U1-NC-Pad34)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U1.35",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U1-NC-Pad35)",
+        "after": "unconnected-(U1-NC-Pad35)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.7",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-AUX_CL-Pad7)",
+        "after": "unconnected-(U2-AUX_CL-Pad7)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.21",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-AUX_DA-Pad21)",
+        "after": "unconnected-(U2-AUX_DA-Pad21)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.1",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad1)",
+        "after": "unconnected-(U2-NC-Pad1)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.2",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad2)",
+        "after": "unconnected-(U2-NC-Pad2)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.3",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad3)",
+        "after": "unconnected-(U2-NC-Pad3)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.4",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad4)",
+        "after": "unconnected-(U2-NC-Pad4)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.5",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad5)",
+        "after": "unconnected-(U2-NC-Pad5)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.6",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad6)",
+        "after": "unconnected-(U2-NC-Pad6)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.14",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad14)",
+        "after": "unconnected-(U2-NC-Pad14)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.15",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad15)",
+        "after": "unconnected-(U2-NC-Pad15)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.16",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad16)",
+        "after": "unconnected-(U2-NC-Pad16)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.17",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-NC-Pad17)",
+        "after": "unconnected-(U2-NC-Pad17)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U2.19",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U2-RESV_NC-Pad19)",
+        "after": "unconnected-(U2-RESV_NC-Pad19)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U4.4",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U4-NC-Pad4)",
+        "after": "unconnected-(U4-NC-Pad4)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U5.4",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U5-NC-Pad4)",
+        "after": "unconnected-(U5-NC-Pad4)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.9",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U6-CHG_N-Pad9)",
+        "after": "unconnected-(U6-CHG_N-Pad9)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.15",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U6-ITERM-Pad15)",
+        "after": "unconnected-(U6-ITERM-Pad15)"
+      }
+    },
+    {
+      "check": "preserved_net_endpoints:U6.14",
+      "passed": true,
+      "detail": {
+        "before": "unconnected-(U6-TMR-Pad14)",
+        "after": "unconnected-(U6-TMR-Pad14)"
+      }
+    },
+    {
+      "check": "single_integrated_population",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U1.1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:U1.4",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad4)",
+        "schematic": "unconnected-(U1-NC-Pad4)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.5",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/STRAP2",
+        "schematic": "/Compute/STRAP2"
+      }
+    },
+    {
+      "check": "PCB_net:U1.6",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-GPIO3-Pad6)",
+        "schematic": "unconnected-(U1-GPIO3-Pad6)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.7",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad7)",
+        "schematic": "unconnected-(U1-NC-Pad7)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.8",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/MCU_EN",
+        "schematic": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "PCB_net:U1.9",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad9)",
+        "schematic": "unconnected-(U1-NC-Pad9)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.10",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad10)",
+        "schematic": "unconnected-(U1-NC-Pad10)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.11",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.12",
+      "passed": true,
+      "detail": {
+        "pcb": "/BAT_ADC",
+        "schematic": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "PCB_net:U1.13",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_POWER_N",
+        "schematic": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "PCB_net:U1.14",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.15",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad15)",
+        "schematic": "unconnected-(U1-NC-Pad15)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.16",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_B",
+        "schematic": "/Compute/LED_B"
+      }
+    },
+    {
+      "check": "PCB_net:U1.17",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad17)",
+        "schematic": "unconnected-(U1-NC-Pad17)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.18",
+      "passed": true,
+      "detail": {
+        "pcb": "/SCL_HOST",
+        "schematic": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "PCB_net:U1.19",
+      "passed": true,
+      "detail": {
+        "pcb": "/SDA_HOST",
+        "schematic": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "PCB_net:U1.20",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_R",
+        "schematic": "/Compute/LED_R"
+      }
+    },
+    {
+      "check": "PCB_net:U1.21",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_G",
+        "schematic": "/Compute/LED_G"
+      }
+    },
+    {
+      "check": "PCB_net:U1.22",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/STRAP8",
+        "schematic": "/Compute/STRAP8"
+      }
+    },
+    {
+      "check": "PCB_net:U1.23",
+      "passed": true,
+      "detail": {
+        "pcb": "Net-(U1-GPIO9_{slash}_BOOT)",
+        "schematic": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.24",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad24)",
+        "schematic": "unconnected-(U1-NC-Pad24)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.25",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad25)",
+        "schematic": "unconnected-(U1-NC-Pad25)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.26",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/USB_DM_MCU",
+        "schematic": "/Compute/USB_DM_MCU"
+      }
+    },
+    {
+      "check": "PCB_net:U1.27",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/USB_DP_MCU",
+        "schematic": "/Compute/USB_DP_MCU"
+      }
+    },
+    {
+      "check": "PCB_net:U1.28",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad28)",
+        "schematic": "unconnected-(U1-NC-Pad28)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.29",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad29)",
+        "schematic": "unconnected-(U1-NC-Pad29)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.30",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-GPIO20_{slash}_RX-Pad30)",
+        "schematic": "unconnected-(U1-GPIO20_{slash}_RX-Pad30)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.31",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-GPIO21_{slash}_TX-Pad31)",
+        "schematic": "unconnected-(U1-GPIO21_{slash}_TX-Pad31)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.32",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad32)",
+        "schematic": "unconnected-(U1-NC-Pad32)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.33",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad33)",
+        "schematic": "unconnected-(U1-NC-Pad33)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.34",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad34)",
+        "schematic": "unconnected-(U1-NC-Pad34)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.35",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U1-NC-Pad35)",
+        "schematic": "unconnected-(U1-NC-Pad35)"
+      }
+    },
+    {
+      "check": "PCB_net:U1.36",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.37",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.38",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.39",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.40",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.41",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.42",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.43",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.44",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.45",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.46",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.47",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.48",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.49",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.50",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.51",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.52",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U1.53",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U4.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/SYS",
+        "schematic": "/Power/SYS"
+      }
+    },
+    {
+      "check": "PCB_net:U4.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U4.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/SYS",
+        "schematic": "/Power/SYS"
+      }
+    },
+    {
+      "check": "PCB_net:U4.4",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U4-NC-Pad4)",
+        "schematic": "unconnected-(U4-NC-Pad4)"
+      }
+    },
+    {
+      "check": "PCB_net:U4.5",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U6.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/TS_NO_CELL_SENSING",
+        "schematic": "/Power/TS_NO_CELL_SENSING"
+      }
+    },
+    {
+      "check": "PCB_net:U6.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/PACK_P",
+        "schematic": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "PCB_net:U6.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/PACK_P",
+        "schematic": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "PCB_net:U6.4",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U6.5",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U6.6",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U6.7",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_POWER_N",
+        "schematic": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "PCB_net:U6.8",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U6.9",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U6-CHG_N-Pad9)",
+        "schematic": "unconnected-(U6-CHG_N-Pad9)"
+      }
+    },
+    {
+      "check": "PCB_net:U6.10",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/SYS",
+        "schematic": "/Power/SYS"
+      }
+    },
+    {
+      "check": "PCB_net:U6.11",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/SYS",
+        "schematic": "/Power/SYS"
+      }
+    },
+    {
+      "check": "PCB_net:U6.12",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/CHG_ILIM",
+        "schematic": "/Power/CHG_ILIM"
+      }
+    },
+    {
+      "check": "PCB_net:U6.13",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:U6.14",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U6-TMR-Pad14)",
+        "schematic": "unconnected-(U6-TMR-Pad14)"
+      }
+    },
+    {
+      "check": "PCB_net:U6.15",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U6-ITERM-Pad15)",
+        "schematic": "unconnected-(U6-ITERM-Pad15)"
+      }
+    },
+    {
+      "check": "PCB_net:U6.16",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/CHG_ISET",
+        "schematic": "/Power/CHG_ISET"
+      }
+    },
+    {
+      "check": "PCB_net:U6.17",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U8.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DM",
+        "schematic": "/USB_DM"
+      }
+    },
+    {
+      "check": "PCB_net:U8.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U8.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DP",
+        "schematic": "/USB_DP"
+      }
+    },
+    {
+      "check": "PCB_net:U8.4",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DP",
+        "schematic": "/USB_DP"
+      }
+    },
+    {
+      "check": "PCB_net:U8.5",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:U8.6",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DM",
+        "schematic": "/USB_DM"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U9.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC1",
+        "schematic": "/USB/CC1"
+      }
+    },
+    {
+      "check": "PCB_net:U9.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC2",
+        "schematic": "/USB/CC2"
+      }
+    },
+    {
+      "check": "PCB_net:U9.3",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:J1.A1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A4",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A5",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC1",
+        "schematic": "/USB/CC1"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A6",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DP",
+        "schematic": "/USB_DP"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A7",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DM",
+        "schematic": "/USB_DM"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A8",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(J1-SBU1-PadA8)",
+        "schematic": "unconnected-(J1-SBU1-PadA8)"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A9",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:J1.A12",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B4",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B5",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC2",
+        "schematic": "/USB/CC2"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B6",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DP",
+        "schematic": "/USB_DP"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B7",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DM",
+        "schematic": "/USB_DM"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B8",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(J1-SBU2-PadB8)",
+        "schematic": "unconnected-(J1-SBU2-PadB8)"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B9",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:J1.B12",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.S1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.S1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.S1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J1.S1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:J2.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/PACK_P",
+        "schematic": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "PCB_net:J2.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J2.MP",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:J2.MP",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:SW2.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/MCU_EN",
+        "schematic": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "PCB_net:SW2.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:SW3.1",
+      "passed": true,
+      "detail": {
+        "pcb": "Net-(U1-GPIO9_{slash}_BOOT)",
+        "schematic": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "PCB_net:SW3.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:D1.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_R_K",
+        "schematic": "/Compute/LED_R_K"
+      }
+    },
+    {
+      "check": "PCB_net:D1.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_G_K",
+        "schematic": "/Compute/LED_G_K"
+      }
+    },
+    {
+      "check": "PCB_net:D1.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_B_K",
+        "schematic": "/Compute/LED_B_K"
+      }
+    },
+    {
+      "check": "PCB_net:D1.4",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R1.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC1",
+        "schematic": "/USB/CC1"
+      }
+    },
+    {
+      "check": "PCB_net:R1.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R2.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB/CC2",
+        "schematic": "/USB/CC2"
+      }
+    },
+    {
+      "check": "PCB_net:R2.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R3.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DM",
+        "schematic": "/USB_DM"
+      }
+    },
+    {
+      "check": "PCB_net:R3.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/USB_DM_MCU",
+        "schematic": "/Compute/USB_DM_MCU"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R4.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_DP",
+        "schematic": "/USB_DP"
+      }
+    },
+    {
+      "check": "PCB_net:R4.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/USB_DP_MCU",
+        "schematic": "/Compute/USB_DP_MCU"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R5.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R5.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/USB_POWER_N",
+        "schematic": "/USB_POWER_N"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R7.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R7.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/MCU_EN",
+        "schematic": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R8.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R8.2",
+      "passed": true,
+      "detail": {
+        "pcb": "Net-(U1-GPIO9_{slash}_BOOT)",
+        "schematic": "Net-(U1-GPIO9_{slash}_BOOT)"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R9.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R9.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/STRAP2",
+        "schematic": "/Compute/STRAP2"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R10.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R10.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/STRAP8",
+        "schematic": "/Compute/STRAP8"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R11.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_R",
+        "schematic": "/Compute/LED_R"
+      }
+    },
+    {
+      "check": "PCB_net:R11.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_R_K",
+        "schematic": "/Compute/LED_R_K"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R12.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_G",
+        "schematic": "/Compute/LED_G"
+      }
+    },
+    {
+      "check": "PCB_net:R12.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_G_K",
+        "schematic": "/Compute/LED_G_K"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R13.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_B",
+        "schematic": "/Compute/LED_B"
+      }
+    },
+    {
+      "check": "PCB_net:R13.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/LED_B_K",
+        "schematic": "/Compute/LED_B_K"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R14.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/PACK_P",
+        "schematic": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "PCB_net:R14.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/BAT_ADC",
+        "schematic": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R15.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/BAT_ADC",
+        "schematic": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "PCB_net:R15.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R21.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/CHG_ISET",
+        "schematic": "/Power/CHG_ISET"
+      }
+    },
+    {
+      "check": "PCB_net:R21.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R22.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/CHG_ILIM",
+        "schematic": "/Power/CHG_ILIM"
+      }
+    },
+    {
+      "check": "PCB_net:R22.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R23.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/TS_NO_CELL_SENSING",
+        "schematic": "/Power/TS_NO_CELL_SENSING"
+      }
+    },
+    {
+      "check": "PCB_net:R23.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C1.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/VBUS",
+        "schematic": "/VBUS"
+      }
+    },
+    {
+      "check": "PCB_net:C1.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C2.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/PACK_P",
+        "schematic": "/Power/PACK_P"
+      }
+    },
+    {
+      "check": "PCB_net:C2.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C3.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:C3.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C4.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:C4.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C10.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Compute/MCU_EN",
+        "schematic": "/Compute/MCU_EN"
+      }
+    },
+    {
+      "check": "PCB_net:C10.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C11.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/BAT_ADC",
+        "schematic": "/BAT_ADC"
+      }
+    },
+    {
+      "check": "PCB_net:C11.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C13.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/Power/SYS",
+        "schematic": "/Power/SYS"
+      }
+    },
+    {
+      "check": "PCB_net:C13.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "preserved_main_MPN:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C5.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:C5.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "source_pose:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C6.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:C6.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "source_pose:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C7.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:C7.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "source_pose:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C8.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:C8.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "source_pose:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:C9.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/IMU_REGOUT",
+        "schematic": "/IMU/IMU_REGOUT"
+      }
+    },
+    {
+      "check": "PCB_net:C9.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "source_pose:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R16.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:R16.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SCL_1V8",
+        "schematic": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "source_pose:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R17.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:R17.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SDA_1V8",
+        "schematic": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "source_pose:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R18.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R18.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/SCL_HOST",
+        "schematic": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "source_pose:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R19.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R19.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/SDA_HOST",
+        "schematic": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "source_pose:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:R20.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:R20.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/I2C_BIAS",
+        "schematic": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "source_pose:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U2.1",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad1)",
+        "schematic": "unconnected-(U2-NC-Pad1)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.2",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad2)",
+        "schematic": "unconnected-(U2-NC-Pad2)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.3",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad3)",
+        "schematic": "unconnected-(U2-NC-Pad3)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.4",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad4)",
+        "schematic": "unconnected-(U2-NC-Pad4)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.5",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad5)",
+        "schematic": "unconnected-(U2-NC-Pad5)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.6",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad6)",
+        "schematic": "unconnected-(U2-NC-Pad6)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.7",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-AUX_CL-Pad7)",
+        "schematic": "unconnected-(U2-AUX_CL-Pad7)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.8",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:U2.9",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U2.10",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/IMU_REGOUT",
+        "schematic": "/IMU/IMU_REGOUT"
+      }
+    },
+    {
+      "check": "PCB_net:U2.11",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U2.12",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-INT1-Pad12)",
+        "schematic": "unconnected-(U2-INT1-Pad12)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.13",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:U2.14",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad14)",
+        "schematic": "unconnected-(U2-NC-Pad14)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.15",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad15)",
+        "schematic": "unconnected-(U2-NC-Pad15)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.16",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad16)",
+        "schematic": "unconnected-(U2-NC-Pad16)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.17",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-NC-Pad17)",
+        "schematic": "unconnected-(U2-NC-Pad17)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.18",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U2.19",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-RESV_NC-Pad19)",
+        "schematic": "unconnected-(U2-RESV_NC-Pad19)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.20",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U2.21",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U2-AUX_DA-Pad21)",
+        "schematic": "unconnected-(U2-AUX_DA-Pad21)"
+      }
+    },
+    {
+      "check": "PCB_net:U2.22",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:U2.23",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SCL_1V8",
+        "schematic": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "PCB_net:U2.24",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SDA_1V8",
+        "schematic": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "source_pose:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U3.1",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U3.2",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "PCB_net:U3.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SCL_1V8",
+        "schematic": "/IMU/SCL_1V8"
+      }
+    },
+    {
+      "check": "PCB_net:U3.4",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/SDA_1V8",
+        "schematic": "/IMU/SDA_1V8"
+      }
+    },
+    {
+      "check": "PCB_net:U3.5",
+      "passed": true,
+      "detail": {
+        "pcb": "/SDA_HOST",
+        "schematic": "/SDA_HOST"
+      }
+    },
+    {
+      "check": "PCB_net:U3.6",
+      "passed": true,
+      "detail": {
+        "pcb": "/SCL_HOST",
+        "schematic": "/SCL_HOST"
+      }
+    },
+    {
+      "check": "PCB_net:U3.7",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/I2C_BIAS",
+        "schematic": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "PCB_net:U3.8",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/I2C_BIAS",
+        "schematic": "/IMU/I2C_BIAS"
+      }
+    },
+    {
+      "check": "source_pose:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_side:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_net:U5.1",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:U5.2",
+      "passed": true,
+      "detail": {
+        "pcb": "GND",
+        "schematic": "GND"
+      }
+    },
+    {
+      "check": "PCB_net:U5.3",
+      "passed": true,
+      "detail": {
+        "pcb": "/3V3_MAIN",
+        "schematic": "/3V3_MAIN"
+      }
+    },
+    {
+      "check": "PCB_net:U5.4",
+      "passed": true,
+      "detail": {
+        "pcb": "unconnected-(U5-NC-Pad4)",
+        "schematic": "unconnected-(U5-NC-Pad4)"
+      }
+    },
+    {
+      "check": "PCB_net:U5.5",
+      "passed": true,
+      "detail": {
+        "pcb": "/IMU/1V8_IMU",
+        "schematic": "/IMU/1V8_IMU"
+      }
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U3.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R19.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R19.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R16.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R16.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U5.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U5.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U5.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R17.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R17.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R18.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R18.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:U2.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:C8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R20.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_carrier_pad_transfer:R20.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sensor_at_upper_centre",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "native_silk:RESET",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "native_silk:BOOT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "native_silk:U2 +Z",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_external_debug_removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_NPTH:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U5.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U5.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U5.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:SW2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:SW2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R17.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R17.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:D1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:D1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:D1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:D1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U2.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.A12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.B12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R23.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R23.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U3.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R18.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R18.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R15.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R15.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U4.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U4.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U4.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U1.53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R22.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R22.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R20.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R20.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R19.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R19.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U9.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U6.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R12.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R12.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:U8.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R16.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R16.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:C11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R21.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R21.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:SW3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:SW3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H1:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R14.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H1:R14.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_NPTH:H2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U5.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U5.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U5.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:SW2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:SW2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R17.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R17.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:D1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:D1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:D1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:D1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U2.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.A12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.B12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R23.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R23.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U3.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R18.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R18.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R15.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R15.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U4.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U4.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U4.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U1.53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R22.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R22.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R20.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R20.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R19.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R19.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U9.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U6.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R12.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R12.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:U8.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R16.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R16.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:C11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R21.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R21.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:SW3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:SW3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_component_clear:H2:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R14.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_all_layer_pad_clear:H2:R14.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RGB_single_placed_symbol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dedicated_four_functional_pages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "visible_hierarchy_wires",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_manufacturing_rules",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "four_layer_reference_plane_no_signals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "native_erc_zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "native_drc_zero",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "RF_keepout_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BOM_47_exact",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "net_copper_lengths_mm": {
+    "/3V3_MAIN": 96.39542042274343,
+    "/BAT_ADC": 9.916828386129216,
+    "/Compute/LED_B": 17.868095972866296,
+    "/Compute/LED_B_K": 8.219854554060948,
+    "/Compute/LED_G": 25.080227149379766,
+    "/Compute/LED_G_K": 2.9740467022202974,
+    "/Compute/LED_R": 21.82021253482775,
+    "/Compute/LED_R_K": 2.6267261889578033,
+    "/Compute/MCU_EN": 49.930734395253126,
+    "/Compute/STRAP2": 16.266463650303717,
+    "/Compute/STRAP8": 12.636895596510229,
+    "/Compute/USB_DM_MCU": 3.566142219728018,
+    "/Compute/USB_DP_MCU": 5.302419043731977,
+    "/IMU/1V8_IMU": 39.03745404495239,
+    "/IMU/I2C_BIAS": 5.980256950670568,
+    "/IMU/IMU_REGOUT": 1.272965719651132,
+    "/IMU/SCL_1V8": 20.68522548551282,
+    "/IMU/SDA_1V8": 18.456747382707267,
+    "/Power/CHG_ILIM": 4.671759514432149,
+    "/Power/CHG_ISET": 1.617797552628952,
+    "/Power/PACK_P": 39.76739077311797,
+    "/Power/SYS": 38.07492588416468,
+    "/Power/TS_NO_CELL_SENSING": 2.002670273047588,
+    "/SCL_HOST": 20.226670338239032,
+    "/SDA_HOST": 23.290543341143547,
+    "/USB/CC1": 22.896317030645996,
+    "/USB/CC2": 22.309839124775195,
+    "/USB_DM": 21.538887577923212,
+    "/USB_DP": 19.127115168882554,
+    "/USB_POWER_N": 27.59730070297717,
+    "/VBUS": 32.069692528741875,
+    "GND": 122.99288946159245,
+    "Net-(U1-GPIO9_{slash}_BOOT)": 42.63059934072038
+  },
+  "manufacturing_minimums": {
+    "track_width_mm": 0.15,
+    "via_drill_mm": 0.2
+  },
+  "notes": "Configured severities only; unchanged ignored defaults/exclusions retained. No RF/thermal/ESD/battery/load/printed-fit approval."
+}

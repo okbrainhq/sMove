@@ -4,8 +4,8 @@ No file writes, source placement edits, constraints, downloads or automatic macr
 import FreeCAD as A
 import FreeCADGui as G
 from PySide import QtCore, QtWidgets
-GROUPS=('ViewBase','ViewLid','ViewMain','ViewCarrier','ViewBattery','ViewCables','ViewHardware')
-COLORS={'print':(.32,.55,.82),'main_pcb':(.08,.52,.29),'carrier_pcb':(.13,.62,.44),
+GROUPS=('ViewBase','ViewLid','ViewMain','ViewDivider','ViewBattery','ViewCables','ViewHardware')
+COLORS={'print':(.32,.55,.82),'main_pcb':(.08,.52,.29),'divider':(.8,.8,.72),
         'main_component':(.24,.26,.29),'carrier_component':(.24,.26,.29),'tail':(.7,.7,.7),
         'battery':(.94,.68,.20),'harness':(.86,.20,.12),'hardware':(.72,.72,.76)}
 
@@ -19,7 +19,7 @@ def prepare(doc):
             src=link.LinkedObject
             color=COLORS.get(src.Role,(.7,.7,.7))
             if src.Name=='Main_D1':color=(.96,.24,.64)
-            if src.Name=='Carrier_U2':color=(.98,.42,.1)
+            if src.Name=='Main_U2':color=(.98,.42,.1)
             src.ViewObject.ShapeColor=color
             src.ViewObject.LineColor=(.15,.16,.19)
             src.ViewObject.DisplayMode='Flat Lines'

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only canonical PCB contact audit: main lands and installed carrier annular seats."""
+"""Read-only canonical PCB contact audit: two M3 annular bearing zones."""
 import json, math
 from pathlib import Path
 import pcbnew
@@ -7,15 +7,11 @@ ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing'
 (ROOT/'.cache/housing').mkdir(parents=True,exist_ok=True)
 d=json.loads((ROOT/'PCB/main/interface.json').read_text());b=pcbnew.LoadBoard(str(ROOT/'PCB/main/smove-r2-main.kicad_pcb'))
 rows=[];fail=[]
-carrier=pcbnew.LoadBoard(str(ROOT/'PCB/imu-carrier/smove-imu-carrier.kicad_pcb'))
-carrier_contract=json.loads((ROOT/'PCB/imu-carrier/interface.json').read_text())
-regions=[(b,r) for r in d['retention']]
-for mount in carrier_contract['mounting_features']:
-    x,y=mount['center_mm'];x+=100;y=120-y
-    # Circumscribed 64-gon covers the complete actual R1.6-mm seat/upper bearing.
-    radius=1.6/math.cos(math.pi/64)
-    points=[[x+radius*math.cos(i*2*math.pi/64),y+radius*math.sin(i*2*math.pi/64)] for i in range(64)]
-    regions.append((carrier,dict(name='carrier_'+mount['ref'],xy=points)))
+regions=[]
+for z in b.Zones():
+    if z.GetIsRuleArea() and '_M3_NO_COPPER' in z.GetZoneName():
+        poly=z.Outline().COutline(0);ref=z.GetZoneName().split('_')[0];x,y=d['mounting']['holes_native_xy_mm'][ref];regions.append((b,dict(name=ref+'_actual_3.4mm_bearing',xy=[[x+3.4*math.cos(i*math.pi/24),y+3.4*math.sin(i*math.pi/24)] for i in range(48)])))
+assert len(regions)==2
 for b,r in regions:
     poly=pcbnew.SHAPE_POLY_SET();poly.NewOutline()
     for x,y in r['xy']:poly.Append(round(x*1e6),round(y*1e6))
@@ -27,7 +23,7 @@ for b,r in regions:
         for pad in f.Pads():
             if pad.GetAttribute()!=pcbnew.PAD_ATTRIB_NPTH and pad.IsOnCopperLayer() and hit(pad):hits.append('pad:'+f.GetReference()+':'+pad.GetNumber())
     for t in b.GetTracks():
-        if hit(t) and poly.Collide(t.GetEffectiveShape()):hits.append('track_or_via:'+str(t.GetNetCode()))
+        if hit(t) and pcbnew.SHAPE.Collide(poly,t.GetEffectiveShape()):hits.append('track_or_via:'+str(t.GetNetCode()))
     fill_layers=0
     for z in b.Zones():
         if z.GetIsRuleArea():continue
@@ -37,6 +33,6 @@ for b,r in regions:
                 if overlap.Area()>1:hits.append('filled_copper:'+b.GetLayerName(layer))
     row={'land':r['name'],'collisions':hits,'filled_zone_layers_inspected':fill_layers,'passed':not hits and fill_layers>0};rows.append(row)
     if not row['passed']:fail.append(row)
-report={'status':'PASS' if not fail else 'FAIL','method':'Conservative pad AABBs; exact effective track/via shape collision (AABB broad phase), exact stored filled-copper polygon intersection in all four layers. Not electrical DRC or new refill.','lands':rows}
+report={'status':'PASS' if not fail else 'FAIL','keepout_radius_mm':3.45,'physical_contact_radius_mm':3.4,'method':'Conservative pad AABBs; exact effective track/via shape collision (AABB broad phase), exact stored filled-copper polygon intersection in all four layers. Not electrical DRC or new refill.','lands':rows}
 (ROOT/'.cache/housing/contact-audit.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
 assert not fail

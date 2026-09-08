@@ -32,8 +32,8 @@
       "27": "USB_DP_MCU",
       "28": null,
       "29": null,
-      "30": "UART_RX",
-      "31": "UART_TX",
+      "30": null,
+      "31": null,
       "32": null,
       "33": null,
       "34": null,
@@ -70,11 +70,11 @@
     "fitted": true,
     "fp": "ESP32-C3-MINI-1",
     "placement": [
-      112.5,
+      114.2,
       102.9,
-      0
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/679f3a43-46b0-5e0d-9e87-38b62fcad22e"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/679f3a43-46b0-5e0d-9e87-38b62fcad22e"
   },
   "U4": {
     "board": "main",
@@ -99,11 +99,11 @@
     "fitted": true,
     "fp": "SOT-23-5",
     "placement": [
-      102.8,
-      107.7,
-      0
+      103.0,
+      111.25,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/1555110c-1d31-53c3-9e59-bdb126c1727a"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/1555110c-1d31-53c3-9e59-bdb126c1727a"
   },
   "U6": {
     "board": "main",
@@ -141,11 +141,11 @@
     "fitted": true,
     "fp": "BQ24074_RGT",
     "placement": [
-      108.0,
-      115.1,
-      0
+      102.75,
+      127.0,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/62e9e236-7ab7-5084-b6c7-72c70c5ebfa8"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/62e9e236-7ab7-5084-b6c7-72c70c5ebfa8"
   },
   "U8": {
     "board": "main",
@@ -171,11 +171,11 @@
     "fitted": true,
     "fp": "SOT-23-6",
     "placement": [
-      122.5,
-      124.6,
-      0
+      113.5,
+      113.5,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/33e55572-782d-5572-9428-75a8ad7f3520"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/33e55572-782d-5572-9428-75a8ad7f3520"
   },
   "U9": {
     "board": "main",
@@ -198,11 +198,11 @@
     "fitted": true,
     "fp": "SOT-23",
     "placement": [
-      116.2,
-      123.0,
-      90
+      108.5,
+      120.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411"
   },
   "J1": {
     "board": "main",
@@ -240,11 +240,11 @@
     "fitted": true,
     "fp": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
     "placement": [
-      119.88,
-      132.0,
-      0
+      121.1,
+      116.8,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/824b74bc-0f6b-5073-82be-ae83843f2769"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/824b74bc-0f6b-5073-82be-ae83843f2769"
   },
   "J2": {
     "board": "main",
@@ -267,62 +267,11 @@
     "fitted": true,
     "fp": "JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
     "placement": [
-      120.1,
-      116.5,
-      90
+      112.5,
+      127.8,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/21368572-48a5-5c87-8fc4-78e6b3ab2ef1"
-  },
-  "J4": {
-    "board": "main",
-    "mpn": "S4B-PH-SM4-TB(LF)(SN)",
-    "pins": {
-      "1": "3V3_MAIN",
-      "2": "GND",
-      "3": "SDA_HOST",
-      "4": "SCL_HOST",
-      "MP": "GND"
-    },
-    "refs": "J4",
-    "quantity": "1",
-    "manufacturer": "JST",
-    "jlc": "C265102",
-    "value": "S4B-PH-SM4-TB(LF)(SN)",
-    "package": "JST PH 2.0mm 1x4 side-entry SMT",
-    "purpose": "Reusable carrier interface",
-    "notes": "Main J4 / carrier J5; 1=3V3 2=GND 3=SDA 4=SCL; PHR-4 keyed housing; <=50mm straight-through harness; local variant/pitch/polarity/availability pending",
-    "ref": "J4",
-    "uuid": "e38f931c-31cf-5415-b8ef-0c238d514c2d",
-    "fitted": true,
-    "fp": "JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal",
-    "placement": [
-      104.9,
-      126.0,
-      -90
-    ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e38f931c-31cf-5415-b8ef-0c238d514c2d"
-  },
-  "J3": {
-    "board": "main",
-    "mpn": null,
-    "pins": {
-      "1": "GND",
-      "2": "UART_RX",
-      "3": "UART_TX",
-      "4": "MCU_EN",
-      "5": "BOOT"
-    },
-    "population": "unpopulated TH debug pads; no power input",
-    "ref": "J3",
-    "uuid": "86d7e0fa-4f35-5447-94e9-db13adbc2dd9",
-    "fitted": false,
-    "fp": "Debug_5",
-    "placement": [
-      122.0,
-      101.2,
-      0
-    ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/86d7e0fa-4f35-5447-94e9-db13adbc2dd9"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/21368572-48a5-5c87-8fc4-78e6b3ab2ef1"
   },
   "SW2": {
     "board": "main",
@@ -345,11 +294,11 @@
     "fitted": true,
     "fp": "TS1088",
     "placement": [
-      112.3,
-      123.7,
-      90
+      121.5,
+      125.2,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2a670366-1936-5aec-8f5e-8c3d3571a6ea"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/2a670366-1936-5aec-8f5e-8c3d3571a6ea"
   },
   "SW3": {
     "board": "main",
@@ -372,11 +321,11 @@
     "fitted": true,
     "fp": "TS1088",
     "placement": [
-      112.3,
-      130.0,
-      90
+      103.6,
+      135.3,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/430fa0ba-1038-54cf-a2e1-fa5681823db9"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/430fa0ba-1038-54cf-a2e1-fa5681823db9"
   },
   "D1": {
     "board": "main",
@@ -400,11 +349,11 @@
     "fitted": true,
     "fp": "LED_LiteOn_LTST-C19HE1WT",
     "placement": [
-      119.15,
-      122.7,
-      0
+      120.0,
+      130.0,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/02ba7497-9a8d-56fa-99a3-83e5b10889a3"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/02ba7497-9a8d-56fa-99a3-83e5b10889a3"
   },
   "R1": {
     "board": "main",
@@ -426,11 +375,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      115.4,
-      125.8,
-      0
+      115.0,
+      121.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/bf0c67d8-bf71-531a-9bff-17cf9ae2ecc1"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/bf0c67d8-bf71-531a-9bff-17cf9ae2ecc1"
   },
   "R2": {
     "board": "main",
@@ -452,11 +401,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      118.2,
-      125.8,
-      0
+      118.25,
+      123.0,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/62249a3d-7c44-50d3-9b93-def511549c3b"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/62249a3d-7c44-50d3-9b93-def511549c3b"
   },
   "R3": {
     "board": "main",
@@ -478,11 +427,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      120.4,
-      109.0,
-      0
+      122.25,
+      110.5,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d702c535-6d67-5fa9-9a0a-121a3ab9aa51"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/d702c535-6d67-5fa9-9a0a-121a3ab9aa51"
   },
   "R4": {
     "board": "main",
@@ -504,11 +453,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      120.4,
-      107.8,
-      0
+      123.0,
+      108.75,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/afad6a5c-42da-5eff-9c63-4a7089ab9b38"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/afad6a5c-42da-5eff-9c63-4a7089ab9b38"
   },
   "R5": {
     "board": "main",
@@ -530,11 +479,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      112.8,
-      112.4,
-      0
+      113.0,
+      121.5,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e8977b6c-9dc7-5070-8fd6-38378bcab1ac"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/e8977b6c-9dc7-5070-8fd6-38378bcab1ac"
   },
   "R7": {
     "board": "main",
@@ -556,11 +505,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      102.0,
-      115.0,
-      90
+      102.75,
+      121.25,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/117d08c6-bf29-5779-83ba-3cece792d5b9"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/117d08c6-bf29-5779-83ba-3cece792d5b9"
   },
   "R8": {
     "board": "main",
@@ -582,11 +531,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      114.4,
-      112.6,
-      90
+      121.75,
+      108.75,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/484aaf4f-18bd-50d2-88d3-31683e9707e2"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/484aaf4f-18bd-50d2-88d3-31683e9707e2"
   },
   "R9": {
     "board": "main",
@@ -608,11 +557,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      101.2,
-      103.0,
-      90
+      123.0,
+      106.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/1dc23bb5-2a78-5f55-a0e6-529fa725fe87"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/1dc23bb5-2a78-5f55-a0e6-529fa725fe87"
   },
   "R10": {
     "board": "main",
@@ -634,11 +583,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      114.0,
-      114.2,
-      0
+      108.5,
+      114.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/f6011e9d-b5fe-58a3-9fca-949710662cde"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/f6011e9d-b5fe-58a3-9fca-949710662cde"
   },
   "R11": {
     "board": "main",
@@ -660,11 +609,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      119.8,
-      125.6,
-      90
+      118.75,
+      127.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/e88b45c9-cf79-581f-9355-e93b103f9884"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/e88b45c9-cf79-581f-9355-e93b103f9884"
   },
   "R12": {
     "board": "main",
@@ -686,11 +635,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      113.4,
-      133.4,
-      0
+      118.25,
+      130.75,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/3c3f9172-c3a6-5be5-b617-559c8cf23058"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/3c3f9172-c3a6-5be5-b617-559c8cf23058"
   },
   "R13": {
     "board": "main",
@@ -712,11 +661,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      111.2,
-      133.4,
-      0
+      117.75,
+      125.0,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eb1928cd-42fe-596f-b55e-9356c3c99c22"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/eb1928cd-42fe-596f-b55e-9356c3c99c22"
   },
   "R14": {
     "board": "main",
@@ -738,11 +687,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      108.2,
-      112.4,
-      0
+      108.5,
+      112.75,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/da7f29a5-3074-5719-a2d9-6aed95089931"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/da7f29a5-3074-5719-a2d9-6aed95089931"
   },
   "R15": {
     "board": "main",
@@ -764,11 +713,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      110.4,
-      112.4,
-      0
+      110.75,
+      112.75,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/8f10a7e0-9fbe-5b5c-b185-00a79eb35593"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/8f10a7e0-9fbe-5b5c-b185-00a79eb35593"
   },
   "R21": {
     "board": "main",
@@ -790,11 +739,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      111.0,
-      114.4,
-      90
+      103.0,
+      124.0,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/c05f7deb-ba06-589e-88ff-ec1466f550a8"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/c05f7deb-ba06-589e-88ff-ec1466f550a8"
   },
   "R22": {
     "board": "main",
@@ -816,11 +765,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      111.0,
-      117.0,
-      -90.0
+      105.75,
+      129.5,
+      180.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/be66b532-05c7-557a-89c5-f2d94d130905"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/be66b532-05c7-557a-89c5-f2d94d130905"
   },
   "R23": {
     "board": "main",
@@ -842,11 +791,11 @@
     "fitted": true,
     "fp": "R_0402_1005Metric",
     "placement": [
-      104.8,
-      117.4,
-      0
+      101.25,
+      124.5,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a9c1b0ab-5977-568f-be58-0258ae3fea50"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/a9c1b0ab-5977-568f-be58-0258ae3fea50"
   },
   "C1": {
     "board": "main",
@@ -868,11 +817,11 @@
     "fitted": true,
     "fp": "C_0603_1608Metric",
     "placement": [
-      107.8,
-      118.4,
-      0
+      102.75,
+      130.0,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d0826465-4b10-5286-85fd-e123cc439f08"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/d0826465-4b10-5286-85fd-e123cc439f08"
   },
   "C2": {
     "board": "main",
@@ -894,11 +843,11 @@
     "fitted": true,
     "fp": "C_0805_2012Metric",
     "placement": [
-      112.8,
-      119.0,
-      90
+      106.75,
+      127.0,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/fb41cc53-f5cb-5dc0-a04c-e60578c27ce9"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/fb41cc53-f5cb-5dc0-a04c-e60578c27ce9"
   },
   "C3": {
     "board": "main",
@@ -920,11 +869,11 @@
     "fitted": true,
     "fp": "C_0805_2012Metric",
     "placement": [
-      102.8,
-      103.0,
-      90
+      102.75,
+      108.25,
+      180.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/d6a9d8a8-32d6-5c5f-9983-815f0addc56b"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/d6a9d8a8-32d6-5c5f-9983-815f0addc56b"
   },
   "C4": {
     "board": "main",
@@ -946,11 +895,11 @@
     "fitted": true,
     "fp": "C_0402_1005Metric",
     "placement": [
-      105.0,
-      103.2,
-      90
+      105.75,
+      108.0,
+      180.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/58d45be0-cfbf-59e4-814d-527297a0ed4f"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/58d45be0-cfbf-59e4-814d-527297a0ed4f"
   },
   "C10": {
     "board": "main",
@@ -972,11 +921,11 @@
     "fitted": true,
     "fp": "C_0402_1005Metric",
     "placement": [
-      103.8,
-      115.0,
-      90
+      107.25,
+      114.75,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/ec09f9d9-c486-5e14-a578-95693b5aed08"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/ec09f9d9-c486-5e14-a578-95693b5aed08"
   },
   "C11": {
     "board": "main",
@@ -998,11 +947,11 @@
     "fitted": true,
     "fp": "C_0402_1005Metric",
     "placement": [
-      106.2,
-      112.4,
-      0
+      106.25,
+      113.0,
+      0.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/9c09465d-3b1a-5618-8753-7dd88a3c8c8e"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/9c09465d-3b1a-5618-8753-7dd88a3c8c8e"
   },
   "C13": {
     "board": "main",
@@ -1024,10 +973,327 @@
     "fitted": true,
     "fp": "C_0805_2012Metric",
     "placement": [
-      103.2,
-      111.0,
-      0
+      106.25,
+      110.5,
+      90.0
     ],
-    "path": "/8e261347-838a-5848-981d-f693675e8aa0/47e6bcb7-e31d-52ac-99bf-04a6f9153100"
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/47e6bcb7-e31d-52ac-99bf-04a6f9153100"
+  },
+  "C5": {
+    "jlc": "C19666",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL10A475KO8NNNC",
+    "package": "0603",
+    "value": "4.7uF 16V X5R 10%",
+    "board": "main",
+    "ref": "C5",
+    "fitted": true,
+    "uuid": "233b5195-817d-59f5-a8a5-fd09904effb2",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/233b5195-817d-59f5-a8a5-fd09904effb2",
+    "fp": "C_0603_1608Metric",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "GND"
+    },
+    "placement": [
+      102.0,
+      119.25,
+      0.0
+    ]
+  },
+  "C6": {
+    "jlc": "C19666",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL10A475KO8NNNC",
+    "package": "0603",
+    "value": "4.7uF 16V X5R 10%",
+    "board": "main",
+    "ref": "C6",
+    "fitted": true,
+    "uuid": "e0e5e196-799d-568b-9f13-d0b86b3acb28",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/e0e5e196-799d-568b-9f13-d0b86b3acb28",
+    "fp": "C_0603_1608Metric",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    },
+    "placement": [
+      105.75,
+      116.25,
+      -90.0
+    ]
+  },
+  "C7": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%",
+    "board": "main",
+    "ref": "C7",
+    "fitted": true,
+    "uuid": "a6c91d7c-828d-5826-ac88-825c40550a8e",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/a6c91d7c-828d-5826-ac88-825c40550a8e",
+    "fp": "C_0402_1005Metric",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    },
+    "placement": [
+      111.25,
+      120.75,
+      -90.0
+    ]
+  },
+  "C8": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%",
+    "board": "main",
+    "ref": "C8",
+    "fitted": true,
+    "uuid": "97308083-8385-5225-9589-49e45fabfbe5",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/97308083-8385-5225-9589-49e45fabfbe5",
+    "fp": "C_0402_1005Metric",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "GND"
+    },
+    "placement": [
+      109.75,
+      115.5,
+      -90.0
+    ]
+  },
+  "C9": {
+    "jlc": "C1525",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL05B104KO5NNNC",
+    "package": "0402",
+    "value": "100nF 16V X7R 10%",
+    "board": "main",
+    "ref": "C9",
+    "fitted": true,
+    "uuid": "a3b94375-6e80-51cc-861b-2aa5457c1e57",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/a3b94375-6e80-51cc-861b-2aa5457c1e57",
+    "fp": "C_0402_1005Metric",
+    "pins": {
+      "1": "IMU_REGOUT",
+      "2": "GND"
+    },
+    "placement": [
+      109.25,
+      117.75,
+      180.0
+    ]
+  },
+  "R16": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%",
+    "board": "main",
+    "ref": "R16",
+    "fitted": true,
+    "uuid": "3c0cb9d7-c976-5f84-ba13-35cde8486f38",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/3c0cb9d7-c976-5f84-ba13-35cde8486f38",
+    "fp": "R_0402_1005Metric",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "SCL_1V8"
+    },
+    "placement": [
+      104.75,
+      124.5,
+      0.0
+    ]
+  },
+  "R17": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%",
+    "board": "main",
+    "ref": "R17",
+    "fitted": true,
+    "uuid": "08b5ed5b-5585-5ebd-a635-c71220b1469c",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/08b5ed5b-5585-5ebd-a635-c71220b1469c",
+    "fp": "R_0402_1005Metric",
+    "pins": {
+      "1": "1V8_IMU",
+      "2": "SDA_1V8"
+    },
+    "placement": [
+      107.25,
+      124.0,
+      90.0
+    ]
+  },
+  "R18": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%",
+    "board": "main",
+    "ref": "R18",
+    "fitted": true,
+    "uuid": "5995901a-b35a-54ae-b43d-34fc4bedb784",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/5995901a-b35a-54ae-b43d-34fc4bedb784",
+    "fp": "R_0402_1005Metric",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "SCL_HOST"
+    },
+    "placement": [
+      108.0,
+      116.5,
+      0.0
+    ]
+  },
+  "R19": {
+    "jlc": "C25900",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF4701TCE",
+    "package": "0402",
+    "value": "4.7k 1%",
+    "board": "main",
+    "ref": "R19",
+    "fitted": true,
+    "uuid": "3ab8e99a-4337-5ed4-a3a2-9bdff8556150",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/3ab8e99a-4337-5ed4-a3a2-9bdff8556150",
+    "fp": "R_0402_1005Metric",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "SDA_HOST"
+    },
+    "placement": [
+      113.25,
+      120.25,
+      0.0
+    ]
+  },
+  "R20": {
+    "jlc": "C25764",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "mpn": "0402WGF2003TCE",
+    "package": "0402",
+    "value": "200k 1%",
+    "board": "main",
+    "ref": "R20",
+    "fitted": true,
+    "uuid": "90276661-e7fa-53b4-aea3-f9152012f3e7",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/90276661-e7fa-53b4-aea3-f9152012f3e7",
+    "fp": "R_0402_1005Metric",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "I2C_BIAS"
+    },
+    "placement": [
+      101.5,
+      122.0,
+      90.0
+    ]
+  },
+  "U2": {
+    "jlc": "C726001",
+    "manufacturer": "TDK InvenSense",
+    "mpn": "ICM-20948",
+    "package": "TDK 24-pad 3x3x1mm",
+    "value": "ICM-20948",
+    "board": "main",
+    "ref": "U2",
+    "fitted": true,
+    "uuid": "a0b2ccb6-671b-58db-a6a5-f217c29f4636",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/a0b2ccb6-671b-58db-a6a5-f217c29f4636",
+    "fp": "InvenSense_QFN-24_3x3mm_P0.4mm",
+    "pins": {
+      "1": null,
+      "10": "IMU_REGOUT",
+      "11": "GND",
+      "12": null,
+      "13": "1V8_IMU",
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": "GND",
+      "19": null,
+      "2": null,
+      "20": "GND",
+      "21": null,
+      "22": "1V8_IMU",
+      "23": "SCL_1V8",
+      "24": "SDA_1V8",
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": "1V8_IMU",
+      "9": "GND"
+    },
+    "placement": [
+      112.5,
+      117.5,
+      -90.0
+    ]
+  },
+  "U3": {
+    "jlc": "C33196",
+    "manufacturer": "Texas Instruments",
+    "mpn": "PCA9306DCUR",
+    "package": "VSSOP-8 DCU",
+    "value": "PCA9306DCUR",
+    "board": "main",
+    "ref": "U3",
+    "fitted": true,
+    "uuid": "9efab111-371d-5cab-946e-8f794e2f2b41",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/9efab111-371d-5cab-946e-8f794e2f2b41",
+    "fp": "PCA9306_DCU0008A",
+    "pins": {
+      "1": "GND",
+      "2": "1V8_IMU",
+      "3": "SCL_1V8",
+      "4": "SDA_1V8",
+      "5": "SDA_HOST",
+      "6": "SCL_HOST",
+      "7": "I2C_BIAS",
+      "8": "I2C_BIAS"
+    },
+    "placement": [
+      105.25,
+      121.5,
+      -90.0
+    ]
+  },
+  "U5": {
+    "jlc": "C176944",
+    "manufacturer": "Diodes Incorporated",
+    "mpn": "AP2112K-1.8TRG1",
+    "package": "SOT-25",
+    "value": "AP2112K-1.8TRG1",
+    "board": "main",
+    "ref": "U5",
+    "fitted": true,
+    "uuid": "60195a43-d98b-5930-b7e8-3badfc088a6e",
+    "path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961/60195a43-d98b-5930-b7e8-3badfc088a6e",
+    "fp": "SOT-23-5",
+    "pins": {
+      "1": "3V3_MAIN",
+      "2": "GND",
+      "3": "3V3_MAIN",
+      "4": null,
+      "5": "1V8_IMU"
+    },
+    "placement": [
+      103.0,
+      116.25,
+      -90.0
+    ]
   }
 }

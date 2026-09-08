@@ -1,0 +1,334 @@
+{
+  "status": "PASS",
+  "group_count": 7,
+  "individual_part_count": 58,
+  "checks": [
+    {
+      "part": "ViewBase",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Base",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewLid",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Lid",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewMain",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_MainPCB",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R9",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U5",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_SW2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R4",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C10",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R17",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C8",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_D1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C4",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R5",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_J1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C7",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R23",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U3",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C9",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R3",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R18",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R15",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C3",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R7",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_J2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U4",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R8",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C5",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C6",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R10",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C13",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R13",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R22",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R20",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R19",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U9",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U6",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R12",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_U8",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R11",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R16",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_C11",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R21",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_SW3",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_R14",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_Main_USB_ShellTails",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewDivider",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_BatteryDivider",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewBattery",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_BatteryCandidate_UNQUALIFIED",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewCables",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_PH2_ProtectedPackLeads",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "ViewHardware",
+      "kind": "group",
+      "passed": true
+    },
+    {
+      "part": "Inspect_ClosureScrew1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_ClosureNut1",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_ClosureScrew2",
+      "kind": "individual_link",
+      "passed": true
+    },
+    {
+      "part": "Inspect_ClosureNut2",
+      "kind": "individual_link",
+      "passed": true
+    }
+  ],
+  "engineering_sources_unchanged": true,
+  "saved_document": false
+}

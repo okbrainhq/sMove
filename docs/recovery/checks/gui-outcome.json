@@ -1,0 +1,12 @@
+{
+  "status": "BLOCKED_DESKTOP_LOCK_SCREEN",
+  "casing_opened_on_current_desktop": false,
+  "inspection_controls_launched": false,
+  "initial_desktop_visible": true,
+  "subsequent_capture_error": "PipeWire frame capture failed: Session creation inhibited",
+  "native_accessibility_lock_text": "Click or press a key to unlock",
+  "screenshot_kind": "Recovered original historical FreeCAD inspection screenshot, not live capture",
+  "screenshot_url": "/uploads/7594e394-466d-4209-89a3-395642bcb4d2.webp",
+  "file": "/home/azero/.okbrain/workspaces/smove-files/022/housing/smove-r2-enclosure.FCStd",
+  "macro": "/home/azero/.okbrain/workspaces/smove-files/022/housing/InspectAssembly.FCMacro"
+}

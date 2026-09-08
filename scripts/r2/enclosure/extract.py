@@ -9,7 +9,7 @@ import pcbnew
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'housing'
 (ROOT/'.cache/housing').mkdir(parents=True,exist_ok=True)
-EXPECTED = {'main': '92bb81c4db396dff5c6bee8accaabc6c472d03eeb2b029408f93a182c5d092ba', 'imu-carrier': '8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872'}
+EXPECTED = {'main': None}  # Integrated build only. Old carrier is frozen provenance, not assembled.
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def xy(p): return [round(p.x / 1e6, 6), round(p.y / 1e6, 6)]
@@ -22,7 +22,7 @@ def extract():
         folder = ROOT/'PCB'/name
         ip = folder/'interface.json'; bp = next(folder.glob('*.kicad_pcb'))
         d = json.loads(ip.read_text()); b = pcbnew.LoadBoard(str(bp))
-        origin_y = 135 if name == 'main' else 120
+        origin_y = 139 if name == 'main' else 120
         def local(p):
             x,y=xy(p); return [round(x-100,6),round(origin_y-y,6)]
         contracts = d['components'] if name == 'main' else {c['ref']:c for c in d['components']}
@@ -63,7 +63,10 @@ def extract():
                 assert near(p['local_xy'],h['center_mm']) and near(p['drill_mm'],h['drill_mm']) and p['attribute']==pcbnew.PAD_ATTRIB_NPTH
                 holes.append({'ref':h['ref'],'xy':p['local_xy'],'drill_mm':p['drill_mm']})
         else:
-            assert len(fps)==36 and sum(c['fitted'] for c in contracts.values())==35
+            assert len(fps)==49 and sum(c['fitted'] for c in contracts.values())==47
+            for ref,xy0 in d['mounting']['holes_native_xy_mm'].items():
+                pad=fps[ref]['pads'][0];assert near(pad['native_xy'],xy0) and near(pad['drill_mm'],[3.2,3.2]) and pad['attribute']==pcbnew.PAD_ATTRIB_NPTH
+                holes.append(dict(ref=ref,xy=pad['local_xy'],drill_mm=pad['drill_mm']))
             for ref,a in d['anchors'].items():
                 if 'center_native_xy_mm' in a: assert near(fps[ref]['native_xy'],a['center_native_xy_mm'])
                 for num,p in a.get('pins',{}).items():
@@ -71,7 +74,7 @@ def extract():
         edges=[]
         for e in b.GetDrawings():
             if e.GetLayer()==pcbnew.Edge_Cuts: edges.append([local(e.GetStart()),local(e.GetEnd())])
-        expected_outline = [[0,0],[25,0],[25,35],[0,35]] if name=='main' else d['outline_mm']
+        expected_outline = [[round(x-100,6),round(139-y,6)] for x,y in d['outline_native_xy_mm']]
         observed={tuple(p) for e in edges for p in e}
         assert observed=={tuple(p) for p in expected_outline}, (name,'OUTLINE',observed)
         assert abs(b.GetDesignSettings().GetBoardThickness()/1e6-d['thickness_mm'])<1e-6
@@ -87,7 +90,7 @@ def extract():
             for polygon in [d['antenna_all_layer_keepout_native_xy_mm']]+[r['xy'] for r in d['retention']]:
                 assert any({tuple(p) for p in z['native_xy']}=={tuple(p) for p in polygon} and len(z['copper_layers'])==4 and z['no_copper'] and z['no_tracks'] and z['no_vias'] for z in zones), 'KEEP-OUT LOST'
         ih=sha(ip)
-        if ih!=EXPECTED[name]:report['warnings'].append(f'{name}: requested interface hash differs from accessible snapshot; actual board independently matches this snapshot. Orchestrator reconciliation required; no earlier file available for diff.')
+        if EXPECTED[name] and ih!=EXPECTED[name]:report['warnings'].append(f'{name}: requested interface hash differs from accessible snapshot; actual board independently matches this snapshot. Orchestrator reconciliation required; no earlier file available for diff.')
         report['boards'][name]={'interface_sha256':ih,'requested_interface_sha256':EXPECTED[name], 'board_sha256':sha(bp),
                                'board_path':str(bp.relative_to(ROOT)), 'interface_path':str(ip.relative_to(ROOT)),
                                'outline_xy':expected_outline, 'thickness_mm':d['thickness_mm'],'copper_layers':4,

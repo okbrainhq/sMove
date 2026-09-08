@@ -24,7 +24,7 @@ def ignored(d,path=''):
  elif isinstance(d,list):
   for i,v in enumerate(d):result.update(ignored(v,path+str(i)+'.'))
  return result
-for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carrier','smove-imu-carrier',14,{'J5'})]:
+for key,name,count,manual in [('main','smove-r2-main',47,{'J2'})]:
  h=ROOT/'PCB'/key;m=ROOT/'PCB'/key/'dist';m.mkdir(parents=True,exist_ok=True)
  cad=h/(name+'.kicad_pcb');sch=h/(name+'.kicad_sch');pro=h/(name+'.kicad_pro')
  hashes={str(f.relative_to(ROOT)):sha(f) for f in [cad,pro,h/'interface.json',*sorted(h.glob('*.kicad_sch')),*sorted(h.glob('*.kicad_sym'))]}
@@ -54,7 +54,7 @@ for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carr
   csvout(m/'pick-and-place.csv',ch,[[v['reference'],*['%.6f'%a for a in v['xy_mm']],'Top','%.3f'%v['rotation_deg']] for v in pp])
   assert len(pp)==count-len(omit)
  dump(m/'assembly-placements.json',{'frame':'mm, top view, native auxiliary origin; X right, Y up; native footprint anchor/centroid, CCW angle. No guessed vendor rotation offsets.','aux_origin_native_mm':list(p.ToMM(origin)),'parts':placements})
- guide=['# R2 '+key+' assembly pin-reference / rotation guide','','Engineering prototype; manufacturing_release=false. Default BOM/CPL fits ALL '+str(count)+' parts at JLC. JLC fits all board headers; no local SMT option. Use JLC-prototype.zip. External electrical items: PHR-2/PHR-4 cable assemblies and qualified protected battery only. Local-fitted connectors require a genuine THT footprint ECO before manufacturing; current SMT boards do not accept THT substitutes.','','All positions are mm, viewed from TOP/component face, X right/Y up at the native auxiliary/drill origin. Rotation is KiCad CCW footprint angle, not an unverified vendor-library correction. Verify actual pad reference coordinates/nets against JLC preview before any assembly approval. USB uses A1, all others pad 1. Nonfitted debug/locators excluded.','','|Ref|MPN|X|Y|CCW deg|Reference pad|Pad X|Pad Y|','|---|---|---:|---:|---:|---|---:|---:|']
+ guide=['# R2 '+key+' assembly pin-reference / rotation guide','','Engineering prototype; manufacturing_release=false. Default BOM/CPL fits ALL '+str(count)+' parts at JLC. JLC fits all board headers; no local SMT option. Gerbers/BOM/pick-and-place are PROTOTYPE ONLY; assembly rotation preview and supplier qualification remain mandatory. External electrical items: PHR-2 cable assembly and qualified protected battery only. No carrier/PH4 is assembled. Local-fitted connectors require a genuine THT footprint ECO before manufacturing; current SMT boards do not accept THT substitutes.','','All positions are mm, viewed from TOP/component face, X right/Y up at the native auxiliary/drill origin. Rotation is KiCad CCW footprint angle, not an unverified vendor-library correction. Verify actual pad reference coordinates/nets against JLC preview before any assembly approval. USB uses A1, all others pad 1. No external UART or testpoints. Two board-only M3 NPTH mounting holes excluded from BOM/CPL.','','|Ref|MPN|X|Y|CCW deg|Reference pad|Pad X|Pad Y|','|---|---|---:|---:|---:|---|---:|---:|']
  for v in placements:guide.append('|'+ '|'.join(map(str,[v['reference'],v['mpn'],*v['xy_mm'],v['rotation_deg'],v['pad_reference'],*v['pad_reference_mm']]))+'|')
  (m/'ASSEMBLY.md').write_text('\n'.join(guide)+'\n')
  ed=ROOT/'.cache/verify'/key;ed.mkdir(parents=True,exist_ok=True)
@@ -76,7 +76,7 @@ for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carr
  run(key+'-pdf',['kicad-cli','sch','export','pdf','-o',m/'schematic.pdf',sch])
  sd=m/'schematic-svg';sd.mkdir(exist_ok=True)
  run(key+'-svg',['kicad-cli','sch','export','svg','-o',str(sd)+'/',sch])
- pages=['schematic','schematic-usb','schematic-power','schematic-compute'] if key=='main' else ['schematic']
+ pages=['schematic','schematic-usb','schematic-power','schematic-compute','schematic-imu'] if key=='main' else ['schematic']
  assert re.search(rf'Pages:\s+{len(pages)}\b',run(key+'-pdfinfo',['pdfinfo',m/'schematic.pdf']))
  for page,png in enumerate(pages,1):
   run(key+'-'+png+'-png',['pdftoppm','-f',page,'-l',page,'-png','-scale-to','2600','-singlefile',m/'schematic.pdf',m/png])
@@ -87,6 +87,7 @@ for key,name,count,manual in [('main','smove-r2-main',35,{'J2','J4'}),('imu-carr
  if key=='main':
   run(key+'-step-board',['kicad-cli','pcb','export','step','--force','--drill-origin','--board-only','-o',m/'main-board-only.step',cad])
   run(key+'-step',['kicad-cli','pcb','export','step','--force','--drill-origin','--subst-models','--no-dnp','-o',m/'main-installed-models.step',cad])
+ for svg in list(m.rglob('*.svg'))+list(m.rglob('*.step')):svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
  assert all(sha(ROOT/f)==v for f,v in hashes.items()),'Native source modified'
  dump(D/(key+'-exports.json'),{'manufacturing_release':False,'configured_ERC_DRC':'0 violations, 0 opens, 0 schematic parity issues','severity_scope':'--severity-all includes configured severities only; ignored defaults are NOT checked','ignored_defaults':ignored(json.loads(pro.read_text())),'drc_exclusions':json.loads(pro.read_text()).get('board',{}).get('design_settings',{}).get('drc_exclusions',[]),'default_count':count,'assembly_policy':'full JLC only','jlc_fitted_headers':sorted(manual),'sources':hashes,'artifacts':{str(f.relative_to(ROOT)):sha(f) for f in sorted(m.rglob('*')) if f.is_file() and f.name not in ('manifest.json','README.md','ON_HOLD.txt')}})
  print(key,'PASS full JLC export',count)

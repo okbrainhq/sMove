@@ -1,85 +1,49 @@
-# R2 coplanar enclosure — printing, hardware and assembly
+# Two diagonal M3 mounting / assembly gates
 
-**Engineering prototype, not a physical-fit/manufacturing/charging release.** The clarified body datum supersedes the old perpendicular-carrier build. The current CAD is a simple rectangular open base plus flat lid, **109 × 48 × 14.5 mm** excluding screw heads (**17.5 mm** overall with the assumed heads). It is intentionally **wider but thinner**: main, IMU and battery sit side-by-side to eliminate the old stepped lid, suspended battery roof, side-entry carrier screws and small printed threads. No size/comfort approval is implied.
+**Engineering prototype, not a manufacturing/charging release.** All dimensions below are CAD mm, not measurements of the owner's screws or purchased battery. Main assembly frame: X right, Y toward antenna, Z outward; base underside Z0 faces body.
 
-## Body frame and physical installation
+## Size, mounting and stack
 
-The user explicitly specified **main PCB BOTTOM toward the body through the base**, with both board planes parallel to that face, sensor +Z outward, and no preferred worn-up edge.
+Outside model: **49.8 × 29.4 × 19.6mm** including recessed assumed heads, no ears. Substrate bounding box25×39×1mm. H1/H2 assembly axes **(3.6,35.4)/(21.4,3.6)**; native holes(103.6,103.6)/(121.4,135.4). Native drill3.2mm; printed bores3.4mm. Verify printer shrink, actual screw diameter and positional tolerance before fitting.
 
-- Body contact reference is the uninterrupted **flat base underside, Z=0**. Body lies on the negative-Z side. This is a rigid design plane, not a claim that a human surface is flat.
-- +Z points from body through the boards toward the lid. Both substrate slabs are **Z=4…5 mm**, hence **coplanar**, not merely visually parallel.
-- +Y is chosen toward the main antenna, +X toward main native PCB +X. These are convenient device directions, **not anatomical up/right**.
-- Main local coordinates: `(KiCad_x−100, 135−KiCad_y, z_from_board_bottom)`; translation to case `(0,0,4)` mm, rotation identity.
-- Carrier local coordinates: `(KiCad_x−100, 120−KiCad_y, z_from_component_face)`; translation `(-27.5,16,5)` mm, rotation identity. Actual U2 footprint anchor becomes `(-18,32.2,5)` mm; not the die position or body centre.
-- Manufacturer pin-1/top-view evidence and **all 24 actual U2 pad positions** support accel/gyro package-to-carrier identity. Magnetometer Y/Z differ; see [signed-axis evidence](../docs/revision-r2/rgb-body/README.md).
-
-```text
-Column vectors: v_body = R * v_raw
-Accel/gyro R = [[1,0,0], [0,1,0], [0,0,1]]
-Magnetometer R = [[1,0,0], [0,-1,0], [0,0,-1]]
-```
-
-Positive gyro rotations use the manufacturer's right-hand sense, not Euler-angle sign substitutions. Bench six-face acceleration, positive rotation and separate magnetic-axis tests remain required.
-
-## Printed pieces and hardware
-
-Only **base.stl + lid.stl** are printed; four M3×8 screws and four standard M3 nuts close the case. **M3 screws do not go through either PCB.** Existing carrier holes remain 2.2 mm round / 2.7×2.2 mm slot. No electronics was moved on its PCB, and BOOT/RESET silkscreen remains unchanged.
-
-Assumed screw: **M3×0.5 × 8, fully threaded socket-head cap**, length measured **under the head**, nominal head diameter 5.5 mm (screened up to 5.68 for grooved heads), height ≤3 mm, 2.5-mm hex drive. The cited table gives length limits 7.71…8.29 mm. Measure the user's screws: this is not confirmation of their head type or material. No countersunk screw, washer or longer screw is silently substituted. [source](https://www.fasteners.eu/standards/iso/4762/)
-
-Assumed nut: **standard M3 hex, AF≤5.5 mm, thickness 2.15…2.4 mm**; not a taller nyloc. Nut envelope includes a major-diameter thread bore, not helical threads. [source](https://www.fasteners.eu/standards/iso/4032/)
-
-| Feature | Nominal CAD / screened limit |
+| Interface | CAD Z / size |
 |---|---|
-| Case walls / base floor / flat lid | 2.0 / 1.6 / 2.0 mm |
-| Closure centres | `(-33,1), (-33,30), (66,1), (66,30)` mm |
-| Boss radius / screw clearance | 5.0 mm / Ø3.4 mm |
-| Nut pocket / side-entry slot | AF6.0; Z=7.7…10.5 mm, 2.8 mm high |
-| Nut roof | 2.0 mm, Z=10.5…12.5; lid adds 2.0 mm above it |
-| Nut contact / screw under-head | Nut top Z=10.5; screw under-head Z=14.5 |
-| Minimum full-nut engagement | Entire 2.4 mm nut traversed; shortest screw extends 1.31 mm past it |
-| Longest screw tip | Z=6.21; **0.41 mm** above blind bore floor Z=5.8; never exits body floor |
-| Nut pocket radial wall | ≥1.53 mm away from the intentional loading slot |
+| Base floor | Z0–1.6 |
+| Nominal pouch | Z1.8–4.8; body20×30×3 |
+| Installed acceptance reserve, NOT qualified pack | Z1.8–6.1;21×31×4.3 |
+| Removable insulating divider | Z6.3–7.1, corner reliefs |
+| Integral screw safety floor | Z6.4–7.2 solid below bore; radius2.05 |
+| Nut shelf body | Z7.4–10.2; attached to side walls, no pouch preload |
+| Captured M3 nut | Z7.6–10.0; assumed AF5.5×2.4 |
+| Lower insulating PCB bearing | Z10.2–10.8; radius3.4 |
+| PCB | Bottom10.8 / top11.8 |
+| Lid insulating bearing sleeve | Bottom11.8; screw bearing at15.4 |
+| M3×8 shank | Nominal tip7.4 / underhead15.4 |
+| Assumed head envelope | Diameter5.68, height3; top18.4, recessed below19.6 |
+| Lid roof | Z18.4–19.6 |
 
-Nuts slide along +Y for the front pair, −Y for the rear pair, **before installing electronics/cell**. The side entry leaves a real boss roof for clamping; a top-open nut well that clamps only the lid was deliberately avoided. Snug gradually and evenly; no torque/strength claim. Do not use a steel-joint torque chart on printed plastic. Head loads are borne on the lid/bosses, not PCB holes.
+Nut pocket AF5.8, lateral entry6.6mm wide accommodates the nut's corners. Full nut engagement2.4mm nominal, screw protrusion0.2mm below nut. **Measured screw underhead length7.9–8.1mm** is the tested acceptance screen: shortest remains through full nut; longest tipZ7.3 stays0.2mm above divider and0.1mm above the blind safety-floor top. This is a narrow tolerance budget, not blanket M3×8 approval. Longer screws, extra washers, countersunk heads, different nuts or print errors invalidate it. Do not substitute or force. Trial-fit a nonconductive dummy first; no generic metal-fastener torque value is specified for printed plastic/1mm PCB.
 
-**Magnetic material remains an acceptance risk.** Existing M3 screws may be steel. The case fasteners are not carrier supports and are outside the exact antenna environmental volume, but distance is not magnetic isolation. Prefer dimension-compatible low-magnetic hardware if available; stainless is not assumed nonmagnetic. Test the complete case under operating/charging currents and after hardware changes; substitute suitable nonmagnetic hardware if bias is unacceptable.
+M3 head nominal dimensions follow the socket-cap family reference; actual head/length/material still require measurement. [source](https://www.fasteners.eu/standards/ISO/4762/)
 
-Starting print trial: unfilled nonconductive PETG, 0.4-mm nozzle, 0.2-mm layers, at least three perimeters. No carbon/metal-filled material. Base floor down; lid roof down (STLs already oriented). The tray/battery bay is open from above; only short nut-slot roofs require tuned bridging or removable support accessible through the slots. Clear strings/support, deburr and smooth body-facing edges. The 0.7-mm-wide main bearing pads are constrained by existing copper-free lands: inspect their strength and dimensions, do not enlarge them into copper or tighten until the board bends. No print tolerance or layer adhesion was measured.
+Both contacts are within independently audited 3.4mm copper-free bearing areas, inside native3.45mm keepouts. Copper/pads/components, nuts and screw heads are kept off the sensor/antenna. The board is positively located by two separated holes and side registration, rather than foam or adhesive. Do not clamp U2. Two-point registration is not a measured stiffness/shock/creep qualification; test vibration and acceleration noise at a conservative assembly torque.
 
-## Board retention, cell and cable routing
+Prefer verified low-magnetic screw/nut material near the magnetometer. Do not infer nonmagnetic behavior from “stainless” alone; measure bias with hardware fitted, rotated and under load, then calibrate/qualify. Avoid ferromagnetic straps, tools or battery tabs near the sensor.
 
-- **Main**: rounded lower/upper bearing pairs contact only its two existing 1.1×1.8-mm all-layer copper-free edge lands. Nominal gap is 1.0 mm. Side/end stops limit sliding with nominal 0.15-mm edge clearance. This is not a measured preload or vibration-retention design; reject rocking/sliding or button-induced bending, rather than forcing the lid.
-- **Carrier**: two Ø3.2-mm peripheral seats, Ø1.8-mm plastic round/slot locating pins, matching annular lid bearings and the positive chamfer key. Nominal gap is 1.0 mm. Lid reliefs receive the pin tips. No pressure pad or column is under U2's no-support volume. Inverted/180-degree seating is not acceptable; the CAD key rejects the 180-degree footprint. Pin clearance means repeatability still needs bench testing.
-- **Battery**: separate east-side **23×34×8-mm** acceptance bay, with 1.6-mm side walls and lid keepers stopping at its Z=9.6 ceiling. Only accept a complete insulated **protected** pack ≤21×32×6.5 mm including protection/wrap. The rendered gold block is an acceptance envelope, not a purchased/qualified cell. The bay is beside, not beneath, solder/USB tails. Allow 0.75 mm nominal vertical clearance at each side of the rendered pack; do not compress, puncture or force a swollen pouch. Test restraint without stressing seals/tabs.
-- **PH4**: unchanged main J4 ↔ carrier J5, PHR-4 each end, **1:1 3V3/GND/SDA/SCL**. The actual tangent-arc route is **34.64 mm** between modelled mating-face centres, with R=3-mm bends and Ø1.8-mm swept bundle reserve. It leaves about 15.36 mm of the existing ≤50-mm finished connection budget; a 10-mm allowance is explicitly checked. This does **not** prove plug/crimp length definition, suitable wire gauge, minimum bend radius or slack. Do not simply order a 34.64-mm cable.
-- **PH2**: paired pack leads exit the open-topped bay notch and follow the east-side swept corridor to main J2 (PHR-2, pin1 PACK+, pin2 GND). Keep the pair together and relieve tab strain with appropriate insulated restraint after measuring the real leads. The model does not simulate flexible leads or a qualified strain-relief attachment.
-- Full main J2/J4 mating cavities, carrier plug/bend reserves, sensor no-support region and exact RF environmental keepout are retained unshrunk. Only each harness's own connector/pack termination overlaps are intentional. The carrier's nearest PCB edge has 0.4 mm nominal separation from the RF exclusion boundary; this is not an RF performance margin.
+## Assembly path — no squeezing
 
-## Assembly and usable access
+First print/fit **empty parts and a rigid20×30×3 dummy**, not an unqualified live pouch. With lid, PCB, divider and nuts removed, the nominal body can enter tipped around X, progressively lower/translate then lie flat. [399 sampled rigid poses](validation/battery-insertion.json) had no CAD collisions; final placement is X2.5–22.5,Y4–34,Z1.8–4.8. This is not a continuous swept-path certification and does not cover real PCM/tabs/leads. The larger21×31×4.3 installed reservation did not pass the simple insertion search: verify the actual complete protected pack and removal route; do not force it through shelves or bend it.
 
-1. Bench-inspect assembled boards and test electrical function with cell disconnected. Trial the **empty** base/lid and all M3 nuts/screws first; verify threads, head dimensions, nut capture, no breakthrough and unobstructed slots.
-2. Load nuts from the interior along their slots. Lower the carrier vertically onto its two seats/pins with the chamfer matching; lower main onto its reserved bearings. Do not push on the IMU package or solder toes.
-3. Mate the accepted PH4 harness with the lid removed, verify all four pin-to-pin connections and route along the reserved west corridor. Both boards remain component-side outward.
-4. Lower the accepted protected pack into the separate bay. Route and restrain paired leads without pinching/pulling tabs, check PH2 polarity, then connect. Do not trap cables over bosses/bearing contacts.
-5. Lower lid straight down, check locators/registers and tighten four M3×8 screws only enough to close without PCB/cell preload. Perform retention, sensor repeatability and current-dependent magnetic tests.
-6. USB remains accessible through the front opening (11-mm-wide tray notch with removable lid closure). BOOT/RESET have Ø3.4-mm top holes for a small blunt insulating tool. **D1 stays on main TOP and is visible along outward +Z through the Ø6-mm RGB aperture**; no light pipe is assumed. Labels in CAD/images are display annotations, **not embossed/engraved print geometry**. Apply simple external labels after the print trial if wanted.
-7. Remove external power before service. Lift lid, disconnect cell and cables; battery and both boards lift upward. J3 stays an unpopulated service interface; the 2-mm bottom probe reserve is retained, but probe/repair with main removed rather than inserting metal through the body side. No external PH ports are implied.
+After pack/charger/fit qualification and with USB disconnected: gently install the insulated pack, route paired leads through the south notch away from the two screw columns, then lower the relieved divider onto its ledges. Slide the two nuts into their keyed side entries; check full seating. Lower PCB so H1/H2 rest on insulating annular supports. Connect the correctly polarized PH2 mate (pin1 PACK+, pin2 GND). Confirm no pad/lead contact with screws and no cell pressure. Close lid sleeves onto PCB, engage both verified screws gently, and check movement/LED/button access.
 
-## Native GUI inspection
+The divider's corner cutouts permit straight insertion; integral blind plastic floors remain directly under screw tips. Cell top reservation has at least0.2mm nominal clearance to divider. USB tails have2.5mm clearance above divider. No screw traverses the pouch volume. Unknown cell tolerances/swelling must not consume these clearances.
 
-Open [smove-r2-enclosure.FCStd](smove-r2-enclosure.FCStd). It defaults to assembled placements with separate native linked objects, grouped under **MOVE THESE**: Base, Lid, Main, Carrier, Battery, Cables and Hardware. Expand groups for named individual parts. **ENGINEERING SOURCES** contains editable CSG/sketches and the parameter spreadsheet; leave its placements alone for inspection.
+## Open gates
 
-Run [InspectAssembly.FCMacro](InspectAssembly.FCMacro) explicitly via FreeCAD's Macro dialog (choose the housing directory, select the macro, Execute). The dock has **Lift lid only**, **Explode all parts** / slider, **Restore ASSEMBLED**, transparency, per-group XYZ offsets and view buttons. Alternatively select a MOVE THESE group and edit its normal Data → Placement. Restore resets group and individual link offsets. Controls never save/export automatically or alter the fixed engineering transforms. An exploded display is **not** an alternate valid assembly or fit check.
+**PH2 mate/PCB overlap remains2.16mm³ in the conservative model** (original check1.35mm³). The full-width plug reservation extends0.3mm below the PCB top and0.8mm over supported PCB near connector mounting pads. It is not resolved by hiding an error or cutting real mounting pads away. Obtain an exact mated drawing/sample before approving this fit. The connector family's official drawing is evidence of the retained part, not a guarantee for an unknown compatible plug. [source](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)
 
-The actual FreeCAD GUI opened and rendered this native file; Qt button-driven lift/explode/base-move/restore tests passed, and fixed source placements/volumes stayed unchanged. [GUI screenshot](dist/freecad-inspection.png) / [receipt](validation/gui-inspection.json). Desktop-agent mouse review could not run because its PipeWire session capture was inhibited; do not confuse the programmatic GUI test with manual interaction or physical fit.
+Cell150mAh/30×20×3 listing is unqualified for peak discharge, protection and charging; charge/ISET components are unchanged. See [radio/battery gates](../docs/revision-r2/integrated/RADIO-BATTERY.md). No direct USB charging of an unqualified pack. Modelled lead bends/seal/PCM reserves are not supplier ratings.
 
-## Validation and residual gates
+BOOT, RESET and RGB have top apertures; the LED is line-of-sight visible in CAD, not optically qualified. No debug pads or UART connector remain. There is no new latching OFF switch: true disconnected OFF requires USB absent and pack disconnected. Apertures are not waterproofing.
 
-Measured CAD reserves include 9.5 mm between board edges, 0.3 mm between the full USB plug reserve and lid closure, 1.0 mm above PH4 plug reserves, 0.6 mm from the PH2 bundle to case, and 3.88 mm minimum hardware-to-electronics distance. Hardware is only about 10.89 mm from U2 at the closest envelope: magnetic qualification is essential. These nominal clearances include no printer compensation.
-
-[Native mechanical receipt](validation/mechanical.json), [build/frame parameters](validation/build.json), [electrical/axis ECO review](../docs/revision-r2/rgb-body/README.md), [source/output manifest](dist/manifest.json).
-
-Checks include fresh FCStd recompute, real BRep intersection volumes, actual two-board planes, outward optical/tool paths, screws/nuts/driver space, plug/cable/RF/no-support volumes, top insertion samples at 0.5-mm steps, lid lift, key rejection, fresh STEP volumes/solid count, and STL connectedness/winding/manifold/self-intersection/volume. The pre-edit perpendicular model passed its old 1,938 mechanical screens but did **not** meet the new body requirement; the new geometry has its own checks.
-
-CAD does not establish continuous flexible-cable sweeps, print fit, rigidity/preload, nut-slot bridge strength, impact/vibration retention, on-body comfort/attachment, actual screw material, pack protection, calibrated sensor signs, magnetic offsets, thermal/RF performance, waterproofing or skin suitability. The wider flat case and exposed apertures have **no IP rating**. Supervised off-body charging/protected-pack and all electrical qualification restrictions remain in force.
+Check thin roof/boss print quality, two-nut retention, PCB warp, shell stiffness, skin-facing finish, RF range, magnetic bias, USB downloads and temperature on prototypes before sports/body use. Base/lid/divider STLs are separate, watertight CAD meshes; support/orientation and printer-specific tolerance are not certified by a mesh check.

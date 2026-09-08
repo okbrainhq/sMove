@@ -1,0 +1,50 @@
+{
+  "manufacturing_release": false,
+  "baseline_commit": "c1050a07339897e7203f43137aec96de5bbc41cc",
+  "electrical_checks": 1214,
+  "erc": 0,
+  "drc": 0,
+  "opens": 0,
+  "parity": 0,
+  "mechanical_checks": 2088,
+  "mechanical_failures": [
+    {
+      "check": "plug:Main_J2_MatingInsertion:MainPCB",
+      "passed": false,
+      "detail": {
+        "overlap_mm3": 2.160000000000027
+      }
+    }
+  ],
+  "external_LWH_mm": [
+    49.8,
+    29.4,
+    19.6
+  ],
+  "M3_nominal_engagement_mm": 2.4,
+  "M3_measured_length_acceptance_screen_mm": [
+    7.9,
+    8.1
+  ],
+  "sensor_native_xy_mm": [
+    112.5,
+    117.5
+  ],
+  "sensor_from_NW_xy_mm": [
+    12.5,
+    17.5
+  ],
+  "AG_Z": "outward",
+  "MAG_raw_Z": "inward",
+  "removed": [
+    "J3 external UART/service",
+    "TP1 through TP14"
+  ],
+  "nominal_pouch_rigid_path_samples": 399,
+  "release_gates": [
+    "PH2 mate/PCB overlap2.16mm3",
+    "Protected battery size/insertion, discharge/protection/charging",
+    "Actual fastener/print tolerance, torque/stiffness and magnetic behavior",
+    "USB impedance/enumeration, RF, rail transients and thermal bench tests"
+  ]
+}

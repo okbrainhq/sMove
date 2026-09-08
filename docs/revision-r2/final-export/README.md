@@ -1,3 +1,5 @@
+> **Historical/superseded topology.** Current integrated main-PCB design and release gates: [integrated ECO](../integrated/README.md). Carrier/PH4/old enclosure/count/hash claims below are archival, not current build instructions.
+
 # Current R2 deliverables and reproduction
 
 **Engineering prototype; manufacturing_release=false.** The current work implements a unified D1 schematic symbol and an actual coplanar/body-outward enclosure redesign. This supersedes the old cleanup-only/perpendicular-assembly status, not electrical, physical-fit or charging qualification limits. [Change record](../rgb-body/README.md), [main](../../../PCB/main/README.md), [carrier](../../../PCB/imu-carrier/README.md), [housing / GUI](../../../housing/README.md).

@@ -1,0 +1,17 @@
+# Optional explicit GUI presentation/export smoke-test macro. Unlike InspectAssembly,
+# this regenerates review images and saves assembled display styling in the FCStd.
+from pathlib import Path
+import sys, traceback
+from PySide import QtCore
+root=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(root/'scripts/r2/enclosure'))
+import present
+
+def run_presentation():
+    try:
+        global smove_doc,smove_panel
+        smove_doc,smove_panel=present.main()
+    except Exception:
+        (root/'.cache/integrated/gui-error.log').write_text(traceback.format_exc())
+        raise
+run_presentation()

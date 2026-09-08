@@ -1,0 +1,9 @@
+{
+  "U2": "conservative maximum package envelope 3.1x3.1x1.05mm; native footprint has 24 pads and central copper keepout, no EP pad",
+  "U3": "KiCad VSSOP-8 body model; lands independently corrected to TI DCU0008A",
+  "freecad_bootstrapped": false,
+  "geometry_frame": "models +Z above top PCB face; KiCad STEP assembly frame checked in export manifest",
+  "others": "installed KiCad library models copied locally",
+  "scope": "Integrated main PCB; copied actual supported models/envelopes; no carrier header.",
+  "text_normalization": "Trailing whitespace removed only; STEP geometry and license text retained."
+}

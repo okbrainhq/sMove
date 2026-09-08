@@ -1,3 +1,5 @@
+> **Historical/superseded topology.** Current integrated main-PCB design and release gates: [integrated ECO](integrated/README.md). Carrier/PH4/old enclosure/count/hash claims below are archival, not current build instructions.
+
 # R2 connector and cable buying guide
 
 **Engineering prototype only. Do not connect a battery or cable until pin-to-pin continuity and polarity are verified. No 5V on PH4; no hot-plug.**

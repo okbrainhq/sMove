@@ -1,3 +1,5 @@
+> **Historical/superseded topology.** Current integrated main-PCB design and release gates: [integrated ECO](integrated/README.md). Carrier/PH4/old enclosure/count/hash claims below are archival, not current build instructions.
+
 # R2 FINAL ELECTRICAL — source/CAD handoff ready
 
 **Engineering prototype only. No manufacturing, charging or physical qualification granted.** Main and carrier remain separate, fully wired single-page native KiCad projects. No advisors/delegates, commits, orders or uploads. Final exports now available: [integration handoff](final-export/README.md).

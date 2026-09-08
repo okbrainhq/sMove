@@ -2,11 +2,11 @@
   (version 20250114)
   (generator "eeschema")
   (uuid 8e261347-838a-5848-981d-f693675e8aa0)
-  (paper "A4")
+  (paper "A3")
   (title_block
     (title "sMove R2 / System flow")
     (rev "R2 ENG")
-    (comment 1 "MAIN PCB - THREE FUNCTIONAL CHILD PAGES"))
+    (comment 1 "MAIN PCB - USB / POWER / COMPUTE / INTEGRATED IMU"))
   (lib_symbols)
   (sheet
     (at 25.4 45.72)
@@ -187,7 +187,21 @@
         (font
           (size 1.27 1.27))
         (justify left))
-      (uuid 63587245-42f4-59d1-8cd2-33662827bca3)))
+      (uuid 63587245-42f4-59d1-8cd2-33662827bca3))
+    (pin "SCL_HOST" bidirectional
+      (at 269.24 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify right))
+      (uuid f2c0daf0-2cc4-54d8-bc49-70f0c0ebd86f))
+    (pin "SDA_HOST" bidirectional
+      (at 269.24 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify right))
+      (uuid 474f2a74-8195-5574-a11c-f7491174b1a3)))
   (wire
     (pts
       (xy 91.44 58.42)
@@ -204,14 +218,6 @@
       (width 0)
       (type default))
     (uuid e680e0a6-fcfd-5714-bcdc-33b7ba76b8ad))
-  (wire
-    (pts
-      (xy 91.44 129.54)
-      (xy 177.8 129.54))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid c79cd7c1-c1d6-5348-9f01-77da356b27a3))
   (wire
     (pts
       (xy 91.44 139.7)
@@ -322,7 +328,7 @@
         (size 2 2))
       (justify left))
     (uuid 8353a693-c5f7-5e35-be94-44752e765b85))
-  (text "One main PCB, three functional pages. Green lines are electrical hierarchical connections."
+  (text "One main PCB, four functional pages. Green lines are actual hierarchical connections."
     (at 25.4 22.86 0)
     (effects
       (font
@@ -343,7 +349,7 @@
         (size 1.02 1.02))
       (justify left))
     (uuid 6cf65997-01a2-53b7-8d1e-b9028b682506))
-  (text "ESP32-C3 / reset / boot / RGB\n\nJ4 -> separate IMU carrier PCB\nPH4: 1=3V3, 2=GND\n3=SDA, 4=SCL; <=50mm\n\nCarrier U2: direct on its root\nNo nested IMU sheets"
+  (text "Integrated IMU on SAME main PCB.\nSee dedicated wired IMU page.\nNo J4/J5 or PH4 harness."
     (at 195.58 91.44 0)
     (effects
       (font
@@ -357,7 +363,7 @@
         (size 1.02 1.02))
       (justify left))
     (uuid eae55707-fff5-500b-8cc7-7dbf39fb82c4))
-  (text "Crossings without junction dots are NOT connected. Placement and routing unchanged."
+  (text "Crossings without junction dots are NOT connected. Engineering prototype; release gated."
     (at 25.4 187.96 0)
     (effects
       (font
@@ -366,4 +372,179 @@
     (uuid 64836e16-f7a7-5942-b47c-6f8edb047f92))
   (sheet_instances
     (path "/"
-      (page "1"))))
+      (page "1")))
+  (wire
+    (pts
+      (xy 269.24 63.5)
+      (xy 312.42 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid bf089ca2-24c2-5d0f-a32b-a81344bf634f))
+  (wire
+    (pts
+      (xy 269.24 76.2)
+      (xy 312.42 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 3b03da37-a2ee-5093-8b1d-00707d07ab27))
+  (sheet
+    (at 312.42 45.72)
+    (size 81.28 116.84)
+    (stroke
+      (width .254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid 0c78c5fa-f3e0-528c-818c-9b07d10ef961)
+    (property "Sheetname" "IMU"
+      (at 312.42 44.45 0)
+      (effects
+        (font
+          (size 1.52 1.52))
+        (justify left bottom)))
+    (property "Sheetfile" "imu.kicad_sch"
+      (at 312.42 163.83 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left top)))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0"
+          (page "5"))))
+    (pin "SCL_HOST" bidirectional
+      (at 312.42 63.5 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid 9bf0bebc-deff-5512-a4ca-80ec0edf766c))
+    (pin "SDA_HOST" bidirectional
+      (at 312.42 76.2 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid af996db6-58e2-5e94-927e-b97fc56bd32e))
+    (pin "3V3_MAIN" input
+      (at 312.42 129.54 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid daf79ea9-712a-5ff5-99e1-d849345d2241))
+    (pin "GND" passive
+      (at 312.42 157.48 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid bd14260e-a6ad-5d43-a36e-fed29c6f1f53)))
+  (text "No external UART or test pads. USB programming retained.\nICM INT1 NC; FIFO polling. BOOT / RESET retained."
+    (at 320 96 0)
+    (effects
+      (font
+        (size 1.02 1.02))
+      (justify left))
+    (uuid a9d665d4-d7b4-5133-86b4-86dee4252b8f))
+  (wire
+    (pts
+      (xy 165.1 129.54)
+      (xy 165.1 170.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid a65dd7e3-7e55-5846-9a26-e522f7e58e70))
+  (wire
+    (pts
+      (xy 165.1 170.18)
+      (xy 299.72 170.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 40e90aa7-3b6c-52e6-9e4b-ea995297acc1))
+  (wire
+    (pts
+      (xy 299.72 170.18)
+      (xy 299.72 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid abd6fbc2-2bbb-56ec-a0da-2bfa0a53665b))
+  (wire
+    (pts
+      (xy 299.72 129.54)
+      (xy 312.42 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid ff284558-913f-5e09-9b11-65808907c558))
+  (wire
+    (pts
+      (xy 157.48 157.48)
+      (xy 157.48 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid a9c67105-be82-59cb-a01e-8b48e4af94da))
+  (wire
+    (pts
+      (xy 157.48 177.8)
+      (xy 294.64 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid f5669f1c-434e-5df0-81bb-b260ea96eef1))
+  (wire
+    (pts
+      (xy 294.64 177.8)
+      (xy 294.64 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 2ad4c136-c241-54a1-8950-b001ce63cb41))
+  (wire
+    (pts
+      (xy 294.64 157.48)
+      (xy 312.42 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 2e92f997-bd00-5487-8c84-d179be31c025))
+  (wire
+    (pts
+      (xy 91.44 129.54)
+      (xy 165.1 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid b2dbbd5d-e022-5c42-a439-e2f3048d3eba))
+  (wire
+    (pts
+      (xy 165.1 129.54)
+      (xy 177.8 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 8ae13714-cebe-5d5e-a874-b80d76661cbe))
+  (junction
+    (at 165.1 129.54)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid 7e1f1a9a-9eaa-52bc-8f1e-2f0506896616))
+  (label "SCL_HOST"
+    (at 284.48 63.5 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid 54eb975f-db8a-5b2c-a972-4bb9215badfa))
+  (label "SDA_HOST"
+    (at 284.48 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid c0d0c39a-8d94-5361-8eb0-148481b09d7a)))

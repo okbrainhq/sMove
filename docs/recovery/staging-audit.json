@@ -1,0 +1,10 @@
+{
+  "base_commit": "f7c6bc0cd1c727314fc17b57df88e27d1f8647bd",
+  "expected_commit_path_count": 142,
+  "original_30_paths_already_in_base_verified_unchanged": true,
+  "expected_deletions": 0,
+  "hash_provenance_entries_checked": 168,
+  "original_claimed_152_path_index_available": false,
+  "staging_method": "Explicit complete NUL-delimited path list passed to git add --pathspec-from-file; checked against git diff --cached --name-only, not a GUI path preview.",
+  "original_path_recovery_limit": "51 autostash tracked modifications + 44 hash-manifest additions + 23 recovered reports/docs; original 152-path list not recovered. All 1004 initially unreachable objects preserved in pack."
+}

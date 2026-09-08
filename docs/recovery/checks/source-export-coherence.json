@@ -1,0 +1,3307 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "native_outline_equals_recovered_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "PCB_outline_centreline_25x39_mm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "47_fitted_plus_two_non_BOM_holes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_UART_header_or_testpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "centred_IMU_pose",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_reference_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "CPL_native_pose:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_reference_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:C13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:D1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:D1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:D1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:D1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.A12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.B12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J1.S1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:J2.MP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R7.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R7.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R10.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R10.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R11.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R11.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R12.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R12.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R13.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R13.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R14.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R14.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R15.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R15.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R16.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R16.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R17.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R17.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R18.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R18.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R19.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R19.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R20.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R20.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R21.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R21.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R22.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R22.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R23.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:R23.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:SW2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:SW2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:SW3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:SW3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U1.53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U2.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U3.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U4.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U4.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U4.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U4.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U4.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U5.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U5.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U5.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U5.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U5.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U6.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U8.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_native_pose:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_MPN:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U9.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U9.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "assembly_pad:U9.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_outline_native_match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "NPTH_native:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "NPTH_native:H2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Excellon_M3_diameter_and_positions",
+      "passed": true,
+      "detail": [
+        [
+          3.6,
+          31.4
+        ],
+        [
+          21.4,
+          -0.4
+        ]
+      ]
+    },
+    {
+      "check": "Gerber_zip_file_set",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-B_Cu.gbl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-B_Mask.gbs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-B_Silkscreen.gbo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-Edge_Cuts.gm1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-F_Cu.gtl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-F_Mask.gts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-F_Paste.gtp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-F_Silkscreen.gto",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-In1_Cu.g1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-In2_Cu.g2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-NPTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-PTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Gerber_zip_exact:smove-r2-main-job.gbrjob",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_false:PCB/main/dist/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/Device.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/compute.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/ASSEMBLY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/BOM.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/assembly-placements.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/assembly-top.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/bottom-3d.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/bottom.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/conservative-step-frame.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/gerbers.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/main-board-only.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/main-installed-models.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/pick-and-place.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-compute.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-imu.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-power.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-Power.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-USB.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-svg/smove-r2-main.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic-usb.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/schematic.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/top-3d.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/dist/top.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/fp-info-cache",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/fp-lib-table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/C_0402_1005Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/C_0603_1608Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/R_0402_1005Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/SOT-23-5.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/U2_MAX_PACKAGE_ENVELOPE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu-models/model-status.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/C_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/C_0603_1608Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/imu.pretty/SOT-23-5.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/interface.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/mechanical-envelope-source.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/mechanical-pose-source.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/native-layout-contract.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/parts-main.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/power.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/power.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.kicad_dru",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.kicad_pcb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.kicad_pro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/TS1088.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/sym-lib-table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:PCB/main/dist/manifest.json:PCB/main/usb.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_false:housing/dist/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/InspectAssembly.FCMacro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/PRINTING-ASSEMBLY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/PresentAssembly.FCMacro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/assembled.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/base.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/body-side.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/dimensions.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/divider.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/exploded.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/freecad-inspection.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/lid.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/section.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/smove-r2-assembly.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/smove-r2-printable.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/dist/top.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/entry.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/export_main.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/insertion-check.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/smove-r2-enclosure.FCStd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/status.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/toolchain.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/baseline-mechanical.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/battery-insertion.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/build.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/gui-inspection.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/input-geometry.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:housing/dist/manifest.json:housing/validation/mechanical.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "release_false:docs/revision-r2/integrated/validation/delivery-manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/Device.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/compute.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/ASSEMBLY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/BOM.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/assembly-placements.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/assembly-top.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/bottom-3d.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/bottom.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/conservative-step-frame.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/gerbers.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/main-board-only.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/main-installed-models.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/pick-and-place.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-compute.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-imu.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-power.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-Power.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-svg/smove-r2-main-USB.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-svg/smove-r2-main.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic-usb.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic.pdf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/schematic.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/top-3d.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/dist/top.svg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/fp-info-cache",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/fp-lib-table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/C_0402_1005Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/C_0603_1608Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/R_0402_1005Metric.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/SOT-23-5.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/U2_MAX_PACKAGE_ENVELOPE.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/VSSOP-8_2.3x2mm_P0.5mm.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu-models/model-status.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/C_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/C_0603_1608Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/imu.pretty/SOT-23-5.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/interface.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/mechanical-envelope-source.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/mechanical-pose-source.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/native-layout-contract.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/parts-main.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/power.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/power.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.kicad_dru",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.kicad_pcb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.kicad_pro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/TS1088.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/sym-lib-table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:PCB/main/usb.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/InspectAssembly.FCMacro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/PRINTING-ASSEMBLY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/PresentAssembly.FCMacro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/assembled.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/base.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/body-side.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/dimensions.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/divider.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/exploded.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/freecad-inspection.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/lid.stl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/section.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/smove-r2-assembly.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/smove-r2-printable.step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/dist/top.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/entry.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/export_main.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/insertion-check.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/smove-r2-enclosure.FCStd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/status.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/toolchain.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/baseline-mechanical.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/battery-insertion.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/build.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/gui-inspection.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/input-geometry.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:housing/validation/mechanical.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/axis_silk.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/budget.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/centered.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/finish_routes.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/layout.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/migrate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/pack.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/route.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/seal.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/sexp.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/stitch.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/sync.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/tidy.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/usb_access.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/integrated/verify.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/audit_body_frame.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/contact_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/extract.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/generate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/inspection.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/present.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/enclosure/verify.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "manifest:docs/revision-r2/integrated/validation/delivery-manifest.json:scripts/r2/final/export.py",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "count": 657,
+  "failures": [],
+  "notes": [
+    "GetBoardEdgesBoundingBox includes stroke width (25.05 x 39.05); centreline outline and physical board bounds are 25 x 39 mm.",
+    "Original manifests and historical reports are preserved byte-for-byte, not re-sealed.",
+    "The unused Debug_5 library footprint is retained because deletion is forbidden; it is not placed in the board or schematic.",
+    "Inherited housing/validation/input-geometry.json is not the fresh compact extraction; use docs/recovery/checks/current-input-geometry.json. It was already stale in the preserved delivery and is retained unchanged for provenance."
+  ]
+}

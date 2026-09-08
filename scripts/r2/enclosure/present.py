@@ -20,17 +20,17 @@ def annotations(doc):
         obj=doc.getObject(name) or doc.addObject('App::Annotation',name)
         obj.LabelText=words; obj.Position=A.Vector(*pos); obj.ViewObject.FontSize=size
         obj.ViewObject.TextColor=color; group.addObject(obj); return obj
-    text('BodyFaceLabel',['BODY CONTACT | flat base underside Z=0'],(13,-11,0),size=14)
-    text('MainPlaneLabel',['MAIN | TOP OUTWARD'],(0,29,9),size=13)
-    text('CarrierPlaneLabel',['IMU | TOP OUTWARD'],(-27,19,10),size=13)
-    text('OutwardAxisLabel',['accel/gyro +Z OUT'],(-18,32.2,23),(.8,.18,.04),14)
-    text('TopFaceLabel',['TOP / OUTWARD'],(-22,20,15),size=17)
-    text('RGBLabel',['RGB'],(21.5,14.5,15),(.65,.03,.32),14)
-    text('ResetLabel',['RESET'],(6,13.5,15),size=12)
-    text('BootLabel',['BOOT'],(6,5.5,15),size=12)
-    text('BodyOnlyLabel',['BODY SIDE','Main PCB BOTTOM faces this base'],(-15,17,0),size=17)
+    text('BodyFaceLabel',['BODY CONTACT | flat base underside Z=0'],(12,-10,0),size=14)
+    text('MainPlaneLabel',['MAIN | TOP OUTWARD'],(1,37,12),size=13)
+    text('CarrierPlaneLabel',['ICM-20948 integrated'],(-1,8,12),size=13)
+    text('OutwardAxisLabel',['accel/gyro +Z OUT'],(12.5,21.5,28),(.8,.18,.04),14)
+    text('TopFaceLabel',['TOP / OUTWARD'],(2,40,19),size=17)
+    text('RGBLabel',['RGB'],(20,9,20),(.65,.03,.32),14)
+    text('ResetLabel',['RESET'],(21.5,13.8,20),size=12)
+    text('BootLabel',['BOOT'],(3.6,3.7,20),size=12)
+    text('BodyOnlyLabel',['BODY SIDE','Main PCB BOTTOM faces this base'],(1,20,0),size=17)
     arrow=doc.getObject('OutwardAxis') or doc.addObject('Part::Feature','OutwardAxis')
-    arrow.Shape=Part.makeCylinder(.28,14,A.Vector(-18,32.2,6.1)).fuse(Part.makeCone(.85,0,2,A.Vector(-18,32.2,20.1)))
+    arrow.Shape=Part.makeCylinder(.28,14,A.Vector(12.5,21.5,12.0)).fuse(Part.makeCone(.85,0,2,A.Vector(12.5,21.5,26.0)))
     arrow.ViewObject.ShapeColor=(1.,.28,.03); group.addObject(arrow)
     return group
 
@@ -51,23 +51,31 @@ def main():
     def show_notes(names):
         notes.Visibility=True
         for obj in notes.Group:obj.Visibility=obj.Name in names
+    def settle():
+        # Let camera animation/MDI startup complete before image capture.
+        import time
+        for _ in range(8):QtWidgets.QApplication.processEvents();time.sleep(.05)
     def capture(name,mode='iso'):
+        for area in G.getMainWindow().findChildren(QtWidgets.QMdiArea):
+            for window in area.subWindowList():
+                if 'smove' in window.windowTitle().lower():area.setActiveSubWindow(window)
+        G.updateGui();settle()
         if mode=='iso':view.viewAxonometric()
         elif mode=='top':view.viewTop()
         elif mode=='bottom':view.viewBottom()
         elif mode=='front':view.viewFront()
-        doc.recompute();view.fitAll();G.updateGui();view.redraw();G.updateGui()
+        doc.recompute();settle();view.fitAll();G.updateGui();view.redraw();settle();G.updateGui()
         view.saveImage(str(EX/(name+'.png')),2000,1250,'White')
     panel.reset_button.click(); show_notes(('BodyFaceLabel','MainPlaneLabel','CarrierPlaneLabel','OutwardAxisLabel','OutwardAxis'))
     capture('assembled')
     # Real GUI button activation, not just calling the underlying transform helper.
     panel.lid_button.click()
-    assert doc.ViewLid.Placement.Base.z==32 and doc.ViewMain.Placement.isIdentity() and doc.ViewCarrier.Placement.isIdentity()
+    assert doc.ViewLid.Placement.Base.z==32 and doc.ViewMain.Placement.isIdentity() and doc.ViewDivider.Placement.isIdentity()
     panel.explode_button.click()
-    assert panel.slider.value()==100 and doc.ViewCarrier.Placement.Base==doc.ViewCarrier.ExplodedOffset
+    assert panel.slider.value()==100 and doc.ViewDivider.Placement.Base==doc.ViewDivider.ExplodedOffset
     show_notes(())
     capture('exploded')
-    G.getMainWindow().grab().save(str(EX/'freecad-inspection.png'))
+    settle();G.getMainWindow().grab().save(str(EX/'freecad-inspection.png'))
     panel.selector.setCurrentIndex(panel.selector.findData('ViewBase')); panel.axes[2].setValue(-8); panel.move_button.click()
     assert doc.ViewBase.Placement.Base.z==-8
     panel.reset_button.click()
@@ -78,11 +86,14 @@ def main():
     # Closed simple enclosure and explicit opposite body face.
     panel.ghost.setChecked(False); show_notes(('TopFaceLabel','RGBLabel','ResetLabel','BootLabel'))
     capture('top','top')
+    dims=json.loads((OUT/'validation/mechanical.json').read_text())['measured_external_mm']
+    annotation=doc.addObject('App::Annotation','MeasuredDimensions');annotation.LabelText=[f'MEASURED CAD: {dims[1]:.1f} L x {dims[0]:.1f} W x {dims[2]:.1f} H mm','Nominal CAD <50 x 30 x 20; physical fit/battery gates OPEN'];annotation.Position=A.Vector(-1,-6,20);annotation.ViewObject.FontSize=16
+    capture('dimensions','top');doc.removeObject(annotation.Name)
     show_notes(('BodyOnlyLabel',)); capture('body-side','bottom')
     # A genuine native Boolean section through the rear pair of M3 nuts and both boards.
     sections=doc.addObject('App::DocumentObjectGroup','TemporarySection')
-    keep=Part.makeBox(120,20,30,A.Vector(-40,30,-1))
-    for name in ['Base','Lid']+json.loads((CACHE/'build.json').read_text())['reference_objects']+json.loads((CACHE/'build.json').read_text())['hardware_objects']:
+    keep=Part.makeBox(45,25,24,A.Vector(-4,-3,-1))
+    for name in ['Base','Lid','BatteryDivider']+json.loads((CACHE/'build.json').read_text())['reference_objects']+json.loads((CACHE/'build.json').read_text())['hardware_objects']:
         src=doc.getObject(name);shape=src.Shape.common(keep)
         if not shape.isNull() and shape.Volume>1e-7:
             obj=doc.addObject('Part::Feature','Section_'+name);obj.Shape=shape;obj.ViewObject.ShapeColor=src.ViewObject.ShapeColor
@@ -96,11 +107,11 @@ def main():
     view.viewAxonometric();view.fitAll();G.updateGui()
     doc.recompute();doc.save()
     report=dict(status='PASS_REAL_FREECAD_GUI_CONTROLS',freecad_version=A.Version(),
-                checks=['Delivered InspectAssembly.FCMacro executed successfully','FCStd opened with real OpenGL viewport','Lift lid preserves both board placements','Explode button and slider move native groups',
+                checks=['Delivered InspectAssembly.FCMacro executed successfully','FCStd opened with real OpenGL viewport','Lift lid preserves main PCB and divider placements','Explode button and slider move native groups',
                         'Selected base offset changes group only','Restore returns ALL group/link transforms to assembled',
                         'Fixed engineering source placements and volumes unchanged','Native saved with assembled default and distinct named parts'],
                 method='Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.',
-                desktop_agent='ubuntu_see was unavailable: PipeWire session creation inhibited. No desktop mouse-driven review claimed.',
+                desktop_agent='Current desktop locked / PipeWire capture inhibited; no desktop clicking or native GUI routing claimed. These are programmatic Qt GUI tests.',
                 exploded_display_is_not_alignment_geometry=True,
                 native_sha256=hashlib.sha256((OUT/'smove-r2-enclosure.FCStd').read_bytes()).hexdigest(),
                 source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),ROOT/'scripts/r2/enclosure/inspection.py',OUT/'InspectAssembly.FCMacro']})

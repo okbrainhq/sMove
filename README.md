@@ -1,19 +1,10 @@
-# sMove R2 — engineering prototype
+# sMove sports tracker — centered integrated-IMU prototype
 
-**Current request status:** D1 has one unified RGB symbol; PCB connectivity/association and BOOT/RESET silk are preserved. The actual enclosure now has **coplanar main/IMU boards, main BOTTOM toward the body, sensor +Z and visible RGB outward**, with a simple base/lid and M3×8/standard-nut closure. [Implementation, evidence and checks](docs/revision-r2/rgb-body/README.md) · [movable native FreeCAD assembly/UI](housing/README.md).
+Current unmerged redesign: actual **ICM-20948 on the same ESP32-C3 PCB**, at upper centre on the top face; signed accel/gyro **+Z outward** and underside toward body. Dedicated wired IMU page, unified RGB, BOOT/RESET and USB programming retained. **No external UART header and no testpoints.** Two diagonal M3 PCB mounting holes replace peripheral edge clamps.
 
-**No manufacturing or charge approval (`manufacturing_release=false`).** Current design is R2 at policy baseline `9c7bb84`. Unsafe CFIX and obsolete revisions are removed from this tree; Local `main` contains only the current parentless root snapshot; saved CodeChat workspaces and the remote are retained with their histories.
+- [Engineering handoff, verification and open gates](docs/revision-r2/integrated/README.md)
+- [PCB/schematics/BOM/manufacturing review exports](PCB/main/README.md)
+- [Housing / movable FreeCAD](housing/README.md): **49.8 × 29.4 × 19.6mm measured nominal CAD**, including assumed recessed heads. Within the requested numbers nominally; **not a printed/assembled tolerance approval**.
+- [One-hour session: ten 30-second bursts, BLE standby, sleep/off, unqualified battery](docs/revision-r2/integrated/RADIO-BATTERY.md)
 
-- [PCB projects](PCB/README.md): [main](PCB/main/README.md), **35 JLC-fitted parts**, and [IMU carrier](PCB/imu-carrier/README.md), **14 JLC-fitted parts**.
-- [Editable housing and printable exports](housing/README.md).
-- [Verification and reproduction](docs/revision-r2/final-export/README.md).
-- [Connector/cable policy](docs/revision-r2/CONNECTORS.md), [electrical qualification gates](docs/revision-r2/FINAL-ELECTRICAL.md), [historical stock evidence](docs/revision-r2/final-export/STOCK.md).
-- [Cleanup evidence and limitations](docs/cleanup/README.md).
-
-Each board has its own `dist/gerbers.zip`, `dist/BOM.csv`, and `dist/pick-and-place.csv`: **three separate files**. ZIPs contain fabrication files only. No whole-project release bundle or top-level duplicate dist.
-
-JLC fits **all SMT headers J2/J4/J5**. No manual-SMT alternative. Sourcing board connectors yourself requires a future THT redesign, not an interchangeable part substitution. User-sourced mating cables still require polarity/continuity/crimp checks.
-
-Use only a qualified protected **1S 4.2V** pack, with **121mA / 4.23V acceptance**, supervised off-body charging and **no TS cell-temperature monitoring**. Cable, fit, radio, thermal, USB and bench gates remain open.
-
-The main schematic now has a **wired overview plus USB / Power / Compute child pages**. See [the hierarchy and alignment change record](docs/revision-r2/hierarchy-alignment/README.md) for baseline/post electrical equivalence, preserved identifiers/physical layout, fresh rendered views and native enclosure checks. No nested IMU sheets. The subsequent housing ECO physically relocates the carrier and provides tested FreeCAD inspection controls; physical fit and sensor/body calibration remain unqualified.
+**Prototype only. PH2 plug/PCB fit, protected-cell qualification, USB/radio/thermal performance and physical assembly remain release gates.** No merge or firmware implementation. The separate carrier and earlier engineering history are archival, not part of this assembly.

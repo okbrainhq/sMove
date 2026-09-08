@@ -1,0 +1,7 @@
+{
+  "mode": "mechanical",
+  "protected_files": 160,
+  "changed": [],
+  "status": "PASS",
+  "note": "Recovered native/source/export/historical report bytes must remain unchanged."
+}

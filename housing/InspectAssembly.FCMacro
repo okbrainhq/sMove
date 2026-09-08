@@ -1,4 +1,5 @@
 # Run explicitly in FreeCAD: Macro > Macros > select this file > Execute.
+# Integrated PCB: separate Base/Lid/Main/Divider/Battery/Cables/Hardware.
 # Local inspection only. Does not save files, export geometry or move engineering sources.
 from pathlib import Path
 import sys

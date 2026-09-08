@@ -13,7 +13,7 @@
   "checks": [
     "Delivered InspectAssembly.FCMacro executed successfully",
     "FCStd opened with real OpenGL viewport",
-    "Lift lid preserves both board placements",
+    "Lift lid preserves main PCB and divider placements",
     "Explode button and slider move native groups",
     "Selected base offset changes group only",
     "Restore returns ALL group/link transforms to assembled",
@@ -21,12 +21,12 @@
     "Native saved with assembled default and distinct named parts"
   ],
   "method": "Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.",
-  "desktop_agent": "ubuntu_see was unavailable: PipeWire session creation inhibited. No desktop mouse-driven review claimed.",
+  "desktop_agent": "Current desktop locked / PipeWire capture inhibited; no desktop clicking or native GUI routing claimed. These are programmatic Qt GUI tests.",
   "exploded_display_is_not_alignment_geometry": true,
-  "native_sha256": "fe27f87a167274ef7853aa46a4db9e6767421a3a9184d6e86f11fbbec5ed7a83",
+  "native_sha256": "037a4d087d875608634a37078a7d8ee73333af7b75219f400ed673104e838379",
   "source_sha256": {
-    "scripts/r2/enclosure/present.py": "806ea322d714760f7bd4b1f27998d1b8f464278b2199fd43718b1e1057d0912b",
-    "scripts/r2/enclosure/inspection.py": "2ba5714898c9191061380ef02318e5985274e313225bf4dda2b20b96a35ba5c5",
-    "housing/InspectAssembly.FCMacro": "c9cae705788c891bc9b66612c3379082b4529102e94fe2a09136cb983f28114b"
+    "scripts/r2/enclosure/present.py": "6dc14882fcffc64ca5b57ab0537b04e90d95bdbee992a677d33496e936fae3fd",
+    "scripts/r2/enclosure/inspection.py": "f8622e67f4f6b22002663bc77715d9b7a22519efff64b4373c331cbcd3786a4e",
+    "housing/InspectAssembly.FCMacro": "4416f469fd5d9c694105c007d92b4598b6f052cd9ab9429faf966ec9c9c910d3"
   }
 }
