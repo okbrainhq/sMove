@@ -15,12 +15,13 @@
     "Native FCStd opened in real FreeCAD GUI",
     "Delivered InspectAssembly macro executed",
     "Lift lid leaves PCB fixed",
-    "Explode moves all seven display groups",
+    "Explode moves all six display groups",
     "Battery manual Y offset moves group only",
     "Restore resets all group transforms",
     "Engineering source placements/volumes unchanged",
-    "Native saved in assembled display state"
+    "Print-pair view contains ONLY Base and Lid in printing orientations",
+    "Native saved in opaque assembled display state"
   ],
-  "method": "Explicit GUI macro, Qt button activation and activeView renders. Actual native desktop screenshot URLs and visually verified states are in docs/revision-r2/two-part-case/images.md.",
-  "native_sha256": "118e9259939d35e1c1824c0d1e21faf53e8e55ccad9b15c2dd47ca571e7c2e62"
+  "method": "Explicit GUI macro, Qt button activation, activeView renders. Native desktop-tool observations are recorded separately in docs/revision-r2/two-part-case/images.md.",
+  "native_sha256": "7e2b8eb769d26a237f48ef1b29fc849477c01c21deee1343d707d8182b070cb1"
 }

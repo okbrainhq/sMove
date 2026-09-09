@@ -33,6 +33,9 @@ h=read('housing/validation/mechanical.json');g=read('housing/validation/gui-insp
 ck('all_saved_CAD_checks_pass',h['status']=='PASS_GEOMETRIC_PROTOTYPE' and not h['failed'])
 ck('real_GUI_macro_checks_pass',g['status']=='PASS_REAL_FREECAD_GUI_CONTROLS')
 ck('verified_GUI_native_hash_matches',g['native_sha256']==sha((R/'housing/smove-r2-enclosure.FCStd').read_bytes()))
+b=read('housing/validation/build.json')
+ck('central_H1_only_no_lead_geometry',b['screw_xy_mm']==b['H1_xy_mm']==[11.8,13.35] and b['lead_geometry']=='NONE_USER_ROUTED_NOT_VERIFIED')
+ck('simplified_case_dimensions',all(abs(x-y)<1e-6 for x,y in zip(h['metrics']['current_LWH_mm'],[42,28.8,19.6])))
 ck('exactly_two_active_STLs',sorted(p.name for p in (R/'housing/dist').glob('*.stl'))==['base.stl','lid.stl'])
 ck('release_holds_retained',not read('housing/status.json')['manufacturing_release'] and not read('housing/status.json')['charging_release'])
 if '--check' in sys.argv:
@@ -44,11 +47,12 @@ else:
       'scripts/r2/enclosure/generate.py','scripts/r2/enclosure/verify.py','scripts/r2/enclosure/inspection.py','scripts/r2/enclosure/present.py','scripts/r2/enclosure/seal_delivery.py',
       'housing/InspectAssembly.FCMacro','housing/PRINTING-ASSEMBLY.md','housing/BOM.csv','housing/status.json']
     (V/'critical-source.patch').write_bytes(git('diff','--no-ext-diff','--no-color','--unified=0',BASE,'--',*focus))
+    (V/'case-revision.patch').write_bytes(git('diff','--no-ext-diff','--no-color','--unified=0','b49ade5','--',*focus))
     put('docs/revision-r2/two-part-case/validation/delivery-checks.json',{
       'status':'PASS' if all(c['passed'] for c in checks) else 'FAIL','checks':checks,'base_main':BASE,
       'original_repair':git('rev-parse',REPAIR).decode().strip(),'complete_recovery_commit':git('rev-parse',RECOVERY).decode().strip(),
       'recovered_tree':git('rev-parse',RECOVERY+'^{tree}').decode().strip(),'PCB_main_files_verified':len(pcbpaths),
-      'CAD_checks':len(h['checks']),'dimensions_LWH_mm':[42.,36.8,16.6],'manufacturing_release':False,'merged':False})
+      'CAD_checks':len(h['checks']),'dimensions_LWH_mm':[round(v,6) for v in h['metrics']['current_LWH_mm']],'manufacturing_release':False,'merged':False})
     housingfiles=[p for p in paths() if (p.startswith('housing/') or p.startswith('scripts/r2/enclosure/') or p in ('scripts/freecad/bootstrap.py','scripts/freecad/run.py')) and p!='housing/dist/manifest.json']
     put('housing/dist/manifest.json',{'schema':'smove.two-part-housing.manifest.v1','manufacturing_release':False,'printed_parts':['Base','Lid'],
       'pcb_source_sha256':h['pcb_hash'],'files':{p:{'sha256':sha((R/p).read_bytes()),'bytes':(R/p).stat().st_size} for p in housingfiles}})

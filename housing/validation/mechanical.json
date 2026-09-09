@@ -2,11 +2,21 @@
   "status": "PASS_GEOMETRIC_PROTOTYPE",
   "manufacturing_release": false,
   "measured_external_mm": [
-    36.8,
+    28.799999999999997,
     42.0,
-    16.599999999999998
+    19.599999999999998
   ],
   "metrics": {
+    "previous_LWH_mm": [
+      42,
+      36.8,
+      16.6
+    ],
+    "current_LWH_mm": [
+      42.0,
+      28.799999999999997,
+      19.599999999999998
+    ],
     "battery_acceptance_mm": [
       31,
       21,
@@ -18,9 +28,10 @@
       3
     ],
     "battery_reserved_top_gap_mm": 0.5,
+    "battery_top_gap_after_0_15_print_and_0_15_liner_mm": 0.19999999999999998,
     "barrier_thickness_mm": 0.8,
-    "USB_tail_to_barrier_nominal_mm": 1.0,
-    "USB_tail_to_barrier_with_0_15_print_error_mm": 0.85,
+    "barrier_min_thickness_mm": 0.5,
+    "USB_tail_to_barrier_nominal_mm": 4.0,
     "groove_free_height_mm": 1.5500000000000007,
     "groove_min_no_clamp_play_mm": 0.19999999999999993,
     "XY_each_side_nominal_mm": 0.3,
@@ -31,51 +42,57 @@
     "H1_filled_copper_radius_mm": 3.442612,
     "H1_stop_to_copper_nominal_mm": 1.2426119999999998,
     "H1_stop_to_copper_adverse_stack_mm": 0.5426119999999998,
-    "screw_shank_clearance_radial_mm": 0.30000000000000004,
-    "head_recess_clearance_radial_mm": 0.6600000000000001,
-    "lid_bearing_thickness_mm": 1.1999999999999993,
-    "lid_bearing_min_mm": 0.9,
-    "nut_capture_roof_mm": 4.0,
-    "nut_full_thread_length_mm": 2.4,
-    "effective_thread_overlap_after_0_4_chamfer_reserve_mm": 1.7,
-    "screw_tip_z_mm": 5.2,
+    "wide_nut_boss_to_PCB_min_mm": 0.39999999999999925,
+    "nut_to_PCB_nominal_mm": 1.5999999999999996,
+    "nut_capture_roof_mm": 0.9000000000000004,
+    "nut_capture_roof_min_mm": 0.6,
+    "NPTH_shank_nominal_radial_clearance_mm": 0.10000000000000009,
+    "NPTH_shank_clearance_with_0_05_diameter_undersize_mm": 0.07500000000000018,
+    "shank_to_copper_even_at_NPTH_edge_mm": 1.717612,
+    "lid_bearing_thickness_mm": 1.299999999999999,
+    "lid_bearing_min_mm": 1.0000000000000002,
+    "head_to_PCB_nominal_mm": 2.799999999999999,
+    "screw_tip_z_mm": 8.4,
     "screw_tip_min_floor_mm": 0.5599999999999999,
+    "screw_tip_to_max_pack_adverse_mm": 1.8600000000000012,
     "nut_engaged_nominal_mm": 2.4000000000000004,
-    "nut_engaged_adverse_mm": 2.0999999999999996,
-    "screw_head_to_PCB_nominal_mm": 3.3801775101316793,
-    "hardware_to_pack_reserve_mm": 4.25,
+    "nut_engaged_adverse_mm": 2.01,
+    "nut_effective_overlap_after_0_4_chamfer_reserve_mm": 1.6099999999999999,
+    "hardware_to_pack_reserve_mm": 2.3000000000000007,
     "RF_distances_mm": {
       "BatteryAcceptance_21x31x4_3": 1.5,
-      "BatteryWire1": 4.969999999999999,
-      "BatteryWire2": 2.4299999999999997,
-      "BareWire1": 5.219999999999999,
-      "BareWire2": 2.6799999999999997,
-      "SolderFillet1": 4.670000000000002,
-      "SolderFillet2": 2.1300000000000026,
       "ClosureScrew": 22.810000000000002,
       "ClosureNut": 22.47457351945706
     },
     "button_access_diameter_mm": 3.3,
     "RGB_access_diameter_mm": 3.8,
-    "lid_hook_nominal_engagement_mm": 1.0,
-    "lid_hook_adverse_engagement_mm": 0.5,
+    "lid_pad_min_width_mm": 1.4,
+    "lid_pad_min_length_mm": 1.4,
+    "corner_block_width_mm": 2.6,
+    "draft_LWH_mm": [
+      42,
+      28.8,
+      19.6
+    ],
+    "battery_ceiling_bridge_span_mm": 21.8,
+    "nut_slot_bridge_AF_mm": 5.8,
+    "lid_closure": "Vertical drop-on; central M3 only; no hooks or snaps",
     "PCB_groove_support_span_y_mm": 28.0,
     "PCB_groove_support_span_x_mm": 24.7,
-    "wire_OD_max_mm": 1.2,
-    "wire_centerline_bend_radius_mm": 2.0
+    "lead_geometry_or_fit_verification": "NONE; user-routed; no reserved volume"
   },
   "exports": {
     "base": {
-      "facets": 2968,
-      "stl_volume_mm3": 6834.62451171875,
-      "native_volume_mm3": 6834.872065441549,
+      "facets": 2068,
+      "stl_volume_mm3": 6258.47705078125,
+      "native_volume_mm3": 6258.59351232817,
       "closed_manifold": true,
       "consistent_orientation": true
     },
     "lid": {
-      "facets": 2620,
-      "stl_volume_mm3": 2635.324462890625,
-      "native_volume_mm3": 2635.304096480546,
+      "facets": 2604,
+      "stl_volume_mm3": 2327.9716796875,
+      "native_volume_mm3": 2327.9641360100422,
       "closed_manifold": true,
       "consistent_orientation": true
     }
@@ -86,7 +103,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 6834.872065441549
+        "volume": 6258.59351232817
       }
     },
     {
@@ -94,7 +111,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 2635.304096480546
+        "volume": 2327.9641360100422
       }
     },
     {
@@ -126,7 +143,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 31.499999999999996
+        "volume": 31.499999999999993
       }
     },
     {
@@ -158,7 +175,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.3630000000000003
+        "volume": 0.36300000000000027
       }
     },
     {
@@ -174,7 +191,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 10.090500000000004
+        "volume": 10.090500000000002
       }
     },
     {
@@ -206,7 +223,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.3630000000000003
+        "volume": 0.36300000000000027
       }
     },
     {
@@ -270,7 +287,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 3.6249999999999982
+        "volume": 3.624999999999999
       }
     },
     {
@@ -278,7 +295,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.3118500000000002
+        "volume": 0.31185000000000024
       }
     },
     {
@@ -286,7 +303,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 21.203494999999993
+        "volume": 21.203494999999997
       }
     },
     {
@@ -318,7 +335,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 525.888
+        "volume": 525.8879999999999
       }
     },
     {
@@ -342,7 +359,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 3.6249999999999982
+        "volume": 3.6249999999999987
       }
     },
     {
@@ -382,7 +399,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 19.988974999999996
+        "volume": 19.988975
       }
     },
     {
@@ -390,7 +407,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 8.100000000000001
+        "volume": 8.1
       }
     },
     {
@@ -406,7 +423,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 21.203494999999993
+        "volume": 21.203494999999997
       }
     },
     {
@@ -414,7 +431,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.31184999999999985
+        "volume": 0.3118499999999999
       }
     },
     {
@@ -430,7 +447,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 3.624999999999999
+        "volume": 3.625
       }
     },
     {
@@ -454,7 +471,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.3118500000000002
+        "volume": 0.31185000000000024
       }
     },
     {
@@ -462,7 +479,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 31.499999999999996
+        "volume": 31.5
       }
     },
     {
@@ -486,7 +503,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.18999999999999978
+        "volume": 0.34199999999999964
       }
     },
     {
@@ -494,7 +511,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.1899999999999997
+        "volume": 0.3419999999999995
       }
     },
     {
@@ -502,7 +519,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.18999999999999978
+        "volume": 0.37999999999999956
       }
     },
     {
@@ -510,7 +527,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 0.1899999999999997
+        "volume": 0.37999999999999945
       }
     },
     {
@@ -530,75 +547,11 @@
       }
     },
     {
-      "check": "valid_solid:BatteryWire1",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 21.064127621865882
-      }
-    },
-    {
-      "check": "valid_solid:BareWire1",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 0.8081747101359739
-      }
-    },
-    {
-      "check": "valid_solid:SolderFillet1",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 1.526814029644639
-      }
-    },
-    {
-      "check": "valid_solid:WireLacing1",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 1.3678438609184687
-      }
-    },
-    {
-      "check": "valid_solid:BatteryWire2",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 21.064127621865886
-      }
-    },
-    {
-      "check": "valid_solid:BareWire2",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 0.8081747101359739
-      }
-    },
-    {
-      "check": "valid_solid:SolderFillet2",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 1.526814029644639
-      }
-    },
-    {
-      "check": "valid_solid:WireLacing2",
-      "passed": true,
-      "detail": {
-        "solids": 1,
-        "volume": 1.3678438609184687
-      }
-    },
-    {
       "check": "valid_solid:ClosureScrew",
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 123.36363696978809
+        "volume": 123.36363696978813
       }
     },
     {
@@ -606,7 +559,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 45.90884398536536
+        "volume": 45.90884398536535
       }
     },
     {
@@ -1170,86 +1123,6 @@
       "detail": 0.0
     },
     {
-      "check": "Base_no_penetration:BatteryWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:BatteryWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:BareWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:BareWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:SolderFillet1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:SolderFillet1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:WireLacing1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:WireLacing1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:BatteryWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:BatteryWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:BareWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:BareWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:SolderFillet2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:SolderFillet2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Base_no_penetration:WireLacing2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "Lid_no_penetration:WireLacing2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
       "check": "Base_no_penetration:ClosureScrew",
       "passed": true,
       "detail": 0.0
@@ -1266,966 +1139,6 @@
     },
     {
       "check": "Lid_no_penetration:ClosureNut",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "pcb_no_penetration:BatteryWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_SW2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R17",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_D1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_J1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R23",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R18",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R15",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R22",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R20",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R19",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R12",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_U8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R16",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_C11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R21",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_SW3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_R14",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire1:Main_USB_ShellTails",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "pcb_no_penetration:BatteryWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_SW2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R17",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_D1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_J1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R23",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R18",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R15",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R22",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R20",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R19",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R12",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_U8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R16",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_C11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R21",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_SW3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_R14",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BatteryWire2:Main_USB_ShellTails",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "pcb_no_penetration:BareWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_SW2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R17",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_D1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_J1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R23",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R18",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R15",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R22",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R20",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R19",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R12",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_U8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R16",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_C11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R21",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_SW3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_R14",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire1:Main_USB_ShellTails",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "pcb_no_penetration:BareWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_SW2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R17",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_D1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_J1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R23",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R18",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R15",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R7",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U4",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C5",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R10",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R13",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R22",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R20",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R19",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U9",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U6",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R12",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_U8",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R16",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_C11",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R21",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_SW3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_R14",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "component_clear:BareWire2:Main_USB_ShellTails",
       "passed": true,
       "detail": 0.0
     },
@@ -2740,52 +1653,82 @@
       "detail": 0.0
     },
     {
-      "check": "cell_wire_no_penetration:1",
+      "check": "removed_geometry:Wire",
       "passed": true,
-      "detail": 0.0
+      "detail": null
     },
     {
-      "check": "cell_wire_no_penetration:2",
+      "check": "removed_geometry:Solder",
       "passed": true,
-      "detail": 0.0
+      "detail": null
     },
     {
-      "check": "independent_insulated_leads",
+      "check": "removed_geometry:Lacing",
       "passed": true,
-      "detail": 0.0
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:PackLead",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:ViewCables",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:ClosureBossWeb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:CaptiveNutDoor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:Hook",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:SeatWeb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:NorthStopWeb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:PCB_X_Stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:PCB_Y_Stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:GrooveUpperLip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed_geometry:NutEntryRetainer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "lead_verification_explicitly_absent",
+      "passed": true,
+      "detail": null
     },
     {
       "check": "RF_exclusion:BatteryAcceptance_21x31x4_3",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:BatteryWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:BatteryWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:BareWire1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:BareWire2",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:SolderFillet1",
-      "passed": true,
-      "detail": 0.0
-    },
-    {
-      "check": "RF_exclusion:SolderFillet2",
       "passed": true,
       "detail": 0.0
     },
@@ -2865,102 +1808,107 @@
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z12",
+      "check": "lid_vertical_insertion_z16",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z6",
+      "check": "lid_vertical_insertion_z12",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z3",
+      "check": "lid_vertical_insertion_z6",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z1",
+      "check": "lid_vertical_insertion_z3",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z0.5",
+      "check": "lid_vertical_insertion_z1",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z0.2",
+      "check": "lid_vertical_insertion_z0.5",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_lowering_z0",
+      "check": "lid_vertical_insertion_z0.2",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-1.5",
+      "check": "lid_vertical_insertion_z0",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-1.25",
+      "check": "nut_front_insertion_y-6",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-1.0",
+      "check": "nut_front_insertion_y-4",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-0.75",
+      "check": "nut_front_insertion_y-2",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-0.5",
+      "check": "nut_front_insertion_y-1",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y-0.25",
+      "check": "nut_front_insertion_y0",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "lid_sliding_y0",
+      "check": "screw_vertical_insertion_z0",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x-8",
+      "check": "screw_vertical_insertion_z0.25",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x-6",
+      "check": "screw_vertical_insertion_z0.5",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x-4",
+      "check": "screw_vertical_insertion_z1",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x-2",
+      "check": "screw_vertical_insertion_z2",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x-1",
+      "check": "screw_vertical_insertion_z4",
       "passed": true,
       "detail": 0.0
     },
     {
-      "check": "nut_side_insertion_x0",
+      "check": "screw_vertical_insertion_z8",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "screw_vertical_insertion_z16",
       "passed": true,
       "detail": 0.0
     },
@@ -2968,9 +1916,9 @@
       "check": "actual_external_dimensions",
       "passed": true,
       "detail": [
-        36.8,
+        28.799999999999997,
         42.0,
-        16.599999999999998
+        19.599999999999998
       ]
     },
     {
@@ -2979,10 +1927,10 @@
       "detail": [
         0.0,
         9.0,
-        9.6,
+        12.6,
         25.0,
         39.0,
-        10.6
+        13.600000000000001
       ]
     },
     {
@@ -2991,14 +1939,14 @@
       "detail": null
     },
     {
-      "check": "positive_tolerance_stack:battery_reserved_top_gap_mm",
+      "check": "positive_tolerance_stack:battery_top_gap_after_0_15_print_and_0_15_liner_mm",
       "passed": true,
-      "detail": 0.5
+      "detail": 0.19999999999999998
     },
     {
-      "check": "positive_tolerance_stack:USB_tail_to_barrier_with_0_15_print_error_mm",
+      "check": "positive_tolerance_stack:barrier_min_thickness_mm",
       "passed": true,
-      "detail": 0.85
+      "detail": 0.5
     },
     {
       "check": "positive_tolerance_stack:groove_min_no_clamp_play_mm",
@@ -3021,9 +1969,29 @@
       "detail": 0.5426119999999998
     },
     {
+      "check": "positive_tolerance_stack:wide_nut_boss_to_PCB_min_mm",
+      "passed": true,
+      "detail": 0.39999999999999925
+    },
+    {
+      "check": "positive_tolerance_stack:nut_capture_roof_min_mm",
+      "passed": true,
+      "detail": 0.6
+    },
+    {
+      "check": "positive_tolerance_stack:NPTH_shank_clearance_with_0_05_diameter_undersize_mm",
+      "passed": true,
+      "detail": 0.07500000000000018
+    },
+    {
+      "check": "positive_tolerance_stack:shank_to_copper_even_at_NPTH_edge_mm",
+      "passed": true,
+      "detail": 1.717612
+    },
+    {
       "check": "positive_tolerance_stack:lid_bearing_min_mm",
       "passed": true,
-      "detail": 0.9
+      "detail": 1.0000000000000002
     },
     {
       "check": "positive_tolerance_stack:screw_tip_min_floor_mm",
@@ -3033,20 +2001,65 @@
     {
       "check": "positive_tolerance_stack:nut_engaged_adverse_mm",
       "passed": true,
-      "detail": 2.0999999999999996
+      "detail": 2.01
     },
     {
-      "check": "positive_tolerance_stack:lid_hook_adverse_engagement_mm",
-      "passed": true,
-      "detail": 0.5
-    },
-    {
-      "check": "screw_is_not_at_H1",
+      "check": "ONLY_central_H1_screw",
       "passed": true,
       "detail": null
     },
     {
-      "check": "nut_effective_engagement_min",
+      "check": "width_under_30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "corner_root_full_section:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "broad_lid_pad:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "corner_root_full_section:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "broad_lid_pad:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "corner_root_full_section:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "broad_lid_pad:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "corner_root_full_section:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "broad_lid_pad:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "front_nut_stop_integral",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nut_geometric_engagement_min_2",
       "passed": true,
       "detail": null
     },
@@ -3057,6 +2070,16 @@
     },
     {
       "check": "blind_bore_tolerance_stack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "intact_battery_barrier_under_screw",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "H1_stop_annular_bore",
       "passed": true,
       "detail": null
     },
@@ -3073,8 +2096,8 @@
       "check": "STL_volume_matches:base",
       "passed": true,
       "detail": {
-        "native": 6834.872065441549,
-        "stl": 6834.62451171875
+        "native": 6258.59351232817,
+        "stl": 6258.47705078125
       }
     },
     {
@@ -3090,8 +2113,8 @@
       "check": "STL_volume_matches:lid",
       "passed": true,
       "detail": {
-        "native": 2635.304096480546,
-        "stl": 2635.324462890625
+        "native": 2327.9641360100422,
+        "stl": 2327.9716796875
       }
     },
     {
@@ -3135,11 +2158,6 @@
       "detail": null
     },
     {
-      "check": "movable_native_group:ViewCables",
-      "passed": true,
-      "detail": null
-    },
-    {
       "check": "movable_native_group:ViewHardware",
       "passed": true,
       "detail": null
@@ -3151,6 +2169,6 @@
     }
   ],
   "failed": [],
-  "method": "Open saved FCStd, native BRep intersections/distances, pack continuous translation swept solid, sampled PCB/lid/nut insertion, independent STEP and STL imports. No FEA or physical qualification.",
+  "method": "Open saved FCStd, native BRep intersections/distances, pack continuous translation swept solid, sampled PCB/lid/nut/screw insertion; leads entirely omitted, independent STEP and STL imports. No FEA or physical qualification.",
   "pcb_hash": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59"
 }

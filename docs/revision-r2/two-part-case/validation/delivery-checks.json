@@ -46,6 +46,14 @@
       "passed": true
     },
     {
+      "check": "central_H1_only_no_lead_geometry",
+      "passed": true
+    },
+    {
+      "check": "simplified_case_dimensions",
+      "passed": true
+    },
+    {
       "check": "exactly_two_active_STLs",
       "passed": true
     },
@@ -59,11 +67,11 @@
   "complete_recovery_commit": "0610d6089709b7a3ab8cbbeba5724ba872ca59de",
   "recovered_tree": "1ff4b970924658a1613f140c7977822529349db2",
   "PCB_main_files_verified": 89,
-  "CAD_checks": 569,
+  "CAD_checks": 374,
   "dimensions_LWH_mm": [
     42.0,
-    36.8,
-    16.6
+    28.8,
+    19.6
   ],
   "manufacturing_release": false,
   "merged": false

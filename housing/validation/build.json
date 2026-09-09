@@ -1,23 +1,22 @@
 {
   "status": "GENERATED_REQUIRE_VERIFY",
   "parameters_mm": {
-    "XMin": -9.6,
-    "XMax": 27.2,
+    "XMin": -1.9,
+    "XMax": 26.9,
     "YMin": 4.6,
     "YMax": 46.6,
     "Floor": 1.6,
-    "Wall": 1.8,
-    "MainBottom": 9.6,
-    "RoofBottom": 15.2,
+    "Wall": 1.4,
+    "MainBottom": 12.6,
+    "RoofBottom": 18.2,
     "Roof": 1.4,
     "BarrierBottom": 6.6,
     "BarrierThickness": 0.8,
-    "ScrewX": -5.0,
+    "ScrewX": 11.8,
     "ScrewY": 13.35,
-    "ScrewStop": 12.0,
-    "ScrewUnderHead": 13.2,
+    "ScrewUnderHead": 16.4,
     "ScrewLength": 8.0,
-    "GrooveCeiling": 11.15
+    "GrooveCeiling": 14.15
   },
   "reference_objects": [
     "MainPCB",
@@ -73,15 +72,7 @@
     "SeatLiner3",
     "SeatLiner4",
     "PocketFloorLiner",
-    "BatteryCandidate_UNQUALIFIED",
-    "BatteryWire1",
-    "BareWire1",
-    "SolderFillet1",
-    "WireLacing1",
-    "BatteryWire2",
-    "BareWire2",
-    "SolderFillet2",
-    "WireLacing2"
+    "BatteryCandidate_UNQUALIFIED"
   ],
   "hardware_objects": [
     "ClosureScrew",
@@ -89,33 +80,30 @@
   ],
   "clearance_objects": [
     "BatteryAcceptance_21x31x4_3",
-    "RF_NO_BATTERY_HARNESS_METAL",
-    "USBPlugReserve",
-    "LacingKnotReserve1",
-    "LacingKnotReserve2"
+    "RF_NO_BATTERY_METAL",
+    "USBPlugReserve"
   ],
   "inspection_groups": [
     "ViewBase",
     "ViewLid",
     "ViewMain",
     "ViewBattery",
-    "ViewCables",
     "ViewHardware",
     "ViewInsulation"
   ],
   "parts": {
     "base": {
-      "volume_mm3": 6834.872065441548,
-      "triangles": 2968
+      "volume_mm3": 6258.59351232817,
+      "triangles": 2068
     },
     "lid": {
-      "volume_mm3": 2635.304096480546,
-      "triangles": 2620
+      "volume_mm3": 2327.9641360100422,
+      "triangles": 2604
     }
   },
-  "pcb_bottom_z_mm": 9.6,
+  "pcb_bottom_z_mm": 12.6,
   "screw_xy_mm": [
-    -5,
+    11.8,
     13.35
   ],
   "H1_xy_mm": [
@@ -125,11 +113,11 @@
   "seat_xy_mm": [
     [
       -0.4,
-      9.0
+      9.1
     ],
     [
       24.3,
-      9.0
+      9.1
     ],
     [
       -0.4,
@@ -140,63 +128,18 @@
       37.0
     ]
   ],
-  "pack_route_points_mm": [
-    [
-      [
-        4.5,
-        33.43,
-        11.2
-      ],
-      [
-        4.5,
-        33.43,
-        13.2
-      ],
-      [
-        -1.5,
-        33.43,
-        13.2
-      ],
-      [
-        -1.5,
-        33.43,
-        3.5
-      ],
-      [
-        2.0,
-        33.43,
-        3.5
-      ]
-    ],
-    [
-      [
-        4.5,
-        35.97,
-        11.2
-      ],
-      [
-        4.5,
-        35.97,
-        13.2
-      ],
-      [
-        -1.5,
-        35.97,
-        13.2
-      ],
-      [
-        -1.5,
-        35.97,
-        3.5
-      ],
-      [
-        2.0,
-        35.97,
-        3.5
-      ]
-    ]
+  "lead_geometry": "NONE_USER_ROUTED_NOT_VERIFIED",
+  "previous_LWH_mm": [
+    42,
+    36.8,
+    16.6
   ],
-  "pack_route_length_mm": 37.24955592153876,
+  "prior_central_draft_LWH_mm": [
+    42,
+    28.8,
+    19.6
+  ],
+  "print_simplification": "Four wall-rooted corner blocks, broad lid pads, integral front nut stop, straight-down lid; no hook features or slender fences",
   "input_hash": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
   "printed_parts": 2
 }

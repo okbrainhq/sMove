@@ -1,0 +1,243 @@
+{
+  "schema": "smove.cleanup-inventory.v1",
+  "inventory_only": true,
+  "deleted_files": [],
+  "primary_branch": "main",
+  "main_commit": "554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb",
+  "master_local_or_remote_found": false,
+  "review_branch": "okbrain/smove-files/028-91691739",
+  "groups": {
+    "obsolete_carrier_generated_exports": {
+      "prefixes": [
+        "PCB/imu-carrier/dist/"
+      ],
+      "decision": "Candidate generated-output cleanup only after approval; carrier is archival and unused by current housing.",
+      "files": {
+        "PCB/imu-carrier/dist/ASSEMBLY.md": {
+          "bytes": 1567,
+          "sha256": "fc57642cfb934d566c63298265da97f0242874f32e2cecb878457d61b001f685"
+        },
+        "PCB/imu-carrier/dist/BOM.csv": {
+          "bytes": 604,
+          "sha256": "deb6f633e8148842fbf713828b081dd4a589149c61f24c1c53e4ed7d274f7fd5"
+        },
+        "PCB/imu-carrier/dist/assembly-placements.json": {
+          "bytes": 14866,
+          "sha256": "b037eceeb8d6409dbde19260dd0d4d0bb561f0f47837eb797c200695eb533761"
+        },
+        "PCB/imu-carrier/dist/assembly-top.pdf": {
+          "bytes": 32796,
+          "sha256": "593b5ab4e0c0edf99471de218e499f529d960024fa19ef85ada8831aa700d32f"
+        },
+        "PCB/imu-carrier/dist/bottom-3d.png": {
+          "bytes": 47365,
+          "sha256": "9d492d5092eef1396ca8e6c31393e5c8dbcf4b230835b820f21d9db6f18637e2"
+        },
+        "PCB/imu-carrier/dist/bottom.svg": {
+          "bytes": 111087,
+          "sha256": "8048236ffc3ce59bcfb192a54742cd8d27ea9ac6027e59811fc3fd1c0706a089"
+        },
+        "PCB/imu-carrier/dist/carrier-assembly.step": {
+          "bytes": 628272,
+          "sha256": "e2aa41c39bafd56c41e889067aff3b8405f9b4fc1a3a61a15c685de81c2ed871"
+        },
+        "PCB/imu-carrier/dist/carrier-board-only.step": {
+          "bytes": 16987,
+          "sha256": "b10ad64f04dfdcd265ca4773111d6e3184b059a04b0c78198c15e5d3dd430a76"
+        },
+        "PCB/imu-carrier/dist/gerbers.zip": {
+          "bytes": 32982,
+          "sha256": "e60bc7770e2c88654b3033f09dbb2abc7dfb291916ad1105dd1e767a0d2ab7ac"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Cu.gbl": {
+          "bytes": 27947,
+          "sha256": "65614389d57d07da9b9e1a7e8056e724a96af7800008d5074d3eb6e61e77329d"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Mask.gbs": {
+          "bytes": 487,
+          "sha256": "7cbbacf09e357bd792b2641c3eac9621ba5bbc56e57f8321da4c3cc81cee74ab"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Silkscreen.gbo": {
+          "bytes": 12972,
+          "sha256": "5aad98d9b42ce12c25a61a4c373477959e4e1126b792bbdaca59746a9a1a4d5b"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-Edge_Cuts.gm1": {
+          "bytes": 684,
+          "sha256": "e6de8193d1a56800c623274feb8e315359c0cd58e340a81458bc6aa8f4f9b13e"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Cu.gtl": {
+          "bytes": 21700,
+          "sha256": "e904d2dad3688c676c9c065b3de411ae4389e5b75d6fdb175be499bdc7913a42"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Mask.gts": {
+          "bytes": 3913,
+          "sha256": "599184a5e60330f4b1fa40097bebdc413c6aa935d9730bc3bf409a91806a5848"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Paste.gtp": {
+          "bytes": 3908,
+          "sha256": "acf5a4a69a6ff5b5cc847381aa87d23bdd65283298aec20b7751d99b90d7aa8a"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Silkscreen.gto": {
+          "bytes": 9023,
+          "sha256": "01f3e819c7b686d4a155d3252daddf7c997e654b9a028b7878d02d814a7ee528"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In1_Cu.g1": {
+          "bytes": 17696,
+          "sha256": "4e8404f4765f8517669c506eacb144af48fe74ad0b4a2a768cf9ef85b141272a"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In2_Cu.g2": {
+          "bytes": 22464,
+          "sha256": "10a14dd8856333940bcebfaa15b8bbb37857d5158b0821c93efeb4a1c7bca4c0"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-NPTH.drl": {
+          "bytes": 390,
+          "sha256": "58f0174ca309c9bad974a529f754ddf808be6b33f2426e68d87789d53c5cd7ce"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-PTH.drl": {
+          "bytes": 658,
+          "sha256": "b0f241a97ac2b57cbf5b8ee1777d53a7c7fc4734af71c90177ba3ab5e6950a38"
+        },
+        "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-job.gbrjob": {
+          "bytes": 3636,
+          "sha256": "9b76f9ad5ba06afed25bdba57a42fc632a045cbc4e4ae3e0473534b6f7211af5"
+        },
+        "PCB/imu-carrier/dist/manifest.json": {
+          "bytes": 7105,
+          "sha256": "083089613ffe21ff30ea471980d089363c8dc10b16583423fa59498c2f20e567"
+        },
+        "PCB/imu-carrier/dist/pick-and-place.csv": {
+          "bytes": 497,
+          "sha256": "554b2593a1417573d4455b37aeb66a11bd2b668e1b81d09729025b9eb1321390"
+        },
+        "PCB/imu-carrier/dist/schematic-svg/smove-imu-carrier.svg": {
+          "bytes": 930927,
+          "sha256": "36b524d3b3515f4d4c143688c4d7f20f0aa20468da3f273644a58e679430dc97"
+        },
+        "PCB/imu-carrier/dist/schematic.pdf": {
+          "bytes": 172412,
+          "sha256": "de52928cebdddd3ae7005b02628ee461b64bc28d3a613365b8b9179b12afb9af"
+        },
+        "PCB/imu-carrier/dist/schematic.png": {
+          "bytes": 169897,
+          "sha256": "78381f4d8daa25396301b08e17d60ea7772645d3e25104664b7ddcf8ca9f15ac"
+        },
+        "PCB/imu-carrier/dist/top-3d.png": {
+          "bytes": 68332,
+          "sha256": "b10bae6fc1133f15aac1623a453c714ccf6dcb5409631e1414f70d946bfd8184"
+        },
+        "PCB/imu-carrier/dist/top.svg": {
+          "bytes": 177810,
+          "sha256": "b839aa8c17c21ae3e41c33616a7e00896f8edb64f8287879b044bc1f598fd044"
+        }
+      },
+      "file_count": 29
+    },
+    "obsolete_case_comparison_renders": {
+      "prefixes": [
+        "docs/revision-r2/compact-placement/images/"
+      ],
+      "decision": "Candidate old comparison renders; retain switch-drawing.png source reference and review narrative unless separately approved.",
+      "files": {
+        "docs/revision-r2/compact-placement/images/A_32_two_M3.png": {
+          "bytes": 48357,
+          "sha256": "9f4941044176b779550da5ec738cb3fe35f8935e04380a4d3f42108803569645"
+        },
+        "docs/revision-r2/compact-placement/images/B_30_single_M3_keyed.png": {
+          "bytes": 49679,
+          "sha256": "20a5d1852a05c184bff53b5140037d77db15f2deb436f50f646acd645e740507"
+        },
+        "docs/revision-r2/compact-placement/images/C_29_single_M3_tight.png": {
+          "bytes": 48616,
+          "sha256": "6025b2eb8dc3fbb99c752e2a73beef62e85647954e17cf66515fb0b2bfdecbd0"
+        },
+        "docs/revision-r2/compact-placement/images/before-dimensions.png": {
+          "bytes": 22348,
+          "sha256": "395658a3b71e610a2cb21a0822c8c3178816f08543c1cc7f38223d6307e4a4cc"
+        },
+        "docs/revision-r2/compact-placement/images/before-housing.png": {
+          "bytes": 101463,
+          "sha256": "278d0605d65d021eea40e239f57a2bf5c8c2b751f3a18e713056296b5dd3cafd"
+        },
+        "docs/revision-r2/compact-placement/images/before-pcb.png": {
+          "bytes": 122263,
+          "sha256": "bdfaaf0eb3a46f35dd5af7197f17c935599215704f660c73e7c8a92f8ef66317"
+        },
+        "docs/revision-r2/compact-placement/images/housing-comparison.png": {
+          "bytes": 241853,
+          "sha256": "afa43e6db53b529c14b6c6e31869cea9c8a746222c803e1adb3e0bb2bfa42e16"
+        },
+        "docs/revision-r2/compact-placement/images/pcb-comparison.png": {
+          "bytes": 329213,
+          "sha256": "c33100f0398d7f161e8ddccb8947aeb150aea7535218c6c58d17bdb0f9308b74"
+        }
+      },
+      "file_count": 8
+    },
+    "archived_rgb_views": {
+      "prefixes": [
+        "docs/revision-r2/rgb-body/views/"
+      ],
+      "decision": "Candidate generated historical views; retain underlying electrical reference evidence.",
+      "files": {
+        "docs/revision-r2/rgb-body/views/rgb-close-up.png": {
+          "bytes": 64582,
+          "sha256": "4c4e448aa1d6195b17eff5c722c2cfd2cb1c52ca2ea539bc00338127506d1b26"
+        },
+        "docs/revision-r2/rgb-body/views/rgb-close-up.svg": {
+          "bytes": 948022,
+          "sha256": "d8a7f3cdc969b8b7ad6cbdf52978c7f2df6b532b5a2ac6d27d1fb5172ccbe153"
+        }
+      },
+      "file_count": 2
+    },
+    "historical_repair_attempts_PRESERVE_FOR_NOW": {
+      "prefixes": [
+        "docs/revision-r2/pcb-repair/review/attempts/"
+      ],
+      "decision": "NOT approved for cleanup; part of complete inherited repair evidence. Failed boards are not manufacturing inputs.",
+      "files": {
+        "docs/revision-r2/pcb-repair/review/attempts/faf335b-recovered.kicad_pcb": {
+          "bytes": 822120,
+          "sha256": "2d889f1cd9f2bcabf6698f3143a96e1abe05fe1908547d6d90a997a21cde4324"
+        },
+        "docs/revision-r2/pcb-repair/review/attempts/freerouting-input.dsn": {
+          "bytes": 139439,
+          "sha256": "49acbdadcc17e7fe1adac08ca99cd2443f823aa7b2e4341cfeb091e032bf309f"
+        },
+        "docs/revision-r2/pcb-repair/review/attempts/freerouting-rejected-3-opens-In1.kicad_pcb": {
+          "bytes": 828297,
+          "sha256": "9cda3709af24803d640d08af8cab79e80d29a2741c8f068188664d91f179f6e5"
+        },
+        "docs/revision-r2/pcb-repair/review/attempts/freerouting-result.ses": {
+          "bytes": 16398,
+          "sha256": "b24dac234b0160d819f22adc2f923cb8f896225c602a917170143b55e393d6e5"
+        },
+        "docs/revision-r2/pcb-repair/review/attempts/manual-refilled-15-opens.kicad_pcb": {
+          "bytes": 822245,
+          "sha256": "8688bf426bed7712d09d0c89b2098f787abfd36cb98f115de19f55ad1cd56a27"
+        }
+      },
+      "file_count": 5
+    },
+    "PCB_backup_PRESERVE_FOR_NOW": {
+      "prefixes": [
+        "PCB/main/smove-r2-main-backups/"
+      ],
+      "decision": "NOT approved; preserving byte-identical PCB/main delivery. Later remove only explicit named backup after provenance review.",
+      "files": {
+        "PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip": {
+          "bytes": 331150,
+          "sha256": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021"
+        }
+      },
+      "file_count": 1
+    }
+  },
+  "primary_untracked_preserve": [
+    "PCB/imu-carrier/fp-info-cache",
+    "housing/smove-r2-enclosure/",
+    "housing/smove-r2-enclosure (2)/",
+    "housing/smove-r2-enclosure (3)/"
+  ],
+  "protection": "No blanket git clean, reset, history purge, branch delete, worktree removal or automatic deletion of untracked files. Re-inventory and authorize exact paths after review."
+}

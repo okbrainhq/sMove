@@ -1,41 +1,46 @@
-# Combined delivery: inherited PCB repair + secondary two-part case
+# Review delivery — repaired PCB + simpler central-screw case
 
-**Review only. No merge, firmware change, advisor or extra chat. Manufacturing/charging release=false.** PCB routing repair was prioritized and recovered/verified before any casing change. At the user's cost checkpoint, work converged on documentation, delivery validation and commit only; no optional enhancement or extended design loop was added.
+The user accepted retaining the current central-screw/battery layout and requested simpler printing. This revision **implements that simplification now**, superseding the side-screw case in `b49ade5` and the uncommitted thin-feature central draft. **No merge, cleanup, firmware work, advisor or extra chat.**
 
-## Recovery and electrical delivery
+## Complete PCB repair preserved
 
-- Main starting point: `554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb`.
-- The **complete committed repair `e033031`** was found on `okbrain/smove-files/027-cfe55441`. Its parent was exactly main. Clean-workspace cherry-pick created **`0610d60`**, with a tree exactly equal to `e033031`. No destructive reset, reconstruction, partial-file substitute or merge.
-- Entire `PCB/main` remains byte-identical to the recovered repair, including native PCB, schematic, rules, placement metadata, BOM/CPL, Gerbers/drills, PDFs, STEP and images. No new copper keepouts or routing changes were needed for the new off-board closure.
-- Fresh native KiCad checks in `validation/inherited-drc.json` and `inherited-erc.json`: **0 ERC, 0 DRC, 0 opens, 0 schematic parity issues**, all severities/all-track errors enabled. Fresh schematic netlist semantically matches the repaired baseline. The inherited read-only verifier again passed **170 source/electrical/geometric checks**, with unchanged rules and USB routes.
-- PCB remains **25×30×1 mm**. BAT+ `(104.5,105.57)`, BAT− `(104.5,103.03)` mm stay by the shielded ESP side. H1 `(111.8,125.65)` stays below IMU U2. Historical routing attempts are retained as evidence, **not manufacturing inputs**.
+Main baseline: `554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb`. Complete committed repair `e033031` was safely cherry-picked as **`0610d60`** before any case work; their complete trees are identical. No reconstruction or destructive reset.
 
-Read the untouched [PCB-only repair report](../pcb-repair/README.md), [mechanical handoff](../pcb-repair/mechanical-handoff.md) and [inherited critical diff](../pcb-repair/review/critical-diff.md). Their incompatible-housing statements refer to the old case and remain preserved; this new case is separately bound to the exact PCB hash and still under physical release hold.
+All **89 files in PCB/main remain byte-identical** to the recovered repair, including native PCB/schematic/rules, parts/contract/interface, Gerbers/drills, BOM/CPL, PDF and STEP. Fresh native KiCad reports: **0 ERC / 0 DRC / 0 opens / 0 schematic parity issues**, all severities/all-track errors enabled. The inherited read-only verifier again passed 170 checks with unchanged USB routes, rules and nets. Its historical old-bearing release hold remains preserved; it is not the new case's geometry report.
 
-## Secondary casing delivery
+PCB: **25×30×1 mm**; existing Ø3.2 NPTH H1 at `(111.8,125.65)` below IMU, unchanged BAT+ `(104.5,105.57)` and BAT− `(104.5,103.03)` beside the shielded ESP side. No rerouting or copper ECO.
 
-**42.0 L × 36.8 W × 16.6 H mm**, including recessed M3×8. Exactly **Base + Lid**, with integrated battery ceiling and integrated lid front skirt; no divider or optional third panel. Battery slides into the bottom base; PCB drops above it into split grooves. The closure uses one screw and two captive north hooks.
+[Recovered repair report](../pcb-repair/README.md) · [Mechanical handoff](../pcb-repair/mechanical-handoff.md) · [Inherited routing diff](../pcb-repair/review/critical-diff.md).
 
-The critical old 0.042612 mm copper/bearing margin is not reused. **The M3 axis is moved completely outside the PCB and pack projections**, local `(−5,13.35)`, and clamp load bypasses both. H1 has only a normally non-contact insulating stop, radius 2.2 mm, with **0.542612 mm residual copper margin after the stated adverse lateral stack**. PCB screw preload is eliminated by design rather than relying on solder mask or a barely smaller metal washer. This increases width but keeps height modest without assuming either 120 mm or an unconfirmed 12 mm target.
+## Current two-part design
 
-Nominal **30×20×3 mm** battery candidate; **31×21×4.3 mm complete-pack** reserve. No actual pack is qualified. PCB/USB solder cannot rest on the pouch: 0.8 mm integral plastic barrier, 0.5 mm clearance above the admission pack, and 1.0 mm nominal / 0.85 mm print-screened clearance below USB-tail reserve. Leads have a west corridor, R2 bends and lacing reserves. Main underside faces the body, accel/gyro +Z outward; RGB/USB/BOOT/RESET access remains.
+| Complete L × W × H, mm | Dimensions |
+|---|---|
+| Committed side-screw case b49ade5 | 42.0 × 36.8 × 16.6 |
+| Accepted central draft | 42.0 × 28.8 × 19.6 |
+| **Simplified current case** | **42.0 × 28.8 × 19.6** |
 
-## Verification and boundaries
+- **Base + Lid only**. Four stout wall-rooted corner blocks replace small posts/webs/fences; broad lid pads replace thin lips. No hooks, undercut hook pockets, snap tabs or lid slide. Front nut stop is integrated into the entry skirt.
+- **One central M3×8 through H1**, no side ear/screw. Head bears on insulating lid; captured nut and blind screw tip are above the sealed battery ceiling. PCB is groove-retained, not a compressed spacer.
+- Same 30×20×3 candidate / **31×21×4.3 complete-pack allowance**, no squeeze. Main underside body-facing, IMU +Z outward, USB/buttons/RGB retained. No wires, channels or reserved lead volume; user routes leads and no fit is claimed.
+- Battery remains behind the inherited antenna exclusion. It cannot be moved directly underneath the antenna without violating that exclusion; full-pack motion to its stop leaves 1 mm at the forward boundary. Broad RF compliance is not established.
+- Height is intentionally retained: at the prior side-screw under-head Z13.2, an 8 mm central screw would end at Z5.2 inside the pack. The current tip is Z8.4 above the barrier. No unapproved PCB-hole move or shorter battery substitution.
 
-- Saved FCStd reopened independently: **569 passing geometric checks**; base and lid each one valid solid, no nominal assembly penetrations, maximum-pack continuous insertion sweep clear, PCB/lid/nut insertion samples clear, screw/nut engagement and critical tolerance arithmetic recorded.
-- Both STLs are closed/manifold and consistently oriented; volumes match native parts within the verifier tolerance. Printable STEP contains exactly two valid solids and matches native volume. Assembly STEP carries the complete nominal conservative assembly.
-- Actual FreeCAD GUI executed the delivered inspection macro; explode, restore, lid display lift and independent battery movement were checked without changing engineering placements. [GUI assembled/exploded URLs](images.md) show actual desktop observations, not fabricated screenshots.
-- No physical printer, pouch sample, torque/creep, pull/flex, RF, magnetic, thermal, ingress, drop or on-body test occurred. Nominal no-overlap is **not** physical qualification. Groove float, ceiling bridging, isolated-pack assembly and complete protected-pack/charger suitability remain explicit blockers.
+## Verification and physical holds
 
-See [housing overview](../../../housing/README.md), [detailed assembly and tolerance requirements](../../../housing/PRINTING-ASSEMBLY.md), `housing/validation/mechanical.json` and `housing/status.json`.
+**374 passing mechanical checks**, including valid single-solid prints, no nominal case/PCB/component/pack/hardware interference, vertical PCB/lid/screw insertion, pack swept insertion, nut insertion, STEP solid counts/volume, manifold STL checks and current-only feature assertions. Movable GUI controls passed; source placements stayed fixed. Checks are nominal geometry and explicit additive tolerances, **not FEA or print qualification**.
 
-## Critical diffs, manifest and integration
+Central thread overlap: **2.40 nominal / 2.01 adverse geometric mm**, approximately **1.61 mm after chamfer reserve**. Adverse tip-floor clearance **0.56 mm**. The R2.2 non-contact plastic H1 stop retains **0.542612 mm** radial copper budget. Only 0.10 mm nominal M3-to-NPTH radial play: actual smooth alignment is mandatory, never force the PCB.
 
-- [Critical source changes](critical-diff.md) and `critical-source.patch`: focused source diff against main, covering the inherited placement/repair policy plus active casing sources. This excerpt is not a standalone integration patch.
-- `validation/delivery-checks.json`: recovery tree proof, fresh ERC/DRC/net parity, unchanged inherited PCB subtree, CAD/export checks and unchanged main.
-- `manifest.json`: **complete final repository-file manifest**, including every inherited repair path and its original hash, all current source/native/manufacturing/doc files, and retired paths. It excludes only its own self-hash. Historical files are explicitly not all fabrication inputs.
-- `housing/dist/manifest.json`: current housing source/artifact hashes. Inherited `PCB/main/dist/manifest.json` remains untouched.
+**Release remains false:** bridge/slot print quality, nut roof/beam/lid stiffness and low-preload creep, far-edge lid lift without hooks, insulating seats/FR4 wear, actual protected pack/charger, user-routed leads, and existing RF/thermal/magnetic qualification. The 21.8 mm battery-ceiling bridge remains; no unconditional support-free claim. See [printing and assembly](../../../housing/PRINTING-ASSEMBLY.md).
 
-The review branch is `okbrain/smove-files/028-91691739`. **Later integration must include both commits in order: `0610d60` (complete inherited repair), then the casing delivery commit.** Do not cherry-pick only the casing onto main. Review the whole branch; merge only when explicitly approved. Neither the committed state nor the geometric checks release the pack or case for use.
+## Review files and integration
 
-Repeat the final package check with `/usr/bin/python3 scripts/r2/enclosure/seal_delivery.py --check`; it verifies hashes without changing CAD or PCB. The generation commands are in `housing/README.md`.
+- [Print-only / assembled / exploded screenshots](images.md).
+- [Critical change summary](critical-diff.md), [case revision source diff](case-revision.patch), [combined main-to-current source diff](critical-source.patch).
+- [Complete manifest](manifest.json): current file set and SHA-256, including full inherited repair and explicitly archival files. Only `PCB/main` and `housing` are current design inputs.
+- [Integration and cleanup inventory](integration-cleanup.md). Primary is **main**, no master exists; no branch was invented or renamed.
+
+Integrate the **whole reviewed branch `okbrain/smove-files/028-91691739`**, including `0610d60` and its subsequent casing commits—not merely the final case delta onto main. Later approved cleanup is working-tree removal only: preserve Git history and unrelated/untracked user files. Wait for latest design review and explicit integration authorization.
+
+Final read-only check: `/usr/bin/python3 scripts/r2/enclosure/seal_delivery.py --check`.

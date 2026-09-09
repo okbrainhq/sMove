@@ -1,52 +1,82 @@
-# Two-part case: assembly, tolerances and release hold
+# Simplified central-H1 two-part case — assembly and release hold
 
-## What is actually delivered
+## What to print
 
-Exactly two printed parts, **Base + Lid**, with one M3×8 socket-cap screw, one captured M3 nut, insulating film and two nylon wire ties/lacings. The battery ceiling is integral to the base; the battery-entry closure is integral to the lid. Neither is a third panel.
+Print **only `dist/base.stl` and `dist/lid.stl`**. Each is one connected part. The PCB components, battery, screw, nut and thin insulating films shown in FreeCAD are purchased/reference items, not extra 3D prints. Internal CSG boxes and cylinders are editable construction features, not a parts list.
 
-Measured complete bounds: **42.0 L × 36.8 W × 16.6 H mm**. No 120 mm interpretation was adopted, and the design was not squeezed to an unanswered 12 mm target. The extra west width provides a genuinely off-PCB screw path and a separate lead bay; height is reduced from the inherited 19.6 mm case.
+The latest simplification keeps the accepted central-screw layout and battery choice:
+- Four **2.6 mm wide wall-rooted corner blocks** replace skinny seats, webs and separate 0.3 mm fences. Their stepped surfaces locate the PCB without screw preload.
+- Four integral lid pads are now **at least 1.4 × 1.4 mm**, replacing 0.6 mm-wide lips.
+- Removed both hooks and their undercut pockets. Lid now drops **straight down**; no slide, snap tabs or separate clips. The front nut stop is joined into the broad front skirt instead of a freestanding thin tab.
+- The insulated central nut socket and battery ceiling remain necessary. This is simpler, **not certified support-free**. No new small printed part was added.
 
-Mechanical frame: `X=nativeX−100`, `Y=139−nativeY`, PCB bottom `Z=9.6`. The PCB spans `X0..25, Y9..39`, **not Y0..30**. Board underside faces the body; accel/gyro +Z points outward. No sensor transform or firmware was changed.
+## Current revision and dimensions
 
-## Mounting safety — deliberate replacement of the unsafe interface
+**Base + Lid only. One M3×8 socket-cap screw through the existing PCB H1. No side screw, ear, wire bay, wire channels, lead exits, lacing, solder or modeled/reserved leads.** The integral battery ceiling and lid entry skirt are not separate parts.
 
-**Do not put a screw through H1 with this case.** H1 at local `(11.8,13.35)` is left as the inherited 3.2 mm hole, below U2. The old radius-3.4 bearing and its 0.042612 mm copper margin are retired.
+| Overall L × W × H (mm), including hardware | Preserved b49ade5 | Current |
+|---|---:|---:|
+| Length | 42.0 | 42.0 |
+| Width | 36.8 | **28.8** |
+| Height | 16.6 | **19.6** |
 
-- New M3 axis: local **(−5,13.35)**, wholly west of the board and pouch. Screw and nut never contact PCB copper or rely on solder mask. Nominal nearest screw-to-PCB solid distance is **3.380 mm**; hardware-to-pack admission-envelope distance is **4.25 mm**.
-- Closure load path: screw head → insulating lid bearing → base hard stop; nut reacts against the base's captive-pocket roof. This path bypasses PCB, IMU and battery. The lid's integral west door captures the nut side-entry slot.
-- H1 has a **radius-2.2 mm solid plastic deflection stop**, 0.35 mm below the nominal PCB underside. No top clamp, metal sleeve or screw is at H1. The stop is rooted in the integral base ceiling and only limits abnormal PCB displacement.
-- H1 nominal stop-edge to filled copper: **1.242612 mm**. Subtract 0.30 board play, 0.15 stop placement, 0.15 stop-radius error and 0.10 fabrication registration: **0.542612 mm remaining**. This is a conservative dimensional budget, not insulation certification. Worst accepted stop-height/seat-height mismatch leaves **0.05 mm** initial gap; reject a print that preloads the board.
-- Four insulated lower seats support the PCB; four lid lips complete split grooves. X/Y stops separated across the PCB provide positive antirotation without screw friction. Nominal lateral play is 0.30 mm each side. With ±0.15 mm print error and 0.10 mm PCB edge allowance, minimum assembly clearance is 0.05 mm.
-- Groove free height is **1.55 mm** around the 1 mm PCB; the stated thickness/print/liner stack leaves **0.20 mm minimum no-clamp play**. Nominal vertical float is 0.55 mm. This is intentionally not a rigid IMU clamp: vibration/fretting and button-load PCB motion require physical testing. Never remove clearance by tightening the case harder or adding pressure on U2.
+The accepted central draft and this simpler revision are both **42.0 × 28.8 × 19.6 mm**. Width is 8.0 mm smaller and below 30 mm without reducing the battery envelope. Height increases 3.0 mm to keep the central M3×8 tip/nut entirely **above** the sealed battery ceiling. Reusing the old under-head plane Z13.2 would put the tip at Z5.2, inside the maximum battery Z1.8..6.1: **that old-height central stack is blocked**. No side-screw fallback or longer screw was added. Neither 120 mm nor an unconfirmed 12 mm target is assumed.
 
-M3 hardware screen: nominal 0.5 mm pitch, maximum 5.68 mm grooved head diameter, 3 mm head height, 2.5 mm hex drive; 8 mm length tolerance is screened as ±0.29 mm. These dimensions were checked against the ISO 4762 table. [source](https://www.fasteners.eu/standards/iso/4762/)
+Coordinates: X=nativeX−100, Y=139−nativeY. PCB bounds X0..25, Y9..39, bottom Z12.6, top Z13.6. Main underside faces the body; IMU accel/gyro +Z points outward. No PCB placement, orientation, pad, routing, rule or firmware changes.
 
-The CAD thread is a cylindrical envelope, not a helical engagement simulation. Assumed nut: AF5.5 × 2.4 mm, fit to 5.8 AF pocket and verify actual part. Shank bore Ø3.6; head recess Ø7.0 accommodates 0.30 mm shank play, 0.15 mm registration and 0.15 mm radial print error with 0.06 mm residual margin. Lid bearing is 1.2 mm nominal / 0.9 mm after axial print allowances. Nut-pocket roof is 4 mm thick. Nominal thread overlap is 2.4 mm, adverse geometric overlap 2.1 mm, approximately 1.7 mm after an additional 0.4 mm chamfer allowance. Blind-bore tip clearance remains **0.56 mm** with length/seat errors. These are fit checks, **not strength or torque ratings**.
+## Central insulated interface and load path
 
-No tightening torque is released. Qualify a low-preload snug closure on sacrificial prints, including repeated opening, pull-out, screw loosening, creep and shock. Do not use generic metal-joint M3 torque. Verify low-magnetic hardware with the assembled IMU; a material label alone does not establish magnetic suitability.
+H1 stays Ø3.2 **NPTH**, at native (111.8,125.65), local **(11.8,13.35)**. ONLY this axis has a screw.
 
-## Battery, insulation and harness
+- Screw head bears on the **integral insulating lid bearing**, not a metal washer on the PCB. Nut is inside a raised base boss above the battery ceiling, retained against rotation by its hex pocket and against front escape by the integrated front skirt/stop.
+- Closure preload travels from head → lid bearing/roof → case perimeter → base structure/transverse beam → captive nut. The beam connects to the insulating pocket walls. The battery and PCB are **not clamp spacers**. The central screw passes through H1 while split edge grooves capture the PCB inside the closed base/lid.
+- Four insulated stepped corner seats and four broad lid pads preserve positive antirotation. Groove height 1.55 mm around the nominal 1 mm board; thickness/print/liner budget leaves **0.20 mm minimum axial freedom**. Nominal lateral play is 0.30 mm per side; ±0.15 print and 0.10 board-edge allowance leave 0.05 mm minimum.
+- An **annular R2.2 mm plastic stop** below H1 is initially 0.35 mm below the board (0.05 mm after adverse ±0.15 seat/stop errors). The wide nut-boss roof stays 0.70 mm below PCB (0.40 mm adverse). These are abnormal-deflection stops, not a screw clamp or supports resting on the pouch.
+- The inherited minimum filled-copper radius around H1 is 3.442612 mm. R2.2 stop margin is 1.242612 nominal; subtract 0.30 board play +0.15 placement +0.15 radius +0.10 registration = **0.542612 mm residual**. The retired R3.4 loaded bearing's 0.042612 mm margin is not reused.
+- There is **no fictitious printed sleeve** in the 0.10 mm nominal radial space between M3 and Ø3.2 H1. The hole wall is insulating, unplated FR4. The shank can touch that FR4 at the float limit; it must not touch copper. Even using Ø3.25 maximum hole and 0.10 copper registration, the radial copper separation beyond the hole is **1.717612 mm**. Head and nut are axially isolated by plastic and gaps, not solder mask.
 
-- Candidate body: **30×20×3 mm**. Admission reserve: **31×21×4.3 mm** for the **complete protected pack**, including pouch seals, tabs and PCM. No actual supplier pack, protection, current rating, thermal behavior or swelling allowance has been qualified. If the complete pack is larger, stop and revise the pocket; no compression or unapproved third panel.
-- Pack nominal lower face Z1.8. A 0.2 mm smooth insulating floor liner lies above the 1.6 mm body-facing floor. Acceptance-pack top Z6.1 leaves **0.50 mm** below the integral ceiling at Z6.6. The ceiling is 0.8 mm thick, top Z7.4. Worst reserved USB tails start Z8.4: **1.0 mm nominal / 0.85 mm after 0.15 mm print error** above the ceiling. PCB never rests on the pouch.
-- The ceiling, pocket walls, north stop and lid's front skirt retain the pack without clamping. Front-to-rear pack movement remains possible; the north stop limits the pack to Y38, still behind the RF boundary Y39. Inspect smooth walls, seams and liner edges. No sharp supports, residual print supports, foam compression, screws, adhesive preload or solder tails against the pouch.
-- Two independent battery conductors: BAT+ native `(104.5,105.57)` and BAT− `(104.5,103.03)`, 2.54 mm pitch, 1 mm drills. Native nets/polarity unchanged. Insulated wire assumption **OD≤1.2 mm**, tinned bundle **≤0.7 mm**, top solder height **≤0.6 mm**, bottom trim **≤0.5 mm**. Actual wire ampacity and solder process remain qualification requirements.
-- Wires exit the PTHs on top, make **R2 mm centerline bends** west beside the shielded module, then descend in the west bay and enter the pack side corridor. R2 is a geometric reserve, not an approved wire minimum bend radius. No wire crosses the antenna overhang. Separate nylon lacing through the two bridge eyelets restrains the insulated vertical leads, with knot reserves above the bridge. Fit/pull/flex-test it; do not pull on pouch tabs or use solder joints as strain relief.
+**Alignment acceptance is mandatory, not proven by nominal CAD.** Gauge the finished NPTH (screen Ø3.15..3.25), use a shank ≤3.00 mm, and prove a smooth Ø3.00 gauge passes the assembled stack without forcing or bending PCB. At Ø3.15 the centered radial allowance is only 0.075 mm. Board/nut float may be used for hand alignment, but the independent ±0.15 print registration budgets do NOT guarantee every manufactured combination will align. Reject a binding assembly; do not drill the PCB larger, force the screw, or use tightening to pull holes into alignment.
 
-## Assembly path (not the exploded display)
+## M3×8 stack and tolerances
 
-1. With **no USB power** and pack electrically isolated by an approved service procedure, inspect/deburr/gauge the two printed parts and install insulating liners. Accept smooth pocket surfaces and flat, coplanar PCB seats; reject warped, cracked or sharp prints.
-2. With lid removed, insert the captured nut from the west. Slide the uncompressed battery **north through the open front** into the base tunnel. This is a straight translation, not a tilt or a squeeze. The maximum admission-envelope continuous swept volume was checked against the base. Guide insulated, isolated leads through the west side corridor; their handling/removal is a physical sample gate.
-3. Lower the PCB vertically into the base seats and X/Y stops, underside toward body. Dress and terminate leads using a qualified isolated-pack procedure. Gauge trims and inspect polarity/shorts. Fit lacing. Do not solder or assemble an energized pouch pack in this enclosure; RESET does not isolate the battery.
-4. Start the lid **1.5 mm south** of its final position, lower it to the base, then slide it **north 1.5 mm**. Two north tongues engage the wall pockets by 1 mm nominal / 0.5 mm adverse allowance. This path was checked against base, populated PCB, wires, pack and nut at the recorded samples. No snap flex is required.
-5. Fit M3×8 **last**, in the west case-only bore, never H1. Reverse this sequence for servicing: remove screw, slide lid south before lifting. Verify board/pack are not clamped, USB plug fits, RGB is visible from above, and both buttons are reachable using a nonconductive tool.
+Screen actual M3×8 hardware against the stated maximum envelope: head Ø5.68 × 3 mm, 0.5 mm pitch, length 7.71..8.29 mm, 2.5 mm hex drive. Reference dimensions are from ISO 4762. [source](https://www.fasteners.eu/standards/ISO/4762/)
 
-STLs are supplied with base floor down and lid roof down. Use a nonconductive, non-metal/carbon-filled insulating print material; PETG is a prototype candidate, not a qualified thermal/skin-contact material. Screen 0.15–0.20 mm layers and sufficient wall perimeters with the fabricator. The integral battery ceiling has an approximately 21.8 mm bridge: actual sag, roughness and insulation integrity MUST be gauged before a battery is inserted. Removable process supports are not enclosure parts and must not remain in the pocket. No production print settings or material certification are claimed.
+| Interface | Nominal Z / dimension (mm) | Adverse check |
+|---|---|---|
+| Max pack top / ceiling underside / ceiling top | 6.1 / 6.6 / 7.4 | Pack gap 0.20 after 0.15 print +0.15 liner error |
+| Blind-bore floor / screw tip | 7.4 / 8.4 | **0.56** tip-floor clearance after 0.29 length +0.15 seat error |
+| Screw tip to maximum pack | 2.30 | **1.86**, in addition to intact barrier; no pouch penetration |
+| Nut (AF5.5 × 2.4 envelope) | 8.6..11.0 | Pocket AF5.8, Z8.3..11.0; gauge actual fit |
+| Nut roof / PCB bottom | 11.9 / 12.6 | Roof 0.90 nominal / **0.60** minimum thickness |
+| Stop top / PCB bottom | 12.25 / 12.6 | 0.35 nominal / **0.05** initial gap |
+| Lid bearing bottom / screw under-head | 15.1 / 16.4 | Bearing 1.30 nominal / **1.00** minimum |
+| Screw head top / lid top | 19.4 / 19.6 | Head recessed 0.20 nominal |
+| Thread overlap | **2.40** | **2.01** geometric; **1.61** after additional 0.40 combined chamfer reserve |
 
-## RF and remaining release gates
+CAD threads are cylindrical envelopes, not helices. The Ø3.6 case bores and Ø7.0 recess allow an additive head eccentricity/radius budget with 0.06 mm residual. Actual head access and nut-pocket fit must be gauged. The small RGB opening intersects the recess edge locally; the screw head does not obstruct its optical axis. Do not add a metal washer at H1.
 
-The inherited all-layer/overhang exclusion is unchanged. No added battery, lead or metal hardware enters local `Y≥39` within the inherited RF volume. Modeled admission-pack margin is 1.5 mm, insulated-wire margin ≥2.43 mm; a freely shifted pack at the north stop retains 1 mm nominal. These are corridor checks only.
+**No tightening torque or strength rating is released.** The 0.9 mm nominal captive-pocket roof, beam, lid bearing and printed walls need proof-load, creep and repeated-opening tests. Tighten only under an approved low-preload prototype procedure, never a generic metal-joint M3 torque. After closure, verify the PCB remains unbowed/free of clamp preload and the ceiling remains clear of the pouch. Low-magnetic hardware suitability is unqualified. Dimensional clearance does not establish stiffness, fatigue or insulation-wear safety.
 
-Espressif recommends a 15 mm antenna clearance region and warns about enclosure effects; this compact pack-under-board plastic enclosure **does not meet broad 15 mm clearance in all directions**. No metal shell, conductive coating or conductive filament is permitted. RF matching/range/efficiency and on-body detuning require measurement. [source](https://espressif.github.io/esp32-c3-book-en/chapter_5/5.3/5.3.4.html)
+## Battery and user-routed leads
 
-**Manufacturing, battery connection and charging remain on hold.** Required unresolved gates: complete protected-pack suitability and charger compatibility; bridge/seat dimensions and wear; rigidity, creep and qualified closure preload; wire strain relief and service handling; USB/button/RGB physical usability; RF, thermal and magnetic effects. No water/dust ingress, drop rating, skin compatibility, sensor accuracy or runtime guarantee. See the inherited [battery/charging constraints](../docs/revision-r2/integrated/RADIO-BATTERY.md); fitting the pouch does not approve powering or charging it.
+Candidate **30×20×3 mm**; complete protected-pack allowance **31×21×4.3 mm**, including seals, tabs and PCM (leads excluded and entirely user-managed). No supplier pack or charging suitability is approved. The pocket was not narrowed to reach the width target. Stop if the complete pack exceeds the admission envelope; no squeezing, foam preload or battery compression.
+
+Pack lower face Z1.8 rests on 0.2 mm smooth insulating film above the 1.6 mm body-facing floor. The integral 0.8 mm ceiling retains the pack with side walls, north stop and the lid's integral front skirt. PCB sits on separate plastic/film seats, never on the battery. The battery may translate within the pocket; at the north stop it stays 1 mm behind local RF boundary Y39. No screw bore or nut pocket opens into the battery tunnel.
+
+**All dedicated lead geometry was removed. BAT+ and BAT− pads are unchanged.** Soldering, wire choice, actual route, bend radius, strain relief, trim, polarity and closure/pinch inspection belong to the user's physical assembly. No space is dedicated/reserved and no lead fit, insertion, strain relief or RF route is claimed verified. A user-chosen route may not fit this closed case; do not pinch a lead to make it close. Stop for review if it cannot be routed safely. User-routed leads must avoid the antenna/all-layer RF area, screw, pouch pressure and sharp edges. No powered-pack soldering or live-cell handling procedure is provided.
+
+## Mechanical assembly (not exploded display offsets)
+
+1. With power disconnected and pack safely isolated, gauge/deburr the two insulating prints. Fit smooth floor/seat films and verify coplanar seats, intact ceiling and no bridge sag or sharp edges. Use nonconductive, non-metal/carbon-filled material only.
+2. Insert the hex nut from the **front interior**, above the battery ceiling, before PCB/lid. It sits against the pocket roof. Slide the uncompressed pack north through the front tunnel opening with lid off. This maximum-envelope continuous translation was checked against the base.
+3. Lower the populated PCB vertically into its seats/positive edge stops, aligning H1. User handles leads independently; they were deliberately absent from all CAD collision/path checks.
+4. Lower the lid **vertically at its final XY location**. The integral front skirt closes battery entry and its thicker central extension retains the nut. There are no hooks, latches or sliding sequence. Screw is still absent. Check all perimeter edges seat; the single screw is not permission to force a warped lid flat.
+5. Verify smooth gauge passage and insert ONLY M3×8 from the top through H1, last. Reverse for servicing: screw out, then lift vertically. Never use screw preload to flatten the board, close a trapped lead or compress the pouch.
+
+STLs are already **floor-down Base and roof-down Lid**. Broad corner blocks grow from the base floor and lid pads grow from the lid roof; there are no hook undercuts or detached islands. Both meshes are closed manifold single parts.
+
+**Remaining print limitations:** the battery-ceiling bridge spans **21.8 mm** and the captive-nut slot is about **5.8 mm across flats**. Those retained safety features still require a real bridge/slot trial, sag inspection and dimensional gauges. Do not blindly generate inaccessible supports inside the battery slot or nut pocket; if the printer cannot bridge cleanly, stop for process/design review rather than leave trapped support or shorten battery clearance. Lid screw-bore/recess and access holes also require clean bridging/edges in the delivered orientation. No universal support-free claim, slicer profile, production material or torque rating is supplied. The far lid edge no longer has a hook: verify single-screw closure does not lift/warp there during handling.
+
+Top RGB, USB and nonconductive-tool BOOT/RESET access are retained. Conservative component models are not vendor-exact connectors/buttons. Broad RF clearance limitations from the inherited design remain; this compact enclosure does not meet a broad 15 mm antenna clearance in every direction and has no RF certification. No new wire qualification or RF study was performed.
+
+**Manufacturing/charging release remains false.** Remaining gates: physical coaxial fit, print stiffness/creep/preload, seat/insulation wear, complete protected-pack/charger suitability, user lead routing, access usability and existing RF/thermal/magnetic qualifications. These are real blockers to physical release, not missing CAD files. See the inherited [battery/charging constraints](../docs/revision-r2/integrated/RADIO-BATTERY.md).

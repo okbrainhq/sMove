@@ -4,7 +4,7 @@ No file writes, source placement edits, constraints, downloads or automatic macr
 import FreeCAD as A
 import FreeCADGui as G
 from PySide import QtCore, QtWidgets
-GROUPS=('ViewBase','ViewLid','ViewMain','ViewBattery','ViewCables','ViewHardware','ViewInsulation')
+GROUPS=('ViewBase','ViewLid','ViewMain','ViewBattery','ViewHardware','ViewInsulation')
 COLORS={'print':(.32,.55,.82),'main_pcb':(.08,.52,.29),'divider':(.8,.8,.72),
         'main_component':(.24,.26,.29),'carrier_component':(.24,.26,.29),'tail':(.7,.7,.7),
         'battery':(.94,.68,.20),'harness':(.86,.20,.12),'insulator':(.85,.65,.2),'lacing':(.9,.9,.9),'solder':(.75,.75,.78),'hardware':(.72,.72,.76)}
@@ -61,7 +61,7 @@ class Panel(QtWidgets.QDockWidget):
         super().__init__('sMove | Inspect assembly',G.getMainWindow())
         self.doc=doc; self.setObjectName('sMoveInspectionDock')
         body=QtWidgets.QWidget(); layout=QtWidgets.QVBoxLayout(body); self.setWidget(body)
-        note=QtWidgets.QLabel('DISPLAY ONLY: moving parts does not revise CAD fit.\nBase underside = BODY. Sensor +Z = OUTWARD.\nRestore ASSEMBLED before saving an inspection copy.')
+        note=QtWidgets.QLabel('ONLY Base + Lid are printed. Other groups are references.\nDISPLAY ONLY: offsets do not revise CAD fit.\nBase underside = BODY. Sensor +Z = OUTWARD.\nRestore ASSEMBLED before saving an inspection copy.')
         note.setWordWrap(True); layout.addWidget(note)
         self.state=QtWidgets.QLabel('ASSEMBLED | true placements'); layout.addWidget(self.state)
         self.reset_button=QtWidgets.QPushButton('Restore ASSEMBLED'); self.reset_button.clicked.connect(self.reset); layout.addWidget(self.reset_button)

@@ -1,7 +1,7 @@
-> **CURRENT PCB REVIEW — NOT RELEASED:** 25 × 30mm PCB selectively recovered from `96e081b`; independently clean ERC/DRC/nets. Prior M3 bearing has only 0.042612mm nominal copper margin: unsafe to assume robust insulation. Existing housing is incompatible/unvalidated. No casing work was performed in this repair. See [PCB repair report](../docs/revision-r2/pcb-repair/README.md).
-
 # PCB deliverables
 
-[Current integrated main board](main/README.md): 25 × 30 × 1 mm. The actual ICM-20948 is top mounted on the main board; the separate `imu-carrier/` is archival and is **not** part of this assembly.
+**Current design:** [repaired 25×30×1 mm main PCB](main/README.md), with the IMU fitted directly on top. All PCB/main files remain byte-identical to the complete e033031 repair recovered as 0610d60; no PCB edit accompanied the central-screw case revision.
 
-[Current compact-placement handoff and checks](../docs/revision-r2/compact-placement/README.md).
+The historical PCB-only mounting warning is retained in its original report. For the current central H1 M3×8 assembly use the [combined delivery](../docs/revision-r2/two-part-case/README.md) and [case assembly/insulation gates](../housing/PRINTING-ASSEMBLY.md). CAD checks do not release it for manufacture or charging.
+
+`imu-carrier/` and old compact-placement reviews are archival, NOT part of the current assembly. They have not been deleted; see the [bounded cleanup inventory](../docs/revision-r2/two-part-case/integration-cleanup.md) for later explicit review.

@@ -1,16 +1,14 @@
-# Actual GUI screenshot evidence
+# Current simplified two-print case — real FreeCAD evidence
 
-These URLs were returned by native Ubuntu desktop observation/input tools while inspecting the generated FreeCAD assembly. Tool input receipts were **dispatched**, not semantic success claims; the resulting images were visually inspected for the shown state.
+These images supersede the older side-screw and thin-feature central draft views.
 
-- **Assembled, opaque Base + Lid:** [/uploads/a97508ce-7815-465a-9007-c9d3d223f3c5.webp](/uploads/a97508ce-7815-465a-9007-c9d3d223f3c5.webp)
-- **Assembled, transparent case showing repaired PCB, battery separation and off-board M3:** [/uploads/4c87f20a-98d3-4c20-96aa-ff0886e2ca6f.webp](/uploads/4c87f20a-98d3-4c20-96aa-ff0886e2ca6f.webp)
-- **Exploded after clicking the actual InspectAssembly “Explode all parts” button:** [/uploads/09513933-8ee7-4a99-a851-3da99a2b5b2c.webp](/uploads/09513933-8ee7-4a99-a851-3da99a2b5b2c.webp)
+- **Only the two printable pieces, in print orientations:** [Base + Lid](/uploads/2c6bd76b-5a19-4a17-9aee-d5e4dfaec79c.webp). Real FreeCAD viewport export, fetched from `housing/dist/print-pair.png`. Base floor down; Lid roof down. Corners/pads/nut socket/skirt are integral—not separately printed pieces.
+- **Actual desktop GUI, opaque assembled:** [Assembled](/uploads/7dba4a60-9fab-4bf9-b7c7-9140355a1a84.webp).
+- **Actual desktop GUI after clicking Explode:** [Exploded](/uploads/9477022a-b95a-4d61-8932-4ac8d37617e9.webp).
+- **Desktop restored assembled after inspection:** [Restored](/uploads/f8164e20-aed5-44fd-9874-87e9be3867f6.webp).
 
-Exploded positions are display offsets, not collision-free assembly trajectories. The battery is shown outside the front entry, and the front closure skirt is integral to the lid, **not a third panel**. Component boxes, pouch, wires and hardware are conservative models; small items can be occluded in this view. Inspect the live native groups and the geometric report for fit, not the explosion spacing.
+Desktop tool receipts were **dispatched**, not semantic success claims; resulting images were visually inspected. Full assembled/exploded/section/print-pair viewport exports are committed under `housing/dist/`. `housing/validation/gui-inspection.json` records the explicit GUI macro/control checks and saved-native SHA-256.
 
-Committed real-FreeCAD viewport exports are `housing/dist/assembled.png`, `exploded.png` and `section.png`. Uploaded copies of the first two were also visually checked:
+The many small dark objects in the full assembly are **electronic component envelopes**, not pieces to 3D-print. Battery, purchased M3 screw/nut and cut insulating films are also references. ONLY `base.stl` and `lid.stl` are print inputs.
 
-- [Assembled viewport](/uploads/16757e62-a958-4063-bb3a-31836f2fbca2.webp)
-- [Exploded viewport](/uploads/30393965-2dca-4b80-bc66-90706a02d631.webp)
-
-No PCB authorship or physical manufacturing test is implied by these mechanical screenshots. Inherited native KiCad evidence remains in `../pcb-repair/images/README.md`.
+Exploded offsets are display aids, not insertion trajectories. CAD fit checks use fixed engineering placements and the actual straight-down lid path. Images do not certify bridge quality, strength, battery/wire safety or RF behavior. No wire geometry is present. Original KiCad repair evidence remains in `../pcb-repair/images/README.md`.

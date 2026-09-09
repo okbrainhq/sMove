@@ -8,84 +8,92 @@
   "pcb_source_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
   "files": {
     "housing/BOM.csv": {
-      "sha256": "c064d4eae8d44d8267a155065979845d2e26353fd5bff18473cd69648956c848",
-      "bytes": 974
+      "sha256": "01b76ff08d77a1f197947b453d49023e2d0b7e12901c088fa579e6f8427839e5",
+      "bytes": 986
     },
     "housing/InspectAssembly.FCMacro": {
-      "sha256": "3f8d3206a35adcea3e01053ffc84768058d222359316a4a4ffe8a7c879a2a52f",
-      "bytes": 475
+      "sha256": "50671efad94a549e9ebb28849cff9629026dab736aab7420850dd3127a9d18ce",
+      "bytes": 468
     },
     "housing/PRINTING-ASSEMBLY.md": {
-      "sha256": "a0779d7151cf08bf18d80410eb87e5e52fa8a9d33f87cfeb090ea21dc4928ac1",
-      "bytes": 9831
+      "sha256": "7cd80a0b0b0244852329364934e460c0417770f07e86e1ceced34e18d1f6aa6d",
+      "bytes": 11711
     },
     "housing/PresentAssembly.FCMacro": {
       "sha256": "57b5de2506e2e3af126336aaab252d613515407c0116d87f735f7fc5412b1ecd",
       "bytes": 602
     },
     "housing/README.md": {
-      "sha256": "67f0f455b7d3440c224ff997ecccc60a5b9dc7150c650d6d1026158bf6ad0523",
-      "bytes": 3473
+      "sha256": "3a35069cea41083ddd89878460206c0d32a06f9f729df956203e36cc7395b2c1",
+      "bytes": 3760
     },
     "housing/dist/assembled.png": {
-      "sha256": "5343f6c7c782dcd33a400704c88db63f3365969bd88f14529b45492bd99b0d14",
-      "bytes": 26830
+      "sha256": "dc8eecfd36ff22dcd95149c8610744ee9f9a8621c9d7d501f74a5d7affdbe47f",
+      "bytes": 27738
     },
     "housing/dist/base.stl": {
-      "sha256": "1f9d9c1fa2227487a5df71583e6c76e5a06807804333629767f7f37252804507",
-      "bytes": 148484
+      "sha256": "0781f42d56e6f23d5ebc7f67581167b51e6ae9902d7bba64eaee9c8519486103",
+      "bytes": 103484
     },
     "housing/dist/exploded.png": {
-      "sha256": "28c936392bbc87e024b40c94d5dec259a84389170125a22abace4eb381cb9327",
-      "bytes": 38256
+      "sha256": "74c8e289c1ecec5610bcac54dc46b3773597d34185aa41c3ff42487daa85a32e",
+      "bytes": 39025
     },
     "housing/dist/lid.stl": {
-      "sha256": "31364e0a6480e83f971a3fba46d308f0556edf18cc7046e1131a197b0d4ebee2",
-      "bytes": 131084
+      "sha256": "69a83db9cea21dc8674a513b0bcab44ddf8b92b3f33fd29d5d4536e6c5f168ac",
+      "bytes": 130284
+    },
+    "housing/dist/print-pair.png": {
+      "sha256": "e9dacaa89125d2222d74b427bfdaf33b791138fc3e07e0360a4400cbc0cb1cc8",
+      "bytes": 36043
     },
     "housing/dist/section.png": {
-      "sha256": "8222c5c88ccf0721a5210aa1f7ba9ae93170e1afacb314e5ebe082089dd2f4aa",
-      "bytes": 15186
+      "sha256": "d07f7dfb7c8473b02d2fe4403f69562f6cf3f138b99267548d27e7a77c50ac53",
+      "bytes": 12395
     },
     "housing/dist/smove-r2-assembly.step": {
-      "sha256": "013333226978f4e1cad87efef8ad24cb72b98efe9017fe5196667aa76a0e863b",
-      "bytes": 680662
+      "sha256": "693d0c50e08cd4708054a5afcee59e1ee71e2ca267236ded8a405ff970388ffd",
+      "bytes": 536100
     },
     "housing/dist/smove-r2-printable.step": {
-      "sha256": "b6e4491affeba0e0ea1dcd4d611e9a65016df5a06334289bdda2b5f252795022",
-      "bytes": 248080
+      "sha256": "5cd7f459dec3246475e6b41ee1fa007bd77a0db4d6c4203ff78db6ddbe9e7a4e",
+      "bytes": 153338
     },
     "housing/entry.py": {
       "sha256": "2d80a853ac013a6aa33c5d6573ec3284f97ee2298575bbf776dc722868921c6b",
       "bytes": 403
     },
     "housing/smove-r2-enclosure.FCStd": {
-      "sha256": "118e9259939d35e1c1824c0d1e21faf53e8e55ccad9b15c2dd47ca571e7c2e62",
-      "bytes": 391187
+      "sha256": "7e2b8eb769d26a237f48ef1b29fc849477c01c21deee1343d707d8182b070cb1",
+      "bytes": 282775
     },
     "housing/status.json": {
-      "sha256": "d82a3d8783b3f96cbe9da5b3a5d0fc380506bb649a2ff00741997386f2a76d9d",
-      "bytes": 1073
+      "sha256": "69b8cb82ddb9800fc2c8dca87e2fbe129c05af8f1133450ba07006f63bf6891e",
+      "bytes": 1683
     },
     "housing/toolchain.lock.json": {
       "sha256": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
       "bytes": 1233
     },
     "housing/validation/build.json": {
-      "sha256": "e13d5ab9a6091a54dfbe8bddc9de4aece67699e79b2994c1309d84e187a8b975",
-      "bytes": 3141
+      "sha256": "c9e19417a77ea8005b637f28209107c516173c8c87e0209b0389babfcd4d842b",
+      "bytes": 2538
     },
     "housing/validation/gui-inspection.json": {
-      "sha256": "0c01be0ab221d9996ae352e8f61b443d972375336ce3e6fef0f4a8377c3376dc",
-      "bytes": 948
+      "sha256": "6abb45d186abfb57e053e1a0d7a15cf9f48d0f34c4946109c3817df295409b20",
+      "bytes": 1011
     },
     "housing/validation/input-geometry.json": {
       "sha256": "e1c8ec3b64b8f5d5bac760d4efc4f402507f0557ac049150d2583d8d17c5da3d",
       "bytes": 174981
     },
     "housing/validation/mechanical.json": {
-      "sha256": "6b54e710e5472f86507254a476841316373ac322d240efa46e9ddea472216bfd",
-      "bytes": 67307
+      "sha256": "91e940910ee1aeae34ff002afc2e8a3a0083aca48970452accda47bd48f9bc11",
+      "bytes": 46347
+    },
+    "housing/validation/print-simplification.json": {
+      "sha256": "9e1e4901162c9bb00fcb3b21f822962f194e066cedc31de79afa2ae83ad2d303",
+      "bytes": 1184
     },
     "scripts/freecad/bootstrap.py": {
       "sha256": "b5276840d062eea52dd51569f9d793f97f3e23d661412507c40e6f0be7f69c46",
@@ -100,24 +108,24 @@
       "bytes": 7160
     },
     "scripts/r2/enclosure/generate.py": {
-      "sha256": "cde19e4775a2b499d78423f2d49962d137fcdd3c8af730cd51f1d0202807398c",
-      "bytes": 14337
+      "sha256": "896158be12e177537544d5a790623012e7b24cfe2c2c8683d6183486eee8d06b",
+      "bytes": 11915
     },
     "scripts/r2/enclosure/inspection.py": {
-      "sha256": "9f2e5db53968e1d3e950c279cd38e78c1dc2185ce9cc49b108f3593a84c04377",
-      "bytes": 7430
+      "sha256": "b461c749ffe5946e33d4a5fe8c5dbf0ad6d127d6b0a646530f4089b07f7a5f0e",
+      "bytes": 7469
     },
     "scripts/r2/enclosure/present.py": {
-      "sha256": "6a5ee34913ebf271bdb89c0f117a66327d8585a0a151c1166933d5976aea4cd6",
-      "bytes": 3827
+      "sha256": "0279d562380daf750fc0c9abbe2229492094248609f950294e07f9009bf3f900",
+      "bytes": 4458
     },
     "scripts/r2/enclosure/seal_delivery.py": {
-      "sha256": "be008511985769040053a52263604b2da4afd9b0f788fe64f74f749c7fb81c15",
-      "bytes": 6389
+      "sha256": "70f457d43f30a7e8661856919fd72407150caf6b4ee439312a60e8adb9ed2abc",
+      "bytes": 6841
     },
     "scripts/r2/enclosure/verify.py": {
-      "sha256": "74e1aac03f6f92981d045c9eb41f1bca6a4a144151c31d5b81894441a4ab7adc",
-      "bytes": 8927
+      "sha256": "3e930b4ef037c0c940610432882f50f75a2bb2adfd8e51d87df58915815ce162",
+      "bytes": 10788
     }
   }
 }

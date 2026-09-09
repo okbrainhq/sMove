@@ -1,10 +1,9 @@
 Item,Qty,Description,Acceptance
-Base,1,Nonconductive printed base with integral battery ceiling,Print geometry and bridge sag must be gauged
-Lid,1,Nonconductive printed lid with integral entry skirt and two north hooks,Fit and creep qualification required
-Screw,1,M3x8 ISO4762 socket cap; head max 5.68x3; 0.5 pitch,Length 7.71..8.29mm; low-magnetic qualification; no released torque
-Nut,1,M3 hex AF5.5x2.4 envelope,Verify actual dimensions and effective thread engagement
-Floor liner,1,Smooth insulating film 21.6x31.8x0.2mm,No sharp edges or cell preload
-Seat liners,4,Smooth insulating film 0.95x1.0x0.2mm,Attach to seats; gauge coplanarity
-Lacing,2,Nonconductive nylon cord 0.4mm nominal,Fit knot reserves and pull/flex qualify
-Battery,1,Unqualified candidate body 30x20x3mm,Complete protected pack at most 31x21x4.3mm; NOT approved for charging
-Battery wires,2,Insulated OD at most1.2mm; bundle at most0.7mm,R2 centerline reserve; verify current rating and bend limits
+Base,1,Nonconductive printed base with integral battery ceiling and central nut boss and solid corner seats,Print bridge and nut roof stiffness/gauges required
+Lid,1,Nonconductive printed lid with central bearing and integral entry skirt,Fit and low-preload creep qualification required
+Screw,1,ONLY M3x8 ISO4762 socket cap through H1; max head5.68x3,Length7.71..8.29mm; shank<=3.00mm; no released torque
+Nut,1,M3 hex AF5.5x2.4 envelope in central front-entry pocket,Verify thread/chamfer and pocket fit
+Floor liner,1,Smooth insulating film21.6x31.8x0.2mm,No sharp edges or pouch preload
+Seat liners,4,Smooth insulating film0.95x1.8x0.2mm front and0.95x2x0.2mm rear,Coplanar supports; no PCB preload
+Battery,1,Unqualified candidate body30x20x3mm,Complete pack<=31x21x4.3mm; NOT charging approved
+User-routed leads,not modeled,No wire specification or dedicated space supplied,User chooses and verifies route/strain relief/polarity; avoid RF and pinching

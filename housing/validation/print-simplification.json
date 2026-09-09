@@ -1,0 +1,50 @@
+{
+  "status": "GEOMETRY_SIMPLIFIED_PHYSICAL_PRINT_NOT_TESTED",
+  "prior_central_draft_LWH_mm": [
+    42,
+    28.8,
+    19.6
+  ],
+  "current_LWH_mm": [
+    42,
+    28.8,
+    19.6
+  ],
+  "removed": [
+    "Two hook stems/tongues/pockets",
+    "Four skinny seats plus webs",
+    "Eight independent 0.3mm fences",
+    "Four 0.6mm-wide upper lips",
+    "Freestanding thin nut retainer tab"
+  ],
+  "replacements": [
+    "Four wall-rooted stepped blocks 2.6mm wide",
+    "Four lid pads >=1.4x1.4mm",
+    "Nut stop integrated into front skirt",
+    "Straight vertical lid placement"
+  ],
+  "printed_part_count": 2,
+  "non_print_items": [
+    "PCB and fitted components",
+    "Battery",
+    "M3x8 screw",
+    "M3 nut",
+    "Cut insulating film"
+  ],
+  "draft_native_volumes_mm3": {
+    "base": 6039.461512328164,
+    "lid": 2197.79213601004
+  },
+  "current_native_volumes_mm3": {
+    "base": 6258.59351232817,
+    "lid": 2327.9641360100422
+  },
+  "retained_print_gates": [
+    "21.8mm battery-ceiling bridge",
+    "5.8mm nut slot roof",
+    "Lid bore/recess edges",
+    "Actual preload/creep/warpage acceptance"
+  ],
+  "PCB_changed": false,
+  "lead_geometry": "NONE_USER_ROUTED_NOT_VERIFIED"
+}

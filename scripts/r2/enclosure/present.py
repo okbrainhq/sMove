@@ -10,6 +10,7 @@ R=Path(__file__).resolve().parents[3];H=R/'housing';EX=H/'dist'
 def main():
     G.getMainWindow().showMaximized()
     doc=A.openDocument(str(H/'smove-r2-enclosure.FCStd'))
+    doc.Label='sMove | TWO SIMPLE PRINTS | CENTRAL M3 | 28.8 wide'
     macro=H/'InspectAssembly.FCMacro';ns={'__file__':str(macro)}
     exec(compile(macro.read_text(),str(macro),'exec'),ns)
     panel=ns['smove_inspection_panel'];view=G.activeDocument().activeView()
@@ -31,9 +32,16 @@ def main():
     for n in inspection.GROUPS:assert doc.getObject(n).Placement.isIdentity()
     for name,(p,volume) in fixed.items():
         o=doc.getObject(name);assert (o.Placement.Base-p.Base).Length<1e-7 and abs(o.Shape.Volume-volume)<1e-7
-    # A true BRep section at X=12.5 shows battery ceiling, PCB air gap and lid without a third part.
+    # Only the two manufacturing parts, both in print orientation; no electronic/film proxies.
+    panel.ghost.setChecked(False)
+    for n in inspection.GROUPS:doc.getObject(n).Visibility=n in ('ViewBase','ViewLid')
+    doc.ViewLid.Placement=A.Placement(A.Vector(42,51.2,19.6),A.Rotation(A.Vector(1,0,0),180))
+    capture('print-pair')
+    assert all(doc.getObject(n).Visibility==(n in ('ViewBase','ViewLid')) for n in inspection.GROUPS)
+    panel.reset_button.click()
+    # A true BRep section through central H1 at X=11.8 shows battery ceiling, PCB air gap and lid without a third part.
     section=doc.addObject('App::DocumentObjectGroup','TemporarySection');build=json.loads((H/'validation/build.json').read_text())
-    keep=Part.makeBox(22.1,55,30,A.Vector(-9.6,0,-1))
+    keep=Part.makeBox(13.7,55,32,A.Vector(-1.9,0,-1))
     for n in ['Base','Lid']+build['reference_objects']+build['hardware_objects']:
         src=doc.getObject(n);s=src.Shape.common(keep)
         if not s.isNull() and s.Volume>1e-7:
@@ -42,9 +50,9 @@ def main():
     view.saveImage(str(EX/'section.png'),1800,1200,'White')
     for o in list(section.Group):doc.removeObject(o.Name)
     doc.removeObject(section.Name)
-    panel.reset_button.click();panel.ghost.setChecked(True);view.viewAxonometric();view.fitAll();G.updateGui();settle();doc.recompute();doc.save()
+    panel.reset_button.click();panel.ghost.setChecked(False);view.viewAxonometric();view.fitAll();G.updateGui();settle();doc.recompute();doc.save()
     report={'status':'PASS_REAL_FREECAD_GUI_CONTROLS','freecad_version':A.Version(),'manufacturing_release':False,
-      'checks':['Native FCStd opened in real FreeCAD GUI','Delivered InspectAssembly macro executed','Lift lid leaves PCB fixed','Explode moves all seven display groups','Battery manual Y offset moves group only','Restore resets all group transforms','Engineering source placements/volumes unchanged','Native saved in assembled display state'],
+      'checks':['Native FCStd opened in real FreeCAD GUI','Delivered InspectAssembly macro executed','Lift lid leaves PCB fixed','Explode moves all six display groups','Battery manual Y offset moves group only','Restore resets all group transforms','Engineering source placements/volumes unchanged','Print-pair view contains ONLY Base and Lid in printing orientations','Native saved in opaque assembled display state'],
       'method':'Explicit GUI macro, Qt button activation, activeView renders. Native desktop-tool observations are recorded separately in docs/revision-r2/two-part-case/images.md.',
       'native_sha256':hashlib.sha256((H/'smove-r2-enclosure.FCStd').read_bytes()).hexdigest()}
     (H/'validation/gui-inspection.json').write_text(json.dumps(report,indent=2)+'\n')
