@@ -1,14 +1,12 @@
-# sMove main — compact PTH battery-wire revision
+# Main PCB — 25 × 30 mm keyed compact prototype
 
-**25 × 35.5 × 1 mm**, four copper layers. J2: two 2.0mm plated pads / 1.0mm hole target, **2.54mm centre-to-centre pitch**, BAT+/BAT- silk, no fitted connector/header and no BOM/CPL purchase. Prepared-wire assumption ≤0.7mm tinned bundle / ≤1.2mm insulated OD, not a claimed supplied gauge. Exact polarity/protection/charge architecture unchanged.
+Canonical editable sources: `smove-r2-main.kicad_pcb`, hierarchical schematic sheets, project/rules and local libraries. Four layers, 1 mm nominal thickness; no signal tracks on In1 GND reference plane. **46 fitted electronics**, unchanged part selections and electrical endpoint sets from f8c7ef6.
 
-SW3, D1 and R11–R13 moved inward and rerouted. U2 ICM-20948 remains F.Cu (112.5,117.5)mm, −90°; width-centred, 0.25mm north of centre; signed AG +Z outward, raw MAG +Z inward. Actual USB, charger/regulator/decoupling placements retained. No testpoints or UART connector.
+- Both XUNPU BOOT/RESET switches rotate from 90° to 0° with verified contact numbering; 17 actual footprint positions change. J2 moves upward 6.1 mm. The lower region (native Y ≥122) is 40.7% smaller.
+- U2 remains ICM-20948 at (112.5,117.5), F.Cu, −90°: width-centred, 2.5 mm south of substrate bounding centre, in the central region. Accel/gyro +Z outward; raw magnetometer +Z inward; signed transforms in `interface.json`.
+- One top RGB, USB programming and labelled BOOT/RESET. No UART, debug connector or testpoints.
+- J2: BAT+ `/Power/PACK_P`, BAT− GND, **2.54 mm centre pitch, 1 mm drill, 2 mm pads**, no paste or fitted connector. Fit qualified insulated leads and housing lacing strain relief; never solder on a pouch.
+- H1: 3.2 mm NPTH M3 hole, unchanged 3.45 mm all-layer copper exclusion. H2 removed. Two 1×1 mm copper-free lower corners accept insulating positive registration shoes and lid bearings.
+- `dist/`: complete Gerber/drill ZIP and individual layers, schematic/assembly PDFs, SVG/PNG, BOM/CPL, installed-model and conservative-envelope STEP. Installed-model renders omit unavailable component models; conservative assembly contains every fitted envelope, not vendor-exact solids.
 
-46 fitted electronic BOM/CPL items. Two 3.2mm NPTH mounting holes H1=(103.6,103.6), H2=(121.4,131.9)mm with 3.45mm all-layer reserves. Two M3 clamps provide antirotation; physical fit/rigidity remains a gate.
-
-- [Root schematic](smove-r2-main.kicad_sch), [dedicated wired IMU](imu.kicad_sch), [native PCB](smove-r2-main.kicad_pcb)
-- [PDF schematic](dist/schematic.pdf), [power/J2 image](dist/schematic-power.png), [IMU image](dist/schematic-imu.png), [PCB top](dist/top-3d.png)
-- [BOM](dist/BOM.csv), [pick-and-place](dist/pick-and-place.csv), [assembly guide](dist/ASSEMBLY.md), [Gerbers/drills](dist/gerbers.zip)
-- [Current interface](interface.json), [native layout contract](native-layout-contract.json), [validation and limitations](../../docs/revision-r2/solder-wire/README.md)
-
-**Manufacturing release=false.** Native rules pass, but battery/wire/charge acceptance, physical assembly, USB SI/downloads, RF/noise and thermals need qualification. KiCad renders lack some vendor models; the conservative populated-board STEP is explicitly not vendor-exact. Historical source envelope/pose JSON and backup ZIP are provenance only. Native routed CAD and current parts/interface are canonical; use the documented safe rebuild, never replay historical placement helpers.
+[Measurements, candidates, validations and limitations](../../docs/revision-r2/compact-placement/README.md). **Prototype only; manufacturing_release=false.** Native DRC is not controlled-impedance, current/thermal, or physical assembly certification. Clearance settings, severities and exclusions are unchanged from f8c7ef6.

@@ -1,0 +1,1806 @@
+diff --git a/PCB/main/interface.json b/PCB/main/interface.json
+index f975ceb..44aa615 100644
+--- a/PCB/main/interface.json
++++ b/PCB/main/interface.json
+@@ -1,7 +1,7 @@
+ {
+-  "schema": "smove.solder-wire.interface.v3",
+-  "status": "COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY",
+-  "geometry_sha256": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
++  "schema": "smove.compact-placement.interface.v4",
++  "status": "30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY",
++  "geometry_sha256": "65f16a6bc9a794d17291e5f20894e4e24e1d6a4f57cbe0c6411955e9cf81dbd5",
+   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
+   "coordinate_system": {
+     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
+@@ -36,20 +36,20 @@
+     "board_top_z": 1
+   },
+   "board_size_mm": [
+-    25,
+-    35.5
++    25.0,
++    30.0
+   ],
+   "outline_native_xy_mm": [
+     [
+-      100,
+-      100
++      100.0,
++      100.0
+     ],
+     [
+-      125,
+-      100
++      125.0,
++      100.0
+     ],
+     [
+-      125,
++      125.0,
+       111.5
+     ],
+     [
+@@ -61,16 +61,16 @@
+       122.1
+     ],
+     [
+-      125,
++      125.0,
+       122.1
+     ],
+     [
+-      125,
+-      135.5
++      125.0,
++      130.0
+     ],
+     [
+-      100,
+-      135.5
++      100.0,
++      130.0
+     ]
+   ],
+   "thickness_mm": 1.0,
+@@ -108,21 +108,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        121.5,
+-        125.2
++        111.0,
++        124.1
+       ],
+-      "rotation_ccw_deg": 90.0,
++      "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        120.0,
+-        122.7,
+-        123.0,
+-        127.7
++        108.5,
++        122.6,
++        113.5,
++        125.6
+       ],
+       "courtyard_native_xy_mm": [
+-        119.705,
+-        122.405,
+-        123.295,
+-        127.995
++        108.205,
++        122.305,
++        113.795,
++        125.895
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -192,21 +192,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        116.0,
+-        126.8
++        115.1,
++        126.3
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        115.2,
+-        126.0,
+-        116.8,
+-        127.6
++        114.3,
++        125.5,
++        115.9,
++        127.1
+       ],
+       "courtyard_native_xy_mm": [
+-        114.905,
+-        125.355,
+-        117.095,
+-        128.245
++        114.005,
++        124.855,
++        116.195,
++        127.745
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -304,21 +304,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        101.25,
+-        124.5
++        103.25,
++        124.4
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        100.725,
+-        124.23,
+-        101.775,
+-        124.77
++        102.725,
++        124.13,
++        103.775,
++        124.67
+       ],
+       "courtyard_native_xy_mm": [
+-        100.275,
+-        123.985,
+-        102.225,
+-        125.015
++        102.275,
++        123.885,
++        104.225,
++        124.915
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -360,21 +360,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        118.25,
+-        123.0
++        116.8,
++        123.3
+       ],
+-      "rotation_ccw_deg": 0.0,
++      "rotation_ccw_deg": 90.0,
+       "body_aabb_native_xy_mm": [
+-        117.725,
+-        122.73,
+-        118.775,
+-        123.27
++        116.53,
++        122.775,
++        117.07,
++        123.825
+       ],
+       "courtyard_native_xy_mm": [
+-        117.275,
+-        122.485,
+-        119.225,
+-        123.515
++        116.285,
++        122.325,
++        117.315,
++        124.275
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -472,20 +472,20 @@
+       "mpn": "PCB PTH wire pads - not fitted hardware",
+       "fitted": false,
+       "body_aabb_native_xy_mm": [
+-        109.935,
+-        130.355,
+-        115.065,
+-        134.845
++        118.735,
++        124.255,
++        123.865,
++        128.745
+       ],
+       "courtyard_native_xy_mm": [
+-        109.935,
+-        130.355,
+-        115.065,
+-        134.845
++        118.735,
++        124.255,
++        123.865,
++        128.745
+       ],
+       "anchor_native_xy_mm": [
+-        112.5,
+-        132.6
++        121.3,
++        126.5
+       ],
+       "rotation_ccw_deg": 0,
+       "z_mm_from_board_bottom": [
+@@ -582,21 +582,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        102.75,
+-        130.0
++        106.5,
++        125.5
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        101.95,
+-        129.6,
+-        103.55,
+-        130.4
++        105.7,
++        125.1,
++        107.3,
++        125.9
+       ],
+       "courtyard_native_xy_mm": [
+-        101.225,
+-        129.225,
+-        104.275,
+-        130.775
++        104.975,
++        124.725,
++        108.025,
++        126.275
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -666,21 +666,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        116.0,
+-        124.0
++        118.75,
++        123.25
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        115.475,
+-        123.73,
+-        116.525,
+-        124.27
++        118.225,
++        122.98,
++        119.275,
++        123.52
+       ],
+       "courtyard_native_xy_mm": [
+-        115.025,
+-        123.485,
+-        116.975,
+-        124.515
++        117.775,
++        122.735,
++        119.725,
++        123.765
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -694,21 +694,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        105.75,
+-        129.5
++        102.05,
++        129.25
+       ],
+-      "rotation_ccw_deg": 180.0,
++      "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        105.225,
+-        129.23,
+-        106.275,
+-        129.77
++        101.525,
++        128.98,
++        102.575,
++        129.52
+       ],
+       "courtyard_native_xy_mm": [
+-        104.775,
+-        128.985,
+-        106.725,
+-        130.015
++        101.075,
++        128.735,
++        103.025,
++        129.765
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -723,20 +723,20 @@
+       "side": "top",
+       "anchor_native_xy_mm": [
+         108.5,
+-        120.5
++        120.25
+       ],
+       "rotation_ccw_deg": 90.0,
+       "body_aabb_native_xy_mm": [
+         106.755,
+-        118.525,
++        118.275,
+         110.245,
+-        122.475
++        122.225
+       ],
+       "courtyard_native_xy_mm": [
+         106.755,
+-        118.525,
++        118.275,
+         110.245,
+-        122.475
++        122.225
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -751,20 +751,20 @@
+       "side": "top",
+       "anchor_native_xy_mm": [
+         102.75,
+-        127.0
++        126.85
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+         101.25,
+-        125.5,
++        125.35,
+         104.25,
+-        128.5
++        128.35
+       ],
+       "courtyard_native_xy_mm": [
+         100.955,
+-        125.205,
++        125.055,
+         104.545,
+-        128.795
++        128.645
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -778,21 +778,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        114.2,
+-        128.3
++        117.35,
++        127.7
+       ],
+       "rotation_ccw_deg": 90.0,
+       "body_aabb_native_xy_mm": [
+-        113.93,
+-        127.775,
+-        114.47,
+-        128.825
++        117.08,
++        127.175,
++        117.62,
++        128.225
+       ],
+       "courtyard_native_xy_mm": [
+-        113.685,
+-        127.325,
+-        114.715,
+-        129.275
++        116.835,
++        126.725,
++        117.865,
++        128.675
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -834,21 +834,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        114.2,
+-        126.0
++        117.35,
++        125.5
+       ],
+       "rotation_ccw_deg": 90.0,
+       "body_aabb_native_xy_mm": [
+-        113.93,
+-        125.475,
+-        114.47,
+-        126.525
++        117.08,
++        124.975,
++        117.62,
++        126.025
+       ],
+       "courtyard_native_xy_mm": [
+-        113.685,
+-        125.025,
+-        114.715,
+-        126.975
++        116.835,
++        124.525,
++        117.865,
++        126.475
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -890,21 +890,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        106.75,
+-        127.0
++        106.35,
++        128.6
+       ],
+-      "rotation_ccw_deg": 90.0,
++      "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        106.125,
+-        126.0,
+-        107.375,
+-        128.0
++        105.35,
++        127.975,
++        107.35,
++        129.225
+       ],
+       "courtyard_native_xy_mm": [
+-        105.725,
+-        125.255,
+-        107.775,
+-        128.745
++        104.605,
++        127.575,
++        108.095,
++        129.625
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -946,20 +946,20 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        103.0,
++        101.5,
+         124.0
+       ],
+       "rotation_ccw_deg": 90.0,
+       "body_aabb_native_xy_mm": [
+-        102.73,
++        101.23,
+         123.475,
+-        103.27,
++        101.77,
+         124.525
+       ],
+       "courtyard_native_xy_mm": [
+-        102.485,
++        100.985,
+         123.025,
+-        103.515,
++        102.015,
+         124.975
+       ],
+       "z_mm_from_board_bottom": [
+@@ -974,21 +974,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        110.0,
+-        127.0
++        111.0,
++        127.85
+       ],
+-      "rotation_ccw_deg": 90.0,
++      "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+         108.5,
+-        124.5,
+-        111.5,
+-        129.5
++        126.35,
++        113.5,
++        129.35
+       ],
+       "courtyard_native_xy_mm": [
+         108.205,
+-        124.205,
+-        111.795,
+-        129.795
++        126.055,
++        113.795,
++        129.645
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -1058,21 +1058,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        107.25,
+-        124.0
++        106.7,
++        126.9
+       ],
+-      "rotation_ccw_deg": 90.0,
++      "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        106.95,
+-        123.45,
+-        107.55,
+-        124.55
++        106.15,
++        126.6,
++        107.25,
++        127.2
+       ],
+       "courtyard_native_xy_mm": [
+-        106.735,
+-        123.025,
+-        107.765,
+-        124.975
++        105.725,
++        126.385,
++        107.675,
++        127.415
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -1366,21 +1366,21 @@
+       "fitted": true,
+       "side": "top",
+       "anchor_native_xy_mm": [
+-        104.75,
+-        124.5
++        115.1,
++        128.65
+       ],
+       "rotation_ccw_deg": 0.0,
+       "body_aabb_native_xy_mm": [
+-        104.2,
+-        124.2,
+-        105.3,
+-        124.8
++        114.55,
++        128.35,
++        115.65,
++        128.95
+       ],
+       "courtyard_native_xy_mm": [
+-        103.775,
+-        123.985,
+-        105.725,
+-        125.015
++        114.125,
++        128.135,
++        116.075,
++        129.165
+       ],
+       "z_mm_from_board_bottom": [
+         1,
+@@ -1393,8 +1393,8 @@
+   "anchors": {
+     "SW2": {
+       "center_native_xy_mm": [
+-        121.5,
+-        125.2
++        111.0,
++        124.1
+       ],
+       "actuation_or_optical_axis": [
+         0,
+@@ -1407,8 +1407,8 @@
+     },
+     "D1": {
+       "center_native_xy_mm": [
+-        116.0,
+-        126.8
++        115.1,
++        126.3
+       ],
+       "actuation_or_optical_axis": [
+         0,
+@@ -1568,21 +1568,21 @@
+     },
+     "J2": {
+       "center_native_xy_mm": [
+-        112.5,
+-        132.6
++        121.3,
++        126.5
+       ],
+       "pins": {
+         "1": {
+           "native_xy_mm": [
+-            111.23,
+-            132.6
++            120.03,
++            126.5
+           ],
+           "net": "/Power/PACK_P"
+         },
+         "2": {
+           "native_xy_mm": [
+-            113.77,
+-            132.6
++            122.57,
++            126.5
+           ],
+           "net": "GND"
+         }
+@@ -1591,8 +1591,8 @@
+     },
+     "SW3": {
+       "center_native_xy_mm": [
+-        110.0,
+-        127.0
++        111.0,
++        127.85
+       ],
+       "actuation_or_optical_axis": [
+         0,
+@@ -1640,7 +1640,50 @@
+       100.0
+     ]
+   ],
+-  "retention": [],
++  "retention": [
++    {
++      "name": "SW_KEY_NO_COPPER",
++      "xy": [
++        [
++          100,
++          129
++        ],
++        [
++          101,
++          129
++        ],
++        [
++          101,
++          130
++        ],
++        [
++          100,
++          130
++        ]
++      ]
++    },
++    {
++      "name": "SE_KEY_NO_COPPER",
++      "xy": [
++        [
++          124,
++          129
++        ],
++        [
++          125,
++          129
++        ],
++        [
++          125,
++          130
++        ],
++        [
++          124,
++          130
++        ]
++      ]
++    }
++  ],
+   "antenna_3d": {
+     "physical_z_from_board_bottom_mm": [
+       1,
+@@ -1672,7 +1715,7 @@
+     "exceptions": "Only U1 own antenna; no battery, harness, carrier, metal fasteners or enclosure conductor in volume. Antenna projects 5.4mm north of PCB."
+   },
+   "retention_policy": {
+-    "contacts": "Two through-PCB M3 sleeves, plus non-preloaded side registration. No pressure on U2; stiffness/torque/sample fit unqualified."
++    "contacts": "H1 M3 clamp and two lower positive edge shoes, insulating lid bearing pads in all-layer copper-free corners. Hooked lid plus M3. No pressure on U2 or pouch; print stiffness/torque unqualified."
+   },
+   "bottom_envelope": {
+     "smt_parts": "none",
+@@ -1742,11 +1785,11 @@
+     ],
+     "board_bbox_centre_native_mm": [
+       112.5,
+-      117.75
++      115.0
+     ],
+     "centre_offset_native_mm": [
+-      0,
+-      -0.25
++      0.0,
++      2.5
+     ],
+     "position_from_board_NW_mm": [
+       12.5,
+@@ -1759,15 +1802,11 @@
+       "H1": [
+         103.6,
+         103.6
+-      ],
+-      "H2": [
+-        121.4,
+-        131.9
+       ]
+     },
+     "drill_mm": 3.2,
+     "copper_exclusion_radius_mm": 3.45,
+-    "scheme": "Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper"
++    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"
+   },
+   "battery_wire": {
+     "pitch_centre_mm": 2.54,
+diff --git a/PCB/main/native-layout-contract.json b/PCB/main/native-layout-contract.json
+index 18e4d9d..3280722 100644
+--- a/PCB/main/native-layout-contract.json
++++ b/PCB/main/native-layout-contract.json
+@@ -1,15 +1,15 @@
+ {
+   "outline": [
+     [
+-      100,
+-      100
++      100.0,
++      100.0
+     ],
+     [
+-      125,
+-      100
++      125.0,
++      100.0
+     ],
+     [
+-      125,
++      125.0,
+       111.5
+     ],
+     [
+@@ -21,16 +21,16 @@
+       122.1
+     ],
+     [
+-      125,
++      125.0,
+       122.1
+     ],
+     [
+-      125,
+-      135.5
++      125.0,
++      130.0
+     ],
+     [
+-      100,
+-      135.5
++      100.0,
++      130.0
+     ]
+   ],
+   "mounting": {
+@@ -38,15 +38,11 @@
+       "H1": [
+         103.6,
+         103.6
+-      ],
+-      "H2": [
+-        121.4,
+-        131.9
+       ]
+     },
+     "drill_mm": 3.2,
+     "copper_exclusion_radius_mm": 3.45,
+-    "scheme": "Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper"
++    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"
+   },
+   "sensor_frame": {
+     "part": "ICM-20948",
+@@ -95,11 +91,11 @@
+     ],
+     "board_bbox_centre_native_mm": [
+       112.5,
+-      117.75
++      115.0
+     ],
+     "centre_offset_native_mm": [
+-      0,
+-      -0.25
++      0.0,
++      2.5
+     ],
+     "position_from_board_NW_mm": [
+       12.5,
+@@ -120,7 +116,7 @@
+     ],
+     "U6": [
+       102.75,
+-      127.0,
++      126.85,
+       0.0
+     ],
+     "U8": [
+@@ -130,7 +126,7 @@
+     ],
+     "U9": [
+       108.5,
+-      120.5,
++      120.25,
+       90.0
+     ],
+     "J1": [
+@@ -139,23 +135,23 @@
+       90.0
+     ],
+     "J2": [
+-      112.5,
+-      132.6,
++      121.3,
++      126.5,
+       0.0
+     ],
+     "SW2": [
+-      121.5,
+-      125.2,
+-      90.0
++      111.0,
++      124.1,
++      0.0
+     ],
+     "SW3": [
+-      110.0,
+-      127.0,
+-      90.0
++      111.0,
++      127.85,
++      0.0
+     ],
+     "D1": [
+-      116.0,
+-      126.8,
++      115.1,
++      126.3,
+       0.0
+     ],
+     "R1": [
+@@ -164,9 +160,9 @@
+       90.0
+     ],
+     "R2": [
+-      118.25,
+-      123.0,
+-      0.0
++      116.8,
++      123.3,
++      90.0
+     ],
+     "R3": [
+       122.25,
+@@ -204,18 +200,18 @@
+       90.0
+     ],
+     "R11": [
+-      114.2,
+-      126.0,
++      117.35,
++      125.5,
+       90.0
+     ],
+     "R12": [
+-      114.2,
+-      128.3,
++      117.35,
++      127.7,
+       90.0
+     ],
+     "R13": [
+-      116.0,
+-      124.0,
++      118.75,
++      123.25,
+       0.0
+     ],
+     "R14": [
+@@ -229,29 +225,29 @@
+       90.0
+     ],
+     "R21": [
+-      103.0,
++      101.5,
+       124.0,
+       90.0
+     ],
+     "R22": [
+-      105.75,
+-      129.5,
+-      180.0
++      102.05,
++      129.25,
++      0.0
+     ],
+     "R23": [
+-      101.25,
+-      124.5,
++      103.25,
++      124.4,
+       0.0
+     ],
+     "C1": [
+-      102.75,
+-      130.0,
++      106.5,
++      125.5,
+       0.0
+     ],
+     "C2": [
+-      106.75,
+-      127.0,
+-      90.0
++      106.35,
++      128.6,
++      0.0
+     ],
+     "C3": [
+       102.75,
+@@ -304,14 +300,14 @@
+       180.0
+     ],
+     "R16": [
+-      104.75,
+-      124.5,
++      115.1,
++      128.65,
+       0.0
+     ],
+     "R17": [
+-      107.25,
+-      124.0,
+-      90.0
++      106.7,
++      126.9,
++      0.0
+     ],
+     "R18": [
+       108.0,
+diff --git a/PCB/main/parts-main.json b/PCB/main/parts-main.json
+index 0a01ac1..0310463 100644
+--- a/PCB/main/parts-main.json
++++ b/PCB/main/parts-main.json
+@@ -142,7 +142,7 @@
+     "fp": "BQ24074_RGT",
+     "placement": [
+       102.75,
+-      127.0,
++      126.85,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/62e9e236-7ab7-5084-b6c7-72c70c5ebfa8"
+@@ -199,7 +199,7 @@
+     "fp": "SOT-23",
+     "placement": [
+       108.5,
+-      120.5,
++      120.25,
+       90.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411"
+@@ -266,8 +266,8 @@
+     "fitted": false,
+     "fp": "BatteryWire_2x_PTH_P2.54mm_D1.0mm",
+     "placement": [
+-      112.5,
+-      132.6,
++      121.3,
++      126.5,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/21368572-48a5-5c87-8fc4-78e6b3ab2ef1"
+@@ -279,7 +279,7 @@
+       "1": "MCU_EN",
+       "2": "GND"
+     },
+-    "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers.",
++    "footprint_gate": "Verified against archived XUNPU TS-1088-AR drawing: logical contact 1 left, contact 2 right at native 0deg; 1.05x2mm pads, 4.45mm centres. Rotation changes XY, never net numbering.",
+     "refs": "SW2 SW3",
+     "quantity": "2",
+     "manufacturer": "XUNPU",
+@@ -293,9 +293,9 @@
+     "fitted": true,
+     "fp": "TS1088",
+     "placement": [
+-      121.5,
+-      125.2,
+-      90.0
++      111.0,
++      124.1,
++      0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/2a670366-1936-5aec-8f5e-8c3d3571a6ea"
+   },
+@@ -306,7 +306,7 @@
+       "1": "BOOT",
+       "2": "GND"
+     },
+-    "footprint_gate": "Map contact pairs/duplicated physical pads from TS-1088 drawing; named logical contacts are not guessed physical pad numbers.",
++    "footprint_gate": "Verified against archived XUNPU TS-1088-AR drawing: logical contact 1 left, contact 2 right at native 0deg; 1.05x2mm pads, 4.45mm centres. Rotation changes XY, never net numbering.",
+     "refs": "SW2 SW3",
+     "quantity": "2",
+     "manufacturer": "XUNPU",
+@@ -320,9 +320,9 @@
+     "fitted": true,
+     "fp": "TS1088",
+     "placement": [
+-      110.0,
+-      127.0,
+-      90.0
++      111.0,
++      127.85,
++      0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/430fa0ba-1038-54cf-a2e1-fa5681823db9"
+   },
+@@ -348,8 +348,8 @@
+     "fitted": true,
+     "fp": "LED_LiteOn_LTST-C19HE1WT",
+     "placement": [
+-      116.0,
+-      126.8,
++      115.1,
++      126.3,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/02ba7497-9a8d-56fa-99a3-83e5b10889a3"
+@@ -400,9 +400,9 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      118.25,
+-      123.0,
+-      0.0
++      116.8,
++      123.3,
++      90.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8/62249a3d-7c44-50d3-9b93-def511549c3b"
+   },
+@@ -608,8 +608,8 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      114.2,
+-      126.0,
++      117.35,
++      125.5,
+       90.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/e88b45c9-cf79-581f-9355-e93b103f9884"
+@@ -634,8 +634,8 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      114.2,
+-      128.3,
++      117.35,
++      127.7,
+       90.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/3c3f9172-c3a6-5be5-b617-559c8cf23058"
+@@ -660,8 +660,8 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      116.0,
+-      124.0,
++      118.75,
++      123.25,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/eb1928cd-42fe-596f-b55e-9356c3c99c22"
+@@ -738,7 +738,7 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      103.0,
++      101.5,
+       124.0,
+       90.0
+     ],
+@@ -764,9 +764,9 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      105.75,
+-      129.5,
+-      180.0
++      102.05,
++      129.25,
++      0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/be66b532-05c7-557a-89c5-f2d94d130905"
+   },
+@@ -790,8 +790,8 @@
+     "fitted": true,
+     "fp": "R_0402_1005Metric",
+     "placement": [
+-      101.25,
+-      124.5,
++      103.25,
++      124.4,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/a9c1b0ab-5977-568f-be58-0258ae3fea50"
+@@ -816,8 +816,8 @@
+     "fitted": true,
+     "fp": "C_0603_1608Metric",
+     "placement": [
+-      102.75,
+-      130.0,
++      106.5,
++      125.5,
+       0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/d0826465-4b10-5286-85fd-e123cc439f08"
+@@ -842,9 +842,9 @@
+     "fitted": true,
+     "fp": "C_0805_2012Metric",
+     "placement": [
+-      106.75,
+-      127.0,
+-      90.0
++      106.35,
++      128.6,
++      0.0
+     ],
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/fb41cc53-f5cb-5dc0-a04c-e60578c27ce9"
+   },
+@@ -1105,8 +1105,8 @@
+       "2": "SCL_1V8"
+     },
+     "placement": [
+-      104.75,
+-      124.5,
++      115.1,
++      128.65,
+       0.0
+     ]
+   },
+@@ -1127,9 +1127,9 @@
+       "2": "SDA_1V8"
+     },
+     "placement": [
+-      107.25,
+-      124.0,
+-      90.0
++      106.7,
++      126.9,
++      0.0
+     ]
+   },
+   "R18": {
+diff --git a/housing/BOM.csv b/housing/BOM.csv
+new file mode 100644
+index 0000000..8ab6388
+--- /dev/null
++++ b/housing/BOM.csv
+@@ -0,0 +1,9 @@
++Item,Quantity,Specification,Status
++Base,1,housing/dist/base.stl,Printed fit/strength unqualified
++Lid,1,housing/dist/lid.stl; two captured hooks,Printed fit/strength unqualified
++Divider,1,housing/dist/divider.stl; rigid insulating 0.8mm,No pouch preload
++M3 screw,1,M3x8 socket cap; assumed head <=5.68x3mm,Measure actual hardware; no qualified torque
++M3 nut,1,Assumed AF5.5x2.4mm,Measure actual hardware
++Battery,1,Nominal 30x20x3mm; protected pack required,UNQUALIFIED; not a purchase approval
++Battery leads,2,Tinned bundle <=0.7mm; insulation OD <=1.2mm,Gauge/current/flex to qualify
++Nonconductive lacing,1,Two 1.2mm bore passages; knot reserve,Fit and pull/flex test required
+diff --git a/housing/closure-check.py b/housing/closure-check.py
+new file mode 100644
+index 0000000..7589912
+--- /dev/null
++++ b/housing/closure-check.py
+@@ -0,0 +1,22 @@
++"""Independent nominal rigid lid-hook installation/removal path; no snap flex assumed.
++Reverse of the sampled removal path installs the lid: tilt, slide south, lower,
++then fit the single M3x8. No battery/PCB component may be forced to make it fit.
++"""
++import FreeCAD as A, Part, json, hashlib
++from pathlib import Path
++R=Path(__file__).resolve().parents[1];d=A.openDocument(str(R/'housing/smove-r2-enclosure.FCStd'))
++build=json.loads((R/'housing/validation/build.json').read_text())
++obstacles=[d.Base,d.BatteryDivider]+[d.getObject(n) for n in build['reference_objects']]+[d.getObject(n) for n in build['hardware_objects'] if 'Screw' not in n]
++collisions=[];poses=[]
++# Deliberate three-stage rigid motion, not a straight lift through captured hooks.
++for i in range(41):poses.append((i/4,0.,0.))
++for i in range(1,41):poses.append((10.,i*.03,0.))
++for i in range(1,61):poses.append((10.,1.2,i*.5))
++for angle,y,z in poses:
++ sh=d.Lid.Shape.copy();sh.rotate(A.Vector(0,1.8,18.4),A.Vector(1,0,0),angle);sh.translate(A.Vector(0,y,z))
++ for o in obstacles:
++  if sh.BoundBox.intersect(o.Shape.BoundBox):
++   v=sh.common(o.Shape).Volume
++   if v>1e-6:collisions.append(dict(pose=[angle,y,z],obstacle=o.Name,overlap_mm3=v))
++report=dict(status='PASS_SAMPLED_RIGID_HOOK_PATH' if not collisions else 'FAIL',samples=len(poses),pivot_mm=[0,1.8,18.4],rotation_axis=[1,0,0],removal_stages='Remove M3 screw; raise north edge to 10 degrees, translate lid north 1.2mm, then lift 30mm. Install in reverse; never force.',collisions=collisions,scope='Nominal discrete rigid geometry, not continuous sweep, tolerance/strength/print/physical qualification.',native_sha256=hashlib.sha256((R/'housing/smove-r2-enclosure.FCStd').read_bytes()).hexdigest())
++(R/'housing/validation/closure-insertion.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));raise SystemExit(bool(collisions))
+diff --git a/scripts/r2/enclosure/contact_audit.py b/scripts/r2/enclosure/contact_audit.py
+index d60942a..dad686e 100644
+--- a/scripts/r2/enclosure/contact_audit.py
++++ b/scripts/r2/enclosure/contact_audit.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Read-only canonical PCB contact audit: two M3 annular bearing zones."""
++"""Read-only canonical PCB contact audit: one M3 annular bearing and two positive corner contact zones."""
+ import json, math
+ from pathlib import Path
+ import pcbnew
+@@ -11,7 +11,8 @@ regions=[]
+ for z in b.Zones():
+     if z.GetIsRuleArea() and '_M3_NO_COPPER' in z.GetZoneName():
+         poly=z.Outline().COutline(0);ref=z.GetZoneName().split('_')[0];x,y=d['mounting']['holes_native_xy_mm'][ref];regions.append((b,dict(name=ref+'_actual_3.4mm_bearing',xy=[[x+3.4*math.cos(i*math.pi/24),y+3.4*math.sin(i*math.pi/24)] for i in range(48)])))
+-assert len(regions)==2
++assert len(regions)==1
++for r in d['retention']:regions.append((b,dict(name=r['name']+'_physical_contact',xy=r['xy'])))
+ for b,r in regions:
+     poly=pcbnew.SHAPE_POLY_SET();poly.NewOutline()
+     for x,y in r['xy']:poly.Append(round(x*1e6),round(y*1e6))
+diff --git a/scripts/r2/enclosure/generate.py b/scripts/r2/enclosure/generate.py
+index c4cfa1f..4a2199e 100644
+--- a/scripts/r2/enclosure/generate.py
++++ b/scripts/r2/enclosure/generate.py
+@@ -1,5 +1,5 @@
+ """Integrated main PCB compact stack, editable native base/lid + removable insulating divider.
+-Two diagonal M3 clamps; measure current export bounds and retain sample/battery qualification gates.
++One M3 clamp, two positive PCB corner keys and hooked lid; measure current export bounds and retain sample/battery qualification gates.
+ """
+ import hashlib,json,math
+ from pathlib import Path
+@@ -8,7 +8,7 @@ import Part,Sketcher,MeshPart
+ ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing';EX=OUT/'dist';EX.mkdir(parents=True,exist_ok=True)
+ CACHE=ROOT/'.cache/housing';DATA=json.loads((CACHE/'input-geometry.json').read_text());MAIN=json.loads((ROOT/'PCB/main/interface.json').read_text())
+ assert set(DATA['boards'])=={'main'}
+-P=dict(XMin=-2.2,XMax=27.2,YMin=-.2,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
++P=dict(XMin=-2.2,XMax=27.2,YMin=1.8,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
+        RoofBottom=18.4,Roof=1.2,BarrierBottom=6.3,BarrierThickness=.8,ScrewUnderHead=15.4,ScrewLength=8.)
+ D=A.newDocument('sMove_Integrated');D.Label='sMove | integrated IMU | underside toward BODY'
+ S=D.addObject('Spreadsheet::Sheet','Parameters')
+@@ -28,6 +28,7 @@ def cyl(name,x,y,z,r,h):
+     return o
+ 
+ def fuse(name,obs):
++    if len(obs)==1:return obs[0]
+     o=D.addObject('Part::MultiFuse',name); o.Shapes=obs; o.Refine=True; return o
+ 
+ def cut(name,b,t):
+@@ -59,19 +60,32 @@ inner=box('BaseCavity','Parameters.XMin+Parameters.Wall','Parameters.YMin+Parame
+ baseparts=[cut('OpenTray',outer,inner)];lidparts=[box('LidBlank','Parameters.XMin','Parameters.YMin','Parameters.RoofBottom','Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.Roof')]
+ basecuts=[];lidcuts=[];fasteners=[[xy[0]-100,139-xy[1]] for xy in MAIN['mounting']['holes_native_xy_mm'].values()];lands=fasteners
+ # Raised nut shelves attach to the inner walls, above the rigid battery divider.
+-# Two corner M3 through-PCB clamps, no external ears and no load on the cell or U2.
++# H1 M3 through-PCB clamp; no external ears and no load on the cell or U2.
+ for i,(x,y) in enumerate(fasteners,1):
+  baseparts.append(cyl(f'BoltSafetyFloor{i}',x,y,6.4,2.05,1.))
+  baseparts += [cyl(f'ClosureBoss{i}',x,y,7.4,4.1,2.8),cyl(f'LowerBearing{i}',x,y,10.2,3.4,.6)]
+  basecuts += [hexagon(f'NutPocket{i}',x,y,7.6,5.8,2.4),box(f'NutEntry{i}',x if i==1 else x-6,y-3.3,7.6,6.,6.6,2.4),cyl(f'ClosureBore{i}',x,y,7.2,1.7,3.7)]
+  lidparts.append(cyl(f'LidBearingBoss{i}',x,y,11.8,3.4,6.7))
+  lidcuts += [cyl(f'LidBore{i}',x,y,11.7,1.7,8.),cyl(f'HeadRecess{i}',x,y,15.4,3.05,4.3)]
+-# Side registration reduces slip; mounting sleeves carry clamp load, not pouch.
++# Positive lower corner edge shoes: XY stops, lower supports and separate lid
++# bearings in two ALL-LAYER COPPER-FREE 1x1mm PCB corners. No pouch preload.
++# 24mm separation provides antirotation independent of screw friction.
++for i,x in enumerate((0.,24.),1):
++ baseparts.append(box(f'KeyLower{i}',-.4 if i==1 else 24.,8.6,7.4,1.4,1.4,3.4))
++ baseparts.append(box(f'KeyStop{i}',x,8.6,10.8,1.,.25,1.))
++ lidparts.append(box(f'KeyUpper{i}',x+.1,9.1,11.8,.7,.7,6.6))
++# Two rigid south-facing lid hooks engage front-wall slots; H1 screw blocks
++# the reverse translation. Captured hooks resist lid lift, not friction snaps.
++for i,x in enumerate((3.,18.),1):
++ lidparts.append(box(f'LidHookStem{i}',x,4.8,15.4,4.,1.2,3.0))
++ lidparts.append(box(f'LidHookTongue{i}',x,2.8,15.4,4.,3.2,1.0))
++ basecuts.append(box(f'LidHookPocket{i}',x-.15,2.6,15.25,4.3,3.6,1.55))
++# Side registration: mounting sleeves and keyed shoes carry load, not pouch.
+ for x in (-.4,25.15):
+  for y in (10.,30.):baseparts.append(box('BoardRegister',x,y,7.4,.25,1.,4.0))
+ for x in (-.4,24.):
+  for y in (10.,29.):baseparts.append(box('DividerSeat',x,y,1.6,1.4,1.,4.7))
+-divider_blank=box('DividerBlank',1.,4.5,6.3,23.,34.2,.8)
++divider_blank=box('DividerBlank',1.,6.5,6.3,23.,32.2,.8)
+ barrier=role(cut('BatteryDivider',divider_blank,fuse('DividerCornerReliefs',[cyl('DividerRelief',x,y,6.2,4.35,1.) for x,y in fasteners])),'divider','REMOVABLE rigid insulating battery divider | no preload')
+ # East USB shoulder near MCU. Connector shell/plug allowed through this aperture only.
+ basecuts.append(box('USBNotch',23.9,16.7,11.4,4.,11.,7.0))
+@@ -79,9 +93,9 @@ for ref,r in [('SW2',1.7),('SW3',1.7),('D1',2.2)]:
+  x,y=MAIN['anchors'][ref]['center_native_xy_mm'];lidcuts.append(cyl(ref+'Access',x-100,139-y,11.9,r,8.))
+ # Insulating strain-relief bridge, independent of the cell and screw load path.
+ # Two wire guide bores plus two lacing holes; nylon cord must be fitted and pull-tested.
+-baseparts.append(box('WireLacingBridge',8.2,1.55,5.1,8.6,2.05,1.0))
+-for x in (11.23,13.77):basecuts.append(cyl('WireGuide',x,2.2,4.95,.8,1.3))
+-for x in (9.3,15.7):basecuts.append(cyl('LacingBore',x,2.7,4.95,.6,1.3))
++baseparts.append(box('WireLacingBridge',17.,3.55,5.1,8.,2.05,1.0))
++for x in (20.03,22.57):basecuts.append(cyl('WireGuide',x,4.2,4.95,.8,1.3))
++for x in (18.2,24.1):basecuts.append(cyl('LacingBore',x,4.7,4.95,.6,1.3))
+ base=role(cut('Base',fuse('BaseStructure',baseparts),fuse('BaseOpenings',basecuts)),'print','BASE | flat underside BODY')
+ lid=role(cut('Lid',fuse('LidStructure',lidparts),fuse('LidOpenings',lidcuts)),'print','LID | TOP / OUTWARD | RGB RESET BOOT')
+ refs=[];clearances=[];hardware=[]
+@@ -92,7 +106,7 @@ for ref,f in b['footprints'].items():
+   if dx>0 and dy>0:
+    if abs(dx-dy)<1e-5:drills.append(cyl(f'Main_{ref}_Hole{i}',x,y,10.7,dx/2,1.2))
+    else:drills.append(box(f'Main_{ref}_Slot{i}',x-dx/2,y-dy/2,10.7,dx,dy,1.2))
+-pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 35.5 x 1mm | +Z outward'))
++pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 30 x 1mm | +Z outward'))
+ for ref,f in b['footprints'].items():
+  if not f.get('fitted'):continue
+  x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm'];o=rb('Main_'+ref,x0,y0,10.8+z0,x1-x0,y1-y0,z1-z0,'main_component');o.Label=ref+' '+MAIN['components'][ref]['mpn']+' | conservative envelope';refs.append(o)
+@@ -104,7 +118,7 @@ clearances.append(rb('RF_NO_BATTERY_HARNESS_METAL',-7.4,39.,-4.2,43.2,20.4,33.4,
+ for ref in ('J1',):
+  a=MAIN['anchors'][ref];pts=a['cavity_polygon_native_xy_mm'];xs=[x-100 for x,y in pts];ys=[139-y for x,y in pts];z0,z1=a['cavity_z_mm_from_board_bottom']
+  clearances.append(rb('Main_'+ref+'_MatingInsertion',min(xs),min(ys),10.8+z0,max(xs)-min(xs),max(ys)-min(ys),z1-z0))
+-# No PH4 harness. Reserved PH2 lead descent stays outside the PCB/divider footprint.
++# No fitted battery connector: two wire descents stay in the reserved front bay.
+ def rounded_route(name,points,bend,r):
+     """True tangent line/arc centerline, not sharp elbows or a claimed cable bend spec."""
+     vs=[A.Vector(*p) for p in points]; edges=[]; current=vs[0]
+@@ -129,14 +143,14 @@ def rounded_route(name,points,bend,r):
+ # bundle <=0.7mm; no gauge is claimed supplied. Centreline bends R2 are a fit
+ # reservation, not the wire vendor's qualified bend radius. Solder from TOP.
+ packpoints=[];packlength=0.
+-for i,x in enumerate((11.23,13.77),1):
+- points=[[x,6.4,10.2],[x,6.4,8.2],[x,2.2,8.2],[x,2.2,3.2],[x,7.,3.2]]
++for i,x in enumerate((20.03,22.57),1):
++ points=[[x,12.5,10.2],[x,12.5,8.2],[x,4.2,8.2],[x,4.2,3.2],[x,7.,3.2]]
+  wire,length=rounded_route('BatteryWire'+str(i),points,2.,.6);refs.append(wire);packpoints.append(points);packlength+=length
+- refs.append(role(cyl('BareWire'+str(i),x,6.4,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
++ refs.append(role(cyl('BareWire'+str(i),x,12.5,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
+  # Filled top solder meniscus reserve sits above the PCB, not an impossible solid through it.
+- refs.append(role(cyl('SolderFillet'+str(i),x,6.4,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
+- clearances.append(role(cyl('LacingThreadReserve'+str(i),(9.3,15.7)[i-1],2.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
+- clearances.append(rb('LacingKnotReserve'+str(i),(9.3,15.7)[i-1]-.6,2.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
++ refs.append(role(cyl('SolderFillet'+str(i),x,12.5,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
++ clearances.append(role(cyl('LacingThreadReserve'+str(i),(18.2,24.1)[i-1],4.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
++ clearances.append(rb('LacingKnotReserve'+str(i),(18.2,24.1)[i-1]-.6,4.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
+ for i,(x,y) in enumerate(fasteners,1):
+  screw=fuse(f'ClosureScrew{i}',[cyl(f'ScrewShank{i}',x,y,7.4,1.5,8.),cyl(f'ScrewHead{i}',x,y,15.4,2.84,3.)]);hardware.append(role(screw,'hardware','M3x8 socket cap | assumed max head 5.68 x 3mm'))
+  nut=cut(f'ClosureNut{i}',hexagon(f'NutBlank{i}',x,y,7.6,5.5,2.4),cyl(f'NutHole{i}',x,y,7.5,1.5,2.6));hardware.append(role(nut,'hardware','M3 nut | AF5.5 x 2.4mm | side load'))
+diff --git a/scripts/r2/enclosure/verify.py b/scripts/r2/enclosure/verify.py
+index 3f7fac4..4875f6f 100644
+--- a/scripts/r2/enclosure/verify.py
++++ b/scripts/r2/enclosure/verify.py
+@@ -32,7 +32,7 @@ for c in cs:
+ # J2 is now PTH wire pads: no mate, no header, no connector-envelope exception.
+ check('obsolete_J2_mate_removed',d.getObject('Main_J2_MatingInsertion') is None and d.getObject('Main_J2') is None)
+ check('two_wire_routes',len([o for o in refs if o.Name.startswith('BatteryWire')])==2)
+-for i,x in enumerate((11.23,13.77),1):
++for i,x in enumerate((20.03,22.57),1):
+  wire=d.getObject('BatteryWire'+str(i));bare=d.getObject('BareWire'+str(i))
+  check('wire_assumed_OD:'+str(i),abs(wire.EnvelopeRadius.Value-.6)<1e-6)
+  check('wire_bend_reserve:'+str(i),abs(wire.BendRadius.Value-2.)<1e-6)
+@@ -40,7 +40,7 @@ for i,x in enumerate((11.23,13.77),1):
+  check('solder_top_trim:'+str(i),abs(d.getObject('SolderFillet'+str(i)).Shape.BoundBox.ZMax-12.4)<1e-6)
+  sep('wire_vs_full_pack_reserve:'+str(i),wire.Shape,d.BatteryAcceptance_21x31x4_3.Shape)
+  # The guide and lacing bores must be actual negative space in native base, not drawings.
+- for label,xx,yy,r in [('wire',x,2.2,.6),('lacing',(9.3,15.7)[i-1],2.7,.2)]:
++ for label,xx,yy,r in [('wire',x,4.2,.6),('lacing',(18.2,24.1)[i-1],4.7,.2)]:
+   probe=Part.makeCylinder(r,1.,A.Vector(xx,yy,5.1));sep('strain_relief_passage:'+label+str(i),probe,d.Base.Shape)
+ check('lacing_bridge_connected',len(d.Base.Shape.Solids)==1 and d.WireLacingBridge.Shape.Volume>15)
+ # Verify every generated component against CURRENT native extraction, not an old file hash alone.
+@@ -49,8 +49,22 @@ for r,f in inputs['footprints'].items():
+  if not f.get('fitted'):continue
+  bb2=d.getObject('Main_'+r).Shape.BoundBox;x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm']
+  check('current_component_geometry:'+r,max(abs(a-b) for a,b in zip([bb2.XMin,bb2.YMin,bb2.ZMin,bb2.XMax,bb2.YMax,bb2.ZMax],[x0,y0,10.8+z0,x1,y1,10.8+z1]))<1e-6)
+-# Exact two diagonal native holes, sleeve contact and retained non-contact sensor frame.
+-check('two_diagonal_holes',len(build['fastener_xy_mm'])==2 and abs(build['fastener_xy_mm'][0][0]-build['fastener_xy_mm'][1][0])>17 and abs(build['fastener_xy_mm'][0][1]-build['fastener_xy_mm'][1][1])>28)
++# One native M3 hole, two positive corner keys and retained non-contact sensor frame.
++check('one_M3_plus_positive_keys',len(build['fastener_xy_mm'])==1 and all(d.getObject(n) for n in ['KeyLower1','KeyLower2','KeyStop1','KeyStop2','KeyUpper1','KeyUpper2','LidHookTongue1','LidHookTongue2']))
++for i in (1,2):
++ for name,z,up in [('KeyLower',10.8,True),('KeyUpper',11.8,False)]:
++  shape=d.getObject(name+str(i)).Shape
++  check(f'key_bearing_z:{name}{i}',abs((shape.BoundBox.ZMax if up else shape.BoundBox.ZMin)-z)<1e-6)
++  probe=moved(shape,z=.01 if up else -.01);check(f'positive_key_PCB_contact:{name}{i}',volume(probe,d.MainPCB.Shape)>.003)
++check('key_separation_mm',abs(d.KeyStop1.Shape.BoundBox.XMin-d.KeyStop2.Shape.BoundBox.XMin)>=24.)
++# Show that small attempted XY rotations hit solid keys, not merely clamp friction.
++for angle in (-1.,1.):
++ rotated=d.MainPCB.Shape.copy();rotated.rotate(A.Vector(3.6,35.4,10.8),A.Vector(0,0,1),angle)
++ check('rotation_stopped:'+str(angle),volume(rotated,d.Base.Shape)>1e-5)
++for i in (1,2):
++ hook=d.getObject('LidHookTongue'+str(i)).Shape
++ check('hook_resists_vertical_lift:'+str(i),volume(moved(hook,z=.5),d.Base.Shape)>1e-5)
++
+ bb=Part.makeCompound([o.Shape for o in case+hw]).BoundBox;dims=[bb.XLength,bb.YLength,bb.ZLength];sorted_dims=sorted(dims,reverse=True)
+ check('outer_measured_bounds',all(v>0 for v in dims),dims)
+ full=Part.makeCompound([o.Shape for o in case+refs+hw]).BoundBox
+diff --git a/scripts/r2/integrated/compact.py b/scripts/r2/integrated/compact.py
+new file mode 100644
+index 0000000..bea9526
+--- /dev/null
++++ b/scripts/r2/integrated/compact.py
+@@ -0,0 +1,101 @@
++#!/usr/bin/python3
++"""Explicit placement study/ECO from f8c7ef6, never a release rebuild.
++Three independently screened arrangements BEFORE routing. No pad, courtyard,
++part, clearance or RF substitutions. Current routed native CAD is authoritative.
++"""
++from pathlib import Path
++import json, math, sys, subprocess as sp, gc
++# KiCad SWIG proxies on this host must outlive mutation; avoid cyclic-GC callbacks.
++gc.disable(); sys.excepthook = sys.__excepthook__
++import pcbnew as p
++from sexp import parse, dump, many, one, val, prop
++R=Path(__file__).resolve().parents[3]; H=R/'PCB/main'; D=R/'.cache/compact'; E=R/'docs/revision-r2/compact-placement'
++V=lambda x,y:p.VECTOR2I(p.FromMM(x),p.FromMM(y))
++BPOSE={
++ 'SW2':(111.,124.1,0), 'SW3':(111.,127.85,0),
++ 'J2':(121.3,126.5,0), 'D1':(115.1,126.3,0),
++ 'R1':(115.,121.5,90), 'R2':(116.8,123.3,90),
++ 'R11':(117.35,125.5,90),'R12':(117.35,127.7,90),'R13':(118.75,123.25,0),
++ 'C1':(106.5,125.5,0),'C2':(106.35,128.6,0),
++ 'R16':(115.1,128.65,0),'R17':(106.7,126.9,0),
++ 'R21':(101.5,124.,90),'R23':(103.25,124.4,0), 'R22':(103.,129.25,0), 'U9':(108.5,120.25,90), 'U6':(102.75,126.85,0),
++}
++CASES={
++ 'A_32_two_M3':dict(length=32.,holes={'H1':(103.6,103.6),'H2':(121.4,128.4)},pose={**BPOSE,'SW2':(121.1,124.2,0),'SW3':(110.6,124.4,0),'J2':(111.3,129.2,0),'D1':(115.7,126.9,0),'R11':(114.1,125.5,90),'R12':(115.1,129.5,0),'R13':(116.5,123.4,0),'R16':(107.0,124.,90)}),
++ 'B_30_single_M3_keyed':dict(length=30.,holes={'H1':(103.6,103.6)},pose=BPOSE),
++ 'C_29_single_M3_tight':dict(length=29.,holes={'H1':(103.6,103.6)},pose={**BPOSE,'SW3':(111.,126.85,0),'C2':(106.75,127.7,0),'R22':(103.,128.5,0),'R12':(117.35,127.0,90),'R16':(115.1,128.0,0)}),
++}
++SELECTED='B_30_single_M3_keyed'
++def outline(length):return [(100,100),(125,100),(125,111.5),(124.45,111.5),(124.45,122.1),(125,122.1),(125,100+length),(100,100+length)]
++def build(key,remove_routes=True):
++ c=CASES[key];raw=parse((D/'baseline.kicad_pcb').read_text())
++ raw[:]=[x for x in raw if not(isinstance(x,list) and (
++   (remove_routes and x[0] in ('segment','via')) or x[0]=='gr_text' or
++   (x[0].startswith('gr_') and many(x,'layer') and val(one(x,'layer')[1])=='Edge.Cuts') or
++   (x[0]=='footprint' and prop(x,'Reference').startswith('H') and prop(x,'Reference') not in c['holes']) or
++   (x[0]=='zone' and many(x,'name') and val(one(x,'name')[1])=='H2_M3_NO_COPPER' and 'H2' not in c['holes']))) ]
++ temp=D/'scratch.kicad_pcb';temp.write_text(dump(raw)+'\n');b=p.LoadBoard(str(temp));fs={f.GetReference():f for f in b.GetFootprints()}
++ for r,pos in c['pose'].items():fs[r].SetOrientationDegrees(pos[2]);fs[r].SetPosition(V(*pos[:2]))
++ for r in ('H1','H2'):
++  if r in c['holes']:
++   delta=V(*c['holes'][r])-fs[r].GetPosition();fs[r].Move(delta)
++   for z in b.Zones():
++    if z.GetZoneName()==r+'_M3_NO_COPPER':z.Move(delta)
++ pts=outline(c['length'])
++ for a,d in zip(pts,pts[1:]+pts[:1]):
++  s=p.PCB_SHAPE(b);s.SetShape(p.SHAPE_T_SEGMENT);s.SetStart(V(*a));s.SetEnd(V(*d));s.SetWidth(p.FromMM(.05));s.SetLayer(p.Edge_Cuts);b.Add(s)
++ for text,x,y,angle in [('RESET',111.,124.1,0),('BOOT',111.,127.85,0),('BAT+',120.03,124.4,0),('BAT-',122.57,124.4,0),('U2 +Z',112.5,117.5,0)]:
++  s=p.PCB_TEXT(b);s.SetText(text);s.SetPosition(V(x,y));s.SetTextSize(V(.6,.6));s.SetTextThickness(p.FromMM(.1));s.SetLayer(p.F_SilkS);s.SetTextAngle(p.EDA_ANGLE(angle,p.DEGREES_T));b.Add(s)
++ return b
++
++def bb(f):
++ z=f.GetCourtyard(p.F_CrtYd).BBox();return [round(x/1e6,5) for x in (z.GetX(),z.GetY(),z.GetRight(),z.GetBottom())]
++def study():
++ from PIL import Image, ImageDraw, ImageFont
++ font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
++ reports=[]
++ for key,c in CASES.items():
++  b=build(key);fs={f.GetReference():f for f in b.GetFootprints()};boxes={r:bb(f) for r,f in fs.items() if not r.startswith('H')}
++  collisions=[];outside=[]
++  for r,a in boxes.items():
++   for s,v in boxes.items():
++    if s<=r:continue
++    dx=min(a[2],v[2])-max(a[0],v[0]);dy=min(a[3],v[3])-max(a[1],v[1])
++    if dx>0 and dy>0 and p.SHAPE.Collide(fs[r].GetCourtyard(p.F_CrtYd),fs[s].GetCourtyard(p.F_CrtYd)):collisions.append(dict(refs=[r,s],overlap_mm2=round(dx*dy,6)))
++   if r not in ['U1','J1'] and (a[0]<100.2 or a[2]>124.8 or a[1]<100.2 or a[3]>100+c['length']-.2):outside.append(r)
++   for h,(x,y) in c['holes'].items():
++    distance=math.hypot(max(a[0]-x,0,x-a[2]),max(a[1]-y,0,y-a[3]))
++    if distance<3.45:collisions.append(dict(refs=[r,h],bearing_clearance_mm=round(distance-3.45,4)))
++  pads={r:[dict(number=a.GetNumber(),net=a.GetNetname(),xy_mm=list(p.ToMM(a.GetPosition()))) for a in fs[r].Pads()] for r in ['SW2','SW3','J2']}
++  report=dict(candidate=key,board_mm=[25,c['length']],bounding_area_mm2=25*c['length'],area_reduction_pct=round(100*(35.5-c['length'])/35.5,3),placements=c['pose'],mounts=c['holes'],courtyard_aabbs_mm=boxes,courtyard_collisions=collisions,edge_assembly_violations=outside,pad_mapping=pads,lower_region_mm=[100,122,125,100+c['length']],lower_courtyard_area_mm2=round(sum(max(0,min(a[3],100+c['length'])-max(a[1],122))*max(0,min(a[2],125)-max(a[0],100)) for a in boxes.values()),3),screen_pass=not collisions and not outside,screen_scope='Conservative courtyard AABBs + unchanged 0.2mm assembly-to-board reserve + 3.45mm M3 bearing reserve, no routing assumed')
++  reports.append(report)
++  p.SaveBoard(str(D/(key+'.kicad_pcb')),b)
++  image=Image.new('RGB',(820,1280),'white');draw=ImageDraw.Draw(image);scale=28
++  def pt(x,y):return (55+(x-100)*scale,145+(y-100)*scale)
++  draw.text((25,15),key,font=font,fill='black');draw.text((25,45),f"25 x {c['length']} mm | pre-route placement",font=font,fill='black')
++  draw.polygon([pt(*a) for a in outline(c['length'])],fill='#dbece0',outline='black',width=2)
++  for r,a in boxes.items():
++   col='#e9ac6a' if r in c['pose'] else '#b7c7d9';draw.rectangle([pt(a[0],a[1]),pt(a[2],a[3])],fill=col,outline='#465060');draw.text(pt((a[0]+a[2])/2-.55,(a[1]+a[3])/2-.25),r,font=font,fill='black')
++  for h,(x,y) in c['holes'].items():draw.ellipse([pt(x-3.45,y-3.45),pt(x+3.45,y+3.45)],outline='#bb0000',width=3);draw.ellipse([pt(x-1.6,y-1.6),pt(x+1.6,y+1.6)],fill='white',outline='black')
++  draw.text((25,1170),f"Courtyard/bearing conflicts: {len(collisions)} | edge: {len(outside)}",font=font,fill='black');draw.text((25,1200),'Orange = relocated. Blue = retained. Not routing proof.',font=font,fill='black');image.save(E/'images'/(key+'.png'))
++  print(key,'conflicts',collisions,'outside',outside)
++ (E/'validation/placement-study.json').write_text(json.dumps(dict(baseline='f8c7ef6',selected=SELECTED,candidates=reports),indent=2)+'\n')
++def apply():
++ assert sp.check_output(['git','rev-parse','--short','HEAD'],text=True).strip()=='f8c7ef6'
++ j=json.loads((E/'validation/placement-study.json').read_text());assert next(c for c in j['candidates'] if c['candidate']==SELECTED)['screen_pass']
++ b=build(SELECTED,False);moved=set(CASES[SELECTED]['pose'])
++ # Remove all routes touching moved non-GND nets, and all lower-region copper.
++ # Retain high-speed USB pair and local IMU/regulator routing when unaffected.
++ codes={a.GetNetCode() for f in b.GetFootprints() if f.GetReference() in moved for a in f.Pads() if a.GetNetname() not in ('','GND')}
++ removed=[]
++ for t in list(b.GetTracks()):
++  ymax=max(t.GetStart().y,t.GetEnd().y)/1e6
++  if t.GetNetCode() in codes or ymax>122.15:removed.append(t.m_Uuid.AsString())
++ pro=(H/'smove-r2-main.kicad_pro').read_bytes();path=H/'smove-r2-main.kicad_pcb';p.SaveBoard(str(path),b)
++ raw=parse(path.read_text());raw[:]=[x for x in raw if not(isinstance(x,list) and x[0] in ('segment','via') and val(one(x,'uuid')[1]) in removed)];path.write_text(dump(raw)+'\n')
++ b=p.LoadBoard(str(path));b.BuildConnectivity();p.ZONE_FILLER(b).Fill(b.Zones());p.SaveBoard(str(path),b);(H/'smove-r2-main.kicad_pro').write_bytes(pro)
++ (E/'validation/placement-eco.json').write_text(json.dumps(dict(selected=SELECTED,removed_routes=removed,reroute_netcodes=sorted(codes),parts_unchanged=True,rules_unchanged=True),indent=2)+'\n')
++if __name__=='__main__':
++ if sys.argv[1:]==['study']:study()
++ elif sys.argv[1:]==['--apply']:apply()
++ else:raise SystemExit('study | --apply; never replay after routing')
+diff --git a/scripts/r2/integrated/compact_routes.py b/scripts/r2/integrated/compact_routes.py
+new file mode 100644
+index 0000000..918a60d
+--- /dev/null
++++ b/scripts/r2/integrated/compact_routes.py
+@@ -0,0 +1,82 @@
++#!/usr/bin/python3
++"""Small bounded, clearance-aware route completion for the compact wire-pad ECO nets.
++Native final ERC/DRC is the authority. Does not route on In1 reference plane.
++"""
++import pcbnew as p, heapq, math, functools, json
++from route import R,H,B,D,refill
++from sexp import *
++b=p.LoadBoard(str(B));L=[p.F_Cu,p.In2_Cu,p.B_Cu];S=.05
++V=lambda x,y:p.VECTOR2I(round(x*1e6),round(y*1e6))
++def connect(net,start,end,width=.15):
++ obstacles={l:[] for l in [p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]};pastepads=[a.GetEffectiveShape(p.F_Cu) for f in b.GetFootprints() for a in f.Pads() if a.GetAttribute()==p.PAD_ATTRIB_SMD]
++ def add(l,shape):
++  bb=shape.BBox();obstacles[l].append((bb.GetX()/1e6,bb.GetY()/1e6,bb.GetRight()/1e6,bb.GetBottom()/1e6,shape))
++ for f in b.GetFootprints():
++  for pad in f.Pads():
++   if pad.GetNetname()==net:continue
++   for l in obstacles:
++    if pad.IsOnLayer(l):
++     add(l,pad.GetEffectiveShape(l))
++     if pad.GetAttribute()==p.PAD_ATTRIB_NPTH:add(l,p.SHAPE_CIRCLE(pad.GetPosition(),max(pad.GetDrillSize().x,pad.GetDrillSize().y)//2+p.FromMM(.11)))
++ for t in b.GetTracks():
++  if t.GetNetname()==net:continue
++  for l in obstacles:
++   if t.IsOnLayer(l):add(l,t.GetEffectiveShape())
++ for z in list(b.Zones())+[z for f in b.GetFootprints() for z in f.Zones()]:
++  if z.GetIsRuleArea():
++   for l in obstacles:
++    if z.IsOnLayer(l):add(l,z.Outline())
++ @functools.lru_cache(None)
++ def safe(x,y,layer,via=False):
++  xx=x*S;yy=y*S;rr=.38 if via else width/2+.155
++  edge_r=.225 if via else width/2
++  if not(100.255+edge_r<xx<124.745-edge_r and 100.255+edge_r<yy<129.745-edge_r):return False
++  if xx+rr>124.2 and 111.2-rr<yy<122.4+rr:return False
++  sh=p.SHAPE_CIRCLE(V(xx,yy),round(rr*1e6))
++  if via and any(p.SHAPE.Collide(p.SHAPE_CIRCLE(V(xx,yy),p.FromMM(.33)),pad) for pad in pastepads):return False
++  for l in (list(obstacles) if via else [layer]):
++   for x0,y0,x1,y1,o in obstacles[l]:
++    if x0-rr<=xx<=x1+rr and y0-rr<=yy<=y1+rr and p.SHAPE.Collide(sh,o):return False
++  return True
++ st=(round(start[0]/S),round(start[1]/S),start[2]);en=(round(end[0]/S),round(end[1]/S),end[2])
++ def h(a):return math.hypot(a[0]-en[0],a[1]-en[1])+(0 if a[2]==en[2] else 10)
++ pq=[(h(st),0,st)];dist={st:0};prev={};count=0
++ while pq:
++  _,g,u=heapq.heappop(pq)
++  if g!=dist[u]:continue
++  count+=1
++  if u==en:break
++  x,y,l=u
++  nei=[((x+dx,y+dy,l),math.hypot(dx,dy)) for dx,dy in [(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(-1,1),(-1,-1)] if safe(x+dx,y+dy,l)]
++  if safe(x,y,l,True):nei += [((x,y,ll),22) for ll in L if ll!=l]
++  for v,c in nei:
++   if g+c<dist.get(v,1e30):dist[v]=g+c;prev[v]=u;heapq.heappush(pq,(g+c+h(v),g+c,v))
++  if count>350000:raise RuntimeError('route node limit')
++ else:raise RuntimeError((net,'no path',st,en,safe(*st),safe(*en),count,max(x for x,y,l in dist),min(x for x,y,l in dist)))
++ path=[en]
++ while path[-1]!=st:path.append(prev[path[-1]])
++ path.reverse();nn=b.FindNet(net)
++ # Coalesce collinear grid segments; no gratuitous long high-speed signal stub.
++ verts=[path[0]]
++ for i,v in enumerate(path[1:-1],1):
++  bef=path[i-1];aft=path[i+1]
++  if (v[0]-bef[0],v[1]-bef[1],v[2]-bef[2])!=(aft[0]-v[0],aft[1]-v[1],aft[2]-v[2]):verts.append(v)
++ verts.append(path[-1])
++ for u,v in zip(verts,verts[1:]):
++  if u[2]!=v[2]:
++   if any(isinstance(t,p.PCB_VIA) and t.GetNetname()==net and (t.GetPosition()-V(u[0]*S,u[1]*S)).EuclideanNorm()<p.FromMM(.01) for t in b.GetTracks()):continue
++   if any(a.GetAttribute()==p.PAD_ATTRIB_PTH and a.GetNetname()==net and a.HitTest(V(u[0]*S,u[1]*S)) for f in b.GetFootprints() for a in f.Pads()):continue
++   via=p.PCB_VIA(b);via.SetPosition(V(u[0]*S,u[1]*S));via.SetWidth(p.FromMM(.45));via.SetDrill(p.FromMM(.2));via.SetLayerPair(p.F_Cu,p.B_Cu);via.SetNet(nn);b.Add(via)
++  else:
++   t=p.PCB_TRACK(b);t.SetStart(V(u[0]*S,u[1]*S));t.SetEnd(V(v[0]*S,v[1]*S));t.SetLayer(u[2]);t.SetWidth(p.FromMM(width));t.SetNet(nn);b.Add(t)
++ print(net,'nodes',count,'segments',len(verts)-1,flush=True)
++ return [[round(x*S,3),round(y*S,3),l] for x,y,l in verts]
++if __name__=='__main__':
++ from pathlib import Path
++ import sys
++ targets=json.loads(Path(sys.argv[1]).read_text());record=R/'docs/revision-r2/compact-placement/validation/completion-routes.json';results=json.loads(record.read_text()) if record.exists() else []
++ for net,start,end,width in targets:
++  path=connect(net,start,end,width);results.append(dict(net=net,width_mm=width,points=path))
++  pro=(H/'smove-r2-main.kicad_pro').read_bytes();p.SaveBoard(str(B),b);(H/'smove-r2-main.kicad_pro').write_bytes(pro)
++  Path(R/'docs/revision-r2/compact-placement/validation/completion-routes.json').write_text(json.dumps(results,indent=2)+'\n')
++ refill()
+diff --git a/scripts/r2/integrated/seal_compact.py b/scripts/r2/integrated/seal_compact.py
+new file mode 100644
+index 0000000..65541b6
+--- /dev/null
++++ b/scripts/r2/integrated/seal_compact.py
+@@ -0,0 +1,58 @@
++#!/usr/bin/python3
++"""Seal current compact delivery; no CAD mutations and no Git commit/merge.
++Validate native/export report source hashes, placement/BOM/ZIP coherence, then
++write artifact manifests. Full-repository delivery-manifest is made at staging.
++"""
++from pathlib import Path
++import hashlib,json,csv,zipfile,subprocess as sp
++import pcbnew as p
++from PIL import Image,ImageDraw,ImageFont,ImageChops
++R=Path(__file__).resolve().parents[3];H=R/'PCB/main';O=R/'housing';E=R/'docs/revision-r2/compact-placement';V=E/'validation'
++sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
++def write(path,j):path.write_text(json.dumps(j,indent=2)+'\n')
++checks=[]
++def ck(n,v):checks.append(dict(check=n,passed=bool(v)));assert v,n
++board=H/'smove-r2-main.kicad_pcb';native=O/'smove-r2-enclosure.FCStd';parts=json.loads((H/'parts-main.json').read_text());b=p.LoadBoard(str(board));fps={f.GetReference():f for f in b.GetFootprints()}
++elec=json.loads((V/'electrical.json').read_text());ck('electrical_assertions',elec['status']=='PASS' and not elec['failures'])
++for name in ('baseline-drc','post-drc'):
++ j=json.loads((V/(name+'.json')).read_text());ck(name,not j['violations'] and not j['unconnected_items'] and not j['schematic_parity'])
++for name in ('baseline-erc','post-erc'):
++ j=json.loads((V/(name+'.json')).read_text());ck(name,not any(s.get('violations') for s in j['sheets']))
++for name in ('mechanical','closure-insertion','gui-inspection','battery-insertion'):
++ j=json.loads((O/'validation'/(name+'.json')).read_text());ck(name,j['status'].startswith('PASS'))
++ if 'native_sha256' in j:ck(name+':native_hash',j['native_sha256']==sha(native))
++ if 'sources' in j:
++  for f,h in j['sources'].items():ck(name+':source:'+f,sha(R/f)==h)
++ if 'source_sha256' in j:
++  for f,h in j['source_sha256'].items():ck(name+':generator:'+f,sha(R/f)==h)
++ex=json.loads((V/'exports.json').read_text())
++for f,h in ex['sources'].items():ck('export-source:'+f,sha(R/f)==h)
++for f,h in ex['artifacts'].items():ck('export-artifact:'+f,sha(R/f)==h)
++ck('native_rules_unchanged',all((H/f).read_bytes()==sp.check_output(['git','show','f8c7ef6:PCB/main/'+f]) for f in ('smove-r2-main.kicad_pro','smove-r2-main.kicad_dru')))
++placements=json.loads((H/'dist/assembly-placements.json').read_text());ck('46_electronic_CPL_no_J2',len(placements['parts'])==46 and not {'J2','H1','H2'}&{r['reference'] for r in placements['parts']})
++origin=placements['aux_origin_native_mm']
++for rec in placements['parts']:
++ f=fps[rec['reference']];x,y=p.ToMM(f.GetPosition());ck('CPL:'+f.GetReference(),rec['xy_mm']==[round(x-origin[0],6),round(origin[1]-y,6)] and abs(rec['rotation_deg']-f.GetOrientationDegrees()%360)<1e-5 and rec['mpn']==parts[f.GetReference()]['mpn'])
++with (H/'dist/BOM.csv').open() as f:ck('BOM_46',sum(int(r['Quantity']) for r in csv.DictReader(f))==46)
++with zipfile.ZipFile(H/'dist/gerbers.zip') as z:
++ ck('gerber_ZIP_all_members',set(z.namelist())=={f.name for f in (H/'dist/gerbers').iterdir()})
++ for n in z.namelist():ck('ZIP:'+n,z.read(n)==(H/'dist/gerbers'/n).read_bytes())
++ck('all_rigid_contact_lands',json.loads((V/'retention.json').read_text())['status']=='PASS')
++# Current/before images are composites of actual exports, not recreated layouts.
++font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',25);small=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
++canvas=Image.new('RGB',(1200,990),'white');draw=ImageDraw.Draw(canvas)
++for i,(path,title,dim) in enumerate([(E/'images/before-pcb.png','BEFORE | f8c7ef6','25 x 35.5 mm'),(H/'dist/top-3d.png','AFTER | compact keyed','25 x 30 mm')]):
++ im=Image.open(path).convert('RGB');box=im.convert('L').point(lambda x:255 if x>25 else 0).getbbox();im=im.crop(box);im=im.resize((500,round(im.height*500/im.width)));canvas.paste(im,(50+i*600,110));draw.text((50+i*600,20),title,font=font,fill='black');draw.text((50+i*600,58),dim,font=font,fill='black')
++draw.text((25,900),'Actual KiCad exports, normalized to the same nominal PCB width.',font=small,fill='black');draw.text((25,930),'Installed-model renders omit unavailable bodies; pads/outline are native.',font=small,fill='black');canvas.save(E/'images/pcb-comparison.png')
++canvas=Image.new('RGB',(1800,710),'white');draw=ImageDraw.Draw(canvas)
++for i,(path,title) in enumerate([(E/'images/before-housing.png','BEFORE | 46.8 x 29.4 x 19.6 mm'),(O/'dist/exploded.png','AFTER | 44.8 x 29.4 x 19.6 mm')]):
++ im=Image.open(path).convert('RGB');im.thumbnail((890,590));canvas.paste(im,(i*900,70));draw.text((20+i*900,20),title,font=font,fill='black')
++draw.text((25,665),'Native FreeCAD exploded views (not common scale). Dimensions include recessed M3x8 hardware.',font=small,fill='black');canvas.save(E/'images/housing-comparison.png')
++with (E/'review/placements.csv').open('w',newline='') as f:
++ w=csv.writer(f,lineterminator='\n');w.writerow(['Reference','Before X','Before Y','Before deg','After X','After Y','After deg']);w.writerows([[r['ref'],*r['before'],*r['after']] for r in elec['changed_placements']])
++for folder in (H/'dist',O/'dist'):
++ write(folder/'manifest.json',dict(schema='smove.compact-placement.artifacts.v1',manufacturing_release=False,native_sources={str(f.relative_to(R)):sha(f) for f in (board,native,H/'interface.json',H/'parts-main.json')},artifacts={str(f.relative_to(R)):sha(f) for f in sorted(folder.rglob('*')) if f.is_file() and f.name!='manifest.json'}))
++write(O/'status.json',dict(status='PASS_NOMINAL_CAD_SCREENS',manufacturing_release=False,charging_release=False,dimensions_LWH_including_M3x8_mm=[44.8,29.4,19.6],mechanical='one M3, positive corner keys and two captured lid hooks',physical_qualification='NOT PERFORMED; see PRINTING-ASSEMBLY.md'))
++write(V/'toolchain.json',dict(kicad=sp.check_output(['kicad-cli','version'],text=True).strip(),freecad_lock_sha256=sha(O/'toolchain.lock.json'),freerouting_source='https://github.com/freerouting/freerouting/releases/tag/v1.9.0',freerouting_archive_sha256=sha(R/'.tools/freerouting/release.zip'),methods=['KiCad native Python/CLI','Freerouting GUI/CLI DSN/SES with analytics disabled','clearance-aware Python completion, no In1 signal tracks','actual FreeCAD GUI and Qt controls','Ubuntu desktop observation'],no_native_KiCad_GUI_routing_claim=True))
++write(V/'delivery.json',dict(status='PASS',checks=checks,check_count=len(checks),manufacturing_release=False,native_board_sha256=sha(board),native_FreeCAD_sha256=sha(native),rule_waivers_added=0,scoped_remaining_gates='Physical print/rigidity/torque/creep, complete protected pack and charging, strain-relief pull/flex, USB SI/reliability, RF/magnetic/thermal qualification.'))
++print('PASS delivery coherence',len(checks),'checks')
+diff --git a/scripts/r2/integrated/sync.py b/scripts/r2/integrated/sync.py
+index c5e24b0..01e6318 100644
+--- a/scripts/r2/integrated/sync.py
++++ b/scripts/r2/integrated/sync.py
+@@ -5,11 +5,19 @@ Native PCB (including final routes) is authoritative; no component or geometry s
+ import json,hashlib,math
+ from pathlib import Path
+ import pcbnew as p
+-from solder_wire import H,R,HOLES,OUTLINE
++R=Path(__file__).resolve().parents[3];H=R/'PCB/main'
+ from sexp import parse,many,one,val
+ source=H/'mechanical-envelope-source.json'
+ j=json.loads(source.read_text());oldparts=json.loads((H/'mechanical-pose-source.json').read_text())
+ b=p.LoadBoard(str(H/'smove-r2-main.kicad_pcb'));fps={f.GetReference():f for f in b.GetFootprints()};parts=json.loads((H/'parts-main.json').read_text())
++HOLES={r:list(p.ToMM(f.GetPosition())) for r,f in fps.items() if r.startswith('H')}
++edges=[(tuple(p.ToMM(e.GetStart())),tuple(p.ToMM(e.GetEnd()))) for e in b.GetDrawings() if e.GetLayer()==p.Edge_Cuts]
++OUTLINE=[min(v for edge in edges for v in edge)]
++while edges:
++ idx,edge=next((i,e) for i,e in enumerate(edges) if OUTLINE[-1] in e);edges.pop(idx);nxt=edge[1] if edge[0]==OUTLINE[-1] else edge[0]
++ if nxt==OUTLINE[0]:break
++ OUTLINE.append(nxt)
++x0=min(x for x,y in OUTLINE);x1=max(x for x,y in OUTLINE);y0=min(y for x,y in OUTLINE);y1=max(y for x,y in OUTLINE)
+ def point(r,xy):
+  x0,y0,a0=oldparts[r]['placement'];x,y=p.ToMM(fps[r].GetPosition());a=math.radians(fps[r].GetOrientationDegrees()-a0);u,v=xy[0]-x0,xy[1]-y0
+  return [round(x+math.cos(a)*u+math.sin(a)*v,6),round(y-math.sin(a)*u+math.cos(a)*v,6)]
+@@ -36,10 +44,10 @@ for r,a in list(j['anchors'].items()):
+   for pin,data in a['pins'].items():
+    pad=next(pad for pad in fps[r].Pads() if pad.GetNumber()==pin);data['native_xy_mm']=list(p.ToMM(pad.GetPosition()));data['net']=pad.GetNetname()
+ for k in ['antenna_body_native_xy_mm','antenna_all_layer_keepout_native_xy_mm']:j[k]=[point('U1',xy) for xy in j[k]]
+-j['antenna_3d']['clear_air_volume_native_xy_mm']=j['antenna_all_layer_keepout_native_xy_mm'];j['retention']=[];j['mounting']=dict(holes_native_xy_mm=HOLES,drill_mm=3.2,copper_exclusion_radius_mm=3.45,scheme='Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper')
+-j.pop('debug',None);j['retention_policy']={'contacts':'Two through-PCB M3 sleeves, plus non-preloaded side registration. No pressure on U2; stiffness/torque/sample fit unqualified.'}
+-j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['sensor_frame']['board_bbox_centre_native_mm']=[112.5,117.75];j['sensor_frame']['centre_offset_native_mm']=[0,-0.25];j['sensor_frame']['position_from_board_NW_mm']=[12.5,17.5,1]
+-j.update(schema='smove.solder-wire.interface.v3',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[25,35.5],status='COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY')
++j['antenna_3d']['clear_air_volume_native_xy_mm']=j['antenna_all_layer_keepout_native_xy_mm'];j['retention']=[dict(name='SW_KEY_NO_COPPER',xy=[[100,129],[101,129],[101,130],[100,130]]),dict(name='SE_KEY_NO_COPPER',xy=[[124,129],[125,129],[125,130],[124,130]])];j['mounting']=dict(holes_native_xy_mm=HOLES,drill_mm=3.2,copper_exclusion_radius_mm=3.45,scheme='One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation')
++j.pop('debug',None);j['retention_policy']={'contacts':'H1 M3 clamp and two lower positive edge shoes, insulating lid bearing pads in all-layer copper-free corners. Hooked lid plus M3. No pressure on U2 or pouch; print stiffness/torque unqualified.'}
++j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['sensor_frame']['board_bbox_centre_native_mm']=[(x0+x1)/2,(y0+y1)/2];j['sensor_frame']['centre_offset_native_mm']=[j['sensor_frame']['native_position_mm'][0]-(x0+x1)/2,j['sensor_frame']['native_position_mm'][1]-(y0+y1)/2];j['sensor_frame']['position_from_board_NW_mm']=[j['sensor_frame']['native_position_mm'][0]-x0,j['sensor_frame']['native_position_mm'][1]-y0,1]
++j.update(schema='smove.compact-placement.interface.v4',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')
+ j['connector_selection']={'status':'NO_FITTED_BATTERY_CONNECTOR','J2':'Two plated through-hole wire solder pads; excluded from BOM/CPL; no header allowed','pitch_mm':2.54,'manufacturing_release':False}
+ j['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'Two lacing bores and captive bridge in lower case, paired insulated leads; pull test mandatory; solder joint is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}
+ j['bottom_envelope'].pop('J3',None)
+diff --git a/scripts/r2/integrated/verify_compact.py b/scripts/r2/integrated/verify_compact.py
+new file mode 100644
+index 0000000..9c992ce
+--- /dev/null
++++ b/scripts/r2/integrated/verify_compact.py
+@@ -0,0 +1,81 @@
++#!/usr/bin/python3
++"""Read-only final PCB/placement/electrical comparison against f8c7ef6.
++KiCad ERC/DRC and independent native FreeCAD solid checks are additional gates.
++"""
++import json, hashlib, subprocess as sp, math, sys, xml.etree.ElementTree as ET
++from pathlib import Path
++import pcbnew as p
++from sexp import parse,many,one,val,prop
++R=Path(__file__).resolve().parents[3];H=R/'PCB/main';E=R/'docs/revision-r2/compact-placement';V=E/'validation';C=R/'.cache/compact'
++checks=[]
++def ck(name,ok,detail=None):checks.append(dict(check=name,passed=bool(ok),detail=detail))
++def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
++def old(path):return sp.check_output(['git','show','f8c7ef6:'+str(path.relative_to(R))])
++base=C/'verify-baseline.kicad_pcb';base.write_bytes(old(H/'smove-r2-main.kicad_pcb'))
++boards=[p.LoadBoard(str(base)),p.LoadBoard(str(H/'smove-r2-main.kicad_pcb'))];bf,af=[{f.GetReference():f for f in b.GetFootprints()} for b in boards]
++ck('only_H2_mechanical_footprint_removed',set(bf)-set(af)=={'H2'} and not set(af)-set(bf))
++ck('fitted_parts_46',sum(not f.IsExcludedFromBOM() for f in af.values())==46)
++placements=[]
++for r,f in af.items():
++ before=bf[r]
++ ck('same_part:'+r,f.GetValue()==before.GetValue() and (str(f.GetFPID().GetLibNickname()),str(f.GetFPID().GetLibItemName()))==(str(before.GetFPID().GetLibNickname()),str(before.GetFPID().GetLibItemName())) and f.IsFlipped()==before.IsFlipped())
++ def pads(fp):
++  return sorted([(a.GetNumber(),a.GetNetname(),tuple(p.ToMM(a.GetSize())),tuple(p.ToMM(a.GetDrillSize())),int(a.GetAttribute()),a.GetLocalSolderMaskMargin(),a.GetLayerSet().FmtHex()) for a in fp.Pads()])
++ ck('same_pads_nets_drills_layers:'+r,pads(f)==pads(before))
++ a=[*p.ToMM(f.GetPosition()),f.GetOrientationDegrees()];b=[*p.ToMM(before.GetPosition()),before.GetOrientationDegrees()]
++ if a!=b:placements.append(dict(ref=r,before=b,after=a))
++ ck('same_courtyard_area:'+r,abs(f.GetCourtyard(p.F_CrtYd).Area()-before.GetCourtyard(p.F_CrtYd).Area())<1e4)
++for f in [H/'smove-r2-main.kicad_pro',H/'smove-r2-main.kicad_dru',*sorted(H.glob('*.kicad_sch')),*sorted(H.glob('*.kicad_sym'))]:ck('unchanged_rules_or_schematic:'+f.name,f.read_bytes()==old(f))
++for r in ('U1','U2','U4','U5','U8','J1','C3','C4','C5','C6','C7','C8','C9','C10','C11','C13'):
++ ck('critical_placement_retained:'+r,p.ToMM(af[r].GetPosition())==p.ToMM(bf[r].GetPosition()) and af[r].GetOrientationDegrees()==bf[r].GetOrientationDegrees())
++for r in ('SW2','SW3'):
++ f=af[r];x,y=p.ToMM(f.GetPosition());mapping={a.GetNumber():dict(net=a.GetNetname(),xy=list(p.ToMM(a.GetPosition()))) for a in f.Pads()}
++ ck('switch_rotated_native_mapping:'+r,f.GetOrientationDegrees()==0 and mapping['1']['xy']==[x-2.225,y] and mapping['2']['xy']==[x+2.225,y] and mapping['2']['net']=='GND',mapping)
++ ck('switch_contact_1_preserved:'+r,mapping['1']['net']==next(a.GetNetname() for a in bf[r].Pads() if a.GetNumber()=='1'))
++j2={a.GetNumber():a for a in af['J2'].Pads()};pitch=(j2['1'].GetPosition()-j2['2'].GetPosition()).EuclideanNorm()/1e6
++ck('J2_2_54mm_centre_pitch',abs(pitch-2.54)<1e-6,pitch)
++ck('J2_two_1mm_PTH_2mm_pads',len(j2)==2 and all(a.GetAttribute()==p.PAD_ATTRIB_PTH and p.ToMM(a.GetDrillSize())==(1.,1.) and p.ToMM(a.GetSize())==(2.,2.) for a in j2.values()))
++ck('J2_not_fitted_or_CPL',af['J2'].IsExcludedFromBOM() and af['J2'].IsExcludedFromPosFiles())
++ck('no_UART_or_testpoints',not any(r.startswith('TP') or r in ('J3','J4','J5') or 'Debug' in str(f.GetFPID().GetLibItemName()) for r,f in af.items()))
++ck('single_top_RGB',len([r for r in af if r.startswith('D')])==1 and not af['D1'].IsFlipped())
++ck('In1_GND_reference_only',not any(type(t)==p.PCB_TRACK and t.GetLayer()==p.In1_Cu for t in boards[1].GetTracks()))
++# No process change to filled/capped via-in-pad: vias stay clear of all SMT paste pads.
++hits=[]
++for via in boards[1].GetTracks():
++ if type(via)!=p.PCB_VIA:continue
++ for r,f in af.items():
++  for pad in f.Pads():
++   if pad.GetAttribute()==p.PAD_ATTRIB_SMD and p.SHAPE.Collide(via.GetEffectiveShape(),pad.GetEffectiveShape(p.F_Cu)):hits.append([r,pad.GetNumber(),list(p.ToMM(via.GetPosition()))])
++ck('no_via_copper_overlap_with_SMT_pads',not hits,hits)
++# Exact RF rule geometry/permissions retained, not only visual outline.
++def rule(b,name):
++ z=next(z for z in b.Zones() if z.GetZoneName()==name);poly=z.Outline().COutline(0)
++ return dict(points=[list(p.ToMM(poly.CPoint(i))) for i in range(poly.PointCount())],layers=z.GetLayerSet().FmtHex(),tracks=z.GetDoNotAllowTracks(),vias=z.GetDoNotAllowVias(),copper=z.GetDoNotAllowCopperPour())
++ck('RF_all_layer_exclusion_unchanged',rule(boards[0],'ANTENNA_ALL_LAYERS')==rule(boards[1],'ANTENNA_ALL_LAYERS'))
++ck('M3_copper_exclusion_unchanged',rule(boards[0],'H1_M3_NO_COPPER')==rule(boards[1],'H1_M3_NO_COPPER'))
++for name in ('SW_KEY_NO_COPPER','SE_KEY_NO_COPPER'):ck('positive_key_copper_exclusion:'+name,all(rule(boards[1],name)[k] for k in ('tracks','vias','copper')))
++interface=json.loads((H/'interface.json').read_text());orig=json.loads(old(H/'interface.json'))
++for key in ('accel_gyro_to_body','mag_to_body','accel_gyro_to_board','magnetometer_to_board'):
++ if key in orig['sensor_frame']:ck('sensor_transform:'+key,orig['sensor_frame'][key]==interface['sensor_frame'][key])
++ck('actual_ICM_top_orientation',af['U2'].GetValue()=='ICM-20948' and not af['U2'].IsFlipped() and af['U2'].GetOrientationDegrees()==-90)
++ck('sensor_width_centre_central_region',interface['sensor_frame']['centre_offset_native_mm']==[0,2.5],interface['sensor_frame'])
++# Every baseline endpoint set is retained; no net migration in this placement-only revision.
++sp.run(['kicad-cli','sch','export','netlist','--format','kicadxml','-o',str(V/'post-netlist.xml'),str(H/'smove-r2-main.kicad_sch')],check=True,stdout=sp.DEVNULL)
++def nets(path):return {n.get('name'):sorted((x.get('ref'),x.get('pin')) for x in n.findall('node')) for n in ET.parse(path).findall('.//nets/net')}
++nb,na=nets(V/'baseline-netlist.xml'),nets(V/'post-netlist.xml');ck('exact_net_endpoint_equivalence',nb==na,dict(baseline_nets=len(nb),post_nets=len(na),endpoints=sum(len(v) for v in na.values())))
++ck('current_interface_hash',interface['geometry_sha256']==sha(H/'smove-r2-main.kicad_pcb'))
++for r,rec in interface['components'].items():ck('interface_current_pose:'+r,rec['anchor_native_xy_mm']==list(p.ToMM(af[r].GetPosition())) and rec['rotation_ccw_deg']==af[r].GetOrientationDegrees())
++# Straight-line pad-to-pad proximity is a placement metric, not a routed-loop/SI certification.
++decoupling=[]
++for c,u in [('C1','U6'),('C2','U6'),('C3','U4'),('C4','U1'),('C5','U5'),('C6','U5'),('C7','U2'),('C8','U2'),('C9','U2')]:
++ values=[]
++ for fs in (bf,af):
++  ds=[(a.GetPosition()-b.GetPosition()).EuclideanNorm()/1e6 for a in fs[c].Pads() for b in fs[u].Pads() if a.GetNetname()==b.GetNetname() and a.GetNetname()!='GND'];values.append(min(ds) if ds else None)
++ decoupling.append(dict(cap=c,IC=u,nearest_matching_nonground_pad_mm_before_after=values))
++ if None not in values:ck('decoupling_proximity_not_worse:'+c,values[1]<=values[0]+.01,values)
++outline=interface['outline_native_xy_mm'];area=abs(sum(a[0]*b[1]-a[1]*b[0] for a,b in zip(outline,outline[1:]+outline[:1])))/2
++ck('PCB_25x30x1',interface['board_size_mm']==[25,30] and abs(boards[1].GetDesignSettings().GetBoardThickness()/1e6-1)<1e-6)
++dims=dict(PCB_before_mm=[25,35.5,1],PCB_after_mm=[25,30,1],bbox_area_reduction_pct=100*(1-30/35.5),outline_area_before_mm2=881.67,outline_area_after_mm2=area,lower_region_native_y_start_mm=122,lower_region_before_mm2=337.5,lower_region_after_mm2=200,lower_region_reduction_pct=100*(1-200/337.5),housing_before_LWH_mm=[46.8,29.4,19.6],housing_after_LWH_mm=[44.8,29.4,19.6],includes_recessed_M3x8=True,PCB_limit='Dense lower courtyard/routing, fixed upper USB/module/IMU. Three arrangements screened; not a global optimum claim.',housing_limit='Independent battery reserve 21x31x4.3, wire/lacing bay, RF/module overhang, walls and retained M3x8 vertical stack; nominal pouch 30x20x3 not compressed.')
++(V/'dimensions.json').write_text(json.dumps(dims,indent=2)+'\n')
++report=dict(status='PASS' if all(c['passed'] for c in checks) else 'FAIL',baseline='f8c7ef6',checks=checks,check_count=len(checks),failures=[c for c in checks if not c['passed']],changed_placements=placements,decoupling_placement_metrics=decoupling,routing_adjustment='After pre-route study, R22 translated 0.95mm left to permit U6.7 escape without via-in-pad; same outline and courtyard. All new vias ordinary, outside SMT pads.',manufacturing_release=False)
++(V/'electrical.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(dict(status=report['status'],checks=len(checks),failures=report['failures'],moved=len(placements)),indent=2));raise SystemExit(bool(report['failures']))

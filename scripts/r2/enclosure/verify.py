@@ -32,7 +32,7 @@ for c in cs:
 # J2 is now PTH wire pads: no mate, no header, no connector-envelope exception.
 check('obsolete_J2_mate_removed',d.getObject('Main_J2_MatingInsertion') is None and d.getObject('Main_J2') is None)
 check('two_wire_routes',len([o for o in refs if o.Name.startswith('BatteryWire')])==2)
-for i,x in enumerate((11.23,13.77),1):
+for i,x in enumerate((20.03,22.57),1):
  wire=d.getObject('BatteryWire'+str(i));bare=d.getObject('BareWire'+str(i))
  check('wire_assumed_OD:'+str(i),abs(wire.EnvelopeRadius.Value-.6)<1e-6)
  check('wire_bend_reserve:'+str(i),abs(wire.BendRadius.Value-2.)<1e-6)
@@ -40,7 +40,7 @@ for i,x in enumerate((11.23,13.77),1):
  check('solder_top_trim:'+str(i),abs(d.getObject('SolderFillet'+str(i)).Shape.BoundBox.ZMax-12.4)<1e-6)
  sep('wire_vs_full_pack_reserve:'+str(i),wire.Shape,d.BatteryAcceptance_21x31x4_3.Shape)
  # The guide and lacing bores must be actual negative space in native base, not drawings.
- for label,xx,yy,r in [('wire',x,2.2,.6),('lacing',(9.3,15.7)[i-1],2.7,.2)]:
+ for label,xx,yy,r in [('wire',x,4.2,.6),('lacing',(18.2,24.1)[i-1],4.7,.2)]:
   probe=Part.makeCylinder(r,1.,A.Vector(xx,yy,5.1));sep('strain_relief_passage:'+label+str(i),probe,d.Base.Shape)
 check('lacing_bridge_connected',len(d.Base.Shape.Solids)==1 and d.WireLacingBridge.Shape.Volume>15)
 # Verify every generated component against CURRENT native extraction, not an old file hash alone.
@@ -49,8 +49,22 @@ for r,f in inputs['footprints'].items():
  if not f.get('fitted'):continue
  bb2=d.getObject('Main_'+r).Shape.BoundBox;x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm']
  check('current_component_geometry:'+r,max(abs(a-b) for a,b in zip([bb2.XMin,bb2.YMin,bb2.ZMin,bb2.XMax,bb2.YMax,bb2.ZMax],[x0,y0,10.8+z0,x1,y1,10.8+z1]))<1e-6)
-# Exact two diagonal native holes, sleeve contact and retained non-contact sensor frame.
-check('two_diagonal_holes',len(build['fastener_xy_mm'])==2 and abs(build['fastener_xy_mm'][0][0]-build['fastener_xy_mm'][1][0])>17 and abs(build['fastener_xy_mm'][0][1]-build['fastener_xy_mm'][1][1])>28)
+# One native M3 hole, two positive corner keys and retained non-contact sensor frame.
+check('one_M3_plus_positive_keys',len(build['fastener_xy_mm'])==1 and all(d.getObject(n) for n in ['KeyLower1','KeyLower2','KeyStop1','KeyStop2','KeyUpper1','KeyUpper2','LidHookTongue1','LidHookTongue2']))
+for i in (1,2):
+ for name,z,up in [('KeyLower',10.8,True),('KeyUpper',11.8,False)]:
+  shape=d.getObject(name+str(i)).Shape
+  check(f'key_bearing_z:{name}{i}',abs((shape.BoundBox.ZMax if up else shape.BoundBox.ZMin)-z)<1e-6)
+  probe=moved(shape,z=.01 if up else -.01);check(f'positive_key_PCB_contact:{name}{i}',volume(probe,d.MainPCB.Shape)>.003)
+check('key_separation_mm',abs(d.KeyStop1.Shape.BoundBox.XMin-d.KeyStop2.Shape.BoundBox.XMin)>=24.)
+# Show that small attempted XY rotations hit solid keys, not merely clamp friction.
+for angle in (-1.,1.):
+ rotated=d.MainPCB.Shape.copy();rotated.rotate(A.Vector(3.6,35.4,10.8),A.Vector(0,0,1),angle)
+ check('rotation_stopped:'+str(angle),volume(rotated,d.Base.Shape)>1e-5)
+for i in (1,2):
+ hook=d.getObject('LidHookTongue'+str(i)).Shape
+ check('hook_resists_vertical_lift:'+str(i),volume(moved(hook,z=.5),d.Base.Shape)>1e-5)
+
 bb=Part.makeCompound([o.Shape for o in case+hw]).BoundBox;dims=[bb.XLength,bb.YLength,bb.ZLength];sorted_dims=sorted(dims,reverse=True)
 check('outer_measured_bounds',all(v>0 for v in dims),dims)
 full=Part.makeCompound([o.Shape for o in case+refs+hw]).BoundBox

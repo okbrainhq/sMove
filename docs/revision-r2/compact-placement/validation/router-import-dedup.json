@@ -1,0 +1,19 @@
+{
+  "removed_rounded_duplicates": [
+    "067511ee-5f28-425c-9c0d-bae60d5c4a99",
+    "0e8455f4-10d8-4718-82fe-45487f2bbe86",
+    "85354456-ef2a-4e8f-9a3d-66a1607f67af",
+    "8d3a0637-c3de-4fe6-8a39-3940b1dfde90",
+    "f5c26a55-d70f-49c7-8a32-8595797e1a54",
+    "7ad5f5ee-9912-4851-96f8-6fdad2621a1a",
+    "5400207d-104e-4fcc-b82e-33a08c43523b",
+    "5f034101-6cb4-4a49-9f69-003ec9acb88c",
+    "ba43f462-fe78-4cf7-9ccd-5c94ea518776",
+    "80cd9e67-1af1-4909-a0ec-605dfaa6f66e",
+    "f8f331e4-6cb0-48f7-a908-3cd73438d4a8",
+    "c4103dd6-dd83-44f8-8e83-ae67cd8eb1cc",
+    "f40d7b6c-3fac-4c56-81cb-396eaf8a8ff6",
+    "62f1f2e8-ff50-46cd-9cb5-aee260488545"
+  ],
+  "priority": "retain exact native pre-route geometry before rounded SES copy"
+}

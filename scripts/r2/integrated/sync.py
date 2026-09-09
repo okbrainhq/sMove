@@ -5,11 +5,19 @@ Native PCB (including final routes) is authoritative; no component or geometry s
 import json,hashlib,math
 from pathlib import Path
 import pcbnew as p
-from solder_wire import H,R,HOLES,OUTLINE
+R=Path(__file__).resolve().parents[3];H=R/'PCB/main'
 from sexp import parse,many,one,val
 source=H/'mechanical-envelope-source.json'
 j=json.loads(source.read_text());oldparts=json.loads((H/'mechanical-pose-source.json').read_text())
 b=p.LoadBoard(str(H/'smove-r2-main.kicad_pcb'));fps={f.GetReference():f for f in b.GetFootprints()};parts=json.loads((H/'parts-main.json').read_text())
+HOLES={r:list(p.ToMM(f.GetPosition())) for r,f in fps.items() if r.startswith('H')}
+edges=[(tuple(p.ToMM(e.GetStart())),tuple(p.ToMM(e.GetEnd()))) for e in b.GetDrawings() if e.GetLayer()==p.Edge_Cuts]
+OUTLINE=[min(v for edge in edges for v in edge)]
+while edges:
+ idx,edge=next((i,e) for i,e in enumerate(edges) if OUTLINE[-1] in e);edges.pop(idx);nxt=edge[1] if edge[0]==OUTLINE[-1] else edge[0]
+ if nxt==OUTLINE[0]:break
+ OUTLINE.append(nxt)
+x0=min(x for x,y in OUTLINE);x1=max(x for x,y in OUTLINE);y0=min(y for x,y in OUTLINE);y1=max(y for x,y in OUTLINE)
 def point(r,xy):
  x0,y0,a0=oldparts[r]['placement'];x,y=p.ToMM(fps[r].GetPosition());a=math.radians(fps[r].GetOrientationDegrees()-a0);u,v=xy[0]-x0,xy[1]-y0
  return [round(x+math.cos(a)*u+math.sin(a)*v,6),round(y-math.sin(a)*u+math.cos(a)*v,6)]
@@ -36,10 +44,10 @@ for r,a in list(j['anchors'].items()):
   for pin,data in a['pins'].items():
    pad=next(pad for pad in fps[r].Pads() if pad.GetNumber()==pin);data['native_xy_mm']=list(p.ToMM(pad.GetPosition()));data['net']=pad.GetNetname()
 for k in ['antenna_body_native_xy_mm','antenna_all_layer_keepout_native_xy_mm']:j[k]=[point('U1',xy) for xy in j[k]]
-j['antenna_3d']['clear_air_volume_native_xy_mm']=j['antenna_all_layer_keepout_native_xy_mm'];j['retention']=[];j['mounting']=dict(holes_native_xy_mm=HOLES,drill_mm=3.2,copper_exclusion_radius_mm=3.45,scheme='Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper')
-j.pop('debug',None);j['retention_policy']={'contacts':'Two through-PCB M3 sleeves, plus non-preloaded side registration. No pressure on U2; stiffness/torque/sample fit unqualified.'}
-j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['sensor_frame']['board_bbox_centre_native_mm']=[112.5,117.75];j['sensor_frame']['centre_offset_native_mm']=[0,-0.25];j['sensor_frame']['position_from_board_NW_mm']=[12.5,17.5,1]
-j.update(schema='smove.solder-wire.interface.v3',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[25,35.5],status='COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY')
+j['antenna_3d']['clear_air_volume_native_xy_mm']=j['antenna_all_layer_keepout_native_xy_mm'];j['retention']=[dict(name='SW_KEY_NO_COPPER',xy=[[100,129],[101,129],[101,130],[100,130]]),dict(name='SE_KEY_NO_COPPER',xy=[[124,129],[125,129],[125,130],[124,130]])];j['mounting']=dict(holes_native_xy_mm=HOLES,drill_mm=3.2,copper_exclusion_radius_mm=3.45,scheme='One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation')
+j.pop('debug',None);j['retention_policy']={'contacts':'H1 M3 clamp and two lower positive edge shoes, insulating lid bearing pads in all-layer copper-free corners. Hooked lid plus M3. No pressure on U2 or pouch; print stiffness/torque unqualified.'}
+j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['sensor_frame']['board_bbox_centre_native_mm']=[(x0+x1)/2,(y0+y1)/2];j['sensor_frame']['centre_offset_native_mm']=[j['sensor_frame']['native_position_mm'][0]-(x0+x1)/2,j['sensor_frame']['native_position_mm'][1]-(y0+y1)/2];j['sensor_frame']['position_from_board_NW_mm']=[j['sensor_frame']['native_position_mm'][0]-x0,j['sensor_frame']['native_position_mm'][1]-y0,1]
+j.update(schema='smove.compact-placement.interface.v4',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')
 j['connector_selection']={'status':'NO_FITTED_BATTERY_CONNECTOR','J2':'Two plated through-hole wire solder pads; excluded from BOM/CPL; no header allowed','pitch_mm':2.54,'manufacturing_release':False}
 j['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'Two lacing bores and captive bridge in lower case, paired insulated leads; pull test mandatory; solder joint is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}
 j['bottom_envelope'].pop('J3',None)

@@ -1,0 +1,739 @@
+{
+  "status": "FAIL",
+  "samples": 141,
+  "pivot_mm": [
+    0,
+    3.6,
+    15.9
+  ],
+  "rotation_axis": [
+    1,
+    0,
+    0
+  ],
+  "removal_stages": "Remove M3 screw; raise north edge to 10 degrees, translate lid north 1.2mm, then lift 30mm. Install in reverse; never force.",
+  "collisions": [
+    {
+      "pose": [
+        0.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 0.20656016831989754
+    },
+    {
+      "pose": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 0.41062075367747874
+    },
+    {
+      "pose": [
+        0.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 0.6122007619565077
+    },
+    {
+      "pose": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 0.8113189659202346
+    },
+    {
+      "pose": [
+        1.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.007993908458403
+    },
+    {
+      "pose": [
+        1.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.202243905786076
+    },
+    {
+      "pose": [
+        1.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.3940870505875822
+    },
+    {
+      "pose": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.5835412151132067
+    },
+    {
+      "pose": [
+        2.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.7706240542238152
+    },
+    {
+      "pose": [
+        2.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 1.9553530083889348
+    },
+    {
+      "pose": [
+        2.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 2.137745306637211
+    },
+    {
+      "pose": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 2.317817969458956
+    },
+    {
+      "pose": [
+        3.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 2.495587811666298
+    },
+    {
+      "pose": [
+        3.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 2.6710714452047
+    },
+    {
+      "pose": [
+        3.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 2.8442852819246704
+    },
+    {
+      "pose": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.015245536307837
+    },
+    {
+      "pose": [
+        4.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.1839682281525166
+    },
+    {
+      "pose": [
+        4.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.350469185217613
+    },
+    {
+      "pose": [
+        4.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.5147640458270786
+    },
+    {
+      "pose": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.6768682614330106
+    },
+    {
+      "pose": [
+        5.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.8367970991425238
+    },
+    {
+      "pose": [
+        5.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 3.994565644203735
+    },
+    {
+      "pose": [
+        5.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.150188802458751
+    },
+    {
+      "pose": [
+        6.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.30368130275552
+    },
+    {
+      "pose": [
+        6.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.455057699327371
+    },
+    {
+      "pose": [
+        6.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.604332374136512
+    },
+    {
+      "pose": [
+        6.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.751519539182804
+    },
+    {
+      "pose": [
+        7.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 4.896633238780831
+    },
+    {
+      "pose": [
+        7.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.039687351800358
+    },
+    {
+      "pose": [
+        7.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.180695593880388
+    },
+    {
+      "pose": [
+        7.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.3196715196049436
+    },
+    {
+      "pose": [
+        8.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.456628524654504
+    },
+    {
+      "pose": [
+        8.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.591579847921808
+    },
+    {
+      "pose": [
+        8.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.724538573602112
+    },
+    {
+      "pose": [
+        8.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.855517633251075
+    },
+    {
+      "pose": [
+        9.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 5.98452980781736
+    },
+    {
+      "pose": [
+        9.25,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.111587729645678
+    },
+    {
+      "pose": [
+        9.5,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.236703884452428
+    },
+    {
+      "pose": [
+        9.75,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.359890613276092
+    },
+    {
+      "pose": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.481160114400208
+    },
+    {
+      "pose": [
+        10.0,
+        0.03,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.729413955719618
+    },
+    {
+      "pose": [
+        10.0,
+        0.06,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 6.982333408948684
+    },
+    {
+      "pose": [
+        10.0,
+        0.09,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 7.239918474087204
+    },
+    {
+      "pose": [
+        10.0,
+        0.12,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 7.50216915113533
+    },
+    {
+      "pose": [
+        10.0,
+        0.15,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 7.769085440092961
+    },
+    {
+      "pose": [
+        10.0,
+        0.18,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.04066734096014
+    },
+    {
+      "pose": [
+        10.0,
+        0.21,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.316914853736886
+    },
+    {
+      "pose": [
+        10.0,
+        0.24,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.596798104604137
+    },
+    {
+      "pose": [
+        10.0,
+        0.27,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.877425679016405
+    },
+    {
+      "pose": [
+        10.0,
+        0.3,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.158624552846252
+    },
+    {
+      "pose": [
+        10.0,
+        0.32999999999999996,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.44039472609364
+    },
+    {
+      "pose": [
+        10.0,
+        0.36,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.722736198758332
+    },
+    {
+      "pose": [
+        10.0,
+        0.39,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.005648970840637
+    },
+    {
+      "pose": [
+        10.0,
+        0.42,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.274097245814124
+    },
+    {
+      "pose": [
+        10.0,
+        0.44999999999999996,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.412576515159326
+    },
+    {
+      "pose": [
+        10.0,
+        0.48,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.40776169830378
+    },
+    {
+      "pose": [
+        10.0,
+        0.51,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.370056036183836
+    },
+    {
+      "pose": [
+        10.0,
+        0.54,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.328256061571844
+    },
+    {
+      "pose": [
+        10.0,
+        0.57,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.282361774467864
+    },
+    {
+      "pose": [
+        10.0,
+        0.6,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.232373174871773
+    },
+    {
+      "pose": [
+        10.0,
+        0.63,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.178290262783701
+    },
+    {
+      "pose": [
+        10.0,
+        0.6599999999999999,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.120113038203483
+    },
+    {
+      "pose": [
+        10.0,
+        0.69,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 10.057841501131222
+    },
+    {
+      "pose": [
+        10.0,
+        0.72,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.991475651567034
+    },
+    {
+      "pose": [
+        10.0,
+        0.75,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.921015489510655
+    },
+    {
+      "pose": [
+        10.0,
+        0.78,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.846461014962333
+    },
+    {
+      "pose": [
+        10.0,
+        0.8099999999999999,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.76781222792186
+    },
+    {
+      "pose": [
+        10.0,
+        0.84,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.685069128389438
+    },
+    {
+      "pose": [
+        10.0,
+        0.87,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.598231716364898
+    },
+    {
+      "pose": [
+        10.0,
+        0.8999999999999999,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.507299991848276
+    },
+    {
+      "pose": [
+        10.0,
+        0.9299999999999999,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.412273954839717
+    },
+    {
+      "pose": [
+        10.0,
+        0.96,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.313153605338993
+    },
+    {
+      "pose": [
+        10.0,
+        0.99,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.209938943346337
+    },
+    {
+      "pose": [
+        10.0,
+        1.02,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 9.102629968861555
+    },
+    {
+      "pose": [
+        10.0,
+        1.05,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.991226681884672
+    },
+    {
+      "pose": [
+        10.0,
+        1.08,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.875729082415827
+    },
+    {
+      "pose": [
+        10.0,
+        1.1099999999999999,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.75613717045486
+    },
+    {
+      "pose": [
+        10.0,
+        1.14,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.632450946001928
+    },
+    {
+      "pose": [
+        10.0,
+        1.17,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.50467040905692
+    },
+    {
+      "pose": [
+        10.0,
+        1.2,
+        0.0
+      ],
+      "obstacle": "Base",
+      "overlap_mm3": 8.372795559619775
+    }
+  ],
+  "scope": "Nominal discrete rigid geometry, not continuous sweep, tolerance/strength/print/physical qualification.",
+  "native_sha256": "926a0c500c7c84d601734025f80cb0d55347322d548d32fd59ec7fd139df9d84"
+}

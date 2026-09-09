@@ -1,0 +1,14 @@
+{
+  "kicad": "9.0.8",
+  "freecad_lock_sha256": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
+  "freerouting_source": "https://github.com/freerouting/freerouting/releases/tag/v1.9.0",
+  "freerouting_archive_sha256": "51ef6e453314da32dd7d5cfbc5dd7dcd3fd566ae683ab0d2b19c6dfb4cba696f",
+  "methods": [
+    "KiCad native Python/CLI",
+    "Freerouting GUI/CLI DSN/SES with analytics disabled",
+    "clearance-aware Python completion, no In1 signal tracks",
+    "actual FreeCAD GUI and Qt controls",
+    "Ubuntu desktop observation"
+  ],
+  "no_native_KiCad_GUI_routing_claim": true
+}

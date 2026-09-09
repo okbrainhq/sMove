@@ -1,0 +1,155 @@
+{
+  "reason": "No via-in-pad process substitution permitted; route ordinary tented vias outside paste pads.",
+  "removed": [
+    {
+      "net": "/3V3_MAIN",
+      "old_via_xy": [
+        121.7,
+        109.35
+      ],
+      "near_pads": [
+        [
+          "R8",
+          "1"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        6
+      ]
+    },
+    {
+      "net": "/3V3_MAIN",
+      "old_via_xy": [
+        107.5,
+        116.5
+      ],
+      "near_pads": [
+        [
+          "R18",
+          "1"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        6
+      ]
+    },
+    {
+      "net": "/Power/CHG_ILIM",
+      "old_via_xy": [
+        104.15,
+        126.1
+      ],
+      "near_pads": [
+        [
+          "U6",
+          "12"
+        ]
+      ],
+      "connected_layers": [
+        2
+      ]
+    },
+    {
+      "net": "/Power/CHG_ILIM",
+      "old_via_xy": [
+        101.7,
+        128.9
+      ],
+      "near_pads": [
+        [
+          "R22",
+          "1"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "net": "/Compute/MCU_EN",
+      "old_via_xy": [
+        107.15,
+        115.15
+      ],
+      "near_pads": [
+        [
+          "C10",
+          "1"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "net": "/USB_POWER_N",
+      "old_via_xy": [
+        110.2,
+        110.5
+      ],
+      "near_pads": [
+        [
+          "U1",
+          "13"
+        ]
+      ],
+      "connected_layers": [
+        6
+      ]
+    },
+    {
+      "net": "/USB_POWER_N",
+      "old_via_xy": [
+        103.0,
+        128.25
+      ],
+      "near_pads": [
+        [
+          "U6",
+          "7"
+        ]
+      ],
+      "connected_layers": [
+        6
+      ]
+    },
+    {
+      "net": "GND",
+      "old_via_xy": [
+        112.8,
+        127.85
+      ],
+      "near_pads": [
+        [
+          "SW3",
+          "2"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "net": "/IMU/1V8_IMU",
+      "old_via_xy": [
+        111.4,
+        118.95
+      ],
+      "near_pads": [
+        [
+          "U2",
+          "13"
+        ]
+      ],
+      "connected_layers": [
+        0,
+        2
+      ]
+    }
+  ]
+}

@@ -302,16 +302,6 @@
       "detail": null
     },
     {
-      "check": "valid_solid:ClosureScrew2",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "valid_solid:ClosureNut2",
-      "passed": true,
-      "detail": null
-    },
-    {
       "check": "editable_native_CSG",
       "passed": true,
       "detail": null
@@ -724,20 +714,6 @@
     },
     {
       "check": "clear:Base:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:Base:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:Base:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1192,20 +1168,6 @@
       }
     },
     {
-      "check": "clear:Lid:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:Lid:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "clear:Lid:BatteryAcceptance_21x31x4_3",
       "passed": true,
       "detail": {
@@ -1647,20 +1609,6 @@
       }
     },
     {
-      "check": "clear:BatteryDivider:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:BatteryDivider:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "clear:BatteryDivider:BatteryAcceptance_21x31x4_3",
       "passed": true,
       "detail": {
@@ -2095,20 +2043,6 @@
       }
     },
     {
-      "check": "parts:MainPCB:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:MainPCB:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R9:Main_U5",
       "passed": true,
       "detail": {
@@ -2494,20 +2428,6 @@
       }
     },
     {
-      "check": "parts:Main_R9:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R9:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U5:Main_SW2",
       "passed": true,
       "detail": {
@@ -2886,20 +2806,6 @@
       }
     },
     {
-      "check": "parts:Main_U5:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U5:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_SW2:Main_R4",
       "passed": true,
       "detail": {
@@ -3271,20 +3177,6 @@
       }
     },
     {
-      "check": "parts:Main_SW2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_SW2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R4:Main_C10",
       "passed": true,
       "detail": {
@@ -3649,20 +3541,6 @@
       }
     },
     {
-      "check": "parts:Main_R4:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R4:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C10:Main_R17",
       "passed": true,
       "detail": {
@@ -4020,20 +3898,6 @@
       }
     },
     {
-      "check": "parts:Main_C10:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C10:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R17:Main_C8",
       "passed": true,
       "detail": {
@@ -4384,20 +4248,6 @@
       }
     },
     {
-      "check": "parts:Main_R17:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R17:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C8:Main_D1",
       "passed": true,
       "detail": {
@@ -4741,20 +4591,6 @@
       }
     },
     {
-      "check": "parts:Main_C8:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C8:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_D1:Main_U2",
       "passed": true,
       "detail": {
@@ -5091,20 +4927,6 @@
       }
     },
     {
-      "check": "parts:Main_D1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_D1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U2:Main_C4",
       "passed": true,
       "detail": {
@@ -5434,20 +5256,6 @@
       }
     },
     {
-      "check": "parts:Main_U2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C4:Main_R5",
       "passed": true,
       "detail": {
@@ -5770,20 +5578,6 @@
       }
     },
     {
-      "check": "parts:Main_C4:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C4:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R5:Main_J1",
       "passed": true,
       "detail": {
@@ -6099,20 +5893,6 @@
       }
     },
     {
-      "check": "parts:Main_R5:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R5:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_J1:Main_C7",
       "passed": true,
       "detail": {
@@ -6421,20 +6201,6 @@
       }
     },
     {
-      "check": "parts:Main_J1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C7:Main_R23",
       "passed": true,
       "detail": {
@@ -6736,20 +6502,6 @@
       }
     },
     {
-      "check": "parts:Main_C7:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C7:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R23:Main_U3",
       "passed": true,
       "detail": {
@@ -7044,20 +6796,6 @@
       }
     },
     {
-      "check": "parts:Main_R23:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R23:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U3:Main_C9",
       "passed": true,
       "detail": {
@@ -7345,20 +7083,6 @@
       }
     },
     {
-      "check": "parts:Main_U3:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U3:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C9:Main_R3",
       "passed": true,
       "detail": {
@@ -7639,20 +7363,6 @@
       }
     },
     {
-      "check": "parts:Main_C9:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C9:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R3:Main_R18",
       "passed": true,
       "detail": {
@@ -7926,20 +7636,6 @@
       }
     },
     {
-      "check": "parts:Main_R3:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R3:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R18:Main_R2",
       "passed": true,
       "detail": {
@@ -8206,20 +7902,6 @@
       }
     },
     {
-      "check": "parts:Main_R18:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R18:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R2:Main_R15",
       "passed": true,
       "detail": {
@@ -8479,20 +8161,6 @@
       }
     },
     {
-      "check": "parts:Main_R2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R15:Main_C3",
       "passed": true,
       "detail": {
@@ -8745,20 +8413,6 @@
       }
     },
     {
-      "check": "parts:Main_R15:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R15:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C3:Main_R7",
       "passed": true,
       "detail": {
@@ -9004,20 +8658,6 @@
       }
     },
     {
-      "check": "parts:Main_C3:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C3:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R7:Main_U4",
       "passed": true,
       "detail": {
@@ -9256,20 +8896,6 @@
       }
     },
     {
-      "check": "parts:Main_R7:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R7:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U4:Main_R8",
       "passed": true,
       "detail": {
@@ -9501,20 +9127,6 @@
       }
     },
     {
-      "check": "parts:Main_U4:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U4:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R8:Main_C5",
       "passed": true,
       "detail": {
@@ -9739,20 +9351,6 @@
       }
     },
     {
-      "check": "parts:Main_R8:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R8:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C5:Main_C6",
       "passed": true,
       "detail": {
@@ -9970,20 +9568,6 @@
       }
     },
     {
-      "check": "parts:Main_C5:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C5:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C6:Main_U1",
       "passed": true,
       "detail": {
@@ -10194,20 +9778,6 @@
       }
     },
     {
-      "check": "parts:Main_C6:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C6:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U1:Main_C1",
       "passed": true,
       "detail": {
@@ -10411,20 +9981,6 @@
       }
     },
     {
-      "check": "parts:Main_U1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C1:Main_R10",
       "passed": true,
       "detail": {
@@ -10621,20 +10177,6 @@
       }
     },
     {
-      "check": "parts:Main_C1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R10:Main_C13",
       "passed": true,
       "detail": {
@@ -10824,20 +10366,6 @@
       }
     },
     {
-      "check": "parts:Main_R10:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R10:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C13:Main_R13",
       "passed": true,
       "detail": {
@@ -11020,20 +10548,6 @@
       }
     },
     {
-      "check": "parts:Main_C13:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C13:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R13:Main_R22",
       "passed": true,
       "detail": {
@@ -11209,20 +10723,6 @@
       }
     },
     {
-      "check": "parts:Main_R13:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R13:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R22:Main_R20",
       "passed": true,
       "detail": {
@@ -11391,20 +10891,6 @@
       }
     },
     {
-      "check": "parts:Main_R22:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R22:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R20:Main_R19",
       "passed": true,
       "detail": {
@@ -11566,20 +11052,6 @@
       }
     },
     {
-      "check": "parts:Main_R20:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R20:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R19:Main_U9",
       "passed": true,
       "detail": {
@@ -11734,20 +11206,6 @@
       }
     },
     {
-      "check": "parts:Main_R19:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R19:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U9:Main_U6",
       "passed": true,
       "detail": {
@@ -11895,20 +11353,6 @@
       }
     },
     {
-      "check": "parts:Main_U9:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U9:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U6:Main_R12",
       "passed": true,
       "detail": {
@@ -12049,20 +11493,6 @@
       }
     },
     {
-      "check": "parts:Main_U6:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U6:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R12:Main_U8",
       "passed": true,
       "detail": {
@@ -12196,20 +11626,6 @@
       }
     },
     {
-      "check": "parts:Main_R12:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R12:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_U8:Main_R11",
       "passed": true,
       "detail": {
@@ -12336,20 +11752,6 @@
       }
     },
     {
-      "check": "parts:Main_U8:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U8:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R11:Main_R1",
       "passed": true,
       "detail": {
@@ -12469,20 +11871,6 @@
       }
     },
     {
-      "check": "parts:Main_R11:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R11:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R1:Main_C2",
       "passed": true,
       "detail": {
@@ -12595,20 +11983,6 @@
       }
     },
     {
-      "check": "parts:Main_R1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C2:Main_R16",
       "passed": true,
       "detail": {
@@ -12714,20 +12088,6 @@
       }
     },
     {
-      "check": "parts:Main_C2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R16:Main_C11",
       "passed": true,
       "detail": {
@@ -12826,20 +12186,6 @@
       }
     },
     {
-      "check": "parts:Main_R16:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R16:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_C11:Main_R21",
       "passed": true,
       "detail": {
@@ -12931,20 +12277,6 @@
       }
     },
     {
-      "check": "parts:Main_C11:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C11:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R21:Main_SW3",
       "passed": true,
       "detail": {
@@ -13029,20 +12361,6 @@
       }
     },
     {
-      "check": "parts:Main_R21:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R21:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_SW3:Main_R14",
       "passed": true,
       "detail": {
@@ -13120,20 +12438,6 @@
       }
     },
     {
-      "check": "parts:Main_SW3:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_SW3:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_R14:Main_USB_ShellTails",
       "passed": true,
       "detail": {
@@ -13204,20 +12508,6 @@
       }
     },
     {
-      "check": "parts:Main_R14:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R14:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:Main_USB_ShellTails:BatteryCandidate_UNQUALIFIED",
       "passed": true,
       "detail": {
@@ -13281,20 +12571,6 @@
       }
     },
     {
-      "check": "parts:Main_USB_ShellTails:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_USB_ShellTails:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:BatteryCandidate_UNQUALIFIED:BatteryWire1",
       "passed": true,
       "detail": {
@@ -13351,20 +12627,6 @@
       }
     },
     {
-      "check": "parts:BatteryCandidate_UNQUALIFIED:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BatteryCandidate_UNQUALIFIED:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:BatteryWire1:BareWire1",
       "passed": true,
       "detail": {
@@ -13414,20 +12676,6 @@
       }
     },
     {
-      "check": "parts:BatteryWire1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BatteryWire1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:BareWire1:BatteryWire2",
       "passed": true,
       "detail": {
@@ -13457,20 +12705,6 @@
     },
     {
       "check": "parts:BareWire1:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BareWire1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BareWire1:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -13512,20 +12746,6 @@
       }
     },
     {
-      "check": "parts:SolderFillet1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:SolderFillet1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:BatteryWire2:BareWire2",
       "passed": true,
       "detail": {
@@ -13554,20 +12774,6 @@
       }
     },
     {
-      "check": "parts:BatteryWire2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BatteryWire2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:BareWire2:ClosureScrew1",
       "passed": true,
       "detail": {
@@ -13576,20 +12782,6 @@
     },
     {
       "check": "parts:BareWire2:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BareWire2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:BareWire2:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -13610,56 +12802,7 @@
       }
     },
     {
-      "check": "parts:SolderFillet2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:SolderFillet2:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "parts:ClosureScrew1:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:ClosureScrew1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:ClosureScrew1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:ClosureNut1:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:ClosureNut1:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:ClosureScrew2:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -14051,20 +13194,6 @@
       }
     },
     {
-      "check": "RF:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "RF:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "RF:BatteryDivider",
       "passed": true,
       "detail": {
@@ -14436,20 +13565,6 @@
       }
     },
     {
-      "check": "plug:Main_J1_MatingInsertion:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J1_MatingInsertion:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "plug:Main_J1_MatingInsertion:BatteryDivider",
       "passed": true,
       "detail": {
@@ -14784,7 +13899,72 @@
       "detail": null
     },
     {
-      "check": "two_diagonal_holes",
+      "check": "one_M3_plus_positive_keys",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "key_bearing_z:KeyLower1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_PCB_contact:KeyLower1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "key_bearing_z:KeyUpper1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_PCB_contact:KeyUpper1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "key_bearing_z:KeyLower2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_PCB_contact:KeyLower2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "key_bearing_z:KeyUpper2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_PCB_contact:KeyUpper2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "key_separation_mm",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rotation_stopped:-1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rotation_stopped:1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hook_resists_vertical_lift:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hook_resists_vertical_lift:2",
       "passed": true,
       "detail": null
     },
@@ -14793,7 +13973,7 @@
       "passed": true,
       "detail": [
         29.4,
-        46.800000000000004,
+        44.800000000000004,
         19.599999999999998
       ]
     },
@@ -15282,485 +14462,6 @@
       }
     },
     {
-      "check": "screw_8_1_screen:2:Base",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Lid",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BatteryDivider",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:MainPCB",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_SW2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C10",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R17",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_D1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_J1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R23",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R18",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R15",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R10",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R22",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R20",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R19",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R12",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_U8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R16",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_C11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R21",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_SW3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_R14",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:Main_USB_ShellTails",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BatteryCandidate_UNQUALIFIED",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BatteryWire1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BareWire1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:SolderFillet1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BatteryWire2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:BareWire2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:2:SolderFillet2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "M3:2:tip_to_divider_screen",
-      "passed": true,
-      "detail": 0.20000000000000107
-    },
-    {
-      "check": "M3:2:7_9_full_nut_screen",
-      "passed": true,
-      "detail": 0.09999999999999964
-    },
-    {
-      "check": "M3:2:engagement_mm",
-      "passed": true,
-      "detail": 2.4
-    },
-    {
-      "check": "bearing_z:2:LowerBearing",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "annular_PCB_contact:2:LowerBearing",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "no_U2_clamp:2:LowerBearing",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "bearing_z:2:LidBearingBoss",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "annular_PCB_contact:2:LidBearingBoss",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "no_U2_clamp:2:LidBearingBoss",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "nut_entry:2:0",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "nut_entry:2:1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "nut_entry:2:3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "nut_entry:2:6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "battery_ceiling_gap",
       "passed": true,
       "detail": null
@@ -15905,10 +14606,10 @@
     }
   ],
   "failures": [],
-  "check_count": 2314,
+  "check_count": 2129,
   "measured_external_mm": [
     29.4,
-    46.800000000000004,
+    44.800000000000004,
     19.599999999999998
   ],
   "target": {
@@ -15918,7 +14619,7 @@
       20
     ],
     "actual_sorted_mm": [
-      46.800000000000004,
+      44.800000000000004,
       29.4,
       19.599999999999998
     ],
@@ -15927,14 +14628,7 @@
   },
   "physical_validation": "NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/screw fit and lacing pull/flex test, RF/thermal/magnetic performance",
   "sources": {
-    "housing/smove-r2-enclosure.FCStd": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
-    "PCB/main/smove-r2-main.kicad_pcb": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98"
-  },
-  "metadata_only_provenance": {
-    "compared_commit": "98838a38f0a3f0986fa55c328cf695b76aa80517",
-    "proof": "docs/revision-r2/solder-wire/validation/exports.json",
-    "original_board_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
-    "original_interface_sha256": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
-    "note": "Only raw source checksums refreshed; original geometry and build/test results retained, not regenerated or rerun."
+    "housing/smove-r2-enclosure.FCStd": "7488be63d8eea92798c8813504c38cb9f519d84eeb20bed24051c11f3e4ff332",
+    "PCB/main/smove-r2-main.kicad_pcb": "65f16a6bc9a794d17291e5f20894e4e24e1d6a4f57cbe0c6411955e9cf81dbd5"
   }
 }

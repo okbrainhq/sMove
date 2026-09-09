@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only canonical PCB contact audit: two M3 annular bearing zones."""
+"""Read-only canonical PCB contact audit: one M3 annular bearing and two positive corner contact zones."""
 import json, math
 from pathlib import Path
 import pcbnew
@@ -11,7 +11,8 @@ regions=[]
 for z in b.Zones():
     if z.GetIsRuleArea() and '_M3_NO_COPPER' in z.GetZoneName():
         poly=z.Outline().COutline(0);ref=z.GetZoneName().split('_')[0];x,y=d['mounting']['holes_native_xy_mm'][ref];regions.append((b,dict(name=ref+'_actual_3.4mm_bearing',xy=[[x+3.4*math.cos(i*math.pi/24),y+3.4*math.sin(i*math.pi/24)] for i in range(48)])))
-assert len(regions)==2
+assert len(regions)==1
+for r in d['retention']:regions.append((b,dict(name=r['name']+'_physical_contact',xy=r['xy'])))
 for b,r in regions:
     poly=pcbnew.SHAPE_POLY_SET();poly.NewOutline()
     for x,y in r['xy']:poly.Append(round(x*1e6),round(y*1e6))

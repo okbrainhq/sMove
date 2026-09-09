@@ -1,0 +1,531 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "electrical_assertions",
+      "passed": true
+    },
+    {
+      "check": "baseline-drc",
+      "passed": true
+    },
+    {
+      "check": "post-drc",
+      "passed": true
+    },
+    {
+      "check": "baseline-erc",
+      "passed": true
+    },
+    {
+      "check": "post-erc",
+      "passed": true
+    },
+    {
+      "check": "mechanical",
+      "passed": true
+    },
+    {
+      "check": "mechanical:source:housing/smove-r2-enclosure.FCStd",
+      "passed": true
+    },
+    {
+      "check": "mechanical:source:PCB/main/smove-r2-main.kicad_pcb",
+      "passed": true
+    },
+    {
+      "check": "closure-insertion",
+      "passed": true
+    },
+    {
+      "check": "closure-insertion:native_hash",
+      "passed": true
+    },
+    {
+      "check": "gui-inspection",
+      "passed": true
+    },
+    {
+      "check": "gui-inspection:native_hash",
+      "passed": true
+    },
+    {
+      "check": "gui-inspection:generator:scripts/r2/enclosure/present.py",
+      "passed": true
+    },
+    {
+      "check": "gui-inspection:generator:scripts/r2/enclosure/inspection.py",
+      "passed": true
+    },
+    {
+      "check": "gui-inspection:generator:housing/InspectAssembly.FCMacro",
+      "passed": true
+    },
+    {
+      "check": "battery-insertion",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/smove-r2-main.kicad_pcb",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/smove-r2-main.kicad_pro",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/interface.json",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/compute.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/imu.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/power.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/smove-r2-main.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/usb.kicad_sch",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/Device.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/imu.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/power.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "export-source:PCB/main/smove-r2-main.kicad_sym",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/ASSEMBLY.md",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/BOM.csv",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/assembly-placements.json",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/assembly-top.pdf",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/bottom-3d.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/bottom.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/conservative-step-frame.json",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/gerbers.zip",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/main-board-only.step",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/main-installed-models.step",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/pick-and-place.csv",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-compute.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-imu.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-power.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-svg/smove-r2-main-Power.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-svg/smove-r2-main-USB.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-svg/smove-r2-main.svg",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic-usb.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic.pdf",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/schematic.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/top-3d.png",
+      "passed": true
+    },
+    {
+      "check": "export-artifact:PCB/main/dist/top.svg",
+      "passed": true
+    },
+    {
+      "check": "native_rules_unchanged",
+      "passed": true
+    },
+    {
+      "check": "46_electronic_CPL_no_J2",
+      "passed": true
+    },
+    {
+      "check": "CPL:C1",
+      "passed": true
+    },
+    {
+      "check": "CPL:C2",
+      "passed": true
+    },
+    {
+      "check": "CPL:C3",
+      "passed": true
+    },
+    {
+      "check": "CPL:C4",
+      "passed": true
+    },
+    {
+      "check": "CPL:C5",
+      "passed": true
+    },
+    {
+      "check": "CPL:C6",
+      "passed": true
+    },
+    {
+      "check": "CPL:C7",
+      "passed": true
+    },
+    {
+      "check": "CPL:C8",
+      "passed": true
+    },
+    {
+      "check": "CPL:C9",
+      "passed": true
+    },
+    {
+      "check": "CPL:C10",
+      "passed": true
+    },
+    {
+      "check": "CPL:C11",
+      "passed": true
+    },
+    {
+      "check": "CPL:C13",
+      "passed": true
+    },
+    {
+      "check": "CPL:D1",
+      "passed": true
+    },
+    {
+      "check": "CPL:J1",
+      "passed": true
+    },
+    {
+      "check": "CPL:R1",
+      "passed": true
+    },
+    {
+      "check": "CPL:R2",
+      "passed": true
+    },
+    {
+      "check": "CPL:R3",
+      "passed": true
+    },
+    {
+      "check": "CPL:R4",
+      "passed": true
+    },
+    {
+      "check": "CPL:R5",
+      "passed": true
+    },
+    {
+      "check": "CPL:R7",
+      "passed": true
+    },
+    {
+      "check": "CPL:R8",
+      "passed": true
+    },
+    {
+      "check": "CPL:R9",
+      "passed": true
+    },
+    {
+      "check": "CPL:R10",
+      "passed": true
+    },
+    {
+      "check": "CPL:R11",
+      "passed": true
+    },
+    {
+      "check": "CPL:R12",
+      "passed": true
+    },
+    {
+      "check": "CPL:R13",
+      "passed": true
+    },
+    {
+      "check": "CPL:R14",
+      "passed": true
+    },
+    {
+      "check": "CPL:R15",
+      "passed": true
+    },
+    {
+      "check": "CPL:R16",
+      "passed": true
+    },
+    {
+      "check": "CPL:R17",
+      "passed": true
+    },
+    {
+      "check": "CPL:R18",
+      "passed": true
+    },
+    {
+      "check": "CPL:R19",
+      "passed": true
+    },
+    {
+      "check": "CPL:R20",
+      "passed": true
+    },
+    {
+      "check": "CPL:R21",
+      "passed": true
+    },
+    {
+      "check": "CPL:R22",
+      "passed": true
+    },
+    {
+      "check": "CPL:R23",
+      "passed": true
+    },
+    {
+      "check": "CPL:SW2",
+      "passed": true
+    },
+    {
+      "check": "CPL:SW3",
+      "passed": true
+    },
+    {
+      "check": "CPL:U1",
+      "passed": true
+    },
+    {
+      "check": "CPL:U2",
+      "passed": true
+    },
+    {
+      "check": "CPL:U3",
+      "passed": true
+    },
+    {
+      "check": "CPL:U4",
+      "passed": true
+    },
+    {
+      "check": "CPL:U5",
+      "passed": true
+    },
+    {
+      "check": "CPL:U6",
+      "passed": true
+    },
+    {
+      "check": "CPL:U8",
+      "passed": true
+    },
+    {
+      "check": "CPL:U9",
+      "passed": true
+    },
+    {
+      "check": "BOM_46",
+      "passed": true
+    },
+    {
+      "check": "gerber_ZIP_all_members",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-B_Cu.gbl",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-B_Mask.gbs",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-B_Silkscreen.gbo",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-Edge_Cuts.gm1",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-F_Cu.gtl",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-F_Mask.gts",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-F_Paste.gtp",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-F_Silkscreen.gto",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-In1_Cu.g1",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-In2_Cu.g2",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-NPTH.drl",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-PTH.drl",
+      "passed": true
+    },
+    {
+      "check": "ZIP:smove-r2-main-job.gbrjob",
+      "passed": true
+    },
+    {
+      "check": "all_rigid_contact_lands",
+      "passed": true
+    }
+  ],
+  "check_count": 130,
+  "manufacturing_release": false,
+  "native_board_sha256": "65f16a6bc9a794d17291e5f20894e4e24e1d6a4f57cbe0c6411955e9cf81dbd5",
+  "native_FreeCAD_sha256": "7488be63d8eea92798c8813504c38cb9f519d84eeb20bed24051c11f3e4ff332",
+  "rule_waivers_added": 0,
+  "scoped_remaining_gates": "Physical print/rigidity/torque/creep, complete protected pack and charging, strain-relief pull/flex, USB SI/reliability, RF/magnetic/thermal qualification."
+}

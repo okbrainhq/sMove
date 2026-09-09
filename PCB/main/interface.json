@@ -1,7 +1,7 @@
 {
-  "schema": "smove.solder-wire.interface.v3",
-  "status": "COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY",
-  "geometry_sha256": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
+  "schema": "smove.compact-placement.interface.v4",
+  "status": "30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY",
+  "geometry_sha256": "65f16a6bc9a794d17291e5f20894e4e24e1d6a4f57cbe0c6411955e9cf81dbd5",
   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
   "coordinate_system": {
     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
@@ -36,20 +36,20 @@
     "board_top_z": 1
   },
   "board_size_mm": [
-    25,
-    35.5
+    25.0,
+    30.0
   ],
   "outline_native_xy_mm": [
     [
-      100,
-      100
+      100.0,
+      100.0
     ],
     [
-      125,
-      100
+      125.0,
+      100.0
     ],
     [
-      125,
+      125.0,
       111.5
     ],
     [
@@ -61,16 +61,16 @@
       122.1
     ],
     [
-      125,
+      125.0,
       122.1
     ],
     [
-      125,
-      135.5
+      125.0,
+      130.0
     ],
     [
-      100,
-      135.5
+      100.0,
+      130.0
     ]
   ],
   "thickness_mm": 1.0,
@@ -108,21 +108,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        121.5,
-        125.2
+        111.0,
+        124.1
       ],
-      "rotation_ccw_deg": 90.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        120.0,
-        122.7,
-        123.0,
-        127.7
+        108.5,
+        122.6,
+        113.5,
+        125.6
       ],
       "courtyard_native_xy_mm": [
-        119.705,
-        122.405,
-        123.295,
-        127.995
+        108.205,
+        122.305,
+        113.795,
+        125.895
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -192,21 +192,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        116.0,
-        126.8
+        115.1,
+        126.3
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        115.2,
-        126.0,
-        116.8,
-        127.6
+        114.3,
+        125.5,
+        115.9,
+        127.1
       ],
       "courtyard_native_xy_mm": [
-        114.905,
-        125.355,
-        117.095,
-        128.245
+        114.005,
+        124.855,
+        116.195,
+        127.745
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -304,21 +304,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        101.25,
-        124.5
+        103.25,
+        124.4
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        100.725,
-        124.23,
-        101.775,
-        124.77
+        102.725,
+        124.13,
+        103.775,
+        124.67
       ],
       "courtyard_native_xy_mm": [
-        100.275,
-        123.985,
-        102.225,
-        125.015
+        102.275,
+        123.885,
+        104.225,
+        124.915
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -360,21 +360,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        118.25,
-        123.0
+        116.8,
+        123.3
       ],
-      "rotation_ccw_deg": 0.0,
+      "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        117.725,
-        122.73,
-        118.775,
-        123.27
+        116.53,
+        122.775,
+        117.07,
+        123.825
       ],
       "courtyard_native_xy_mm": [
-        117.275,
-        122.485,
-        119.225,
-        123.515
+        116.285,
+        122.325,
+        117.315,
+        124.275
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -472,20 +472,20 @@
       "mpn": "PCB PTH wire pads - not fitted hardware",
       "fitted": false,
       "body_aabb_native_xy_mm": [
-        109.935,
-        130.355,
-        115.065,
-        134.845
+        118.735,
+        124.255,
+        123.865,
+        128.745
       ],
       "courtyard_native_xy_mm": [
-        109.935,
-        130.355,
-        115.065,
-        134.845
+        118.735,
+        124.255,
+        123.865,
+        128.745
       ],
       "anchor_native_xy_mm": [
-        112.5,
-        132.6
+        121.3,
+        126.5
       ],
       "rotation_ccw_deg": 0,
       "z_mm_from_board_bottom": [
@@ -582,21 +582,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        102.75,
-        130.0
+        106.5,
+        125.5
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        101.95,
-        129.6,
-        103.55,
-        130.4
+        105.7,
+        125.1,
+        107.3,
+        125.9
       ],
       "courtyard_native_xy_mm": [
-        101.225,
-        129.225,
-        104.275,
-        130.775
+        104.975,
+        124.725,
+        108.025,
+        126.275
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -666,21 +666,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        116.0,
-        124.0
+        118.75,
+        123.25
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        115.475,
-        123.73,
-        116.525,
-        124.27
+        118.225,
+        122.98,
+        119.275,
+        123.52
       ],
       "courtyard_native_xy_mm": [
-        115.025,
-        123.485,
-        116.975,
-        124.515
+        117.775,
+        122.735,
+        119.725,
+        123.765
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -694,21 +694,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        105.75,
-        129.5
+        102.05,
+        129.25
       ],
-      "rotation_ccw_deg": 180.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        105.225,
-        129.23,
-        106.275,
-        129.77
+        101.525,
+        128.98,
+        102.575,
+        129.52
       ],
       "courtyard_native_xy_mm": [
-        104.775,
-        128.985,
-        106.725,
-        130.015
+        101.075,
+        128.735,
+        103.025,
+        129.765
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -723,20 +723,20 @@
       "side": "top",
       "anchor_native_xy_mm": [
         108.5,
-        120.5
+        120.25
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
         106.755,
-        118.525,
+        118.275,
         110.245,
-        122.475
+        122.225
       ],
       "courtyard_native_xy_mm": [
         106.755,
-        118.525,
+        118.275,
         110.245,
-        122.475
+        122.225
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -751,20 +751,20 @@
       "side": "top",
       "anchor_native_xy_mm": [
         102.75,
-        127.0
+        126.85
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
         101.25,
-        125.5,
+        125.35,
         104.25,
-        128.5
+        128.35
       ],
       "courtyard_native_xy_mm": [
         100.955,
-        125.205,
+        125.055,
         104.545,
-        128.795
+        128.645
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -778,21 +778,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        114.2,
-        128.3
+        117.35,
+        127.7
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        113.93,
-        127.775,
-        114.47,
-        128.825
+        117.08,
+        127.175,
+        117.62,
+        128.225
       ],
       "courtyard_native_xy_mm": [
-        113.685,
-        127.325,
-        114.715,
-        129.275
+        116.835,
+        126.725,
+        117.865,
+        128.675
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -834,21 +834,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        114.2,
-        126.0
+        117.35,
+        125.5
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        113.93,
-        125.475,
-        114.47,
-        126.525
+        117.08,
+        124.975,
+        117.62,
+        126.025
       ],
       "courtyard_native_xy_mm": [
-        113.685,
-        125.025,
-        114.715,
-        126.975
+        116.835,
+        124.525,
+        117.865,
+        126.475
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -890,21 +890,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        106.75,
-        127.0
+        106.35,
+        128.6
       ],
-      "rotation_ccw_deg": 90.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        106.125,
-        126.0,
-        107.375,
-        128.0
+        105.35,
+        127.975,
+        107.35,
+        129.225
       ],
       "courtyard_native_xy_mm": [
-        105.725,
-        125.255,
-        107.775,
-        128.745
+        104.605,
+        127.575,
+        108.095,
+        129.625
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -946,20 +946,20 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        103.0,
+        101.5,
         124.0
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        102.73,
+        101.23,
         123.475,
-        103.27,
+        101.77,
         124.525
       ],
       "courtyard_native_xy_mm": [
-        102.485,
+        100.985,
         123.025,
-        103.515,
+        102.015,
         124.975
       ],
       "z_mm_from_board_bottom": [
@@ -974,21 +974,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        110.0,
-        127.0
+        111.0,
+        127.85
       ],
-      "rotation_ccw_deg": 90.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
         108.5,
-        124.5,
-        111.5,
-        129.5
+        126.35,
+        113.5,
+        129.35
       ],
       "courtyard_native_xy_mm": [
         108.205,
-        124.205,
-        111.795,
-        129.795
+        126.055,
+        113.795,
+        129.645
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -1058,21 +1058,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        107.25,
-        124.0
+        106.7,
+        126.9
       ],
-      "rotation_ccw_deg": 90.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        106.95,
-        123.45,
-        107.55,
-        124.55
+        106.15,
+        126.6,
+        107.25,
+        127.2
       ],
       "courtyard_native_xy_mm": [
-        106.735,
-        123.025,
-        107.765,
-        124.975
+        105.725,
+        126.385,
+        107.675,
+        127.415
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -1366,21 +1366,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        104.75,
-        124.5
+        115.1,
+        128.65
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        104.2,
-        124.2,
-        105.3,
-        124.8
+        114.55,
+        128.35,
+        115.65,
+        128.95
       ],
       "courtyard_native_xy_mm": [
-        103.775,
-        123.985,
-        105.725,
-        125.015
+        114.125,
+        128.135,
+        116.075,
+        129.165
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -1393,8 +1393,8 @@
   "anchors": {
     "SW2": {
       "center_native_xy_mm": [
-        121.5,
-        125.2
+        111.0,
+        124.1
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1407,8 +1407,8 @@
     },
     "D1": {
       "center_native_xy_mm": [
-        116.0,
-        126.8
+        115.1,
+        126.3
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1568,21 +1568,21 @@
     },
     "J2": {
       "center_native_xy_mm": [
-        112.5,
-        132.6
+        121.3,
+        126.5
       ],
       "pins": {
         "1": {
           "native_xy_mm": [
-            111.23,
-            132.6
+            120.03,
+            126.5
           ],
           "net": "/Power/PACK_P"
         },
         "2": {
           "native_xy_mm": [
-            113.77,
-            132.6
+            122.57,
+            126.5
           ],
           "net": "GND"
         }
@@ -1591,8 +1591,8 @@
     },
     "SW3": {
       "center_native_xy_mm": [
-        110.0,
-        127.0
+        111.0,
+        127.85
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1640,7 +1640,50 @@
       100.0
     ]
   ],
-  "retention": [],
+  "retention": [
+    {
+      "name": "SW_KEY_NO_COPPER",
+      "xy": [
+        [
+          100,
+          129
+        ],
+        [
+          101,
+          129
+        ],
+        [
+          101,
+          130
+        ],
+        [
+          100,
+          130
+        ]
+      ]
+    },
+    {
+      "name": "SE_KEY_NO_COPPER",
+      "xy": [
+        [
+          124,
+          129
+        ],
+        [
+          125,
+          129
+        ],
+        [
+          125,
+          130
+        ],
+        [
+          124,
+          130
+        ]
+      ]
+    }
+  ],
   "antenna_3d": {
     "physical_z_from_board_bottom_mm": [
       1,
@@ -1672,7 +1715,7 @@
     "exceptions": "Only U1 own antenna; no battery, harness, carrier, metal fasteners or enclosure conductor in volume. Antenna projects 5.4mm north of PCB."
   },
   "retention_policy": {
-    "contacts": "Two through-PCB M3 sleeves, plus non-preloaded side registration. No pressure on U2; stiffness/torque/sample fit unqualified."
+    "contacts": "H1 M3 clamp and two lower positive edge shoes, insulating lid bearing pads in all-layer copper-free corners. Hooked lid plus M3. No pressure on U2 or pouch; print stiffness/torque unqualified."
   },
   "bottom_envelope": {
     "smt_parts": "none",
@@ -1742,11 +1785,11 @@
     ],
     "board_bbox_centre_native_mm": [
       112.5,
-      117.75
+      115.0
     ],
     "centre_offset_native_mm": [
-      0,
-      -0.25
+      0.0,
+      2.5
     ],
     "position_from_board_NW_mm": [
       12.5,
@@ -1759,15 +1802,11 @@
       "H1": [
         103.6,
         103.6
-      ],
-      "H2": [
-        121.4,
-        131.9
       ]
     },
     "drill_mm": 3.2,
     "copper_exclusion_radius_mm": 3.45,
-    "scheme": "Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper"
+    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"
   },
   "battery_wire": {
     "pitch_centre_mm": 2.54,

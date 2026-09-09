@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "keepout_radius_mm": 3.45,
+  "physical_contact_radius_mm": 3.4,
+  "method": "Conservative pad AABBs; exact effective track/via shape collision (AABB broad phase), exact stored filled-copper polygon intersection in all four layers. Not electrical DRC or new refill.",
+  "lands": [
+    {
+      "land": "H1_actual_3.4mm_bearing",
+      "collisions": [],
+      "filled_zone_layers_inspected": 4,
+      "passed": true
+    },
+    {
+      "land": "SW_KEY_NO_COPPER_physical_contact",
+      "collisions": [],
+      "filled_zone_layers_inspected": 4,
+      "passed": true
+    },
+    {
+      "land": "SE_KEY_NO_COPPER_physical_contact",
+      "collisions": [],
+      "filled_zone_layers_inspected": 4,
+      "passed": true
+    }
+  ]
+}

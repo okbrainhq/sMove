@@ -1,0 +1,1681 @@
+{
+  "status": "PASS",
+  "baseline": "f8c7ef6",
+  "checks": [
+    {
+      "check": "only_H2_mechanical_footprint_removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fitted_parts_46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pads_nets_drills_layers:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_courtyard_area:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_pro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_dru",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:compute.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:imu.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:power.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:usb.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:Device.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:imu.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:power.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "critical_placement_retained:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "switch_rotated_native_mapping:SW2",
+      "passed": true,
+      "detail": {
+        "1": {
+          "net": "/Compute/MCU_EN",
+          "xy": [
+            108.775,
+            124.1
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy": [
+            113.225,
+            124.1
+          ]
+        }
+      }
+    },
+    {
+      "check": "switch_contact_1_preserved:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "switch_rotated_native_mapping:SW3",
+      "passed": true,
+      "detail": {
+        "1": {
+          "net": "Net-(U1-GPIO9_{slash}_BOOT)",
+          "xy": [
+            108.775,
+            127.85
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "xy": [
+            113.225,
+            127.85
+          ]
+        }
+      }
+    },
+    {
+      "check": "switch_contact_1_preserved:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J2_2_54mm_centre_pitch",
+      "passed": true,
+      "detail": 2.54
+    },
+    {
+      "check": "J2_two_1mm_PTH_2mm_pads",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "J2_not_fitted_or_CPL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_UART_or_testpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "single_top_RGB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "In1_GND_reference_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_via_copper_overlap_with_SMT_pads",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "RF_all_layer_exclusion_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "M3_copper_exclusion_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_copper_exclusion:SW_KEY_NO_COPPER",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "positive_key_copper_exclusion:SE_KEY_NO_COPPER",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sensor_transform:accel_gyro_to_body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sensor_transform:mag_to_body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_ICM_top_orientation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sensor_width_centre_central_region",
+      "passed": true,
+      "detail": {
+        "part": "ICM-20948",
+        "side": "F.Cu",
+        "native_rotation_deg": -90,
+        "body_datum": "Base underside; main underside faces body, AG +Z outward",
+        "accel_gyro_to_body": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "mag_to_body": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "evidence": "docs/revision-r2/rgb-body/evidence/icm-axes.png; DS-000189 v1.3 figs12/13; original top pad order + applied -90deg rotation",
+        "native_position_mm": [
+          112.5,
+          117.5,
+          1
+        ],
+        "board_bbox_centre_native_mm": [
+          112.5,
+          115.0
+        ],
+        "centre_offset_native_mm": [
+          0.0,
+          2.5
+        ],
+        "position_from_board_NW_mm": [
+          12.5,
+          17.5,
+          1
+        ]
+      }
+    },
+    {
+      "check": "exact_net_endpoint_equivalence",
+      "passed": true,
+      "detail": {
+        "baseline_nets": 71,
+        "post_nets": 71,
+        "endpoints": 216
+      }
+    },
+    {
+      "check": "current_interface_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_current_pose:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C1",
+      "passed": true,
+      "detail": [
+        4.656783,
+        2.225562
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C2",
+      "passed": true,
+      "detail": [
+        5.445181,
+        4.318854
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C3",
+      "passed": true,
+      "detail": [
+        2.096165,
+        2.096165
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C4",
+      "passed": true,
+      "detail": [
+        5.227322,
+        5.227322
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C5",
+      "passed": true,
+      "detail": [
+        4.218949,
+        4.218949
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C6",
+      "passed": true,
+      "detail": [
+        2.626339,
+        2.626339
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C7",
+      "passed": true,
+      "detail": [
+        1.294372,
+        1.294372
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C8",
+      "passed": true,
+      "detail": [
+        2.257632,
+        2.257632
+      ]
+    },
+    {
+      "check": "decoupling_proximity_not_worse:C9",
+      "passed": true,
+      "detail": [
+        1.270984,
+        1.270984
+      ]
+    },
+    {
+      "check": "PCB_25x30x1",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "check_count": 251,
+  "failures": [],
+  "changed_placements": [
+    {
+      "ref": "SW2",
+      "before": [
+        121.5,
+        125.2,
+        90.0
+      ],
+      "after": [
+        111.0,
+        124.1,
+        0.0
+      ]
+    },
+    {
+      "ref": "R17",
+      "before": [
+        107.25,
+        124.0,
+        90.0
+      ],
+      "after": [
+        106.7,
+        126.9,
+        0.0
+      ]
+    },
+    {
+      "ref": "D1",
+      "before": [
+        116.0,
+        126.8,
+        0.0
+      ],
+      "after": [
+        115.1,
+        126.3,
+        0.0
+      ]
+    },
+    {
+      "ref": "R23",
+      "before": [
+        101.25,
+        124.5,
+        0.0
+      ],
+      "after": [
+        103.25,
+        124.4,
+        0.0
+      ]
+    },
+    {
+      "ref": "R2",
+      "before": [
+        118.25,
+        123.0,
+        0.0
+      ],
+      "after": [
+        116.8,
+        123.3,
+        90.0
+      ]
+    },
+    {
+      "ref": "J2",
+      "before": [
+        112.5,
+        132.6,
+        0.0
+      ],
+      "after": [
+        121.3,
+        126.5,
+        0.0
+      ]
+    },
+    {
+      "ref": "C1",
+      "before": [
+        102.75,
+        130.0,
+        0.0
+      ],
+      "after": [
+        106.5,
+        125.5,
+        0.0
+      ]
+    },
+    {
+      "ref": "R13",
+      "before": [
+        116.0,
+        124.0,
+        0.0
+      ],
+      "after": [
+        118.75,
+        123.25,
+        0.0
+      ]
+    },
+    {
+      "ref": "R22",
+      "before": [
+        105.75,
+        129.5,
+        180.0
+      ],
+      "after": [
+        102.05,
+        129.25,
+        0.0
+      ]
+    },
+    {
+      "ref": "U9",
+      "before": [
+        108.5,
+        120.5,
+        90.0
+      ],
+      "after": [
+        108.5,
+        120.25,
+        90.0
+      ]
+    },
+    {
+      "ref": "U6",
+      "before": [
+        102.75,
+        127.0,
+        0.0
+      ],
+      "after": [
+        102.75,
+        126.85,
+        0.0
+      ]
+    },
+    {
+      "ref": "R12",
+      "before": [
+        114.2,
+        128.3,
+        90.0
+      ],
+      "after": [
+        117.35,
+        127.7,
+        90.0
+      ]
+    },
+    {
+      "ref": "R11",
+      "before": [
+        114.2,
+        126.0,
+        90.0
+      ],
+      "after": [
+        117.35,
+        125.5,
+        90.0
+      ]
+    },
+    {
+      "ref": "C2",
+      "before": [
+        106.75,
+        127.0,
+        90.0
+      ],
+      "after": [
+        106.35,
+        128.6,
+        0.0
+      ]
+    },
+    {
+      "ref": "R16",
+      "before": [
+        104.75,
+        124.5,
+        0.0
+      ],
+      "after": [
+        115.1,
+        128.65,
+        0.0
+      ]
+    },
+    {
+      "ref": "R21",
+      "before": [
+        103.0,
+        124.0,
+        90.0
+      ],
+      "after": [
+        101.5,
+        124.0,
+        90.0
+      ]
+    },
+    {
+      "ref": "SW3",
+      "before": [
+        110.0,
+        127.0,
+        90.0
+      ],
+      "after": [
+        111.0,
+        127.85,
+        0.0
+      ]
+    }
+  ],
+  "decoupling_placement_metrics": [
+    {
+      "cap": "C1",
+      "IC": "U6",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        4.656783,
+        2.225562
+      ]
+    },
+    {
+      "cap": "C2",
+      "IC": "U6",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        5.445181,
+        4.318854
+      ]
+    },
+    {
+      "cap": "C3",
+      "IC": "U4",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        2.096165,
+        2.096165
+      ]
+    },
+    {
+      "cap": "C4",
+      "IC": "U1",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        5.227322,
+        5.227322
+      ]
+    },
+    {
+      "cap": "C5",
+      "IC": "U5",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        4.218949,
+        4.218949
+      ]
+    },
+    {
+      "cap": "C6",
+      "IC": "U5",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        2.626339,
+        2.626339
+      ]
+    },
+    {
+      "cap": "C7",
+      "IC": "U2",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        1.294372,
+        1.294372
+      ]
+    },
+    {
+      "cap": "C8",
+      "IC": "U2",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        2.257632,
+        2.257632
+      ]
+    },
+    {
+      "cap": "C9",
+      "IC": "U2",
+      "nearest_matching_nonground_pad_mm_before_after": [
+        1.270984,
+        1.270984
+      ]
+    }
+  ],
+  "routing_adjustment": "After pre-route study, R22 translated 0.95mm left to permit U6.7 escape without via-in-pad; same outline and courtyard. All new vias ordinary, outside SMT pads.",
+  "manufacturing_release": false
+}

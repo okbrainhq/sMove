@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SAMPLED_RIGID_HOOK_PATH",
+  "samples": 141,
+  "pivot_mm": [
+    0,
+    1.8,
+    18.4
+  ],
+  "rotation_axis": [
+    1,
+    0,
+    0
+  ],
+  "removal_stages": "Remove M3 screw; raise north edge to 10 degrees, translate lid north 1.2mm, then lift 30mm. Install in reverse; never force.",
+  "collisions": [],
+  "scope": "Nominal discrete rigid geometry, not continuous sweep, tolerance/strength/print/physical qualification.",
+  "native_sha256": "7488be63d8eea92798c8813504c38cb9f519d84eeb20bed24051c11f3e4ff332"
+}

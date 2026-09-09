@@ -1,0 +1,60 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx2g -Dlog4j2.disableJmx=true
+WARN StatusConsoleListener JNDI lookup class is not available because this JRE does not support JNDI. JNDI string lookups will not be available, continuing configuration. Ignoring java.lang.NoClassDefFoundError: javax/naming/Context
+WARN StatusConsoleListener JMX runtime input lookup class is not available because this JRE does not support JMX. JMX lookups will not be available, continuing configuration. Ignoring java.lang.IllegalArgumentException: java.lang.NoClassDefFoundError: Could not initialize class org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup
+ERROR StatusConsoleListener Could not reconfigure JMX
+ java.lang.NoClassDefFoundError: javax/management/InstanceNotFoundException
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:632)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:694)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:711)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:253)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at app.freerouting.logger.FRLogger.traceEntry(FRLogger.java:38)
+	at app.freerouting.gui.MainApplication.main(MainApplication.java:204)
+Caused by: java.lang.ClassNotFoundException: javax.management.InstanceNotFoundException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 10 more
+2026-09-09 06:57:21.964 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-09-09 06:57:21.989 [main] INFO  Settings were loaded from freerouting.json
+WARNING: Runtime environment or build system does not support multi-release JARs. This will impact location-based features.
+2026-09-09 06:57:23.002 [main] INFO  Opening '/home/azero/.okbrain/workspaces/smove-files/024/.cache/integrated/main.dsn'...
+2026-09-09 06:57:23.000 [Thread-0] ERROR java/net/http/HttpClient
+java.lang.NoClassDefFoundError: java/net/http/HttpClient
+	at app.freerouting.management.VersionChecker.run(VersionChecker.java:23) ~[freerouting-executable.jar:unspecified]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.lang.ClassNotFoundException: java.net.http.HttpClient
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source) ~[?:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?]
+	... 2 more
+2026-09-09 06:57:23.000 [Thread-0] ERROR java/net/http/HttpClient
+java.lang.NoClassDefFoundError: java/net/http/HttpClient
+	at app.freerouting.management.VersionChecker.run(VersionChecker.java:23) ~[freerouting-executable.jar:unspecified]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.lang.ClassNotFoundException: java.net.http.HttpClient
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source) ~[?:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?]
+	... 2 more
+2026-09-09 06:57:24.722 [Thread-1] INFO  Starting auto-routing...
+2026-09-09 06:58:44.778 [Thread-1] WARN  There were only 19.35 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-09-09 06:58:44.780 [Thread-1] INFO  Auto-routing was completed in 1 minute(s) 20.06 seconds.
+2026-09-09 06:58:44.880 [Thread-1] INFO  Starting route optimization on 1 thread...
+2026-09-09 06:58:46.291 [Thread-1] INFO  Route optimization was completed in 1.41 seconds.
+2026-09-09 06:58:46.296 [Thread-1] INFO  Saving '/home/azero/.okbrain/workspaces/smove-files/024/.cache/integrated/main.ses'...
+ERROR StatusConsoleListener Unable to unregister MBeans
+ java.lang.NoClassDefFoundError: javax/management/InstanceNotFoundException
+	at org.apache.logging.log4j.core.LoggerContext.stop(LoggerContext.java:364)
+	at org.apache.logging.log4j.core.LoggerContext$1.run(LoggerContext.java:305)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry$RegisteredCancellable.run(DefaultShutdownCallbackRegistry.java:118)
+	at org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.run(DefaultShutdownCallbackRegistry.java:77)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: javax.management.InstanceNotFoundException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 5 more

@@ -23,9 +23,9 @@
   "method": "Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.",
   "desktop_agent": "Desktop observation available this turn; programmatic Qt GUI macro tests, not native GUI PCB routing.",
   "exploded_display_is_not_alignment_geometry": true,
-  "native_sha256": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
+  "native_sha256": "7488be63d8eea92798c8813504c38cb9f519d84eeb20bed24051c11f3e4ff332",
   "source_sha256": {
-    "scripts/r2/enclosure/present.py": "9ad4c6120ec04b5210b4e76001cb001e9907567af7791339cd9da77c92641692",
+    "scripts/r2/enclosure/present.py": "7ae5b06e6c5824a8bc03d9a471dac596d4fc9bd4e000230f3e196d5c63215767",
     "scripts/r2/enclosure/inspection.py": "7fc27a92cdf21577ce33c64b68dc618177adbe5753789d831e3824a3fcefc894",
     "housing/InspectAssembly.FCMacro": "4416f469fd5d9c694105c007d92b4598b6f052cd9ab9429faf966ec9c9c910d3"
   }

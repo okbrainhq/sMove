@@ -1,0 +1,110 @@
+Payload diff at review snapshot; this summary, generated diffs and outer manifest are excluded from their own diff. Complete changed-file list/count is in delivery-manifest.json.
+
+ PCB/README.md                                                           |     9 +-
+ PCB/main/README.md                                                      |    20 +-
+ PCB/main/dist/ASSEMBLY.md                                               |    34 +-
+ PCB/main/dist/assembly-placements.json                                  |   292 +-
+ PCB/main/dist/assembly-top.pdf                                          |   Bin 71637 -> 70562 bytes
+ PCB/main/dist/bottom-3d.png                                             |   Bin 62942 -> 70238 bytes
+ PCB/main/dist/bottom.svg                                                |  7397 +++++++++++------------
+ PCB/main/dist/conservative-step-frame.json                              |     2 +-
+ PCB/main/dist/gerbers.zip                                               |   Bin 124103 -> 130675 bytes
+ PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl                            |  6884 +++++++++++-----------
+ PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs                          |     8 +-
+ PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo                    |   104 +-
+ PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1                       |    12 +-
+ PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl                            | 11048 ++++++++++++++++++----------------
+ PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts                          |   200 +-
+ PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp                         |   181 +-
+ PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto                    |   766 ++-
+ PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1                           |  5904 ++++++++++---------
+ PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2                           |  5601 ++++++++++--------
+ PCB/main/dist/gerbers/smove-r2-main-NPTH.drl                            |     5 +-
+ PCB/main/dist/gerbers/smove-r2-main-PTH.drl                             |   127 +-
+ PCB/main/dist/gerbers/smove-r2-main-job.gbrjob                          |     4 +-
+ PCB/main/dist/main-board-only.step                                      |  1731 +++---
+ PCB/main/dist/main-installed-models.step                                | 10861 +++++++++++++++++-----------------
+ PCB/main/dist/main-populated-with-conservative-envelopes.step           | 31570 +++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------
+ PCB/main/dist/manifest.json                                             |   124 +-
+ PCB/main/dist/pick-and-place.csv                                        |    32 +-
+ PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg                   |     2 +-
+ PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg                       |     2 +-
+ PCB/main/dist/schematic-svg/smove-r2-main-Power.svg                     |     2 +-
+ PCB/main/dist/schematic-svg/smove-r2-main-USB.svg                       |     2 +-
+ PCB/main/dist/schematic-svg/smove-r2-main.svg                           |     2 +-
+ PCB/main/dist/schematic.pdf                                             |   Bin 570876 -> 570876 bytes
+ PCB/main/dist/top-3d.png                                                |   Bin 122263 -> 139745 bytes
+ PCB/main/dist/top.svg                                                   | 15789 ++++++++++++++++++++++++++-----------------------
+ PCB/main/interface.json                                                 |   431 +-
+ PCB/main/native-layout-contract.json                                    |   106 +-
+ PCB/main/parts-main.json                                                |    78 +-
+ PCB/main/smove-r2-main.kicad_pcb                                        | 16528 +++++++++++++++++++++++++++------------------------
+ README.md                                                               |    14 +-
+ docs/revision-r2/compact-placement/README.md                            |    73 +
+ docs/revision-r2/compact-placement/images/A_32_two_M3.png               |   Bin 0 -> 48357 bytes
+ docs/revision-r2/compact-placement/images/B_30_single_M3_keyed.png      |   Bin 0 -> 49679 bytes
+ docs/revision-r2/compact-placement/images/C_29_single_M3_tight.png      |   Bin 0 -> 48616 bytes
+ docs/revision-r2/compact-placement/images/before-dimensions.png         |   Bin 0 -> 22348 bytes
+ docs/revision-r2/compact-placement/images/before-housing.png            |   Bin 0 -> 101463 bytes
+ docs/revision-r2/compact-placement/images/before-pcb.png                |   Bin 0 -> 122263 bytes
+ docs/revision-r2/compact-placement/images/housing-comparison.png        |   Bin 0 -> 241853 bytes
+ docs/revision-r2/compact-placement/images/pcb-comparison.png            |   Bin 0 -> 329213 bytes
+ docs/revision-r2/compact-placement/images/switch-drawing.png            |   Bin 0 -> 271069 bytes
+ docs/revision-r2/compact-placement/review/placements.csv                |    18 +
+ docs/revision-r2/compact-placement/validation/baseline-drc.json         |    15 +
+ docs/revision-r2/compact-placement/validation/baseline-erc.json         |    39 +
+ docs/revision-r2/compact-placement/validation/baseline-mechanical.json  | 15940 +++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/revision-r2/compact-placement/validation/baseline-netlist.xml      |  1735 ++++++
+ docs/revision-r2/compact-placement/validation/completion-routes.json    |  2186 +++++++
+ docs/revision-r2/compact-placement/validation/delivery.json             |   531 ++
+ docs/revision-r2/compact-placement/validation/dimensions.json           |    32 +
+ docs/revision-r2/compact-placement/validation/electrical.json           |  1681 ++++++
+ docs/revision-r2/compact-placement/validation/exports.json              |    70 +
+ docs/revision-r2/compact-placement/validation/freerouting.log           |    60 +
+ docs/revision-r2/compact-placement/validation/placement-eco.json        |   687 +++
+ docs/revision-r2/compact-placement/validation/placement-study.json      |  1472 +++++
+ docs/revision-r2/compact-placement/validation/post-drc.json             |    15 +
+ docs/revision-r2/compact-placement/validation/post-erc.json             |    39 +
+ docs/revision-r2/compact-placement/validation/post-netlist.xml          |  1735 ++++++
+ docs/revision-r2/compact-placement/validation/rejected-hook-path.json   |   739 +++
+ docs/revision-r2/compact-placement/validation/retention.json            |    26 +
+ docs/revision-r2/compact-placement/validation/router-import-dedup.json  |    19 +
+ docs/revision-r2/compact-placement/validation/toolchain.json            |    14 +
+ docs/revision-r2/compact-placement/validation/via-paste-correction.json |   155 +
+ housing/BOM.csv                                                         |     9 +
+ housing/PRINTING-ASSEMBLY.md                                            |    61 +-
+ housing/README.md                                                       |    17 +-
+ housing/closure-check.py                                                |    22 +
+ housing/dist/assembled.png                                              |   Bin 96256 -> 98640 bytes
+ housing/dist/base.stl                                                   |   Bin 320284 -> 212284 bytes
+ housing/dist/body-side.png                                              |   Bin 15167 -> 15092 bytes
+ housing/dist/dimensions.png                                             |   Bin 22348 -> 17560 bytes
+ housing/dist/divider.stl                                                |   Bin 20684 -> 11084 bytes
+ housing/dist/exploded.png                                               |   Bin 101463 -> 90222 bytes
+ housing/dist/freecad-inspection.png                                     |   Bin 173409 -> 170421 bytes
+ housing/dist/lid.stl                                                    |   Bin 190684 -> 131484 bytes
+ housing/dist/manifest.json                                              |    50 +-
+ housing/dist/section.png                                                |   Bin 11017 -> 11018 bytes
+ housing/dist/smove-r2-assembly.step                                     | 26020 ++++++++++++++++++++++++++++++++++++++++----------------------------------------
+ housing/dist/smove-r2-printable.step                                    |  7793 +++++++++++++-----------
+ housing/dist/top.png                                                    |   Bin 18687 -> 17558 bytes
+ housing/smove-r2-enclosure.FCStd                                        |   Bin 302959 -> 294715 bytes
+ housing/status.json                                                     |    12 +-
+ housing/validation/battery-insertion.json                               |   204 +-
+ housing/validation/build.json                                           |    73 +-
+ housing/validation/closure-insertion.json                               |    18 +
+ housing/validation/gui-inspection.json                                  |     4 +-
+ housing/validation/input-geometry.json                                  |  1320 ++---
+ housing/validation/mechanical.json                                      |  1472 +----
+ scripts/r2/enclosure/contact_audit.py                                   |     5 +-
+ scripts/r2/enclosure/extract.py                                         |     2 +-
+ scripts/r2/enclosure/generate.py                                        |    46 +-
+ scripts/r2/enclosure/present.py                                         |    10 +-
+ scripts/r2/enclosure/verify.py                                          |    22 +-
+ scripts/r2/final/export.py                                              |     2 +-
+ scripts/r2/integrated/compact.py                                        |   101 +
+ scripts/r2/integrated/compact_routes.py                                 |    82 +
+ scripts/r2/integrated/seal_compact.py                                   |    58 +
+ scripts/r2/integrated/sync.py                                           |    18 +-
+ scripts/r2/integrated/verify_compact.py                                 |    81 +
+ 107 files changed, 105108 insertions(+), 75547 deletions(-)

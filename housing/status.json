@@ -1,6 +1,12 @@
 {
-  "allow_generate_or_export": true,
+  "status": "PASS_NOMINAL_CAD_SCREENS",
   "manufacturing_release": false,
-  "source": "Canonical integrated PCB/main only; carrier frozen provenance",
-  "qualification": "Engineering prototype. CAD electrical and mechanical screens pass; protected-pack, wire/solder/lacing, print/hardware/rigidity/RF/thermal/magnetic gates OPEN. J2 is PTH wire pads; no PH2 mate."
+  "charging_release": false,
+  "dimensions_LWH_including_M3x8_mm": [
+    44.8,
+    29.4,
+    19.6
+  ],
+  "mechanical": "one M3, positive corner keys and two captured lid hooks",
+  "physical_qualification": "NOT PERFORMED; see PRINTING-ASSEMBLY.md"
 }

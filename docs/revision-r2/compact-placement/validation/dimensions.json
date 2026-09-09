@@ -1,0 +1,32 @@
+{
+  "PCB_before_mm": [
+    25,
+    35.5,
+    1
+  ],
+  "PCB_after_mm": [
+    25,
+    30,
+    1
+  ],
+  "bbox_area_reduction_pct": 15.492957746478876,
+  "outline_area_before_mm2": 881.67,
+  "outline_area_after_mm2": 744.1699999999983,
+  "lower_region_native_y_start_mm": 122,
+  "lower_region_before_mm2": 337.5,
+  "lower_region_after_mm2": 200,
+  "lower_region_reduction_pct": 40.74074074074075,
+  "housing_before_LWH_mm": [
+    46.8,
+    29.4,
+    19.6
+  ],
+  "housing_after_LWH_mm": [
+    44.8,
+    29.4,
+    19.6
+  ],
+  "includes_recessed_M3x8": true,
+  "PCB_limit": "Dense lower courtyard/routing, fixed upper USB/module/IMU. Three arrangements screened; not a global optimum claim.",
+  "housing_limit": "Independent battery reserve 21x31x4.3, wire/lacing bay, RF/module overhang, walls and retained M3x8 vertical stack; nominal pouch 30x20x3 not compressed."
+}

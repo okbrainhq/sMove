@@ -1,0 +1,9 @@
+Item,Quantity,Specification,Status
+Base,1,housing/dist/base.stl,Printed fit/strength unqualified
+Lid,1,housing/dist/lid.stl; two captured hooks,Printed fit/strength unqualified
+Divider,1,housing/dist/divider.stl; rigid insulating 0.8mm,No pouch preload
+M3 screw,1,M3x8 socket cap; assumed head <=5.68x3mm,Measure actual hardware; no qualified torque
+M3 nut,1,Assumed AF5.5x2.4mm,Measure actual hardware
+Battery,1,Nominal 30x20x3mm; protected pack required,UNQUALIFIED; not a purchase approval
+Battery leads,2,Tinned bundle <=0.7mm; insulation OD <=1.2mm,Gauge/current/flex to qualify
+Nonconductive lacing,1,Two 1.2mm bore passages; knot reserve,Fit and pull/flex test required

@@ -1,5 +1,5 @@
 """Integrated main PCB compact stack, editable native base/lid + removable insulating divider.
-Two diagonal M3 clamps; measure current export bounds and retain sample/battery qualification gates.
+One M3 clamp, two positive PCB corner keys and hooked lid; measure current export bounds and retain sample/battery qualification gates.
 """
 import hashlib,json,math
 from pathlib import Path
@@ -8,7 +8,7 @@ import Part,Sketcher,MeshPart
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing';EX=OUT/'dist';EX.mkdir(parents=True,exist_ok=True)
 CACHE=ROOT/'.cache/housing';DATA=json.loads((CACHE/'input-geometry.json').read_text());MAIN=json.loads((ROOT/'PCB/main/interface.json').read_text())
 assert set(DATA['boards'])=={'main'}
-P=dict(XMin=-2.2,XMax=27.2,YMin=-.2,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
+P=dict(XMin=-2.2,XMax=27.2,YMin=1.8,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
        RoofBottom=18.4,Roof=1.2,BarrierBottom=6.3,BarrierThickness=.8,ScrewUnderHead=15.4,ScrewLength=8.)
 D=A.newDocument('sMove_Integrated');D.Label='sMove | integrated IMU | underside toward BODY'
 S=D.addObject('Spreadsheet::Sheet','Parameters')
@@ -28,6 +28,7 @@ def cyl(name,x,y,z,r,h):
     return o
 
 def fuse(name,obs):
+    if len(obs)==1:return obs[0]
     o=D.addObject('Part::MultiFuse',name); o.Shapes=obs; o.Refine=True; return o
 
 def cut(name,b,t):
@@ -59,19 +60,32 @@ inner=box('BaseCavity','Parameters.XMin+Parameters.Wall','Parameters.YMin+Parame
 baseparts=[cut('OpenTray',outer,inner)];lidparts=[box('LidBlank','Parameters.XMin','Parameters.YMin','Parameters.RoofBottom','Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.Roof')]
 basecuts=[];lidcuts=[];fasteners=[[xy[0]-100,139-xy[1]] for xy in MAIN['mounting']['holes_native_xy_mm'].values()];lands=fasteners
 # Raised nut shelves attach to the inner walls, above the rigid battery divider.
-# Two corner M3 through-PCB clamps, no external ears and no load on the cell or U2.
+# H1 M3 through-PCB clamp; no external ears and no load on the cell or U2.
 for i,(x,y) in enumerate(fasteners,1):
  baseparts.append(cyl(f'BoltSafetyFloor{i}',x,y,6.4,2.05,1.))
  baseparts += [cyl(f'ClosureBoss{i}',x,y,7.4,4.1,2.8),cyl(f'LowerBearing{i}',x,y,10.2,3.4,.6)]
  basecuts += [hexagon(f'NutPocket{i}',x,y,7.6,5.8,2.4),box(f'NutEntry{i}',x if i==1 else x-6,y-3.3,7.6,6.,6.6,2.4),cyl(f'ClosureBore{i}',x,y,7.2,1.7,3.7)]
  lidparts.append(cyl(f'LidBearingBoss{i}',x,y,11.8,3.4,6.7))
  lidcuts += [cyl(f'LidBore{i}',x,y,11.7,1.7,8.),cyl(f'HeadRecess{i}',x,y,15.4,3.05,4.3)]
-# Side registration reduces slip; mounting sleeves carry clamp load, not pouch.
+# Positive lower corner edge shoes: XY stops, lower supports and separate lid
+# bearings in two ALL-LAYER COPPER-FREE 1x1mm PCB corners. No pouch preload.
+# 24mm separation provides antirotation independent of screw friction.
+for i,x in enumerate((0.,24.),1):
+ baseparts.append(box(f'KeyLower{i}',-.4 if i==1 else 24.,8.6,7.4,1.4,1.4,3.4))
+ baseparts.append(box(f'KeyStop{i}',x,8.6,10.8,1.,.25,1.))
+ lidparts.append(box(f'KeyUpper{i}',x+.1,9.1,11.8,.7,.7,6.6))
+# Two rigid south-facing lid hooks engage front-wall slots; H1 screw blocks
+# the reverse translation. Captured hooks resist lid lift, not friction snaps.
+for i,x in enumerate((3.,18.),1):
+ lidparts.append(box(f'LidHookStem{i}',x,4.8,15.4,4.,1.2,3.0))
+ lidparts.append(box(f'LidHookTongue{i}',x,2.8,15.4,4.,3.2,1.0))
+ basecuts.append(box(f'LidHookPocket{i}',x-.15,2.6,15.25,4.3,3.6,1.55))
+# Side registration: mounting sleeves and keyed shoes carry load, not pouch.
 for x in (-.4,25.15):
  for y in (10.,30.):baseparts.append(box('BoardRegister',x,y,7.4,.25,1.,4.0))
 for x in (-.4,24.):
  for y in (10.,29.):baseparts.append(box('DividerSeat',x,y,1.6,1.4,1.,4.7))
-divider_blank=box('DividerBlank',1.,4.5,6.3,23.,34.2,.8)
+divider_blank=box('DividerBlank',1.,6.5,6.3,23.,32.2,.8)
 barrier=role(cut('BatteryDivider',divider_blank,fuse('DividerCornerReliefs',[cyl('DividerRelief',x,y,6.2,4.35,1.) for x,y in fasteners])),'divider','REMOVABLE rigid insulating battery divider | no preload')
 # East USB shoulder near MCU. Connector shell/plug allowed through this aperture only.
 basecuts.append(box('USBNotch',23.9,16.7,11.4,4.,11.,7.0))
@@ -79,9 +93,9 @@ for ref,r in [('SW2',1.7),('SW3',1.7),('D1',2.2)]:
  x,y=MAIN['anchors'][ref]['center_native_xy_mm'];lidcuts.append(cyl(ref+'Access',x-100,139-y,11.9,r,8.))
 # Insulating strain-relief bridge, independent of the cell and screw load path.
 # Two wire guide bores plus two lacing holes; nylon cord must be fitted and pull-tested.
-baseparts.append(box('WireLacingBridge',8.2,1.55,5.1,8.6,2.05,1.0))
-for x in (11.23,13.77):basecuts.append(cyl('WireGuide',x,2.2,4.95,.8,1.3))
-for x in (9.3,15.7):basecuts.append(cyl('LacingBore',x,2.7,4.95,.6,1.3))
+baseparts.append(box('WireLacingBridge',17.,3.55,5.1,8.,2.05,1.0))
+for x in (20.03,22.57):basecuts.append(cyl('WireGuide',x,4.2,4.95,.8,1.3))
+for x in (18.2,24.1):basecuts.append(cyl('LacingBore',x,4.7,4.95,.6,1.3))
 base=role(cut('Base',fuse('BaseStructure',baseparts),fuse('BaseOpenings',basecuts)),'print','BASE | flat underside BODY')
 lid=role(cut('Lid',fuse('LidStructure',lidparts),fuse('LidOpenings',lidcuts)),'print','LID | TOP / OUTWARD | RGB RESET BOOT')
 refs=[];clearances=[];hardware=[]
@@ -92,7 +106,7 @@ for ref,f in b['footprints'].items():
   if dx>0 and dy>0:
    if abs(dx-dy)<1e-5:drills.append(cyl(f'Main_{ref}_Hole{i}',x,y,10.7,dx/2,1.2))
    else:drills.append(box(f'Main_{ref}_Slot{i}',x-dx/2,y-dy/2,10.7,dx,dy,1.2))
-pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 35.5 x 1mm | +Z outward'))
+pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 30 x 1mm | +Z outward'))
 for ref,f in b['footprints'].items():
  if not f.get('fitted'):continue
  x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm'];o=rb('Main_'+ref,x0,y0,10.8+z0,x1-x0,y1-y0,z1-z0,'main_component');o.Label=ref+' '+MAIN['components'][ref]['mpn']+' | conservative envelope';refs.append(o)
@@ -104,7 +118,7 @@ clearances.append(rb('RF_NO_BATTERY_HARNESS_METAL',-7.4,39.,-4.2,43.2,20.4,33.4,
 for ref in ('J1',):
  a=MAIN['anchors'][ref];pts=a['cavity_polygon_native_xy_mm'];xs=[x-100 for x,y in pts];ys=[139-y for x,y in pts];z0,z1=a['cavity_z_mm_from_board_bottom']
  clearances.append(rb('Main_'+ref+'_MatingInsertion',min(xs),min(ys),10.8+z0,max(xs)-min(xs),max(ys)-min(ys),z1-z0))
-# No PH4 harness. Reserved PH2 lead descent stays outside the PCB/divider footprint.
+# No fitted battery connector: two wire descents stay in the reserved front bay.
 def rounded_route(name,points,bend,r):
     """True tangent line/arc centerline, not sharp elbows or a claimed cable bend spec."""
     vs=[A.Vector(*p) for p in points]; edges=[]; current=vs[0]
@@ -129,14 +143,14 @@ def rounded_route(name,points,bend,r):
 # bundle <=0.7mm; no gauge is claimed supplied. Centreline bends R2 are a fit
 # reservation, not the wire vendor's qualified bend radius. Solder from TOP.
 packpoints=[];packlength=0.
-for i,x in enumerate((11.23,13.77),1):
- points=[[x,6.4,10.2],[x,6.4,8.2],[x,2.2,8.2],[x,2.2,3.2],[x,7.,3.2]]
+for i,x in enumerate((20.03,22.57),1):
+ points=[[x,12.5,10.2],[x,12.5,8.2],[x,4.2,8.2],[x,4.2,3.2],[x,7.,3.2]]
  wire,length=rounded_route('BatteryWire'+str(i),points,2.,.6);refs.append(wire);packpoints.append(points);packlength+=length
- refs.append(role(cyl('BareWire'+str(i),x,6.4,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
+ refs.append(role(cyl('BareWire'+str(i),x,12.5,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
  # Filled top solder meniscus reserve sits above the PCB, not an impossible solid through it.
- refs.append(role(cyl('SolderFillet'+str(i),x,6.4,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
- clearances.append(role(cyl('LacingThreadReserve'+str(i),(9.3,15.7)[i-1],2.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
- clearances.append(rb('LacingKnotReserve'+str(i),(9.3,15.7)[i-1]-.6,2.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
+ refs.append(role(cyl('SolderFillet'+str(i),x,12.5,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
+ clearances.append(role(cyl('LacingThreadReserve'+str(i),(18.2,24.1)[i-1],4.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
+ clearances.append(rb('LacingKnotReserve'+str(i),(18.2,24.1)[i-1]-.6,4.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
 for i,(x,y) in enumerate(fasteners,1):
  screw=fuse(f'ClosureScrew{i}',[cyl(f'ScrewShank{i}',x,y,7.4,1.5,8.),cyl(f'ScrewHead{i}',x,y,15.4,2.84,3.)]);hardware.append(role(screw,'hardware','M3x8 socket cap | assumed max head 5.68 x 3mm'))
  nut=cut(f'ClosureNut{i}',hexagon(f'NutBlank{i}',x,y,7.6,5.5,2.4),cyl(f'NutHole{i}',x,y,7.5,1.5,2.6));hardware.append(role(nut,'hardware','M3 nut | AF5.5 x 2.4mm | side load'))

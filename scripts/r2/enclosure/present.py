@@ -25,9 +25,9 @@ def annotations(doc):
     text('CarrierPlaneLabel',['ICM-20948 integrated'],(-1,8,12),size=13)
     text('OutwardAxisLabel',['accel/gyro +Z OUT'],(12.5,21.5,28),(.8,.18,.04),14)
     text('TopFaceLabel',['TOP / OUTWARD'],(2,40,19),size=17)
-    text('RGBLabel',['RGB'],(16,12.2,20),(.65,.03,.32),14)
-    text('ResetLabel',['RESET'],(21.5,13.8,20),size=12)
-    text('BootLabel',['BOOT'],(10,12,20),size=12)
+    text('RGBLabel',['RGB'],(15.1,12.7,20),(.65,.03,.32),14)
+    text('ResetLabel',['RESET'],(11,14.9,20),size=12)
+    text('BootLabel',['BOOT'],(11,11.15,20),size=12)
     text('BodyOnlyLabel',['BODY SIDE','Main PCB BOTTOM faces this base'],(1,20,0),size=17)
     arrow=doc.getObject('OutwardAxis') or doc.addObject('Part::Feature','OutwardAxis')
     arrow.Shape=Part.makeCylinder(.28,14,A.Vector(12.5,21.5,12.0)).fuse(Part.makeCone(.85,0,2,A.Vector(12.5,21.5,26.0)))
@@ -90,9 +90,9 @@ def main():
     annotation=doc.addObject('App::Annotation','MeasuredDimensions');annotation.LabelText=[f'MEASURED CAD: {dims[1]:.1f} L x {dims[0]:.1f} W x {dims[2]:.1f} H mm','Nominal CAD <50 x 30 x 20; physical fit/battery gates OPEN'];annotation.Position=A.Vector(-1,-6,20);annotation.ViewObject.FontSize=16
     capture('dimensions','top');doc.removeObject(annotation.Name)
     show_notes(('BodyOnlyLabel',)); capture('body-side','bottom')
-    # A genuine native Boolean section through the rear pair of M3 nuts and both boards.
+    # A genuine native Boolean section through the H1 M3 stack, lower key, battery and single PCB.
     sections=doc.addObject('App::DocumentObjectGroup','TemporarySection')
-    keep=Part.makeBox(45,25,24,A.Vector(-4,-3,-1))
+    keep=Part.makeBox(14,50,24,A.Vector(-4,0,-1))
     for name in ['Base','Lid','BatteryDivider']+json.loads((CACHE/'build.json').read_text())['reference_objects']+json.loads((CACHE/'build.json').read_text())['hardware_objects']:
         src=doc.getObject(name);shape=src.Shape.common(keep)
         if not shape.isNull() and shape.Volume>1e-7:
