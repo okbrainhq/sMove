@@ -1,12 +1,10 @@
-> **CURRENT PCB REVIEW — NOT RELEASED:** 25 × 30mm PCB selectively recovered from `96e081b`; independently clean ERC/DRC/nets. Prior M3 bearing has only 0.042612mm nominal copper margin: unsafe to assume robust insulation. Existing housing is incompatible/unvalidated. No casing work was performed in this repair. See [PCB repair report](docs/revision-r2/pcb-repair/README.md).
+# sMove — repaired PCB with a simple two-part case
 
-# sMove — compact keyed 30 mm PCB prototype
+**Review branch only; not merged, not released for manufacture or charging.**
 
-Actual top-mounted ICM-20948, accel/gyro +Z outward; main PCB bottom faces the body. USB, BOOT/RESET and one top-visible RGB retained; no UART or debug/test points.
+- [Combined delivery and critical diffs](docs/revision-r2/two-part-case/README.md): complete committed PCB repair `e033031` safely cherry-picked first as `0610d60`; new casing added afterward. Integrate both together only after review.
+- [PCB sources and manufacturing exports](PCB/main/README.md): unchanged repaired **25×30×1 mm**, fresh **0 ERC / 0 DRC / 0 opens / 0 net-parity issues**. BAT pads remain beside the shielded ESP side; H1 remains below the IMU. No new routing, rules or copper edits.
+- [Two-part housing](housing/README.md): **42.0 L × 36.8 W × 16.6 H mm**, Base + Lid only, integral battery tunnel, PCB grooves, case-only M3×8 closure and positive antirotation. No old divider or third panel.
+- [Actual FreeCAD GUI assembled/exploded screenshots](docs/revision-r2/two-part-case/images.md) and movable native `housing/smove-r2-enclosure.FCStd` / `InspectAssembly.FCMacro`.
 
-- [Current handoff, measurements and validation](docs/revision-r2/compact-placement/README.md)
-- [PCB sources/BOM/manufacturing exports](PCB/main/README.md): **25 × 30 × 1 mm**, 46 fitted electronic parts; two PCB-only **2.54 mm centre-pitch BAT+/BAT− PTH wire holes**.
-- [Housing and movable FreeCAD assembly](housing/README.md): **44.8 × 29.4 × 19.6 mm including recessed M3×8**, one screw plus positive corner keys and captured lid hooks.
-- [Battery/runtime qualification gates](docs/revision-r2/integrated/RADIO-BATTERY.md) remain unchanged.
-
-**Engineering prototype; manufacturing/charging release=false.** Physical print rigidity, complete protected-pack suitability, strain relief, RF/USB/magnetic/thermal performance remain unqualified. Prior revision folders are archival, not current build instructions. No firmware changes or merge.
+PCB underside faces the body; accel/gyro +Z points outward. USB, BOOT/RESET and top-visible RGB are retained. The 30×20×3 mm battery is a candidate only, with a 31×21×4.3 mm complete-pack reserve. Physical print, preload/creep, pack/charging, wire, RF, magnetic and thermal qualification remain open. The older PCB-only warnings and revision folders are preserved historical evidence, not instructions to assemble the retired case. No firmware work or merge.

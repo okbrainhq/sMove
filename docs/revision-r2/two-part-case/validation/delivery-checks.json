@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "main_unchanged",
+      "passed": true
+    },
+    {
+      "check": "repair_parent_is_main_baseline",
+      "passed": true
+    },
+    {
+      "check": "complete_cherry_pick_tree_equals_repair",
+      "passed": true
+    },
+    {
+      "check": "recovery_is_ancestor_of_review_head",
+      "passed": true
+    },
+    {
+      "check": "entire_PCB_main_unchanged_after_recovery",
+      "passed": true
+    },
+    {
+      "check": "fresh_zero_all_issues:inherited-drc.json",
+      "passed": true
+    },
+    {
+      "check": "fresh_zero_all_issues:inherited-erc.json",
+      "passed": true
+    },
+    {
+      "check": "fresh_schematic_net_equivalence",
+      "passed": true
+    },
+    {
+      "check": "all_saved_CAD_checks_pass",
+      "passed": true
+    },
+    {
+      "check": "real_GUI_macro_checks_pass",
+      "passed": true
+    },
+    {
+      "check": "verified_GUI_native_hash_matches",
+      "passed": true
+    },
+    {
+      "check": "exactly_two_active_STLs",
+      "passed": true
+    },
+    {
+      "check": "release_holds_retained",
+      "passed": true
+    }
+  ],
+  "base_main": "554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb",
+  "original_repair": "e033031ee2c52a80a7ba23fe0212dfa2626da79a",
+  "complete_recovery_commit": "0610d6089709b7a3ab8cbbeba5724ba872ca59de",
+  "recovered_tree": "1ff4b970924658a1613f140c7977822529349db2",
+  "PCB_main_files_verified": 89,
+  "CAD_checks": 569,
+  "dimensions_LWH_mm": [
+    42.0,
+    36.8,
+    16.6
+  ],
+  "manufacturing_release": false,
+  "merged": false
+}

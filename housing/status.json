@@ -1,12 +1,29 @@
 {
-  "status": "PASS_NOMINAL_CAD_SCREENS",
+  "schema": "smove.two-part-case.status.v1",
+  "status": "CAD_GEOMETRY_VERIFIED_REVIEW_ONLY",
   "manufacturing_release": false,
   "charging_release": false,
-  "dimensions_LWH_including_M3x8_mm": [
-    44.8,
-    29.4,
-    19.6
+  "printed_parts": [
+    "Base",
+    "Lid"
   ],
-  "mechanical": "one M3, positive corner keys and two captured lid hooks",
-  "physical_qualification": "NOT PERFORMED; see PRINTING-ASSEMBLY.md"
+  "external_LWH_mm": [
+    42,
+    36.8,
+    16.6
+  ],
+  "pcb_repair_commit": "e033031",
+  "recovered_as": "0610d60",
+  "pcb_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
+  "mechanical_interface": "Case-only M3 outside PCB and pack; H1 unfastened, normally noncontact plastic stop; split PCB grooves; integral pack barrier",
+  "inherited_policy": "PCB/main remains byte-identical to repair. Its old-housing incompatibility statements are preserved historical release holds, not approval of this prototype.",
+  "open_gates": [
+    "print and bridge sag",
+    "insulation wear and seat coplanarity",
+    "preload strength creep and loosening",
+    "complete protected pack and charger suitability",
+    "wire strain relief and assembly handling",
+    "USB buttons RGB physical fit",
+    "RF on-body thermal magnetic qualification"
+  ]
 }

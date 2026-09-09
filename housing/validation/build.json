@@ -1,19 +1,23 @@
 {
-  "status": "GENERATED_REQUIRE_INDEPENDENT_VERIFY",
+  "status": "GENERATED_REQUIRE_VERIFY",
   "parameters_mm": {
-    "XMin": -2.2,
+    "XMin": -9.6,
     "XMax": 27.2,
-    "YMin": 1.8,
+    "YMin": 4.6,
     "YMax": 46.6,
     "Floor": 1.6,
     "Wall": 1.8,
-    "MainBottom": 10.8,
-    "RoofBottom": 18.4,
-    "Roof": 1.2,
-    "BarrierBottom": 6.3,
+    "MainBottom": 9.6,
+    "RoofBottom": 15.2,
+    "Roof": 1.4,
+    "BarrierBottom": 6.6,
     "BarrierThickness": 0.8,
-    "ScrewUnderHead": 15.4,
-    "ScrewLength": 8.0
+    "ScrewX": -5.0,
+    "ScrewY": 13.35,
+    "ScrewStop": 12.0,
+    "ScrewUnderHead": 13.2,
+    "ScrewLength": 8.0,
+    "GrooveCeiling": 11.15
   },
   "reference_objects": [
     "MainPCB",
@@ -64,144 +68,135 @@
     "Main_SW3",
     "Main_R14",
     "Main_USB_ShellTails",
+    "SeatLiner1",
+    "SeatLiner2",
+    "SeatLiner3",
+    "SeatLiner4",
+    "PocketFloorLiner",
     "BatteryCandidate_UNQUALIFIED",
     "BatteryWire1",
     "BareWire1",
     "SolderFillet1",
+    "WireLacing1",
     "BatteryWire2",
     "BareWire2",
-    "SolderFillet2"
+    "SolderFillet2",
+    "WireLacing2"
   ],
   "hardware_objects": [
-    "ClosureScrew1",
-    "ClosureNut1"
+    "ClosureScrew",
+    "ClosureNut"
   ],
   "clearance_objects": [
     "BatteryAcceptance_21x31x4_3",
     "RF_NO_BATTERY_HARNESS_METAL",
-    "Main_J1_MatingInsertion",
-    "LacingThreadReserve1",
+    "USBPlugReserve",
     "LacingKnotReserve1",
-    "LacingThreadReserve2",
     "LacingKnotReserve2"
   ],
   "inspection_groups": [
     "ViewBase",
     "ViewLid",
     "ViewMain",
-    "ViewDivider",
     "ViewBattery",
     "ViewCables",
-    "ViewHardware"
-  ],
-  "fastener_xy_mm": [
-    [
-      3.5999999999999943,
-      35.400000000000006
-    ]
-  ],
-  "retention_xy_mm": [
-    [
-      3.5999999999999943,
-      35.400000000000006
-    ]
+    "ViewHardware",
+    "ViewInsulation"
   ],
   "parts": {
     "base": {
-      "volume_mm3": 6358.776684403424,
-      "triangles": 4244
+      "volume_mm3": 6834.872065441548,
+      "triangles": 2968
     },
     "lid": {
-      "volume_mm3": 1676.0377705809105,
-      "triangles": 2628
-    },
-    "divider": {
-      "volume_mm3": 554.9912594128771,
-      "triangles": 220
+      "volume_mm3": 2635.304096480546,
+      "triangles": 2620
     }
   },
-  "main_transform": [
+  "pcb_bottom_z_mm": 9.6,
+  "screw_xy_mm": [
+    -5,
+    13.35
+  ],
+  "H1_xy_mm": [
+    11.8,
+    13.35
+  ],
+  "seat_xy_mm": [
     [
-      1,
-      0,
-      0,
-      0
+      -0.4,
+      9.0
     ],
     [
-      0,
-      1,
-      0,
-      0
+      24.3,
+      9.0
     ],
     [
-      0,
-      0,
-      1,
-      10.8
+      -0.4,
+      37.0
     ],
     [
-      0,
-      0,
-      0,
-      1
+      24.3,
+      37.0
     ]
   ],
   "pack_route_points_mm": [
     [
       [
-        20.03,
-        12.5,
-        10.2
+        4.5,
+        33.43,
+        11.2
       ],
       [
-        20.03,
-        12.5,
-        8.2
+        4.5,
+        33.43,
+        13.2
       ],
       [
-        20.03,
-        4.2,
-        8.2
+        -1.5,
+        33.43,
+        13.2
       ],
       [
-        20.03,
-        4.2,
-        3.2
+        -1.5,
+        33.43,
+        3.5
       ],
       [
-        20.03,
-        7.0,
-        3.2
+        2.0,
+        33.43,
+        3.5
       ]
     ],
     [
       [
-        22.57,
-        12.5,
-        10.2
+        4.5,
+        35.97,
+        11.2
       ],
       [
-        22.57,
-        12.5,
-        8.2
+        4.5,
+        35.97,
+        13.2
       ],
       [
-        22.57,
-        4.2,
-        8.2
+        -1.5,
+        35.97,
+        13.2
       ],
       [
-        22.57,
-        4.2,
-        3.2
+        -1.5,
+        35.97,
+        3.5
       ],
       [
-        22.57,
-        7.0,
-        3.2
+        2.0,
+        35.97,
+        3.5
       ]
     ]
   ],
-  "pack_route_length_mm": 31.04955592153876,
-  "input_hash": "65f16a6bc9a794d17291e5f20894e4e24e1d6a4f57cbe0c6411955e9cf81dbd5"
+  "pack_route_length_mm": 37.24955592153876,
+  "input_hash": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
+  "printed_parts": 2
 }

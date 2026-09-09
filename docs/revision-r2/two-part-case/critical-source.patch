@@ -1,0 +1,1111 @@
+diff --git a/PCB/main/native-layout-contract.json b/PCB/main/native-layout-contract.json
+index 3280722..d1c7b8a 100644
+--- a/PCB/main/native-layout-contract.json
++++ b/PCB/main/native-layout-contract.json
+@@ -39,2 +39,2 @@
+-        103.6,
+-        103.6
++        111.8,
++        125.65
+@@ -45 +45,4 @@
+-    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"
++    "scheme": "One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.",
++    "sensor_warning": "Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.",
++    "release_blocker": "Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.",
++    "component_clearance_policy": "Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval."
+@@ -138,3 +141,3 @@
+-      121.3,
+-      126.5,
+-      0.0
++      104.5,
++      104.3,
++      90.0
+@@ -143,2 +146,2 @@
+-      111.0,
+-      124.1,
++      121.5,
++      124.05,
+@@ -148,2 +151,2 @@
+-      111.0,
+-      127.85,
++      121.05,
++      128.0,
+@@ -153,3 +156,3 @@
+-      115.1,
+-      126.3,
+-      0.0
++      116.85,
++      127.1,
++      90.0
+@@ -203,2 +206,2 @@
+-      117.35,
+-      125.5,
++      117.9,
++      123.25,
+@@ -208,3 +211,3 @@
+-      117.35,
+-      127.7,
+-      90.0
++      117.4,
++      125.2,
++      0.0
+@@ -213,2 +216,2 @@
+-      118.75,
+-      123.25,
++      117.1,
++      129.25,
+@@ -303,2 +306,2 @@
+-      115.1,
+-      128.65,
++      114.8,
++      129.25,
+diff --git a/PCB/main/parts-main.json b/PCB/main/parts-main.json
+index 0310463..06d5cd2 100644
+--- a/PCB/main/parts-main.json
++++ b/PCB/main/parts-main.json
+@@ -269,3 +269,3 @@
+-      121.3,
+-      126.5,
+-      0.0
++      104.5,
++      104.3,
++      90.0
+@@ -296,2 +296,2 @@
+-      111.0,
+-      124.1,
++      121.5,
++      124.05,
+@@ -323,2 +323,2 @@
+-      111.0,
+-      127.85,
++      121.05,
++      128.0,
+@@ -351,3 +351,3 @@
+-      115.1,
+-      126.3,
+-      0.0
++      116.85,
++      127.1,
++      90.0
+@@ -611,2 +611,2 @@
+-      117.35,
+-      125.5,
++      117.9,
++      123.25,
+@@ -637,3 +637,3 @@
+-      117.35,
+-      127.7,
+-      90.0
++      117.4,
++      125.2,
++      0.0
+@@ -663,2 +663,2 @@
+-      118.75,
+-      123.25,
++      117.1,
++      129.25,
+@@ -1108,2 +1108,2 @@
+-      115.1,
+-      128.65,
++      114.8,
++      129.25,
+diff --git a/README.md b/README.md
+index 76aa509..117b42a 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+-# sMove — compact keyed 30 mm PCB prototype
++# sMove — repaired PCB with a simple two-part case
+@@ -3 +3 @@
+-Actual top-mounted ICM-20948, accel/gyro +Z outward; main PCB bottom faces the body. USB, BOOT/RESET and one top-visible RGB retained; no UART or debug/test points.
++**Review branch only; not merged, not released for manufacture or charging.**
+@@ -5,4 +5,4 @@ Actual top-mounted ICM-20948, accel/gyro +Z outward; main PCB bottom faces the b
+-- [Current handoff, measurements and validation](docs/revision-r2/compact-placement/README.md)
+-- [PCB sources/BOM/manufacturing exports](PCB/main/README.md): **25 × 30 × 1 mm**, 46 fitted electronic parts; two PCB-only **2.54 mm centre-pitch BAT+/BAT− PTH wire holes**.
+-- [Housing and movable FreeCAD assembly](housing/README.md): **44.8 × 29.4 × 19.6 mm including recessed M3×8**, one screw plus positive corner keys and captured lid hooks.
+-- [Battery/runtime qualification gates](docs/revision-r2/integrated/RADIO-BATTERY.md) remain unchanged.
++- [Combined delivery and critical diffs](docs/revision-r2/two-part-case/README.md): complete committed PCB repair `e033031` safely cherry-picked first as `0610d60`; new casing added afterward. Integrate both together only after review.
++- [PCB sources and manufacturing exports](PCB/main/README.md): unchanged repaired **25×30×1 mm**, fresh **0 ERC / 0 DRC / 0 opens / 0 net-parity issues**. BAT pads remain beside the shielded ESP side; H1 remains below the IMU. No new routing, rules or copper edits.
++- [Two-part housing](housing/README.md): **42.0 L × 36.8 W × 16.6 H mm**, Base + Lid only, integral battery tunnel, PCB grooves, case-only M3×8 closure and positive antirotation. No old divider or third panel.
++- [Actual FreeCAD GUI assembled/exploded screenshots](docs/revision-r2/two-part-case/images.md) and movable native `housing/smove-r2-enclosure.FCStd` / `InspectAssembly.FCMacro`.
+@@ -10 +10 @@ Actual top-mounted ICM-20948, accel/gyro +Z outward; main PCB bottom faces the b
+-**Engineering prototype; manufacturing/charging release=false.** Physical print rigidity, complete protected-pack suitability, strain relief, RF/USB/magnetic/thermal performance remain unqualified. Prior revision folders are archival, not current build instructions. No firmware changes or merge.
++PCB underside faces the body; accel/gyro +Z points outward. USB, BOOT/RESET and top-visible RGB are retained. The 30×20×3 mm battery is a candidate only, with a 31×21×4.3 mm complete-pack reserve. Physical print, preload/creep, pack/charging, wire, RF, magnetic and thermal qualification remain open. The older PCB-only warnings and revision folders are preserved historical evidence, not instructions to assemble the retired case. No firmware work or merge.
+diff --git a/housing/BOM.csv b/housing/BOM.csv
+index 8ab6388..5fce77f 100644
+--- a/housing/BOM.csv
++++ b/housing/BOM.csv
+@@ -1,9 +1,10 @@
+-Item,Quantity,Specification,Status
+-Base,1,housing/dist/base.stl,Printed fit/strength unqualified
+-Lid,1,housing/dist/lid.stl; two captured hooks,Printed fit/strength unqualified
+-Divider,1,housing/dist/divider.stl; rigid insulating 0.8mm,No pouch preload
+-M3 screw,1,M3x8 socket cap; assumed head <=5.68x3mm,Measure actual hardware; no qualified torque
+-M3 nut,1,Assumed AF5.5x2.4mm,Measure actual hardware
+-Battery,1,Nominal 30x20x3mm; protected pack required,UNQUALIFIED; not a purchase approval
+-Battery leads,2,Tinned bundle <=0.7mm; insulation OD <=1.2mm,Gauge/current/flex to qualify
+-Nonconductive lacing,1,Two 1.2mm bore passages; knot reserve,Fit and pull/flex test required
++Item,Qty,Description,Acceptance
++Base,1,Nonconductive printed base with integral battery ceiling,Print geometry and bridge sag must be gauged
++Lid,1,Nonconductive printed lid with integral entry skirt and two north hooks,Fit and creep qualification required
++Screw,1,M3x8 ISO4762 socket cap; head max 5.68x3; 0.5 pitch,Length 7.71..8.29mm; low-magnetic qualification; no released torque
++Nut,1,M3 hex AF5.5x2.4 envelope,Verify actual dimensions and effective thread engagement
++Floor liner,1,Smooth insulating film 21.6x31.8x0.2mm,No sharp edges or cell preload
++Seat liners,4,Smooth insulating film 0.95x1.0x0.2mm,Attach to seats; gauge coplanarity
++Lacing,2,Nonconductive nylon cord 0.4mm nominal,Fit knot reserves and pull/flex qualify
++Battery,1,Unqualified candidate body 30x20x3mm,Complete protected pack at most 31x21x4.3mm; NOT approved for charging
++Battery wires,2,Insulated OD at most1.2mm; bundle at most0.7mm,R2 centerline reserve; verify current rating and bend limits
+diff --git a/housing/InspectAssembly.FCMacro b/housing/InspectAssembly.FCMacro
+index 54bbd63..14a4c1e 100644
+--- a/housing/InspectAssembly.FCMacro
++++ b/housing/InspectAssembly.FCMacro
+@@ -2 +2 @@
+-# Integrated PCB: separate Base/Lid/Main/Divider/Battery/Cables/Hardware.
++# Integrated PCB: separate Base/Lid/Main/Battery/Cables/Hardware/Insulation.
+diff --git a/housing/PRINTING-ASSEMBLY.md b/housing/PRINTING-ASSEMBLY.md
+index 09611c6..7733084 100644
+--- a/housing/PRINTING-ASSEMBLY.md
++++ b/housing/PRINTING-ASSEMBLY.md
+@@ -1 +1 @@
+-# Printing and assembly — keyed compact prototype
++# Two-part case: assembly, tolerances and release hold
+@@ -3 +3 @@
+-**Not released for manufacture or charging.** Use an inert battery dummy first. CAD collision tests do not establish printed strength, tolerances, electrical insulation, lithium-cell suitability or safe charge current.
++## What is actually delivered
+@@ -5 +5 @@
+-## Parts and frames
++Exactly two printed parts, **Base + Lid**, with one M3×8 socket-cap screw, one captured M3 nut, insulating film and two nylon wire ties/lacings. The battery ceiling is integral to the base; the battery-entry closure is integral to the lid. Neither is a third panel.
+@@ -7,4 +7 @@
+-- One 25×30×1 mm populated main PCB; underside/body face at assembled Z10.8, component face Z11.8. Actual ICM accel/gyro +Z outward; raw magnetometer frame differs (see PCB interface).
+-- Printed base, hooked lid and removable rigid 0.8 mm divider. Flat base underside Z0 faces body. Outer dimensions 44.8×29.4×19.6 mm including hardware.
+-- One M3×8 socket-cap screw and one M3 nut. **Assumed** head ≤5.68 mm diameter ×3 mm, nut AF5.5×2.4 mm; measure supplied parts. No screw, boss or corner shoe loads the pouch.
+-- H1 insulating bearing radius 3.4 mm lies in the 3.45 mm all-layer copper reserve. Lower PCB corners each have 1×1 mm copper-free reserves, positive XY stops and top/bottom bearing lands separated by 24 mm. Do not cut away keys or insulate a missing copper clearance with tape as a substitute.
++Measured complete bounds: **42.0 L × 36.8 W × 16.6 H mm**. No 120 mm interpretation was adopted, and the design was not squeezed to an unanswered 12 mm target. The extra west width provides a genuinely off-PCB screw path and a separate lead bay; height is reduced from the inherited 19.6 mm case.
+@@ -12 +9 @@
+-## Wire and battery gates
++Mechanical frame: `X=nativeX−100`, `Y=139−nativeY`, PCB bottom `Z=9.6`. The PCB spans `X0..25, Y9..39`, **not Y0..30**. Board underside faces the body; accel/gyro +Z points outward. No sensor transform or firmware was changed.
+@@ -14 +11 @@
+-J2 is two PCB-only plated wire holes, **not a JST or header**. Pin 1 BAT+ = protected PACK_P; pin 2 BAT− = GND. Exactly 2.54 mm centre pitch, 1 mm target finished drill and 2 mm copper pads. Nominal copper gap 0.54 mm and mask web 0.44 mm with 0.05 mm mask expansion.
++## Mounting safety — deliberate replacement of the unsafe interface
+@@ -16 +13 @@ J2 is two PCB-only plated wire holes, **not a JST or header**. Pin 1 BAT+ = prot
+-Engineering acceptance assumptions, not supplied wire specifications: finished hole 0.9–1.1 mm, tinned conductor bundle ≤0.7 mm, insulation OD ≤1.2 mm. Qualify conductor area/current/flex/temperature. Never drill out a plated hole. Thread leads from below, solder from top, trim lead/fillet to ≤0.6 mm above PCB. Individually insulate live ends; no USB connected during assembly. Never solder directly to a pouch or treat RESET as battery isolation.
++**Do not put a screw through H1 with this case.** H1 at local `(11.8,13.35)` is left as the inherited 3.2 mm hole, below U2. The old radius-3.4 bearing and its 0.042612 mm copper margin are retired.
+@@ -18 +15,6 @@ Engineering acceptance assumptions, not supplied wire specifications: finished h
+-The nominal 20×30×3 mm body occupies X2.5–22.5, Y7.5–37.5, Z1.8–4.8. The separate acceptance reservation is 21×31×4.3 mm, ending at Z6.1; divider bottom Z6.3 gives 0.2 mm clearance to that reserve. A complete protected pack, PCM, tabs, lead exit and tolerances must fit without compression; listing dimensions alone are not sufficient. Charge/discharge suitability and the existing BQ24074 settings remain unqualified. No automatic cell-temperature sensing or master OFF switch was added.
++- New M3 axis: local **(−5,13.35)**, wholly west of the board and pouch. Screw and nut never contact PCB copper or rely on solder mask. Nominal nearest screw-to-PCB solid distance is **3.380 mm**; hardware-to-pack admission-envelope distance is **4.25 mm**.
++- Closure load path: screw head → insulating lid bearing → base hard stop; nut reacts against the base's captive-pocket roof. This path bypasses PCB, IMU and battery. The lid's integral west door captures the nut side-entry slot.
++- H1 has a **radius-2.2 mm solid plastic deflection stop**, 0.35 mm below the nominal PCB underside. No top clamp, metal sleeve or screw is at H1. The stop is rooted in the integral base ceiling and only limits abnormal PCB displacement.
++- H1 nominal stop-edge to filled copper: **1.242612 mm**. Subtract 0.30 board play, 0.15 stop placement, 0.15 stop-radius error and 0.10 fabrication registration: **0.542612 mm remaining**. This is a conservative dimensional budget, not insulation certification. Worst accepted stop-height/seat-height mismatch leaves **0.05 mm** initial gap; reject a print that preloads the board.
++- Four insulated lower seats support the PCB; four lid lips complete split grooves. X/Y stops separated across the PCB provide positive antirotation without screw friction. Nominal lateral play is 0.30 mm each side. With ±0.15 mm print error and 0.10 mm PCB edge allowance, minimum assembly clearance is 0.05 mm.
++- Groove free height is **1.55 mm** around the 1 mm PCB; the stated thickness/print/liner stack leaves **0.20 mm minimum no-clamp play**. Nominal vertical float is 0.55 mm. This is intentionally not a rigid IMU clamp: vibration/fretting and button-load PCB motion require physical testing. Never remove clearance by tightening the case harder or adding pressure on U2.
+@@ -20 +22 @@ The nominal 20×30×3 mm body occupies X2.5–22.5, Y7.5–37.5, Z1.8–4.8. The
+-## Nominal assembly order
++M3 hardware screen: nominal 0.5 mm pitch, maximum 5.68 mm grooved head diameter, 3 mm head height, 2.5 mm hex drive; 8 mm length tolerance is screened as ±0.29 mm. These dimensions were checked against the ISO 4762 table. [source](https://www.fasteners.eu/standards/iso/4762/)
+@@ -22,7 +24 @@ The nominal 20×30×3 mm body occupies X2.5–22.5, Y7.5–37.5, Z1.8–4.8. The
+-1. Deburr/inspect print and drilled PCB; verify copper-free keys, polarity, holes and component orientation. Fit an inert pack dummy, not a live pouch, for initial trials.
+-2. Insert battery body into the open base using the recorded tilt/translation path in `validation/battery-insertion.json`. It screens 630 discrete poses of the nominal rigid body only. Never bend or force a cell; complete protected-pack insertion is still a sample gate.
+-3. Install divider on its seats. Insert the M3 nut laterally at H1. Nominal nut Z7.6–10.0; PCB Z10.8–11.8.
+-4. Prepare and solder insulated leads to J2. Guides at X20.03/22.57, Y4.2 and lacing bores at X18.2/24.1, Y4.7 are actual holes in the integral bridge. Fit nonconductive lacing around the insulated leads and through both lacing bores; secure without flattening insulation. Provide slack above the divider. R2 swept routes are an engineering reserve, not a vendor bend-radius approval. Solder joints are not strain relief: physical pull/flex test is mandatory.
+-5. Lower PCB onto H1 and both keyed corner supports. Lid upper lands touch only copper-free corner areas. Keep wires clear of battery, screw and RF region.
+-6. **Hooked lid installation:** hold lid north edge raised 10°, relative to a transverse pivot at (0,1.8,18.4). With lid translated 1.2 mm north, lower into the clearance position; slide south to engage both front-wall hooks; lower north edge to the assembled plane. This is the reverse of `validation/closure-insertion.json` (141 sampled rigid poses). No snap flex is assumed. Do not force a binding print.
+-7. Fit the single M3×8 screw at H1. Nominal under-head Z15.4, tip Z7.4, 2.4 mm nut engagement, head top Z18.4 below roof Z19.6. The 7.9–8.1 mm under-head-length screen retains ≥0.2 mm tip/divider clearance; this is not a screw tolerance guarantee. No torque value is qualified. Tighten only after dummy fit and stiffness tests.
++The CAD thread is a cylindrical envelope, not a helical engagement simulation. Assumed nut: AF5.5 × 2.4 mm, fit to 5.8 AF pocket and verify actual part. Shank bore Ø3.6; head recess Ø7.0 accommodates 0.30 mm shank play, 0.15 mm registration and 0.15 mm radial print error with 0.06 mm residual margin. Lid bearing is 1.2 mm nominal / 0.9 mm after axial print allowances. Nut-pocket roof is 4 mm thick. Nominal thread overlap is 2.4 mm, adverse geometric overlap 2.1 mm, approximately 1.7 mm after an additional 0.4 mm chamfer allowance. Blind-bore tip clearance remains **0.56 mm** with length/seat errors. These are fit checks, **not strength or torque ratings**.
+@@ -30 +26 @@ The nominal 20×30×3 mm body occupies X2.5–22.5, Y7.5–37.5, Z1.8–4.8. The
+-## Access / removal
++No tightening torque is released. Qualify a low-preload snug closure on sacrificial prints, including repeated opening, pull-out, screw loosening, creep and shock. Do not use generic metal-joint M3 torque. Verify low-magnetic hardware with the assembled IMU; a material label alone does not establish magnetic suitability.
+@@ -32 +28 @@ The nominal 20×30×3 mm body occupies X2.5–22.5, Y7.5–37.5, Z1.8–4.8. The
+-USB remains on the east side with mating/insertion clearance; lid apertures expose RESET, BOOT and the single RGB. InspectAssembly's “Lift lid only” and “Explode” deliberately ignore hooks for viewing; **they are not physical disassembly instructions**. Remove the screw, raise north lid edge to 10°, translate north 1.2 mm to disengage hooks, then lift. Disconnect/isolate the battery as the actual pack permits before service. RESET does not disconnect pack power.
++## Battery, insulation and harness
+@@ -34 +30,5 @@ USB remains on the east side with mating/insertion clearance; lid apertures expo
+-## Qualification still required
++- Candidate body: **30×20×3 mm**. Admission reserve: **31×21×4.3 mm** for the **complete protected pack**, including pouch seals, tabs and PCM. No actual supplier pack, protection, current rating, thermal behavior or swelling allowance has been qualified. If the complete pack is larger, stop and revise the pocket; no compression or unapproved third panel.
++- Pack nominal lower face Z1.8. A 0.2 mm smooth insulating floor liner lies above the 1.6 mm body-facing floor. Acceptance-pack top Z6.1 leaves **0.50 mm** below the integral ceiling at Z6.6. The ceiling is 0.8 mm thick, top Z7.4. Worst reserved USB tails start Z8.4: **1.0 mm nominal / 0.85 mm after 0.15 mm print error** above the ceiling. PCB never rests on the pouch.
++- The ceiling, pocket walls, north stop and lid's front skirt retain the pack without clamping. Front-to-rear pack movement remains possible; the north stop limits the pack to Y38, still behind the RF boundary Y39. Inspect smooth walls, seams and liner edges. No sharp supports, residual print supports, foam compression, screws, adhesive preload or solder tails against the pouch.
++- Two independent battery conductors: BAT+ native `(104.5,105.57)` and BAT− `(104.5,103.03)`, 2.54 mm pitch, 1 mm drills. Native nets/polarity unchanged. Insulated wire assumption **OD≤1.2 mm**, tinned bundle **≤0.7 mm**, top solder height **≤0.6 mm**, bottom trim **≤0.5 mm**. Actual wire ampacity and solder process remain qualification requirements.
++- Wires exit the PTHs on top, make **R2 mm centerline bends** west beside the shielded module, then descend in the west bay and enter the pack side corridor. R2 is a geometric reserve, not an approved wire minimum bend radius. No wire crosses the antenna overhang. Separate nylon lacing through the two bridge eyelets restrains the insulated vertical leads, with knot reserves above the bridge. Fit/pull/flex-test it; do not pull on pouch tabs or use solder joints as strain relief.
+@@ -36 +36,17 @@ USB remains on the east side with mating/insertion clearance; lid apertures expo
+-Printed fits and electrical insulation, hook/PCB rigidity and creep, nut capture and torque, full protected-pack fit/insertion and charge/discharge capability, wire preparation and lacing pull/flex, thermal/magnetic performance, radio/on-body detuning, USB download reliability and controlled impedance. No pouch compression or functional part substitution is authorized to obtain fit.
++## Assembly path (not the exploded display)
++
++1. With **no USB power** and pack electrically isolated by an approved service procedure, inspect/deburr/gauge the two printed parts and install insulating liners. Accept smooth pocket surfaces and flat, coplanar PCB seats; reject warped, cracked or sharp prints.
++2. With lid removed, insert the captured nut from the west. Slide the uncompressed battery **north through the open front** into the base tunnel. This is a straight translation, not a tilt or a squeeze. The maximum admission-envelope continuous swept volume was checked against the base. Guide insulated, isolated leads through the west side corridor; their handling/removal is a physical sample gate.
++3. Lower the PCB vertically into the base seats and X/Y stops, underside toward body. Dress and terminate leads using a qualified isolated-pack procedure. Gauge trims and inspect polarity/shorts. Fit lacing. Do not solder or assemble an energized pouch pack in this enclosure; RESET does not isolate the battery.
++4. Start the lid **1.5 mm south** of its final position, lower it to the base, then slide it **north 1.5 mm**. Two north tongues engage the wall pockets by 1 mm nominal / 0.5 mm adverse allowance. This path was checked against base, populated PCB, wires, pack and nut at the recorded samples. No snap flex is required.
++5. Fit M3×8 **last**, in the west case-only bore, never H1. Reverse this sequence for servicing: remove screw, slide lid south before lifting. Verify board/pack are not clamped, USB plug fits, RGB is visible from above, and both buttons are reachable using a nonconductive tool.
++
++STLs are supplied with base floor down and lid roof down. Use a nonconductive, non-metal/carbon-filled insulating print material; PETG is a prototype candidate, not a qualified thermal/skin-contact material. Screen 0.15–0.20 mm layers and sufficient wall perimeters with the fabricator. The integral battery ceiling has an approximately 21.8 mm bridge: actual sag, roughness and insulation integrity MUST be gauged before a battery is inserted. Removable process supports are not enclosure parts and must not remain in the pocket. No production print settings or material certification are claimed.
++
++## RF and remaining release gates
++
++The inherited all-layer/overhang exclusion is unchanged. No added battery, lead or metal hardware enters local `Y≥39` within the inherited RF volume. Modeled admission-pack margin is 1.5 mm, insulated-wire margin ≥2.43 mm; a freely shifted pack at the north stop retains 1 mm nominal. These are corridor checks only.
++
++Espressif recommends a 15 mm antenna clearance region and warns about enclosure effects; this compact pack-under-board plastic enclosure **does not meet broad 15 mm clearance in all directions**. No metal shell, conductive coating or conductive filament is permitted. RF matching/range/efficiency and on-body detuning require measurement. [source](https://espressif.github.io/esp32-c3-book-en/chapter_5/5.3/5.3.4.html)
++
++**Manufacturing, battery connection and charging remain on hold.** Required unresolved gates: complete protected-pack suitability and charger compatibility; bridge/seat dimensions and wear; rigidity, creep and qualified closure preload; wire strain relief and service handling; USB/button/RGB physical usability; RF, thermal and magnetic effects. No water/dust ingress, drop rating, skin compatibility, sensor accuracy or runtime guarantee. See the inherited [battery/charging constraints](../docs/revision-r2/integrated/RADIO-BATTERY.md); fitting the pouch does not approve powering or charging it.
+diff --git a/housing/status.json b/housing/status.json
+index edb1802..a94b18d 100644
+--- a/housing/status.json
++++ b/housing/status.json
+@@ -2 +2,2 @@
+-  "status": "PASS_NOMINAL_CAD_SCREENS",
++  "schema": "smove.two-part-case.status.v1",
++  "status": "CAD_GEOMETRY_VERIFIED_REVIEW_ONLY",
+@@ -5,4 +6,3 @@
+-  "dimensions_LWH_including_M3x8_mm": [
+-    44.8,
+-    29.4,
+-    19.6
++  "printed_parts": [
++    "Base",
++    "Lid"
+@@ -10,2 +10,19 @@
+-  "mechanical": "one M3, positive corner keys and two captured lid hooks",
+-  "physical_qualification": "NOT PERFORMED; see PRINTING-ASSEMBLY.md"
++  "external_LWH_mm": [
++    42,
++    36.8,
++    16.6
++  ],
++  "pcb_repair_commit": "e033031",
++  "recovered_as": "0610d60",
++  "pcb_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
++  "mechanical_interface": "Case-only M3 outside PCB and pack; H1 unfastened, normally noncontact plastic stop; split PCB grooves; integral pack barrier",
++  "inherited_policy": "PCB/main remains byte-identical to repair. Its old-housing incompatibility statements are preserved historical release holds, not approval of this prototype.",
++  "open_gates": [
++    "print and bridge sag",
++    "insulation wear and seat coplanarity",
++    "preload strength creep and loosening",
++    "complete protected pack and charger suitability",
++    "wire strain relief and assembly handling",
++    "USB buttons RGB physical fit",
++    "RF on-body thermal magnetic qualification"
++  ]
+diff --git a/scripts/r2/enclosure/generate.py b/scripts/r2/enclosure/generate.py
+index 4a2199e..4c2fdfd 100644
+--- a/scripts/r2/enclosure/generate.py
++++ b/scripts/r2/enclosure/generate.py
+@@ -1,2 +1,3 @@
+-"""Integrated main PCB compact stack, editable native base/lid + removable insulating divider.
+-One M3 clamp, two positive PCB corner keys and hooked lid; measure current export bounds and retain sample/battery qualification gates.
++"""Two printed parts; frozen PCB; integral battery tunnel; off-PCB M3 closure.
++Run through housing/entry.py with the pinned FreeCAD runtime. Never writes PCB/.
++All dimensions are nominal mm; see housing/PRINTING-ASSEMBLY.md for acceptance.
+@@ -8,6 +9,7 @@ import Part,Sketcher,MeshPart
+-ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing';EX=OUT/'dist';EX.mkdir(parents=True,exist_ok=True)
+-CACHE=ROOT/'.cache/housing';DATA=json.loads((CACHE/'input-geometry.json').read_text());MAIN=json.loads((ROOT/'PCB/main/interface.json').read_text())
+-assert set(DATA['boards'])=={'main'}
+-P=dict(XMin=-2.2,XMax=27.2,YMin=1.8,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
+-       RoofBottom=18.4,Roof=1.2,BarrierBottom=6.3,BarrierThickness=.8,ScrewUnderHead=15.4,ScrewLength=8.)
+-D=A.newDocument('sMove_Integrated');D.Label='sMove | integrated IMU | underside toward BODY'
++ROOT=Path(__file__).resolve().parents[3]; OUT=ROOT/'housing'; EX=OUT/'dist'; EX.mkdir(parents=True,exist_ok=True)
++CACHE=ROOT/'.cache/housing'; DATA=json.loads((CACHE/'input-geometry.json').read_text()); MAIN=json.loads((ROOT/'PCB/main/interface.json').read_text())
++assert DATA['boards']['main']['board_sha256']==hashlib.sha256((ROOT/MAIN['native_board']).read_bytes()).hexdigest()
++P=dict(XMin=-9.6,XMax=27.2,YMin=4.6,YMax=46.6,Floor=1.6,Wall=1.8,
++       MainBottom=9.6,RoofBottom=15.2,Roof=1.4,BarrierBottom=6.6,BarrierThickness=.8,
++       ScrewX=-5.,ScrewY=13.35,ScrewStop=12.,ScrewUnderHead=13.2,ScrewLength=8.,GrooveCeiling=11.15)
++D=A.newDocument('sMove_TwoPart'); D.Label='sMove | TWO PARTS | PCB underside BODY / IMU +Z OUTWARD'
+@@ -15,2 +17,2 @@ S=D.addObject('Spreadsheet::Sheet','Parameters')
+-for i,(k,v) in enumerate(P.items(),1):S.set(f'A{i}',k);S.set(f'B{i}',f'={v} mm');S.setAlias(f'B{i}',k)
+-S.setColumnWidth('A',190);S.setColumnWidth('B',110)
++for i,(k,v) in enumerate(P.items(),1): S.set(f'A{i}',k); S.set(f'B{i}',f'={v} mm'); S.setAlias(f'B{i}',k)
++S.setColumnWidth('A',190); S.setColumnWidth('B',110)
+@@ -20,2 +22 @@ def box(name,x,y,z,dx,dy,dz):
+-    for prop,v in zip(('Length','Width','Height','Placement.Base.x','Placement.Base.y','Placement.Base.z'),(dx,dy,dz,x,y,z)):
+-        o.setExpression(prop,expr(v))
++    for prop,v in zip(('Length','Width','Height','Placement.Base.x','Placement.Base.y','Placement.Base.z'),(dx,dy,dz,x,y,z)):o.setExpression(prop,expr(v))
+@@ -23 +23,0 @@ def box(name,x,y,z,dx,dy,dz):
+-
+@@ -26,2 +26 @@ def cyl(name,x,y,z,r,h):
+-    for prop,v in zip(('Radius','Height','Placement.Base.x','Placement.Base.y','Placement.Base.z'),(r,h,x,y,z)):
+-        o.setExpression(prop,expr(v))
++    for prop,v in zip(('Radius','Height','Placement.Base.x','Placement.Base.y','Placement.Base.z'),(r,h,x,y,z)):o.setExpression(prop,expr(v))
+@@ -29 +27,0 @@ def cyl(name,x,y,z,r,h):
+-
+@@ -32,2 +30 @@ def fuse(name,obs):
+-    o=D.addObject('Part::MultiFuse',name); o.Shapes=obs; o.Refine=True; return o
+-
++    o=D.addObject('Part::MultiFuse',name);o.Shapes=obs;o.Refine=True;return o
+@@ -35,2 +32 @@ def cut(name,b,t):
+-    o=D.addObject('Part::Cut',name); o.Base=b; o.Tool=t; o.Refine=True; return o
+-
++    o=D.addObject('Part::Cut',name);o.Base=b;o.Tool=t;o.Refine=True;return o
+@@ -38 +34 @@ def polygon(name,points,z,h):
+-    s=D.addObject('Sketcher::SketchObject',name+'Profile'); s.Placement.Base.z=z
++    s=D.addObject('Sketcher::SketchObject',name+'Profile');s.Placement.Base.z=z
+@@ -40,5 +36,2 @@ def polygon(name,points,z,h):
+-        i=s.addGeometry(Part.LineSegment(A.Vector(*p,0),A.Vector(*q,0)),False)
+-        s.addConstraint(Sketcher.Constraint('Block',i))
+-    o=D.addObject('Part::Extrusion',name); o.Base=s; o.Dir=A.Vector(0,0,1); o.LengthFwd=h; o.Solid=True
+-    return o
+-
++        i=s.addGeometry(Part.LineSegment(A.Vector(*p,0),A.Vector(*q,0)),False);s.addConstraint(Sketcher.Constraint('Block',i))
++    o=D.addObject('Part::Extrusion',name);o.Base=s;o.Dir=A.Vector(0,0,1);o.LengthFwd=h;o.Solid=True;return o
+@@ -46,3 +39 @@ def hexagon(name,x,y,z,af,h):
+-    r=af/math.sqrt(3)
+-    return polygon(name,[[x+r*math.cos(i*math.pi/3+math.pi/6),y+r*math.sin(i*math.pi/3+math.pi/6)] for i in range(6)],z,h)
+-
++    r=af/math.sqrt(3);return polygon(name,[[x+r*math.cos(i*math.pi/3+math.pi/6),y+r*math.sin(i*math.pi/3+math.pi/6)] for i in range(6)],z,h)
+@@ -50 +41 @@ def role(o,r,label=None):
+-    o.addProperty('App::PropertyString','Role'); o.Role=r
++    o.addProperty('App::PropertyString','Role');o.Role=r
+@@ -53,72 +44,3 @@ def role(o,r,label=None):
+-
+-def rb(name,x,y,z,dx,dy,dz,r='clearance'):
+-    return role(box(name,x,y,z,dx,dy,dz),r,'CONSERVATIVE / '+name)
+-
+-
+-outer=box('BaseBlank','Parameters.XMin','Parameters.YMin',0,'Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.RoofBottom')
+-inner=box('BaseCavity','Parameters.XMin+Parameters.Wall','Parameters.YMin+Parameters.Wall','Parameters.Floor','Parameters.XMax-Parameters.XMin-2*Parameters.Wall','Parameters.YMax-Parameters.YMin-2*Parameters.Wall',20)
+-baseparts=[cut('OpenTray',outer,inner)];lidparts=[box('LidBlank','Parameters.XMin','Parameters.YMin','Parameters.RoofBottom','Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.Roof')]
+-basecuts=[];lidcuts=[];fasteners=[[xy[0]-100,139-xy[1]] for xy in MAIN['mounting']['holes_native_xy_mm'].values()];lands=fasteners
+-# Raised nut shelves attach to the inner walls, above the rigid battery divider.
+-# H1 M3 through-PCB clamp; no external ears and no load on the cell or U2.
+-for i,(x,y) in enumerate(fasteners,1):
+- baseparts.append(cyl(f'BoltSafetyFloor{i}',x,y,6.4,2.05,1.))
+- baseparts += [cyl(f'ClosureBoss{i}',x,y,7.4,4.1,2.8),cyl(f'LowerBearing{i}',x,y,10.2,3.4,.6)]
+- basecuts += [hexagon(f'NutPocket{i}',x,y,7.6,5.8,2.4),box(f'NutEntry{i}',x if i==1 else x-6,y-3.3,7.6,6.,6.6,2.4),cyl(f'ClosureBore{i}',x,y,7.2,1.7,3.7)]
+- lidparts.append(cyl(f'LidBearingBoss{i}',x,y,11.8,3.4,6.7))
+- lidcuts += [cyl(f'LidBore{i}',x,y,11.7,1.7,8.),cyl(f'HeadRecess{i}',x,y,15.4,3.05,4.3)]
+-# Positive lower corner edge shoes: XY stops, lower supports and separate lid
+-# bearings in two ALL-LAYER COPPER-FREE 1x1mm PCB corners. No pouch preload.
+-# 24mm separation provides antirotation independent of screw friction.
+-for i,x in enumerate((0.,24.),1):
+- baseparts.append(box(f'KeyLower{i}',-.4 if i==1 else 24.,8.6,7.4,1.4,1.4,3.4))
+- baseparts.append(box(f'KeyStop{i}',x,8.6,10.8,1.,.25,1.))
+- lidparts.append(box(f'KeyUpper{i}',x+.1,9.1,11.8,.7,.7,6.6))
+-# Two rigid south-facing lid hooks engage front-wall slots; H1 screw blocks
+-# the reverse translation. Captured hooks resist lid lift, not friction snaps.
+-for i,x in enumerate((3.,18.),1):
+- lidparts.append(box(f'LidHookStem{i}',x,4.8,15.4,4.,1.2,3.0))
+- lidparts.append(box(f'LidHookTongue{i}',x,2.8,15.4,4.,3.2,1.0))
+- basecuts.append(box(f'LidHookPocket{i}',x-.15,2.6,15.25,4.3,3.6,1.55))
+-# Side registration: mounting sleeves and keyed shoes carry load, not pouch.
+-for x in (-.4,25.15):
+- for y in (10.,30.):baseparts.append(box('BoardRegister',x,y,7.4,.25,1.,4.0))
+-for x in (-.4,24.):
+- for y in (10.,29.):baseparts.append(box('DividerSeat',x,y,1.6,1.4,1.,4.7))
+-divider_blank=box('DividerBlank',1.,6.5,6.3,23.,32.2,.8)
+-barrier=role(cut('BatteryDivider',divider_blank,fuse('DividerCornerReliefs',[cyl('DividerRelief',x,y,6.2,4.35,1.) for x,y in fasteners])),'divider','REMOVABLE rigid insulating battery divider | no preload')
+-# East USB shoulder near MCU. Connector shell/plug allowed through this aperture only.
+-basecuts.append(box('USBNotch',23.9,16.7,11.4,4.,11.,7.0))
+-for ref,r in [('SW2',1.7),('SW3',1.7),('D1',2.2)]:
+- x,y=MAIN['anchors'][ref]['center_native_xy_mm'];lidcuts.append(cyl(ref+'Access',x-100,139-y,11.9,r,8.))
+-# Insulating strain-relief bridge, independent of the cell and screw load path.
+-# Two wire guide bores plus two lacing holes; nylon cord must be fitted and pull-tested.
+-baseparts.append(box('WireLacingBridge',17.,3.55,5.1,8.,2.05,1.0))
+-for x in (20.03,22.57):basecuts.append(cyl('WireGuide',x,4.2,4.95,.8,1.3))
+-for x in (18.2,24.1):basecuts.append(cyl('LacingBore',x,4.7,4.95,.6,1.3))
+-base=role(cut('Base',fuse('BaseStructure',baseparts),fuse('BaseOpenings',basecuts)),'print','BASE | flat underside BODY')
+-lid=role(cut('Lid',fuse('LidStructure',lidparts),fuse('LidOpenings',lidcuts)),'print','LID | TOP / OUTWARD | RGB RESET BOOT')
+-refs=[];clearances=[];hardware=[]
+-b=DATA['boards']['main'];pcb=polygon('MainSubstrate',b['outline_xy'],10.8,b['thickness_mm']);drills=[]
+-for ref,f in b['footprints'].items():
+- for i,p in enumerate(f['pads']):
+-  dx,dy=p['drill_mm'];x,y=p['local_xy']
+-  if dx>0 and dy>0:
+-   if abs(dx-dy)<1e-5:drills.append(cyl(f'Main_{ref}_Hole{i}',x,y,10.7,dx/2,1.2))
+-   else:drills.append(box(f'Main_{ref}_Slot{i}',x-dx/2,y-dy/2,10.7,dx,dy,1.2))
+-pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 30 x 1mm | +Z outward'))
+-for ref,f in b['footprints'].items():
+- if not f.get('fitted'):continue
+- x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm'];o=rb('Main_'+ref,x0,y0,10.8+z0,x1-x0,y1-y0,z1-z0,'main_component');o.Label=ref+' '+MAIN['components'][ref]['mpn']+' | conservative envelope';refs.append(o)
+-refs.append(rb('Main_USB_ShellTails',17.45,17.5,9.6,7.55,9.4,1.2,'tail'))
+-# Listed pouch body only. A separate generous acceptance envelope is the supplier/sample gate.
+-refs.append(rb('BatteryCandidate_UNQUALIFIED',2.5,7.5,1.8,20.,30.,3.,'battery'))
+-clearances.append(rb('BatteryAcceptance_21x31x4_3',2.,7.,1.8,21.,31.,4.3,'battery_reserve'))
+-clearances.append(rb('RF_NO_BATTERY_HARNESS_METAL',-7.4,39.,-4.2,43.2,20.4,33.4,'rf_keepout'))
+-for ref in ('J1',):
+- a=MAIN['anchors'][ref];pts=a['cavity_polygon_native_xy_mm'];xs=[x-100 for x,y in pts];ys=[139-y for x,y in pts];z0,z1=a['cavity_z_mm_from_board_bottom']
+- clearances.append(rb('Main_'+ref+'_MatingInsertion',min(xs),min(ys),10.8+z0,max(xs)-min(xs),max(ys)-min(ys),z1-z0))
+-# No fitted battery connector: two wire descents stay in the reserved front bay.
+-def rounded_route(name,points,bend,r):
+-    """True tangent line/arc centerline, not sharp elbows or a claimed cable bend spec."""
+-    vs=[A.Vector(*p) for p in points]; edges=[]; current=vs[0]
++def rb(name,x,y,z,dx,dy,dz,r='clearance'):return role(box(name,x,y,z,dx,dy,dz),r)
++def rounded_route(name,points,bend,r,kind='harness'):
++    vs=[A.Vector(*p) for p in points];edges=[];current=vs[0];setbacks=[]
+@@ -126,3 +48,4 @@ def rounded_route(name,points,bend,r):
+-        u=b-a; u.normalize(); v=c-b; v.normalize(); theta=math.acos(max(-1,min(1,u.dot(v))))
+-        setback=bend*math.tan(theta/2); assert (b-a).Length>=setback and (c-b).Length>=setback
+-        start=b-u*setback; end=b+v*setback
++        u=b-a;u.normalize();v=c-b;v.normalize();theta=math.acos(max(-1,min(1,u.dot(v))))
++        setback=bend*math.tan(theta/2);setbacks.append(setback)
++        start=b-u*setback;end=b+v*setback
++        assert (start-current).dot(u)>-1e-6, 'Overlapping bend setbacks'
+@@ -130,6 +53,6 @@ def rounded_route(name,points,bend,r):
+-        bisector=v-u; bisector.normalize(); center=b+bisector*(bend/math.cos(theta/2))
+-        mid=(start-center)+(end-center); mid.normalize(); mid=center+mid*bend
+-        edges.append(Part.Arc(start,mid,end).toShape()); current=end
+-    edges.append(Part.makeLine(current,vs[-1])); path=Part.Wire(edges)
+-    circle=Part.Wire([Part.makeCircle(r,vs[0],vs[1]-vs[0])])
+-    o=D.addObject('Part::Feature',name); o.Shape=path.makePipeShell([circle],True,False)
++        bisector=v-u;bisector.normalize();center=b+bisector*(bend/math.cos(theta/2))
++        mid=(start-center)+(end-center);mid.normalize();mid=center+mid*bend
++        edges.append(Part.Arc(start,mid,end).toShape());current=end
++    if (vs[-1]-current).Length>1e-7:edges.append(Part.makeLine(current,vs[-1]))
++    path=Part.Wire(edges);circle=Part.Wire([Part.makeCircle(r,vs[0],vs[1]-vs[0])])
++    o=D.addObject('Part::Feature',name);o.Shape=path.makePipeShell([circle],True,False)
+@@ -139,2 +62 @@ def rounded_route(name,points,bend,r):
+-    return role(o,'harness',name+' | swept reserve, measure real harness'),path.Length
+-
++    return role(o,kind),path.Length
+@@ -142,3 +64,68 @@ def rounded_route(name,points,bend,r):
+-# TWO independent insulated wires. Engineering assumption: OD <=1.2mm, tinned
+-# bundle <=0.7mm; no gauge is claimed supplied. Centreline bends R2 are a fit
+-# reservation, not the wire vendor's qualified bend radius. Solder from TOP.
++outer=box('BaseBlank','Parameters.XMin','Parameters.YMin',0,'Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.RoofBottom')
++inner=box('BaseCavity',-7.8,6.4,'Parameters.Floor',33.2,38.4,20)
++baseparts=[cut('OpenTray',outer,inner)];basecuts=[]
++lidparts=[box('LidBlank','Parameters.XMin','Parameters.YMin','Parameters.RoofBottom','Parameters.XMax-Parameters.XMin','Parameters.YMax-Parameters.YMin','Parameters.Roof')];lidcuts=[]
++# Monolithic battery tunnel. South entry stays open until the lid's integral skirt closes it.
++baseparts += [box('PocketWestWall',.6,6.1,1.6,1.,31.9,5.),box('PocketEastWall',23.4,6.1,1.6,1.,31.9,5.),
++              box('PocketNorthStop',.6,38.,1.6,23.8,1.,5.),
++              box('IntegralBatteryCeiling',.6,6.1,'Parameters.BarrierBottom',23.8,32.9,'Parameters.BarrierThickness')]
++basecuts += [box('BatteryInsertionMouth',1.6,4.5,1.6,21.8,2.,14.),box('PackLeadSideExit',.5,32.,2.2,1.2,5.7,3.0)]
++lidparts.append(box('BatteryEntryClosingSkirt',1.85,4.6,1.85,21.3,1.2,13.35))
++# Off-board closure: the screw NEVER enters H1 or the pack projection.
++baseparts.append(cyl('ClosureBoss','Parameters.ScrewX','Parameters.ScrewY',1.6,4.3,10.4))
++baseparts.append(box('ClosureBossWeb',-8.,10.35,1.6,3.,6.,10.4))
++basecuts += [hexagon('CaptiveNutPocket',-5.,13.35,5.3,5.8,2.7),box('NutSideEntry',-9.7,9.85,5.3,4.7,7.,2.7),
++             cyl('BaseScrewBore',-5.,13.35,4.2,1.8,7.9),box('NutDoorSlidingRelief',-9.7,7.7,4.6,1.65,9.9,10.7)]
++lidparts += [cyl('LidClosureBearing',-5.,13.35,'Parameters.ScrewStop',4.5,3.2),box('CaptiveNutDoor',-9.6,9.45,4.85,1.25,7.8,10.35)]
++lidcuts += [cyl('LidScrewBore',-5.,13.35,11.9,1.8,5.),cyl('SocketHeadRecess',-5.,13.35,'Parameters.ScrewUnderHead',3.5,4.)]
++basecuts.append(box('ClosureBearingSlidingRelief',-9.7,7.1,12.,2.4,11.,3.3))
++# PCB drops into split grooves. Four insulating lower seats + lid lips; no screw preload.
++seats=[];films=[]
++for i,(x,y) in enumerate([(-.4,9.),(24.3,9.),(-.4,37.),(24.3,37.)],1):
++    baseparts.append(box(f'GrooveSeat{i}',x,y,7.4,1.1,1.,2.0))
++    # Structural webs attach seats to the integral tunnel, not to the pouch.
++    baseparts.append(box(f'SeatWeb{i}',x,y,6.6,1.7 if x<0 else 1.1,1.,1.0))
++    films.append(rb(f'SeatLiner{i}',-.25 if x<0 else 24.3,y,9.4,.95,1.,.2,'insulator'))
++    lidparts.append(box(f'GrooveUpperLip{i}',0. if x<0 else 24.4,38.5 if y>30 else y+.1,'Parameters.GrooveCeiling',.6,.6 if y>30 else .8,4.05))
++    seats.append([x,y])
++# Separated edge fences bound translation AND rotation independently of closure friction.
++for x in (-.6,25.3):
++    for y in (9.,37.):baseparts.append(box('PCB_X_Stop',x,y,7.4,.3,2.,3.6))
++for y in (8.4,39.3):
++    for x in (-.4,24.3):baseparts.append(box('PCB_Y_Stop',x,y,7.4,1.1,.3,3.6))
++for x in (-.4,24.3):baseparts.append(box('NorthStopWeb',x,37.,6.6,1.7 if x<0 else 1.1,2.6,1.0))
++# H1 is now only a non-contact plastic deflection stop, not a metal screw bearing.
++baseparts.append(cyl('H1InsulatingDeflectionStop',11.8,13.35,7.4,2.2,1.85))
++# Two rigid north hooks; lower lid 1.5mm south, then slide north. Screw locks translation.
++for i,x in enumerate((-5.,21.8),1):
++    lidparts += [box(f'HookStem{i}',x,43.,12.6,3.,1.3,2.6),box(f'HookTongue{i}',x,43.,12.6,3.,2.8,1.2)]
++    basecuts.append(box(f'HookPocket{i}',x-.2,44.6,12.35,3.4,1.5,1.7))
++# Access envelopes, not connector-exact manufacturing models.
++basecuts.append(box('USBOpening',24.0,16.7,9.9,4.,11.,5.7));lidcuts.append(box('USBRoofRelief',24.,16.7,9.9,4.,11.,5.7))
++for ref,r in [('SW2',1.65),('SW3',1.65),('D1',1.9)]:
++    x,y=MAIN['anchors'][ref]['center_native_xy_mm'];lidcuts.append(cyl(ref+'Access',x-100,139-y,10.8,r,7.))
++# Open eyelets for separate insulated-wire lacing (not a clamp on the cell).
++baseparts.append(box('LacingBridge',-7.9,31.5,8.0,5.1,6.5,1.2))
++for y in (33.43,35.97):basecuts.append(cyl('LacingEyelet',-4.4,y,7.9,.7,1.4))
++base=role(cut('Base',fuse('BaseStructure',baseparts),fuse('BaseOpenings',basecuts)),'print','BASE | integral insulated battery pocket | BODY underside')
++lid=role(cut('Lid',fuse('LidStructure',lidparts),fuse('LidOpenings',lidcuts)),'print','LID | one M3 + two captured hooks | OUTWARD')
++refs=[];clearances=[];hardware=[]
++b=DATA['boards']['main'];pcb=polygon('MainSubstrate',b['outline_xy'],P['MainBottom'],b['thickness_mm']);drills=[]
++for ref,f in b['footprints'].items():
++    for i,p in enumerate(f['pads']):
++        dx,dy=p['drill_mm'];x,y=p['local_xy']
++        if dx>0 and dy>0:
++            if abs(dx-dy)<1e-5:drills.append(cyl(f'Main_{ref}_Hole{i}',x,y,9.5,dx/2,1.2))
++            else:drills.append(box(f'Main_{ref}_Slot{i}',x-dx/2,y-dy/2,9.5,dx,dy,1.2))
++pcb=role(cut('MainPCB',pcb,fuse('MainPCBDrills',drills)),'main_pcb','FROZEN repaired PCB | 25 x 30 x 1 | H1 NOT a screw path');refs.append(pcb)
++for ref,f in b['footprints'].items():
++    if not f.get('fitted'):continue
++    x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm']
++    o=rb('Main_'+ref,x0,y0,P['MainBottom']+z0,x1-x0,y1-y0,z1-z0,'main_component');o.Label=ref+' '+MAIN['components'][ref]['mpn']+' | conservative envelope';refs.append(o)
++refs.append(rb('Main_USB_ShellTails',17.45,17.5,8.4,7.55,9.4,1.2,'tail'))
++refs += films
++refs.append(rb('PocketFloorLiner',1.7,6.1,1.6,21.6,31.8,.2,'insulator'))
++refs.append(rb('BatteryCandidate_UNQUALIFIED',2.5,7.,1.8,20.,30.,3.,'battery'))
++clearances.append(rb('BatteryAcceptance_21x31x4_3',2.,6.5,1.8,21.,31.,4.3,'battery_reserve'))
++clearances.append(rb('RF_NO_BATTERY_HARNESS_METAL',-7.4,39.,-5.4,43.2,20.4,33.4,'rf_keepout'))
++clearances.append(rb('USBPlugReserve',24.75,17.2,10.3,15.,10.,4.1))
+@@ -146,11 +133,14 @@ packpoints=[];packlength=0.
+-for i,x in enumerate((20.03,22.57),1):
+- points=[[x,12.5,10.2],[x,12.5,8.2],[x,4.2,8.2],[x,4.2,3.2],[x,7.,3.2]]
+- wire,length=rounded_route('BatteryWire'+str(i),points,2.,.6);refs.append(wire);packpoints.append(points);packlength+=length
+- refs.append(role(cyl('BareWire'+str(i),x,12.5,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
+- # Filled top solder meniscus reserve sits above the PCB, not an impossible solid through it.
+- refs.append(role(cyl('SolderFillet'+str(i),x,12.5,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
+- clearances.append(role(cyl('LacingThreadReserve'+str(i),(18.2,24.1)[i-1],4.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
+- clearances.append(rb('LacingKnotReserve'+str(i),(18.2,24.1)[i-1]-.6,4.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
+-for i,(x,y) in enumerate(fasteners,1):
+- screw=fuse(f'ClosureScrew{i}',[cyl(f'ScrewShank{i}',x,y,7.4,1.5,8.),cyl(f'ScrewHead{i}',x,y,15.4,2.84,3.)]);hardware.append(role(screw,'hardware','M3x8 socket cap | assumed max head 5.68 x 3mm'))
+- nut=cut(f'ClosureNut{i}',hexagon(f'NutBlank{i}',x,y,7.6,5.5,2.4),cyl(f'NutHole{i}',x,y,7.5,1.5,2.6));hardware.append(role(nut,'hardware','M3 nut | AF5.5 x 2.4mm | side load'))
++# Top-exit wires turn WEST beside the shielded module, clear of all components.
++# R2 centreline bend and 1.2mm OD are design reserves, subject to actual wire approval.
++for i,y in enumerate((33.43,35.97),1):
++    points=[[4.5,y,11.2],[4.5,y,13.2],[-1.5,y,13.2],[-1.5,y,3.5],[2.,y,3.5]]
++    wire,length=rounded_route('BatteryWire'+str(i),points,2.,.6);refs.append(wire);packpoints.append(points);packlength+=length
++    refs.append(role(cyl('BareWire'+str(i),4.5,y,9.1,.35,2.1),'harness','Tinned bundle <=0.7mm; trim below PCB <=0.5mm'))
++    refs.append(role(cyl('SolderFillet'+str(i),4.5,y,10.6,.9,.6),'solder'))
++    # Closed 0.4mm nylon lacing loop around bridge and vertical wire; not load-qualified.
++    pts=[[-4.4,y,8.5],[-4.4,y,9.6],[-.6,y,9.6],[-.6,y,7.7],[-4.4,y,7.7],[-4.4,y,8.5]]
++    lace,_=rounded_route('WireLacing'+str(i),pts,.3,.2,'lacing');refs.append(lace)
++    clearances.append(rb('LacingKnotReserve'+str(i),-3.4,y-.5,9.7,1.,1.,1.,'lacing_reserve'))
++screwblank=fuse('ScrewBlank',[cyl('ScrewShank',-5.,13.35,5.2,1.5,8.),cyl('ScrewHead',-5.,13.35,13.2,2.84,3.)])
++screw=role(cut('ClosureScrew',screwblank,hexagon('SocketHex',-5.,13.35,14.5,2.5,1.9)),'hardware','M3x8 socket cap | max-envelope head 5.68 x 3 | off-PCB')
++nut=role(cut('ClosureNut',hexagon('NutBlank',-5.,13.35,5.6,5.5,2.4),cyl('NutThreadEnvelope',-5.,13.35,5.5,1.5,2.6)),'hardware','M3 nut AF5.5 x 2.4 | side insert, lid captures entry');hardware += [screw,nut]
+@@ -158,3 +148,5 @@ D.recompute()
+-for o in (base,lid,barrier):assert o.Shape.isValid() and len(o.Shape.Solids)==1,(o.Name,len(o.Shape.Solids))
+-meta=D.addObject('App::DocumentObjectGroup','Provenance');meta.addProperty('App::PropertyString','Frames').Frames='Main bottom Z10.8, top11.8. Base underside BODY. ICM AG +Z outward; raw mag +Z inward. AG Rz(-90), MAG Rz(-90)*diag(1,-1,-1).'
+-meta.addProperty('App::PropertyString','Status').Status='ENGINEERING PROTOTYPE ONLY; battery/physical fit/rigidity/RF/thermal/magnetic gates open.'
++for o in (base,lid):assert o.Shape.isValid() and len(o.Shape.Solids)==1,(o.Name,len(o.Shape.Solids))
++meta=D.addObject('App::DocumentObjectGroup','Provenance')
++meta.addProperty('App::PropertyString','Frames').Frames='X=nativeX-100; Y=139-nativeY; board bottom Z9.6; board bounds Y9..39, NOT Y0..30. Main underside BODY; accel/gyro +Z OUTWARD.'
++meta.addProperty('App::PropertyString','Status').Status='CAD prototype, NOT manufacturing/charging release. Complete repair e033031 inherited; no PCB edits. Physical fit/creep/wire/battery/RF/magnetics open.'
++meta.addProperty('App::PropertyString','PCB_SHA256').PCB_SHA256=b['board_sha256']
+@@ -162,2 +154,4 @@ source=D.addObject('App::DocumentObjectGroup','EngineeringSources');source.Group
+-assembly=D.addObject('App::DocumentObjectGroup','InspectionAssembly');assembly.Label='MOVE THESE | separate inspection groups'
+-groups=[('ViewBase',[base],(0,0,0)),('ViewLid',[lid],(0,0,25)),('ViewMain',[o for o in refs if o.Name.startswith('Main')],(0,0,15)),('ViewDivider',[barrier],(0,0,7)),('ViewBattery',[o for o in refs if o.Role=='battery'],(-12,0,5)),('ViewCables',[o for o in refs if o.Role in ('harness','solder')],(12,0,10)),('ViewHardware',hardware,(0,0,35))]
++assembly=D.addObject('App::DocumentObjectGroup','InspectionAssembly');assembly.Label='MOVE THESE | separate display groups (not installation paths)'
++groups=[('ViewBase',[base],(0,0,0)),('ViewLid',[lid],(0,0,28)),('ViewMain',[o for o in refs if o.Name.startswith('Main')],(0,0,14)),
++        ('ViewBattery',[o for o in refs if o.Role=='battery'],(0,-35,0)),('ViewCables',[o for o in refs if o.Role in ('harness','solder','lacing')],(-12,0,14)),
++        ('ViewHardware',hardware,(-6,0,34)),('ViewInsulation',[o for o in refs if o.Role=='insulator'],(0,-4,5))]
+@@ -165,4 +159,5 @@ for name,objects,offset in groups:
+- g=D.addObject('App::Part',name);assembly.addObject(g);g.Label=name[4:]+' | movable inspection group';g.addProperty('App::PropertyVector','ExplodedOffset','Inspection');g.ExplodedOffset=A.Vector(*offset)
+- for obj in objects:
+-  link=D.addObject('App::Link','Inspect_'+obj.Name);link.setLink(obj);link.LinkPlacement=obj.Placement;g.addObject(link);link.Label=obj.Label
+-D.recompute();Part.export([base,lid,barrier]+refs+hardware,str(EX/'smove-r2-assembly.step'));Part.export([base,lid,barrier],str(EX/'smove-r2-printable.step'))
++    g=D.addObject('App::Part',name);assembly.addObject(g);g.Label=name[4:]+' | movable inspection group';g.addProperty('App::PropertyVector','ExplodedOffset','Inspection');g.ExplodedOffset=A.Vector(*offset)
++    for obj in objects:
++        link=D.addObject('App::Link','Inspect_'+obj.Name);link.setLink(obj);link.LinkPlacement=obj.Placement;g.addObject(link);link.Label=obj.Label
++D.recompute()
++Part.export([base,lid]+refs+hardware,str(EX/'smove-r2-assembly.step'));Part.export([base,lid],str(EX/'smove-r2-printable.step'))
+@@ -170,7 +165,5 @@ mesh_reports={}
+-for name,obj in [('base',base),('lid',lid),('divider',barrier)]:
+- sh=obj.Shape.copy()
+- if name=='lid':sh.rotate(A.Vector(),A.Vector(1,0,0),180)
+- bb=sh.BoundBox;sh.translate(A.Vector(-bb.XMin,-bb.YMin,-bb.ZMin));mesh=MeshPart.meshFromShape(Shape=sh,LinearDeflection=.04,AngularDeflection=.12,Relative=False);mesh.write(str(EX/f'{name}.stl'));mesh_reports[name]=dict(volume_mm3=obj.Shape.Volume,triangles=mesh.CountFacets)
+-import sys
+-sys.path.insert(0,str(OUT));from export_main import export as export_main_board
+-export_main_board(D)
++for name,obj in [('base',base),('lid',lid)]:
++    sh=obj.Shape.copy()
++    if name=='lid':sh.rotate(A.Vector(),A.Vector(1,0,0),180)
++    bb=sh.BoundBox;sh.translate(A.Vector(-bb.XMin,-bb.YMin,-bb.ZMin));mesh=MeshPart.meshFromShape(Shape=sh,LinearDeflection=.04,AngularDeflection=.12,Relative=False);mesh.write(str(EX/f'{name}.stl'))
++    mesh_reports[name]=dict(volume_mm3=obj.Shape.Volume,triangles=mesh.CountFacets)
+@@ -177,0 +171 @@ for step in EX.glob('*.step'):step.write_text('\n'.join(line.rstrip() for line i
++# Source objects remain fixed; movable App::Link copies are the only display assembly.
+@@ -179,2 +173,6 @@ D.saveAs(str(OUT/'smove-r2-enclosure.FCStd'))
+-report=dict(status='GENERATED_REQUIRE_INDEPENDENT_VERIFY',parameters_mm=P,reference_objects=[o.Name for o in refs],hardware_objects=[o.Name for o in hardware],clearance_objects=[o.Name for o in clearances],inspection_groups=[g[0] for g in groups],fastener_xy_mm=fasteners,retention_xy_mm=lands,parts=mesh_reports,main_transform=[[1,0,0,0],[0,1,0,0],[0,0,1,10.8],[0,0,0,1]],pack_route_points_mm=packpoints,pack_route_length_mm=packlength,input_hash=DATA['boards']['main']['board_sha256'])
+-(CACHE/'build.json').write_text(json.dumps(report,indent=2)+'\n');print('Generated integrated stack; measure/check before claiming fit')
++report=dict(status='GENERATED_REQUIRE_VERIFY',parameters_mm=P,reference_objects=[o.Name for o in refs],hardware_objects=[o.Name for o in hardware],
++            clearance_objects=[o.Name for o in clearances],inspection_groups=[g[0] for g in groups],parts=mesh_reports,
++            pcb_bottom_z_mm=P['MainBottom'],screw_xy_mm=[-5,13.35],H1_xy_mm=[11.8,13.35],seat_xy_mm=seats,
++            pack_route_points_mm=packpoints,pack_route_length_mm=packlength,input_hash=b['board_sha256'],printed_parts=2)
++(OUT/'validation').mkdir(exist_ok=True);(OUT/'validation/build.json').write_text(json.dumps(report,indent=2)+'\n')
++print('Generated TWO parts; unchanged PCB hash '+b['board_sha256'])
+diff --git a/scripts/r2/enclosure/inspection.py b/scripts/r2/enclosure/inspection.py
+index 1b29b47..87997b1 100644
+--- a/scripts/r2/enclosure/inspection.py
++++ b/scripts/r2/enclosure/inspection.py
+@@ -7 +7 @@ from PySide import QtCore, QtWidgets
+-GROUPS=('ViewBase','ViewLid','ViewMain','ViewDivider','ViewBattery','ViewCables','ViewHardware')
++GROUPS=('ViewBase','ViewLid','ViewMain','ViewBattery','ViewCables','ViewHardware','ViewInsulation')
+@@ -10 +10 @@ COLORS={'print':(.32,.55,.82),'main_pcb':(.08,.52,.29),'divider':(.8,.8,.72),
+-        'battery':(.94,.68,.20),'harness':(.86,.20,.12),'solder':(.75,.75,.78),'hardware':(.72,.72,.76)}
++        'battery':(.94,.68,.20),'harness':(.86,.20,.12),'insulator':(.85,.65,.2),'lacing':(.9,.9,.9),'solder':(.75,.75,.78),'hardware':(.72,.72,.76)}
+diff --git a/scripts/r2/enclosure/present.py b/scripts/r2/enclosure/present.py
+index df69e49..5071cbe 100644
+--- a/scripts/r2/enclosure/present.py
++++ b/scripts/r2/enclosure/present.py
+@@ -1,2 +1,2 @@
+-"""Run inside the real FreeCAD GUI: save styled assembled FCStd, render, test controls.
+-This is not the offscreen FreeCAD Python runner: a real OpenGL GUI is required.
++"""Explicit real-GUI review export and movable-group smoke test. No PCB writes.
++Run housing/PresentAssembly.FCMacro in the pinned GUI, not the offscreen runner.
+@@ -4,2 +4 @@ This is not the offscreen FreeCAD Python runner: a real OpenGL GUI is required.
+-import hashlib
+-import json
++import hashlib,json,time
+@@ -7,4 +6,2 @@ from pathlib import Path
+-import FreeCAD as A
+-import FreeCADGui as G
+-import Part
+-from PySide import QtCore, QtWidgets
++import FreeCAD as A,FreeCADGui as G,Part
++from PySide import QtWidgets
+@@ -12,26 +9 @@ import inspection
+-ROOT=Path(__file__).resolve().parents[3]
+-OUT=ROOT/'housing'; EX=OUT/'dist'; CACHE=ROOT/'.cache/housing'
+-
+-
+-def annotations(doc):
+-    group=doc.getObject('FrameAnnotations') or doc.addObject('App::DocumentObjectGroup','FrameAnnotations')
+-    group.Label='DISPLAY LABELS / body frame (not physical parts)'
+-    def text(name,words,pos,color=(.10,.15,.22),size=14):
+-        obj=doc.getObject(name) or doc.addObject('App::Annotation',name)
+-        obj.LabelText=words; obj.Position=A.Vector(*pos); obj.ViewObject.FontSize=size
+-        obj.ViewObject.TextColor=color; group.addObject(obj); return obj
+-    text('BodyFaceLabel',['BODY CONTACT | flat base underside Z=0'],(12,-10,0),size=14)
+-    text('MainPlaneLabel',['MAIN | TOP OUTWARD'],(1,37,12),size=13)
+-    text('CarrierPlaneLabel',['ICM-20948 integrated'],(-1,8,12),size=13)
+-    text('OutwardAxisLabel',['accel/gyro +Z OUT'],(12.5,21.5,28),(.8,.18,.04),14)
+-    text('TopFaceLabel',['TOP / OUTWARD'],(2,40,19),size=17)
+-    text('RGBLabel',['RGB'],(15.1,12.7,20),(.65,.03,.32),14)
+-    text('ResetLabel',['RESET'],(11,14.9,20),size=12)
+-    text('BootLabel',['BOOT'],(11,11.15,20),size=12)
+-    text('BodyOnlyLabel',['BODY SIDE','Main PCB BOTTOM faces this base'],(1,20,0),size=17)
+-    arrow=doc.getObject('OutwardAxis') or doc.addObject('Part::Feature','OutwardAxis')
+-    arrow.Shape=Part.makeCylinder(.28,14,A.Vector(12.5,21.5,12.0)).fuse(Part.makeCone(.85,0,2,A.Vector(12.5,21.5,26.0)))
+-    arrow.ViewObject.ShapeColor=(1.,.28,.03); group.addObject(arrow)
+-    return group
+-
+-
++R=Path(__file__).resolve().parents[3];H=R/'housing';EX=H/'dist'
+@@ -39,15 +11,6 @@ def main():
+-    G.getMainWindow().resize(1600,1000)
+-    doc=A.openDocument(str(OUT/'smove-r2-enclosure.FCStd'))
+-    macro=OUT/'InspectAssembly.FCMacro'
+-    namespace={'__file__':str(macro)}
+-    exec(compile(macro.read_text(),str(macro),'exec'),namespace)
+-    panel=namespace['smove_inspection_panel']
+-    notes=annotations(doc)
+-    view=G.activeDocument().activeView()
+-    # White viewport; set only this isolated application's preferences.
+-    params=A.ParamGet('User parameter:BaseApp/Preferences/View')
+-    params.SetBool('Simple',True); params.SetBool('UseNewSelection',True)
+-    saved_shapes={o.Name:(o.Placement.copy(),o.Shape.Volume) for o in doc.EngineeringSources.Group if hasattr(o,'Shape') and hasattr(o,'Placement') and not o.Shape.isNull()}
+-    def show_notes(names):
+-        notes.Visibility=True
+-        for obj in notes.Group:obj.Visibility=obj.Name in names
++    G.getMainWindow().showMaximized()
++    doc=A.openDocument(str(H/'smove-r2-enclosure.FCStd'))
++    macro=H/'InspectAssembly.FCMacro';ns={'__file__':str(macro)}
++    exec(compile(macro.read_text(),str(macro),'exec'),ns)
++    panel=ns['smove_inspection_panel'];view=G.activeDocument().activeView()
++    fixed={o.Name:(o.Placement.copy(),o.Shape.Volume) for o in doc.EngineeringSources.Group if hasattr(o,'Shape') and hasattr(o,'Placement') and not o.Shape.isNull()}
+@@ -55,17 +18,5 @@ def main():
+-        # Let camera animation/MDI startup complete before image capture.
+-        import time
+-        for _ in range(8):QtWidgets.QApplication.processEvents();time.sleep(.05)
+-    def capture(name,mode='iso'):
+-        for area in G.getMainWindow().findChildren(QtWidgets.QMdiArea):
+-            for window in area.subWindowList():
+-                if 'smove' in window.windowTitle().lower():area.setActiveSubWindow(window)
+-        G.updateGui();settle()
+-        if mode=='iso':view.viewAxonometric()
+-        elif mode=='top':view.viewTop()
+-        elif mode=='bottom':view.viewBottom()
+-        elif mode=='front':view.viewFront()
+-        doc.recompute();settle();view.fitAll();G.updateGui();view.redraw();settle();G.updateGui()
+-        view.saveImage(str(EX/(name+'.png')),2000,1250,'White')
+-    panel.reset_button.click(); show_notes(('BodyFaceLabel','MainPlaneLabel','CarrierPlaneLabel','OutwardAxisLabel','OutwardAxis'))
+-    capture('assembled')
+-    # Real GUI button activation, not just calling the underlying transform helper.
++        for _ in range(6):QtWidgets.QApplication.processEvents();time.sleep(.06)
++    def capture(name):
++        doc.recompute();view.viewAxonometric();view.fitAll();G.updateGui();settle()
++        view.saveImage(str(EX/(name+'.png')),1800,1200,'White')
++    panel.reset_button.click();panel.ghost.setChecked(False);capture('assembled')
+@@ -73 +24 @@ def main():
+-    assert doc.ViewLid.Placement.Base.z==32 and doc.ViewMain.Placement.isIdentity() and doc.ViewDivider.Placement.isIdentity()
++    assert doc.ViewLid.Placement.Base.z==32 and doc.ViewMain.Placement.isIdentity()
+@@ -75,2 +26 @@ def main():
+-    assert panel.slider.value()==100 and doc.ViewDivider.Placement.Base==doc.ViewDivider.ExplodedOffset
+-    show_notes(())
++    assert all(doc.getObject(n).Placement.Base==doc.getObject(n).ExplodedOffset for n in inspection.GROUPS)
+@@ -78,3 +28,2 @@ def main():
+-    settle();G.getMainWindow().grab().save(str(EX/'freecad-inspection.png'))
+-    panel.selector.setCurrentIndex(panel.selector.findData('ViewBase')); panel.axes[2].setValue(-8); panel.move_button.click()
+-    assert doc.ViewBase.Placement.Base.z==-8
++    panel.selector.setCurrentIndex(panel.selector.findData('ViewBattery'));panel.axes[1].setValue(-20);panel.move_button.click()
++    assert doc.ViewBattery.Placement.Base.y==-20
+@@ -82,38 +31,21 @@ def main():
+-    for name in inspection.GROUPS:assert doc.getObject(name).Placement.isIdentity()
+-    for name,(placement,volume) in saved_shapes.items():
+-        obj=doc.getObject(name)
+-        assert (obj.Placement.Base-placement.Base).Length<1e-7 and abs(obj.Shape.Volume-volume)<1e-7
+-    # Closed simple enclosure and explicit opposite body face.
+-    panel.ghost.setChecked(False); show_notes(('TopFaceLabel','RGBLabel','ResetLabel','BootLabel'))
+-    capture('top','top')
+-    dims=json.loads((OUT/'validation/mechanical.json').read_text())['measured_external_mm']
+-    annotation=doc.addObject('App::Annotation','MeasuredDimensions');annotation.LabelText=[f'MEASURED CAD: {dims[1]:.1f} L x {dims[0]:.1f} W x {dims[2]:.1f} H mm','Nominal CAD <50 x 30 x 20; physical fit/battery gates OPEN'];annotation.Position=A.Vector(-1,-6,20);annotation.ViewObject.FontSize=16
+-    capture('dimensions','top');doc.removeObject(annotation.Name)
+-    show_notes(('BodyOnlyLabel',)); capture('body-side','bottom')
+-    # A genuine native Boolean section through the H1 M3 stack, lower key, battery and single PCB.
+-    sections=doc.addObject('App::DocumentObjectGroup','TemporarySection')
+-    keep=Part.makeBox(14,50,24,A.Vector(-4,0,-1))
+-    for name in ['Base','Lid','BatteryDivider']+json.loads((CACHE/'build.json').read_text())['reference_objects']+json.loads((CACHE/'build.json').read_text())['hardware_objects']:
+-        src=doc.getObject(name);shape=src.Shape.common(keep)
+-        if not shape.isNull() and shape.Volume>1e-7:
+-            obj=doc.addObject('Part::Feature','Section_'+name);obj.Shape=shape;obj.ViewObject.ShapeColor=src.ViewObject.ShapeColor
+-            obj.ViewObject.DisplayMode='Flat Lines';sections.addObject(obj)
+-    doc.InspectionAssembly.Visibility=False;show_notes(())
+-    capture('section','front')
+-    for obj in list(sections.Group):doc.removeObject(obj.Name)
+-    doc.removeObject(sections.Name)
+-    doc.InspectionAssembly.Visibility=True
+-    panel.ghost.setChecked(True);panel.reset_button.click();show_notes(('BodyFaceLabel','MainPlaneLabel','CarrierPlaneLabel','OutwardAxisLabel','OutwardAxis'))
+-    view.viewAxonometric();view.fitAll();G.updateGui()
+-    doc.recompute();doc.save()
+-    report=dict(status='PASS_REAL_FREECAD_GUI_CONTROLS',freecad_version=A.Version(),
+-                checks=['Delivered InspectAssembly.FCMacro executed successfully','FCStd opened with real OpenGL viewport','Lift lid preserves main PCB and divider placements','Explode button and slider move native groups',
+-                        'Selected base offset changes group only','Restore returns ALL group/link transforms to assembled',
+-                        'Fixed engineering source placements and volumes unchanged','Native saved with assembled default and distinct named parts'],
+-                method='Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.',
+-                desktop_agent='Desktop observation available this turn; programmatic Qt GUI macro tests, not native GUI PCB routing.',
+-                exploded_display_is_not_alignment_geometry=True,
+-                native_sha256=hashlib.sha256((OUT/'smove-r2-enclosure.FCStd').read_bytes()).hexdigest(),
+-                source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),ROOT/'scripts/r2/enclosure/inspection.py',OUT/'InspectAssembly.FCMacro']})
+-    (OUT/'validation/gui-inspection.json').write_text(json.dumps(report,indent=2)+'\n')
+-    print('GUI PRESENTATION AND CONTROLS PASS',flush=True)
++    for n in inspection.GROUPS:assert doc.getObject(n).Placement.isIdentity()
++    for name,(p,volume) in fixed.items():
++        o=doc.getObject(name);assert (o.Placement.Base-p.Base).Length<1e-7 and abs(o.Shape.Volume-volume)<1e-7
++    # A true BRep section at X=12.5 shows battery ceiling, PCB air gap and lid without a third part.
++    section=doc.addObject('App::DocumentObjectGroup','TemporarySection');build=json.loads((H/'validation/build.json').read_text())
++    keep=Part.makeBox(22.1,55,30,A.Vector(-9.6,0,-1))
++    for n in ['Base','Lid']+build['reference_objects']+build['hardware_objects']:
++        src=doc.getObject(n);s=src.Shape.common(keep)
++        if not s.isNull() and s.Volume>1e-7:
++            o=doc.addObject('Part::Feature','Section_'+n);o.Shape=s;o.ViewObject.ShapeColor=src.ViewObject.ShapeColor;section.addObject(o)
++    doc.InspectionAssembly.Visibility=False;view.viewRight();view.fitAll();G.updateGui();settle()
++    view.saveImage(str(EX/'section.png'),1800,1200,'White')
++    for o in list(section.Group):doc.removeObject(o.Name)
++    doc.removeObject(section.Name)
++    panel.reset_button.click();panel.ghost.setChecked(True);view.viewAxonometric();view.fitAll();G.updateGui();settle();doc.recompute();doc.save()
++    report={'status':'PASS_REAL_FREECAD_GUI_CONTROLS','freecad_version':A.Version(),'manufacturing_release':False,
++      'checks':['Native FCStd opened in real FreeCAD GUI','Delivered InspectAssembly macro executed','Lift lid leaves PCB fixed','Explode moves all seven display groups','Battery manual Y offset moves group only','Restore resets all group transforms','Engineering source placements/volumes unchanged','Native saved in assembled display state'],
++      'method':'Explicit GUI macro, Qt button activation, activeView renders. Native desktop-tool observations are recorded separately in docs/revision-r2/two-part-case/images.md.',
++      'native_sha256':hashlib.sha256((H/'smove-r2-enclosure.FCStd').read_bytes()).hexdigest()}
++    (H/'validation/gui-inspection.json').write_text(json.dumps(report,indent=2)+'\n')
++    print('TWO-PART GUI PRESENTATION AND CONTROLS PASS',flush=True)
+diff --git a/scripts/r2/enclosure/seal_delivery.py b/scripts/r2/enclosure/seal_delivery.py
+new file mode 100644
+index 0000000..1a86ecc
+--- /dev/null
++++ b/scripts/r2/enclosure/seal_delivery.py
+@@ -0,0 +1,67 @@
++#!/usr/bin/python3
++"""Seal/recheck this combined review delivery; builtin Python only, never saves CAD/PCB.
++Run without args AFTER staging new source/docs to write reports and manifests.
++--check verifies the complete manifest without writing anything.
++"""
++import hashlib,json,subprocess as sp,sys
++from pathlib import Path
++import xml.etree.ElementTree as ET
++R=Path(__file__).resolve().parents[3];V=R/'docs/revision-r2/two-part-case';M=V/'manifest.json'
++BASE='554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb';REPAIR='e033031';RECOVERY='0610d60'
++def git(*args):return sp.check_output(['git',*args],cwd=R)
++def sha(b):return hashlib.sha256(b).hexdigest()
++def read(p):return json.loads((R/p).read_text())
++def put(p,j):(R/p).write_text(json.dumps(j,indent=2)+'\n')
++def paths():return sorted(set(p.decode() for p in git('ls-files','-z','--cached','--others','--exclude-standard').split(b'\0') if p and (R/p.decode()).is_file()))
++def nets(path):
++    root=ET.parse(R/path).getroot()
++    return sorted((n.attrib['name'],sorted((v.attrib['ref'],v.attrib['pin']) for v in n.findall('node'))) for n in root.findall('nets/net'))
++checks=[]
++def ck(n,ok):checks.append({'check':n,'passed':bool(ok)})
++ck('main_unchanged',git('rev-parse','main').decode().strip()==BASE)
++ck('repair_parent_is_main_baseline',git('rev-parse',REPAIR+'^').decode().strip()==BASE)
++ck('complete_cherry_pick_tree_equals_repair',git('rev-parse',REPAIR+'^{tree}')==git('rev-parse',RECOVERY+'^{tree}'))
++ck('recovery_is_ancestor_of_review_head',sp.run(['git','merge-base','--is-ancestor',RECOVERY,'HEAD'],cwd=R).returncode==0)
++pcbpaths=[p for p in git('ls-tree','-r','--name-only',REPAIR,'PCB/main').decode().splitlines()]
++ck('entire_PCB_main_unchanged_after_recovery',all((R/p).read_bytes()==git('show',REPAIR+':'+p) for p in pcbpaths))
++for p in ('inherited-drc.json','inherited-erc.json'):
++    j=read('docs/revision-r2/two-part-case/validation/'+p)
++    issues=j.get('violations',[])+j.get('unconnected_items',[])+j.get('schematic_parity',[])+[x for s in j.get('sheets',[]) for x in s.get('violations',[])]
++    ck('fresh_zero_all_issues:'+p,not issues)
++ck('fresh_schematic_net_equivalence',nets('docs/revision-r2/two-part-case/validation/inherited-netlist.xml')==nets('docs/revision-r2/pcb-repair/validation/final-netlist.xml'))
++h=read('housing/validation/mechanical.json');g=read('housing/validation/gui-inspection.json')
++ck('all_saved_CAD_checks_pass',h['status']=='PASS_GEOMETRIC_PROTOTYPE' and not h['failed'])
++ck('real_GUI_macro_checks_pass',g['status']=='PASS_REAL_FREECAD_GUI_CONTROLS')
++ck('verified_GUI_native_hash_matches',g['native_sha256']==sha((R/'housing/smove-r2-enclosure.FCStd').read_bytes()))
++ck('exactly_two_active_STLs',sorted(p.name for p in (R/'housing/dist').glob('*.stl'))==['base.stl','lid.stl'])
++ck('release_holds_retained',not read('housing/status.json')['manufacturing_release'] and not read('housing/status.json')['charging_release'])
++if '--check' in sys.argv:
++    manifest=json.loads(M.read_text());files=manifest['final_repository_files']
++    ck('manifest_exact_repository_file_set',set(files)==set(paths())-{str(M.relative_to(R))})
++    ck('all_manifest_SHA256_match',all((R/p).is_file() and sha((R/p).read_bytes())==v['sha256'] for p,v in files.items()))
++else:
++    focus=['README.md','PCB/main/parts-main.json','PCB/main/native-layout-contract.json','scripts/r2/integrated/sync.py','scripts/r2/integrated/pcb_review_policy.py',
++      'scripts/r2/enclosure/generate.py','scripts/r2/enclosure/verify.py','scripts/r2/enclosure/inspection.py','scripts/r2/enclosure/present.py','scripts/r2/enclosure/seal_delivery.py',
++      'housing/InspectAssembly.FCMacro','housing/PRINTING-ASSEMBLY.md','housing/BOM.csv','housing/status.json']
++    (V/'critical-source.patch').write_bytes(git('diff','--no-ext-diff','--no-color','--unified=0',BASE,'--',*focus))
++    put('docs/revision-r2/two-part-case/validation/delivery-checks.json',{
++      'status':'PASS' if all(c['passed'] for c in checks) else 'FAIL','checks':checks,'base_main':BASE,
++      'original_repair':git('rev-parse',REPAIR).decode().strip(),'complete_recovery_commit':git('rev-parse',RECOVERY).decode().strip(),
++      'recovered_tree':git('rev-parse',RECOVERY+'^{tree}').decode().strip(),'PCB_main_files_verified':len(pcbpaths),
++      'CAD_checks':len(h['checks']),'dimensions_LWH_mm':[42.,36.8,16.6],'manufacturing_release':False,'merged':False})
++    housingfiles=[p for p in paths() if (p.startswith('housing/') or p.startswith('scripts/r2/enclosure/') or p in ('scripts/freecad/bootstrap.py','scripts/freecad/run.py')) and p!='housing/dist/manifest.json']
++    put('housing/dist/manifest.json',{'schema':'smove.two-part-housing.manifest.v1','manufacturing_release':False,'printed_parts':['Base','Lid'],
++      'pcb_source_sha256':h['pcb_hash'],'files':{p:{'sha256':sha((R/p).read_bytes()),'bytes':(R/p).stat().st_size} for p in housingfiles}})
++    inherited=git('diff-tree','--no-commit-id','--name-only','-r',REPAIR).decode().splitlines()
++    retired=git('diff','--name-only','--diff-filter=D',BASE).decode().splitlines()
++    put(str(M.relative_to(R)),{'schema':'smove.complete-combined-delivery.v1','review_branch':git('branch','--show-current').decode().strip(),
++      'main_baseline':BASE,'complete_inherited_repair':git('rev-parse',REPAIR).decode().strip(),'recovered_as':git('rev-parse',RECOVERY).decode().strip(),
++      'integration_requirement':'Include complete recovery commit AND subsequent casing commit together. NO MERGE until user review.',
++      'manufacturing_release':False,'scope':'Complete final repository file set, including archives; NOT a list of approved fabrication inputs. Active PCB: PCB/main; active case: housing. Failed routing attempts are evidence only.',
++      'self_hash_policy':'Only this manifest file excludes its own hash; Git commit identifies it.',
++      'inherited_repair_files':{p:{'original_sha256':sha(git('show',REPAIR+':'+p)),'still_present':(R/p).is_file()} for p in inherited},
++      'retired_from_main':retired,
++      'final_repository_files':{p:{'sha256':sha((R/p).read_bytes()),'bytes':(R/p).stat().st_size} for p in paths() if R/p!=M}})
++failed=[c['check'] for c in checks if not c['passed']]
++print(json.dumps({'status':'PASS' if not failed else 'FAIL','checks':len(checks),'failed':failed,'PCB_files':len(pcbpaths),'mode':'read-only check' if '--check' in sys.argv else 'sealed'},indent=2))
++if failed:sys.exit(1)
+diff --git a/scripts/r2/enclosure/verify.py b/scripts/r2/enclosure/verify.py
+index 4875f6f..0ef5b6d 100644
+--- a/scripts/r2/enclosure/verify.py
++++ b/scripts/r2/enclosure/verify.py
+@@ -1,2 +1,4 @@
+-"""Independent fresh native/STEP/STL and compact-stack geometric screens, not physical qualification."""
+-import json,hashlib,math
++"""Read-only CAD fit verification. No PCB or FCStd saves; fail on any failed check.
++Geometric checks are NOT print, strength, insulation, pouch or RF qualification.
++"""
++import hashlib,json,math,sys
+@@ -4,50 +6,31 @@ from pathlib import Path
+-import FreeCAD as A
+-import Part,Mesh
+-ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing';EX=OUT/'dist';CACHE=ROOT/'.cache/housing';build=json.loads((CACHE/'build.json').read_text());d=A.openDocument(str(OUT/'smove-r2-enclosure.FCStd'));d.recompute();checks=[]
+-def check(n,ok,detail=None):checks.append(dict(check=n,passed=bool(ok),detail=detail))
+-def volume(a,b):return a.common(b).Volume if a.BoundBox.intersect(b.BoundBox) else 0.
+-def sep(n,a,b):v=volume(a,b);check(n,v<1e-6,dict(overlap_mm3=v))
+-def moved(s,x=0,y=0,z=0):s=s.copy();s.translate(A.Vector(x,y,z));return s
+-refs=[d.getObject(n) for n in build['reference_objects']];hw=[d.getObject(n) for n in build['hardware_objects']];cs=[d.getObject(n) for n in build['clearance_objects']];case=[d.Base,d.Lid,d.BatteryDivider]
+-for o in case+refs+hw:check('valid_solid:'+o.Name,o.Shape.isValid() and len(o.Shape.Solids)==1 and o.Shape.isClosed())
+-check('editable_native_CSG',d.Base.TypeId=='Part::Cut' and d.Lid.TypeId=='Part::Cut' and d.Parameters.TypeId=='Spreadsheet::Sheet')
+-for i,a in enumerate(case):
+- for b in case[i+1:]:sep('case:'+a.Name+':'+b.Name,a.Shape,b.Shape)
+- for o in refs+hw+cs:
+-  if getattr(o,'Role','')=='rf_keepout':continue
+-  sep('clear:'+a.Name+':'+o.Name,a.Shape,o.Shape)
+-for i,a in enumerate(refs+hw):
+- for b in (refs+hw)[i+1:]:
+-  if a.Role=='harness' or b.Role=='harness':
+-   other=b if a.Role=='harness' else a
+-   if (a.Name.startswith('BareWire') and b.Name=='SolderFillet'+a.Name[-1]) or (b.Name.startswith('BareWire') and a.Name=='SolderFillet'+b.Name[-1]):continue
+-  sep('parts:'+a.Name+':'+b.Name,a.Shape,b.Shape)
+-for o in refs+hw+[d.BatteryDivider]:
+- if o.Name not in ('MainPCB','Main_U1'):sep('RF:'+o.Name,d.RF_NO_BATTERY_HARNESS_METAL.Shape,o.Shape)
+-for c in cs:
+- if 'MatingInsertion' in c.Name:
+-  for o in refs+hw+[d.BatteryDivider]:
+-   if o.Name==c.Name.replace('_MatingInsertion','') or o.Role=='harness':continue
+-   sep('plug:'+c.Name+':'+o.Name,c.Shape,o.Shape)
+-# J2 is now PTH wire pads: no mate, no header, no connector-envelope exception.
+-check('obsolete_J2_mate_removed',d.getObject('Main_J2_MatingInsertion') is None and d.getObject('Main_J2') is None)
+-check('two_wire_routes',len([o for o in refs if o.Name.startswith('BatteryWire')])==2)
+-for i,x in enumerate((20.03,22.57),1):
+- wire=d.getObject('BatteryWire'+str(i));bare=d.getObject('BareWire'+str(i))
+- check('wire_assumed_OD:'+str(i),abs(wire.EnvelopeRadius.Value-.6)<1e-6)
+- check('wire_bend_reserve:'+str(i),abs(wire.BendRadius.Value-2.)<1e-6)
+- check('tinned_bundle_in_PTH:'+str(i),abs(bare.Shape.BoundBox.XLength-.7)<1e-6 and d.MainPCB.Shape.common(bare.Shape).Volume<1e-6)
+- check('solder_top_trim:'+str(i),abs(d.getObject('SolderFillet'+str(i)).Shape.BoundBox.ZMax-12.4)<1e-6)
+- sep('wire_vs_full_pack_reserve:'+str(i),wire.Shape,d.BatteryAcceptance_21x31x4_3.Shape)
+- # The guide and lacing bores must be actual negative space in native base, not drawings.
+- for label,xx,yy,r in [('wire',x,4.2,.6),('lacing',(18.2,24.1)[i-1],4.7,.2)]:
+-  probe=Part.makeCylinder(r,1.,A.Vector(xx,yy,5.1));sep('strain_relief_passage:'+label+str(i),probe,d.Base.Shape)
+-check('lacing_bridge_connected',len(d.Base.Shape.Solids)==1 and d.WireLacingBridge.Shape.Volume>15)
+-# Verify every generated component against CURRENT native extraction, not an old file hash alone.
+-inputs=json.loads((CACHE/'input-geometry.json').read_text())['boards']['main']
+-for r,f in inputs['footprints'].items():
+- if not f.get('fitted'):continue
+- bb2=d.getObject('Main_'+r).Shape.BoundBox;x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm']
+- check('current_component_geometry:'+r,max(abs(a-b) for a,b in zip([bb2.XMin,bb2.YMin,bb2.ZMin,bb2.XMax,bb2.YMax,bb2.ZMax],[x0,y0,10.8+z0,x1,y1,10.8+z1]))<1e-6)
+-# One native M3 hole, two positive corner keys and retained non-contact sensor frame.
+-check('one_M3_plus_positive_keys',len(build['fastener_xy_mm'])==1 and all(d.getObject(n) for n in ['KeyLower1','KeyLower2','KeyStop1','KeyStop2','KeyUpper1','KeyUpper2','LidHookTongue1','LidHookTongue2']))
++import FreeCAD as A,Part,Mesh
++R=Path(__file__).resolve().parents[3]; H=R/'housing'; V=H/'validation'
++D=A.openDocument(str(H/'smove-r2-enclosure.FCStd')); B=json.loads((V/'build.json').read_text())
++checks=[]
++def ck(n,ok,detail=None):checks.append(dict(check=n,passed=bool(ok),detail=detail))
++def sh(n):return D.getObject(n).Shape
++def overlap(a,b):return a.common(b).Volume
++def separated(n,a,b):
++    vol=overlap(a,b);ck(n,vol<1e-6,round(vol,9));return vol
++def moved(shape,x=0,y=0,z=0):
++    q=shape.copy();q.translate(A.Vector(x,y,z));return q
++def dist(a,b):return a.distToShape(b)[0]
++def bounds(shape):
++    b=shape.BoundBox;return [b.XMin,b.YMin,b.ZMin,b.XMax,b.YMax,b.ZMax]
++base,lid,pcb=sh('Base'),sh('Lid'),sh('MainPCB')
++physical=['Base','Lid']+B['reference_objects']+B['hardware_objects']
++for n in physical:ck('valid_solid:'+n,sh(n).isValid() and len(sh(n).Solids)>=1,{'solids':len(sh(n).Solids),'volume':sh(n).Volume})
++ck('exactly_two_printed_parts',B['printed_parts']==2 and sorted(o.Name for o in D.Objects if getattr(o,'Role','')=='print' and o.TypeId!='App::Link')==['Base','Lid'])
++ck('no_removable_divider',D.getObject('BatteryDivider') is None and D.getObject('ViewDivider') is None)
++ck('source_pcb_hash',hashlib.sha256((R/'PCB/main/smove-r2-main.kicad_pcb').read_bytes()).hexdigest()==B['input_hash'])
++separated('base_lid_no_penetration',base,lid)
++for n in B['reference_objects']+B['hardware_objects']:
++    for case in ['Base','Lid']:separated(case+'_no_penetration:'+n,sh(case),sh(n))
++components=[n for n in B['reference_objects'] if n.startswith('Main_')]
++for n in ['BatteryWire1','BatteryWire2','BareWire1','BareWire2','ClosureScrew','ClosureNut']:
++    separated('pcb_no_penetration:'+n,pcb,sh(n))
++    for c in components:separated('component_clear:'+n+':'+c,sh(c),sh(n))
++reserve=sh('BatteryAcceptance_21x31x4_3')
++for n in ['Base','Lid','MainPCB','Main_USB_ShellTails','ClosureScrew','ClosureNut']:
++    separated('pack_reserve_clear:'+n,reserve,sh(n))
++# The two leads intentionally end at the pack's side boundary; do not pretend those terminals are pack geometry.
+@@ -55,47 +38,78 @@ for i in (1,2):
+- for name,z,up in [('KeyLower',10.8,True),('KeyUpper',11.8,False)]:
+-  shape=d.getObject(name+str(i)).Shape
+-  check(f'key_bearing_z:{name}{i}',abs((shape.BoundBox.ZMax if up else shape.BoundBox.ZMin)-z)<1e-6)
+-  probe=moved(shape,z=.01 if up else -.01);check(f'positive_key_PCB_contact:{name}{i}',volume(probe,d.MainPCB.Shape)>.003)
+-check('key_separation_mm',abs(d.KeyStop1.Shape.BoundBox.XMin-d.KeyStop2.Shape.BoundBox.XMin)>=24.)
+-# Show that small attempted XY rotations hit solid keys, not merely clamp friction.
+-for angle in (-1.,1.):
+- rotated=d.MainPCB.Shape.copy();rotated.rotate(A.Vector(3.6,35.4,10.8),A.Vector(0,0,1),angle)
+- check('rotation_stopped:'+str(angle),volume(rotated,d.Base.Shape)>1e-5)
+-for i in (1,2):
+- hook=d.getObject('LidHookTongue'+str(i)).Shape
+- check('hook_resists_vertical_lift:'+str(i),volume(moved(hook,z=.5),d.Base.Shape)>1e-5)
+-
+-bb=Part.makeCompound([o.Shape for o in case+hw]).BoundBox;dims=[bb.XLength,bb.YLength,bb.ZLength];sorted_dims=sorted(dims,reverse=True)
+-check('outer_measured_bounds',all(v>0 for v in dims),dims)
+-full=Part.makeCompound([o.Shape for o in case+refs+hw]).BoundBox
+-check('all_installed_items_within_reported_bounds',max(abs(a-b) for a,b in zip([full.XMin,full.YMin,full.ZMin,full.XMax,full.YMax,full.ZMax],[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax]))<1e-6)
+-# This is a requirement report, not a falsely passing release assertion.
+-target=dict(target_sorted_mm=[50,30,20],actual_sorted_mm=sorted_dims,met=all(a<t for a,t in zip(sorted_dims,[50,30,20])),limiter='Nominal CAD only: no print/cell/wire/fastener tolerance approval')
+-for i,(x,y) in enumerate(build['fastener_xy_mm'],1):
+- # Acceptance SCREEN, not evidence that the owner's screws meet these bounds.
+- worst=Part.makeCylinder(1.5,8.1,A.Vector(x,y,15.4-8.1)).fuse(Part.makeCylinder(2.84,3,A.Vector(x,y,15.4)))
+- for o in case+refs:sep(f'screw_8_1_screen:{i}:'+o.Name,worst,o.Shape)
+- check(f'M3:{i}:tip_to_divider_screen',15.4-8.1-7.1>=.1999,15.4-8.1-7.1)
+- check(f'M3:{i}:7_9_full_nut_screen',15.4-7.9<7.6,7.6-(15.4-7.9))
+- check(f'M3:{i}:engagement_mm',abs(d.getObject(f'ClosureNut{i}').Shape.BoundBox.ZLength-2.4)<1e-6,2.4)
+- for name,z in [('LowerBearing',10.8),('LidBearingBoss',11.8)]:
+-  bearing=d.getObject(name+str(i)).Shape;zface=bearing.BoundBox.ZMax if name=='LowerBearing' else bearing.BoundBox.ZMin
+-  check(f'bearing_z:{i}:{name}',abs(zface-z)<1e-6)
+-  sl=Part.makeCylinder(3.4,.01,A.Vector(x,y,10.8 if name=='LowerBearing' else 11.79)).cut(Part.makeCylinder(1.7,.02,A.Vector(x,y,10.795 if name=='LowerBearing' else 11.785)))
+-  check(f'annular_PCB_contact:{i}:{name}',volume(sl,d.MainPCB.Shape)>.25)
+-  check(f'no_U2_clamp:{i}:{name}',bearing.distToShape(d.Main_U2.Shape)[0]>5)
+- for shift in (0,1,3,6):sep(f'nut_entry:{i}:{shift}',moved(d.getObject(f'ClosureNut{i}').Shape,x=shift*(1 if i==1 else -1)),d.Base.Shape)
+-check('battery_ceiling_gap',d.BatteryDivider.Shape.BoundBox.ZMin-d.BatteryAcceptance_21x31x4_3.Shape.BoundBox.ZMax>=.1999)
+-check('solder_tail_barrier_gap',d.Main_USB_ShellTails.Shape.BoundBox.ZMin-d.BatteryDivider.Shape.BoundBox.ZMax>=2.4999)
+-for obj in [d.MainPCB,d.BatteryDivider]:
+- for z in (0,.2,1,3,7,15,25):sep(f'top_insertion:{obj.Name}:{z}',moved(obj.Shape,z=z),d.Base.Shape)
+-for name in ('base','lid','divider'):
+- mesh=Mesh.Mesh(str(EX/(name+'.stl')));check('watertight_STL:'+name,mesh.isSolid() and mesh.CountFacets>0)
+-shape=Part.Shape();shape.read(str(EX/'smove-r2-printable.step'));check('printable_STEP_three_solids',shape.isValid() and len(shape.Solids)==3)
+-source={o.Name:(o.Shape.Volume,str(o.Placement)) for o in case+refs+hw};groups=build['inspection_groups']
+-for n in groups:d.getObject(n).Placement.Base=A.Vector(3,5,7)
+-d.recompute();check('independently_movable_groups',all(o.TypeId=='App::Part' for o in [d.getObject(n) for n in groups]));check('display_moves_do_not_mutate_sources',source=={o.Name:(o.Shape.Volume,str(o.Placement)) for o in case+refs+hw})
+-for n in groups:d.getObject(n).Placement=A.Placement()
+-d.recompute();check('restored_display_groups',all(d.getObject(n).Placement.Base.Length==0 for n in groups))
+-fails=[c for c in checks if not c['passed']];report=dict(status='PASS_GEOMETRIC_SCREENS' if not fails else 'FAIL',checks=checks,failures=fails,check_count=len(checks),measured_external_mm=dims,target=target,physical_validation='NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/screw fit and lacing pull/flex test, RF/thermal/magnetic performance',sources={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [OUT/'smove-r2-enclosure.FCStd',ROOT/'PCB/main/smove-r2-main.kicad_pcb']})
+-(OUT/'validation').mkdir(exist_ok=True);(OUT/'validation/mechanical.json').write_text(json.dumps(report,indent=2)+'\n');(OUT/'validation/build.json').write_text(json.dumps(build,indent=2)+'\n');print(json.dumps(dict(status=report['status'],count=len(checks),failures=fails,dimensions=dims,target=target),indent=2));raise SystemExit(bool(fails))
++    separated('cell_wire_no_penetration:'+str(i),sh('BatteryCandidate_UNQUALIFIED'),sh('BatteryWire'+str(i)))
++separated('independent_insulated_leads',sh('BatteryWire1'),sh('BatteryWire2'))
++rf=sh('RF_NO_BATTERY_HARNESS_METAL');rf_dist={}
++for n in ['BatteryAcceptance_21x31x4_3','BatteryWire1','BatteryWire2','BareWire1','BareWire2','SolderFillet1','SolderFillet2','ClosureScrew','ClosureNut']:
++    separated('RF_exclusion:'+n,rf,sh(n));rf_dist[n]=dist(rf,sh(n))
++for case in ['Base','Lid']:separated('USB_plug_clear:'+case,sh('USBPlugReserve'),sh(case))
++# Full translational sweep of maximum admitted pack through the south entry (lid OFF).
++pack_sweep=Part.makeBox(21.,71.,4.3,A.Vector(2.,-33.5,1.8))
++separated('pack_insertion_continuous_swept_volume',base,pack_sweep)
++# Up/down PCB loading sampled at dense final approach plus larger heights. It is top-loaded, not slid over parts.
++pcbgroup=Part.makeCompound([pcb]+[sh(n) for n in components])
++for z in (0,.1,.25,.5,1,2,4,8,16,30):separated('PCB_vertical_insertion_z'+str(z),base,moved(pcbgroup,z=z))
++# Actual lid sequence: down 1.5 mm south of final, then north 1.5 mm; screw fitted LAST.
++fixed=Part.makeCompound([base,pcb]+[sh(n) for n in B['reference_objects'] if n!='MainPCB']+[sh('ClosureNut')])
++for z in (12,6,3,1,.5,.2,0):separated('lid_lowering_z'+str(z),fixed,moved(lid,y=-1.5,z=z))
++for y in (-1.5,-1.25,-1.,-.75,-.5,-.25,0):separated('lid_sliding_y'+str(y),fixed,moved(lid,y=y))
++# Nut side-load BEFORE lid; seat against roof. Its entry is blocked by the lid door after assembly.
++for x in (-8,-6,-4,-2,-1,0):separated('nut_side_insertion_x'+str(x),base,moved(sh('ClosureNut'),x=x))
++# Assembly dimensions use physical objects only, not RF/USB reserves or display offsets.
++bb=Part.makeCompound([sh(n) for n in physical]).BoundBox;dims=[bb.XLength,bb.YLength,bb.ZLength]
++ck('actual_external_dimensions',all(abs(a-b)<1e-6 for a,b in zip(dims,[36.8,42.,16.6])),dims)
++ck('pcb_size_and_body_frame',all(abs(a-b)<1e-6 for a,b in zip(bounds(pcb),[0,9,9.6,25,39,10.6])),bounds(pcb))
++ck('IMU_above_PCB_outward',sh('Main_U2').BoundBox.ZMin>=10.6)
++# Dimensional acceptance stack: not probabilistic, no RSS and no reliance on solder mask.
++metrics={
++ 'battery_acceptance_mm':[31,21,4.3], 'battery_nominal_mm':[30,20,3],
++ 'battery_reserved_top_gap_mm':6.6-6.1,'barrier_thickness_mm':.8,
++ 'USB_tail_to_barrier_nominal_mm':8.4-7.4,'USB_tail_to_barrier_with_0_15_print_error_mm':8.4-7.4-.15,
++ 'groove_free_height_mm':11.15-9.6,'groove_min_no_clamp_play_mm':1.55-1.1-.15-.1,
++ 'XY_each_side_nominal_mm':.3,'XY_each_side_min_mm':.3-.15-.1,
++ 'H1_stop_gap_nominal_mm':9.6-9.25,'H1_stop_gap_min_mm':.35-.15-.15,
++ 'H1_stop_radius_mm':2.2,'H1_filled_copper_radius_mm':3.442612,
++ 'H1_stop_to_copper_nominal_mm':3.442612-2.2,
++ 'H1_stop_to_copper_adverse_stack_mm':3.442612-2.2-.3-.15-.15-.1,
++ 'screw_shank_clearance_radial_mm':1.8-1.5,'head_recess_clearance_radial_mm':3.5-2.84,
++ 'lid_bearing_thickness_mm':13.2-12.,'lid_bearing_min_mm':1.2-.15-.15,
++ 'nut_capture_roof_mm':12.-8.,'nut_full_thread_length_mm':2.4,'effective_thread_overlap_after_0_4_chamfer_reserve_mm':1.7,
++ 'screw_tip_z_mm':5.2,'screw_tip_min_floor_mm':5.2-4.2-.29-.15,
++ 'nut_engaged_nominal_mm':min(13.2,8.)-max(5.2,5.6),
++ 'nut_engaged_adverse_mm':min(13.2-.15,8.-.15)-max(5.2+.29+.15,5.6+.15),
++ 'screw_head_to_PCB_nominal_mm':dist(sh('ClosureScrew'),pcb),
++ 'hardware_to_pack_reserve_mm':min(dist(sh(n),reserve) for n in ('ClosureScrew','ClosureNut')),
++ 'RF_distances_mm':rf_dist,
++ 'button_access_diameter_mm':3.3,'RGB_access_diameter_mm':3.8,
++ 'lid_hook_nominal_engagement_mm':1.0,'lid_hook_adverse_engagement_mm':1.-.2-.15-.15,
++ 'PCB_groove_support_span_y_mm':28.,'PCB_groove_support_span_x_mm':24.7,
++ 'wire_OD_max_mm':1.2,'wire_centerline_bend_radius_mm':2.,
++}
++for n in ['battery_reserved_top_gap_mm','USB_tail_to_barrier_with_0_15_print_error_mm','groove_min_no_clamp_play_mm','XY_each_side_min_mm','H1_stop_gap_min_mm','H1_stop_to_copper_adverse_stack_mm','lid_bearing_min_mm','screw_tip_min_floor_mm','nut_engaged_adverse_mm','lid_hook_adverse_engagement_mm']:
++    ck('positive_tolerance_stack:'+n,metrics[n]>0,metrics[n])
++ck('screw_is_not_at_H1',B['screw_xy_mm']!=B['H1_xy_mm'])
++ck('nut_effective_engagement_min',metrics['nut_engaged_adverse_mm']>=2.)
++# Gauge requirements cover eccentricity as well as printer error.
++ck('head_recess_tolerance_stack',3.5-2.84-.3-.15-.15>0,3.5-2.84-.3-.15-.15)
++ck('blind_bore_tolerance_stack',metrics['screw_tip_min_floor_mm']>=.5)
++# Individual STEP/STL consistency, solid closure/manifold and volume.
++exports={}
++for name in ('base','lid'):
++    mesh=Mesh.Mesh(str(H/'dist'/f'{name}.stl'))
++    nonmanifold=mesh.hasNonManifolds();solid=mesh.isSolid();consistent=not mesh.hasNonUniformOrientedFacets()
++    ck('STL_closed_manifold:'+name,solid and not nonmanifold and consistent,{'solid':solid,'nonmanifolds':nonmanifold,'consistent_orientation':consistent})
++    vol=abs(mesh.Volume);native=sh(name.capitalize()).Volume
++    ck('STL_volume_matches:'+name,abs(vol-native)/native<.005,{'native':native,'stl':vol})
++    exports[name]={'facets':mesh.CountFacets,'stl_volume_mm3':vol,'native_volume_mm3':native,'closed_manifold':solid and not nonmanifold,'consistent_orientation':consistent}
++step=Part.Shape();step.read(str(H/'dist/smove-r2-printable.step'))
++ck('STEP_two_valid_solids',step.isValid() and len(step.Solids)==2,len(step.Solids))
++ck('STEP_volume_matches_native',abs(step.Volume-base.Volume-lid.Volume)<1e-4)
++assembly_step=Part.Shape();assembly_step.read(str(H/'dist/smove-r2-assembly.step'))
++ck('assembly_STEP_valid_matching_solid_count',assembly_step.isValid() and len(assembly_step.Solids)==sum(len(sh(n).Solids) for n in physical))
++ck('assembly_STEP_volume_matches_native',abs(assembly_step.Volume-sum(sh(n).Volume for n in physical))<1e-3)
++for n in B['inspection_groups']:ck('movable_native_group:'+n,D.getObject(n).TypeId=='App::Part')
++result={'status':'PASS_GEOMETRIC_PROTOTYPE' if all(c['passed'] for c in checks) else 'FAIL','manufacturing_release':False,
++        'measured_external_mm':dims,'metrics':metrics,'exports':exports,'checks':checks,'failed':[c for c in checks if not c['passed']],
++        'method':'Open saved FCStd, native BRep intersections/distances, pack continuous translation swept solid, sampled PCB/lid/nut insertion, independent STEP and STL imports. No FEA or physical qualification.',
++        'pcb_hash':B['input_hash']}
++(V/'mechanical.json').write_text(json.dumps(result,indent=2)+'\n')
++print(json.dumps({'status':result['status'],'checks':len(checks),'failed':result['failed'],'external_mm':dims},indent=2))
++if result['failed']:sys.exit(1)
+diff --git a/scripts/r2/integrated/pcb_review_policy.py b/scripts/r2/integrated/pcb_review_policy.py
+new file mode 100644
+index 0000000..bc0196e
+--- /dev/null
++++ b/scripts/r2/integrated/pcb_review_policy.py
+@@ -0,0 +1,16 @@
++"""PCB-only review release policy; does not change native geometry or routing."""
++def apply(j):
++    j['status'] = 'PCB REVIEW ONLY; HOUSING INCOMPATIBLE / UNVALIDATED; NOT RELEASED'
++    j['manufacturing_release'] = False
++    j['housing_compatibility'] = {
++        'status': 'INCOMPATIBLE_UNVALIDATED',
++        'reason': 'H1 and BAT wire geometry changed from main 554e4fe. No casing changes imported or validated.',
++        'legacy_assumptions': 'Any retained enclosure coordinates, strain-relief paths or retention descriptions are historical, not current assembly instructions.'
++    }
++    j['mounting']['scheme'] = 'One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.'
++    j['mounting']['release_blocker'] = 'Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.'
++    j['mounting']['component_clearance_policy'] = 'Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval.'
++    j['retention_policy'] = {'status': 'UNVALIDATED', 'contacts': 'No approved casing or load-bearing contact scheme in this PCB-only revision.'}
++    j['battery_wire']['strain_relief'] = 'REQUIRED BUT UNVALIDATED: design and pull/flex qualify insulated lead strain relief outside RF exclusion. No casing routing imported.'
++    j['bottom_envelope']['J2'] = 'PTH leads emerge from body-facing underside; insulation/trim/strain relief and final wire path require assembly validation.'
++    return j
+diff --git a/scripts/r2/integrated/sync.py b/scripts/r2/integrated/sync.py
+index 01e6318..7efdeea 100644
+--- a/scripts/r2/integrated/sync.py
++++ b/scripts/r2/integrated/sync.py
+@@ -34,2 +34,2 @@ f=fps['J2'];parts['J2']['placement']=[*p.ToMM(f.GetPosition()),f.GetOrientationD
+-j['components']['J2']=dict(ref='J2',mpn='PCB PTH wire pads - not fitted hardware',fitted=False,body_aabb_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),courtyard_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),anchor_native_xy_mm=list(p.ToMM(f.GetPosition())),rotation_ccw_deg=0,z_mm_from_board_bottom=[0,1])
+-j['anchors']['J2']={'center_native_xy_mm':list(p.ToMM(f.GetPosition())),'pins':{a.GetNumber():{'native_xy_mm':list(p.ToMM(a.GetPosition())),'net':a.GetNetname()} for a in f.Pads()},'wire_exit':'Through board to protected lower wire bay; no connector or mating reserve'}
++j['components']['J2']=dict(ref='J2',mpn='PCB PTH wire pads - not fitted hardware',fitted=False,body_aabb_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),courtyard_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),anchor_native_xy_mm=list(p.ToMM(f.GetPosition())),rotation_ccw_deg=f.GetOrientationDegrees(),z_mm_from_board_bottom=[0,1])
++j['anchors']['J2']={'center_native_xy_mm':list(p.ToMM(f.GetPosition())),'pins':{a.GetNumber():{'native_xy_mm':list(p.ToMM(a.GetPosition())),'net':a.GetNetname()} for a in f.Pads()},'wire_exit':'Through board beside shielded module body, then WEST side descent behind RF boundary; never through antenna overhang'}
+@@ -50 +50 @@ j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['
+-j.update(schema='smove.compact-placement.interface.v4',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')
++j.update(schema='smove.imu-support.interface.v5',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')
+@@ -52 +52,3 @@ j['connector_selection']={'status':'NO_FITTED_BATTERY_CONNECTOR','J2':'Two plate
+-j['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'Two lacing bores and captive bridge in lower case, paired insulated leads; pull test mandatory; solder joint is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}
++j['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'West-wall bridge, two guide bores and two nylon lacing bores; paired OD<=1.2mm leads, R2 swept bends; pull/flex test mandatory, solder is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}
++j['antenna_3d']['housing_recommendation_status']='15mm clearance in ALL directions is recommended by Espressif but NOT met by the existing compact housing/under-board pack. The retained overhang forward/side exclusion is a geometric constraint, not proof of RF compliance. No wire or pack may enter it; qualify final RF on body.'
++j['mounting']['sensor_warning']='Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.'
+@@ -54 +56,3 @@ j['bottom_envelope'].pop('J3',None)
+-j['bottom_envelope']['J2']='PTH leads from underside; trim top protrusion <=0.6mm, insulate underside down to wire insulation, route above divider before lower wire bay'
++j['bottom_envelope']['J2']='PTH leads from underside; trim top protrusion <=0.6mm, insulate underside down to wire insulation, route above divider then through the relieved west edge into the side lacing bay'
++from pcb_review_policy import apply as apply_pcb_review_policy
++apply_pcb_review_policy(j)

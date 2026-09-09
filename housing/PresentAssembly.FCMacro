@@ -12,6 +12,6 @@ def run_presentation():
         global smove_doc,smove_panel
         smove_doc,smove_panel=present.main()
     except Exception:
-        (root/'.cache/integrated/gui-error.log').write_text(traceback.format_exc())
+        (root/'.cache/housing/gui-error.log').write_text(traceback.format_exc())
         raise
 run_presentation()

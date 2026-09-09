@@ -10,23 +10,17 @@
     "grafted,grafted",
     "145529fe741292ff0b3977a01195bf0247425794"
   ],
+  "manufacturing_release": false,
   "checks": [
-    "Delivered InspectAssembly.FCMacro executed successfully",
-    "FCStd opened with real OpenGL viewport",
-    "Lift lid preserves main PCB and divider placements",
-    "Explode button and slider move native groups",
-    "Selected base offset changes group only",
-    "Restore returns ALL group/link transforms to assembled",
-    "Fixed engineering source placements and volumes unchanged",
-    "Native saved with assembled default and distinct named parts"
+    "Native FCStd opened in real FreeCAD GUI",
+    "Delivered InspectAssembly macro executed",
+    "Lift lid leaves PCB fixed",
+    "Explode moves all seven display groups",
+    "Battery manual Y offset moves group only",
+    "Restore resets all group transforms",
+    "Engineering source placements/volumes unchanged",
+    "Native saved in assembled display state"
   ],
-  "method": "Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.",
-  "desktop_agent": "Desktop observation available this turn; programmatic Qt GUI macro tests, not native GUI PCB routing.",
-  "exploded_display_is_not_alignment_geometry": true,
-  "native_sha256": "7488be63d8eea92798c8813504c38cb9f519d84eeb20bed24051c11f3e4ff332",
-  "source_sha256": {
-    "scripts/r2/enclosure/present.py": "7ae5b06e6c5824a8bc03d9a471dac596d4fc9bd4e000230f3e196d5c63215767",
-    "scripts/r2/enclosure/inspection.py": "7fc27a92cdf21577ce33c64b68dc618177adbe5753789d831e3824a3fcefc894",
-    "housing/InspectAssembly.FCMacro": "4416f469fd5d9c694105c007d92b4598b6f052cd9ab9429faf966ec9c9c910d3"
-  }
+  "method": "Explicit GUI macro, Qt button activation and activeView renders. Actual native desktop screenshot URLs and visually verified states are in docs/revision-r2/two-part-case/images.md.",
+  "native_sha256": "118e9259939d35e1c1824c0d1e21faf53e8e55ccad9b15c2dd47ca571e7c2e62"
 }

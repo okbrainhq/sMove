@@ -4,10 +4,10 @@ No file writes, source placement edits, constraints, downloads or automatic macr
 import FreeCAD as A
 import FreeCADGui as G
 from PySide import QtCore, QtWidgets
-GROUPS=('ViewBase','ViewLid','ViewMain','ViewDivider','ViewBattery','ViewCables','ViewHardware')
+GROUPS=('ViewBase','ViewLid','ViewMain','ViewBattery','ViewCables','ViewHardware','ViewInsulation')
 COLORS={'print':(.32,.55,.82),'main_pcb':(.08,.52,.29),'divider':(.8,.8,.72),
         'main_component':(.24,.26,.29),'carrier_component':(.24,.26,.29),'tail':(.7,.7,.7),
-        'battery':(.94,.68,.20),'harness':(.86,.20,.12),'solder':(.75,.75,.78),'hardware':(.72,.72,.76)}
+        'battery':(.94,.68,.20),'harness':(.86,.20,.12),'insulator':(.85,.65,.2),'lacing':(.9,.9,.9),'solder':(.75,.75,.78),'hardware':(.72,.72,.76)}
 
 def prepare(doc):
     assert doc.getObject('InspectionAssembly') and all(doc.getObject(n) for n in GROUPS), 'Open the generated R2 enclosure first.'
