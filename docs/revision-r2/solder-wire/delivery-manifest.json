@@ -192,7 +192,7 @@
       "path": "PCB/main/dist/manifest.json",
       "status": "M",
       "before_sha256": "acc456b239cb5c9e60c6d269cb40fbaf9d1341cf24c851263af96974a3e62c8f",
-      "after_sha256": "bc93ff92731486783c6091dc4d47269be66db78195549cc9e26c83e7bd4db4f5",
+      "after_sha256": "1b5f5d8c2a0b54cdb7f9da2da5c5d085b0d88b0f20c3ee8bbb90a1d3aaa52374",
       "self_hashed_by_git_tree": false
     },
     {
@@ -269,7 +269,7 @@
       "path": "PCB/main/interface.json",
       "status": "M",
       "before_sha256": "76956372322a5ec99010bbd9912c15bae081b9cf9056e6f319009acc397c0023",
-      "after_sha256": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+      "after_sha256": "8f73c2336544a1814f68bf7cc582bac548a75c314bc3596e40b78dd92fad1f8b",
       "self_hashed_by_git_tree": false
     },
     {
@@ -297,7 +297,7 @@
       "path": "PCB/main/smove-r2-main.kicad_pcb",
       "status": "M",
       "before_sha256": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39",
-      "after_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+      "after_sha256": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
       "self_hashed_by_git_tree": false
     },
     {
@@ -311,7 +311,7 @@
       "path": "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod",
       "status": "A",
       "before_sha256": null,
-      "after_sha256": "750310ba3197cea3c4a2fcbadb42f5f01e4dfa4e2d7c952598f20791a6675a21",
+      "after_sha256": "a7e1681735f7901ddb15bc522b82c411092aa926916a29df8a27933ebc21060d",
       "self_hashed_by_git_tree": false
     },
     {
@@ -423,7 +423,7 @@
       "path": "docs/revision-r2/solder-wire/validation/exports.json",
       "status": "A",
       "before_sha256": null,
-      "after_sha256": "d328e9b7c8dea20b0aa230f109c8f0262c1e5a0c420a25b71f512a99d6ee26c0",
+      "after_sha256": "3b81f2859ebeab1a607e34eb682c058164c3c516e981baa2639b83add2840154",
       "self_hashed_by_git_tree": false
     },
     {
@@ -563,7 +563,7 @@
       "path": "housing/dist/manifest.json",
       "status": "M",
       "before_sha256": "59aee4464bd6d9299e0bb0b3aafc48e42650317229ceb64cc557bef7875cd706",
-      "after_sha256": "621cbd61bd95676f3d55cf7255bc4e627e873d930ed5da5f981a3885a98672c3",
+      "after_sha256": "852353e12f8092228aa0ae27a8ac042e037178949c22f8573f1455be99fe92ff",
       "self_hashed_by_git_tree": false
     },
     {
@@ -626,7 +626,7 @@
       "path": "housing/validation/build.json",
       "status": "M",
       "before_sha256": "934d90bcac8aec642dae6a3852dc76243b560157879623ad2dafdc844c152a31",
-      "after_sha256": "1eaa4a98db9426cce90a7e7b3598715213f2a39edaed157aa41d322e056c4ec7",
+      "after_sha256": "98de78e5fe63a5da97ae559dfd01843b464909655be402a11bc1be5314f297ee",
       "self_hashed_by_git_tree": false
     },
     {
@@ -640,14 +640,14 @@
       "path": "housing/validation/input-geometry.json",
       "status": "M",
       "before_sha256": "828d5674c64652d41dde5e60f609dac4027368929a81c73ecea6470f9a9543ca",
-      "after_sha256": "73131456544122019b6a51770663cfbb5ddd1e550eaa45056d0736cd64e1f27e",
+      "after_sha256": "e90a84029ecc51eac5808de6e47e379b75a3e913c8196f72251a399263cdb7b0",
       "self_hashed_by_git_tree": false
     },
     {
       "path": "housing/validation/mechanical.json",
       "status": "M",
       "before_sha256": "96bd79b33acbe08ab0e133186faebe849fafe6815fdee964c6e8bff3623901fb",
-      "after_sha256": "fff559c7a8610af44cc335295a8ce6824d317f2d90b9dd1bab4827a1d97f7753",
+      "after_sha256": "72b4b12a27e2d41dfcbf64f11e0e1bdd015732b73bf2483b77c184d84448b7e4",
       "self_hashed_by_git_tree": false
     },
     {
@@ -703,14 +703,14 @@
       "path": "scripts/r2/integrated/seal_wire.py",
       "status": "A",
       "before_sha256": null,
-      "after_sha256": "2a47d4f34e5bf82a37bf032dcbaef1afcf56b94d501aa117c044af8b0ef45eb9",
+      "after_sha256": "30591278af9f5a3823e122e4c32fc3e06fb547f6322e10ee7ae4d177eb2a2234",
       "self_hashed_by_git_tree": false
     },
     {
       "path": "scripts/r2/integrated/solder_wire.py",
       "status": "A",
       "before_sha256": null,
-      "after_sha256": "a786bd6651ff9af95c359797ccb5c8ffbc5eb82581800683fc2df8f09f321144",
+      "after_sha256": "8d4d895ccffa4b681222b7df03167e9f80ab9429804b85559284af58a5b4bd6a",
       "self_hashed_by_git_tree": false
     },
     {
@@ -764,7 +764,7 @@
     "PCB/main/dist/main-board-only.step": "35b3f35487feb3ced163663b7787d439c8a86d12a09816e9f451fb3649c4cc67",
     "PCB/main/dist/main-installed-models.step": "1117569c5a78b942b233a4f965fcc754161788d7f45294125cc614a5445b40a2",
     "PCB/main/dist/main-populated-with-conservative-envelopes.step": "344b7f3b4c6ce9956ae82525392d3cd2616edd194798416f2ff7f6a2e5c4883d",
-    "PCB/main/dist/manifest.json": "bc93ff92731486783c6091dc4d47269be66db78195549cc9e26c83e7bd4db4f5",
+    "PCB/main/dist/manifest.json": "1b5f5d8c2a0b54cdb7f9da2da5c5d085b0d88b0f20c3ee8bbb90a1d3aaa52374",
     "PCB/main/dist/pick-and-place.csv": "b09cfd87cf2552e76b360ba69128c1738f7d466be3cb0cb63e6915b042a75d2c",
     "PCB/main/dist/schematic-compute.png": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
     "PCB/main/dist/schematic-imu.png": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
@@ -796,7 +796,7 @@
     "PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52",
     "PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d",
     "PCB/main/imu.pretty/SOT-23-5.kicad_mod": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0",
-    "PCB/main/interface.json": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+    "PCB/main/interface.json": "8f73c2336544a1814f68bf7cc582bac548a75c314bc3596e40b78dd92fad1f8b",
     "PCB/main/mechanical-envelope-source.json": "1dcf031308d4b96287ea089e88d0042d8f5591353dbded513e64ef21053e54c6",
     "PCB/main/mechanical-pose-source.json": "2e5b747e43a540fc871173e850f220969498d6306490d32cc70608fb2450aaf3",
     "PCB/main/native-layout-contract.json": "6da300911c8ae03f8951a5c8a83581641e2a02ae0e4abc8d84aa19c539da979d",
@@ -805,12 +805,12 @@
     "PCB/main/power.kicad_sym": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
     "PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021",
     "PCB/main/smove-r2-main.kicad_dru": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
-    "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+    "PCB/main/smove-r2-main.kicad_pcb": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
     "PCB/main/smove-r2-main.kicad_pro": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
     "PCB/main/smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
     "PCB/main/smove-r2-main.kicad_sym": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8",
     "PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b",
-    "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod": "750310ba3197cea3c4a2fcbadb42f5f01e4dfa4e2d7c952598f20791a6675a21",
+    "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod": "a7e1681735f7901ddb15bc522b82c411092aa926916a29df8a27933ebc21060d",
     "PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa",
     "PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497",
     "PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41",
@@ -839,7 +839,7 @@
     "docs/revision-r2/solder-wire/validation/coherence.json": "70c8414cd7e11dd40d691b484b4687e0563d9fcf0d611789e18079f489a63732",
     "docs/revision-r2/solder-wire/validation/dimensions.json": "f086beccf97b62b5d0530cc60b73442638f72acae1a8167f7ccf4459cb092b9b",
     "docs/revision-r2/solder-wire/validation/electrical.json": "fb5aac5c654e18ba9c3b0a49e263c223a25619dc210261d7e5d71e40b6c7ae0b",
-    "docs/revision-r2/solder-wire/validation/exports.json": "d328e9b7c8dea20b0aa230f109c8f0262c1e5a0c420a25b71f512a99d6ee26c0",
+    "docs/revision-r2/solder-wire/validation/exports.json": "3b81f2859ebeab1a607e34eb682c058164c3c516e981baa2639b83add2840154",
     "docs/revision-r2/solder-wire/validation/net-migrations.json": "ae03bd419c2cf1d55156132971aaf3823c0cc5f157bdacc6d97de5ae769ca6f7",
     "docs/revision-r2/solder-wire/validation/plane-preserving-routes.json": "a41cbb774a709b4c43cfa9873f83c176ae3b1bc6561f51a1ad1116f3165da288",
     "docs/revision-r2/solder-wire/validation/post-drc.json": "39a386146abc4238b9e6f9be4c7b2904e0298b28b3d382d12dd76c59938d51da",
@@ -861,7 +861,7 @@
     "housing/dist/exploded.png": "278d0605d65d021eea40e239f57a2bf5c8c2b751f3a18e713056296b5dd3cafd",
     "housing/dist/freecad-inspection.png": "00a3c41387b56722abe56fa3d90cfd5be52a1add3debe2c26103d7b0408f8ff3",
     "housing/dist/lid.stl": "64f2de56615b0f29ee8d20cc9d744a620215391352107dc57356464ad52c5144",
-    "housing/dist/manifest.json": "621cbd61bd95676f3d55cf7255bc4e627e873d930ed5da5f981a3885a98672c3",
+    "housing/dist/manifest.json": "852353e12f8092228aa0ae27a8ac042e037178949c22f8573f1455be99fe92ff",
     "housing/dist/section.png": "6fa523c2d043d7c66d9da825d4b32540996ab9ee5291ec4177ad5c24e003ec30",
     "housing/dist/smove-r2-assembly.step": "4c7fdf46cd6ce247f75e7bd7846b48248645eeef72fc66b475fc6a059ae61284",
     "housing/dist/smove-r2-printable.step": "e0b2d02af789c20d83d13ffbd1a702b190413ae8b00cd7b28933d8908574b20b",
@@ -874,10 +874,10 @@
     "housing/toolchain.lock.json": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
     "housing/validation/baseline-mechanical.json": "cefc50da6666ec2bed044e40f486597d1f70b176b334c362ab9267e03286a0c5",
     "housing/validation/battery-insertion.json": "facc9ebf33afb0e9b73cf533013362d3171888286a93b9c3e3fc4c299f293d44",
-    "housing/validation/build.json": "1eaa4a98db9426cce90a7e7b3598715213f2a39edaed157aa41d322e056c4ec7",
+    "housing/validation/build.json": "98de78e5fe63a5da97ae559dfd01843b464909655be402a11bc1be5314f297ee",
     "housing/validation/gui-inspection.json": "ee9cd270b66bbc80b27d96f16b0034b9f071c571ce0acaa8a2129335bc4c21ed",
-    "housing/validation/input-geometry.json": "73131456544122019b6a51770663cfbb5ddd1e550eaa45056d0736cd64e1f27e",
-    "housing/validation/mechanical.json": "fff559c7a8610af44cc335295a8ce6824d317f2d90b9dd1bab4827a1d97f7753",
+    "housing/validation/input-geometry.json": "e90a84029ecc51eac5808de6e47e379b75a3e913c8196f72251a399263cdb7b0",
+    "housing/validation/mechanical.json": "72b4b12a27e2d41dfcbf64f11e0e1bdd015732b73bf2483b77c184d84448b7e4",
     "scripts/r2/enclosure/audit_body_frame.py": "680e441b0caaf9e7bec8c20f871d7ae88e7166e1fd05a33e93f1825ed88802f4",
     "scripts/r2/enclosure/contact_audit.py": "ac5fe7f4200f523f000eac624bc01240ffc3f023bb1dd477e02addf517a5de9e",
     "scripts/r2/enclosure/extract.py": "5171273557fd1075a262fc140a29a139577c9b14afe7655615fc1cb2253d5f91",
@@ -897,9 +897,9 @@
     "scripts/r2/integrated/pack.py": "2d145fb11d86e8d48a5edc773857204162fb726cb10e3eb3ffade57d35d8adba",
     "scripts/r2/integrated/route.py": "1c1ab08a1e544ef179bad3ac6e1583c53a71eba314d72fad51e2f14dc453b030",
     "scripts/r2/integrated/seal.py": "dbe8c3d93a42e93b5c49dd68c6f0fd076680642d81189d7f9347cf43da33d627",
-    "scripts/r2/integrated/seal_wire.py": "2a47d4f34e5bf82a37bf032dcbaef1afcf56b94d501aa117c044af8b0ef45eb9",
+    "scripts/r2/integrated/seal_wire.py": "30591278af9f5a3823e122e4c32fc3e06fb547f6322e10ee7ae4d177eb2a2234",
     "scripts/r2/integrated/sexp.py": "3670311db6120bad6b334420e0d32aaea5d629925923640a47ee822edd75eeab",
-    "scripts/r2/integrated/solder_wire.py": "a786bd6651ff9af95c359797ccb5c8ffbc5eb82581800683fc2df8f09f321144",
+    "scripts/r2/integrated/solder_wire.py": "8d4d895ccffa4b681222b7df03167e9f80ab9429804b85559284af58a5b4bd6a",
     "scripts/r2/integrated/stitch.py": "8cfca957700855c8432095447911641225124599ee3ec09148737de5030a2d18",
     "scripts/r2/integrated/sync.py": "3bdc4025ef4bb18c9bde457cbb7b02af4cb6f80e785bd7908298eb468a8e391d",
     "scripts/r2/integrated/tidy.py": "7bdcd4db6e463b08c82a0361a661206b8cd7a7fca5324a40a1a9c901b3b67e17",

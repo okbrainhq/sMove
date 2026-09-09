@@ -26,9 +26,9 @@
     "housing/toolchain.lock.json": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
     "housing/validation/baseline-mechanical.json": "cefc50da6666ec2bed044e40f486597d1f70b176b334c362ab9267e03286a0c5",
     "housing/validation/battery-insertion.json": "facc9ebf33afb0e9b73cf533013362d3171888286a93b9c3e3fc4c299f293d44",
-    "housing/validation/build.json": "1eaa4a98db9426cce90a7e7b3598715213f2a39edaed157aa41d322e056c4ec7",
+    "housing/validation/build.json": "98de78e5fe63a5da97ae559dfd01843b464909655be402a11bc1be5314f297ee",
     "housing/validation/gui-inspection.json": "ee9cd270b66bbc80b27d96f16b0034b9f071c571ce0acaa8a2129335bc4c21ed",
-    "housing/validation/input-geometry.json": "73131456544122019b6a51770663cfbb5ddd1e550eaa45056d0736cd64e1f27e",
-    "housing/validation/mechanical.json": "fff559c7a8610af44cc335295a8ce6824d317f2d90b9dd1bab4827a1d97f7753"
+    "housing/validation/input-geometry.json": "e90a84029ecc51eac5808de6e47e379b75a3e913c8196f72251a399263cdb7b0",
+    "housing/validation/mechanical.json": "72b4b12a27e2d41dfcbf64f11e0e1bdd015732b73bf2483b77c184d84448b7e4"
   }
 }

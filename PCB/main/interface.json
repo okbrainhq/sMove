@@ -1,7 +1,7 @@
 {
   "schema": "smove.solder-wire.interface.v3",
   "status": "COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY",
-  "geometry_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+  "geometry_sha256": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
   "coordinate_system": {
     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",

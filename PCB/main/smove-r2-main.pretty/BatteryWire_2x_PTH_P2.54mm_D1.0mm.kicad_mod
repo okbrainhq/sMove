@@ -1,7 +1,7 @@
 (footprint "BatteryWire_2x_PTH_P2.54mm_D1.0mm"
   (layer "F.Cu")
-  (descr "JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator")
-  (tags "connector JST PH horizontal")
+  (descr "Two PCB-only plated battery-wire solder pads; 2.54 mm centre pitch, 1.0 mm drill, 2.0 mm copper; no fitted connector; external strain relief required")
+  (tags "battery wire solder pads PTH 2.54mm PCB-only")
   (property "Reference" "J2"
     (at 0 -5.8 0)
     (layer "F.Fab")
@@ -56,7 +56,7 @@
       (font
         (size 1.27 1.27)
         (thickness 0.15))))
-  (property "Manufacturer" "JST"
+  (property "Manufacturer" ""
     (at 0 0 270)
     (layer "F.SilkS")
     (hide yes)

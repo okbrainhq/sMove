@@ -14,9 +14,9 @@
   "assembly_policy": "46 electronic parts; PCB-only J2 wire soldering local",
   "jlc_fitted_headers": [],
   "sources": {
-    "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+    "PCB/main/smove-r2-main.kicad_pcb": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
     "PCB/main/smove-r2-main.kicad_pro": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
-    "PCB/main/interface.json": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+    "PCB/main/interface.json": "8f73c2336544a1814f68bf7cc582bac548a75c314bc3596e40b78dd92fad1f8b",
     "PCB/main/compute.kicad_sch": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
     "PCB/main/imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
     "PCB/main/power.kicad_sch": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
@@ -66,5 +66,45 @@
     "PCB/main/dist/schematic.png": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
     "PCB/main/dist/top-3d.png": "bdfaaf0eb3a46f35dd5af7197f17c935599215704f660c73e7c8a92f8ef66317",
     "PCB/main/dist/top.svg": "2ff1128770532c3a846aada0685e60f27d6f3e7be2ffbe27be41a53aa76eae92"
+  },
+  "metadata_only_amendment": {
+    "compared_commit": "98838a38f0a3f0986fa55c328cf695b76aa80517",
+    "scope": "J2 description/tags/Manufacturer only; authoritative generator updated; no hardware changes",
+    "method": "Exact replacement of the three approved metadata strings; parsed complete PCB/footprint equality after normalizing only those fields; generator inverse-patch equivalence and isolated metadata-statement execution",
+    "native_equivalence": [
+      {
+        "path": "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod",
+        "before_sha256": "750310ba3197cea3c4a2fcbadb42f5f01e4dfa4e2d7c952598f20791a6675a21",
+        "after_sha256": "a7e1681735f7901ddb15bc522b82c411092aa926916a29df8a27933ebc21060d",
+        "normalized_nonmetadata_sha256": "60b3cda55d80a192d7b960a09571046e25c6468d2a61398cad3b964fea8e7e9a",
+        "nonmetadata_byte_equivalent": true,
+        "parsed_nonmetadata_equal": true
+      },
+      {
+        "path": "PCB/main/smove-r2-main.kicad_pcb",
+        "before_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+        "after_sha256": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98",
+        "normalized_nonmetadata_sha256": "b574dffcaf33619c326da184f356906775742227ac37761cd31712f1b4aed3ab",
+        "nonmetadata_byte_equivalent": true,
+        "parsed_nonmetadata_equal": true
+      }
+    ],
+    "original_execution_sources": {
+      "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+      "PCB/main/smove-r2-main.kicad_pro": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
+      "PCB/main/interface.json": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+      "PCB/main/compute.kicad_sch": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+      "PCB/main/imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+      "PCB/main/power.kicad_sch": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+      "PCB/main/smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+      "PCB/main/usb.kicad_sch": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+      "PCB/main/Device.kicad_sym": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee",
+      "PCB/main/imu.kicad_sym": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd",
+      "PCB/main/power.kicad_sym": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
+      "PCB/main/smove-r2-main.kicad_sym": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8"
+    },
+    "exports_regenerated": false,
+    "ERC_DRC_mechanical_rerun": false,
+    "note": "Original exported bytes and validation results retained unchanged; current source checksums refreshed only after proving metadata-only equivalence. No new hardware approval."
   }
 }

@@ -47,7 +47,9 @@ def layout():
  j[1]=q('smove-r2-main:'+FP)
  j[:]=[x for x in j if not(isinstance(x,list) and x[0] in ['pad','fp_line','fp_rect','fp_circle','fp_arc','fp_poly','fp_text','model','zone','attr'])]
  j.append(['attr','through_hole','exclude_from_bom','exclude_from_pos_files'])
- for k,v in {'Value':'Battery wire pads 2.54mm','MPN':'','LCSC':''}.items():prop_set(j,k,v)
+ one(j,'descr')[1]=q('Two PCB-only plated battery-wire solder pads; 2.54 mm centre pitch, 1.0 mm drill, 2.0 mm copper; no fitted connector; external strain relief required')
+ one(j,'tags')[1]=q('battery wire solder pads PTH 2.54mm PCB-only')
+ for k,v in {'Value':'Battery wire pads 2.54mm','MPN':'','LCSC':'','Manufacturer':''}.items():prop_set(j,k,v)
  # Pads have no paste: hand-solder stranded wire only, not an SMT procurement item.
  for num,x in [('1',-1.27),('2',1.27)]:
   j.append(node(f'(pad "{num}" thru_hole circle (at {x} 0) (size 2.0 2.0) (drill 1.0) (layers "*.Cu" "*.Mask") (solder_mask_margin 0.05) (zone_connect 2) (net {nets[num][0]} {nets[num][1]}))'))

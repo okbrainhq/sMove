@@ -15,7 +15,11 @@ def changed():
 def write(path,data):(R/path).write_text(json.dumps(data,indent=2)+'\n')
 def allowed(n):return n.startswith(('PCB/main/','housing/','scripts/r2/integrated/','scripts/r2/enclosure/','scripts/r2/final/','docs/revision-r2/solder-wire/')) or n in ('README.md','PCB/README.md','docs/revision-r2/integrated/README.md','docs/revision-r2/integrated/RADIO-BATTERY.md')
 def seal():
- assert git('rev-parse','HEAD').decode().strip()==BASE,'Seal against original current-main base only'
+ head=git('rev-parse','HEAD').decode().strip()
+ assert sp.run(['git','merge-base','--is-ancestor',BASE,head],cwd=R).returncode==0,'Original delivery base must remain an ancestor'
+ if head!=BASE:
+  previous=json.loads(git('show','HEAD:'+MAN))
+  assert previous['baseline_commit']==BASE and previous['branch']==git('branch','--show-current').decode().strip(),'Reseal only the original delivery branch; never absorb base worktree changes'
  for folder in ('PCB/main','housing'):
   files={n:sha((R/n).read_bytes()) for n in sorted(all_names()) if n.startswith(folder+'/') and (R/n).is_file() and n!=folder+'/dist/manifest.json'}
   write(folder+'/dist/manifest.json',dict(manufacturing_release=False,scope='Current compact PTH-wire prototype; any historical backup/report files retained as provenance only',files=files))
@@ -28,8 +32,11 @@ def seal():
   old=sp.run(['git','cat-file','-e',BASE+':'+n],cwd=R,stdout=sp.DEVNULL,stderr=sp.DEVNULL).returncode==0
   exists=(R/n).is_file();changes.append(dict(path=n,status='M' if old and exists else 'D' if old else 'A',before_sha256=sha(git('show',BASE+':'+n)) if old else None,after_sha256=files.get(n),self_hashed_by_git_tree=n==MAN))
  write(MAN,dict(schema='smove.complete-workspace-delivery.v1',baseline_commit=BASE,branch=git('branch','--show-current').decode().strip(),manufacturing_release=False,changed_path_count=len(paths),content_hash_file_count=len(files),changed_paths=changes,files=files,self_hash_note='Only this manifest excludes its own SHA256 to avoid recursion. Its staged/committed blob is byte-verified against the worktree; report its independent SHA256 alongside commit ID.',verification='Run seal_wire.py verify HEAD after committing, or verify --worktree after integrating the COMPLETE commit. No partial path import.'))
- # Explicitly stage every intended path, including deletions and all untracked deliverables.
- sp.run(['git','add','--',*paths],cwd=R,check=True)
+ # Explicitly stage the complete delivery, retaining already-committed deletions.
+ # git add cannot name a path deleted by an earlier delivery commit and absent from the index.
+ tracked=set(git('ls-files','-z').decode().strip('\0').split('\0'))
+ stage=[n for n in paths if (R/n).exists() or n in tracked]
+ sp.run(['git','add','--',*stage],cwd=R,check=True)
  observed=sorted(git('diff','--cached','--name-only','--no-renames',BASE,'-z').decode().strip('\0').split('\0'))
  assert observed==paths,(set(observed)^set(paths))
  for n in paths:

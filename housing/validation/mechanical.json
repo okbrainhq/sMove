@@ -15928,6 +15928,13 @@
   "physical_validation": "NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/screw fit and lacing pull/flex test, RF/thermal/magnetic performance",
   "sources": {
     "housing/smove-r2-enclosure.FCStd": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
-    "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71"
+    "PCB/main/smove-r2-main.kicad_pcb": "99f356dcb6942ca47e59060f0fc413909792d3eddbafe9c4891eeebd05b6ba98"
+  },
+  "metadata_only_provenance": {
+    "compared_commit": "98838a38f0a3f0986fa55c328cf695b76aa80517",
+    "proof": "docs/revision-r2/solder-wire/validation/exports.json",
+    "original_board_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+    "original_interface_sha256": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+    "note": "Only raw source checksums refreshed; original geometry and build/test results retained, not regenerated or rerun."
   }
 }
