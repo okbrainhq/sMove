@@ -444,46 +444,46 @@
       "footprint": "LED_LiteOn_LTST-C19HE1WT",
       "value": "LTST-C19HE1WT / CA",
       "xy_mm": [
-        15.1,
-        8.7
+        16.85,
+        7.9
       ],
-      "rotation_deg": 0.0,
+      "rotation_deg": 90.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        14.675,
-        9.425
+        16.125,
+        7.475
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            14.675,
-            9.425
+            16.125,
+            7.475
           ],
           "net": "/Compute/LED_R_K"
         },
         {
           "number": "2",
           "xy_mm": [
-            15.525,
-            9.425
+            16.125,
+            8.325
           ],
           "net": "/Compute/LED_G_K"
         },
         {
           "number": "3",
           "xy_mm": [
-            15.525,
-            7.975
+            17.575,
+            8.325
           ],
           "net": "/Compute/LED_B_K"
         },
         {
           "number": "4",
           "xy_mm": [
-            14.675,
-            7.975
+            17.575,
+            7.475
           ],
           "net": "/3V3_MAIN"
         }
@@ -1016,30 +1016,30 @@
       "footprint": "R_0402_1005Metric",
       "value": "1k",
       "xy_mm": [
-        17.35,
-        9.5
+        17.9,
+        11.75
       ],
       "rotation_deg": 90.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        17.35,
-        8.99
+        17.9,
+        11.24
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            17.35,
-            8.99
+            17.9,
+            11.24
           ],
           "net": "/Compute/LED_R"
         },
         {
           "number": "2",
           "xy_mm": [
-            17.35,
-            10.01
+            17.9,
+            12.26
           ],
           "net": "/Compute/LED_R_K"
         }
@@ -1052,30 +1052,30 @@
       "footprint": "R_0402_1005Metric",
       "value": "1k",
       "xy_mm": [
-        17.35,
-        7.3
+        17.4,
+        9.8
       ],
-      "rotation_deg": 90.0,
+      "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        17.35,
-        6.79
+        16.89,
+        9.8
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            17.35,
-            6.79
+            16.89,
+            9.8
           ],
           "net": "/Compute/LED_G"
         },
         {
           "number": "2",
           "xy_mm": [
-            17.35,
-            7.81
+            17.91,
+            9.8
           ],
           "net": "/Compute/LED_G_K"
         }
@@ -1088,30 +1088,30 @@
       "footprint": "R_0402_1005Metric",
       "value": "1k",
       "xy_mm": [
-        18.75,
-        11.75
+        17.1,
+        5.75
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        18.24,
-        11.75
+        16.59,
+        5.75
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            18.24,
-            11.75
+            16.59,
+            5.75
           ],
           "net": "/Compute/LED_B"
         },
         {
           "number": "2",
           "xy_mm": [
-            19.26,
-            11.75
+            17.61,
+            5.75
           ],
           "net": "/Compute/LED_B_K"
         }
@@ -1196,30 +1196,30 @@
       "footprint": "R_0402_1005Metric",
       "value": "4.7k 1%",
       "xy_mm": [
-        15.1,
-        6.35
+        14.8,
+        5.75
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        14.59,
-        6.35
+        14.29,
+        5.75
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            14.59,
-            6.35
+            14.29,
+            5.75
           ],
           "net": "/IMU/1V8_IMU"
         },
         {
           "number": "2",
           "xy_mm": [
-            15.61,
-            6.35
+            15.31,
+            5.75
           ],
           "net": "/IMU/SCL_1V8"
         }
@@ -1484,30 +1484,30 @@
       "footprint": "TS1088",
       "value": "RESET",
       "xy_mm": [
-        11.0,
-        10.9
+        21.5,
+        10.95
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        8.775,
-        10.9
+        19.275,
+        10.95
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            8.775,
-            10.9
+            19.275,
+            10.95
           ],
           "net": "/Compute/MCU_EN"
         },
         {
           "number": "2",
           "xy_mm": [
-            13.225,
-            10.9
+            23.725,
+            10.95
           ],
           "net": "GND"
         }
@@ -1520,30 +1520,30 @@
       "footprint": "TS1088",
       "value": "BOOT / USER",
       "xy_mm": [
-        11.0,
-        7.15
+        21.05,
+        7.0
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        8.775,
-        7.15
+        18.825,
+        7.0
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            8.775,
-            7.15
+            18.825,
+            7.0
           ],
           "net": "Net-(U1-GPIO9_{slash}_BOOT)"
         },
         {
           "number": "2",
           "xy_mm": [
-            13.225,
-            7.15
+            23.275,
+            7.0
           ],
           "net": "GND"
         }

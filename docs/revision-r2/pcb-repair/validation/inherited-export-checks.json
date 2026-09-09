@@ -1,0 +1,187 @@
+{
+  "PCB/main/dist/BOM.csv": {
+    "expected": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e",
+    "actual": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e",
+    "matches": true
+  },
+  "PCB/main/dist/assembly-placements.json": {
+    "expected": "dfe43115dadec9b453f8499887b62957a4000a1a3f81fe04f9bd4b322c3d4328",
+    "actual": "dfe43115dadec9b453f8499887b62957a4000a1a3f81fe04f9bd4b322c3d4328",
+    "matches": true
+  },
+  "PCB/main/dist/assembly-top.pdf": {
+    "expected": "07b70c5f5ed03ceb3a74b391cdc09357e72307181d66df05d758e158a8f43823",
+    "actual": "07b70c5f5ed03ceb3a74b391cdc09357e72307181d66df05d758e158a8f43823",
+    "matches": true
+  },
+  "PCB/main/dist/bottom-3d.png": {
+    "expected": "50d3c1f61b21812c8c28d06200c65b8474554148851b18c24b381fbc631481dc",
+    "actual": "50d3c1f61b21812c8c28d06200c65b8474554148851b18c24b381fbc631481dc",
+    "matches": true
+  },
+  "PCB/main/dist/bottom.svg": {
+    "expected": "6c330c661a1d96a5883a7da5b47fa2b5791ce21b7822ff81fa06aa6807f9b4dd",
+    "actual": "6c330c661a1d96a5883a7da5b47fa2b5791ce21b7822ff81fa06aa6807f9b4dd",
+    "matches": true
+  },
+  "PCB/main/dist/conservative-step-frame.json": {
+    "expected": "8f0395401df5ba1abda3214b2017e3344be86f676116acfb5b155e75ac3e3017",
+    "actual": "8f0395401df5ba1abda3214b2017e3344be86f676116acfb5b155e75ac3e3017",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl": {
+    "expected": "d3689601e441d0cda0b4880d3eb375b2ceafd70710281e4cc1baad180106b1b9",
+    "actual": "d3689601e441d0cda0b4880d3eb375b2ceafd70710281e4cc1baad180106b1b9",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs": {
+    "expected": "ba7f3a0040d6a03276cc18d1c8f5b23be925d5dbd0fb1b0b5702c52a3749ab14",
+    "actual": "ba7f3a0040d6a03276cc18d1c8f5b23be925d5dbd0fb1b0b5702c52a3749ab14",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo": {
+    "expected": "57ac780641940a7e8e82985f16f0b154f8f6d798afa5e09593b29fb616cdcc48",
+    "actual": "57ac780641940a7e8e82985f16f0b154f8f6d798afa5e09593b29fb616cdcc48",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1": {
+    "expected": "820c3b6771a80e37601807a05236d2d7347de6e9b23ddbb6b0d8fb877feb1e5a",
+    "actual": "820c3b6771a80e37601807a05236d2d7347de6e9b23ddbb6b0d8fb877feb1e5a",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl": {
+    "expected": "44aa223db975c71e4ead96ffbe09034cad1dec7c5e2a9ca69812b6df13c99265",
+    "actual": "44aa223db975c71e4ead96ffbe09034cad1dec7c5e2a9ca69812b6df13c99265",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts": {
+    "expected": "3087bd8a2ecbecbb6490b2633c1be208b1d25e51c63b475c17a3b253c7b5c6fd",
+    "actual": "3087bd8a2ecbecbb6490b2633c1be208b1d25e51c63b475c17a3b253c7b5c6fd",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp": {
+    "expected": "c6a763a9a4f88f7253682c4bbf84d1a3857eff5eba835589eda0e801719e6132",
+    "actual": "c6a763a9a4f88f7253682c4bbf84d1a3857eff5eba835589eda0e801719e6132",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto": {
+    "expected": "4f35375ef312d023092849ddf9fe2922fbef991fe6a3d163d620e0e91f1d68ea",
+    "actual": "4f35375ef312d023092849ddf9fe2922fbef991fe6a3d163d620e0e91f1d68ea",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1": {
+    "expected": "daaed5566985a360a4035b72b3b26a4369578cf23e610d19e21566f6e3f9df27",
+    "actual": "daaed5566985a360a4035b72b3b26a4369578cf23e610d19e21566f6e3f9df27",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2": {
+    "expected": "7213bc25956330e9742ea67b97ea116efcd7366ccdf0a00fb0b24672c7628ae0",
+    "actual": "7213bc25956330e9742ea67b97ea116efcd7366ccdf0a00fb0b24672c7628ae0",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl": {
+    "expected": "b42c567fab7b3aa8423615c9ed859502b58ddcc712a7c16f42a650aa2cb8174e",
+    "actual": "b42c567fab7b3aa8423615c9ed859502b58ddcc712a7c16f42a650aa2cb8174e",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-PTH.drl": {
+    "expected": "513e56928bb2a7f964b82ba2d2928885cd9707c8936157081eec21d7710622d5",
+    "actual": "513e56928bb2a7f964b82ba2d2928885cd9707c8936157081eec21d7710622d5",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob": {
+    "expected": "fdfd4086412492688e363f41fc345535aa186e20d38a4dd1845a2e949afea8d0",
+    "actual": "fdfd4086412492688e363f41fc345535aa186e20d38a4dd1845a2e949afea8d0",
+    "matches": true
+  },
+  "PCB/main/dist/gerbers.zip": {
+    "expected": "d2758a3e1262eb428e973468378b54afdfb35ae1a2f8f9ca2afcfe85a06c7838",
+    "actual": "d2758a3e1262eb428e973468378b54afdfb35ae1a2f8f9ca2afcfe85a06c7838",
+    "matches": true
+  },
+  "PCB/main/dist/main-board-only.step": {
+    "expected": "e3f38c376cd7d016b6f13c10090f4e1af619c6bc2ac295c1b61ecc7d38ac9de5",
+    "actual": "e3f38c376cd7d016b6f13c10090f4e1af619c6bc2ac295c1b61ecc7d38ac9de5",
+    "matches": true
+  },
+  "PCB/main/dist/main-installed-models.step": {
+    "expected": "b796c675782dab5681b1ae50629cdce0112e87926118bd3c2e7c1a06457181ac",
+    "actual": "b796c675782dab5681b1ae50629cdce0112e87926118bd3c2e7c1a06457181ac",
+    "matches": true
+  },
+  "PCB/main/dist/main-populated-with-conservative-envelopes.step": {
+    "expected": "b94e51656ec10a89daef5d4ebdedf79f196e3104ea7bb2779f2fde6746c0f063",
+    "actual": "b94e51656ec10a89daef5d4ebdedf79f196e3104ea7bb2779f2fde6746c0f063",
+    "matches": true
+  },
+  "PCB/main/dist/pick-and-place.csv": {
+    "expected": "7a94811c17b841a5136d46a1a397b0b4ddfe722f7254f73102f3f2d7b3a9a718",
+    "actual": "7a94811c17b841a5136d46a1a397b0b4ddfe722f7254f73102f3f2d7b3a9a718",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-compute.png": {
+    "expected": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
+    "actual": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-imu.png": {
+    "expected": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
+    "actual": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-power.png": {
+    "expected": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee",
+    "actual": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg": {
+    "expected": "1b03f6abe109512734fc3d73ebd535335c186ba190450165090462fb73d36b14",
+    "actual": "1b03f6abe109512734fc3d73ebd535335c186ba190450165090462fb73d36b14",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg": {
+    "expected": "5d66c850d78bf0e58da902a40afbafdfce5b70f6348388b85e10d127db0c128b",
+    "actual": "5d66c850d78bf0e58da902a40afbafdfce5b70f6348388b85e10d127db0c128b",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-svg/smove-r2-main-Power.svg": {
+    "expected": "0d2fec7d0adac5f1136fcb10cc4ad494775682984068d94900b0aeb63dfeee5e",
+    "actual": "0d2fec7d0adac5f1136fcb10cc4ad494775682984068d94900b0aeb63dfeee5e",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-svg/smove-r2-main-USB.svg": {
+    "expected": "f08f59e0e2132c24dc36d1826805bf3d9cbb97c88aac514f3743af4c1124cf98",
+    "actual": "f08f59e0e2132c24dc36d1826805bf3d9cbb97c88aac514f3743af4c1124cf98",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-svg/smove-r2-main.svg": {
+    "expected": "171cfe4fa12fa7544527f2a8560d3e0915eb2dc7eeafdd6591ee33f5b7bb57b0",
+    "actual": "171cfe4fa12fa7544527f2a8560d3e0915eb2dc7eeafdd6591ee33f5b7bb57b0",
+    "matches": true
+  },
+  "PCB/main/dist/schematic-usb.png": {
+    "expected": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee",
+    "actual": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee",
+    "matches": true
+  },
+  "PCB/main/dist/schematic.pdf": {
+    "expected": "f029640241b061150c2c1b6a786d645002da5bb1dbb87a3c6616b0506ab34a5c",
+    "actual": "f029640241b061150c2c1b6a786d645002da5bb1dbb87a3c6616b0506ab34a5c",
+    "matches": true
+  },
+  "PCB/main/dist/schematic.png": {
+    "expected": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
+    "actual": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
+    "matches": true
+  },
+  "PCB/main/dist/top-3d.png": {
+    "expected": "1eebcb380e22f0e7aa1e1ed72f5fc8babaaef09ab9d7c3e9b790d66c45ce361b",
+    "actual": "1eebcb380e22f0e7aa1e1ed72f5fc8babaaef09ab9d7c3e9b790d66c45ce361b",
+    "matches": true
+  },
+  "PCB/main/dist/top.svg": {
+    "expected": "f977358d30687448358e8de01e1635d5b6960598cdfa11f44c8eba542e2bfb92",
+    "actual": "f977358d30687448358e8de01e1635d5b6960598cdfa11f44c8eba542e2bfb92",
+    "matches": true
+  }
+}

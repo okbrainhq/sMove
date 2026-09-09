@@ -1,12 +1,12 @@
-# Main PCB — 25 × 30 mm keyed compact prototype
+# Main PCB — 25 × 30mm electrical review candidate
 
-Canonical editable sources: `smove-r2-main.kicad_pcb`, hierarchical schematic sheets, project/rules and local libraries. Four layers, 1 mm nominal thickness; no signal tracks on In1 GND reference plane. **46 fitted electronics**, unchanged part selections and electrical endpoint sets from f8c7ef6.
+**Not released for manufacture/assembly.** Native sources and `dist/` geometry are selectively recovered from `96e081b`, independently checked against `554e4fe`; no housing changes imported.
 
-- Both XUNPU BOOT/RESET switches rotate from 90° to 0° with verified contact numbering; 17 actual footprint positions change. J2 moves upward 6.1 mm. The lower region (native Y ≥122) is 40.7% smaller.
-- U2 remains ICM-20948 at (112.5,117.5), F.Cu, −90°: width-centred, 2.5 mm south of substrate bounding centre, in the central region. Accel/gyro +Z outward; raw magnetometer +Z inward; signed transforms in `interface.json`.
-- One top RGB, USB programming and labelled BOOT/RESET. No UART, debug connector or testpoints.
-- J2: BAT+ `/Power/PACK_P`, BAT− GND, **2.54 mm centre pitch, 1 mm drill, 2 mm pads**, no paste or fitted connector. Fit qualified insulated leads and housing lacing strain relief; never solder on a pouch.
-- H1: 3.2 mm NPTH M3 hole, unchanged 3.45 mm all-layer copper exclusion. H2 removed. Two 1×1 mm copper-free lower corners accept insulating positive registration shoes and lid bearings.
-- `dist/`: complete Gerber/drill ZIP and individual layers, schematic/assembly PDFs, SVG/PNG, BOM/CPL, installed-model and conservative-envelope STEP. Installed-model renders omit unavailable component models; conservative assembly contains every fitted envelope, not vendor-exact solids.
+- Final ERC/DRC: zero issues, opens, dangling items and parity mismatches; net equivalence and USB geometry retained.
+- Four layers, 1mm nominal substrate; In1 GND reference has no signal tracks. Top IMU, outward accel/gyro +Z, body-facing underside; USB/buttons/RGB retained, no UART/testpoints.
+- BAT+ (104.5,105.57), BAT− (104.5,103.03)mm; 2.54mm pitch, 1mm drill, 2mm pads. H1 (111.8,125.65)mm, 3.2mm NPTH, 3.45mm nominal copper keepout.
+- **Mounting blocker:** old radius-3.4mm bearing has only 0.042612mm minimum filled-copper margin. NOT robust insulation, no approved tolerance stack. Do not use the old case/bearing.
+- `dist/` contains matching inherited Gerbers/drills, BOM/CPL, PDFs, STEP and renders. Its manifest records exact provenance; these are review artifacts, not released manufacturing instructions. Installed-model renders omit unavailable models.
+- Native PCB is authoritative. Do not regenerate over its routing. Placement metadata and guarded sync policy are coherent; casing is incompatible/unvalidated.
 
-[Measurements, candidates, validations and limitations](../../docs/revision-r2/compact-placement/README.md). **Prototype only; manufacturing_release=false.** Native DRC is not controlled-impedance, current/thermal, or physical assembly certification. Clearance settings, severities and exclusions are unchanged from f8c7ef6.
+[Complete PCB-only report and evidence](../../docs/revision-r2/pcb-repair/README.md).

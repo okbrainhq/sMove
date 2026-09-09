@@ -1,0 +1,1021 @@
+{
+  "electrical_geometric_checks_passed": true,
+  "checks": [
+    {
+      "check": "same_references",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline_final_native_pad_net_equivalence",
+      "passed": true,
+      "detail": {
+        "pad_count": 234
+      }
+    },
+    {
+      "check": "baseline_final_schematic_net_equivalence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_pro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_dru",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:usb.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:imu.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:power.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:compute.kicad_sch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:imu.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:smove-r2-main.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:power.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_rules_or_schematic:Device.kicad_sym",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_part_and_side:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same_pad_geometry:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unchanged_board_setup_and_stack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact_selected_native_pcb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zero_issues:final-drc.json",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "zero_issues:final-erc.json",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "check": "outline_25x30_no_growth",
+      "passed": true,
+      "detail": [
+        25.0,
+        30.0
+      ]
+    },
+    {
+      "check": "In1_reference_has_no_signal_tracks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:J1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:J2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_mount:H1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:U8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:C11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_pose:R14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "interface_geometry_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "top_IMU_orientation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_debug_testpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BAT_pitch_drill_polarity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "BAT_copper_outside_RF_keepout",
+      "passed": true,
+      "detail": 2.03
+    },
+    {
+      "check": "housing_marked_incompatible",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "rule_hashes": {
+    "PCB/main/smove-r2-main.kicad_pro": {
+      "baseline": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
+      "final": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0"
+    },
+    "PCB/main/smove-r2-main.kicad_dru": {
+      "baseline": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
+      "final": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911"
+    },
+    "PCB/main/usb.kicad_sch": {
+      "baseline": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+      "final": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f"
+    },
+    "PCB/main/smove-r2-main.kicad_sch": {
+      "baseline": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+      "final": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4"
+    },
+    "PCB/main/imu.kicad_sch": {
+      "baseline": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+      "final": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025"
+    },
+    "PCB/main/power.kicad_sch": {
+      "baseline": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+      "final": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb"
+    },
+    "PCB/main/compute.kicad_sch": {
+      "baseline": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+      "final": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306"
+    },
+    "PCB/main/imu.kicad_sym": {
+      "baseline": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd",
+      "final": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd"
+    },
+    "PCB/main/smove-r2-main.kicad_sym": {
+      "baseline": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8",
+      "final": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8"
+    },
+    "PCB/main/power.kicad_sym": {
+      "baseline": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
+      "final": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b"
+    },
+    "PCB/main/Device.kicad_sym": {
+      "baseline": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee",
+      "final": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee"
+    }
+  },
+  "net_geometry": {
+    "/USB_DP": {
+      "segments": 14,
+      "min_width_mm": 0.2,
+      "length_mm": 19.127615168882556
+    },
+    "/USB_DM": {
+      "segments": 19,
+      "min_width_mm": 0.2,
+      "length_mm": 21.539387577923215
+    },
+    "/Compute/USB_DP_MCU": {
+      "segments": 7,
+      "min_width_mm": 0.2,
+      "length_mm": 5.302419043731977
+    },
+    "/Compute/USB_DM_MCU": {
+      "segments": 5,
+      "min_width_mm": 0.2,
+      "length_mm": 3.566142219728018
+    },
+    "/Power/PACK_P": {
+      "segments": 79,
+      "min_width_mm": 0.2,
+      "length_mm": 38.23147545195113
+    },
+    "/Power/SYS": {
+      "segments": 19,
+      "min_width_mm": 0.2,
+      "length_mm": 28.559485618848004
+    },
+    "/VBUS": {
+      "segments": 28,
+      "min_width_mm": 0.2,
+      "length_mm": 28.272002485378025
+    },
+    "/3V3_MAIN": {
+      "segments": 497,
+      "min_width_mm": 0.25,
+      "length_mm": 108.76133111168461
+    },
+    "/IMU/1V8_IMU": {
+      "segments": 118,
+      "min_width_mm": 0.15,
+      "length_mm": 51.040411229460645
+    },
+    "/IMU/SCL_1V8": {
+      "segments": 163,
+      "min_width_mm": 0.15,
+      "length_mm": 56.47472580451141
+    },
+    "/IMU/SDA_1V8": {
+      "segments": 14,
+      "min_width_mm": 0.2,
+      "length_mm": 20.37228719095799
+    }
+  },
+  "USB_geometry_equal_baseline": {
+    "/USB_DP": true,
+    "/USB_DM": true,
+    "/Compute/USB_DP_MCU": true,
+    "/Compute/USB_DM_MCU": true
+  },
+  "measurements": {
+    "board_size_mm": [
+      25.0,
+      30.0
+    ],
+    "BAT_pads_mm": [
+      [
+        104.5,
+        105.57
+      ],
+      [
+        104.5,
+        103.03
+      ]
+    ],
+    "BAT_to_RF_mm": 2.03,
+    "H1_mm": [
+      111.8,
+      125.65
+    ],
+    "H1_IMU_distance_mm": 8.180006,
+    "nearest_track_to_H1_center_mm": 3.478167,
+    "filled_copper": [
+      {
+        "zone": "GND_F.Cu",
+        "layer": "F.Cu",
+        "radius_mm": 3.442612
+      },
+      {
+        "zone": "GND_B.Cu",
+        "layer": "B.Cu",
+        "radius_mm": 3.442612
+      },
+      {
+        "zone": "GND_In1.Cu",
+        "layer": "In1.Cu",
+        "radius_mm": 3.442612
+      },
+      {
+        "zone": "GND_In2.Cu",
+        "layer": "In2.Cu",
+        "radius_mm": 3.442612
+      }
+    ]
+  },
+  "release": {
+    "manufacturing_release": false,
+    "robust_insulation_approved": false,
+    "legacy_bearing_radius_mm": 3.4,
+    "minimum_bearing_to_filled_copper_mm": 0.042612000000000094,
+    "blocker": "0.042612mm nominal margin is not a tolerance-qualified insulation design. H1/bearing/case assembly must be reviewed before manufacture/assembly."
+  }
+}

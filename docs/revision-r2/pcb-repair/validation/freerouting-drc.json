@@ -1,0 +1,1127 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-09T10:50:22+0530",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "schematic_parity": [],
+    "source": "smove-r2-main.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/3V3_MAIN] on B.Cu, length 4.2330 mm",
+                    "pos": {
+                        "x": 107.946,
+                        "y": 115.753
+                    },
+                    "uuid": "930fe095-3c2b-4d05-adcd-1fafe906c072"
+                },
+                {
+                    "description": "Pad 1 [/3V3_MAIN] of R19 on F.Cu",
+                    "pos": {
+                        "x": 112.74,
+                        "y": 120.25
+                    },
+                    "uuid": "bf1ecb19-6d0b-4d67-92da-9f3ab4c122c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/USB/CC2] on In2.Cu, length 4.9760 mm",
+                    "pos": {
+                        "x": 114.8438,
+                        "y": 120.3358
+                    },
+                    "uuid": "0674722e-95ad-4b7f-b8c5-97be87503b5d"
+                },
+                {
+                    "description": "Pad B5 [/USB/CC2] of J1 on F.Cu",
+                    "pos": {
+                        "x": 117.055,
+                        "y": 115.05
+                    },
+                    "uuid": "947fb18e-2cb6-4f44-96fa-4ea16b2554e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/Compute/LED_B_K] on F.Cu, length 1.6624 mm",
+                    "pos": {
+                        "x": 110.11,
+                        "y": 126.678
+                    },
+                    "uuid": "f0b7c4ce-2d06-4a90-b751-789875ed9ff6"
+                },
+                {
+                    "description": "Pad 3 [/Compute/LED_B_K] of D1 on F.Cu",
+                    "pos": {
+                        "x": 117.425,
+                        "y": 128.925
+                    },
+                    "uuid": "46b5f49b-c5bf-4049-9b5d-7abfb0b5bf4b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 106.5
+                    },
+                    "uuid": "0b41abf3-a15f-45c8-8423-2fcfe0bff05b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 103.25
+                    },
+                    "uuid": "1500c532-f032-4d2c-9a54-f1d1baf1b6d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint SW2",
+                    "pos": {
+                        "x": 121.2,
+                        "y": 124.25
+                    },
+                    "uuid": "15b7725a-fd1c-4629-b6e5-74cba389ed6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 108.75
+                    },
+                    "uuid": "16afae2c-500d-4c8d-9ddc-4ef55f4ba85a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 107.25,
+                        "y": 114.75
+                    },
+                    "uuid": "1ec39b05-0cec-43a6-b42a-12a541954f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 126.9
+                    },
+                    "uuid": "1fec7b21-c49e-46a8-9571-4a27277430ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 115.5
+                    },
+                    "uuid": "2158611d-bfb3-4f39-8d06-39c70bcd3951"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 128.2
+                    },
+                    "uuid": "36e7a656-8d67-423e-8391-6d810c689547"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 117.5
+                    },
+                    "uuid": "376bccc7-e151-41f3-b1f6-868ed89bd1cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 108.0
+                    },
+                    "uuid": "378daa2d-be4f-4fdb-8d08-647adc831eba"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 109.8,
+                        "y": 128.8
+                    },
+                    "uuid": "388e5d06-dd9d-4d30-b83b-e244f7be5df1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 121.1,
+                        "y": 116.8
+                    },
+                    "uuid": "3ac4a73b-9ada-46ba-b191-411d5396b408"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 120.25
+                    },
+                    "uuid": "40a62241-b7c7-4891-8303-2a8934b6144e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 103.25,
+                        "y": 124.4
+                    },
+                    "uuid": "589d382c-88a7-467d-b73c-51a565ec6193"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 105.25,
+                        "y": 121.5
+                    },
+                    "uuid": "5eb9d1a8-f33c-4670-8119-995bf319932b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 109.25,
+                        "y": 117.75
+                    },
+                    "uuid": "5f509497-55f4-4adf-b138-024e597870d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 122.25,
+                        "y": 110.5
+                    },
+                    "uuid": "63366030-ea75-41d9-8e87-7705fcba8404"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 116.5
+                    },
+                    "uuid": "6365329a-0535-4840-9ce8-07f6d3c78de2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 117.35,
+                        "y": 125.6
+                    },
+                    "uuid": "64cccb89-ff37-4f9d-adef-7fed36c2c353"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 110.75,
+                        "y": 112.75
+                    },
+                    "uuid": "6e6559f2-7749-4a58-a071-9f1fb807c489"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 102.75,
+                        "y": 108.25
+                    },
+                    "uuid": "7080421e-1ad6-4bd2-8000-55cdfd108a4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 102.75,
+                        "y": 121.25
+                    },
+                    "uuid": "7297023d-f8b5-4dcd-ac7d-7936c43e1030"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 116.3
+                    },
+                    "uuid": "77d30cb7-256c-4e69-8d72-a4f5d795d1a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 111.25
+                    },
+                    "uuid": "881372ae-6070-4072-a06d-5b5e526370a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 121.75,
+                        "y": 108.75
+                    },
+                    "uuid": "8c4ecffd-eca1-49be-9db7-d0e7f34849b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 106.25
+                    },
+                    "uuid": "8c822639-6b86-419c-9215-27b86cc6dd18"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 103.5
+                    },
+                    "uuid": "9163e4a9-39c2-49b6-a31b-2eedf259f57a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 114.2,
+                        "y": 102.9
+                    },
+                    "uuid": "9420fad1-3aff-4d44-913e-48326a7910ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 125.5
+                    },
+                    "uuid": "9d24b140-cccd-4d3b-a0ee-9dcfa54696d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 114.5
+                    },
+                    "uuid": "a79d02a3-ffbf-42f2-816a-976287773df0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 106.25,
+                        "y": 110.5
+                    },
+                    "uuid": "ac1b0c30-c4bf-4c31-97b7-604a6aaa9d13"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 108.8,
+                        "y": 126.2
+                    },
+                    "uuid": "ad60cc19-e1c9-4bd1-9d2a-0581da73a437"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R22",
+                    "pos": {
+                        "x": 102.05,
+                        "y": 129.25
+                    },
+                    "uuid": "b6ff3021-cd0a-47a3-8d3c-30a54a8bd366"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 122.0
+                    },
+                    "uuid": "bfc088ba-32b6-4f03-ae2b-d4688dd1a42f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 120.25
+                    },
+                    "uuid": "c571d0ba-2993-48db-8c95-d0a8c47a49fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint U9",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 120.25
+                    },
+                    "uuid": "cb027659-0191-450f-a7b9-1e1e878d10ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 102.75,
+                        "y": 126.85
+                    },
+                    "uuid": "ccaa9117-a64d-46fa-83f8-a3d880785e16"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 108.8,
+                        "y": 123.5
+                    },
+                    "uuid": "dea40f86-5a7c-4239-a4f3-4176f5c2df18"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint U8",
+                    "pos": {
+                        "x": 113.5,
+                        "y": 113.5
+                    },
+                    "uuid": "e25606b5-e781-4b8d-bb80-884971c25f72"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 114.7,
+                        "y": 128.8
+                    },
+                    "uuid": "e63c3085-88a0-45e7-9fac-7327cafa5585"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 117.35,
+                        "y": 123.5
+                    },
+                    "uuid": "e72be85c-b224-429c-a061-1dc5696e53ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 106.35,
+                        "y": 128.6
+                    },
+                    "uuid": "e7697d59-2dae-498e-ae47-dd94fb0a6d0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'imu'.",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 106.25
+                    },
+                    "uuid": "e969b9bc-0669-4c9c-8592-2e902b1a389e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 106.25,
+                        "y": 113.0
+                    },
+                    "uuid": "eafc9518-b7bc-461e-9aaa-bf85840b06f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 124.0
+                    },
+                    "uuid": "ee08d8a1-5307-43d1-8ad5-409903358de0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint SW3",
+                    "pos": {
+                        "x": 121.2,
+                        "y": 127.95
+                    },
+                    "uuid": "f0f57cd7-80aa-45ec-ba3c-c2fd987cb766"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 112.75
+                    },
+                    "uuid": "fea16475-cfba-4b52-afe5-dcccb287a567"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [/3V3_MAIN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 111.403,
+                        "y": 128.848
+                    },
+                    "uuid": "5a3e646a-0eef-4c39-821a-f5f1f17ee21e"
+                },
+                {
+                    "description": "Via [/3V3_MAIN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 111.403,
+                        "y": 128.8477
+                    },
+                    "uuid": "ea3b69c9-2cc0-4c31-95c8-8e79dbc2a1da"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.5407,
+                        "y": 118.0896
+                    },
+                    "uuid": "058a3936-7b46-4c9e-a3a0-eb25122ab56e"
+                },
+                {
+                    "description": "Via [/USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.541,
+                        "y": 118.09
+                    },
+                    "uuid": "a4ffdbdf-4b4f-4175-8225-cc729504e363"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 118.404,
+                        "y": 116.542
+                    },
+                    "uuid": "8073870e-a06d-46f8-a67f-7637366ed829"
+                },
+                {
+                    "description": "Via [/USB_DM] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 118.4035,
+                        "y": 116.5417
+                    },
+                    "uuid": "a7907519-43c0-4372-80fc-bc98d9c8a426"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/Compute/USB_DP_MCU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.9684,
+                        "y": 107.4603
+                    },
+                    "uuid": "540b209e-83ed-4cac-9a3c-df428b689ff1"
+                },
+                {
+                    "description": "Via [/Compute/USB_DP_MCU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.968,
+                        "y": 107.46
+                    },
+                    "uuid": "af052672-4171-4856-bd02-a2b5f396cc64"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [/Compute/USB_DP_MCU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5998,
+                        "y": 107.6402
+                    },
+                    "uuid": "751ac99b-656f-495a-87d1-0fbfae70291d"
+                },
+                {
+                    "description": "Via [/Compute/USB_DP_MCU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.6,
+                        "y": 107.64
+                    },
+                    "uuid": "dd207d80-c18a-42e9-ab9a-0b33e9cafc19"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.5174,
+                        "y": 118.7743
+                    },
+                    "uuid": "7e9c403c-c1c9-4609-9c10-2a3bb81a670f"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.517,
+                        "y": 118.774
+                    },
+                    "uuid": "9a1d6176-dad4-4018-aa32-b637f4a61fcc"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/IMU/1V8_IMU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.611,
+                        "y": 119.38
+                    },
+                    "uuid": "00b64242-387f-4aca-ba3c-0a3d9cd0039d"
+                },
+                {
+                    "description": "Via [/IMU/1V8_IMU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.6114,
+                        "y": 119.3804
+                    },
+                    "uuid": "55fba341-21af-4f81-9361-80ece37f7875"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [/IMU/1V8_IMU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.006,
+                        "y": 107.125
+                    },
+                    "uuid": "0557b306-20ce-496c-ad42-215f04b39be9"
+                },
+                {
+                    "description": "Via [/IMU/1V8_IMU] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0063,
+                        "y": 107.1249
+                    },
+                    "uuid": "b22a5c9c-db41-4b13-8de8-cde7b4929c27"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [/IMU/SCL_1V8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.254,
+                        "y": 116.422
+                    },
+                    "uuid": "5a71bd27-2024-4ff3-9703-2d0a8c2f307e"
+                },
+                {
+                    "description": "Via [/IMU/SCL_1V8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.254,
+                        "y": 116.4224
+                    },
+                    "uuid": "adf18bcf-2169-4b7a-9e77-2cb699f4ab38"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.713,
+                        "y": 121.925
+                    },
+                    "uuid": "1d3203e7-127f-4a31-9fdb-3888ac4a57b5"
+                },
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.7129,
+                        "y": 121.925
+                    },
+                    "uuid": "f1e130f7-ecf1-47c8-9700-ce2ba8755352"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.3772,
+                        "y": 111.3845
+                    },
+                    "uuid": "4596795f-3c09-4139-8b56-fc9f1c22b6f3"
+                },
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.377,
+                        "y": 111.384
+                    },
+                    "uuid": "ef72868d-fade-4fea-9619-a07557b6e5c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 114.599,
+                        "y": 119.705
+                    },
+                    "uuid": "5d56cd9e-03f9-4e36-9c71-4d50cd928297"
+                },
+                {
+                    "description": "Via [/SDA_HOST] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 114.5986,
+                        "y": 119.7053
+                    },
+                    "uuid": "88c17448-cc4d-41cf-807e-f932be5ee258"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/3V3_MAIN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 110.7,
+                        "y": 115.2
+                    },
+                    "uuid": "2806a5ce-9749-47c6-a42a-e4d78876a8b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/Compute/LED_B_K] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 119.696,
+                        "y": 129.206
+                    },
+                    "uuid": "06ff3a97-fcac-4b0e-b89e-9f60f423ddee"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/Compute/LED_B_K] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 111.286,
+                        "y": 127.853
+                    },
+                    "uuid": "df504823-81e3-4224-9af3-fd2a92d7871f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/IMU/SCL_1V8] on In2.Cu, length 2.5781 mm",
+                    "pos": {
+                        "x": 116.1828,
+                        "y": 119.9293
+                    },
+                    "uuid": "3a8d176f-7cfa-4269-93ce-adc7b23d3128"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

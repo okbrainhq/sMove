@@ -1,0 +1,632 @@
+(session main
+  (base_design main)
+  (placement
+    (resolution um 10)
+    (component "smove-r2-main:R_0402_1005Metric"
+      (place R9 1230000 -1065000 front 90)
+      (place R4 1230000 -1087500 front 90)
+      (place R2 1173500 -1256000 front 90)
+      (place R15 1107500 -1127500 front 90)
+      (place R7 1027500 -1212500 front 90)
+      (place R8 1217500 -1087500 front 90)
+      (place R10 1085000 -1145000 front 90)
+      (place R13 1088000 -1262000 front 90)
+      (place R20 1015000 -1220000 front 90)
+      (place R12 1088000 -1235000 front 90)
+      (place R1 1173500 -1235000 front 90)
+      (place R21 1015000 -1240000 front 90)
+    )
+    (component "imu:SOT-23-5"
+      (place U5 1030000 -1032500 front 270)
+    )
+    (component "smove-r2-main:TS1088"
+      (place SW2 1212000 -1242500 front 0)
+      (place SW3 1212000 -1279500 front 0)
+    )
+    (component "smove-r2-main:C_0402_1005Metric"
+      (place C10 1072500 -1147500 front 90)
+      (place C4 1057500 -1080000 front 180)
+      (place C9 1092500 -1177500 front 180)
+    )
+    (component "imu:R_0402_1005Metric"
+      (place R17 1067000 -1269000 front 0)
+      (place R5 1098000 -1288000 front 0)
+      (place R23 1032500 -1244000 front 0)
+      (place R3 1222500 -1105000 front 0)
+      (place R18 1080000 -1165000 front 0)
+      (place R22 1020500 -1292500 front 0)
+      (place R19 1132500 -1202500 front 0)
+      (place R11 1147000 -1288000 front 0)
+      (place R16 1057500 -1062500 front 0)
+      (place R14 1085000 -1127500 front 0)
+    )
+    (component "imu:C_0402_1005Metric"
+      (place C8 1097500 -1155000 front 270)
+      (place C7 1112500 -1202500 front 0)
+      (place C11 1062500 -1130000 front 0)
+    )
+    (component "smove-r2-main:LED_LiteOn_LTST-C19HE1WT"
+      (place D1 1170000 -1282000 front 0)
+    )
+    (component "imu:InvenSense_QFN-24_3x3mm_P0.4mm"
+      (place U2 1125000 -1175000 front 270)
+    )
+    (component "smove-r2-main:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+      (place J1 1211000 -1168000 front 90)
+    )
+    (component "imu:PCA9306_DCU0008A"
+      (place U3 1052500 -1215000 front 270)
+    )
+    (component "smove-r2-main:C_0805_2012Metric"
+      (place C3 1027500 -1082500 front 180)
+      (place C13 1062500 -1105000 front 90)
+      (place C2 1063500 -1286000 front 0)
+    )
+    (component "smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm"
+      (place J2 1040000 -1163000 front 0)
+    )
+    (component "MountingHole_3.2mm_M3"
+      (place H1 1132000 -1245000 front 0)
+    )
+    (component "smove-r2-main:SOT-23-5"
+      (place U4 1030000 -1112500 front 0)
+    )
+    (component "imu:C_0603_1608Metric"
+      (place C5 1030000 -1062500 front 0)
+      (place C1 1065000 -1255000 front 0)
+      (place C6 1057500 -1035000 front 270)
+    )
+    (component "smove-r2-main:ESP32-C3-MINI-1"
+      (place U1 1142000 -1029000 front 0)
+    )
+    (component "smove-r2-main:SOT-23"
+      (place U9 1085000 -1202500 front 90)
+    )
+    (component "smove-r2-main:BQ24074_RGT"
+      (place U6 1027500 -1268500 front 0)
+    )
+    (component "smove-r2-main:SOT-23-6"
+      (place U8 1135000 -1135000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "9.0.8+dfsg-1")
+    )
+    (library_out 
+      (padstack "Via[0-3]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle In1.Cu 6000 0 0)
+        )
+        (shape
+          (circle In2.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-3]_450:200_um"
+        (shape
+          (circle F.Cu 4500 0 0)
+        )
+        (shape
+          (circle In1.Cu 4500 0 0)
+        )
+        (shape
+          (circle In2.Cu 4500 0 0)
+        )
+        (shape
+          (circle B.Cu 4500 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2000
+            1085000 -1193120
+            1085000 -1193125
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1030000 -1021120
+            1030000 -1021125
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1104530 -1280100
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1008150 -1281350
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1212500 -1117500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1157500 -1132500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1027500 -1182500
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1044880 -1245280
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1067440 -1166900
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1095170 -1187740
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1092030 -1249470
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1193730 -1113680
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1118000 -1015650
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1008040 -1106450
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1188930 -1259740
+          (type protect)
+        )
+      )
+      (net "/3V3_MAIN"
+        (wire
+          (path F.Cu 2000
+            1020500 -1021125
+            1020500 -1021120
+          )
+        )
+        (wire
+          (path In1.Cu 2000
+            1217510 -1053310
+            1112860 -1053310
+            1090900 -1031350
+          )
+        )
+        (wire
+          (path In1.Cu 2000
+            1107000 -1152000
+            1084990 -1152000
+            1079460 -1157530
+          )
+        )
+        (wire
+          (path In1.Cu 2000
+            1114030 -1288480
+            1091480 -1288480
+            1086110 -1283110
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1114030 -1288480
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1107000 -1152000
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1079460 -1157530
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1217510 -1053310
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1086110 -1283110
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1090900 -1031350
+          (type protect)
+        )
+      )
+      (net "/BAT_ADC"
+        (via "Via[0-3]_600:300_um" 1094360 -1117760
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1050170 -1130810
+          (type protect)
+        )
+      )
+      (net "/USB/CC1"
+        (wire
+          (path In1.Cu 2000
+            1083520 -1215200
+            1084798 -1215200
+            1119991 -1180007
+            1181127 -1180007
+            1182560 -1181440
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1075500 -1211880
+            1075500 -1211875
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1182560 -1181440
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1083520 -1215200
+          (type protect)
+        )
+      )
+      (net "/USB/CC2"
+        (wire
+          (path F.Cu 2000
+            1094500 -1211880
+            1094500 -1211875
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1181370 -1261100
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1084990 -1221390
+          (type protect)
+        )
+      )
+      (net "/Power/CHG_ILIM"
+        (via "Via[0-3]_450:200_um" 1015000 -1286000
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1048000 -1261000
+          (type protect)
+        )
+      )
+      (net "/Compute/LED_B"
+        (wire
+          (path In1.Cu 2000
+            1094750 -1271980
+            1083970 -1271980
+            1040000 -1228010
+            1040000 -1150184
+            1056171 -1134013
+            1056171 -1105445
+            1051307 -1100581
+            1051307 -1052632
+            1054745 -1049194
+            1070833 -1049194
+            1119139 -1097500
+            1138060 -1097500
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1094750 -1271980
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1138060 -1097500
+          (type protect)
+        )
+      )
+      (net "/Compute/LED_B_K"
+        (via "Via[0-3]_450:200_um" 1196960 -1292060
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1112860 -1278530
+          (type protect)
+        )
+      )
+      (net "/Compute/LED_G"
+        (via "Via[0-3]_450:200_um" 1095100 -1226010
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1163950 -1096380
+          (type protect)
+        )
+      )
+      (net "/Compute/LED_G_K"
+        (via "Via[0-3]_600:300_um" 1077390 -1228600
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1180600 -1268200
+          (type protect)
+        )
+      )
+      (net "/Compute/LED_R"
+        (wire
+          (path In1.Cu 2000
+            1205880 -1134250
+            1179918 -1108288
+            1165505 -1108288
+            1144597 -1087380
+            1132360 -1087380
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1134560 -1285850
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1132360 -1087380
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1205880 -1134250
+          (type protect)
+        )
+      )
+      (net "/Compute/MCU_EN"
+        (wire
+          (path In1.Cu 2000
+            1206120 -1232640
+            1214574 -1232640
+            1232374 -1214840
+            1232374 -1207576
+            1197488 -1172690
+            1177370 -1172690
+            1074340 -1069660
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1074340 -1069660
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1206120 -1232640
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1078000 -1148000
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1040000 -1129500
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1027510 -1200030
+          (type protect)
+        )
+      )
+      (net "/Power/PACK_P"
+        (via "Via[0-3]_450:200_um" 1007670 -1250350
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1007000 -1271000
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1045500 -1286000
+          (type protect)
+        )
+      )
+      (net "/Compute/STRAP2"
+        (via "Via[0-3]_600:300_um" 1091750 -1046250
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1230000 -1045340
+          (type protect)
+        )
+      )
+      (net "/Compute/STRAP8"
+        (via "Via[0-3]_600:300_um" 1173440 -1088570
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1092490 -1135610
+          (type protect)
+        )
+      )
+      (net "/Power/SYS"
+        (via "Via[0-3]_600:300_um" 1049340 -1112160
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1019750 -1136460
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1048000 -1267500
+          (type protect)
+        )
+      )
+      (net "/Power/TS_NO_CELL_SENSING"
+        (via "Via[0-3]_600:300_um" 1022920 -1236670
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1013270 -1254470
+          (type protect)
+        )
+      )
+      (net "/USB_DM"
+        (wire
+          (path F.Cu 2000
+            1146375 -1125500
+            1146380 -1125500
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1184040 -1165420
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1195410 -1180900
+          (type protect)
+        )
+      )
+      (net "/USB_DP"
+        (wire
+          (path F.Cu 2000
+            1146375 -1144500
+            1146380 -1144500
+          )
+        )
+      )
+      (net "/Compute/USB_DP_MCU"
+        (via "Via[0-3]_600:300_um" 1236000 -1076400
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1209680 -1074600
+          (type protect)
+        )
+      )
+      (net "/USB_POWER_N"
+        (via "Via[0-3]_450:200_um" 1062500 -1146000
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1064500 -1293500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1099000 -1112500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1058000 -1239000
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1063500 -1123500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1098000 -1282500
+          (type protect)
+        )
+      )
+      (net "/VBUS"
+        (wire
+          (path In1.Cu 2000
+            1063400 -1243310
+            1070988 -1243310
+            1128648 -1185650
+            1155810 -1185650
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1146380 -1135000
+            1146375 -1135000
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1063400 -1243310
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1158250 -1141780
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1155810 -1185650
+          (type protect)
+        )
+      )
+      (net "/IMU/1V8_IMU"
+        (wire
+          (path In1.Cu 2000
+            1055360 -1183340
+            1083320 -1183340
+            1107560 -1159100
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1039500 -1043880
+            1039500 -1043875
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1055360 -1183340
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1054380 -1270980
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1107560 -1159100
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1040060 -1071250
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1111500 -1212500
+          (type protect)
+        )
+        (via "Via[0-3]_450:200_um" 1156110 -1193800
+          (type protect)
+        )
+      )
+      (net "/IMU/SCL_1V8"
+        (wire
+          (path In1.Cu 2000
+            1119848 -1164220
+            1119848 -1172278
+            1084840 -1207286
+          )
+        )
+        (wire
+          (path In1.Cu 2000
+            1056999 -1055236
+            1056999 -1089847
+            1119848 -1152696
+            1119848 -1164220
+          )
+        )
+        (wire
+          (path In1.Cu 2000
+            1119848 -1164220
+            1152540 -1164220
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1062600 -1062500
+            1062600 -1060837
+            1056999 -1055236
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1056999 -1055236
+        )
+        (wire
+          (path F.Cu 2000
+            1062050 -1206740
+            1066863 -1201927
+            1079481 -1201927
+            1084840 -1207286
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1084840 -1207286
+        )
+        (via "Via[0-3]_600:300_um" 1152540 -1164220
+          (type protect)
+        )
+      )
+      (net "/IMU/SDA_1V8"
+        (via "Via[0-3]_600:300_um" 1140000 -1152370
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1062320 -1216190
+          (type protect)
+        )
+      )
+      (net "/SCL_HOST"
+        (via "Via[0-3]_600:300_um" 1054770 -1219470
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1142000 -1116960
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1096240 -1142690
+          (type protect)
+        )
+      )
+      (net "/SDA_HOST"
+        (via "Via[0-3]_600:300_um" 1047130 -1219250
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1145990 -1197050
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1153770 -1113840
+          (type protect)
+        )
+      )
+      (net "Net-(U1-GPIO9_{slash}_BOOT)"
+        (wire
+          (path In1.Cu 2000
+            1181560 -1096160
+            1181560 -1094014
+            1212294 -1063280
+            1213360 -1063280
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1181560 -1096160
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1213360 -1063280
+          (type protect)
+        )
+        (via "Via[0-3]_600:300_um" 1199630 -1270400
+          (type protect)
+        )
+      )
+    )
+  )
+)

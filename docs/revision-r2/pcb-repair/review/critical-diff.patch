@@ -1,0 +1,227 @@
+[1mdiff --git a/PCB/main/native-layout-contract.json b/PCB/main/native-layout-contract.json[m
+[1mindex 3280722..d1c7b8a 100644[m
+[1m--- a/PCB/main/native-layout-contract.json[m
+[1m+++ b/PCB/main/native-layout-contract.json[m
+[36m@@ -36,13 +36,16 @@[m
+   "mounting": {[m
+     "holes_native_xy_mm": {[m
+       "H1": [[m
+[31m-        103.6,[m
+[31m-        103.6[m
+[32m+[m[32m        111.8,[m
+[32m+[m[32m        125.65[m
+       ][m
+     },[m
+     "drill_mm": 3.2,[m
+     "copper_exclusion_radius_mm": 3.45,[m
+[31m-    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"[m
+[32m+[m[32m    "scheme": "One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.",[m
+[32m+[m[32m    "sensor_warning": "Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.",[m
+[32m+[m[32m    "release_blocker": "Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.",[m
+[32m+[m[32m    "component_clearance_policy": "Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval."[m
+   },[m
+   "sensor_frame": {[m
+     "part": "ICM-20948",[m
+[36m@@ -135,24 +138,24 @@[m
+       90.0[m
+     ],[m
+     "J2": [[m
+[31m-      121.3,[m
+[31m-      126.5,[m
+[31m-      0.0[m
+[32m+[m[32m      104.5,[m
+[32m+[m[32m      104.3,[m
+[32m+[m[32m      90.0[m
+     ],[m
+     "SW2": [[m
+[31m-      111.0,[m
+[31m-      124.1,[m
+[32m+[m[32m      121.5,[m
+[32m+[m[32m      124.05,[m
+       0.0[m
+     ],[m
+     "SW3": [[m
+[31m-      111.0,[m
+[31m-      127.85,[m
+[32m+[m[32m      121.05,[m
+[32m+[m[32m      128.0,[m
+       0.0[m
+     ],[m
+     "D1": [[m
+[31m-      115.1,[m
+[31m-      126.3,[m
+[31m-      0.0[m
+[32m+[m[32m      116.85,[m
+[32m+[m[32m      127.1,[m
+[32m+[m[32m      90.0[m
+     ],[m
+     "R1": [[m
+       115.0,[m
+[36m@@ -200,18 +203,18 @@[m
+       90.0[m
+     ],[m
+     "R11": [[m
+[31m-      117.35,[m
+[31m-      125.5,[m
+[32m+[m[32m      117.9,[m
+[32m+[m[32m      123.25,[m
+       90.0[m
+     ],[m
+     "R12": [[m
+[31m-      117.35,[m
+[31m-      127.7,[m
+[31m-      90.0[m
+[32m+[m[32m      117.4,[m
+[32m+[m[32m      125.2,[m
+[32m+[m[32m      0.0[m
+     ],[m
+     "R13": [[m
+[31m-      118.75,[m
+[31m-      123.25,[m
+[32m+[m[32m      117.1,[m
+[32m+[m[32m      129.25,[m
+       0.0[m
+     ],[m
+     "R14": [[m
+[36m@@ -300,8 +303,8 @@[m
+       180.0[m
+     ],[m
+     "R16": [[m
+[31m-      115.1,[m
+[31m-      128.65,[m
+[32m+[m[32m      114.8,[m
+[32m+[m[32m      129.25,[m
+       0.0[m
+     ],[m
+     "R17": [[m
+[1mdiff --git a/PCB/main/parts-main.json b/PCB/main/parts-main.json[m
+[1mindex 0310463..06d5cd2 100644[m
+[1m--- a/PCB/main/parts-main.json[m
+[1m+++ b/PCB/main/parts-main.json[m
+[36m@@ -266,9 +266,9 @@[m
+     "fitted": false,[m
+     "fp": "BatteryWire_2x_PTH_P2.54mm_D1.0mm",[m
+     "placement": [[m
+[31m-      121.3,[m
+[31m-      126.5,[m
+[31m-      0.0[m
+[32m+[m[32m      104.5,[m
+[32m+[m[32m      104.3,[m
+[32m+[m[32m      90.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d/21368572-48a5-5c87-8fc4-78e6b3ab2ef1"[m
+   },[m
+[36m@@ -293,8 +293,8 @@[m
+     "fitted": true,[m
+     "fp": "TS1088",[m
+     "placement": [[m
+[31m-      111.0,[m
+[31m-      124.1,[m
+[32m+[m[32m      121.5,[m
+[32m+[m[32m      124.05,[m
+       0.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/2a670366-1936-5aec-8f5e-8c3d3571a6ea"[m
+[36m@@ -320,8 +320,8 @@[m
+     "fitted": true,[m
+     "fp": "TS1088",[m
+     "placement": [[m
+[31m-      111.0,[m
+[31m-      127.85,[m
+[32m+[m[32m      121.05,[m
+[32m+[m[32m      128.0,[m
+       0.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/430fa0ba-1038-54cf-a2e1-fa5681823db9"[m
+[36m@@ -348,9 +348,9 @@[m
+     "fitted": true,[m
+     "fp": "LED_LiteOn_LTST-C19HE1WT",[m
+     "placement": [[m
+[31m-      115.1,[m
+[31m-      126.3,[m
+[31m-      0.0[m
+[32m+[m[32m      116.85,[m
+[32m+[m[32m      127.1,[m
+[32m+[m[32m      90.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/02ba7497-9a8d-56fa-99a3-83e5b10889a3"[m
+   },[m
+[36m@@ -608,8 +608,8 @@[m
+     "fitted": true,[m
+     "fp": "R_0402_1005Metric",[m
+     "placement": [[m
+[31m-      117.35,[m
+[31m-      125.5,[m
+[32m+[m[32m      117.9,[m
+[32m+[m[32m      123.25,[m
+       90.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/e88b45c9-cf79-581f-9355-e93b103f9884"[m
+[36m@@ -634,9 +634,9 @@[m
+     "fitted": true,[m
+     "fp": "R_0402_1005Metric",[m
+     "placement": [[m
+[31m-      117.35,[m
+[31m-      127.7,[m
+[31m-      90.0[m
+[32m+[m[32m      117.4,[m
+[32m+[m[32m      125.2,[m
+[32m+[m[32m      0.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/3c3f9172-c3a6-5be5-b617-559c8cf23058"[m
+   },[m
+[36m@@ -660,8 +660,8 @@[m
+     "fitted": true,[m
+     "fp": "R_0402_1005Metric",[m
+     "placement": [[m
+[31m-      118.75,[m
+[31m-      123.25,[m
+[32m+[m[32m      117.1,[m
+[32m+[m[32m      129.25,[m
+       0.0[m
+     ],[m
+     "path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/eb1928cd-42fe-596f-b55e-9356c3c99c22"[m
+[36m@@ -1105,8 +1105,8 @@[m
+       "2": "SCL_1V8"[m
+     },[m
+     "placement": [[m
+[31m-      115.1,[m
+[31m-      128.65,[m
+[32m+[m[32m      114.8,[m
+[32m+[m[32m      129.25,[m
+       0.0[m
+     ][m
+   },[m
+[1mdiff --git a/scripts/r2/integrated/sync.py b/scripts/r2/integrated/sync.py[m
+[1mindex 01e6318..7efdeea 100644[m
+[1m--- a/scripts/r2/integrated/sync.py[m
+[1m+++ b/scripts/r2/integrated/sync.py[m
+[36m@@ -31,8 +31,8 @@[m [mfor r,c in j['components'].items():[m
+  f=fps[r];rect=c['body_aabb_native_xy_mm'];rect=rect if rect!=[0,0,0,0] else c['courtyard_native_xy_mm'][m
+  c['body_aabb_native_xy_mm']=transform_rect(r,rect);c['courtyard_native_xy_mm']=bbox(f.GetCourtyard(p.F_CrtYd).BBox());c['anchor_native_xy_mm']=list(p.ToMM(f.GetPosition()));c['rotation_ccw_deg']=f.GetOrientationDegrees();parts[r]['placement']=[*c['anchor_native_xy_mm'],f.GetOrientationDegrees()][m
+ f=fps['J2'];parts['J2']['placement']=[*p.ToMM(f.GetPosition()),f.GetOrientationDegrees()][m
+[31m-j['components']['J2']=dict(ref='J2',mpn='PCB PTH wire pads - not fitted hardware',fitted=False,body_aabb_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),courtyard_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),anchor_native_xy_mm=list(p.ToMM(f.GetPosition())),rotation_ccw_deg=0,z_mm_from_board_bottom=[0,1])[m
+[31m-j['anchors']['J2']={'center_native_xy_mm':list(p.ToMM(f.GetPosition())),'pins':{a.GetNumber():{'native_xy_mm':list(p.ToMM(a.GetPosition())),'net':a.GetNetname()} for a in f.Pads()},'wire_exit':'Through board to protected lower wire bay; no connector or mating reserve'}[m
+[32m+[m[32mj['components']['J2']=dict(ref='J2',mpn='PCB PTH wire pads - not fitted hardware',fitted=False,body_aabb_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),courtyard_native_xy_mm=bbox(f.GetCourtyard(p.F_CrtYd).BBox()),anchor_native_xy_mm=list(p.ToMM(f.GetPosition())),rotation_ccw_deg=f.GetOrientationDegrees(),z_mm_from_board_bottom=[0,1])[m
+[32m+[m[32mj['anchors']['J2']={'center_native_xy_mm':list(p.ToMM(f.GetPosition())),'pins':{a.GetNumber():{'native_xy_mm':list(p.ToMM(a.GetPosition())),'net':a.GetNetname()} for a in f.Pads()},'wire_exit':'Through board beside shielded module body, then WEST side descent behind RF boundary; never through antenna overhang'}[m
+ for r,a in list(j['anchors'].items()):[m
+  if r=='J2':continue[m
+  if r not in parts:del j['anchors'][r];continue[m
+[36m@@ -47,10 +47,14 @@[m [mfor k in ['antenna_body_native_xy_mm','antenna_all_layer_keepout_native_xy_mm']:[m
+ j['antenna_3d']['clear_air_volume_native_xy_mm']=j['antenna_all_layer_keepout_native_xy_mm'];j['retention']=[dict(name='SW_KEY_NO_COPPER',xy=[[100,129],[101,129],[101,130],[100,130]]),dict(name='SE_KEY_NO_COPPER',xy=[[124,129],[125,129],[125,130],[124,130]])];j['mounting']=dict(holes_native_xy_mm=HOLES,drill_mm=3.2,copper_exclusion_radius_mm=3.45,scheme='One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation')[m
+ j.pop('debug',None);j['retention_policy']={'contacts':'H1 M3 clamp and two lower positive edge shoes, insulating lid bearing pads in all-layer copper-free corners. Hooked lid plus M3. No pressure on U2 or pouch; print stiffness/torque unqualified.'}[m
+ j['sensor_frame']['native_position_mm']=[*p.ToMM(fps['U2'].GetPosition()),1];j['sensor_frame']['board_bbox_centre_native_mm']=[(x0+x1)/2,(y0+y1)/2];j['sensor_frame']['centre_offset_native_mm']=[j['sensor_frame']['native_position_mm'][0]-(x0+x1)/2,j['sensor_frame']['native_position_mm'][1]-(y0+y1)/2];j['sensor_frame']['position_from_board_NW_mm']=[j['sensor_frame']['native_position_mm'][0]-x0,j['sensor_frame']['native_position_mm'][1]-y0,1][m
+[31m-j.update(schema='smove.compact-placement.interface.v4',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')[m
+[32m+[m[32mj.update(schema='smove.imu-support.interface.v5',geometry_sha256=hashlib.sha256((H/'smove-r2-main.kicad_pcb').read_bytes()).hexdigest(),outline_native_xy_mm=OUTLINE,board_size_mm=[x1-x0,y1-y0],status='30mm PCB / PTH BATTERY WIRES / TOP IMU / ONE M3 + POSITIVE KEYS; PROTOTYPE ONLY')[m
+ j['connector_selection']={'status':'NO_FITTED_BATTERY_CONNECTOR','J2':'Two plated through-hole wire solder pads; excluded from BOM/CPL; no header allowed','pitch_mm':2.54,'manufacturing_release':False}[m
+[31m-j['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'Two lacing bores and captive bridge in lower case, paired insulated leads; pull test mandatory; solder joint is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}[m
+[32m+[m[32mj['battery_wire']={'pitch_centre_mm':2.54,'pad_diameter_mm':2.0,'finished_hole_target_mm':1.0,'finished_hole_acceptance_mm':[0.9,1.1],'tinned_bundle_max_diameter_mm':0.7,'insulation_max_diameter_mm':1.2,'nominal_annular_ring_mm':0.5,'mask_expansion_mm':0.05,'copper_gap_mm':0.54,'mask_web_mm':0.44,'wire_gauge_supplied':None,'wire_selection':'Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied','strain_relief':'West-wall bridge, two guide bores and two nylon lacing bores; paired OD<=1.2mm leads, R2 swept bends; pull/flex test mandatory, solder is not strain relief','polarity':{'1':'BAT+ protected PACK_P','2':'BAT- GND'}}[m
+[32m+[m[32mj['antenna_3d']['housing_recommendation_status']='15mm clearance in ALL directions is recommended by Espressif but NOT met by the existing compact housing/under-board pack. The retained overhang forward/side exclusion is a geometric constraint, not proof of RF compliance. No wire or pack may enter it; qualify final RF on body.'[m
+[32m+[m[32mj['mounting']['sensor_warning']='Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.'[m
+ j['bottom_envelope'].pop('J3',None)[m
+[31m-j['bottom_envelope']['J2']='PTH leads from underside; trim top protrusion <=0.6mm, insulate underside down to wire insulation, route above divider before lower wire bay'[m
+[32m+[m[32mj['bottom_envelope']['J2']='PTH leads from underside; trim top protrusion <=0.6mm, insulate underside down to wire insulation, route above divider then through the relieved west edge into the side lacing bay'[m
+[32m+[m[32mfrom pcb_review_policy import apply as apply_pcb_review_policy[m
+[32m+[m[32mapply_pcb_review_policy(j)[m
+ (H/'parts-main.json').write_text(json.dumps(parts,indent=2)+'\n');(H/'interface.json').write_text(json.dumps(j,indent=2)+'\n')[m
+ raw=parse((H/'smove-r2-main.kicad_pcb').read_text());(H/'native-layout-contract.json').write_text(json.dumps(dict(outline=OUTLINE,mounting=j['mounting'],sensor_frame=j['sensor_frame'],placement={r:parts[r]['placement'] for r in parts}),indent=2)+'\n')[m

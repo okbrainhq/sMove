@@ -1,0 +1,8 @@
+{
+  "selected_commit": "96e081b9b29db2bb852a43be9e6060a8a99aadf9",
+  "scope": "PCB/main files and placement sync only; no merge, no housing or enclosure-script recovery",
+  "native_pcb_exact_from_selected_commit": true,
+  "reason": "Capped FreeRouting candidate still has 3 opens and adds 45 In1 reference-plane tracks; reuse supplied clean PCB instead",
+  "manual_attempt_preserved": "review/attempts/manual-refilled-15-opens.kicad_pcb",
+  "mechanical_release_blocker": "0.042612 mm filled-copper margin to prior 3.4 mm-radius bearing is nominal only, not robust insulation; housing incompatible/unvalidated"
+}

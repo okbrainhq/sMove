@@ -1,0 +1,16 @@
+{
+  "baseline": "554e4fe387748bcd6bc3a2d5a674fdfb1e0a80cb",
+  "recovered_commit": "faf335bf040760fc5bdd03f5d73c3a466c331f8b",
+  "method": "git show object content; four PCB placement/source files only, no cherry-pick, no housing changes",
+  "recovered_files": {
+    ".cache/pcb-repair/failed/smove-r2-main.kicad_pcb": "2d889f1cd9f2bcabf6698f3143a96e1abe05fe1908547d6d90a997a21cde4324",
+    ".cache/pcb-repair/failed/interface.json": "74ffb21fbf649af3ea98e879ddaf111b3b48e138568c04ed913341ffec839549",
+    ".cache/pcb-repair/failed/parts-main.json": "af50285740855a0f21620d0665be8526cbc5c81c6c09d6b6b28010c9fa90f069",
+    ".cache/pcb-repair/failed/native-layout-contract.json": "8d30f3747dcd07fbdd45eeaf10c310e27c7c983e61c5d11c4f518d4bdc401af5",
+    ".cache/pcb-repair/failed/placement.json": "db54c2c121e52364c8b769faa8d906302a8d92a35a0551cb84b858b72058a95d",
+    ".cache/pcb-repair/failed/electrical.json": "38b3870bd96b20085e4b40d1b80b3f2791dffa13e81d045659c27d79f5120925",
+    ".cache/pcb-repair/failed/post-erc.json": "13dc2885eee52d00745ccc2d9a2922d96c37871ef8369b6b656c1aad3d4a571f",
+    ".cache/pcb-repair/failed/post-drc.json": "752e961ce3741976c429dc02e4031911074c749b27d0162161cf5221ed108132"
+  },
+  "desktop_initial_frame": "/uploads/aad5f48f-831c-41c9-874a-c8b502d1080a.webp"
+}

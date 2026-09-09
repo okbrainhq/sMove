@@ -1,0 +1,18 @@
+{
+  "removed_duplicate_vias": [
+    "5a3e646a-0eef-4c39-821a-f5f1f17ee21e",
+    "8073870e-a06d-46f8-a67f-7637366ed829",
+    "a4ffdbdf-4b4f-4175-8225-cc729504e363",
+    "af052672-4171-4856-bd02-a2b5f396cc64",
+    "dd207d80-c18a-42e9-ab9a-0b33e9cafc19",
+    "9a1d6176-dad4-4018-aa32-b637f4a61fcc",
+    "00b64242-387f-4aca-ba3c-0a3d9cd0039d",
+    "0557b306-20ce-496c-ad42-215f04b39be9",
+    "5a71bd27-2024-4ff3-9703-2d0a8c2f307e",
+    "1d3203e7-127f-4a31-9fdb-3888ac4a57b5",
+    "5d56cd9e-03f9-4e36-9c71-4d50cd928297",
+    "ef72868d-fade-4fea-9619-a07557b6e5c9"
+  ],
+  "threshold_mm": 0.001,
+  "retained": "original exact fixed via positions"
+}

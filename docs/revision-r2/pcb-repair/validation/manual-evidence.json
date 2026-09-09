@@ -1,0 +1,56 @@
+{
+  "placement": {
+    "ref": "C7",
+    "before": [
+      111.25,
+      120.25,
+      0
+    ],
+    "after": [
+      111.25,
+      120,
+      0
+    ],
+    "reason": "Move 0.25mm toward IMU for shorter decoupling and increased local support gap"
+  },
+  "manual_tracks": [
+    {
+      "uuid": "28af9610-a54a-4b3b-92ab-c104ff53b093",
+      "net": "/IMU/1V8_IMU",
+      "layer": "B.Cu",
+      "start": [
+        111.15,
+        121.25
+      ],
+      "end": [
+        111.15,
+        116.304
+      ],
+      "width": 0.2
+    },
+    {
+      "uuid": "ad7ac79f-9ef6-4656-99ed-8689312cff7e",
+      "net": "/IMU/1V8_IMU",
+      "layer": "B.Cu",
+      "start": [
+        111.15,
+        116.304
+      ],
+      "end": [
+        110.756,
+        115.91
+      ],
+      "width": 0.2
+    }
+  ],
+  "screenshot_placement": "/uploads/ad051343-2fbe-4b90-a6af-20416ab66647.webp",
+  "screenshot_router": "/uploads/2adf1c8d-960e-4d76-baad-476625ac0a23.webp",
+  "screenshot_saved": "/uploads/aa233c53-fa44-4788-a084-ce256e59f63a.webp",
+  "sha256": "0995b95c882d39b5aae2b020ed019a0abf2ae3a9e20eb60973048a8ddf55245a",
+  "correction": {
+    "C7_final_attempt_y_mm": 120.25,
+    "reason": "120.0 caused 0.10mm courtyard overlap; corrected in native properties, refilled and saved",
+    "screenshot": "/uploads/769041f0-9a6c-477a-b309-03030a1e7634.webp",
+    "selected_final_routing": "Reused 96e081b instead; manual attempt archived"
+  }
+}

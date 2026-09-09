@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-09T10:35:43+0530",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/8e261347-838a-5848-981d-f693675e8aa0",
+            "violations": []
+        },
+        {
+            "path": "/USB/",
+            "uuid_path": "/8e261347-838a-5848-981d-f693675e8aa0/2bda09d7-02a6-5813-8901-250e661184c8",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d",
+            "violations": []
+        },
+        {
+            "path": "/Compute/",
+            "uuid_path": "/8e261347-838a-5848-981d-f693675e8aa0/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1",
+            "violations": []
+        },
+        {
+            "path": "/IMU/",
+            "uuid_path": "/8e261347-838a-5848-981d-f693675e8aa0/0c78c5fa-f3e0-528c-818c-9b07d10ef961",
+            "violations": []
+        }
+    ],
+    "source": "smove-r2-main.kicad_sch"
+}

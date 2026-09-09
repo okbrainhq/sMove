@@ -36,13 +36,16 @@
   "mounting": {
     "holes_native_xy_mm": {
       "H1": [
-        103.6,
-        103.6
+        111.8,
+        125.65
       ]
     },
     "drill_mm": 3.2,
     "copper_exclusion_radius_mm": 3.45,
-    "scheme": "One M3x8 NPTH clamp at H1; two separated insulating corner shoes and lid bearings positively key PCB; hooked lid prevents southern lift; no friction-only antirotation"
+    "scheme": "One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.",
+    "sensor_warning": "Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.",
+    "release_blocker": "Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.",
+    "component_clearance_policy": "Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval."
   },
   "sensor_frame": {
     "part": "ICM-20948",
@@ -135,24 +138,24 @@
       90.0
     ],
     "J2": [
-      121.3,
-      126.5,
-      0.0
+      104.5,
+      104.3,
+      90.0
     ],
     "SW2": [
-      111.0,
-      124.1,
+      121.5,
+      124.05,
       0.0
     ],
     "SW3": [
-      111.0,
-      127.85,
+      121.05,
+      128.0,
       0.0
     ],
     "D1": [
-      115.1,
-      126.3,
-      0.0
+      116.85,
+      127.1,
+      90.0
     ],
     "R1": [
       115.0,
@@ -200,18 +203,18 @@
       90.0
     ],
     "R11": [
-      117.35,
-      125.5,
+      117.9,
+      123.25,
       90.0
     ],
     "R12": [
-      117.35,
-      127.7,
-      90.0
+      117.4,
+      125.2,
+      0.0
     ],
     "R13": [
-      118.75,
-      123.25,
+      117.1,
+      129.25,
       0.0
     ],
     "R14": [
@@ -300,8 +303,8 @@
       180.0
     ],
     "R16": [
-      115.1,
-      128.65,
+      114.8,
+      129.25,
       0.0
     ],
     "R17": [

@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/azero/.okbrain/workspaces/smove-files/027/.cache/pcb-repair/baseline/smove-r2-main.kicad_sch</source>
+    <date>2026-09-09T10:59:33+0530</date>
+    <tool>Eeschema 9.0.8+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>sMove R2 / System flow</title>
+        <company/>
+        <rev>R2 ENG</rev>
+        <date/>
+        <source>smove-r2-main.kicad_sch</source>
+        <comment number="1" value="MAIN PCB - USB / POWER / COMPUTE / INTEGRATED IMU"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/">
+      <title_block>
+        <title>sMove R2 / USB</title>
+        <company/>
+        <rev>R2 ENG</rev>
+        <date/>
+        <source>usb.kicad_sch</source>
+        <comment number="1" value="ENGINEERING PROTOTYPE - NO MANUFACTURING OR CHARGE APPROVAL"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/">
+      <title_block>
+        <title>sMove R2 / Power</title>
+        <company/>
+        <rev>R2 ENG</rev>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value="ENGINEERING PROTOTYPE - NO MANUFACTURING OR CHARGE APPROVAL"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/">
+      <title_block>
+        <title>sMove R2 / Compute</title>
+        <company/>
+        <rev>R2 ENG</rev>
+        <date/>
+        <source>compute.kicad_sch</source>
+        <comment number="1" value="ENGINEERING PROTOTYPE - NO MANUFACTURING OR CHARGE APPROVAL"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/">
+      <title_block>
+        <title>sMove / integrated ICM-20948 / SAME main PCB</title>
+        <company/>
+        <rev>C1</rev>
+        <date/>
+        <source>imu.kicad_sch</source>
+        <comment number="1" value="Actual carrier circuitry transferred; no sensor substitution; +Z outward"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>TYPE-C-31-M-12</value>
+      <footprint>smove-r2-main:USB_C_Receptacle_HRO_TYPE-C-31-M-12</footprint>
+      <fields>
+        <field name="MPN">TYPE-C-31-M-12</field>
+        <field name="LCSC">C165948</field>
+        <field name="Footprint">smove-r2-main:USB_C_Receptacle_HRO_TYPE-C-31-M-12</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="J1" description=""/>
+      <property name="MPN" value="TYPE-C-31-M-12"/>
+      <property name="LCSC" value="C165948"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <sheetpath names="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/"/>
+      <tstamps>824b74bc-0f6b-5073-82be-ae83843f2769</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF5101TCE</field>
+        <field name="LCSC">C25905</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF5101TCE"/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/"/>
+      <tstamps>bf0c67d8-bf71-531a-9bff-17cf9ae2ecc1</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF5101TCE</field>
+        <field name="LCSC">C25905</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF5101TCE"/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/"/>
+      <tstamps>62249a3d-7c44-50d3-9b93-def511549c3b</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>USBLC6-2SC6</value>
+      <footprint>smove-r2-main:SOT-23-6</footprint>
+      <fields>
+        <field name="MPN">USBLC6-2SC6</field>
+        <field name="LCSC">C7519</field>
+        <field name="Footprint">smove-r2-main:SOT-23-6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="U8" description=""/>
+      <property name="MPN" value="USBLC6-2SC6"/>
+      <property name="LCSC" value="C7519"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <sheetpath names="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/"/>
+      <tstamps>33e55572-782d-5572-9428-75a8ad7f3520</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>PESD5V0S2BT,215</value>
+      <footprint>smove-r2-main:SOT-23</footprint>
+      <fields>
+        <field name="MPN">PESD5V0S2BT,215</field>
+        <field name="LCSC">C49338</field>
+        <field name="Footprint">smove-r2-main:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="U9" description=""/>
+      <property name="MPN" value="PESD5V0S2BT,215"/>
+      <property name="LCSC" value="C49338"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <sheetpath names="/USB/" tstamps="/2bda09d7-02a6-5813-8901-250e661184c8/"/>
+      <tstamps>fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>4.7uF / 16V</value>
+      <footprint>smove-r2-main:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="LCSC">C19666</field>
+        <field name="Footprint">smove-r2-main:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="LCSC" value="C19666"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>d0826465-4b10-5286-85fd-e123cc439f08</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>47uF / 6.3V</value>
+      <footprint>smove-r2-main:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21A476MQYNNNE</field>
+        <field name="LCSC">C16780</field>
+        <field name="Footprint">smove-r2-main:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21A476MQYNNNE"/>
+      <property name="LCSC" value="C16780"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>fb41cc53-f5cb-5dc0-a04c-e60578c27ce9</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>22uF / 10V</value>
+      <footprint>smove-r2-main:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21A226MPQNNNE</field>
+        <field name="LCSC">C29277</field>
+        <field name="Footprint">smove-r2-main:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21A226MPQNNNE"/>
+      <property name="LCSC" value="C29277"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>d6a9d8a8-32d6-5c5f-9983-815f0addc56b</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF / 16V</value>
+      <footprint>smove-r2-main:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">smove-r2-main:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>9c09465d-3b1a-5618-8753-7dd88a3c8c8e</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>47uF / 6.3V</value>
+      <footprint>smove-r2-main:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">CL21A476MQYNNNE</field>
+        <field name="LCSC">C16780</field>
+        <field name="Footprint">smove-r2-main:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21A476MQYNNNE"/>
+      <property name="LCSC" value="C16780"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>47e6bcb7-e31d-52ac-99bf-04a6f9153100</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Battery wire pads 2.54mm</value>
+      <footprint>smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="LCSC"/>
+        <field name="Footprint">smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="J2" description=""/>
+      <property name="MPN" value=""/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>21368572-48a5-5c87-8fc4-78e6b3ab2ef1</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>100k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="LCSC">C25741</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="LCSC" value="C25741"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>da7f29a5-3074-5719-a2d9-6aed95089931</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>100k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="LCSC">C25741</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="LCSC" value="C25741"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>8f10a7e0-9fbe-5b5c-b185-00a79eb35593</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>8.2k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF8201TCE</field>
+        <field name="LCSC">C25924</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF8201TCE"/>
+      <property name="LCSC" value="C25924"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>c05f7deb-ba06-589e-88ff-ec1466f550a8</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>4.7k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>be66b532-05c7-557a-89c5-f2d94d130905</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>10k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="LCSC">C25744</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="LCSC" value="C25744"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>a9c1b0ab-5977-568f-be58-0258ae3fea50</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>AP2112K-3.3TRG1</value>
+      <footprint>smove-r2-main:SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">AP2112K-3.3TRG1</field>
+        <field name="LCSC">C51118</field>
+        <field name="Footprint">smove-r2-main:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="U4" description=""/>
+      <property name="MPN" value="AP2112K-3.3TRG1"/>
+      <property name="LCSC" value="C51118"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>1555110c-1d31-53c3-9e59-bdb126c1727a</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>BQ24074RGTR</value>
+      <footprint>smove-r2-main:BQ24074_RGT</footprint>
+      <fields>
+        <field name="MPN">BQ24074RGTR</field>
+        <field name="LCSC">C54313</field>
+        <field name="Footprint">smove-r2-main:BQ24074_RGT</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="U6" description=""/>
+      <property name="MPN" value="BQ24074RGTR"/>
+      <property name="LCSC" value="C54313"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/a926f61e-132d-5af0-876e-12788077b17d/"/>
+      <tstamps>62e9e236-7ab7-5084-b6c7-72c70c5ebfa8</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF / 16V</value>
+      <footprint>smove-r2-main:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">smove-r2-main:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>58d45be0-cfbf-59e4-814d-527297a0ed4f</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>1uF / 25V</value>
+      <footprint>smove-r2-main:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="LCSC">C52923</field>
+        <field name="Footprint">smove-r2-main:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="LCSC" value="C52923"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>ec09f9d9-c486-5e14-a578-95693b5aed08</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LTST-C19HE1WT / CA</value>
+      <footprint>smove-r2-main:LED_LiteOn_LTST-C19HE1WT</footprint>
+      <fields>
+        <field name="MPN">LTST-C19HE1WT</field>
+        <field name="LCSC">C458749</field>
+        <field name="Footprint">smove-r2-main:LED_LiteOn_LTST-C19HE1WT</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="D1" description=""/>
+      <property name="MPN" value="LTST-C19HE1WT"/>
+      <property name="LCSC" value="C458749"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>02ba7497-9a8d-56fa-99a3-83e5b10889a3</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>22R</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF220JTCE</field>
+        <field name="LCSC">C25092</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF220JTCE"/>
+      <property name="LCSC" value="C25092"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>d702c535-6d67-5fa9-9a0a-121a3ab9aa51</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>22R</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF220JTCE</field>
+        <field name="LCSC">C25092</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF220JTCE"/>
+      <property name="LCSC" value="C25092"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>afad6a5c-42da-5eff-9c63-4a7089ab9b38</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="LCSC">C25741</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="LCSC" value="C25741"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>e8977b6c-9dc7-5070-8fd6-38378bcab1ac</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="LCSC">C25744</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="LCSC" value="C25744"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>117d08c6-bf29-5779-83ba-3cece792d5b9</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="LCSC">C25744</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="LCSC" value="C25744"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>484aaf4f-18bd-50d2-88d3-31683e9707e2</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="LCSC">C25744</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="LCSC" value="C25744"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>1dc23bb5-2a78-5f55-a0e6-529fa725fe87</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="LCSC">C25744</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="LCSC" value="C25744"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>f6011e9d-b5fe-58a3-9fca-949710662cde</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1001TCE</field>
+        <field name="LCSC">C11702</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1001TCE"/>
+      <property name="LCSC" value="C11702"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>e88b45c9-cf79-581f-9355-e93b103f9884</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1001TCE</field>
+        <field name="LCSC">C11702</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1001TCE"/>
+      <property name="LCSC" value="C11702"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>3c3f9172-c3a6-5be5-b617-559c8cf23058</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1k</value>
+      <footprint>smove-r2-main:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF1001TCE</field>
+        <field name="LCSC">C11702</field>
+        <field name="Footprint">smove-r2-main:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1001TCE"/>
+      <property name="LCSC" value="C11702"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>eb1928cd-42fe-596f-b55e-9356c3c99c22</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>RESET</value>
+      <footprint>smove-r2-main:TS1088</footprint>
+      <fields>
+        <field name="MPN">TS-1088-AR02016</field>
+        <field name="LCSC">C720477</field>
+        <field name="Footprint">smove-r2-main:TS1088</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="TS-1088-AR02016"/>
+      <property name="LCSC" value="C720477"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>2a670366-1936-5aec-8f5e-8c3d3571a6ea</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>BOOT / USER</value>
+      <footprint>smove-r2-main:TS1088</footprint>
+      <fields>
+        <field name="MPN">TS-1088-AR02016</field>
+        <field name="LCSC">C720477</field>
+        <field name="Footprint">smove-r2-main:TS1088</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="TS-1088-AR02016"/>
+      <property name="LCSC" value="C720477"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>430fa0ba-1038-54cf-a2e1-fa5681823db9</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-C3-MINI-1-N4</value>
+      <footprint>smove-r2-main:ESP32-C3-MINI-1</footprint>
+      <fields>
+        <field name="MPN">ESP32-C3-MINI-1-N4</field>
+        <field name="LCSC">C2838502</field>
+        <field name="Footprint">smove-r2-main:ESP32-C3-MINI-1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="smove-r2-main" part="U1" description=""/>
+      <property name="MPN" value="ESP32-C3-MINI-1-N4"/>
+      <property name="LCSC" value="C2838502"/>
+      <property name="Sheetname" value="Compute"/>
+      <property name="Sheetfile" value="compute.kicad_sch"/>
+      <sheetpath names="/Compute/" tstamps="/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/"/>
+      <tstamps>679f3a43-46b0-5e0d-9e87-38b62fcad22e</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>4.7u / 16V X5R</value>
+      <footprint>imu:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="LCSC">C19666</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">imu:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="LCSC" value="C19666"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>233b5195-817d-59f5-a8a5-fd09904effb2</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>4.7u / 16V X5R</value>
+      <footprint>imu:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="LCSC">C19666</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">imu:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="LCSC" value="C19666"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>e0e5e196-799d-568b-9f13-d0b86b3acb28</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n / 16V</value>
+      <footprint>imu:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">imu:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>a6c91d7c-828d-5826-ac88-825c40550a8e</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100n / 16V</value>
+      <footprint>imu:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">imu:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>97308083-8385-5225-9589-49e45fabfbe5</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100n / 16V</value>
+      <footprint>imu:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Footprint">imu:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>a3b94375-6e80-51cc-861b-2aa5457c1e57</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>4.7k 1%</value>
+      <footprint>imu:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">imu:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>3c0cb9d7-c976-5f84-ba13-35cde8486f38</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>4.7k 1%</value>
+      <footprint>imu:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">imu:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>08b5ed5b-5585-5ebd-a635-c71220b1469c</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>4.7k 1%</value>
+      <footprint>imu:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">imu:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>5995901a-b35a-54ae-b43d-34fc4bedb784</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>4.7k 1%</value>
+      <footprint>imu:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF4701TCE</field>
+        <field name="LCSC">C25900</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">imu:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF4701TCE"/>
+      <property name="LCSC" value="C25900"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>3ab8e99a-4337-5ed4-a3a2-9bdff8556150</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>200k 1%</value>
+      <footprint>imu:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF2003TCE</field>
+        <field name="LCSC">C25764</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Footprint">imu:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF2003TCE"/>
+      <property name="LCSC" value="C25764"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>90276661-e7fa-53b4-aea3-f9152012f3e7</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ICM-20948</value>
+      <footprint>imu:InvenSense_QFN-24_3x3mm_P0.4mm</footprint>
+      <fields>
+        <field name="MPN">ICM-20948</field>
+        <field name="LCSC">C726001</field>
+        <field name="Manufacturer">TDK InvenSense</field>
+        <field name="Footprint">imu:InvenSense_QFN-24_3x3mm_P0.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="imu" part="ICM20948_verified" description=""/>
+      <property name="MPN" value="ICM-20948"/>
+      <property name="LCSC" value="C726001"/>
+      <property name="Manufacturer" value="TDK InvenSense"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>a0b2ccb6-671b-58db-a6a5-f217c29f4636</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>PCA9306DCUR</value>
+      <footprint>imu:PCA9306_DCU0008A</footprint>
+      <fields>
+        <field name="MPN">PCA9306DCUR</field>
+        <field name="LCSC">C33196</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint">imu:PCA9306_DCU0008A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="imu" part="PCA9306DCU" description=""/>
+      <property name="MPN" value="PCA9306DCUR"/>
+      <property name="LCSC" value="C33196"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>9efab111-371d-5cab-946e-8f794e2f2b41</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>AP2112K-1.8TRG1</value>
+      <footprint>imu:SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">AP2112K-1.8TRG1</field>
+        <field name="LCSC">C176944</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Footprint">imu:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="imu" part="AP2112K_1V8" description=""/>
+      <property name="MPN" value="AP2112K-1.8TRG1"/>
+      <property name="LCSC" value="C176944"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Sheetname" value="IMU"/>
+      <property name="Sheetfile" value="imu.kicad_sch"/>
+      <sheetpath names="/IMU/" tstamps="/0c78c5fa-f3e0-528c-818c-9b07d10ef961/"/>
+      <tstamps>60195a43-d98b-5930-b7e8-3badfc088a6e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="imu" part="AP2112K_1V8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2112K-1.8TRG1</field>
+        <field name="Footprint">imu:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="1V8_OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="imu" part="ICM20948_verified">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ICM-20948</field>
+        <field name="Footprint">imu:InvenSense_QFN-24_3x3mm_P0.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="NC" type="no_connect"/>
+        <pin num="7" name="AUX_CL" type="output"/>
+        <pin num="8" name="VDDIO" type="power_in"/>
+        <pin num="9" name="AD0" type="input"/>
+        <pin num="10" name="REGOUT" type="power_out"/>
+        <pin num="11" name="FSYNC" type="input"/>
+        <pin num="12" name="INT1" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="NC" type="no_connect"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="NC" type="no_connect"/>
+        <pin num="17" name="NC" type="no_connect"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="RESV_NC" type="no_connect"/>
+        <pin num="20" name="RESV_GND" type="power_in"/>
+        <pin num="21" name="AUX_DA" type="bidirectional"/>
+        <pin num="22" name="nCS" type="input"/>
+        <pin num="23" name="SCL" type="input"/>
+        <pin num="24" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="imu" part="PCA9306DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCA9306DCUR</field>
+        <field name="Footprint">imu:PCA9306_DCU0008A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VREF1" type="input"/>
+        <pin num="3" name="SCL1" type="bidirectional"/>
+        <pin num="4" name="SDA1" type="bidirectional"/>
+        <pin num="5" name="SDA2" type="bidirectional"/>
+        <pin num="6" name="SCL2" type="bidirectional"/>
+        <pin num="7" name="VREF2" type="input"/>
+        <pin num="8" name="EN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="D1">
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">D1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="R_K" type="passive"/>
+        <pin num="2" name="G_K" type="passive"/>
+        <pin num="3" name="B_K" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">J1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="D+" type="passive"/>
+        <pin num="A7" name="D-" type="passive"/>
+        <pin num="A8" name="SBU1" type="passive"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="D+" type="passive"/>
+        <pin num="B7" name="D-" type="passive"/>
+        <pin num="B8" name="SBU2" type="passive"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHELL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="J2">
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">J2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="BAT+" type="passive"/>
+        <pin num="2" name="BAT-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">U1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="3V3" type="power_in"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="GPIO2_/_STRAP" type="bidirectional"/>
+        <pin num="6" name="GPIO3" type="bidirectional"/>
+        <pin num="7" name="NC" type="no_connect"/>
+        <pin num="8" name="EN" type="input"/>
+        <pin num="9" name="NC" type="no_connect"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="GND" type="power_in"/>
+        <pin num="12" name="GPIO0_/_ADC1_CH0" type="input"/>
+        <pin num="13" name="GPIO1_/_PGOOD_N" type="input"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="GPIO10_/_BLUE" type="output"/>
+        <pin num="17" name="NC" type="no_connect"/>
+        <pin num="18" name="GPIO4_/_SCL" type="bidirectional"/>
+        <pin num="19" name="GPIO5_/_SDA" type="bidirectional"/>
+        <pin num="20" name="GPIO6_/_RED" type="output"/>
+        <pin num="21" name="GPIO7_/_GREEN" type="output"/>
+        <pin num="22" name="GPIO8_/_STRAP" type="bidirectional"/>
+        <pin num="23" name="GPIO9_/_BOOT" type="bidirectional"/>
+        <pin num="24" name="NC" type="no_connect"/>
+        <pin num="25" name="NC" type="no_connect"/>
+        <pin num="26" name="GPIO18_/_USB_D-" type="bidirectional"/>
+        <pin num="27" name="GPIO19_/_USB_D+" type="bidirectional"/>
+        <pin num="28" name="NC" type="no_connect"/>
+        <pin num="29" name="NC" type="no_connect"/>
+        <pin num="30" name="GPIO20_/_RX" type="input"/>
+        <pin num="31" name="GPIO21_/_TX" type="output"/>
+        <pin num="32" name="NC" type="no_connect"/>
+        <pin num="33" name="NC" type="no_connect"/>
+        <pin num="34" name="NC" type="no_connect"/>
+        <pin num="35" name="NC" type="no_connect"/>
+        <pin num="36" name="GND" type="power_in"/>
+        <pin num="37" name="GND" type="power_in"/>
+        <pin num="38" name="GND" type="power_in"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="GND" type="power_in"/>
+        <pin num="41" name="GND" type="power_in"/>
+        <pin num="42" name="GND" type="power_in"/>
+        <pin num="43" name="GND" type="power_in"/>
+        <pin num="44" name="GND" type="power_in"/>
+        <pin num="45" name="GND" type="power_in"/>
+        <pin num="46" name="GND" type="power_in"/>
+        <pin num="47" name="GND" type="power_in"/>
+        <pin num="48" name="GND" type="power_in"/>
+        <pin num="49" name="GND" type="power_in"/>
+        <pin num="50" name="GND" type="power_in"/>
+        <pin num="51" name="GND" type="power_in"/>
+        <pin num="52" name="GND" type="power_in"/>
+        <pin num="53" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="U4">
+      <fields>
+        <field name="Reference">U4</field>
+        <field name="Value">U4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="U6">
+      <fields>
+        <field name="Reference">U6</field>
+        <field name="Value">U6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="TS" type="input"/>
+        <pin num="2" name="BAT" type="bidirectional"/>
+        <pin num="3" name="BAT" type="bidirectional"/>
+        <pin num="4" name="CE_N" type="input"/>
+        <pin num="5" name="EN2" type="input"/>
+        <pin num="6" name="EN1" type="input"/>
+        <pin num="7" name="PGOOD_N" type="open_collector"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="CHG_N" type="open_collector"/>
+        <pin num="10" name="OUT" type="power_out"/>
+        <pin num="11" name="OUT_(common)" type="passive"/>
+        <pin num="12" name="ILIM" type="passive"/>
+        <pin num="13" name="IN" type="power_in"/>
+        <pin num="14" name="TMR" type="input"/>
+        <pin num="15" name="ITERM" type="input"/>
+        <pin num="16" name="ISET" type="passive"/>
+        <pin num="17" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="U8">
+      <fields>
+        <field name="Reference">U8</field>
+        <field name="Value">U8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="D-_IN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="D+_IN" type="passive"/>
+        <pin num="4" name="D+_OUT" type="passive"/>
+        <pin num="5" name="VBUS" type="passive"/>
+        <pin num="6" name="D-_OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="smove-r2-main" part="U9">
+      <fields>
+        <field name="Reference">U9</field>
+        <field name="Value">U9</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CC1" type="passive"/>
+        <pin num="2" name="CC2" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/home/azero/.okbrain/workspaces/smove-files/027/.cache/pcb-repair/baseline/Device.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="imu">
+      <uri>/home/azero/.okbrain/workspaces/smove-files/027/.cache/pcb-repair/baseline/imu.kicad_sym</uri>
+    </library>
+    <library logical="smove-r2-main">
+      <uri>/home/azero/.okbrain/workspaces/smove-files/027/.cache/pcb-repair/baseline/smove-r2-main.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3_MAIN" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D1" pin="4" pinfunction="A" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U5" pin="1" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="2" name="/BAT_ADC" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO0_/_ADC1_CH0" pintype="input"/>
+    </net>
+    <net code="3" name="/Compute/LED_B" class="Default">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="GPIO10_/_BLUE" pintype="output"/>
+    </net>
+    <net code="4" name="/Compute/LED_B_K" class="Default">
+      <node ref="D1" pin="3" pinfunction="B_K" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/Compute/LED_G" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO7_/_GREEN" pintype="output"/>
+    </net>
+    <net code="6" name="/Compute/LED_G_K" class="Default">
+      <node ref="D1" pin="2" pinfunction="G_K" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="/Compute/LED_R" class="Default">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="GPIO6_/_RED" pintype="output"/>
+    </net>
+    <net code="8" name="/Compute/LED_R_K" class="Default">
+      <node ref="D1" pin="1" pinfunction="R_K" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="/Compute/MCU_EN" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="10" name="/Compute/STRAP2" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPIO2_/_STRAP" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/Compute/STRAP8" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO8_/_STRAP" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/Compute/USB_DM_MCU" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="GPIO18_/_USB_D-" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/Compute/USB_DP_MCU" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="GPIO19_/_USB_D+" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/IMU/1V8_IMU" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="22" pinfunction="nCS" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="VDDIO" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VREF1" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="1V8_OUT" pintype="power_out"/>
+    </net>
+    <net code="15" name="/IMU/I2C_BIAS" class="Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="VREF2" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="16" name="/IMU/IMU_REGOUT" class="Default">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="REGOUT" pintype="power_out"/>
+    </net>
+    <net code="17" name="/IMU/SCL_1V8" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="SCL" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="SCL1" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/IMU/SDA_1V8" class="Default">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U2" pin="24" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U3" pin="4" pinfunction="SDA1" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/Power/CHG_ILIM" class="Default">
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="20" name="/Power/CHG_ISET" class="Default">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U6" pin="16" pinfunction="ISET" pintype="passive"/>
+    </net>
+    <net code="21" name="/Power/PACK_P" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="BAT+" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="BAT" pintype="bidirectional"/>
+      <node ref="U6" pin="3" pinfunction="BAT" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/Power/SYS" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="IN" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="U6" pin="10" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U6" pin="11" pinfunction="OUT_(common)" pintype="passive"/>
+    </net>
+    <net code="23" name="/Power/TS_NO_CELL_SENSING" class="Default">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="TS" pintype="input"/>
+    </net>
+    <net code="24" name="/SCL_HOST" class="Default">
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="GPIO4_/_SCL" pintype="bidirectional"/>
+      <node ref="U3" pin="6" pinfunction="SCL2" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/SDA_HOST" class="Default">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="GPIO5_/_SDA" pintype="bidirectional"/>
+      <node ref="U3" pin="5" pinfunction="SDA2" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/USB/CC1" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="CC1" pintype="passive"/>
+    </net>
+    <net code="27" name="/USB/CC2" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="CC2" pintype="passive"/>
+    </net>
+    <net code="28" name="/USB_DM" class="Default">
+      <node ref="J1" pin="A7" pinfunction="D-" pintype="passive"/>
+      <node ref="J1" pin="B7" pinfunction="D-" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="D-_IN" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="D-_OUT" pintype="passive"/>
+    </net>
+    <net code="29" name="/USB_DP" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D+" pintype="passive"/>
+      <node ref="J1" pin="B6" pinfunction="D+" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="D+_IN" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="D+_OUT" pintype="passive"/>
+    </net>
+    <net code="30" name="/USB_POWER_N" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO1_/_PGOOD_N" pintype="input"/>
+      <node ref="U6" pin="7" pinfunction="PGOOD_N" pintype="open_collector"/>
+    </net>
+    <net code="31" name="/VBUS" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="U6" pin="13" pinfunction="IN" pintype="power_in"/>
+      <node ref="U8" pin="5" pinfunction="VBUS" pintype="passive"/>
+    </net>
+    <net code="32" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHELL" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="BAT-" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="11" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="36" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="37" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="38" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="39" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="40" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="41" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="42" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="43" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="44" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="45" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="46" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="47" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="48" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="49" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="50" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="51" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="52" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="53" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="FSYNC" pintype="input"/>
+      <node ref="U2" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="RESV_GND" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="AD0" pintype="input"/>
+      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="17" pinfunction="EP" pintype="power_in"/>
+      <node ref="U6" pin="4" pinfunction="CE_N" pintype="input"/>
+      <node ref="U6" pin="5" pinfunction="EN2" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="EN1" pintype="input"/>
+      <node ref="U6" pin="8" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U8" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(U1-GPIO9_{slash}_BOOT)" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GPIO9_/_BOOT" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U1-GPIO3-Pad6)" class="Default">
+      <node ref="U1" pin="6" pinfunction="GPIO3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U1-GPIO20_{slash}_RX-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="GPIO20_/_RX" pintype="input+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U1-GPIO21_{slash}_TX-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="GPIO21_/_TX" pintype="output+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U1-NC-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U1-NC-Pad7)" class="Default">
+      <node ref="U1" pin="7" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U1-NC-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U1-NC-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U1-NC-Pad15)" class="Default">
+      <node ref="U1" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U1-NC-Pad17)" class="Default">
+      <node ref="U1" pin="17" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U1-NC-Pad24)" class="Default">
+      <node ref="U1" pin="24" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-NC-Pad25)" class="Default">
+      <node ref="U1" pin="25" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-NC-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-NC-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-NC-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-NC-Pad33)" class="Default">
+      <node ref="U1" pin="33" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-NC-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-NC-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U2-AUX_CL-Pad7)" class="Default">
+      <node ref="U2" pin="7" pinfunction="AUX_CL" pintype="output+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U2-AUX_DA-Pad21)" class="Default">
+      <node ref="U2" pin="21" pinfunction="AUX_DA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U2-INT1-Pad12)" class="Default">
+      <node ref="U2" pin="12" pinfunction="INT1" pintype="output+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U2-NC-Pad1)" class="Default">
+      <node ref="U2" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U2-NC-Pad2)" class="Default">
+      <node ref="U2" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U2-NC-Pad3)" class="Default">
+      <node ref="U2" pin="3" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U2-NC-Pad4)" class="Default">
+      <node ref="U2" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U2-NC-Pad5)" class="Default">
+      <node ref="U2" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U2-NC-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U2-NC-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U2-NC-Pad15)" class="Default">
+      <node ref="U2" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U2-NC-Pad16)" class="Default">
+      <node ref="U2" pin="16" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U2-NC-Pad17)" class="Default">
+      <node ref="U2" pin="17" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U2-RESV_NC-Pad19)" class="Default">
+      <node ref="U2" pin="19" pinfunction="RESV_NC" pintype="no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U4-NC-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U5-NC-Pad4)" class="Default">
+      <node ref="U5" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U6-CHG_N-Pad9)" class="Default">
+      <node ref="U6" pin="9" pinfunction="CHG_N" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U6-ITERM-Pad15)" class="Default">
+      <node ref="U6" pin="15" pinfunction="ITERM" pintype="input+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U6-TMR-Pad14)" class="Default">
+      <node ref="U6" pin="14" pinfunction="TMR" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
