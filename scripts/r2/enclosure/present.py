@@ -25,9 +25,9 @@ def annotations(doc):
     text('CarrierPlaneLabel',['ICM-20948 integrated'],(-1,8,12),size=13)
     text('OutwardAxisLabel',['accel/gyro +Z OUT'],(12.5,21.5,28),(.8,.18,.04),14)
     text('TopFaceLabel',['TOP / OUTWARD'],(2,40,19),size=17)
-    text('RGBLabel',['RGB'],(20,9,20),(.65,.03,.32),14)
+    text('RGBLabel',['RGB'],(16,12.2,20),(.65,.03,.32),14)
     text('ResetLabel',['RESET'],(21.5,13.8,20),size=12)
-    text('BootLabel',['BOOT'],(3.6,3.7,20),size=12)
+    text('BootLabel',['BOOT'],(10,12,20),size=12)
     text('BodyOnlyLabel',['BODY SIDE','Main PCB BOTTOM faces this base'],(1,20,0),size=17)
     arrow=doc.getObject('OutwardAxis') or doc.addObject('Part::Feature','OutwardAxis')
     arrow.Shape=Part.makeCylinder(.28,14,A.Vector(12.5,21.5,12.0)).fuse(Part.makeCone(.85,0,2,A.Vector(12.5,21.5,26.0)))
@@ -111,7 +111,7 @@ def main():
                         'Selected base offset changes group only','Restore returns ALL group/link transforms to assembled',
                         'Fixed engineering source placements and volumes unchanged','Native saved with assembled default and distinct named parts'],
                 method='Programmatic Qt button clicks in the actual FreeCAD GUI; screenshot from QMainWindow.grab, renders from activeView.saveImage.',
-                desktop_agent='Current desktop locked / PipeWire capture inhibited; no desktop clicking or native GUI routing claimed. These are programmatic Qt GUI tests.',
+                desktop_agent='Desktop observation available this turn; programmatic Qt GUI macro tests, not native GUI PCB routing.',
                 exploded_display_is_not_alignment_geometry=True,
                 native_sha256=hashlib.sha256((OUT/'smove-r2-enclosure.FCStd').read_bytes()).hexdigest(),
                 source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),ROOT/'scripts/r2/enclosure/inspection.py',OUT/'InspectAssembly.FCMacro']})

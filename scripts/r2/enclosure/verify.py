@@ -20,7 +20,7 @@ for i,a in enumerate(refs+hw):
  for b in (refs+hw)[i+1:]:
   if a.Role=='harness' or b.Role=='harness':
    other=b if a.Role=='harness' else a
-   if other.Role=='battery' or other.Name=='Main_J2':continue
+   if (a.Name.startswith('BareWire') and b.Name=='SolderFillet'+a.Name[-1]) or (b.Name.startswith('BareWire') and a.Name=='SolderFillet'+b.Name[-1]):continue
   sep('parts:'+a.Name+':'+b.Name,a.Shape,b.Shape)
 for o in refs+hw+[d.BatteryDivider]:
  if o.Name not in ('MainPCB','Main_U1'):sep('RF:'+o.Name,d.RF_NO_BATTERY_HARNESS_METAL.Shape,o.Shape)
@@ -29,12 +29,20 @@ for c in cs:
   for o in refs+hw+[d.BatteryDivider]:
    if o.Name==c.Name.replace('_MatingInsertion','') or o.Role=='harness':continue
    sep('plug:'+c.Name+':'+o.Name,c.Shape,o.Shape)
-# New own-connector check was absent from baseline verifier. Independently calculate baseline sliver.
-import subprocess
-baseline=json.loads(subprocess.check_output(['git','show','c1050a07339897e7203f43137aec96de5bbc41cc:PCB/main/interface.json'],cwd=ROOT,text=True))
-bj=baseline['anchors']['J2'];xs=[x for x,y in bj['cavity_polygon_native_xy_mm']];ys=[y for x,y in bj['cavity_polygon_native_xy_mm']];lo,hi=bj['cavity_z_mm_from_board_bottom']
-bs=Part.makeBox(25,35,1,A.Vector(100,100,0));bp=Part.makeBox(max(xs)-min(xs),max(ys)-min(ys),hi-lo,A.Vector(min(xs),min(ys),lo));inherited_volume=volume(bs,bp)
-check('PH2_own_board_gate_already_in_baseline',abs(inherited_volume-1.35)<1e-6,dict(baseline_overlap_mm3=inherited_volume,exact_mate_unknown=True))
+# J2 is now PTH wire pads: no mate, no header, no connector-envelope exception.
+check('obsolete_J2_mate_removed',d.getObject('Main_J2_MatingInsertion') is None and d.getObject('Main_J2') is None)
+check('two_wire_routes',len([o for o in refs if o.Name.startswith('BatteryWire')])==2)
+for i,x in enumerate((11.23,13.77),1):
+ wire=d.getObject('BatteryWire'+str(i));bare=d.getObject('BareWire'+str(i))
+ check('wire_assumed_OD:'+str(i),abs(wire.EnvelopeRadius.Value-.6)<1e-6)
+ check('wire_bend_reserve:'+str(i),abs(wire.BendRadius.Value-2.)<1e-6)
+ check('tinned_bundle_in_PTH:'+str(i),abs(bare.Shape.BoundBox.XLength-.7)<1e-6 and d.MainPCB.Shape.common(bare.Shape).Volume<1e-6)
+ check('solder_top_trim:'+str(i),abs(d.getObject('SolderFillet'+str(i)).Shape.BoundBox.ZMax-12.4)<1e-6)
+ sep('wire_vs_full_pack_reserve:'+str(i),wire.Shape,d.BatteryAcceptance_21x31x4_3.Shape)
+ # The guide and lacing bores must be actual negative space in native base, not drawings.
+ for label,xx,yy,r in [('wire',x,2.2,.6),('lacing',(9.3,15.7)[i-1],2.7,.2)]:
+  probe=Part.makeCylinder(r,1.,A.Vector(xx,yy,5.1));sep('strain_relief_passage:'+label+str(i),probe,d.Base.Shape)
+check('lacing_bridge_connected',len(d.Base.Shape.Solids)==1 and d.WireLacingBridge.Shape.Volume>15)
 # Verify every generated component against CURRENT native extraction, not an old file hash alone.
 inputs=json.loads((CACHE/'input-geometry.json').read_text())['boards']['main']
 for r,f in inputs['footprints'].items():
@@ -42,11 +50,13 @@ for r,f in inputs['footprints'].items():
  bb2=d.getObject('Main_'+r).Shape.BoundBox;x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm']
  check('current_component_geometry:'+r,max(abs(a-b) for a,b in zip([bb2.XMin,bb2.YMin,bb2.ZMin,bb2.XMax,bb2.YMax,bb2.ZMax],[x0,y0,10.8+z0,x1,y1,10.8+z1]))<1e-6)
 # Exact two diagonal native holes, sleeve contact and retained non-contact sensor frame.
-check('two_diagonal_holes',len(build['fastener_xy_mm'])==2 and abs(build['fastener_xy_mm'][0][0]-build['fastener_xy_mm'][1][0])>17 and abs(build['fastener_xy_mm'][0][1]-build['fastener_xy_mm'][1][1])>31)
+check('two_diagonal_holes',len(build['fastener_xy_mm'])==2 and abs(build['fastener_xy_mm'][0][0]-build['fastener_xy_mm'][1][0])>17 and abs(build['fastener_xy_mm'][0][1]-build['fastener_xy_mm'][1][1])>28)
 bb=Part.makeCompound([o.Shape for o in case+hw]).BoundBox;dims=[bb.XLength,bb.YLength,bb.ZLength];sorted_dims=sorted(dims,reverse=True)
 check('outer_measured_bounds',all(v>0 for v in dims),dims)
+full=Part.makeCompound([o.Shape for o in case+refs+hw]).BoundBox
+check('all_installed_items_within_reported_bounds',max(abs(a-b) for a,b in zip([full.XMin,full.YMin,full.ZMin,full.XMax,full.YMax,full.ZMax],[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax]))<1e-6)
 # This is a requirement report, not a falsely passing release assertion.
-target=dict(target_sorted_mm=[50,30,20],actual_sorted_mm=sorted_dims,met=all(a<t for a,t in zip(sorted_dims,[50,30,20])),limiter='Nominal CAD only: only 0.2mm length margin; no print/cell/fastener tolerance approval')
+target=dict(target_sorted_mm=[50,30,20],actual_sorted_mm=sorted_dims,met=all(a<t for a,t in zip(sorted_dims,[50,30,20])),limiter='Nominal CAD only: no print/cell/wire/fastener tolerance approval')
 for i,(x,y) in enumerate(build['fastener_xy_mm'],1):
  # Acceptance SCREEN, not evidence that the owner's screws meet these bounds.
  worst=Part.makeCylinder(1.5,8.1,A.Vector(x,y,15.4-8.1)).fuse(Part.makeCylinder(2.84,3,A.Vector(x,y,15.4)))
@@ -73,5 +83,5 @@ for n in groups:d.getObject(n).Placement.Base=A.Vector(3,5,7)
 d.recompute();check('independently_movable_groups',all(o.TypeId=='App::Part' for o in [d.getObject(n) for n in groups]));check('display_moves_do_not_mutate_sources',source=={o.Name:(o.Shape.Volume,str(o.Placement)) for o in case+refs+hw})
 for n in groups:d.getObject(n).Placement=A.Placement()
 d.recompute();check('restored_display_groups',all(d.getObject(n).Placement.Base.Length==0 for n in groups))
-fails=[c for c in checks if not c['passed']];report=dict(status='PASS_GEOMETRIC_SCREENS' if not fails else 'FAIL',checks=checks,failures=fails,check_count=len(checks),measured_external_mm=dims,target=target,inherited_PH2_baseline_overlap_mm3=inherited_volume,physical_validation='NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/plug/screw fit, RF/thermal/magnetic performance',sources={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [OUT/'smove-r2-enclosure.FCStd',ROOT/'PCB/main/smove-r2-main.kicad_pcb']})
+fails=[c for c in checks if not c['passed']];report=dict(status='PASS_GEOMETRIC_SCREENS' if not fails else 'FAIL',checks=checks,failures=fails,check_count=len(checks),measured_external_mm=dims,target=target,physical_validation='NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/screw fit and lacing pull/flex test, RF/thermal/magnetic performance',sources={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [OUT/'smove-r2-enclosure.FCStd',ROOT/'PCB/main/smove-r2-main.kicad_pcb']})
 (OUT/'validation').mkdir(exist_ok=True);(OUT/'validation/mechanical.json').write_text(json.dumps(report,indent=2)+'\n');(OUT/'validation/build.json').write_text(json.dumps(build,indent=2)+'\n');print(json.dumps(dict(status=report['status'],count=len(checks),failures=fails,dimensions=dims,target=target),indent=2));raise SystemExit(bool(fails))

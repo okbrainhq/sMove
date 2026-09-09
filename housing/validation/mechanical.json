@@ -1,5 +1,5 @@
 {
-  "status": "FAIL",
+  "status": "PASS_GEOMETRIC_SCREENS",
   "checks": [
     {
       "check": "valid_solid:Base",
@@ -128,11 +128,6 @@
     },
     {
       "check": "valid_solid:Main_R7",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "valid_solid:Main_J2",
       "passed": true,
       "detail": null
     },
@@ -267,7 +262,32 @@
       "detail": null
     },
     {
-      "check": "valid_solid:PH2_ProtectedPackLeads",
+      "check": "valid_solid:BatteryWire1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_solid:BareWire1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_solid:SolderFillet1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_solid:BatteryWire2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_solid:BareWire2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "valid_solid:SolderFillet2",
       "passed": true,
       "detail": null
     },
@@ -472,13 +492,6 @@
       }
     },
     {
-      "check": "clear:Base:Main_J2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "clear:Base:Main_U4",
       "passed": true,
       "detail": {
@@ -661,7 +674,42 @@
       }
     },
     {
-      "check": "clear:Base:PH2_ProtectedPackLeads",
+      "check": "clear:Base:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -710,7 +758,28 @@
       }
     },
     {
-      "check": "clear:Base:Main_J2_MatingInsertion",
+      "check": "clear:Base:LacingThreadReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:LacingKnotReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:LacingThreadReserve2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Base:LacingKnotReserve2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -879,13 +948,6 @@
     },
     {
       "check": "clear:Lid:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:Lid:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1074,7 +1136,42 @@
       }
     },
     {
-      "check": "clear:Lid:PH2_ProtectedPackLeads",
+      "check": "clear:Lid:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1123,7 +1220,28 @@
       }
     },
     {
-      "check": "clear:Lid:Main_J2_MatingInsertion",
+      "check": "clear:Lid:LacingThreadReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:LacingKnotReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:LacingThreadReserve2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:Lid:LacingKnotReserve2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1285,13 +1403,6 @@
     },
     {
       "check": "clear:BatteryDivider:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "clear:BatteryDivider:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1480,7 +1591,42 @@
       }
     },
     {
-      "check": "clear:BatteryDivider:PH2_ProtectedPackLeads",
+      "check": "clear:BatteryDivider:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1529,7 +1675,28 @@
       }
     },
     {
-      "check": "clear:BatteryDivider:Main_J2_MatingInsertion",
+      "check": "clear:BatteryDivider:LacingThreadReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:LacingKnotReserve1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:LacingThreadReserve2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "clear:BatteryDivider:LacingKnotReserve2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1684,13 +1851,6 @@
     },
     {
       "check": "parts:MainPCB:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:MainPCB:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -1879,7 +2039,42 @@
       }
     },
     {
-      "check": "parts:MainPCB:PH2_ProtectedPackLeads",
+      "check": "parts:MainPCB:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:MainPCB:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:MainPCB:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:MainPCB:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:MainPCB:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:MainPCB:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2055,13 +2250,6 @@
     },
     {
       "check": "parts:Main_R9:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R9:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2250,7 +2438,42 @@
       }
     },
     {
-      "check": "parts:Main_R9:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R9:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R9:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R9:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R9:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R9:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R9:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2419,13 +2642,6 @@
     },
     {
       "check": "parts:Main_U5:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U5:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2614,7 +2830,42 @@
       }
     },
     {
-      "check": "parts:Main_U5:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U5:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U5:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U5:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U5:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U5:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U5:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2776,13 +3027,6 @@
     },
     {
       "check": "parts:Main_SW2:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_SW2:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -2971,7 +3215,42 @@
       }
     },
     {
-      "check": "parts:Main_SW2:PH2_ProtectedPackLeads",
+      "check": "parts:Main_SW2:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW2:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW2:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW2:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW2:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -3126,13 +3405,6 @@
     },
     {
       "check": "parts:Main_R4:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R4:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -3321,7 +3593,42 @@
       }
     },
     {
-      "check": "parts:Main_R4:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R4:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R4:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R4:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R4:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R4:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R4:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -3469,13 +3776,6 @@
     },
     {
       "check": "parts:Main_C10:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C10:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -3664,7 +3964,42 @@
       }
     },
     {
-      "check": "parts:Main_C10:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C10:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C10:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C10:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C10:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C10:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C10:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -3805,13 +4140,6 @@
     },
     {
       "check": "parts:Main_R17:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R17:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4000,7 +4328,42 @@
       }
     },
     {
-      "check": "parts:Main_R17:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R17:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R17:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R17:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R17:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R17:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R17:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4134,13 +4497,6 @@
     },
     {
       "check": "parts:Main_C8:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C8:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4329,7 +4685,42 @@
       }
     },
     {
-      "check": "parts:Main_C8:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C8:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C8:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C8:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C8:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C8:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C8:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4456,13 +4847,6 @@
     },
     {
       "check": "parts:Main_D1:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_D1:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4651,7 +5035,42 @@
       }
     },
     {
-      "check": "parts:Main_D1:PH2_ProtectedPackLeads",
+      "check": "parts:Main_D1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_D1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_D1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_D1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_D1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_D1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4771,13 +5190,6 @@
     },
     {
       "check": "parts:Main_U2:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U2:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -4966,7 +5378,42 @@
       }
     },
     {
-      "check": "parts:Main_U2:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U2:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U2:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U2:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U2:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U2:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5079,13 +5526,6 @@
     },
     {
       "check": "parts:Main_C4:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C4:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5274,7 +5714,42 @@
       }
     },
     {
-      "check": "parts:Main_C4:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C4:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C4:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C4:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C4:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C4:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C4:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5380,13 +5855,6 @@
     },
     {
       "check": "parts:Main_R5:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R5:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5575,7 +6043,42 @@
       }
     },
     {
-      "check": "parts:Main_R5:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R5:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R5:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R5:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R5:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R5:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R5:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5674,13 +6177,6 @@
     },
     {
       "check": "parts:Main_J1:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J1:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5869,7 +6365,42 @@
       }
     },
     {
-      "check": "parts:Main_J1:PH2_ProtectedPackLeads",
+      "check": "parts:Main_J1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_J1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_J1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_J1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_J1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_J1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -5961,13 +6492,6 @@
     },
     {
       "check": "parts:Main_C7:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C7:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6156,7 +6680,42 @@
       }
     },
     {
-      "check": "parts:Main_C7:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C7:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C7:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C7:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C7:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C7:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C7:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6241,13 +6800,6 @@
     },
     {
       "check": "parts:Main_R23:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R23:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6436,7 +6988,42 @@
       }
     },
     {
-      "check": "parts:Main_R23:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R23:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R23:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R23:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R23:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R23:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R23:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6514,13 +7101,6 @@
     },
     {
       "check": "parts:Main_U3:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_U3:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6709,7 +7289,42 @@
       }
     },
     {
-      "check": "parts:Main_U3:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U3:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U3:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U3:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U3:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U3:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U3:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6780,13 +7395,6 @@
     },
     {
       "check": "parts:Main_C9:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C9:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -6975,7 +7583,42 @@
       }
     },
     {
-      "check": "parts:Main_C9:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C9:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C9:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C9:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C9:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C9:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C9:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7039,13 +7682,6 @@
     },
     {
       "check": "parts:Main_R3:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R3:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7234,7 +7870,42 @@
       }
     },
     {
-      "check": "parts:Main_R3:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R3:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R3:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R3:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R3:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R3:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R3:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7291,13 +7962,6 @@
     },
     {
       "check": "parts:Main_R18:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R18:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7486,7 +8150,42 @@
       }
     },
     {
-      "check": "parts:Main_R18:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R18:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R18:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R18:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R18:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R18:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R18:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7536,13 +8235,6 @@
     },
     {
       "check": "parts:Main_R2:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R2:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7731,7 +8423,42 @@
       }
     },
     {
-      "check": "parts:Main_R2:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R2:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R2:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R2:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R2:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R2:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7774,13 +8501,6 @@
     },
     {
       "check": "parts:Main_R15:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R15:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -7969,7 +8689,42 @@
       }
     },
     {
-      "check": "parts:Main_R15:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R15:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R15:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R15:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R15:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R15:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R15:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8005,13 +8760,6 @@
     },
     {
       "check": "parts:Main_C3:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_C3:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8200,7 +8948,42 @@
       }
     },
     {
-      "check": "parts:Main_C3:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C3:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C3:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C3:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C3:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C3:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C3:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8229,13 +9012,6 @@
     },
     {
       "check": "parts:Main_C3:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_R7:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8424,7 +9200,42 @@
       }
     },
     {
-      "check": "parts:Main_R7:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R7:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R7:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R7:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R7:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R7:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R7:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8453,216 +9264,6 @@
     },
     {
       "check": "parts:Main_R7:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_U4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_U1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R10",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R22",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R20",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R19",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_U9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_U6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R12",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_U8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R16",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_C11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R21",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_SW3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_R14",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:Main_USB_ShellTails",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:BatteryCandidate_UNQUALIFIED",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:ClosureScrew1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "parts:Main_J2:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -8844,7 +9445,42 @@
       }
     },
     {
-      "check": "parts:Main_U4:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U4:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U4:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U4:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U4:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U4:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U4:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9047,7 +9683,42 @@
       }
     },
     {
-      "check": "parts:Main_R8:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R8:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R8:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R8:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R8:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R8:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R8:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9243,7 +9914,42 @@
       }
     },
     {
-      "check": "parts:Main_C5:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C5:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C5:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C5:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C5:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C5:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C5:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9432,7 +10138,42 @@
       }
     },
     {
-      "check": "parts:Main_C6:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C6:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C6:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C6:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C6:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C6:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C6:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9614,7 +10355,42 @@
       }
     },
     {
-      "check": "parts:Main_U1:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9789,7 +10565,42 @@
       }
     },
     {
-      "check": "parts:Main_C1:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -9957,7 +10768,42 @@
       }
     },
     {
-      "check": "parts:Main_R10:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R10:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R10:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R10:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R10:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R10:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R10:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10118,7 +10964,42 @@
       }
     },
     {
-      "check": "parts:Main_C13:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C13:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C13:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C13:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C13:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C13:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C13:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10272,7 +11153,42 @@
       }
     },
     {
-      "check": "parts:Main_R13:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R13:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R13:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R13:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R13:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R13:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R13:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10419,7 +11335,42 @@
       }
     },
     {
-      "check": "parts:Main_R22:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R22:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R22:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R22:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R22:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R22:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R22:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10559,7 +11510,42 @@
       }
     },
     {
-      "check": "parts:Main_R20:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R20:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R20:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R20:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R20:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R20:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R20:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10692,7 +11678,42 @@
       }
     },
     {
-      "check": "parts:Main_R19:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R19:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R19:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R19:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R19:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R19:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R19:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10818,7 +11839,42 @@
       }
     },
     {
-      "check": "parts:Main_U9:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U9:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U9:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U9:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U9:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U9:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U9:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -10937,7 +11993,42 @@
       }
     },
     {
-      "check": "parts:Main_U6:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U6:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U6:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U6:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U6:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U6:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U6:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11049,7 +12140,42 @@
       }
     },
     {
-      "check": "parts:Main_R12:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R12:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R12:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R12:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R12:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R12:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R12:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11154,7 +12280,42 @@
       }
     },
     {
-      "check": "parts:Main_U8:PH2_ProtectedPackLeads",
+      "check": "parts:Main_U8:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U8:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U8:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U8:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U8:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_U8:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11252,7 +12413,42 @@
       }
     },
     {
-      "check": "parts:Main_R11:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R11:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R11:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R11:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R11:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R11:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R11:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11343,7 +12539,42 @@
       }
     },
     {
-      "check": "parts:Main_R1:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11427,7 +12658,42 @@
       }
     },
     {
-      "check": "parts:Main_C2:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C2:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C2:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C2:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C2:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C2:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11504,7 +12770,42 @@
       }
     },
     {
-      "check": "parts:Main_R16:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R16:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R16:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R16:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R16:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R16:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R16:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11574,7 +12875,42 @@
       }
     },
     {
-      "check": "parts:Main_C11:PH2_ProtectedPackLeads",
+      "check": "parts:Main_C11:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C11:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C11:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C11:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C11:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_C11:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11637,7 +12973,42 @@
       }
     },
     {
-      "check": "parts:Main_R21:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R21:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R21:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R21:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R21:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R21:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R21:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11693,7 +13064,42 @@
       }
     },
     {
-      "check": "parts:Main_SW3:PH2_ProtectedPackLeads",
+      "check": "parts:Main_SW3:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW3:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW3:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW3:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW3:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_SW3:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11742,7 +13148,42 @@
       }
     },
     {
-      "check": "parts:Main_R14:PH2_ProtectedPackLeads",
+      "check": "parts:Main_R14:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R14:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R14:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R14:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R14:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_R14:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11784,7 +13225,42 @@
       }
     },
     {
-      "check": "parts:Main_USB_ShellTails:PH2_ProtectedPackLeads",
+      "check": "parts:Main_USB_ShellTails:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_USB_ShellTails:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_USB_ShellTails:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_USB_ShellTails:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_USB_ShellTails:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:Main_USB_ShellTails:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -11819,6 +13295,48 @@
       }
     },
     {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryCandidate_UNQUALIFIED:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
       "check": "parts:BatteryCandidate_UNQUALIFIED:ClosureScrew1",
       "passed": true,
       "detail": {
@@ -11847,28 +13365,259 @@
       }
     },
     {
-      "check": "parts:PH2_ProtectedPackLeads:ClosureScrew1",
+      "check": "parts:BatteryWire1:BareWire1",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "parts:PH2_ProtectedPackLeads:ClosureNut1",
+      "check": "parts:BatteryWire1:SolderFillet1",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "parts:PH2_ProtectedPackLeads:ClosureScrew2",
+      "check": "parts:BatteryWire1:BatteryWire2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "parts:PH2_ProtectedPackLeads:ClosureNut2",
+      "check": "parts:BatteryWire1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire1:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire1:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire1:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire1:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire1:ClosureNut2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire1:ClosureNut2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet1:ClosureNut2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BatteryWire2:ClosureNut2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire2:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire2:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire2:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:BareWire2:ClosureNut2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet2:ClosureScrew1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet2:ClosureNut1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet2:ClosureScrew2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "parts:SolderFillet2:ClosureNut2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -12071,13 +13820,6 @@
       }
     },
     {
-      "check": "RF:Main_J2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "RF:Main_U4",
       "passed": true,
       "detail": {
@@ -12253,7 +13995,42 @@
       }
     },
     {
-      "check": "RF:PH2_ProtectedPackLeads",
+      "check": "RF:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "RF:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "RF:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "RF:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "RF:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "RF:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -12449,13 +14226,6 @@
       }
     },
     {
-      "check": "plug:Main_J1_MatingInsertion:Main_J2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "plug:Main_J1_MatingInsertion:Main_U4",
       "passed": true,
       "detail": {
@@ -12638,6 +14408,20 @@
       }
     },
     {
+      "check": "plug:Main_J1_MatingInsertion:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "plug:Main_J1_MatingInsertion:SolderFillet2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
       "check": "plug:Main_J1_MatingInsertion:ClosureScrew1",
       "passed": true,
       "detail": {
@@ -12673,390 +14457,101 @@
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:MainPCB",
-      "passed": false,
-      "detail": {
-        "overlap_mm3": 2.160000000000027
-      }
+      "check": "obsolete_J2_mate_removed",
+      "passed": true,
+      "detail": null
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_R9",
+      "check": "two_wire_routes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wire_assumed_OD:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wire_bend_reserve:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tinned_bundle_in_PTH:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "solder_top_trim:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wire_vs_full_pack_reserve:1",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_U5",
+      "check": "strain_relief_passage:wire1",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_SW2",
+      "check": "strain_relief_passage:lacing1",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_R4",
+      "check": "wire_assumed_OD:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wire_bend_reserve:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "tinned_bundle_in_PTH:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "solder_top_trim:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wire_vs_full_pack_reserve:2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_C10",
+      "check": "strain_relief_passage:wire2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_R17",
+      "check": "strain_relief_passage:lacing2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
       }
     },
     {
-      "check": "plug:Main_J2_MatingInsertion:Main_C8",
+      "check": "lacing_bridge_connected",
       "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_D1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_J1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R23",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R18",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R15",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U4",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C5",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R10",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R13",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R22",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R20",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R19",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U9",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U6",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R12",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_U8",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R16",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_C11",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R21",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_SW3",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_R14",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:Main_USB_ShellTails",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:BatteryCandidate_UNQUALIFIED",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:ClosureScrew1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:ClosureNut1",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:ClosureScrew2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:ClosureNut2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "plug:Main_J2_MatingInsertion:BatteryDivider",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "PH2_own_board_gate_already_in_baseline",
-      "passed": true,
-      "detail": {
-        "baseline_overlap_mm3": 1.35,
-        "exact_mate_unknown": true
-      }
+      "detail": null
     },
     {
       "check": "current_component_geometry:R9",
@@ -13165,11 +14660,6 @@
     },
     {
       "check": "current_component_geometry:R7",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "check": "current_component_geometry:J2",
       "passed": true,
       "detail": null
     },
@@ -13303,9 +14793,14 @@
       "passed": true,
       "detail": [
         29.4,
-        49.800000000000004,
+        46.800000000000004,
         19.599999999999998
       ]
+    },
+    {
+      "check": "all_installed_items_within_reported_bounds",
+      "passed": true,
+      "detail": null
     },
     {
       "check": "screw_8_1_screen:1:Base",
@@ -13484,13 +14979,6 @@
     },
     {
       "check": "screw_8_1_screen:1:Main_R7",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
-      "check": "screw_8_1_screen:1:Main_J2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -13679,7 +15167,42 @@
       }
     },
     {
-      "check": "screw_8_1_screen:1:PH2_ProtectedPackLeads",
+      "check": "screw_8_1_screen:1:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:1:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:1:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:1:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:1:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:1:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -13941,13 +15464,6 @@
       }
     },
     {
-      "check": "screw_8_1_screen:2:Main_J2",
-      "passed": true,
-      "detail": {
-        "overlap_mm3": 0.0
-      }
-    },
-    {
       "check": "screw_8_1_screen:2:Main_U4",
       "passed": true,
       "detail": {
@@ -14130,7 +15646,42 @@
       }
     },
     {
-      "check": "screw_8_1_screen:2:PH2_ProtectedPackLeads",
+      "check": "screw_8_1_screen:2:BatteryWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:2:BareWire1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:2:SolderFillet1",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:2:BatteryWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:2:BareWire2",
+      "passed": true,
+      "detail": {
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "check": "screw_8_1_screen:2:SolderFillet2",
       "passed": true,
       "detail": {
         "overlap_mm3": 0.0
@@ -14353,19 +15904,11 @@
       "detail": null
     }
   ],
-  "failures": [
-    {
-      "check": "plug:Main_J2_MatingInsertion:MainPCB",
-      "passed": false,
-      "detail": {
-        "overlap_mm3": 2.160000000000027
-      }
-    }
-  ],
-  "check_count": 2088,
+  "failures": [],
+  "check_count": 2314,
   "measured_external_mm": [
     29.4,
-    49.800000000000004,
+    46.800000000000004,
     19.599999999999998
   ],
   "target": {
@@ -14375,17 +15918,16 @@
       20
     ],
     "actual_sorted_mm": [
-      49.800000000000004,
+      46.800000000000004,
       29.4,
       19.599999999999998
     ],
     "met": true,
-    "limiter": "Nominal CAD only: only 0.2mm length margin; no print/cell/fastener tolerance approval"
+    "limiter": "Nominal CAD only: no print/cell/wire/fastener tolerance approval"
   },
-  "inherited_PH2_baseline_overlap_mm3": 1.35,
-  "physical_validation": "NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/plug/screw fit, RF/thermal/magnetic performance",
+  "physical_validation": "NOT PERFORMED; battery insertion under raised shelves is a separate rigid-body path/sample gate;: print tolerance/rigidity/clamp preload, sample battery/lead/screw fit and lacing pull/flex test, RF/thermal/magnetic performance",
   "sources": {
-    "housing/smove-r2-enclosure.FCStd": "037a4d087d875608634a37078a7d8ee73333af7b75219f400ed673104e838379",
-    "PCB/main/smove-r2-main.kicad_pcb": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39"
+    "housing/smove-r2-enclosure.FCStd": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
+    "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71"
   }
 }

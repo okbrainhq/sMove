@@ -1,33 +1,47 @@
-"""Rigid pouch-envelope insertion screen; no bending/squeezing permitted."""
+"""Bounded rigid nominal-body insertion screen; never bend/squeeze a battery.
+Includes XY translations during tilt, then densely resamples a connected path.
+This is not a supplier-pack or continuous swept-volume certification.
+"""
 import FreeCAD as A,Part,json,math
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];d=A.openDocument(str(R/'housing/smove-r2-enclosure.FCStd'));base=d.Base.Shape
-# Test x-axis tilt, centre allowed to translate along Y; keep body bottom 1.8mm above floor datum.
-c=Part.makeBox(20,30,3,A.Vector(-10,-15,-1.5));states={};parents={};levels=[]
-for angle in range(90,-1,-5):
- good={}
- for y2 in range(15,72):
-  y=y2/2;s=c.copy();s.rotate(A.Vector(),A.Vector(1,0,0),angle);s.translate(A.Vector(12.5,y,1.8-s.BoundBox.ZMin))
-  if s.BoundBox.YMin < -1.39 or s.BoundBox.YMax>44.79:continue
-  if base.common(s).Volume>1e-6:continue
-  prev=next((k for k in states if abs(k-y2)<=3),None)
-  if angle==90 or prev is not None:good[y2]=s;parents[(angle,y2)]=(angle+5,prev)
- states=good;levels.append([angle,len(good)])
- if not states:break
-print('insertion levels',levels)
-if states and angle==0:
- end=min(states,key=lambda k:abs(k-38));path=[]
+c=Part.makeBox(20,30,3,A.Vector(-10,-15,-1.5));attempts=[];chosen=None;tested=0
+for axis in [(-1,0,0),(1,0,0),(0,-1,0),(0,1,0)]:
+ states={};parents={};levels=[]
+ def shape(angle,x,y):
+  s=c.copy();s.rotate(A.Vector(),A.Vector(*axis),angle);s.translate(A.Vector(x,y,1.8-s.BoundBox.ZMin));return s
+ for angle in range(90,-1,-5):
+  good={}
+  for x2 in (20,25,30):
+   for y2 in (35,40,45,50,55):
+    s=shape(angle,x2/2,y2/2);bb=s.BoundBox
+    if bb.XMin<-.39 or bb.XMax>25.39 or bb.YMin<1.61 or bb.YMax>44.79:continue
+    prev=next((key for key in states if abs(key[0]-x2)<=5 and abs(key[1]-y2)<=5),None)
+    if angle!=90 and prev is None:continue
+    tested+=1
+    if base.common(s).Volume>1e-6:continue
+    good[x2,y2]=True;parents[angle,x2,y2]=prev
+  states=good;levels.append([angle,len(good)])
+  if not states:break
+ attempts.append(dict(axis=axis,levels=levels))
+ if not states or angle!=0:continue
+ end=min(states,key=lambda k:abs(k[0]-25)+abs(k[1]-45));path=[]
  while True:
-  path.append([angle,end/2]);p=parents[(angle,end)]
-  if p[1] is None:break
-  angle,end=p
- print('PATH',list(reversed(path)));(R/'.cache/centered/insertion-path.json').write_text(json.dumps(dict(status='NOMINAL_20x30x3_COARSE_RIGID_PATH_NOT_PACK_QUALIFICATION',path=list(reversed(path))),indent=2))
-if states and path:
- path=list(reversed(path));path.append([0,19.]);collisions=[];minimum=1e9;count=0
- for (a0,y0),(a1,y1) in zip(path,path[1:]):
-  for i in range(21):
-   t=i/20;angle=a0+(a1-a0)*t;y=y0+(y1-y0)*t;s=c.copy();s.rotate(A.Vector(),A.Vector(1,0,0),angle);s.translate(A.Vector(12.5,y,1.8-s.BoundBox.ZMin));vol=base.common(s).Volume;count+=1
-   if vol>1e-6:collisions.append([angle,y,vol])
- print('dense',count,'collisions',collisions)
- report=dict(status='PASS_NOMINAL_BODY_ONLY' if not collisions else 'FAIL',body_mm=[20,30,3],samples=count,path=path,collisions=collisions,notes='Rigid 20x30x3 body only, no bending or compression. Actual protected pack/seal/tabs/wires remain unqualified; larger installed acceptance envelope is NOT proven insertable. Lid/PCB/divider/nuts removed during insertion. Flat final slide to y19.')
- (R/'housing/validation/battery-insertion.json').write_text(json.dumps(report,indent=2)+'\n')
+  path.append([angle,end[0]/2,end[1]/2]);prev=parents[(angle,*end)]
+  if prev is None:break
+  end=prev;angle+=5
+ path=list(reversed(path));path.append([0,12.5,22.5]);collisions=[];samples=0
+ # Entry starts fully above the roof; slide the vertical body down before tilting.
+ first=shape(*path[0]);above=max(0,20-first.BoundBox.ZMin)
+ for i in range(41):
+  s=first.copy();s.translate(A.Vector(0,0,above*(1-i/40)));samples+=1
+  if base.common(s).Volume>1e-6:collisions.append(['entry',i])
+ for a,b in zip(path,path[1:]):
+  for i in range(31):
+   vals=[u+(v-u)*i/30 for u,v in zip(a,b)];samples+=1
+   if base.common(shape(*vals)).Volume>1e-6:collisions.append(vals)
+ if not collisions:chosen=dict(axis=axis,path=path,samples=samples,collisions=[]);break
+ attempts[-1]['dense_collisions']=collisions
+report=dict(status='PASS_NOMINAL_BODY_ONLY' if chosen else 'NO_PATH_FOUND',body_mm=[20,30,3],search_poses=tested,attempts=attempts,result=chosen,notes='Rigid body only, no compression. Includes vertical entry and sampled tilt/XY translation. Lid/PCB/divider/nuts and wires removed. Final body X2.5..22.5 Y7.5..37.5 Z1.8..4.8. Complete protected pack/PCM/tabs/leads and removal remain sample gates.')
+(R/'housing/validation/battery-insertion.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({k:v for k,v in report.items() if k!='attempts'},indent=2));raise SystemExit(not bool(chosen))

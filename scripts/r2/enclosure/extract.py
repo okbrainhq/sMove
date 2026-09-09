@@ -63,7 +63,7 @@ def extract():
                 assert near(p['local_xy'],h['center_mm']) and near(p['drill_mm'],h['drill_mm']) and p['attribute']==pcbnew.PAD_ATTRIB_NPTH
                 holes.append({'ref':h['ref'],'xy':p['local_xy'],'drill_mm':p['drill_mm']})
         else:
-            assert len(fps)==49 and sum(c['fitted'] for c in contracts.values())==47
+            assert len(fps)==49 and sum(c['fitted'] for c in contracts.values())==46
             for ref,xy0 in d['mounting']['holes_native_xy_mm'].items():
                 pad=fps[ref]['pads'][0];assert near(pad['native_xy'],xy0) and near(pad['drill_mm'],[3.2,3.2]) and pad['attribute']==pcbnew.PAD_ATTRIB_NPTH
                 holes.append(dict(ref=ref,xy=pad['local_xy'],drill_mm=pad['drill_mm']))

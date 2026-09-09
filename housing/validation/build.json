@@ -3,7 +3,7 @@
   "parameters_mm": {
     "XMin": -2.2,
     "XMax": 27.2,
-    "YMin": -3.2,
+    "YMin": -0.2,
     "YMax": 46.6,
     "Floor": 1.6,
     "Wall": 1.8,
@@ -39,7 +39,6 @@
     "Main_R15",
     "Main_C3",
     "Main_R7",
-    "Main_J2",
     "Main_U4",
     "Main_R8",
     "Main_C5",
@@ -66,7 +65,12 @@
     "Main_R14",
     "Main_USB_ShellTails",
     "BatteryCandidate_UNQUALIFIED",
-    "PH2_ProtectedPackLeads"
+    "BatteryWire1",
+    "BareWire1",
+    "SolderFillet1",
+    "BatteryWire2",
+    "BareWire2",
+    "SolderFillet2"
   ],
   "hardware_objects": [
     "ClosureScrew1",
@@ -78,7 +82,10 @@
     "BatteryAcceptance_21x31x4_3",
     "RF_NO_BATTERY_HARNESS_METAL",
     "Main_J1_MatingInsertion",
-    "Main_J2_MatingInsertion"
+    "LacingThreadReserve1",
+    "LacingKnotReserve1",
+    "LacingThreadReserve2",
+    "LacingKnotReserve2"
   ],
   "inspection_groups": [
     "ViewBase",
@@ -96,7 +103,7 @@
     ],
     [
       21.400000000000006,
-      3.5999999999999943
+      7.099999999999994
     ]
   ],
   "retention_xy_mm": [
@@ -106,21 +113,21 @@
     ],
     [
       21.400000000000006,
-      3.5999999999999943
+      7.099999999999994
     ]
   ],
   "parts": {
     "base": {
-      "volume_mm3": 6965.897811134738,
-      "triangles": 4660
+      "volume_mm3": 6654.167589970799,
+      "triangles": 6404
     },
     "lid": {
-      "volume_mm3": 1885.3874666276722,
-      "triangles": 3818
+      "volume_mm3": 1779.5919979391695,
+      "triangles": 3812
     },
     "divider": {
-      "volume_mm3": 586.056195061297,
-      "triangles": 364
+      "volume_mm3": 557.542082110915,
+      "triangles": 412
     }
   },
   "main_transform": [
@@ -151,21 +158,60 @@
   ],
   "pack_route_points_mm": [
     [
-      12.5,
-      -0.2,
-      14.0
+      [
+        11.23,
+        6.4,
+        10.2
+      ],
+      [
+        11.23,
+        6.4,
+        8.2
+      ],
+      [
+        11.23,
+        2.2,
+        8.2
+      ],
+      [
+        11.23,
+        2.2,
+        3.2
+      ],
+      [
+        11.23,
+        7.0,
+        3.2
+      ]
     ],
     [
-      12.5,
-      -0.2,
-      4.0
-    ],
-    [
-      12.5,
-      3.0,
-      4.0
+      [
+        13.77,
+        6.4,
+        10.2
+      ],
+      [
+        13.77,
+        6.4,
+        8.2
+      ],
+      [
+        13.77,
+        2.2,
+        8.2
+      ],
+      [
+        13.77,
+        2.2,
+        3.2
+      ],
+      [
+        13.77,
+        7.0,
+        3.2
+      ]
     ]
   ],
-  "pack_route_length_mm": 12.341592653589792,
-  "input_hash": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39"
+  "pack_route_length_mm": 26.84955592153876,
+  "input_hash": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71"
 }

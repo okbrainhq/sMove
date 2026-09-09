@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "4cb3c32193bda18d624b7974b65162a7a44f69a0",
+  "before": {
+    "pcb_bounds_mm": [
+      25,
+      39
+    ],
+    "pcb_outline_area_mm2": 911.5699999999997,
+    "housing_including_screws_LWH_mm": [
+      49.8,
+      29.4,
+      19.6
+    ]
+  },
+  "after": {
+    "pcb_bounds_mm": [
+      25,
+      35.5
+    ],
+    "pcb_outline_area_mm2": 881.6699999999983,
+    "housing_including_screws_LWH_mm": [
+      46.8,
+      29.4,
+      19.6
+    ]
+  },
+  "reduction": {
+    "pcb_bounding_area_percent": 8.974358974358976,
+    "pcb_outline_area_percent": 3.2800552892264356,
+    "case_bounding_volume_percent": 6.024096385542165
+  },
+  "caveat": "Outline area excludes USB/old connector notches but is BEFORE drills; bounding size/volume are nominal CAD, not tolerance-qualified physical dimensions."
+}

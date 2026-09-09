@@ -25,7 +25,6 @@
     "Main_R15",
     "Main_C3",
     "Main_R7",
-    "Main_J2",
     "Main_U4",
     "Main_R8",
     "Main_C5",
@@ -74,7 +73,6 @@
     "Inspect_Main_R15",
     "Inspect_Main_C3",
     "Inspect_Main_R7",
-    "Inspect_Main_J2",
     "Inspect_Main_U4",
     "Inspect_Main_R8",
     "Inspect_Main_C5",
@@ -101,5 +99,5 @@
     "Inspect_Main_R14",
     "Inspect_Main_USB_ShellTails"
   ],
-  "sha256": "961dea7ba9cebd1e0817d7cbd328a24eee4ccadd7368d2830e81395aa698d685"
+  "sha256": "344b7f3b4c6ce9956ae82525392d3cd2616edd194798416f2ff7f6a2e5c4883d"
 }

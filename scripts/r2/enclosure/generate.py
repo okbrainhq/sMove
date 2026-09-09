@@ -8,7 +8,7 @@ import Part,Sketcher,MeshPart
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'housing';EX=OUT/'dist';EX.mkdir(parents=True,exist_ok=True)
 CACHE=ROOT/'.cache/housing';DATA=json.loads((CACHE/'input-geometry.json').read_text());MAIN=json.loads((ROOT/'PCB/main/interface.json').read_text())
 assert set(DATA['boards'])=={'main'}
-P=dict(XMin=-2.2,XMax=27.2,YMin=-3.2,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
+P=dict(XMin=-2.2,XMax=27.2,YMin=-.2,YMax=46.6,Floor=1.6,Wall=1.8,MainBottom=10.8,
        RoofBottom=18.4,Roof=1.2,BarrierBottom=6.3,BarrierThickness=.8,ScrewUnderHead=15.4,ScrewLength=8.)
 D=A.newDocument('sMove_Integrated');D.Label='sMove | integrated IMU | underside toward BODY'
 S=D.addObject('Spreadsheet::Sheet','Parameters')
@@ -71,12 +71,17 @@ for x in (-.4,25.15):
  for y in (10.,30.):baseparts.append(box('BoardRegister',x,y,7.4,.25,1.,4.0))
 for x in (-.4,24.):
  for y in (10.,29.):baseparts.append(box('DividerSeat',x,y,1.6,1.4,1.,4.7))
-divider_blank=box('DividerBlank',1.,1.,6.3,23.,35.,.8)
+divider_blank=box('DividerBlank',1.,4.5,6.3,23.,34.2,.8)
 barrier=role(cut('BatteryDivider',divider_blank,fuse('DividerCornerReliefs',[cyl('DividerRelief',x,y,6.2,4.35,1.) for x,y in fasteners])),'divider','REMOVABLE rigid insulating battery divider | no preload')
 # East USB shoulder near MCU. Connector shell/plug allowed through this aperture only.
 basecuts.append(box('USBNotch',23.9,16.7,11.4,4.,11.,7.0))
 for ref,r in [('SW2',1.7),('SW3',1.7),('D1',2.2)]:
  x,y=MAIN['anchors'][ref]['center_native_xy_mm'];lidcuts.append(cyl(ref+'Access',x-100,139-y,11.9,r,8.))
+# Insulating strain-relief bridge, independent of the cell and screw load path.
+# Two wire guide bores plus two lacing holes; nylon cord must be fitted and pull-tested.
+baseparts.append(box('WireLacingBridge',8.2,1.55,5.1,8.6,2.05,1.0))
+for x in (11.23,13.77):basecuts.append(cyl('WireGuide',x,2.2,4.95,.8,1.3))
+for x in (9.3,15.7):basecuts.append(cyl('LacingBore',x,2.7,4.95,.6,1.3))
 base=role(cut('Base',fuse('BaseStructure',baseparts),fuse('BaseOpenings',basecuts)),'print','BASE | flat underside BODY')
 lid=role(cut('Lid',fuse('LidStructure',lidparts),fuse('LidOpenings',lidcuts)),'print','LID | TOP / OUTWARD | RGB RESET BOOT')
 refs=[];clearances=[];hardware=[]
@@ -87,16 +92,16 @@ for ref,f in b['footprints'].items():
   if dx>0 and dy>0:
    if abs(dx-dy)<1e-5:drills.append(cyl(f'Main_{ref}_Hole{i}',x,y,10.7,dx/2,1.2))
    else:drills.append(box(f'Main_{ref}_Slot{i}',x-dx/2,y-dy/2,10.7,dx,dy,1.2))
-pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 39 x 1mm | +Z outward'))
+pcb=cut('MainPCB',pcb,fuse('MainPCBDrills',drills));refs.append(role(pcb,'main_pcb','ONE integrated main PCB | 25 x 35.5 x 1mm | +Z outward'))
 for ref,f in b['footprints'].items():
  if not f.get('fitted'):continue
  x0,y0,x1,y1=f['envelope_xy'];z0,z1=f['z_mm'];o=rb('Main_'+ref,x0,y0,10.8+z0,x1-x0,y1-y0,z1-z0,'main_component');o.Label=ref+' '+MAIN['components'][ref]['mpn']+' | conservative envelope';refs.append(o)
 refs.append(rb('Main_USB_ShellTails',17.45,17.5,9.6,7.55,9.4,1.2,'tail'))
 # Listed pouch body only. A separate generous acceptance envelope is the supplier/sample gate.
-refs.append(rb('BatteryCandidate_UNQUALIFIED',2.5,4.,1.8,20.,30.,3.,'battery'))
-clearances.append(rb('BatteryAcceptance_21x31x4_3',2.,3.5,1.8,21.,31.,4.3,'battery_reserve'))
+refs.append(rb('BatteryCandidate_UNQUALIFIED',2.5,7.5,1.8,20.,30.,3.,'battery'))
+clearances.append(rb('BatteryAcceptance_21x31x4_3',2.,7.,1.8,21.,31.,4.3,'battery_reserve'))
 clearances.append(rb('RF_NO_BATTERY_HARNESS_METAL',-7.4,39.,-4.2,43.2,20.4,33.4,'rf_keepout'))
-for ref in ('J1','J2'):
+for ref in ('J1',):
  a=MAIN['anchors'][ref];pts=a['cavity_polygon_native_xy_mm'];xs=[x-100 for x,y in pts];ys=[139-y for x,y in pts];z0,z1=a['cavity_z_mm_from_board_bottom']
  clearances.append(rb('Main_'+ref+'_MatingInsertion',min(xs),min(ys),10.8+z0,max(xs)-min(xs),max(ys)-min(ys),z1-z0))
 # No PH4 harness. Reserved PH2 lead descent stays outside the PCB/divider footprint.
@@ -120,9 +125,18 @@ def rounded_route(name,points,bend,r):
     return role(o,'harness',name+' | swept reserve, measure real harness'),path.Length
 
 
-# Reserved wire route: exits mate towards south, turns down in notch then enters the cell-end reserve.
-packpoints=[[12.5,-.2,14.],[12.5,-.2,4.],[12.5,3.,4.]]
-ph2,packlength=rounded_route('PH2_ProtectedPackLeads',packpoints,2.,.55);refs.append(ph2)
+# TWO independent insulated wires. Engineering assumption: OD <=1.2mm, tinned
+# bundle <=0.7mm; no gauge is claimed supplied. Centreline bends R2 are a fit
+# reservation, not the wire vendor's qualified bend radius. Solder from TOP.
+packpoints=[];packlength=0.
+for i,x in enumerate((11.23,13.77),1):
+ points=[[x,6.4,10.2],[x,6.4,8.2],[x,2.2,8.2],[x,2.2,3.2],[x,7.,3.2]]
+ wire,length=rounded_route('BatteryWire'+str(i),points,2.,.6);refs.append(wire);packpoints.append(points);packlength+=length
+ refs.append(role(cyl('BareWire'+str(i),x,6.4,10.2,.35,2.2),'harness','J2 '+str(i)+' | tinned bundle <=0.7mm; top trim <=0.6mm'))
+ # Filled top solder meniscus reserve sits above the PCB, not an impossible solid through it.
+ refs.append(role(cyl('SolderFillet'+str(i),x,6.4,11.8,.9,.6),'solder','J2 top solder reserve | <=0.6mm height'))
+ clearances.append(role(cyl('LacingThreadReserve'+str(i),(9.3,15.7)[i-1],2.7,4.6,.2,2.),'lacing_reserve','0.4mm nylon lacing passage reserve; fit and pull test required'))
+ clearances.append(rb('LacingKnotReserve'+str(i),(9.3,15.7)[i-1]-.6,2.1,6.5,1.2,1.2,1.3,'lacing_reserve'))
 for i,(x,y) in enumerate(fasteners,1):
  screw=fuse(f'ClosureScrew{i}',[cyl(f'ScrewShank{i}',x,y,7.4,1.5,8.),cyl(f'ScrewHead{i}',x,y,15.4,2.84,3.)]);hardware.append(role(screw,'hardware','M3x8 socket cap | assumed max head 5.68 x 3mm'))
  nut=cut(f'ClosureNut{i}',hexagon(f'NutBlank{i}',x,y,7.6,5.5,2.4),cyl(f'NutHole{i}',x,y,7.5,1.5,2.6));hardware.append(role(nut,'hardware','M3 nut | AF5.5 x 2.4mm | side load'))
@@ -132,7 +146,7 @@ meta=D.addObject('App::DocumentObjectGroup','Provenance');meta.addProperty('App:
 meta.addProperty('App::PropertyString','Status').Status='ENGINEERING PROTOTYPE ONLY; battery/physical fit/rigidity/RF/thermal/magnetic gates open.'
 source=D.addObject('App::DocumentObjectGroup','EngineeringSources');source.Group=[o for o in D.Objects if o not in (source,S,meta)]
 assembly=D.addObject('App::DocumentObjectGroup','InspectionAssembly');assembly.Label='MOVE THESE | separate inspection groups'
-groups=[('ViewBase',[base],(0,0,0)),('ViewLid',[lid],(0,0,25)),('ViewMain',[o for o in refs if o.Name.startswith('Main')],(0,0,15)),('ViewDivider',[barrier],(0,0,7)),('ViewBattery',[o for o in refs if o.Role=='battery'],(-12,0,5)),('ViewCables',[o for o in refs if o.Role=='harness'],(12,0,10)),('ViewHardware',hardware,(0,0,35))]
+groups=[('ViewBase',[base],(0,0,0)),('ViewLid',[lid],(0,0,25)),('ViewMain',[o for o in refs if o.Name.startswith('Main')],(0,0,15)),('ViewDivider',[barrier],(0,0,7)),('ViewBattery',[o for o in refs if o.Role=='battery'],(-12,0,5)),('ViewCables',[o for o in refs if o.Role in ('harness','solder')],(12,0,10)),('ViewHardware',hardware,(0,0,35))]
 for name,objects,offset in groups:
  g=D.addObject('App::Part',name);assembly.addObject(g);g.Label=name[4:]+' | movable inspection group';g.addProperty('App::PropertyVector','ExplodedOffset','Inspection');g.ExplodedOffset=A.Vector(*offset)
  for obj in objects:

@@ -2,5 +2,5 @@
   "allow_generate_or_export": true,
   "manufacturing_release": false,
   "source": "Canonical integrated PCB/main only; carrier frozen provenance",
-  "qualification": "Engineering prototype. Electrical CAD clean; one inherited conservative PH2 own-board fit screen remains failing; physical battery/print/RF/thermal/magnetic gates OPEN."
+  "qualification": "Engineering prototype. CAD electrical and mechanical screens pass; protected-pack, wire/solder/lacing, print/hardware/rigidity/RF/thermal/magnetic gates OPEN. J2 is PTH wire pads; no PH2 mate."
 }

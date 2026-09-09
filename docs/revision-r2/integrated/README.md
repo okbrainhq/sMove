@@ -1,3 +1,5 @@
+> **Historical two-M3/JST revision.** Current PTH battery-wire design, dimensions and verification are in [the solder-wire handoff](../solder-wire/README.md). Reports/manifests below describe the previous tree, not current approvals.
+
 # Centered-IMU / two-M3 redesign — UNMERGED prototype
 
 Latest revision supersedes the earlier 14-testpad / J3 / side-screw layout. Native CAD and current reports below are the deliverables; historical reports are not current approvals.

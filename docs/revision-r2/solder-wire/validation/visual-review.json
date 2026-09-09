@@ -1,0 +1,23 @@
+{
+  "status": "REVIEWED",
+  "pcb": "/uploads/affa7739-2cb2-41de-a6d8-bc5b959e94e7.webp",
+  "power": "/uploads/9b5bdd6d-a0ea-4af8-bc6d-db4bad226110.webp",
+  "imu": "/uploads/9a4a96c2-1345-4f35-9fb5-a6689980eeff.webp",
+  "housing": "/uploads/37ebcfaa-a060-4ff5-87e2-ec7d9e834bde.webp",
+  "dimensions": "/uploads/b14dbb23-9e6c-436b-8fcc-e7d46cc0d2af.webp",
+  "desktop_exploded": "/uploads/0beae6ef-4f15-4944-8319-3dd63456cf03.webp",
+  "desktop_restored": "/uploads/9949a2b5-adea-46c5-ad0f-6fecbacd4433.webp",
+  "checks": [
+    "PCB displays two plated holes and readable BAT+/BAT- with no JST body",
+    "Power sheet displays J2 BAT+/BAT- and unchanged power path",
+    "Dedicated IMU sheet remains wired",
+    "FreeCAD assembled/exploded groups visually confirmed on real desktop; both actions dispatched, effect judged from post-images",
+    "Dimensions image reads 46.8 x 29.4 x 19.6mm",
+    "Partial KiCad 3D library is not a fully populated-model claim"
+  ],
+  "limitations": [
+    "No physical solder/lacing/pack test",
+    "No native GUI PCB routing claimed",
+    "Conservative envelope models, not all vendor solids"
+  ]
+}

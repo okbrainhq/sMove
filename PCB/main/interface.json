@@ -1,7 +1,7 @@
 {
-  "schema": "smove.centered.interface.v2",
-  "status": "CENTERED IMU / NO UART OR TESTPOINTS / TWO M3; PROTOTYPE ONLY",
-  "geometry_sha256": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39",
+  "schema": "smove.solder-wire.interface.v3",
+  "status": "COMPACT PTH BATTERY WIRES / CENTERED IMU / TWO M3; PROTOTYPE ONLY",
+  "geometry_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
   "coordinate_system": {
     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
@@ -37,7 +37,7 @@
   },
   "board_size_mm": [
     25,
-    39
+    35.5
   ],
   "outline_native_xy_mm": [
     [
@@ -66,27 +66,11 @@
     ],
     [
       125,
-      139
-    ],
-    [
-      117.3,
-      139
-    ],
-    [
-      117.3,
-      133.0
-    ],
-    [
-      107.7,
-      133.0
-    ],
-    [
-      107.7,
-      139
+      135.5
     ],
     [
       100,
-      139
+      135.5
     ]
   ],
   "thickness_mm": 1.0,
@@ -208,21 +192,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        120.0,
-        130.0
+        116.0,
+        126.8
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        119.2,
-        129.2,
-        120.8,
-        130.8
+        115.2,
+        126.0,
+        116.8,
+        127.6
       ],
       "courtyard_native_xy_mm": [
-        118.905,
-        128.555,
-        121.095,
-        131.445
+        114.905,
+        125.355,
+        117.095,
+        128.245
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -484,32 +468,30 @@
       "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
     },
     "J2": {
-      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
-      "fitted": true,
-      "side": "top",
-      "anchor_native_xy_mm": [
-        112.5,
-        127.8
-      ],
-      "rotation_ccw_deg": 0.0,
+      "ref": "J2",
+      "mpn": "PCB PTH wire pads - not fitted hardware",
+      "fitted": false,
       "body_aabb_native_xy_mm": [
-        108.44,
-        123.2,
-        116.56,
-        132.31
+        109.935,
+        130.355,
+        115.065,
+        134.845
       ],
       "courtyard_native_xy_mm": [
-        107.855,
-        122.655,
-        117.145,
-        132.945
+        109.935,
+        130.355,
+        115.065,
+        134.845
       ],
+      "anchor_native_xy_mm": [
+        112.5,
+        132.6
+      ],
+      "rotation_ccw_deg": 0,
       "z_mm_from_board_bottom": [
-        1,
-        6.8
-      ],
-      "height_bound_mm": 5.8,
-      "height_policy": "Conservative package maximum/reserve; tolerance included. Not an exact populated STEP model."
+        0,
+        1
+      ]
     },
     "U4": {
       "mpn": "AP2112K-3.3TRG1",
@@ -684,21 +666,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        117.75,
-        125.0
+        116.0,
+        124.0
       ],
-      "rotation_ccw_deg": 90.0,
+      "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        117.48,
-        124.475,
-        118.02,
-        125.525
+        115.475,
+        123.73,
+        116.525,
+        124.27
       ],
       "courtyard_native_xy_mm": [
-        117.235,
-        124.025,
-        118.265,
-        125.975
+        115.025,
+        123.485,
+        116.975,
+        124.515
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -796,21 +778,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        118.25,
-        130.75
+        114.2,
+        128.3
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        117.98,
-        130.225,
-        118.52,
-        131.275
+        113.93,
+        127.775,
+        114.47,
+        128.825
       ],
       "courtyard_native_xy_mm": [
-        117.735,
-        129.775,
-        118.765,
-        131.725
+        113.685,
+        127.325,
+        114.715,
+        129.275
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -852,21 +834,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        118.75,
-        127.5
+        114.2,
+        126.0
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        118.48,
-        126.975,
-        119.02,
-        128.025
+        113.93,
+        125.475,
+        114.47,
+        126.525
       ],
       "courtyard_native_xy_mm": [
-        118.235,
-        126.525,
-        119.265,
-        128.475
+        113.685,
+        125.025,
+        114.715,
+        126.975
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -992,21 +974,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        103.6,
-        135.3
+        110.0,
+        127.0
       ],
       "rotation_ccw_deg": 90.0,
       "body_aabb_native_xy_mm": [
-        102.1,
-        132.8,
-        105.1,
-        137.8
+        108.5,
+        124.5,
+        111.5,
+        129.5
       ],
       "courtyard_native_xy_mm": [
-        101.805,
-        132.505,
-        105.395,
-        138.095
+        108.205,
+        124.205,
+        111.795,
+        129.795
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -1425,8 +1407,8 @@
     },
     "D1": {
       "center_native_xy_mm": [
-        120.0,
-        130.0
+        116.0,
+        126.8
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1585,58 +1567,32 @@
       }
     },
     "J2": {
-      "mating_face_center_native_xy_mm": [
+      "center_native_xy_mm": [
         112.5,
-        132.2
+        132.6
       ],
-      "outward_unit_native_xy": [
-        0.0,
-        1.0
-      ],
-      "cavity_polygon_native_xy_mm": [
-        [
-          108.0,
-          132.2
-        ],
-        [
-          117.0,
-          132.2
-        ],
-        [
-          117.0,
-          140.2
-        ],
-        [
-          108.0,
-          140.2
-        ]
-      ],
-      "cavity_z_mm_from_board_bottom": [
-        0.7,
-        7.5
-      ],
-      "cavity_policy": "Conservative plug insertion/lead-bend reserve; keep plastic, battery and loose cables out. Local actual plug/harness remains acceptance gate. PH cavities are INTERNAL case wiring pockets, not assumed external user ports.",
       "pins": {
         "1": {
           "native_xy_mm": [
-            111.5,
-            124.95
+            111.23,
+            132.6
           ],
           "net": "/Power/PACK_P"
         },
         "2": {
           "native_xy_mm": [
-            113.5,
-            124.95
+            113.77,
+            132.6
           ],
           "net": "GND"
         }
-      }
+      },
+      "wire_exit": "Through board to protected lower wire bay; no connector or mating reserve"
     },
     "SW3": {
       "center_native_xy_mm": [
-        103.6,
-        135.3
+        110.0,
+        127.0
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1724,8 +1680,8 @@
       -1.2,
       0
     ],
-    "J3": "unpopulated; exposed pads both faces, no clip contact",
-    "battery_barrier": "rigid insulating barrier and >=0.8mm clearance below worst shell-tail envelope; no pouch contact with PCB/solder/holes"
+    "battery_barrier": "rigid insulating barrier and >=0.8mm clearance below worst shell-tail envelope; no pouch contact with PCB/solder/holes",
+    "J2": "PTH leads from underside; trim top protrusion <=0.6mm, insulate underside down to wire insulation, route above divider before lower wire bay"
   },
   "not_claimed": [
     "Actual vendor solid for every package",
@@ -1734,17 +1690,9 @@
   ],
   "change_policy": "Native board is canonical. Run scripts/r2/integrated/sync.py, housing extract/generate/verify and scoped verification/exports after edits.",
   "connector_selection": {
-    "status": "ACCEPTED_FOR_HAND_SOLDERED_PROTOTYPE",
-    "pitch_mm": 2.0,
-    "J2": {
-      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
-      "lcsc": "C295747",
-      "mate": "PHR-2"
-    },
-    "supply": "User purchases connectors and precrimped leads; no order/upload performed",
-    "hand_soldering": "Small SMD, accessible rear signal tails and side hold-downs; flux/fine iron and magnification. Not beginner THT. Solder with PCB out of enclosure, battery and USB disconnected.",
-    "harness": "J2 PH2 retained; now south-facing into board notch. Conservative 9mm-wide plug reserve still requires sample/drawing fit check. USB on east shoulder beside ESP.",
-    "authenticity": "No AliExpress product is promised genuine or correctly polarized",
+    "status": "NO_FITTED_BATTERY_CONNECTOR",
+    "J2": "Two plated through-hole wire solder pads; excluded from BOM/CPL; no header allowed",
+    "pitch_mm": 2.54,
     "manufacturing_release": false
   },
   "sensor_frame": {
@@ -1794,11 +1742,11 @@
     ],
     "board_bbox_centre_native_mm": [
       112.5,
-      119.5
+      117.75
     ],
     "centre_offset_native_mm": [
       0,
-      -2
+      -0.25
     ],
     "position_from_board_NW_mm": [
       12.5,
@@ -1814,11 +1762,33 @@
       ],
       "H2": [
         121.4,
-        135.4
+        131.9
       ]
     },
     "drill_mm": 3.2,
     "copper_exclusion_radius_mm": 3.45,
     "scheme": "Two diagonal NPTH holes; lid insulating sleeves / PCB / raised base nut shelves; no conductive collar on copper"
+  },
+  "battery_wire": {
+    "pitch_centre_mm": 2.54,
+    "pad_diameter_mm": 2.0,
+    "finished_hole_target_mm": 1.0,
+    "finished_hole_acceptance_mm": [
+      0.9,
+      1.1
+    ],
+    "tinned_bundle_max_diameter_mm": 0.7,
+    "insulation_max_diameter_mm": 1.2,
+    "nominal_annular_ring_mm": 0.5,
+    "mask_expansion_mm": 0.05,
+    "copper_gap_mm": 0.54,
+    "mask_web_mm": 0.44,
+    "wire_gauge_supplied": null,
+    "wire_selection": "Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied",
+    "strain_relief": "Two lacing bores and captive bridge in lower case, paired insulated leads; pull test mandatory; solder joint is not strain relief",
+    "polarity": {
+      "1": "BAT+ protected PACK_P",
+      "2": "BAT- GND"
+    }
   }
 }

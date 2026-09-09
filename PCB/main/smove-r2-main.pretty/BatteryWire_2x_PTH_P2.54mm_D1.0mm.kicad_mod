@@ -1,0 +1,111 @@
+(footprint "BatteryWire_2x_PTH_P2.54mm_D1.0mm"
+  (layer "F.Cu")
+  (descr "JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator")
+  (tags "connector JST PH horizontal")
+  (property "Reference" "J2"
+    (at 0 -5.8 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "d07e3b6c-e30e-4cd5-bdef-48dbbc346c25")
+    (effects
+      (font
+        (size 0.6 0.6)
+        (thickness 0.1))))
+  (property "Value" "Battery wire pads 2.54mm"
+    (at 0 5.8 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "174cb69b-c59c-473e-8363-de621943d1b0")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "15f2e62f-4bea-4101-9460-93e0dc775724")
+    (effects
+      (font
+        (size 1.27 1.27)
+        (thickness 0.15))))
+  (property "Description" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "909171e2-9a52-4213-b70c-9907ef2bffe7")
+    (effects
+      (font
+        (size 1.27 1.27)
+        (thickness 0.15))))
+  (property "MPN" ""
+    (at 0 0 270)
+    (layer "F.SilkS")
+    (hide yes)
+    (uuid "26b29eb9-0118-4829-b58f-93aae732a0b3")
+    (effects
+      (font
+        (size 1.27 1.27)
+        (thickness 0.15))))
+  (property "LCSC" ""
+    (at 0 0 270)
+    (layer "F.SilkS")
+    (hide yes)
+    (uuid "a62b04c5-f5c9-4a92-8922-11388a852aac")
+    (effects
+      (font
+        (size 1.27 1.27)
+        (thickness 0.15))))
+  (property "Manufacturer" "JST"
+    (at 0 0 270)
+    (layer "F.SilkS")
+    (hide yes)
+    (uuid "8c9c01c1-d9a2-4704-9820-54d840936b98")
+    (effects
+      (font
+        (size 1.27 1.27)
+        (thickness 0.15))))
+  (embedded_fonts no)
+  (attr through_hole exclude_from_bom exclude_from_pos_files)
+  (pad "1" thru_hole circle
+    (at -1.27 0)
+    (size 2.0 2.0)
+    (drill 1.0)
+    (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.05)
+    (zone_connect 2))
+  (pad "2" thru_hole circle
+    (at 1.27 0)
+    (size 2.0 2.0)
+    (drill 1.0)
+    (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.05)
+    (zone_connect 2))
+  (fp_line
+    (start -2.52 -2.2)
+    (end 2.52 -2.2)
+    (stroke
+      (width 0.05)
+      (type solid))
+    (layer "F.CrtYd"))
+  (fp_line
+    (start 2.52 -2.2)
+    (end 2.52 2.2)
+    (stroke
+      (width 0.05)
+      (type solid))
+    (layer "F.CrtYd"))
+  (fp_line
+    (start 2.52 2.2)
+    (end -2.52 2.2)
+    (stroke
+      (width 0.05)
+      (type solid))
+    (layer "F.CrtYd"))
+  (fp_line
+    (start -2.52 2.2)
+    (end -2.52 -2.2)
+    (stroke
+      (width 0.05)
+      (type solid))
+    (layer "F.CrtYd")))

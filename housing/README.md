@@ -1,14 +1,12 @@
-# Compact two-M3 enclosure / movable FreeCAD assembly
+# Compact two-M3 housing / PTH battery-wire assembly
 
-**Measured nominal outer CAD: 49.8 L × 29.4 W × 19.6 H mm**, including assumed recessed M3×8 heads. Numerically below 50×30×20, with only 0.2mm length margin. Actual printed/screw/pack tolerance fit is **not qualified**.
+**Measured nominal outer CAD: 46.8 L × 29.4 W × 19.6 H mm**, including modelled recessed M3×8 hardware; 3mm shorter than the previous 49.8mm case. Actual prints, screws, full protected pack and lacing are not qualified.
 
-Open [smove-r2-enclosure.FCStd](smove-r2-enclosure.FCStd). Editable base/lid, removable insulating divider, main PCB with centred IMU and diagonal 3.2mm holes, conservative components, candidate cell, lead reserve and two M3×8/nut sets. No ears, separate carrier, UART connector or testpads.
+Open [smove-r2-enclosure.FCStd](smove-r2-enclosure.FCStd), then explicitly run [InspectAssembly.FCMacro](InspectAssembly.FCMacro). Base, Lid, Main, Divider, Battery, Cables and Hardware are independently movable; explode/lift/XYZ/restore modify display links, not engineering source placements. The real GUI macro and desktop Explode/Restore were checked.
 
-Run [InspectAssembly.FCMacro](InspectAssembly.FCMacro) explicitly. **Base, Lid, Main, Divider, Battery, Cables and Hardware** are independently movable display groups. Lift lid / explode / individual XYZ / transparency / restore never change fixed engineering geometry. [PresentAssembly.FCMacro](PresentAssembly.FCMacro) is the separate optional GUI test/export macro; it saves styled CAD and images.
+- [Stack, wire threading/lacing, insertion and qualification gates](PRINTING-ASSEMBLY.md)
+- [Dimensions](dist/dimensions.png), [assembled](dist/assembled.png), [exploded](dist/exploded.png), [FreeCAD controls](dist/freecad-inspection.png)
+- [Assembly STEP](dist/smove-r2-assembly.step), [printable STEP](dist/smove-r2-printable.step), [base](dist/base.stl), [lid](dist/lid.stl), [divider](dist/divider.stl)
+- [Current mechanical report](validation/mechanical.json), [rigid nominal insertion screen](validation/battery-insertion.json), [GUI tests](validation/gui-inspection.json)
 
-- [Stack, assembly and qualification gates](PRINTING-ASSEMBLY.md)
-- [Dimensions](dist/dimensions.png), [assembled](dist/assembled.png), [exploded](dist/exploded.png), [section](dist/section.png), [FreeCAD UI](dist/freecad-inspection.png)
-- [STEP assembly](dist/smove-r2-assembly.step), [printable STEP](dist/smove-r2-printable.step), [base](dist/base.stl), [lid](dist/lid.stl), [divider](dist/divider.stl)
-- [Mechanical checks](validation/mechanical.json), [nominal rigid battery insertion](validation/battery-insertion.json), [GUI test](validation/gui-inspection.json)
-
-Main underside faces body; actual AG +Z outward and raw magnetometer +Z inward. **Prototype only:** conservative PH2/PCB overlap still fails; protected battery and real hardware/printing/rigidity remain unqualified. The nominal pouch insertion path does not qualify PCM, tabs or the larger installed envelope. Never force a pouch.
+No JST/header or PH2 mating reserve. Two separate PTH wire/solder envelopes, lower wire bay and insulating lacing bridge replace it. **Prototype only:** CAD clearances do not qualify the purchased pack, wiring, printing, fastening or rigidity. No battery compression permitted; actual accel/gyro +Z outward, ESP PCB underside toward body. Full [revision handoff](../docs/revision-r2/solder-wire/README.md).

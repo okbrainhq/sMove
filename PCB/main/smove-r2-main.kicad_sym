@@ -1345,7 +1345,7 @@
   (symbol "J2"
     (pin_names
       (offset .508))
-    (in_bom yes)
+    (in_bom no)
     (on_board yes)
     (property "Reference" "J2"
       (at 0.0 0.0 0)
@@ -1370,7 +1370,7 @@
       (pin passive line
         (at 10.16 1.27 180)
         (length 5.08)
-        (name "+"
+        (name "BAT+"
           (effects
             (font
               (size 0.85 0.85))))
@@ -1381,22 +1381,11 @@
       (pin passive line
         (at 10.16 -3.81 180)
         (length 5.08)
-        (name "-"
+        (name "BAT-"
           (effects
             (font
               (size 0.85 0.85))))
         (number "2"
-          (effects
-            (font
-              (size 0.8 0.8)))))
-      (pin passive line
-        (at 0.0 -13.97 90)
-        (length 5.08)
-        (name "HOLD"
-          (effects
-            (font
-              (size 0.85 0.85))))
-        (number "MP"
           (effects
             (font
               (size 0.8 0.8)))))))

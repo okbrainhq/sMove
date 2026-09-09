@@ -1,0 +1,913 @@
+{
+  "schema": "smove.complete-workspace-delivery.v1",
+  "baseline_commit": "4cb3c32193bda18d624b7974b65162a7a44f69a0",
+  "branch": "okbrain/smove-files/023-b6a2a21d",
+  "manufacturing_release": false,
+  "changed_path_count": 104,
+  "content_hash_file_count": 171,
+  "changed_paths": [
+    {
+      "path": "PCB/README.md",
+      "status": "M",
+      "before_sha256": "32ce1255ccdecc9fdef8610abc36964845ebeb68724b502d2e87e0801dffb684",
+      "after_sha256": "c128911c66604116ca4cf6a892680bba5aab3303a15ef17d2d53884ec07558da",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/README.md",
+      "status": "M",
+      "before_sha256": "eb4e37cb305146700410af65fa3845bf3f1cf7459c5cb6618208a9033578fb85",
+      "after_sha256": "34c78af94a641f5aaa0c0a0238f19e1b1079322a0197e75352bd0e3636a580d4",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/ASSEMBLY.md",
+      "status": "M",
+      "before_sha256": "455a2b34bff3e186b3ffe80468ca39bd4eef1b7994d7cf62b488eeb43805acad",
+      "after_sha256": "a38bfddfb351fbc54233f210392e41c2bcc47134098f322463e4ba6b78e75a19",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/BOM.csv",
+      "status": "M",
+      "before_sha256": "8cd6786adce84a2f67aaa2a2c8c0067d6b25aebac354307939fae58dd694c92a",
+      "after_sha256": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/assembly-placements.json",
+      "status": "M",
+      "before_sha256": "ea2a407ab4c2b63ab4a8c073dff771ddf1204268afa4e32470d41b180e0487cd",
+      "after_sha256": "e1964cd6d8e6da6cfe87a2ba58bed3d9fab16c66d69c67f39a93e22c9e517d4e",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/assembly-top.pdf",
+      "status": "M",
+      "before_sha256": "996ade7955de3cad9070bc440b335919db8a2b7315c632d229ea47abc4774c31",
+      "after_sha256": "dab48fba7bc2d797c38c1ef2517a17ce6b89cf6df89611894a3891ab5bd0a412",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/bottom-3d.png",
+      "status": "M",
+      "before_sha256": "10f163c48a9e8ff87d31c74ddcf32566a01f63068b1b591b3c6af5fcb060e984",
+      "after_sha256": "2e84bcf1adf9f059d14658ae78f9f1dcc0e2af1620c2ab3f3afcc9900ad8766c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/bottom.svg",
+      "status": "M",
+      "before_sha256": "aa3acf0497b67d942e23249b6e05a132c71f22756649abb3d4dc4ae9debf2c61",
+      "after_sha256": "88afa30601b4f612c4089a800f96efe709daec7384030d8eb4edc3df31535aca",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/conservative-step-frame.json",
+      "status": "M",
+      "before_sha256": "7c0b439fa1cb9a92083086fedb0a756583ec2964a7306511193dab6c241ff193",
+      "after_sha256": "db5ab1253a51f9abd275505a95a282ee550d66430a63b418198617559ca41ca7",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers.zip",
+      "status": "M",
+      "before_sha256": "787a8ccc6d2dd6f813f7376442a4057a1f9d5e3f3b771dc36955f3c9ff81043a",
+      "after_sha256": "96be2d9cb7deb105923c2d40ff03076aca6a1a4d85507e7c72ae793182009575",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl",
+      "status": "M",
+      "before_sha256": "b2886eb1318045f918af2a5ed42b3238fd14d0bf66ac3d4efb9314384fe056d9",
+      "after_sha256": "813a155b8672ae0aeca405af617cf8fb681a0fc485954f81b868306fefc2c4f4",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs",
+      "status": "M",
+      "before_sha256": "9c5af7957e3ae6e5c3796f20fda1f025d7f2fbb1e02f902392a194fe2bfc15fe",
+      "after_sha256": "aa3e737886fd83161f03455305f66060f19eb358cdd5fe2cdb13f0aa60b7c2fc",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo",
+      "status": "M",
+      "before_sha256": "04841c8c5f6d31bc8fdaa5817cc334e5bbb570b13ab5ff06abeadbc67b72c107",
+      "after_sha256": "af70ec43002589c83bae78b75dc4b00493149b6afdb343fedbcd2dd8655d20aa",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1",
+      "status": "M",
+      "before_sha256": "faca483b08b3b0b61869fbaff08e810377f640c3f11e01bb2d9822712e0579b6",
+      "after_sha256": "f6774b8698f20d03eb4f551e302e38c346e19edcfc477bed2ec4e314a7843978",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl",
+      "status": "M",
+      "before_sha256": "106d73191439c8fde296b37081e4b92fc7dfe66b7807e810ac3c14ce14e52aa3",
+      "after_sha256": "194d5af7b8963222a9eb03da5434b335a4522f6bb27886db81b1de96e3b19edb",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts",
+      "status": "M",
+      "before_sha256": "af23d16032e69f814f2a770cce0f21f6522c6f9d4a34c7c4dd4433342a87297c",
+      "after_sha256": "d41ab4e01a6b68c8896b9934d9f92fc38c0c8365a932053b5a116d233ceaceb9",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp",
+      "status": "M",
+      "before_sha256": "0527a2212800c393a2e8a99f935656e204023be7c57942ebcd1db66e9d41bb23",
+      "after_sha256": "d87be13ad967da96d070d66fc7e2cf18dc5685f2f9e481ccb147f0dd5115f8ef",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto",
+      "status": "M",
+      "before_sha256": "ebeca9a50419e4a51692c3c8076a41bfaf6d2debe1134db2474e11d298eeba40",
+      "after_sha256": "e3bd17e7a2fc5759a6bc35f293cf87368cd72037443403421c87b3e1d66da647",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1",
+      "status": "M",
+      "before_sha256": "a3733c4c4dd3742cb40cc47d9be5c80e830f906b67a2896d8aae93543c1a967f",
+      "after_sha256": "a1d5dc72dd487d5c7b17263cc58b6d7f1f7f3ac3143464eec6d38d4acabc5558",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2",
+      "status": "M",
+      "before_sha256": "62d80bcd2adbaaab3cc1fb130111651dd682868558eef59b7acda13ea4db8dc5",
+      "after_sha256": "2eb3623bf42367209a0d8093b88cb4af390992d79fc2cc3314c48c4df3416960",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl",
+      "status": "M",
+      "before_sha256": "80862c03158deec5df70e3b6eaa0baa7d5980f003b5948611769b2e06d5fb62a",
+      "after_sha256": "4c642f6661ddb5cbb4087f7b2aa4fe56f1843d2eda81dc6850cf55d236130e7c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-PTH.drl",
+      "status": "M",
+      "before_sha256": "01f5850e5f68e4a4de2dacbe90ca325a4472fa264a176ae2b461ec782e2a88f9",
+      "after_sha256": "700ed49b301e4aee47e5ef69c137233e1024b60bcc956482a93a7ff576f93a8c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob",
+      "status": "M",
+      "before_sha256": "f0a6ff868fb529d083d9e9e6be7ed245ef3722914ca49d67f236d9f31615f6e5",
+      "after_sha256": "5b7a81994053a442e3e61c99644c456d13ed99fab7bbee6b2338ec4196504076",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/main-board-only.step",
+      "status": "M",
+      "before_sha256": "c9b484a6370cec8afd146d86cb86946ecd0f8576076ba1db054a79293ac3348e",
+      "after_sha256": "35b3f35487feb3ced163663b7787d439c8a86d12a09816e9f451fb3649c4cc67",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/main-installed-models.step",
+      "status": "M",
+      "before_sha256": "acc04453dd6d99746cb2d91dfa2c6ee5b5ef295ac37c8248bd0ece5365d72b30",
+      "after_sha256": "1117569c5a78b942b233a4f965fcc754161788d7f45294125cc614a5445b40a2",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/main-populated-with-conservative-envelopes.step",
+      "status": "M",
+      "before_sha256": "961dea7ba9cebd1e0817d7cbd328a24eee4ccadd7368d2830e81395aa698d685",
+      "after_sha256": "344b7f3b4c6ce9956ae82525392d3cd2616edd194798416f2ff7f6a2e5c4883d",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/manifest.json",
+      "status": "M",
+      "before_sha256": "acc456b239cb5c9e60c6d269cb40fbaf9d1341cf24c851263af96974a3e62c8f",
+      "after_sha256": "bc93ff92731486783c6091dc4d47269be66db78195549cc9e26c83e7bd4db4f5",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/pick-and-place.csv",
+      "status": "M",
+      "before_sha256": "ba1e021479ee41cc12617dc26f893b497e924e94776d0285ab5e5bdd532fe851",
+      "after_sha256": "b09cfd87cf2552e76b360ba69128c1738f7d466be3cb0cb63e6915b042a75d2c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-power.png",
+      "status": "M",
+      "before_sha256": "10d4c83c5daeda5110e46c8427bae85bc4e87214d7eca9010fae0bbf176f7294",
+      "after_sha256": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg",
+      "status": "M",
+      "before_sha256": "54c60162f33a3a876a8a0d5b27f4db4b21f331f3b396073602c9d9d9b3a373c5",
+      "after_sha256": "d8ce8caea474a79106d3546c5f949a48be2fd341d7552003348dfd9d11467107",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg",
+      "status": "M",
+      "before_sha256": "039d22edcd3f42b257b8a506ada2fb793326faad320585e2f872ebe6c31c5e7a",
+      "after_sha256": "b84b39cd2035f2242f78949da5d3e2dd18638dc09db693ff99e9dafd10496db5",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-Power.svg",
+      "status": "M",
+      "before_sha256": "056cf3c6d2fa3898f2eb169e43cfbce4b298e632684a01f5529b4d9cddcc78d8",
+      "after_sha256": "929cd57392a86f5f0d0b7f1377c51399a536b630aab75c276de289b25d1ad005",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main-USB.svg",
+      "status": "M",
+      "before_sha256": "0d1894f26e67ff76fbe6377fe205d43f9fe9ae4955c95c202f956d57eb0e6772",
+      "after_sha256": "5ecc61ed81d0ded74d62158a67e7a7031a2d7672e5d84a7746ab33475a471e99",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic-svg/smove-r2-main.svg",
+      "status": "M",
+      "before_sha256": "ec8c40691fc613b1e98899ffebe735d9b73f498cda586d5c064347077a81082e",
+      "after_sha256": "fc7a492559ee0e0df51a56572bd37f1526912c04050d4fab202cb61aaf6758b9",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/schematic.pdf",
+      "status": "M",
+      "before_sha256": "52738f31a42ff9105422f4c19a50506dbdd988dfc2d218ece98581b439a012d5",
+      "after_sha256": "13f134d439262dd2122f2359cabf5ebbc49bfbcb88020785c04e2be893a890e3",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/top-3d.png",
+      "status": "M",
+      "before_sha256": "e52dc4d38e4e358683468780e09e23558a2dc859da213e232ff843dfe0b71bab",
+      "after_sha256": "bdfaaf0eb3a46f35dd5af7197f17c935599215704f660c73e7c8a92f8ef66317",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/dist/top.svg",
+      "status": "M",
+      "before_sha256": "04c0eee983454e660768f6efb0fb81f59c5d1c4892b4090d6c686b1a371f6049",
+      "after_sha256": "2ff1128770532c3a846aada0685e60f27d6f3e7be2ffbe27be41a53aa76eae92",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/interface.json",
+      "status": "M",
+      "before_sha256": "76956372322a5ec99010bbd9912c15bae081b9cf9056e6f319009acc397c0023",
+      "after_sha256": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/native-layout-contract.json",
+      "status": "M",
+      "before_sha256": "2b7604b5a1042d348f8f8a2396957e012fac22e0edb36eafbba9729d4089cf73",
+      "after_sha256": "6da300911c8ae03f8951a5c8a83581641e2a02ae0e4abc8d84aa19c539da979d",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/parts-main.json",
+      "status": "M",
+      "before_sha256": "62935e4882cfd8877ec7e408509db456be3f0b0a540b82be20de9a0342778707",
+      "after_sha256": "517608c4f5768f3434dd967f234d64ef7db5b764efb86934014cc860ed00120c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/power.kicad_sch",
+      "status": "M",
+      "before_sha256": "50d1cda1787b8207c3afbc7a21e8dabea0324e26da30cba9eed31e053e7a79d4",
+      "after_sha256": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_pcb",
+      "status": "M",
+      "before_sha256": "36dd9743f565cd422a7670d21f8b13b05a16b213ac020242014dc2b08c696d39",
+      "after_sha256": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/smove-r2-main.kicad_sym",
+      "status": "M",
+      "before_sha256": "f779dbacb659e75cf59a15e5d182cc82d9de339b8d73f18064567867da112dc0",
+      "after_sha256": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "750310ba3197cea3c4a2fcbadb42f5f01e4dfa4e2d7c952598f20791a6675a21",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "PCB/main/smove-r2-main.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+      "status": "D",
+      "before_sha256": "e68ca0479cd85251db0c4621f10abb7a65e627be83ea652e664ba6d964a651f5",
+      "after_sha256": null,
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "README.md",
+      "status": "M",
+      "before_sha256": "a6d93975509d7f19a5bc2d25950bbb438271ed3b71ba4fd93ddb736a748faeea",
+      "after_sha256": "f581e44c234f73b2060d9f8c2f74048d170f5dbd5d897bcabea1866b11c294e8",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/integrated/RADIO-BATTERY.md",
+      "status": "M",
+      "before_sha256": "9c5c65911593ec5848a356991b1287d4177801a9e80188485397b240c4b883ba",
+      "after_sha256": "3e4bab9e9f2ed3fd15ff92dcaf159240d31b8d399fbd00a2c68f07f072138fce",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/integrated/README.md",
+      "status": "M",
+      "before_sha256": "a28b4a6cebdde5f6224d8950ca0b9f4c78941e4806b5af395c8dd43f40cc3e49",
+      "after_sha256": "8332181c890e9592275ee7d87b9dc6fe9564f1de9baae86b364439dfa8a853a7",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/HANDOFF.md",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "734931a912c26819aa5f45199d3708b720c13e1654d13bf7e1e9b44304290448",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/README.md",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "691b8a17ae360ee2c2fc081069e53581e96e80284f2c668cb61569c1fe249cea",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/commit-paths.txt",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "f05377771bd780bb524c7243b715e97835a47864c6e41b002f84196cf2c68713",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/delivery-manifest.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": null,
+      "self_hashed_by_git_tree": true
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/baseline-drc.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "46b8631bd3ed77dfa5dc43bbdd7fbfdef5186d239ec01e7dedb39a2f4ddc8e3e",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/baseline-erc.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "dc8a11ab75aae5a6e3dad6fb9b9a199524f4518d0e9f3a65b686c7b5b08fc477",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/baseline-mechanical.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "96bd79b33acbe08ab0e133186faebe849fafe6815fdee964c6e8bff3623901fb",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/baseline.xml",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "f88b007d0fdfd5100daf1f78e872005a91b1dafaeb95eea1212bff4856a22ef8",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/coherence.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "70c8414cd7e11dd40d691b484b4687e0563d9fcf0d611789e18079f489a63732",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/dimensions.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "f086beccf97b62b5d0530cc60b73442638f72acae1a8167f7ccf4459cb092b9b",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/electrical.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "fb5aac5c654e18ba9c3b0a49e263c223a25619dc210261d7e5d71e40b6c7ae0b",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/exports.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "d328e9b7c8dea20b0aa230f109c8f0262c1e5a0c420a25b71f512a99d6ee26c0",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/net-migrations.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "ae03bd419c2cf1d55156132971aaf3823c0cc5f157bdacc6d97de5ae769ca6f7",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/plane-preserving-routes.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "a41cbb774a709b4c43cfa9873f83c176ae3b1bc6561f51a1ad1116f3165da288",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/post-drc.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "39a386146abc4238b9e6f9be4c7b2904e0298b28b3d382d12dd76c59938d51da",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/post-main-drc.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "f4f1185a30b0e3eed0e0b3af7025fd48db2ea13aeaa1513038dcf5cdc6c3b889",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/post-main-erc.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "7729ad1174d4f6186326646a1267e498cc2dc30b6ce783ad02fa3bdd2caa006d",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/post-main.xml",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "ef34581219ddb4ee46d03895ae66bd7bdb3f308a3af2e5b98e2abe5ca35989fc",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/retention.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "0a9685c3c36c28c5f91094e44dff584fe1311e3d295c92e0ecbac31d101391de",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/routing-intent.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "ea5a6ea5c091f15e60dadc1efdfa4bb4c6bced5a43966044caa9aa3f43e60b1c",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "docs/revision-r2/solder-wire/validation/visual-review.json",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "76c210c156b23e6a7e0cfdf8eb35b88238af4571bc8e0bedfaffcd6a18f70f5d",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/PRINTING-ASSEMBLY.md",
+      "status": "M",
+      "before_sha256": "7af71b9faafab38d894cd7bdf7cad8880f167963439fbf61230e92347d746339",
+      "after_sha256": "440f73158667498b91e7247fcad3b608e8e0a384923c263f11d446e8aeb20f04",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/README.md",
+      "status": "M",
+      "before_sha256": "3eb436b5777d4d8602f6c28248ffb55397595785a0f12e7894d34702fb77d436",
+      "after_sha256": "50992aebf16f915cc482aa7d57b87a1dd726af87183b83033fbc865b0c91efb4",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/assembled.png",
+      "status": "M",
+      "before_sha256": "cf8b29a01c9c3f6f1dcaf0267470ca16202da50a00e09d7706f9c45df8235d98",
+      "after_sha256": "83332e7feac22dc28cd347703f6e298d64000c7faee8bd4933ed887edf6b9944",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/base.stl",
+      "status": "M",
+      "before_sha256": "ccc9a371e3e0c9001de56a9c469629c306576feacd9c05fdf27dce02685e99db",
+      "after_sha256": "7f3b8e44df3b69fa4e388cd06eaef46f09a765ff6fd7881d3df15b75519a25af",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/body-side.png",
+      "status": "M",
+      "before_sha256": "03040b7a3f731dd3223cf0acb9146d95f80c2c79ec27b18e1e429db4b022ac0f",
+      "after_sha256": "33a0e265434d08fef7d24f955449ac0999373b551d888e7d31a57c793bed1a5a",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/dimensions.png",
+      "status": "M",
+      "before_sha256": "6a580da007613ebbc43f475cff7a8664d1d3b199800d344706688beb69af3bb5",
+      "after_sha256": "395658a3b71e610a2cb21a0822c8c3178816f08543c1cc7f38223d6307e4a4cc",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/divider.stl",
+      "status": "M",
+      "before_sha256": "acde3ca7b47f26603be1f6569af5df107a5044576d91684b0c406413c6af9d06",
+      "after_sha256": "c2c195c3bfc19273d865f4fd61b1dba9c168ef6b42ef9fd8e0c93bb220159661",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/exploded.png",
+      "status": "M",
+      "before_sha256": "70f3208656d5512e575383b4d40f24787d53cc9024808c453228b2a17b46cc3d",
+      "after_sha256": "278d0605d65d021eea40e239f57a2bf5c8c2b751f3a18e713056296b5dd3cafd",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/freecad-inspection.png",
+      "status": "M",
+      "before_sha256": "0fc63002bc161370f76f2a73ced1be821ff700ae9e1d615c107525bc68f1bfaa",
+      "after_sha256": "00a3c41387b56722abe56fa3d90cfd5be52a1add3debe2c26103d7b0408f8ff3",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/lid.stl",
+      "status": "M",
+      "before_sha256": "851b3a7cde30360ec33cbcaed36233d1278864e46b3d168f3c296e5921fe95f4",
+      "after_sha256": "64f2de56615b0f29ee8d20cc9d744a620215391352107dc57356464ad52c5144",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/manifest.json",
+      "status": "M",
+      "before_sha256": "59aee4464bd6d9299e0bb0b3aafc48e42650317229ceb64cc557bef7875cd706",
+      "after_sha256": "621cbd61bd95676f3d55cf7255bc4e627e873d930ed5da5f981a3885a98672c3",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/section.png",
+      "status": "M",
+      "before_sha256": "5529e532bc2a4d18421147b30214b2edda60a8a275d08fa56b27eb1173ef58bb",
+      "after_sha256": "6fa523c2d043d7c66d9da825d4b32540996ab9ee5291ec4177ad5c24e003ec30",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/smove-r2-assembly.step",
+      "status": "M",
+      "before_sha256": "68683466a96b9586ceb471c9d6ef6c078a87a4d624ad33995eba6c86696ba58f",
+      "after_sha256": "4c7fdf46cd6ce247f75e7bd7846b48248645eeef72fc66b475fc6a059ae61284",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/smove-r2-printable.step",
+      "status": "M",
+      "before_sha256": "d4767b2d95108009f221ed059fc9b0b57039406c3b93116032f1d929845706f0",
+      "after_sha256": "e0b2d02af789c20d83d13ffbd1a702b190413ae8b00cd7b28933d8908574b20b",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/dist/top.png",
+      "status": "M",
+      "before_sha256": "fa160bebb0e5ade8c4596e203610b1aaf25bd4c1d85518747b01e0e6fff114b6",
+      "after_sha256": "fee14843298eecf20f9116ed769f0f32209294b30ca2e5bc56085321521b6bc9",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/insertion-check.py",
+      "status": "M",
+      "before_sha256": "bec2682d3ebb82efe2ae28a3d079f9e39c64b6bd4b3fa026427807a9b449a547",
+      "after_sha256": "71b80d851b3d8ce914b073ab512650b3db96a7e9754abfad949a4987b2800382",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/smove-r2-enclosure.FCStd",
+      "status": "M",
+      "before_sha256": "037a4d087d875608634a37078a7d8ee73333af7b75219f400ed673104e838379",
+      "after_sha256": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/status.json",
+      "status": "M",
+      "before_sha256": "ef6107477ac8378d6f637d34bb3c0890f5105006923d6d65cd69d8143a4e3ca5",
+      "after_sha256": "d9ac7b3eaea8e7347ca5fc151b4864f5e3b2de5f306bb3b1c156c8e07e2b1939",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/validation/battery-insertion.json",
+      "status": "M",
+      "before_sha256": "82e8269b10c1319bc0f291a124ef4493efb430972d36cccc34ef5c2d5a8b3223",
+      "after_sha256": "facc9ebf33afb0e9b73cf533013362d3171888286a93b9c3e3fc4c299f293d44",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/validation/build.json",
+      "status": "M",
+      "before_sha256": "934d90bcac8aec642dae6a3852dc76243b560157879623ad2dafdc844c152a31",
+      "after_sha256": "1eaa4a98db9426cce90a7e7b3598715213f2a39edaed157aa41d322e056c4ec7",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/validation/gui-inspection.json",
+      "status": "M",
+      "before_sha256": "97584e987128f08ce7e759ea6f367029e78fdb27fb2e1a42df7f6053e00761a0",
+      "after_sha256": "ee9cd270b66bbc80b27d96f16b0034b9f071c571ce0acaa8a2129335bc4c21ed",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/validation/input-geometry.json",
+      "status": "M",
+      "before_sha256": "828d5674c64652d41dde5e60f609dac4027368929a81c73ecea6470f9a9543ca",
+      "after_sha256": "73131456544122019b6a51770663cfbb5ddd1e550eaa45056d0736cd64e1f27e",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "housing/validation/mechanical.json",
+      "status": "M",
+      "before_sha256": "96bd79b33acbe08ab0e133186faebe849fafe6815fdee964c6e8bff3623901fb",
+      "after_sha256": "fff559c7a8610af44cc335295a8ce6824d317f2d90b9dd1bab4827a1d97f7753",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/enclosure/extract.py",
+      "status": "M",
+      "before_sha256": "db5fde135a2ab5036508ff7ead652c857b286fbc6a281623cc787dd5215029e2",
+      "after_sha256": "5171273557fd1075a262fc140a29a139577c9b14afe7655615fc1cb2253d5f91",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/enclosure/generate.py",
+      "status": "M",
+      "before_sha256": "61fb38462cafd6adb2cea060d883581e3c1bf0bc51637e3e3c9f84ea495a8591",
+      "after_sha256": "8349d365eed6fbf51bd784c2386cb767a89cfe521bd325a26c823ebfb9718de3",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/enclosure/inspection.py",
+      "status": "M",
+      "before_sha256": "f8622e67f4f6b22002663bc77715d9b7a22519efff64b4373c331cbcd3786a4e",
+      "after_sha256": "7fc27a92cdf21577ce33c64b68dc618177adbe5753789d831e3824a3fcefc894",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/enclosure/present.py",
+      "status": "M",
+      "before_sha256": "6dc14882fcffc64ca5b57ab0537b04e90d95bdbee992a677d33496e936fae3fd",
+      "after_sha256": "9ad4c6120ec04b5210b4e76001cb001e9907567af7791339cd9da77c92641692",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/enclosure/verify.py",
+      "status": "M",
+      "before_sha256": "a6c6532b4715435bd1465d7bafd13ee9e6679de71f0fed30865107fb61a5ab92",
+      "after_sha256": "3813d6d298e053c6e90869914e061159d48500883b76ec70af3a941f08128532",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/final/export.py",
+      "status": "M",
+      "before_sha256": "35528008822bd31ef2ceac743b8a17f4461f36583d84aa2bf165367b715e48a8",
+      "after_sha256": "c3a62cdeaa011166b8deb9e2152e8853157638295ed02af312c6a5b9607b4e65",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/coherence_wire.py",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "fbba2c57eadc1f87f5cd5f10b371d464fb4686fcc15f70ea99c5e490b12904f8",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/seal_wire.py",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "2a47d4f34e5bf82a37bf032dcbaef1afcf56b94d501aa117c044af8b0ef45eb9",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/solder_wire.py",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "a786bd6651ff9af95c359797ccb5c8ffbc5eb82581800683fc2df8f09f321144",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/sync.py",
+      "status": "M",
+      "before_sha256": "b5ce64ddad5c6373814223b50a814f8556d5dd49e7f7a6170e27f2d6071e8533",
+      "after_sha256": "3bdc4025ef4bb18c9bde457cbb7b02af4cb6f80e785bd7908298eb468a8e391d",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/verify_wire.py",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "ae7f332655a916970fa5711f1f1c2f743ad63093ef3b5c19e311a33de14b59bf",
+      "self_hashed_by_git_tree": false
+    },
+    {
+      "path": "scripts/r2/integrated/wire_routes.py",
+      "status": "A",
+      "before_sha256": null,
+      "after_sha256": "0e8bc71c68eba44bc7fde31511c254864e773f2988e886c72ede8667d22673fc",
+      "self_hashed_by_git_tree": false
+    }
+  ],
+  "files": {
+    "PCB/README.md": "c128911c66604116ca4cf6a892680bba5aab3303a15ef17d2d53884ec07558da",
+    "PCB/main/Device.kicad_sym": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee",
+    "PCB/main/README.md": "34c78af94a641f5aaa0c0a0238f19e1b1079322a0197e75352bd0e3636a580d4",
+    "PCB/main/compute.kicad_sch": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+    "PCB/main/dist/ASSEMBLY.md": "a38bfddfb351fbc54233f210392e41c2bcc47134098f322463e4ba6b78e75a19",
+    "PCB/main/dist/BOM.csv": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e",
+    "PCB/main/dist/assembly-placements.json": "e1964cd6d8e6da6cfe87a2ba58bed3d9fab16c66d69c67f39a93e22c9e517d4e",
+    "PCB/main/dist/assembly-top.pdf": "dab48fba7bc2d797c38c1ef2517a17ce6b89cf6df89611894a3891ab5bd0a412",
+    "PCB/main/dist/bottom-3d.png": "2e84bcf1adf9f059d14658ae78f9f1dcc0e2af1620c2ab3f3afcc9900ad8766c",
+    "PCB/main/dist/bottom.svg": "88afa30601b4f612c4089a800f96efe709daec7384030d8eb4edc3df31535aca",
+    "PCB/main/dist/conservative-step-frame.json": "db5ab1253a51f9abd275505a95a282ee550d66430a63b418198617559ca41ca7",
+    "PCB/main/dist/gerbers.zip": "96be2d9cb7deb105923c2d40ff03076aca6a1a4d85507e7c72ae793182009575",
+    "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl": "813a155b8672ae0aeca405af617cf8fb681a0fc485954f81b868306fefc2c4f4",
+    "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs": "aa3e737886fd83161f03455305f66060f19eb358cdd5fe2cdb13f0aa60b7c2fc",
+    "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo": "af70ec43002589c83bae78b75dc4b00493149b6afdb343fedbcd2dd8655d20aa",
+    "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1": "f6774b8698f20d03eb4f551e302e38c346e19edcfc477bed2ec4e314a7843978",
+    "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl": "194d5af7b8963222a9eb03da5434b335a4522f6bb27886db81b1de96e3b19edb",
+    "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts": "d41ab4e01a6b68c8896b9934d9f92fc38c0c8365a932053b5a116d233ceaceb9",
+    "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp": "d87be13ad967da96d070d66fc7e2cf18dc5685f2f9e481ccb147f0dd5115f8ef",
+    "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto": "e3bd17e7a2fc5759a6bc35f293cf87368cd72037443403421c87b3e1d66da647",
+    "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1": "a1d5dc72dd487d5c7b17263cc58b6d7f1f7f3ac3143464eec6d38d4acabc5558",
+    "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2": "2eb3623bf42367209a0d8093b88cb4af390992d79fc2cc3314c48c4df3416960",
+    "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl": "4c642f6661ddb5cbb4087f7b2aa4fe56f1843d2eda81dc6850cf55d236130e7c",
+    "PCB/main/dist/gerbers/smove-r2-main-PTH.drl": "700ed49b301e4aee47e5ef69c137233e1024b60bcc956482a93a7ff576f93a8c",
+    "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob": "5b7a81994053a442e3e61c99644c456d13ed99fab7bbee6b2338ec4196504076",
+    "PCB/main/dist/main-board-only.step": "35b3f35487feb3ced163663b7787d439c8a86d12a09816e9f451fb3649c4cc67",
+    "PCB/main/dist/main-installed-models.step": "1117569c5a78b942b233a4f965fcc754161788d7f45294125cc614a5445b40a2",
+    "PCB/main/dist/main-populated-with-conservative-envelopes.step": "344b7f3b4c6ce9956ae82525392d3cd2616edd194798416f2ff7f6a2e5c4883d",
+    "PCB/main/dist/manifest.json": "bc93ff92731486783c6091dc4d47269be66db78195549cc9e26c83e7bd4db4f5",
+    "PCB/main/dist/pick-and-place.csv": "b09cfd87cf2552e76b360ba69128c1738f7d466be3cb0cb63e6915b042a75d2c",
+    "PCB/main/dist/schematic-compute.png": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
+    "PCB/main/dist/schematic-imu.png": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
+    "PCB/main/dist/schematic-power.png": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee",
+    "PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg": "d8ce8caea474a79106d3546c5f949a48be2fd341d7552003348dfd9d11467107",
+    "PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg": "b84b39cd2035f2242f78949da5d3e2dd18638dc09db693ff99e9dafd10496db5",
+    "PCB/main/dist/schematic-svg/smove-r2-main-Power.svg": "929cd57392a86f5f0d0b7f1377c51399a536b630aab75c276de289b25d1ad005",
+    "PCB/main/dist/schematic-svg/smove-r2-main-USB.svg": "5ecc61ed81d0ded74d62158a67e7a7031a2d7672e5d84a7746ab33475a471e99",
+    "PCB/main/dist/schematic-svg/smove-r2-main.svg": "fc7a492559ee0e0df51a56572bd37f1526912c04050d4fab202cb61aaf6758b9",
+    "PCB/main/dist/schematic-usb.png": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee",
+    "PCB/main/dist/schematic.pdf": "13f134d439262dd2122f2359cabf5ebbc49bfbcb88020785c04e2be893a890e3",
+    "PCB/main/dist/schematic.png": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
+    "PCB/main/dist/top-3d.png": "bdfaaf0eb3a46f35dd5af7197f17c935599215704f660c73e7c8a92f8ef66317",
+    "PCB/main/dist/top.svg": "2ff1128770532c3a846aada0685e60f27d6f3e7be2ffbe27be41a53aa76eae92",
+    "PCB/main/fp-info-cache": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "PCB/main/fp-lib-table": "1de77361e02f417874116f76edbf1160de7945f89e532ee120525097762585ad",
+    "PCB/main/imu-models/C_0402_1005Metric.step": "a9d86e843af4234cc114a3c20794dd58f3f317ff3aaad7de03726b122d6da4b2",
+    "PCB/main/imu-models/C_0603_1608Metric.step": "e202db88bfc46496686a9b65ac164c084e6ef5e78c91250947c09515db5f9695",
+    "PCB/main/imu-models/R_0402_1005Metric.step": "728345c7f5ce90e9898faebf4958367db2c137b78ee9b9d6644d02dcdf7349a1",
+    "PCB/main/imu-models/SOT-23-5.step": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+    "PCB/main/imu-models/U2_MAX_PACKAGE_ENVELOPE.step": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4",
+    "PCB/main/imu-models/VSSOP-8_2.3x2mm_P0.5mm.step": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+    "PCB/main/imu-models/model-status.json": "df74da29c71228b2f1ad6d4667f2a46f72bb38fd320d7cd3b6104d78328fabca",
+    "PCB/main/imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+    "PCB/main/imu.kicad_sym": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd",
+    "PCB/main/imu.pretty/C_0402_1005Metric.kicad_mod": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7",
+    "PCB/main/imu.pretty/C_0603_1608Metric.kicad_mod": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee",
+    "PCB/main/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod": "61406e22b771708126107b1cd36150b2ac4c04d37e0906ddbfffb46058589c04",
+    "PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52",
+    "PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d",
+    "PCB/main/imu.pretty/SOT-23-5.kicad_mod": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0",
+    "PCB/main/interface.json": "ba50e6a0de3f1b66319e891f0d80cd023e60af97925f7a25506f2d604ff7afc3",
+    "PCB/main/mechanical-envelope-source.json": "1dcf031308d4b96287ea089e88d0042d8f5591353dbded513e64ef21053e54c6",
+    "PCB/main/mechanical-pose-source.json": "2e5b747e43a540fc871173e850f220969498d6306490d32cc70608fb2450aaf3",
+    "PCB/main/native-layout-contract.json": "6da300911c8ae03f8951a5c8a83581641e2a02ae0e4abc8d84aa19c539da979d",
+    "PCB/main/parts-main.json": "517608c4f5768f3434dd967f234d64ef7db5b764efb86934014cc860ed00120c",
+    "PCB/main/power.kicad_sch": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+    "PCB/main/power.kicad_sym": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
+    "PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021",
+    "PCB/main/smove-r2-main.kicad_dru": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
+    "PCB/main/smove-r2-main.kicad_pcb": "10449c9aac99eb0b7973c85738e861b73043bb186ad0c45df2ba42f3fe375c71",
+    "PCB/main/smove-r2-main.kicad_pro": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
+    "PCB/main/smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+    "PCB/main/smove-r2-main.kicad_sym": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8",
+    "PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b",
+    "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod": "750310ba3197cea3c4a2fcbadb42f5f01e4dfa4e2d7c952598f20791a6675a21",
+    "PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa",
+    "PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497",
+    "PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41",
+    "PCB/main/smove-r2-main.pretty/Debug_5.kicad_mod": "c558adc11b51476c855d463deca3d1671e9eaadc6f6396d073af2a33b18c150c",
+    "PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod": "d62b385a9b9d0886ce050db386e641c039ba34ca46a78356d783ad3d0e9d9d1d",
+    "PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod": "63154b8816179deca97a4f378a449d43daee6f2862a546c33c76d344ebb4cfea",
+    "PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod": "011511e068b2c7d875615f0990e037f789240c85516a73006ff62f3cca7daf07",
+    "PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod": "2b563e2f9ee44cdbd1c99712ad098d0207acd42f2efd6a156c31348f47b75ff9",
+    "PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod": "0d0a48fa074dad16293e0818ea42ac06a64763cb4fd2b2f11400906745a3910b",
+    "PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod": "7ad52d37b14c5f2720f209f8e729a981dc96529db5832199b1b0f058dc351e75",
+    "PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod": "f387640293b6382cd818af98d207fa9bf364fb4d63d9d1b12df042859632ca22",
+    "PCB/main/smove-r2-main.pretty/TS1088.kicad_mod": "2dd9a2bed110746122621c35a5fae01fc2af554227af60d05a11505bb09980ba",
+    "PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod": "d1000f83ff7f664e35bca685d1ddfbf1460b253b15b71df595cc04d041146c59",
+    "PCB/main/sym-lib-table": "a875526915ef20dc290fa69e6a5a4a228316b7a2513c551c977c00a888be230c",
+    "PCB/main/usb.kicad_sch": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+    "README.md": "f581e44c234f73b2060d9f8c2f74048d170f5dbd5d897bcabea1866b11c294e8",
+    "docs/revision-r2/integrated/RADIO-BATTERY.md": "3e4bab9e9f2ed3fd15ff92dcaf159240d31b8d399fbd00a2c68f07f072138fce",
+    "docs/revision-r2/integrated/README.md": "8332181c890e9592275ee7d87b9dc6fe9564f1de9baae86b364439dfa8a853a7",
+    "docs/revision-r2/solder-wire/HANDOFF.md": "734931a912c26819aa5f45199d3708b720c13e1654d13bf7e1e9b44304290448",
+    "docs/revision-r2/solder-wire/README.md": "691b8a17ae360ee2c2fc081069e53581e96e80284f2c668cb61569c1fe249cea",
+    "docs/revision-r2/solder-wire/commit-paths.txt": "f05377771bd780bb524c7243b715e97835a47864c6e41b002f84196cf2c68713",
+    "docs/revision-r2/solder-wire/validation/baseline-drc.json": "46b8631bd3ed77dfa5dc43bbdd7fbfdef5186d239ec01e7dedb39a2f4ddc8e3e",
+    "docs/revision-r2/solder-wire/validation/baseline-erc.json": "dc8a11ab75aae5a6e3dad6fb9b9a199524f4518d0e9f3a65b686c7b5b08fc477",
+    "docs/revision-r2/solder-wire/validation/baseline-mechanical.json": "96bd79b33acbe08ab0e133186faebe849fafe6815fdee964c6e8bff3623901fb",
+    "docs/revision-r2/solder-wire/validation/baseline.xml": "f88b007d0fdfd5100daf1f78e872005a91b1dafaeb95eea1212bff4856a22ef8",
+    "docs/revision-r2/solder-wire/validation/coherence.json": "70c8414cd7e11dd40d691b484b4687e0563d9fcf0d611789e18079f489a63732",
+    "docs/revision-r2/solder-wire/validation/dimensions.json": "f086beccf97b62b5d0530cc60b73442638f72acae1a8167f7ccf4459cb092b9b",
+    "docs/revision-r2/solder-wire/validation/electrical.json": "fb5aac5c654e18ba9c3b0a49e263c223a25619dc210261d7e5d71e40b6c7ae0b",
+    "docs/revision-r2/solder-wire/validation/exports.json": "d328e9b7c8dea20b0aa230f109c8f0262c1e5a0c420a25b71f512a99d6ee26c0",
+    "docs/revision-r2/solder-wire/validation/net-migrations.json": "ae03bd419c2cf1d55156132971aaf3823c0cc5f157bdacc6d97de5ae769ca6f7",
+    "docs/revision-r2/solder-wire/validation/plane-preserving-routes.json": "a41cbb774a709b4c43cfa9873f83c176ae3b1bc6561f51a1ad1116f3165da288",
+    "docs/revision-r2/solder-wire/validation/post-drc.json": "39a386146abc4238b9e6f9be4c7b2904e0298b28b3d382d12dd76c59938d51da",
+    "docs/revision-r2/solder-wire/validation/post-main-drc.json": "f4f1185a30b0e3eed0e0b3af7025fd48db2ea13aeaa1513038dcf5cdc6c3b889",
+    "docs/revision-r2/solder-wire/validation/post-main-erc.json": "7729ad1174d4f6186326646a1267e498cc2dc30b6ce783ad02fa3bdd2caa006d",
+    "docs/revision-r2/solder-wire/validation/post-main.xml": "ef34581219ddb4ee46d03895ae66bd7bdb3f308a3af2e5b98e2abe5ca35989fc",
+    "docs/revision-r2/solder-wire/validation/retention.json": "0a9685c3c36c28c5f91094e44dff584fe1311e3d295c92e0ecbac31d101391de",
+    "docs/revision-r2/solder-wire/validation/routing-intent.json": "ea5a6ea5c091f15e60dadc1efdfa4bb4c6bced5a43966044caa9aa3f43e60b1c",
+    "docs/revision-r2/solder-wire/validation/visual-review.json": "76c210c156b23e6a7e0cfdf8eb35b88238af4571bc8e0bedfaffcd6a18f70f5d",
+    "housing/InspectAssembly.FCMacro": "4416f469fd5d9c694105c007d92b4598b6f052cd9ab9429faf966ec9c9c910d3",
+    "housing/PRINTING-ASSEMBLY.md": "440f73158667498b91e7247fcad3b608e8e0a384923c263f11d446e8aeb20f04",
+    "housing/PresentAssembly.FCMacro": "e407e000b8f51c203135260f9c3fb78af98de24e8c1677d9002ab6d48f3dab20",
+    "housing/README.md": "50992aebf16f915cc482aa7d57b87a1dd726af87183b83033fbc865b0c91efb4",
+    "housing/dist/assembled.png": "83332e7feac22dc28cd347703f6e298d64000c7faee8bd4933ed887edf6b9944",
+    "housing/dist/base.stl": "7f3b8e44df3b69fa4e388cd06eaef46f09a765ff6fd7881d3df15b75519a25af",
+    "housing/dist/body-side.png": "33a0e265434d08fef7d24f955449ac0999373b551d888e7d31a57c793bed1a5a",
+    "housing/dist/dimensions.png": "395658a3b71e610a2cb21a0822c8c3178816f08543c1cc7f38223d6307e4a4cc",
+    "housing/dist/divider.stl": "c2c195c3bfc19273d865f4fd61b1dba9c168ef6b42ef9fd8e0c93bb220159661",
+    "housing/dist/exploded.png": "278d0605d65d021eea40e239f57a2bf5c8c2b751f3a18e713056296b5dd3cafd",
+    "housing/dist/freecad-inspection.png": "00a3c41387b56722abe56fa3d90cfd5be52a1add3debe2c26103d7b0408f8ff3",
+    "housing/dist/lid.stl": "64f2de56615b0f29ee8d20cc9d744a620215391352107dc57356464ad52c5144",
+    "housing/dist/manifest.json": "621cbd61bd95676f3d55cf7255bc4e627e873d930ed5da5f981a3885a98672c3",
+    "housing/dist/section.png": "6fa523c2d043d7c66d9da825d4b32540996ab9ee5291ec4177ad5c24e003ec30",
+    "housing/dist/smove-r2-assembly.step": "4c7fdf46cd6ce247f75e7bd7846b48248645eeef72fc66b475fc6a059ae61284",
+    "housing/dist/smove-r2-printable.step": "e0b2d02af789c20d83d13ffbd1a702b190413ae8b00cd7b28933d8908574b20b",
+    "housing/dist/top.png": "fee14843298eecf20f9116ed769f0f32209294b30ca2e5bc56085321521b6bc9",
+    "housing/entry.py": "2d80a853ac013a6aa33c5d6573ec3284f97ee2298575bbf776dc722868921c6b",
+    "housing/export_main.py": "a1ab3810261579b3f62ebb1a5a24aafd3a1dde743d0d9cf4ed0d670c22de5a46",
+    "housing/insertion-check.py": "71b80d851b3d8ce914b073ab512650b3db96a7e9754abfad949a4987b2800382",
+    "housing/smove-r2-enclosure.FCStd": "324c841e0cbf2b381586771f4728d49f9c70cc0346a379e81c249f76c1b859c4",
+    "housing/status.json": "d9ac7b3eaea8e7347ca5fc151b4864f5e3b2de5f306bb3b1c156c8e07e2b1939",
+    "housing/toolchain.lock.json": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
+    "housing/validation/baseline-mechanical.json": "cefc50da6666ec2bed044e40f486597d1f70b176b334c362ab9267e03286a0c5",
+    "housing/validation/battery-insertion.json": "facc9ebf33afb0e9b73cf533013362d3171888286a93b9c3e3fc4c299f293d44",
+    "housing/validation/build.json": "1eaa4a98db9426cce90a7e7b3598715213f2a39edaed157aa41d322e056c4ec7",
+    "housing/validation/gui-inspection.json": "ee9cd270b66bbc80b27d96f16b0034b9f071c571ce0acaa8a2129335bc4c21ed",
+    "housing/validation/input-geometry.json": "73131456544122019b6a51770663cfbb5ddd1e550eaa45056d0736cd64e1f27e",
+    "housing/validation/mechanical.json": "fff559c7a8610af44cc335295a8ce6824d317f2d90b9dd1bab4827a1d97f7753",
+    "scripts/r2/enclosure/audit_body_frame.py": "680e441b0caaf9e7bec8c20f871d7ae88e7166e1fd05a33e93f1825ed88802f4",
+    "scripts/r2/enclosure/contact_audit.py": "ac5fe7f4200f523f000eac624bc01240ffc3f023bb1dd477e02addf517a5de9e",
+    "scripts/r2/enclosure/extract.py": "5171273557fd1075a262fc140a29a139577c9b14afe7655615fc1cb2253d5f91",
+    "scripts/r2/enclosure/generate.py": "8349d365eed6fbf51bd784c2386cb767a89cfe521bd325a26c823ebfb9718de3",
+    "scripts/r2/enclosure/inspection.py": "7fc27a92cdf21577ce33c64b68dc618177adbe5753789d831e3824a3fcefc894",
+    "scripts/r2/enclosure/present.py": "9ad4c6120ec04b5210b4e76001cb001e9907567af7791339cd9da77c92641692",
+    "scripts/r2/enclosure/verify.py": "3813d6d298e053c6e90869914e061159d48500883b76ec70af3a941f08128532",
+    "scripts/r2/final/export.py": "c3a62cdeaa011166b8deb9e2152e8853157638295ed02af312c6a5b9607b4e65",
+    "scripts/r2/final/package.py": "a98457879f96c32171ca2b57e78b1668d40131dab0ba292b7245c6adeab33c09",
+    "scripts/r2/integrated/axis_silk.py": "7431f4a19909bd0e518e37762752f89eff743b4e4fad77937708db11a46c4bae",
+    "scripts/r2/integrated/budget.py": "8af45a893e3b1a91e137856c634443f6d64eb676d158690e8a89e183e8eb35a5",
+    "scripts/r2/integrated/centered.py": "07b9bbf8274d55d628e898cc1a244d899abe1efb72aa1d4faa5818746970e1c8",
+    "scripts/r2/integrated/coherence_wire.py": "fbba2c57eadc1f87f5cd5f10b371d464fb4686fcc15f70ea99c5e490b12904f8",
+    "scripts/r2/integrated/finish_routes.py": "16a555c5dad071efb5551b4d73d751ee43597287224561f4e9d75ef8bd3fc688",
+    "scripts/r2/integrated/layout.py": "0a07a229a622d2814fa51608bfa013c8857463ffe20a1869d00211aaebf41568",
+    "scripts/r2/integrated/migrate.py": "6397b34c922726898e5e7b76bc539a418bfb39b6c54be425bd2b9b68252cf92e",
+    "scripts/r2/integrated/pack.py": "2d145fb11d86e8d48a5edc773857204162fb726cb10e3eb3ffade57d35d8adba",
+    "scripts/r2/integrated/route.py": "1c1ab08a1e544ef179bad3ac6e1583c53a71eba314d72fad51e2f14dc453b030",
+    "scripts/r2/integrated/seal.py": "dbe8c3d93a42e93b5c49dd68c6f0fd076680642d81189d7f9347cf43da33d627",
+    "scripts/r2/integrated/seal_wire.py": "2a47d4f34e5bf82a37bf032dcbaef1afcf56b94d501aa117c044af8b0ef45eb9",
+    "scripts/r2/integrated/sexp.py": "3670311db6120bad6b334420e0d32aaea5d629925923640a47ee822edd75eeab",
+    "scripts/r2/integrated/solder_wire.py": "a786bd6651ff9af95c359797ccb5c8ffbc5eb82581800683fc2df8f09f321144",
+    "scripts/r2/integrated/stitch.py": "8cfca957700855c8432095447911641225124599ee3ec09148737de5030a2d18",
+    "scripts/r2/integrated/sync.py": "3bdc4025ef4bb18c9bde457cbb7b02af4cb6f80e785bd7908298eb468a8e391d",
+    "scripts/r2/integrated/tidy.py": "7bdcd4db6e463b08c82a0361a661206b8cd7a7fca5324a40a1a9c901b3b67e17",
+    "scripts/r2/integrated/usb_access.py": "d26e07456bed391345f1b45a8f6990d1ee7426a53ccda673fa48995fa873b7a8",
+    "scripts/r2/integrated/verify.py": "f56840617c3cd135c6a61db13abeecbe65f1d6b38fc4530131534492ce3a1248",
+    "scripts/r2/integrated/verify_wire.py": "ae7f332655a916970fa5711f1f1c2f743ad63093ef3b5c19e311a33de14b59bf",
+    "scripts/r2/integrated/wire_routes.py": "0e8bc71c68eba44bc7fde31511c254864e773f2988e886c72ede8667d22673fc"
+  },
+  "self_hash_note": "Only this manifest excludes its own SHA256 to avoid recursion. Its staged/committed blob is byte-verified against the worktree; report its independent SHA256 alongside commit ID.",
+  "verification": "Run seal_wire.py verify HEAD after committing, or verify --worktree after integrating the COMPLETE commit. No partial path import."
+}
