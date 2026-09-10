@@ -1,3 +1,4 @@
+# HISTORICAL TWO-PART TOOL: do not run for current screwless delivery; use housing/entry.py.
 """Two printed parts; frozen PCB; integral battery tunnel; central H1 M3 closure; NO modeled leads.
 Run through housing/entry.py with the pinned FreeCAD runtime. Never writes PCB/.
 All dimensions are nominal mm; see housing/PRINTING-ASSEMBLY.md for acceptance.

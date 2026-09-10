@@ -1,23 +1,23 @@
 {
   "result": "PASS",
-  "wall_mm": 0.8,
+  "wall_mm": 1.2,
   "pcb_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
   "printed_solids": 3,
   "parts": {
     "midframe": {
-      "volume_mm3": 3658.7581013542526,
+      "volume_mm3": 3894.170487320203,
       "triangles": 3520,
       "components": 1,
       "solid": true
     },
     "top-cover": {
-      "volume_mm3": 2053.3526721236553,
+      "volume_mm3": 3110.713991155806,
       "triangles": 4040,
       "components": 1,
       "solid": true
     },
     "bottom-cover": {
-      "volume_mm3": 1809.0373813228455,
+      "volume_mm3": 2710.4357817963405,
       "triangles": 2684,
       "components": 1,
       "solid": true
@@ -844,7 +844,7 @@
       "name": "BottomGrooved vs Component_C10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R17",
@@ -856,7 +856,7 @@
       "name": "BottomGrooved vs Component_C8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_D1",
@@ -868,7 +868,7 @@
       "name": "BottomGrooved vs Component_U2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_C4",
@@ -880,7 +880,7 @@
       "name": "BottomGrooved vs Component_R5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_J1",
@@ -892,7 +892,7 @@
       "name": "BottomGrooved vs Component_C7",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R23",
@@ -910,7 +910,7 @@
       "name": "BottomGrooved vs Component_C9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R3",
@@ -922,7 +922,7 @@
       "name": "BottomGrooved vs Component_R18",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R2",
@@ -934,7 +934,7 @@
       "name": "BottomGrooved vs Component_R15",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_C3",
@@ -988,7 +988,7 @@
       "name": "BottomGrooved vs Component_R10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_C13",
@@ -1018,13 +1018,13 @@
       "name": "BottomGrooved vs Component_R19",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_U9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_U6",
@@ -1042,7 +1042,7 @@
       "name": "BottomGrooved vs Component_U8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R11",
@@ -1054,7 +1054,7 @@
       "name": "BottomGrooved vs Component_R1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_C2",
@@ -1072,7 +1072,7 @@
       "name": "BottomGrooved vs Component_C11",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.468861215042857
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs Component_R21",
@@ -1090,7 +1090,7 @@
       "name": "BottomGrooved vs Component_R14",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.799999999999999
+      "distance_mm": 12.399999999999999
     },
     {
       "name": "BottomGrooved vs USBTails",
@@ -1102,25 +1102,25 @@
       "name": "BottomGrooved vs BatteryCandidate",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.9999999999999999
+      "distance_mm": 0.5999999999999999
     },
     {
       "name": "BottomGrooved vs PackFloorInsulator",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.5999999999999998
+      "distance_mm": 0.19999999999999973
     },
     {
       "name": "BottomGrooved vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.9999999999999999
+      "distance_mm": 0.5999999999999999
     },
     {
       "name": "BottomGrooved vs WireRoutingReserve",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.1999999999999997
+      "distance_mm": 0.7999999999999998
     },
     {
       "name": "PackAllowance vs AntennaExclusion",
@@ -1159,7 +1159,7 @@
       "name": "LeadEnvelope1 vs BottomGrooved",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.1999999999999997
+      "distance_mm": 1.7999999999999998
     },
     {
       "name": "LeadEnvelope1 vs PackAllowance",
@@ -1198,7 +1198,7 @@
       "name": "LeadEnvelope2 vs BottomGrooved",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.1999999999999997
+      "distance_mm": 1.7999999999999998
     },
     {
       "name": "LeadEnvelope2 vs PackAllowance",
@@ -2557,17 +2557,17 @@
     {
       "name": "mid measured wall",
       "pass_": true,
-      "measured_mm": 0.7999999999999969
+      "measured_mm": 1.199999999999996
     },
     {
       "name": "top measured wall",
       "pass_": true,
-      "measured_mm": 0.8000000000000113
+      "measured_mm": 1.200000000000017
     },
     {
       "name": "bottom measured wall",
       "pass_": true,
-      "measured_mm": 0.8000000000000005
+      "measured_mm": 1.2000000000000013
     }
   ],
   "failed": [],
@@ -2577,9 +2577,9 @@
     "Supports/brim and fit coupons required; no support-free or physical-fit claim"
   ],
   "dimensions_XYZ_mm": [
-    33.3,
-    44.3,
-    19.0
+    34.1,
+    45.1,
+    19.4
   ],
   "snap": {
     "sleeve_radial_gap_mm": 0.18,

@@ -10,6 +10,7 @@ from sexp import parse,many,one,val
 source=H/'mechanical-envelope-source.json'
 j=json.loads(source.read_text());oldparts=json.loads((H/'mechanical-pose-source.json').read_text())
 b=p.LoadBoard(str(H/'smove-r2-main.kicad_pcb'));fps={f.GetReference():f for f in b.GetFootprints()};parts=json.loads((H/'parts-main.json').read_text())
+assert 'H1' in fps, 'Historical sync is not screwless-aware: use current interface and scripts/r2/screwless; refusing overwrite.'
 HOLES={r:list(p.ToMM(f.GetPosition())) for r,f in fps.items() if r.startswith('H')}
 edges=[(tuple(p.ToMM(e.GetStart())),tuple(p.ToMM(e.GetEnd()))) for e in b.GetDrawings() if e.GetLayer()==p.Edge_Cuts]
 OUTLINE=[min(v for edge in edges for v in edge)]

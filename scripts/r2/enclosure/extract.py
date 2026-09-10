@@ -63,7 +63,7 @@ def extract():
                 assert near(p['local_xy'],h['center_mm']) and near(p['drill_mm'],h['drill_mm']) and p['attribute']==pcbnew.PAD_ATTRIB_NPTH
                 holes.append({'ref':h['ref'],'xy':p['local_xy'],'drill_mm':p['drill_mm']})
         else:
-            assert len(fps)==48 and sum(c['fitted'] for c in contracts.values())==46
+            assert len(fps)==47+len(d['mounting']['holes_native_xy_mm']) and sum(c['fitted'] for c in contracts.values())==46
             for ref,xy0 in d['mounting']['holes_native_xy_mm'].items():
                 pad=fps[ref]['pads'][0];assert near(pad['native_xy'],xy0) and near(pad['drill_mm'],[3.2,3.2]) and pad['attribute']==pcbnew.PAD_ATTRIB_NPTH
                 holes.append(dict(ref=ref,xy=pad['local_xy'],drill_mm=pad['drill_mm']))
@@ -93,7 +93,7 @@ def extract():
         if EXPECTED[name] and ih!=EXPECTED[name]:report['warnings'].append(f'{name}: requested interface hash differs from accessible snapshot; actual board independently matches this snapshot. Orchestrator reconciliation required; no earlier file available for diff.')
         report['boards'][name]={'interface_sha256':ih,'requested_interface_sha256':EXPECTED[name], 'board_sha256':sha(bp),
                                'board_path':str(bp.relative_to(ROOT)), 'interface_path':str(ip.relative_to(ROOT)),
-                               'outline_xy':expected_outline, 'thickness_mm':d['thickness_mm'],'copper_layers':4,
+                               'drill_origin_native_xy_mm':xy(b.GetDesignSettings().GetAuxOrigin()), 'outline_xy':expected_outline, 'thickness_mm':d['thickness_mm'],'copper_layers':4,
                                'footprints':fps,'holes':holes,'rule_areas':zones,'native_y_origin':origin_y,
                                'tracks_count':len(list(b.GetTracks()))}
     (ROOT/'.cache/housing/input-geometry.json').write_text(json.dumps(report,indent=2)+'\n')

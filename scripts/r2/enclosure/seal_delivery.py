@@ -1,3 +1,4 @@
+# HISTORICAL TWO-PART TOOL: do not run for current screwless delivery; use housing/entry.py.
 #!/usr/bin/python3
 """Seal/recheck this combined review delivery; builtin Python only, never saves CAD/PCB.
 Run without args AFTER staging new source/docs to write reports and manifests.

@@ -1,0 +1,11 @@
+{
+  "outer_wall_mm": 0.8,
+  "sleeve_clearance_mm": 0.18,
+  "snap_projection_mm": 0.32,
+  "snap_groove_depth_mm": 0.24,
+  "corner_radius_mm": 3.0,
+  "pcb_bottom_z_mm": 12.6,
+  "roof_inside_z_mm": 18.2,
+  "battery_allowance_mm": [21.0, 31.0, 4.3],
+  "notes": "Review prototype. Wall changes grow exterior, not internal component datums. Supported test range 0.8 to 1.2 mm. Fit and pack/lead/adhesive qualification required."
+}
