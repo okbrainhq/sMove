@@ -5,19 +5,19 @@
   "printed_solids": 3,
   "parts": {
     "midframe": {
-      "volume_mm3": 3894.170487320203,
-      "triangles": 3520,
+      "volume_mm3": 3585.6696873202036,
+      "triangles": 3610,
       "components": 1,
       "solid": true
     },
     "top-cover": {
-      "volume_mm3": 3110.713991155806,
-      "triangles": 4040,
+      "volume_mm3": 3002.8963514851944,
+      "triangles": 4604,
       "components": 1,
       "solid": true
     },
     "bottom-cover": {
-      "volume_mm3": 2710.4357817963405,
+      "volume_mm3": 2504.984581796342,
       "triangles": 2684,
       "components": 1,
       "solid": true
@@ -40,13 +40,13 @@
       "name": "TopAccess vs BottomGrooved",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.0
+      "distance_mm": 3.9999999999999982
     },
     {
       "name": "Midframe vs MainPCB",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.120000000000001
+      "distance_mm": 0.03886116991581015
     },
     {
       "name": "Midframe vs Dielectric1",
@@ -106,7 +106,7 @@
       "name": "Midframe vs Component_U5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.559649109306555
+      "distance_mm": 5.552512944604457
     },
     {
       "name": "Midframe vs Component_SW2",
@@ -220,7 +220,7 @@
       "name": "Midframe vs Component_C3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.906821781968448
+      "distance_mm": 5.415544755608617
     },
     {
       "name": "Midframe vs Component_R7",
@@ -232,7 +232,7 @@
       "name": "Midframe vs Component_U4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.069474781836106
+      "distance_mm": 5.060694122351203
     },
     {
       "name": "Midframe vs Component_R8",
@@ -244,7 +244,7 @@
       "name": "Midframe vs Component_C5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.262440615422104
+      "distance_mm": 5.254369610143536
     },
     {
       "name": "Midframe vs Component_C6",
@@ -256,7 +256,7 @@
       "name": "Midframe vs Component_U1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.9372299611088009
+      "distance_mm": 0.8000000000000007
     },
     {
       "name": "Midframe vs Component_C1",
@@ -292,7 +292,7 @@
       "name": "Midframe vs Component_R20",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.361467642892704
+      "distance_mm": 5.353727673313243
     },
     {
       "name": "Midframe vs Component_R19",
@@ -373,6 +373,12 @@
       "distance_mm": 5.6
     },
     {
+      "name": "Midframe vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.689637585982671
+    },
+    {
       "name": "Midframe vs USBTails",
       "pass_": true,
       "overlap_mm3": 0.0,
@@ -391,6 +397,18 @@
       "distance_mm": 0.1999999999999993
     },
     {
+      "name": "Midframe vs BATSolderReserve1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.035780324992037
+    },
+    {
+      "name": "Midframe vs BATSolderReserve2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.182292372712694
+    },
+    {
       "name": "Midframe vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
@@ -400,7 +418,7 @@
       "name": "Midframe vs WireRoutingReserve",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.09999999999999987
+      "distance_mm": 0.26999999999999913
     },
     {
       "name": "TopAccess vs MainPCB",
@@ -466,181 +484,181 @@
       "name": "TopAccess vs Component_U5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_SW2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.5
+      "distance_mm": 0.25
     },
     {
       "name": "TopAccess vs Component_R4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.230000000000004
+      "distance_mm": 1.5561892558426138
     },
     {
       "name": "TopAccess vs Component_C10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R17",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.199999999999999
+      "distance_mm": 4.199999999999996
     },
     {
       "name": "TopAccess vs Component_C8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_D1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.9750208515661614
+      "distance_mm": 3.975020851566158
     },
     {
       "name": "TopAccess vs Component_U2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.5500000000000007
+      "distance_mm": 3.549999999999997
     },
     {
       "name": "TopAccess vs Component_C4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_J1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.3000000000000007
+      "distance_mm": 0.2999999999999936
     },
     {
       "name": "TopAccess vs Component_C7",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R23",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_U3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.6999999999999993
+      "distance_mm": 3.6999999999999957
     },
     {
       "name": "TopAccess vs Component_C9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.7249999999999943
+      "distance_mm": 0.8055588122539497
     },
     {
       "name": "TopAccess vs Component_R18",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.199999999999999
+      "distance_mm": 4.199999999999996
     },
     {
       "name": "TopAccess vs Component_R2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R15",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_C3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_R7",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_U4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_R8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 2.1815648053633434
     },
     {
       "name": "TopAccess vs Component_C5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.6999999999999993
+      "distance_mm": 3.6999999999999957
     },
     {
       "name": "TopAccess vs Component_C6",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.6999999999999993
+      "distance_mm": 3.6999999999999957
     },
     {
       "name": "TopAccess vs Component_U1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.0999999999999943
+      "distance_mm": 0.8000000000000007
     },
     {
       "name": "TopAccess vs Component_C1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.6500000000000004
+      "distance_mm": 3.649999999999997
     },
     {
       "name": "TopAccess vs Component_R10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_C13",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_R13",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R22",
@@ -652,19 +670,19 @@
       "name": "TopAccess vs Component_R20",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.199999999999999
+      "distance_mm": 4.199999999999996
     },
     {
       "name": "TopAccess vs Component_R19",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.199999999999999
+      "distance_mm": 4.199999999999996
     },
     {
       "name": "TopAccess vs Component_U9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_U6",
@@ -676,49 +694,49 @@
       "name": "TopAccess vs Component_R12",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_U8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_R11",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_C2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.1499999999999986
+      "distance_mm": 3.149999999999995
     },
     {
       "name": "TopAccess vs Component_R16",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.199999999999999
+      "distance_mm": 4.199999999999996
     },
     {
       "name": "TopAccess vs Component_C11",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_R21",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
     },
     {
       "name": "TopAccess vs Component_SW3",
@@ -730,13 +748,19 @@
       "name": "TopAccess vs Component_R14",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 4.049999999999999
+      "distance_mm": 4.049999999999995
+    },
+    {
+      "name": "TopAccess vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.5299999999999976
     },
     {
       "name": "TopAccess vs USBTails",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.5
+      "distance_mm": 1.2854960132182442
     },
     {
       "name": "TopAccess vs BatteryCandidate",
@@ -751,6 +775,18 @@
       "distance_mm": 9.121951545584968
     },
     {
+      "name": "TopAccess vs BATSolderReserve1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.049999999999995
+    },
+    {
+      "name": "TopAccess vs BATSolderReserve2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.720259329123279
+    },
+    {
       "name": "TopAccess vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
@@ -760,19 +796,19 @@
       "name": "TopAccess vs WireRoutingReserve",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.0
+      "distance_mm": 0.17999999999999972
     },
     {
       "name": "BottomGrooved vs MainPCB",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 6.2817195098157645
+      "distance_mm": 6.262840171958315
     },
     {
       "name": "BottomGrooved vs Dielectric1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.262231062146123
+      "distance_mm": 7.38782782690555
     },
     {
       "name": "BottomGrooved vs Dielectric2",
@@ -784,7 +820,7 @@
       "name": "BottomGrooved vs Dielectric3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.262231062146123
+      "distance_mm": 6.441273166075166
     },
     {
       "name": "BottomGrooved vs Dielectric4",
@@ -796,55 +832,55 @@
       "name": "BottomGrooved vs AdhesiveOrShim1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.42024258363566
+      "distance_mm": 7.543208866258444
     },
     {
       "name": "BottomGrooved vs AdhesiveOrShim2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 6.087692502089771
+      "distance_mm": 6.087692502089769
     },
     {
       "name": "BottomGrooved vs AdhesiveOrShim3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.42024258363566
+      "distance_mm": 6.618912297349165
     },
     {
       "name": "BottomGrooved vs AdhesiveOrShim4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 6.087692502089771
+      "distance_mm": 6.087692502089769
     },
     {
       "name": "BottomGrooved vs Component_R9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.8001858952207055
+      "distance_mm": 7.800185895220705
     },
     {
       "name": "BottomGrooved vs Component_U5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.23146792227542
+      "distance_mm": 9.900505037623084
     },
     {
       "name": "BottomGrooved vs Component_SW2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.613967428351661
+      "distance_mm": 7.6139674283516605
     },
     {
       "name": "BottomGrooved vs Component_R4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.8001858952207055
+      "distance_mm": 7.800185895220705
     },
     {
       "name": "BottomGrooved vs Component_C10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R17",
@@ -856,61 +892,61 @@
       "name": "BottomGrooved vs Component_C8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_D1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.693812459502192
+      "distance_mm": 9.69381245950219
     },
     {
       "name": "BottomGrooved vs Component_U2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_C4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.061198116273525
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_J1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.256721022610695
+      "distance_mm": 7.256721022610694
     },
     {
       "name": "BottomGrooved vs Component_C7",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R23",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 10.129690271671683
+      "distance_mm": 10.865570624684187
     },
     {
       "name": "BottomGrooved vs Component_U3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 11.113617772804675
+      "distance_mm": 11.900105041553203
     },
     {
       "name": "BottomGrooved vs Component_C9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R3",
@@ -922,7 +958,7 @@
       "name": "BottomGrooved vs Component_R18",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R2",
@@ -934,49 +970,49 @@
       "name": "BottomGrooved vs Component_R15",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_C3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.458990432387592
+      "distance_mm": 10.147536646891204
     },
     {
       "name": "BottomGrooved vs Component_R7",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.956425061235587
+      "distance_mm": 10.681310780985639
     },
     {
       "name": "BottomGrooved vs Component_U4",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 8.9232295162682
+      "distance_mm": 9.562114044498736
     },
     {
       "name": "BottomGrooved vs Component_R8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 8.395260567725105
+      "distance_mm": 8.395260567725103
     },
     {
       "name": "BottomGrooved vs Component_C5",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.042676594902638
+      "distance_mm": 9.69381245950219
     },
     {
       "name": "BottomGrooved vs Component_C6",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.061198116273525
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_U1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.404052944165107
+      "distance_mm": 7.1
     },
     {
       "name": "BottomGrooved vs Component_C1",
@@ -988,13 +1024,13 @@
       "name": "BottomGrooved vs Component_R10",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_C13",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.366310080213905
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R13",
@@ -1012,37 +1048,37 @@
       "name": "BottomGrooved vs Component_R20",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.104943712072032
+      "distance_mm": 9.762171889492626
     },
     {
       "name": "BottomGrooved vs Component_R19",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_U9",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_U6",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.136328584283733
+      "distance_mm": 9.393215636830663
     },
     {
       "name": "BottomGrooved vs Component_R12",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 11.132862390239092
+      "distance_mm": 11.13286239023909
     },
     {
       "name": "BottomGrooved vs Component_U8",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R11",
@@ -1054,7 +1090,7 @@
       "name": "BottomGrooved vs Component_R1",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_C2",
@@ -1072,55 +1108,73 @@
       "name": "BottomGrooved vs Component_C11",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
     },
     {
       "name": "BottomGrooved vs Component_R21",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 9.12375470954804
+      "distance_mm": 9.782785901776652
     },
     {
       "name": "BottomGrooved vs Component_SW3",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 7.613967428351661
+      "distance_mm": 7.6139674283516605
     },
     {
       "name": "BottomGrooved vs Component_R14",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 12.399999999999999
+      "distance_mm": 12.4
+    },
+    {
+      "name": "BottomGrooved vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.305367889435822
     },
     {
       "name": "BottomGrooved vs USBTails",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 5.124451190127584
+      "distance_mm": 5.1244511901275835
     },
     {
       "name": "BottomGrooved vs BatteryCandidate",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.5999999999999999
+      "distance_mm": 0.6000000000000001
     },
     {
       "name": "BottomGrooved vs PackFloorInsulator",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.19999999999999973
+      "distance_mm": 0.19999999999999996
+    },
+    {
+      "name": "BottomGrooved vs BATSolderReserve1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.94941706835129
+    },
+    {
+      "name": "BottomGrooved vs BATSolderReserve2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.368685679364471
     },
     {
       "name": "BottomGrooved vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.5999999999999999
+      "distance_mm": 0.6000000000000001
     },
     {
       "name": "BottomGrooved vs WireRoutingReserve",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.7999999999999998
+      "distance_mm": 1.1500000000000001
     },
     {
       "name": "PackAllowance vs AntennaExclusion",
@@ -1132,7 +1186,7 @@
       "name": "WireRoutingReserve vs AntennaExclusion",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.5
+      "distance_mm": 2.1799999999999997
     },
     {
       "name": "LeadEnvelope1 valid sweep",
@@ -1147,31 +1201,385 @@
       "name": "LeadEnvelope1 vs Midframe",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.19999999999999973
+      "distance_mm": 0.8999999999999999
     },
     {
       "name": "LeadEnvelope1 vs TopAccess",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.4415229867972847
+      "distance_mm": 1.1999999999999957
     },
     {
       "name": "LeadEnvelope1 vs BottomGrooved",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.7999999999999998
+      "distance_mm": 1.4000000000000001
     },
     {
       "name": "LeadEnvelope1 vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.4
+      "distance_mm": 0.050000000000000044
     },
     {
       "name": "LeadEnvelope1 vs AntennaExclusion",
       "pass_": true,
       "overlap_mm3": 0.0,
       "distance_mm": 4.969999999999999
+    },
+    {
+      "name": "LeadEnvelope1 vs MainPCB",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.05000000000000071
+    },
+    {
+      "name": "LeadEnvelope1 vs Dielectric1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.30366910723175
+    },
+    {
+      "name": "LeadEnvelope1 vs Dielectric2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 25.91818590681149
+    },
+    {
+      "name": "LeadEnvelope1 vs Dielectric3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.442310978113112
+    },
+    {
+      "name": "LeadEnvelope1 vs Dielectric4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.27953917702891
+    },
+    {
+      "name": "LeadEnvelope1 vs AdhesiveOrShim1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.30366910723175
+    },
+    {
+      "name": "LeadEnvelope1 vs AdhesiveOrShim2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 25.98533659707087
+    },
+    {
+      "name": "LeadEnvelope1 vs AdhesiveOrShim3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.2851714401850804
+    },
+    {
+      "name": "LeadEnvelope1 vs AdhesiveOrShim4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.267605738092957
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.634498210809095
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.3000000000000056
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_SW2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.237639467072448
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.822321379239916
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.07827747885489
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R17",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.675280037538858
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.005984159897661
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_D1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.26183526263371
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.620756932367163
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.7054066886343486
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.001148071299047
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_J1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.903220332050395
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.254668412681834
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R23",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.687793735367687
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.497386735315384
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.609921645144984
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.24422105332704
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R18",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.35223435796897
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.33228789660669
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R15",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.347034424880682
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.5383226787736777
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.851240684468077
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.1579929296501104
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.58631505006236
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.5340867888429597
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.15
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.4999999999999947
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.237435120913064
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.595483945937804
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.487850902369117
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.08469564001302
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R22",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.756011694717667
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R20",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.605045629002691
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R19",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.903189304425426
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.752882735918177
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.191188770581592
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R12",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.413133812574184
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_U8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.670018878082177
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.310931300139575
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.1096835697149
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.337276568118957
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R16",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.17030601685264
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_C11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.6879969813385625
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R21",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.426985484544561
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_SW3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.54314345323818
+    },
+    {
+      "name": "LeadEnvelope1 vs Component_R14",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.134579820520312
+    },
+    {
+      "name": "LeadEnvelope1 vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.990493480345345
+    },
+    {
+      "name": "LeadEnvelope1 vs USBTails",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.942813044774699
+    },
+    {
+      "name": "LeadEnvelope1 vs BatteryCandidate",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.55
+    },
+    {
+      "name": "LeadEnvelope1 vs PackFloorInsulator",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.0012492197250396
     },
     {
       "name": "LeadEnvelope2 valid sweep",
@@ -1186,25 +1594,25 @@
       "name": "LeadEnvelope2 vs Midframe",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.19999999999999973
+      "distance_mm": 0.5199999999999991
     },
     {
       "name": "LeadEnvelope2 vs TopAccess",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 3.3928249363426928
+      "distance_mm": 0.4299999999999997
     },
     {
       "name": "LeadEnvelope2 vs BottomGrooved",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.7999999999999998
+      "distance_mm": 1.4000000000000001
     },
     {
       "name": "LeadEnvelope2 vs PackAllowance",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 2.4
+      "distance_mm": 0.04999999999999982
     },
     {
       "name": "LeadEnvelope2 vs AntennaExclusion",
@@ -1213,16 +1621,1312 @@
       "distance_mm": 2.4299999999999997
     },
     {
+      "name": "LeadEnvelope2 vs MainPCB",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.05000000000000071
+    },
+    {
+      "name": "LeadEnvelope2 vs Dielectric1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.522322755127785
+    },
+    {
+      "name": "LeadEnvelope2 vs Dielectric2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 27.251641720939418
+    },
+    {
+      "name": "LeadEnvelope2 vs Dielectric3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.4349597271844
+    },
+    {
+      "name": "LeadEnvelope2 vs Dielectric4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.048223082265167
+    },
+    {
+      "name": "LeadEnvelope2 vs AdhesiveOrShim1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.522322755127785
+    },
+    {
+      "name": "LeadEnvelope2 vs AdhesiveOrShim2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 27.31592680030167
+    },
+    {
+      "name": "LeadEnvelope2 vs AdhesiveOrShim3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.2367825062153304
+    },
+    {
+      "name": "LeadEnvelope2 vs AdhesiveOrShim4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.03614463571181
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.86634574029199
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.822951503238539
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_SW2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.23706621233069
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.35576231650946
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.40312451187128
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R17",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.971849601123175
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.886192373978549
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_D1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.959271408376214
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.439680797364286
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.179215416781292
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.01152934144463
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_J1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.210357364715069
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.60926355320628
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R23",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.035829364510285
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.35701540693104
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.598053123347189
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.069242753791592
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R18",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.079068311421183
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.538888819376158
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R15",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.368519726927598
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.03286346426892
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.075023054724406
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.388428537691014
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.156926113491608
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.67475099107526
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.759724875855664
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.4999999999999947
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.503191128251787
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.630000000000004
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.967078878770986
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.911297183339094
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R22",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.048515105274358
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R20",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.952338861387572
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R19",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.655889998349311
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.05061735299884
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.519612205017117
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R12",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.799899842387028
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_U8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.526753794346305
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.352341487087514
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.477761272401647
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.679530859333747
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R16",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.48158690290942
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_C11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.182084035125149
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R21",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.77634449119727
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_SW3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.967306621570607
+    },
+    {
+      "name": "LeadEnvelope2 vs Component_R14",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.468670468338908
+    },
+    {
+      "name": "LeadEnvelope2 vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.327174890733131
+    },
+    {
+      "name": "LeadEnvelope2 vs USBTails",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.246556042672127
+    },
+    {
+      "name": "LeadEnvelope2 vs BatteryCandidate",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.5499999999999998
+    },
+    {
+      "name": "LeadEnvelope2 vs PackFloorInsulator",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.0012492197250396
+    },
+    {
       "name": "LeadEnvelope1 vs LeadEnvelope2",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 1.3399999999999963
+      "distance_mm": 0.2999999999999998
     },
     {
       "name": "PackAllowance vs WireRoutingReserve",
       "pass_": true,
       "overlap_mm3": 0.0,
-      "distance_mm": 0.4999999999999998
+      "distance_mm": 0.04999999999999982
+    },
+    {
+      "name": "WireRoutingReserve vs MainPCB",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.05000000000000071
+    },
+    {
+      "name": "WireRoutingReserve vs Dielectric1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.053669107231748
+    },
+    {
+      "name": "WireRoutingReserve vs Dielectric2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 25.78925427366456
+    },
+    {
+      "name": "WireRoutingReserve vs Dielectric3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.1849597271843995
+    },
+    {
+      "name": "WireRoutingReserve vs Dielectric4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.798769117639
+    },
+    {
+      "name": "WireRoutingReserve vs AdhesiveOrShim1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.053669107231748
+    },
+    {
+      "name": "WireRoutingReserve vs AdhesiveOrShim2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 25.855493786092797
+    },
+    {
+      "name": "WireRoutingReserve vs AdhesiveOrShim3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.986782506215331
+    },
+    {
+      "name": "WireRoutingReserve vs AdhesiveOrShim4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.78653029003221
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.384498210809095
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.0500000000000056
+    },
+    {
+      "name": "WireRoutingReserve vs Component_SW2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.09932082265995
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.572321379239916
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.82827747885489
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R17",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.425280037538858
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.755984159897658
+    },
+    {
+      "name": "WireRoutingReserve vs Component_D1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.01183526263371
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.370756932367163
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.4554066886343517
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.751148071299047
+    },
+    {
+      "name": "WireRoutingReserve vs Component_J1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.653220332050395
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.004668412681832
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R23",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.437793735367688
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.247386735315385
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.359921645144983
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.99422105332704
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R18",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.102234357968968
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.08228789660669
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R15",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.097034424880679
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.2883226787736795
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.601240684468077
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.9079929296501108
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.336315050062364
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.2840867888429597
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.9
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.2499999999999947
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.987435120913062
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.34548394593781
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.237850902369119
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.834695640013024
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R22",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.50601169471767
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R20",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.355045629002693
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R19",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.653189304425426
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.502882735918178
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.9411887705815944
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R12",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.163133812574184
+    },
+    {
+      "name": "WireRoutingReserve vs Component_U8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.420018878082177
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.11828798370055
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.859683569714901
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.087276568118957
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R16",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.920306016852642
+    },
+    {
+      "name": "WireRoutingReserve vs Component_C11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.437996981338564
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R21",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.17698548454456
+    },
+    {
+      "name": "WireRoutingReserve vs Component_SW3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.38753435102557
+    },
+    {
+      "name": "WireRoutingReserve vs Component_R14",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.884579820520313
+    },
+    {
+      "name": "WireRoutingReserve vs USBSourceShell",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.740493480345346
+    },
+    {
+      "name": "WireRoutingReserve vs USBTails",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.693535899668658
+    },
+    {
+      "name": "WireRoutingReserve vs BatteryCandidate",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.5499999999999998
+    },
+    {
+      "name": "WireRoutingReserve vs PackFloorInsulator",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.7516648189186456
+    },
+    {
+      "name": "BATSolderReserve1 vs MainPCB",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.134498210809095
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.780000000000001
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_SW2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.220728034721446
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.322321379239916
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.9328511556429415
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R17",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.99462964832518
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.50598415989766
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_D1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.6304740787031
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.120756932367163
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.205406688634348
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.47373679670889
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_J1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.403220332050397
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.888727278929997
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R23",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.474154758696283
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.855000000000004
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.500571415614457
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.744221053327035
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R18",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.931745102203914
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.893640108375685
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R15",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.847034424880679
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.0875842840905596
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.127095093943552
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.8349999999999937
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.086315050062364
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.176761653355081
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.70871551223706
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.9999999999999947
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.466831629060433
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.095483945937808
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.9878509023691144
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 25.240723699245613
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R22",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.38901285707851
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R20",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.007898683565156
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R19",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.45368236979314
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.803567336205914
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.681579815575898
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R12",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.877167471209333
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_U8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.170018878082177
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.503030458711105
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.39234774170116
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.321117835647705
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R16",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 24.231539629481652
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_C11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.187996981338566
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R21",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.011927699723177
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_SW3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 24.220493676071957
+    },
+    {
+      "name": "BATSolderReserve1 vs Component_R14",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.634579820520313
+    },
+    {
+      "name": "BATSolderReserve2 vs MainPCB",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.36634574029199
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.32
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_SW2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 23.229835593361496
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.85576231650946
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.395146802020408
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R17",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.527682916443577
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.806932245890195
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_D1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 24.878749007602348
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.340529768675392
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.6792154167812927
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 18.770596996567566
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_J1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.710357364715064
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.241521201906895
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R23",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 20.01245189455739
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.395000000000003
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 13.919201043996983
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.569242753791592
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R18",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 12.396347654087759
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.021114268131637
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R15",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 9.868519726927602
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 3.5558055156975743
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R7",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.65678532279984
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U4",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.374999999999993
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.656926113491604
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C5",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.701215143146428
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 11.24280762225515
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.9999999999999947
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.002599394641337
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R10",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.46312782079312
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.467078878770989
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R13",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 27.521812049554086
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R22",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 24.921301370223574
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R20",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.516831094469328
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R19",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.70229773192628
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U9",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 14.31087440737871
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U6",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 21.221400045696054
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R12",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 24.054534879420853
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_U8",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 10.026753794346307
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 22.570444123421083
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R1",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.556135287124743
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C2",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 23.859477658797264
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R16",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 26.593120084237515
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_C11",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.700045918259768
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R21",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.526461766381548
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_SW3",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 26.357301396896236
+    },
+    {
+      "name": "BATSolderReserve2 vs Component_R14",
+      "pass_": true,
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.968670468338908
+    },
+    {
+      "name": "Source USB mouth matches flush surround plane",
+      "pass_": true,
+      "mouth_x_mm": 24.78,
+      "surround_x_mm": 24.78
+    },
+    {
+      "name": "USB opening covers source maximum plus 0.4 per side",
+      "pass_": true,
+      "opening_mm": [
+        10,
+        4.3
+      ],
+      "source_max_mm": [
+        9.09,
+        3.36
+      ],
+      "placement_per_side_mm": 0.2,
+      "print_fit_per_side_mm": 0.2
+    },
+    {
+      "name": "Battery barrier unperforated over complete pack",
+      "pass_": true
     },
     {
       "name": "SW2 full actuation/optical path",
@@ -2417,7 +4121,7 @@
       "pass_": true
     },
     {
-      "name": "Wire reserve is single contiguous volume",
+      "name": "Two independent continuous lead reserves",
       "pass_": true
     },
     {
@@ -2577,14 +4281,86 @@
     "Supports/brim and fit coupons required; no support-free or physical-fit claim"
   ],
   "dimensions_XYZ_mm": [
-    34.1,
-    45.1,
-    19.4
+    35.1,
+    43.65,
+    19.400000000000002
   ],
   "snap": {
     "sleeve_radial_gap_mm": 0.18,
     "insertion_deflection_mm": 0.12000000000000001,
     "groove_radial_clearance_mm": 0.11999999999999998,
     "engagement_mm": 2.5
-  }
+  },
+  "wire_route_xyz_mm": [
+    [
+      [
+        4.5,
+        33.43,
+        13.65
+      ],
+      [
+        4.5,
+        33.43,
+        16.4
+      ],
+      [
+        -1.5,
+        33.43,
+        16.4
+      ],
+      [
+        -1.5,
+        22,
+        16.4
+      ],
+      [
+        -1.5,
+        22,
+        3.2
+      ],
+      [
+        1.95,
+        22,
+        3.2
+      ]
+    ],
+    [
+      [
+        4.5,
+        35.97,
+        13.65
+      ],
+      [
+        4.5,
+        35.97,
+        16.4
+      ],
+      [
+        -3.0,
+        35.97,
+        16.4
+      ],
+      [
+        -3.0,
+        25,
+        16.4
+      ],
+      [
+        -3.0,
+        25,
+        3.2
+      ],
+      [
+        1.95,
+        25,
+        3.2
+      ]
+    ]
+  ],
+  "rf_status": "RF TEST PROTOTYPE: compact nonmetallic cap is NOT full Espressif housing-clearance compliance",
+  "usb_mouth_plane_x_mm": 24.78,
+  "usb_opening_WH_mm": [
+    10,
+    4.3
+  ]
 }

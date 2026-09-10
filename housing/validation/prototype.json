@@ -1,0 +1,582 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "0.8 midframe manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "0.8 top-cover manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "0.8 bottom-cover manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.25 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.25 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.75 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 0.75 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 1 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 1 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 1.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 1.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 2 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 2 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 3 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 3 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 4 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 4 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 6 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 6 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 10 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 10 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 20 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 TopAccess travel 20 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.25 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.25 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.75 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 0.75 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 1 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 1 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 1.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 1.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 2 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 2 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 3 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 3 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 4 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 4 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 6 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 6 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 10 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 10 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 20 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "0.8 BottomGrooved travel 20 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (8.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (14.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 antenna cap coverage (20.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "0.8 source mouth outward opening",
+      "passed": true
+    },
+    {
+      "name": "1.2 midframe manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "1.2 top-cover manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "1.2 bottom-cover manifold oriented single shell",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.25 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.25 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.75 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 0.75 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 1 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 1 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 1.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 1.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 2 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 2 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 3 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 3 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 4 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 4 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 6 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 6 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 10 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 10 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 20 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 TopAccess travel 20 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.25 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.25 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.75 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 0.75 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 1 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 1 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 1.5 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 1.5 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 2 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 2 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 3 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 3 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 4 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 4 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 6 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 6 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 10 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 10 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 20 vs LeadEnvelope1",
+      "passed": true
+    },
+    {
+      "name": "1.2 BottomGrooved travel 20 vs LeadEnvelope2",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (8.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (14.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (-1, 0, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (0, 1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (0, -1, 0)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (0, 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 antenna cap coverage (20.2, 43.5, 14.8) (0, 0, -1)",
+      "passed": true
+    },
+    {
+      "name": "1.2 source mouth outward opening",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "0.8": {
+      "minimum_lead_to_print_mm": 0.4299999999999997,
+      "minimum_wire_reserve_to_print_mm": 0.17999999999999972,
+      "lead_to_lead_mm": 0.2999999999999998,
+      "battery_to_RF_exclusion_mm": 1.5,
+      "wire_reserve_to_RF_exclusion_mm": 2.1799999999999997
+    },
+    "1.2": {
+      "minimum_lead_to_print_mm": 0.4299999999999997,
+      "minimum_wire_reserve_to_print_mm": 0.17999999999999972,
+      "lead_to_lead_mm": 0.2999999999999998,
+      "battery_to_RF_exclusion_mm": 1.5,
+      "wire_reserve_to_RF_exclusion_mm": 2.1799999999999997
+    }
+  },
+  "limits": "Nominal CAD only; sampled insertion/coverage does not prove physical assembly or liquid exclusion."
+}

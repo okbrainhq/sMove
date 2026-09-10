@@ -1,26 +1,187 @@
 {
-  "revision": "screwless",
+  "schema": "smove.enclosure-only.rf-prototype.v1",
+  "status": "RF TEST PROTOTYPE",
   "manufacturing_release": false,
   "charging_release": false,
-  "pcb_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
-  "sources": {
-    "housing/smove-r2-enclosure.FCStd": "102461becf4503df09c18adf888cc9d672478b8190b24e64ec43296161749d09",
-    "housing/screwless.json": "9ee43fcba44591ba66851b1dbf3b93a1c4136e5971d3772c68bad4318a3d4f38",
-    "scripts/r2/enclosure/screwless.py": "7e915c0287b16579168fff418ddb6bd4fa5c426935cb5d401dd6bb322ab38bba",
-    "housing/render.py": "0db38427eb4e29266d508cc8972af32f00ecdb7bb324a9b8d71c857fd565050f",
-    "housing/entry.py": "83170363393654ddfc8da58d3271ef0564a1beba33a9ea8d55dd753c08f30457"
-  },
-  "artifacts": {
-    "housing/dist/assembled.png": "97ca92bbdd8f46f01b8b18f97cd88d3eec45ddf0751eeca662d1aaea4ee942f2",
-    "housing/dist/bottom-cover.stl": "1cb050be0859f941ed4c3e19bae17b745c49a725d4385aefe6413c9fd212ebba",
-    "housing/dist/exploded.png": "339112535e669d7fbb2bbcc75f145fd4fc161c3491c6a8165ad3cd373bfa0ae4",
-    "housing/dist/midframe-bottom.png": "cbf781f0913665d0cadcbc36b0a6e54405d5a0102158cca1aa953c4ce91a4d51",
-    "housing/dist/midframe-top.png": "fdd1cd251f9f699d5bbf6015ec2f5ed86480e75556e6460ae7a10f8db7325d43",
-    "housing/dist/midframe.stl": "c2ec7880578f6d03fc82659e9ba2e053c18c2501e3d40f3c2bed5385c02c129b",
-    "housing/dist/print-three.png": "5d8776662234fd5dd074ce14a4b520d68f1dfc36907b811094c04f554fa06735",
-    "housing/dist/section.png": "f489d5cbf92ccc7827ad72b727133b5123eca3b2833d176e52f3e731cb76a62b",
-    "housing/dist/smove-r2-assembly.step": "ea5282c6ef51037c1a6dd9adabd5784e2e43a7890b6a120a05b96b2591ac73fe",
-    "housing/dist/smove-r2-printable.step": "b6fde9fb8f81ade1ce0dd55caf8daed3c5fc7f43621fb6ee48bfdf1ba98a6f0b",
-    "housing/dist/top-cover.stl": "d8966d030427dae9cc77a6721ba0e037502cbc232e8caf96e8c322793045ca6f"
+  "full_espressif_housing_clearance_compliance": false,
+  "printed_parts": [
+    "Midframe",
+    "Top cover",
+    "Bottom cover"
+  ],
+  "self_hash_policy": "Manifest excludes itself",
+  "files": {
+    "README.md": {
+      "sha256": "2ffa0e994f15c7d8ac11331e6f05bfc49dbdf01f8a386bed42fa8300c951db29",
+      "bytes": 2401
+    },
+    "housing/BOM.csv": {
+      "sha256": "9dbec3e4b1f8eb0c85d9394639f4dd0f10e65f0134c9c0e05e943d2175856215",
+      "bytes": 1273
+    },
+    "housing/InspectAssembly.FCMacro": {
+      "sha256": "883f4a3ae80327886a151829419f85ce46928941378d5dfd15f0f038cef3cdad",
+      "bytes": 1641
+    },
+    "housing/PRINTING-ASSEMBLY.md": {
+      "sha256": "1c93a0ffd1332765069df3155dc6496ef4f1f2382ae59c34df8066e5ed8093f5",
+      "bytes": 9047
+    },
+    "housing/PresentAssembly.FCMacro": {
+      "sha256": "77d728435a38a5cc961d851fcd1b00e9ddc4e4139810a75eff18ac7c96ca557c",
+      "bytes": 659
+    },
+    "housing/README.md": {
+      "sha256": "733b176dcfa4ca9f8558875d0526116fd9bf70094d74f3569e3cb69cc3d555a7",
+      "bytes": 6693
+    },
+    "housing/check_native.py": {
+      "sha256": "9e9cb32b3b18fe835d60acfe8101e1151ddb4bb3d0c695450c9bc7ccd18c1113",
+      "bytes": 3023
+    },
+    "housing/dist/assembled-wire-path.png": {
+      "sha256": "1d100e87b71bd681812ddbcc7ce8da8c702c4715e1133f6c4fb3f8cc00447f7a",
+      "bytes": 251556
+    },
+    "housing/dist/assembled.png": {
+      "sha256": "aa450617cc95d8f0576e3609f561df3cda3bb320c9ae72fb47330678d48b0243",
+      "bytes": 46004
+    },
+    "housing/dist/bottom-cover.stl": {
+      "sha256": "112462d14e9875b18c42286a211dd5ac3f5be77b61a3c44dec8a5b79fe57add2",
+      "bytes": 134284
+    },
+    "housing/dist/exploded.png": {
+      "sha256": "b0e4d89815f2e58f7dc6f67a16d85089f99b309809fcec6e4a8407241773fb50",
+      "bytes": 121454
+    },
+    "housing/dist/midframe-bottom.png": {
+      "sha256": "8328c8ba9950c76e5df2ab8aeb65f3d3a3f2ad8c7024fdfcb65f03aaefe6843f",
+      "bytes": 16621
+    },
+    "housing/dist/midframe-top.png": {
+      "sha256": "27f9be2c7ebc858e8f2f6ebb79771a3499a840b3cea41f3af9b51314c82fc558",
+      "bytes": 14967
+    },
+    "housing/dist/midframe.stl": {
+      "sha256": "d38b43dc802a353bfd80205cd0bd5bb06586ebd6249f09ffe8708ab9870c7eb6",
+      "bytes": 180184
+    },
+    "housing/dist/print-three.png": {
+      "sha256": "824e8eb76d830fae4c04dd4415fbe2441cc5bfd427e424533270ec499b55190c",
+      "bytes": 44424
+    },
+    "housing/dist/section.png": {
+      "sha256": "5945bea120fc665f43e61d175005d9b637ec049dda87b5db4dacb0583b4aaa8a",
+      "bytes": 30973
+    },
+    "housing/dist/smove-r2-assembly.step": {
+      "sha256": "c209ac21f233810fe9e0e474e72f2c9daa6c8893ba99ccbbcf11320583d15864",
+      "bytes": 887744
+    },
+    "housing/dist/smove-r2-printable.step": {
+      "sha256": "54a70f0eb4a5524ed7e0a8e0bde0b64c7ee2a37bc4d9405e7c31a0afc04406ca",
+      "bytes": 453298
+    },
+    "housing/dist/top-cover.stl": {
+      "sha256": "50470f609c450536405df2cba316b59632d352b5b2d2921f886d9ce484a1738d",
+      "bytes": 230084
+    },
+    "housing/entry.py": {
+      "sha256": "83170363393654ddfc8da58d3271ef0564a1beba33a9ea8d55dd753c08f30457",
+      "bytes": 482
+    },
+    "housing/qualify.py": {
+      "sha256": "3a162dd618488366e4941f98de5789f7c0badd3adf8b252f528468d2a203e687",
+      "bytes": 2864
+    },
+    "housing/render.py": {
+      "sha256": "8177d3fc4b289672acb7696d66e6d803d2a6763889857d7aee97f9ef6fc81e9a",
+      "bytes": 4672
+    },
+    "housing/screwless.json": {
+      "sha256": "fb8481d6629bfc3e439e0e55c33ed99239f52bbc3a4d0744a109c2a93cd5abaf",
+      "bytes": 655
+    },
+    "housing/seal.py": {
+      "sha256": "adb3e6781331405a18ba0cba93d316b00d74f1c2fbbc0a11420878daaf95f230",
+      "bytes": 2272
+    },
+    "housing/smove-r2-enclosure.FCStd": {
+      "sha256": "5ed4f55a265086b1234f81698566b388094e12ab200ba23ea0ed498c7281a7c2",
+      "bytes": 796710
+    },
+    "housing/sources/hro-type-c-31-m-12.pdf": {
+      "sha256": "6ae33d50ac47820114661138dc4e4659f40fdc5d4f485b46685dfec338da1a9e",
+      "bytes": 118176
+    },
+    "housing/sources/usb-mechanical-evidence.json": {
+      "sha256": "2a9b3db895de184e5b977739bd365653e4524f72434d0f12be6ef239c250c03c",
+      "bytes": 4798
+    },
+    "housing/status.json": {
+      "sha256": "0406c1f9c4df0eb07e53a53991313e0f6a940b506cf4c8b1700d65fd811746d8",
+      "bytes": 1511
+    },
+    "housing/toolchain.lock.json": {
+      "sha256": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
+      "bytes": 1233
+    },
+    "housing/validation/input-geometry.json": {
+      "sha256": "17093ab07b817598df7ef3b402a0172d204bd5c9780feea225e35ffeb69753b9",
+      "bytes": 139390
+    },
+    "housing/validation/mechanical.json": {
+      "sha256": "a78fcf67843c785877a93a0498aec025ed7d17eb6507b54546f27619ed0c78e3",
+      "bytes": 99397
+    },
+    "housing/validation/native-parameter.json": {
+      "sha256": "b0045f711d666598e4a06fe8046b7810d1de042ae646a5ec9f28fca6ea1231e9",
+      "bytes": 1849
+    },
+    "housing/validation/pcb-preservation.json": {
+      "sha256": "8ba1a391917c7f9fa475cb32c741e3b87a9b8c05d6b884d2118b0ade2a902899",
+      "bytes": 36168
+    },
+    "housing/validation/prototype.json": {
+      "sha256": "fcd4db1b1f55fb47ab7a273b0b37aaa7d273cae60b04f7231adc6d4de480da31",
+      "bytes": 14298
+    },
+    "housing/validation/renders.json": {
+      "sha256": "6f1798f358aa5e2b553e5c1ae07c7fd28064195c162bc3b4f7aa99f36d367920",
+      "bytes": 364
+    },
+    "housing/validation/wall-1.2.json": {
+      "sha256": "f3b0117ede27461149f0fa392e4bc56c452588d1c8b4b030e22671d227093cbc",
+      "bytes": 99113
+    },
+    "scripts/r2/enclosure/extract.py": {
+      "sha256": "f815b355b715a59b812d20269816877de439c6d5eef90d714bc487d296154094",
+      "bytes": 7271
+    },
+    "scripts/r2/enclosure/generate.py": {
+      "sha256": "2c7dbfdac00f15141494f01f410080ee83ee00686d4985bb22cbe281dcf3c3f8",
+      "bytes": 12008
+    },
+    "scripts/r2/enclosure/inspection.py": {
+      "sha256": "8aa2a6912facafe7f9061c323d731f5f0ee54465ae81abaa199b19d3eb8158f8",
+      "bytes": 7562
+    },
+    "scripts/r2/enclosure/present.py": {
+      "sha256": "2ba3da739a988eea85d6546623fbfcdb6c64fbda4b8285a86ace51ff9774cc7d",
+      "bytes": 4551
+    },
+    "scripts/r2/enclosure/screwless.py": {
+      "sha256": "c686dfb33a42dd5ab8ebe8f1741afbc8af66faa80f78b24981afda62746261a5",
+      "bytes": 19912
+    },
+    "scripts/r2/enclosure/seal_delivery.py": {
+      "sha256": "5c6b7c99502a21f21b7410700ff343ec22cda98ff78ed47b9466b0de09cafb1e",
+      "bytes": 6934
+    },
+    "scripts/r2/enclosure/verify.py": {
+      "sha256": "54ebb33114a51066520de463f413ef5d9eca575d70db94638853b823baf63193",
+      "bytes": 11639
+    }
   }
 }

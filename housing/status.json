@@ -1,6 +1,6 @@
 {
   "schema": "smove.screwless.status.v1",
-  "status": "CAD_REVIEW_PHYSICAL_RELEASE_HELD",
+  "status": "RF_TEST_PROTOTYPE_NOMINAL_CAD_PASS_PHYSICAL_RELEASE_HELD",
   "manufacturing_release": false,
   "charging_release": false,
   "physical_fit_proven": false,
@@ -14,18 +14,25 @@
   ],
   "outer_wall_mm": 0.8,
   "external_LWH_mm": [
-    44.3,
-    33.3,
-    19.0
+    42.85,
+    34.3,
+    19
   ],
   "pcb_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
   "closure": "Sleeve plus short ramped snap rails; no screws/nuts/inserts or PCB enclosure mounting holes",
-  "wire": "Explicit west passage and conditional two OD1.2/R2 lead envelopes reaching BAT; vendor pack-to-entry connection unqualified",
+  "wire": "Upward BAT exit; internal west perimeter around separator edge to opposite-side battery; no through-separator route",
   "open_gates": [
     "Actual complete pack/lead exit/swelling/protection/charger suitability unknown or unqualified",
     "Print support removal, snap insertion/extraction force, fit, creep, fatigue, impact and physical USB/button/LED access",
     "Film/adhesive insulation and chemical compatibility; PCB deflection/IMU stability",
     "Pack-to-west-entry wiring, wire bend rating, pull/flex restraint and pinch/polarity checks",
-    "On-body RF, magnetometer and thermal qualification; no full 15mm all-direction RF claim"
-  ]
+    "On-body RF, magnetometer and thermal qualification; no full 15mm all-direction RF claim",
+    "Sweat ingress and skin-contact qualification; enlarge after on-player RF tests if needed"
+  ],
+  "main_body_LWH_mm": [
+    39.3,
+    34.3,
+    19
+  ],
+  "full_espressif_housing_clearance_compliance": false
 }
