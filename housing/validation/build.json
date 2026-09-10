@@ -97,7 +97,7 @@
       "triangles": 2068
     },
     "lid": {
-      "volume_mm3": 2327.9641360100422,
+      "volume_mm3": 2327.964136010043,
       "triangles": 2604
     }
   },
@@ -140,6 +140,6 @@
     19.6
   ],
   "print_simplification": "Four wall-rooted corner blocks, broad lid pads, integral front nut stop, straight-down lid; no hook features or slender fences",
-  "input_hash": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
+  "input_hash": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
   "printed_parts": 2
 }

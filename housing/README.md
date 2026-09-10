@@ -1,5 +1,7 @@
 # Two simpler prints — central H1 screw
 
+> **Current alignment revision:** [RESET/BOOT switches and matching lid openings](../docs/revision-r2/button-alignment/README.md). Supersedes the historical unchanged-PCB claims below; review only, not released.
+
 **42.0 L × 28.8 W × 19.6 H mm. Print only Base + Lid.** The accepted battery/central-screw layout is retained; this revision simplifies its small features rather than changing the PCB or pack.
 
 - Four **solid, wall-rooted stepped corners** replace skinny seats, webs and separate fences. They locate the PCB positively without screw clamping.
@@ -22,7 +24,7 @@ The **21.8 mm battery-ceiling bridge**, small nut-slot roof and lid bore/recess 
 
 - `dist/smove-r2-printable.step`: exactly two printed solids.
 - `dist/smove-r2-assembly.step`: nominal full assembly, no wires; conservative component/hardware envelopes.
-- `validation/mechanical.json`: **374 passing CAD checks**, independent STEP/STL consistency, vertical PCB/lid/screw paths and nut/pack insertion.
+- `validation/mechanical.json`: **382 passing CAD checks**, independent STEP/STL consistency, vertical PCB/lid/screw paths and nut/pack insertion.
 - `validation/print-simplification.json`: before/after features and remaining print gates.
 - `validation/gui-inspection.json`: actual GUI controls and native hash.
 
@@ -31,9 +33,9 @@ The **21.8 mm battery-ceiling bridge**, small nut-slot roof and lid bore/recess 
 /usr/bin/python3 scripts/freecad/run.py housing/entry.py generate
 # Explicitly run housing/PresentAssembly.FCMacro in the pinned real FreeCAD GUI.
 /usr/bin/python3 scripts/freecad/run.py housing/entry.py verify
-/usr/bin/python3 scripts/r2/enclosure/seal_delivery.py --check
+# Historical two-part-case sealer is not applicable to the alignment revision.
 ```
 
-The last command verifies a sealed delivery; after deliberate changes, stage intended files and run the sealer without `--check`, then stage generated reports/manifests and recheck. Do not run legacy routing generators over the recovered board. CSG dimensions are authoritative; the spreadsheet exposes core parameters, not a fully generalized constraint solver.
+The old sealer applies only to the historical unchanged-PCB delivery. Current alignment artifact hashes are recorded in `dist/manifest.json`; see the alignment report linked above. Do not run legacy routing generators over the recovered board. CSG dimensions are authoritative; the spreadsheet exposes core parameters, not a fully generalized constraint solver.
 
 [Assembly/insulation/print gates](PRINTING-ASSEMBLY.md) · [Current screenshots](../docs/revision-r2/two-part-case/images.md) · [Combined delivery](../docs/revision-r2/two-part-case/README.md). **Review only; no merge or archive cleanup yet.**

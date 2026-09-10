@@ -1484,30 +1484,30 @@
       "footprint": "TS1088",
       "value": "RESET",
       "xy_mm": [
-        21.5,
-        10.95
+        21.25,
+        10.75
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        19.275,
-        10.95
+        19.025,
+        10.75
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            19.275,
-            10.95
+            19.025,
+            10.75
           ],
           "net": "/Compute/MCU_EN"
         },
         {
           "number": "2",
           "xy_mm": [
-            23.725,
-            10.95
+            23.475,
+            10.75
           ],
           "net": "GND"
         }
@@ -1520,21 +1520,21 @@
       "footprint": "TS1088",
       "value": "BOOT / USER",
       "xy_mm": [
-        21.05,
+        21.25,
         7.0
       ],
       "rotation_deg": 0.0,
       "layer": "Top",
       "pad_reference": "1",
       "pad_reference_mm": [
-        18.825,
+        19.025,
         7.0
       ],
       "pads": [
         {
           "number": "1",
           "xy_mm": [
-            18.825,
+            19.025,
             7.0
           ],
           "net": "Net-(U1-GPIO9_{slash}_BOOT)"
@@ -1542,7 +1542,7 @@
         {
           "number": "2",
           "xy_mm": [
-            23.275,
+            23.475,
             7.0
           ],
           "net": "GND"
