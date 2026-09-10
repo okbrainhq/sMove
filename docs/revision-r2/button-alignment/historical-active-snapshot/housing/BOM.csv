@@ -1,0 +1,9 @@
+Item,Qty,Description,Acceptance
+Base,1,Nonconductive printed base with integral battery ceiling and central nut boss and solid corner seats,Print bridge and nut roof stiffness/gauges required
+Lid,1,Nonconductive printed lid with central bearing and integral entry skirt,Fit and low-preload creep qualification required
+Screw,1,ONLY M3x8 ISO4762 socket cap through H1; max head5.68x3,Length7.71..8.29mm; shank<=3.00mm; no released torque
+Nut,1,M3 hex AF5.5x2.4 envelope in central front-entry pocket,Verify thread/chamfer and pocket fit
+Floor liner,1,Smooth insulating film21.6x31.8x0.2mm,No sharp edges or pouch preload
+Seat liners,4,Smooth insulating film0.95x1.8x0.2mm front and0.95x2x0.2mm rear,Coplanar supports; no PCB preload
+Battery,1,Unqualified candidate body30x20x3mm,Complete pack<=31x21x4.3mm; NOT charging approved
+User-routed leads,not modeled,No wire specification or dedicated space supplied,User chooses and verifies route/strain relief/polarity; avoid RF and pinching

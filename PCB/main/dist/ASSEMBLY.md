@@ -1,10 +1,10 @@
 # R2 main assembly pin-reference / rotation guide
 
-Engineering prototype; manufacturing_release=false. BOM/CPL fits 46 electronic parts. J2 is two PCB-only plated wire holes on 2.54mm centre pitch, NOT a JST/header and excluded from BOM/CPL. No battery connector or mating cable is purchased. Hand-solder qualified battery leads only after verifying polarity and pack charge/discharge suitability; provide and verify user-routed lead insulation/strain relief before closing. No lacing restraint is modeled in the current case.
+Engineering prototype; manufacturing_release=false. BOM/CPL fits 46 electronic parts. J2 is two PCB-only plated wire holes on 2.54mm centre pitch, NOT a JST/header and excluded from BOM/CPL. No battery connector or mating cable is purchased. Hand-solder qualified battery leads only after verifying polarity and pack charge/discharge suitability; qualify the midframe adhesive strain-relief land before closing.
 
 J2 holes: 1.0mm finished target (accept 0.9–1.1mm), 2.0mm pads. Wire envelope assumption: tinned bundle <=0.7mm, insulated OD <=1.2mm; no exact gauge supplied. Insulation stays below PCB; solder TOP and trim top protrusion <=0.6mm. BAT+ = protected PACK_P, BAT- = GND. Never solder directly on a pouch; keep each battery lead individually insulated until its connection is made; isolate the pack for service whenever the pack permits. No USB connected during assembly.
 
-All positions mm, TOP/component face, X right/Y up at native auxiliary/drill origin; KiCad CCW angles, not vendor rotation offsets. Check assembly preview. No external UART or testpoints. One M3 NPTH hole and two copper-free keyed corners are PCB features, excluded from BOM/CPL.
+All positions mm, TOP/component face, X right/Y up at native auxiliary/drill origin; KiCad CCW angles, not vendor rotation offsets. Check assembly preview. No external UART or testpoints. No mounting holes or hardware. Two copper-free southern contact reserves remain; insulated midframe support, optional adhesive.
 
 |Ref|MPN|X|Y|CCW deg|Reference pad|Pad X|Pad Y|
 |---|---|---:|---:|---:|---|---:|---:|

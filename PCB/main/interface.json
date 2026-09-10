@@ -1,7 +1,7 @@
 {
   "schema": "smove.imu-support.interface.v5",
-  "status": "PCB REVIEW ONLY; HOUSING INCOMPATIBLE / UNVALIDATED; NOT RELEASED",
-  "geometry_sha256": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
+  "status": "SCREWLESS THREE-PIECE CAD REVIEW; NOT RELEASED",
+  "geometry_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
   "coordinate_system": {
     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
@@ -1716,8 +1716,8 @@
     "housing_recommendation_status": "15mm clearance in ALL directions is recommended by Espressif but NOT met by the existing compact housing/under-board pack. The retained overhang forward/side exclusion is a geometric constraint, not proof of RF compliance. No wire or pack may enter it; qualify final RF on body."
   },
   "retention_policy": {
-    "status": "UNVALIDATED",
-    "contacts": "No approved casing or load-bearing contact scheme in this PCB-only revision."
+    "status": "CAD_REVIEW_ONLY",
+    "contacts": "Insulated underside support lands and perimeter locating clearance. Copper-free southern corners retained as dielectric contact reserves, not hardware."
   },
   "bottom_envelope": {
     "smt_parts": "none",
@@ -1733,7 +1733,7 @@
     "Battery electrical or physical qualification",
     "Manufacturing release"
   ],
-  "change_policy": "Native board is canonical. Run scripts/r2/integrated/sync.py, housing extract/generate/verify and scoped verification/exports after edits.",
+  "change_policy": "Native PCB canonical. Do not run legacy routing/sync generators. See scripts/r2/screwless/pcb.py and housing/README.md.",
   "connector_selection": {
     "status": "NO_FITTED_BATTERY_CONNECTOR",
     "J2": "Two plated through-hole wire solder pads; excluded from BOM/CPL; no header allowed",
@@ -1800,18 +1800,9 @@
     ]
   },
   "mounting": {
-    "holes_native_xy_mm": {
-      "H1": [
-        111.8,
-        125.65
-      ]
-    },
-    "drill_mm": 3.2,
-    "copper_exclusion_radius_mm": 3.45,
-    "scheme": "One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.",
-    "sensor_warning": "Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.",
-    "release_blocker": "Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.",
-    "component_clearance_policy": "Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval."
+    "holes_native_xy_mm": {},
+    "scheme": "No mounting hardware or holes. Midframe edge locators and insulated underside lands; optional controlled adhesive. No PCB/pouch clamping.",
+    "release_blocker": "Physical support, button deflection, creep and adhesive qualification remain open."
   },
   "battery_wire": {
     "pitch_centre_mm": 2.54,
@@ -1829,7 +1820,7 @@
     "mask_web_mm": 0.44,
     "wire_gauge_supplied": null,
     "wire_selection": "Engineering envelope only; measure tinned strand bundle and insulated OD, qualify rated current/flex/temperature; no exact gauge supplied",
-    "strain_relief": "REQUIRED BUT UNVALIDATED: design and pull/flex qualify insulated lead strain relief outside RF exclusion. No casing routing imported.",
+    "strain_relief": "West-side midframe passage and adhesive strain-relief land; measure pack lead exit and qualify pull/flex. Solder is not strain relief.",
     "polarity": {
       "1": "BAT+ protected PACK_P",
       "2": "BAT- GND"
@@ -1837,8 +1828,7 @@
   },
   "manufacturing_release": false,
   "housing_compatibility": {
-    "status": "INCOMPATIBLE_UNVALIDATED",
-    "reason": "H1 and BAT wire geometry changed from main 554e4fe. No casing changes imported or validated.",
-    "legacy_assumptions": "Any retained enclosure coordinates, strain-relief paths or retention descriptions are historical, not current assembly instructions."
+    "status": "SCREWLESS_CAD_REVIEW",
+    "reason": "See housing/validation and docs/revision-r2/screwless; physical fit not proven."
   }
 }

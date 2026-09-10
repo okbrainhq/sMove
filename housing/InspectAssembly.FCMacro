@@ -1,10 +1,22 @@
-# Run explicitly in FreeCAD: Macro > Macros > select this file > Execute.
-# Integrated PCB: separate Base/Lid/Main/Battery/Hardware/Insulation.
-# Local inspection only. Does not save files, export geometry or move engineering sources.
+# Current screwless native visibility inspector. No exports, saves or source moves.
 from pathlib import Path
-import sys
-import FreeCAD as App
-root = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(root/'scripts/r2/enclosure'))
-import inspection
-smove_inspection_panel = inspection.show(App.ActiveDocument)
+import FreeCAD as App, FreeCADGui as Gui
+from PySide import QtWidgets
+root=Path(__file__).resolve().parents[1]
+doc=App.ActiveDocument or App.openDocument(str(root/'housing/smove-r2-enclosure.FCStd'))
+assert doc.getObject('Midframe'), 'Open the current screwless FCStd, not a historical two-part file.'
+smove_inspection_panel=QtWidgets.QDialog(Gui.getMainWindow())
+smove_inspection_panel.setWindowTitle('sMove — three screwless prints — review only')
+layout=QtWidgets.QVBoxLayout(smove_inspection_panel)
+layout.addWidget(QtWidgets.QLabel('Visibility only; engineering positions stay fixed.\nUse the source tree / Parameters.Wall for edits.'))
+for role,label in [('print','Three printed pieces'),('pcb','PCB'),('component','Component envelopes'),('battery','Candidate battery'),('insulator','Insulation'),('lead_envelope','Conditional R2 / OD1.2 lead envelopes'),('wire_reserve','Wire free-space reserve')]:
+ box=QtWidgets.QCheckBox(label);box.setChecked(role in ('print','pcb','component','battery','insulator'))
+ def toggle(checked,role=role):
+  for obj in doc.Objects:
+   if getattr(obj,'Role','')==role:obj.ViewObject.Visibility=checked
+  Gui.activeDocument().activeView().fitAll()
+ box.toggled.connect(toggle);layout.addWidget(box)
+for name,label in [('TopAccess','Top cover'),('BottomGrooved','Bottom cover')]:
+ box=QtWidgets.QCheckBox(label);box.setChecked(True)
+ box.toggled.connect(lambda checked,name=name:setattr(doc.getObject(name).ViewObject,'Visibility',checked));layout.addWidget(box)
+smove_inspection_panel.show()

@@ -1,17 +1,9 @@
-# Optional explicit GUI presentation/export smoke-test macro. Unlike InspectAssembly,
-# this regenerates review images and saves assembled display styling in the FCStd.
+# Regenerate current screwless presentation using a SEPARATE pinned GUI process.
+# Close this document before running; no automatic save/overwrite of interactive edits.
 from pathlib import Path
-import sys, traceback
-from PySide import QtCore
+import subprocess
+import FreeCAD as App
 root=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(root/'scripts/r2/enclosure'))
-import present
-
-def run_presentation():
-    try:
-        global smove_doc,smove_panel
-        smove_doc,smove_panel=present.main()
-    except Exception:
-        (root/'.cache/housing/gui-error.log').write_text(traceback.format_exc())
-        raise
-run_presentation()
+assert not any(Path(d.FileName).name=='smove-r2-enclosure.FCStd' for d in App.listDocuments().values()), 'Close the enclosure document before regenerating presentation; preserve your edits first.'
+subprocess.run(['/usr/bin/python3',str(root/'scripts/freecad/run.py'),'housing/render.py'],cwd=root,check=True,timeout=120)
+App.openDocument(str(root/'housing/smove-r2-enclosure.FCStd'))

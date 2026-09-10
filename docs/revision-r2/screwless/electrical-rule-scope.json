@@ -1,0 +1,12 @@
+{
+  "configured_ERC_DRC": "0 violations, 0 opens, 0 schematic parity issues",
+  "severity_scope": "--severity-all includes configured severities only; ignored defaults are NOT checked",
+  "ignored_defaults": {
+    "board.design_settings.rule_severities.footprint_filters_mismatch": "ignore",
+    "board.design_settings.rule_severities.footprint_type_mismatch": "ignore",
+    "board.design_settings.rule_severities.missing_courtyard": "ignore",
+    "board.design_settings.rule_severities.npth_inside_courtyard": "ignore",
+    "board.design_settings.rule_severities.pth_inside_courtyard": "ignore"
+  },
+  "drc_exclusions": []
+}

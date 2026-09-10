@@ -34,18 +34,9 @@
     ]
   ],
   "mounting": {
-    "holes_native_xy_mm": {
-      "H1": [
-        111.8,
-        125.65
-      ]
-    },
-    "drill_mm": 3.2,
-    "copper_exclusion_radius_mm": 3.45,
-    "scheme": "One 3.2mm NPTH M3 local support below IMU; mating hardware, insulation, preload and antirotation NOT RELEASED.",
-    "sensor_warning": "Nearer support shortens unsupported PCB span, not an accuracy guarantee. Control preload and coplanarity; no contact with U2. Magnetometer: prefer verified low-magnetic hardware; even nominal stainless can be magnetic. Qualify bias with installed hardware and charging currents.",
-    "release_blocker": "Prior radius-3.4mm bearing has only 0.042612mm nominal margin to filled copper. This is NOT robust insulation or a tolerance-qualified mounting design. Do not assemble using the old bearing/case.",
-    "component_clearance_policy": "Native H1 courtyard and all-layer copper keepout retained; no pressure/contact on U2. Hardware envelope and tolerance stack require separate approval."
+    "holes_native_xy_mm": {},
+    "scheme": "No mounting hardware or holes. Midframe edge locators and insulated underside lands; optional controlled adhesive. No PCB/pouch clamping.",
+    "release_blocker": "Physical support, button deflection, creep and adhesive qualification remain open."
   },
   "sensor_frame": {
     "part": "ICM-20948",
