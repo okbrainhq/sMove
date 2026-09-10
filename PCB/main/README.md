@@ -1,5 +1,7 @@
 # Main PCB — 25 × 30mm electrical review candidate
 
+> **Current alignment revision:** [RESET/BOOT switches and matching lid openings](../../docs/revision-r2/button-alignment/README.md). Supersedes the historical unchanged-PCB claims below; review only, not released.
+
 **Not released for manufacture/assembly.** Native sources and `dist/` geometry are selectively recovered from `96e081b`, independently checked against `554e4fe`; no housing changes imported.
 
 - Final ERC/DRC: zero issues, opens, dangling items and parity mismatches; net equivalence and USB geometry retained.

@@ -91,7 +91,7 @@
     },
     "lid": {
       "facets": 2604,
-      "stl_volume_mm3": 2327.9716796875,
+      "stl_volume_mm3": 2327.978271484375,
       "native_volume_mm3": 2327.9641360100422,
       "closed_manifold": true,
       "consistent_orientation": true
@@ -479,7 +479,7 @@
       "passed": true,
       "detail": {
         "solids": 1,
-        "volume": 31.5
+        "volume": 31.499999999999993
       }
     },
     {
@@ -574,6 +574,55 @@
     },
     {
       "check": "source_pcb_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "button_hole_center:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "button_hole_diameter:SW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "button_axis_clear_through_lid:SW2",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "button_hole_center:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "button_hole_diameter:SW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "button_axis_clear_through_lid:SW3",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "check": "physical_switches_and_holes_collinear",
+      "passed": true,
+      "detail": [
+        [
+          21.25,
+          14.75
+        ],
+        [
+          21.25,
+          11.0
+        ]
+      ]
+    },
+    {
+      "check": "button_holes_separate",
       "passed": true,
       "detail": null
     },
@@ -2114,7 +2163,7 @@
       "passed": true,
       "detail": {
         "native": 2327.9641360100422,
-        "stl": 2327.9716796875
+        "stl": 2327.978271484375
       }
     },
     {
@@ -2170,5 +2219,5 @@
   ],
   "failed": [],
   "method": "Open saved FCStd, native BRep intersections/distances, pack continuous translation swept solid, sampled PCB/lid/nut/screw insertion; leads entirely omitted, independent STEP and STL imports. No FEA or physical qualification.",
-  "pcb_hash": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59"
+  "pcb_hash": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3"
 }

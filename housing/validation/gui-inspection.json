@@ -23,5 +23,5 @@
     "Native saved in opaque assembled display state"
   ],
   "method": "Explicit GUI macro, Qt button activation, activeView renders. Native desktop-tool observations are recorded separately in docs/revision-r2/two-part-case/images.md.",
-  "native_sha256": "7e2b8eb769d26a237f48ef1b29fc849477c01c21deee1343d707d8182b070cb1"
+  "native_sha256": "302aaadf7acfdfcd8c2cf219185b87f5733b34f52f5ce84a3185af34cbd45d08"
 }

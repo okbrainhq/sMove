@@ -1,5 +1,7 @@
 # sMove — repaired PCB + two simpler case prints
 
+> **Current alignment revision:** [RESET/BOOT switches and matching lid openings](docs/revision-r2/button-alignment/README.md). Supersedes the historical unchanged-PCB claims below; review only, not released.
+
 **Current review design: 42.0 L × 28.8 W × 19.6 H mm. Print only Base + Lid. ONLY M3×8 through existing PCB H1.**
 
 - [Current two-part case](housing/README.md): solid stepped corner supports, broad lid pads, plain vertical drop-on lid; no hooks, snaps, side screw/ear or tiny separate printed parts. Battery slot and insulated screw socket are integral.

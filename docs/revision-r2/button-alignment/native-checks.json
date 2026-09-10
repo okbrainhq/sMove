@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "tracks_vias_unchanged": 1823,
+  "pad_nets_and_sizes_unchanged": true,
+  "rules_and_schematics_unchanged": true,
+  "changed_footprints": {
+    "SW2": {
+      "before": [
+        121.5,
+        124.05
+      ],
+      "after": [
+        121.25,
+        124.25
+      ]
+    },
+    "SW3": {
+      "before": [
+        121.05,
+        128.0
+      ],
+      "after": [
+        121.25,
+        128.0
+      ]
+    }
+  },
+  "pcb_sha256": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3"
+}

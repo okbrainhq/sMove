@@ -23,6 +23,18 @@ for n in physical:ck('valid_solid:'+n,sh(n).isValid() and len(sh(n).Solids)>=1,{
 ck('exactly_two_printed_parts',B['printed_parts']==2 and sorted(o.Name for o in D.Objects if getattr(o,'Role','')=='print' and o.TypeId!='App::Link')==['Base','Lid'])
 ck('no_removable_divider',D.getObject('BatteryDivider') is None and D.getObject('ViewDivider') is None)
 ck('source_pcb_hash',hashlib.sha256((R/'PCB/main/smove-r2-main.kicad_pcb').read_bytes()).hexdigest()==B['input_hash'])
+# Switch axes come from the independently extracted native PCB, not hand-entered hole poses.
+inputs=json.loads((R/'.cache/housing/input-geometry.json').read_text())['boards']['main']
+axes=[]
+for ref in ('SW2','SW3'):
+    x,y=inputs['footprints'][ref]['local_xy'];axes.append((x,y))
+    hole=D.getObject(ref+'Access')
+    ck('button_hole_center:'+ref,abs(hole.Placement.Base.x-x)<1e-6 and abs(hole.Placement.Base.y-y)<1e-6)
+    ck('button_hole_diameter:'+ref,abs(hole.Radius.Value-1.65)<1e-6)
+    probe=Part.makeCylinder(1.3,7.,A.Vector(x,y,13.8))
+    separated('button_axis_clear_through_lid:'+ref,lid,probe)
+ck('physical_switches_and_holes_collinear',abs(axes[0][0]-axes[1][0])<1e-6,axes)
+ck('button_holes_separate',abs(axes[0][1]-axes[1][1])-3.3>=.4-1e-6)
 separated('base_lid_no_penetration',base,lid)
 for n in B['reference_objects']+B['hardware_objects']:
     for case in ['Base','Lid']:separated(case+'_no_penetration:'+n,sh(case),sh(n))

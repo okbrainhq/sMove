@@ -1,131 +1,23 @@
 {
-  "schema": "smove.two-part-housing.manifest.v1",
+  "schema": "smove.button-alignment.delivery.v1",
   "manufacturing_release": false,
-  "printed_parts": [
-    "Base",
-    "Lid"
-  ],
-  "pcb_source_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
-  "files": {
-    "housing/BOM.csv": {
-      "sha256": "01b76ff08d77a1f197947b453d49023e2d0b7e12901c088fa579e6f8427839e5",
-      "bytes": 986
-    },
-    "housing/InspectAssembly.FCMacro": {
-      "sha256": "50671efad94a549e9ebb28849cff9629026dab736aab7420850dd3127a9d18ce",
-      "bytes": 468
-    },
-    "housing/PRINTING-ASSEMBLY.md": {
-      "sha256": "7cd80a0b0b0244852329364934e460c0417770f07e86e1ceced34e18d1f6aa6d",
-      "bytes": 11711
-    },
-    "housing/PresentAssembly.FCMacro": {
-      "sha256": "57b5de2506e2e3af126336aaab252d613515407c0116d87f735f7fc5412b1ecd",
-      "bytes": 602
-    },
-    "housing/README.md": {
-      "sha256": "3a35069cea41083ddd89878460206c0d32a06f9f729df956203e36cc7395b2c1",
-      "bytes": 3760
-    },
-    "housing/dist/assembled.png": {
-      "sha256": "dc8eecfd36ff22dcd95149c8610744ee9f9a8621c9d7d501f74a5d7affdbe47f",
-      "bytes": 27738
-    },
-    "housing/dist/base.stl": {
-      "sha256": "0781f42d56e6f23d5ebc7f67581167b51e6ae9902d7bba64eaee9c8519486103",
-      "bytes": 103484
-    },
-    "housing/dist/exploded.png": {
-      "sha256": "74c8e289c1ecec5610bcac54dc46b3773597d34185aa41c3ff42487daa85a32e",
-      "bytes": 39025
-    },
-    "housing/dist/lid.stl": {
-      "sha256": "69a83db9cea21dc8674a513b0bcab44ddf8b92b3f33fd29d5d4536e6c5f168ac",
-      "bytes": 130284
-    },
-    "housing/dist/print-pair.png": {
-      "sha256": "e9dacaa89125d2222d74b427bfdaf33b791138fc3e07e0360a4400cbc0cb1cc8",
-      "bytes": 36043
-    },
-    "housing/dist/section.png": {
-      "sha256": "d07f7dfb7c8473b02d2fe4403f69562f6cf3f138b99267548d27e7a77c50ac53",
-      "bytes": 12395
-    },
-    "housing/dist/smove-r2-assembly.step": {
-      "sha256": "693d0c50e08cd4708054a5afcee59e1ee71e2ca267236ded8a405ff970388ffd",
-      "bytes": 536100
-    },
-    "housing/dist/smove-r2-printable.step": {
-      "sha256": "5cd7f459dec3246475e6b41ee1fa007bd77a0db4d6c4203ff78db6ddbe9e7a4e",
-      "bytes": 153338
-    },
-    "housing/entry.py": {
-      "sha256": "2d80a853ac013a6aa33c5d6573ec3284f97ee2298575bbf776dc722868921c6b",
-      "bytes": 403
-    },
-    "housing/smove-r2-enclosure.FCStd": {
-      "sha256": "7e2b8eb769d26a237f48ef1b29fc849477c01c21deee1343d707d8182b070cb1",
-      "bytes": 282775
-    },
-    "housing/status.json": {
-      "sha256": "69b8cb82ddb9800fc2c8dca87e2fbe129c05af8f1133450ba07006f63bf6891e",
-      "bytes": 1683
-    },
-    "housing/toolchain.lock.json": {
-      "sha256": "f33cad92656997f368f1e6dcce8ea17df54a5a4105a1d7a1528e7bd9a0aa7b1c",
-      "bytes": 1233
-    },
-    "housing/validation/build.json": {
-      "sha256": "c9e19417a77ea8005b637f28209107c516173c8c87e0209b0389babfcd4d842b",
-      "bytes": 2538
-    },
-    "housing/validation/gui-inspection.json": {
-      "sha256": "6abb45d186abfb57e053e1a0d7a15cf9f48d0f34c4946109c3817df295409b20",
-      "bytes": 1011
-    },
-    "housing/validation/input-geometry.json": {
-      "sha256": "e1c8ec3b64b8f5d5bac760d4efc4f402507f0557ac049150d2583d8d17c5da3d",
-      "bytes": 174981
-    },
-    "housing/validation/mechanical.json": {
-      "sha256": "91e940910ee1aeae34ff002afc2e8a3a0083aca48970452accda47bd48f9bc11",
-      "bytes": 46347
-    },
-    "housing/validation/print-simplification.json": {
-      "sha256": "9e1e4901162c9bb00fcb3b21f822962f194e066cedc31de79afa2ae83ad2d303",
-      "bytes": 1184
-    },
-    "scripts/freecad/bootstrap.py": {
-      "sha256": "b5276840d062eea52dd51569f9d793f97f3e23d661412507c40e6f0be7f69c46",
-      "bytes": 5033
-    },
-    "scripts/freecad/run.py": {
-      "sha256": "d5b8121f7e96246e45be0a40ef17f530ec2c6e56f0675c378e92ab10dba7e78d",
-      "bytes": 2616
-    },
-    "scripts/r2/enclosure/extract.py": {
-      "sha256": "4d34fa7fd1aa9fe4d5d3099eacd815ab271ee5c0a1e19280e71327e1610d3c8b",
-      "bytes": 7160
-    },
-    "scripts/r2/enclosure/generate.py": {
-      "sha256": "896158be12e177537544d5a790623012e7b24cfe2c2c8683d6183486eee8d06b",
-      "bytes": 11915
-    },
-    "scripts/r2/enclosure/inspection.py": {
-      "sha256": "b461c749ffe5946e33d4a5fe8c5dbf0ad6d127d6b0a646530f4089b07f7a5f0e",
-      "bytes": 7469
-    },
-    "scripts/r2/enclosure/present.py": {
-      "sha256": "0279d562380daf750fc0c9abbe2229492094248609f950294e07f9009bf3f900",
-      "bytes": 4458
-    },
-    "scripts/r2/enclosure/seal_delivery.py": {
-      "sha256": "70f457d43f30a7e8661856919fd72407150caf6b4ee439312a60e8adb9ed2abc",
-      "bytes": 6841
-    },
-    "scripts/r2/enclosure/verify.py": {
-      "sha256": "3e930b4ef037c0c940610432882f50f75a2bb2adfd8e51d87df58915815ce162",
-      "bytes": 10788
-    }
+  "report": "docs/revision-r2/button-alignment/README.md",
+  "sources": {
+    "PCB/main/smove-r2-main.kicad_pcb": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
+    "PCB/main/interface.json": "63d5ccd8c224975d5f074c53c3110f7dbb590ddd1c960099dabdb6f181a43c00",
+    "PCB/main/native-layout-contract.json": "6ef53279c8842b1c544d0a6ffe7935625b0c7838552273011032d152adfd5afb",
+    "housing/smove-r2-enclosure.FCStd": "302aaadf7acfdfcd8c2cf219185b87f5733b34f52f5ce84a3185af34cbd45d08",
+    "scripts/r2/enclosure/generate.py": "896158be12e177537544d5a790623012e7b24cfe2c2c8683d6183486eee8d06b",
+    "scripts/r2/enclosure/verify.py": "8780671174378e9c393a5f9f278adef5cb6a4aab6aea2082d96fb0e443d2d897"
+  },
+  "artifacts": {
+    "housing/dist/assembled.png": "62f4c7d9cef7f90e24368aa4c86ed4eee19e4a458638114e1e83926bee7a1cbc",
+    "housing/dist/base.stl": "0781f42d56e6f23d5ebc7f67581167b51e6ae9902d7bba64eaee9c8519486103",
+    "housing/dist/exploded.png": "2aaa0481bbea3a376ccaa4d1e6749ed25a8f3714ac34fbbffe8ca99713c5b0ef",
+    "housing/dist/lid.stl": "1c7934c3770eed56dd8e69f62dff4f4a56d40f7d65f1b8c8378984e075fdf73d",
+    "housing/dist/print-pair.png": "22a945e7c1eb393127629b8cb1bd4a3c63fb68ae6bcba54f13300e597dea0641",
+    "housing/dist/section.png": "272c5af5933f1ff61fc4266f57c48a032b4d2f44462676dc0b9075ef1d16bf02",
+    "housing/dist/smove-r2-assembly.step": "1d32b68874f41515cfc8eb8e8bdbbc5e012fd4b2702ae69205b467f350ea28be",
+    "housing/dist/smove-r2-printable.step": "95c09927dc392d2fa815bcd11ecdc9ef106cd1b023db94542adda737f1df09eb"
   }
 }

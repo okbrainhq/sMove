@@ -1,7 +1,7 @@
 {
   "schema": "smove.imu-support.interface.v5",
   "status": "PCB REVIEW ONLY; HOUSING INCOMPATIBLE / UNVALIDATED; NOT RELEASED",
-  "geometry_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
+  "geometry_sha256": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
   "native_board": "PCB/main/smove-r2-main.kicad_pcb",
   "coordinate_system": {
     "native": "KiCad XY mm; +X east, +Y south; north antenna overhang",
@@ -108,21 +108,21 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        121.5,
-        124.05
+        121.25,
+        124.25
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        119.0,
-        122.55,
-        124.0,
-        125.55
+        118.75,
+        122.75,
+        123.75,
+        125.75
       ],
       "courtyard_native_xy_mm": [
-        118.705,
-        122.255,
-        124.295,
-        125.845
+        118.455,
+        122.455,
+        124.045,
+        126.045
       ],
       "z_mm_from_board_bottom": [
         1,
@@ -974,20 +974,20 @@
       "fitted": true,
       "side": "top",
       "anchor_native_xy_mm": [
-        121.05,
+        121.25,
         128.0
       ],
       "rotation_ccw_deg": 0.0,
       "body_aabb_native_xy_mm": [
-        118.55,
+        118.75,
         126.5,
-        123.55,
+        123.75,
         129.5
       ],
       "courtyard_native_xy_mm": [
-        118.255,
+        118.455,
         126.205,
-        123.845,
+        124.045,
         129.795
       ],
       "z_mm_from_board_bottom": [
@@ -1393,8 +1393,8 @@
   "anchors": {
     "SW2": {
       "center_native_xy_mm": [
-        121.5,
-        124.05
+        121.25,
+        124.25
       ],
       "actuation_or_optical_axis": [
         0,
@@ -1591,7 +1591,7 @@
     },
     "SW3": {
       "center_native_xy_mm": [
-        121.05,
+        121.25,
         128.0
       ],
       "actuation_or_optical_axis": [
