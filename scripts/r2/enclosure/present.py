@@ -1,3 +1,4 @@
+# HISTORICAL TWO-PART TOOL: do not run for current screwless delivery; use housing/entry.py.
 """Explicit real-GUI review export and movable-group smoke test. No PCB writes.
 Run housing/PresentAssembly.FCMacro in the pinned GUI, not the offscreen runner.
 """

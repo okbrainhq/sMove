@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "method": "Pinned FreeCAD GUI activeView BRep raster, authorized X11; not a physical prototype",
+  "images": [
+    "assembled",
+    "exploded",
+    "print-three",
+    "section",
+    "midframe-top",
+    "midframe-bottom"
+  ],
+  "native_sha256": "102461becf4503df09c18adf888cc9d672478b8190b24e64ec43296161749d09"
+}

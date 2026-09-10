@@ -1,46 +1,31 @@
 {
-  "schema": "smove.two-part-case.status.v2",
-  "status": "SIMPLIFIED_CENTRAL_H1_CAD_VERIFIED_PHYSICAL_RELEASE_HELD",
+  "schema": "smove.screwless.status.v1",
+  "status": "CAD_REVIEW_PHYSICAL_RELEASE_HELD",
   "manufacturing_release": false,
   "charging_release": false,
-  "printed_parts": [
-    "Base",
-    "Lid"
-  ],
-  "previous_external_LWH_mm": [
-    42,
-    36.8,
-    16.6
-  ],
-  "external_LWH_mm": [
-    42,
-    28.8,
-    19.6
-  ],
-  "pcb_repair_commit": "e033031",
-  "recovered_as": "0610d60",
-  "superseded_case_commit": "b49ade5",
-  "pcb_sha256": "ca135123d2c280a576f3889c692a59cd93e284f9908948bb5f28d31850a8ed59",
-  "closure": "ONLY central M3x8 through existing unplated H1; insulating lid/nut interfaces; PCB captured in grooves, not clamped",
-  "lead_geometry": "NONE_USER_ROUTED_NOT_VERIFIED",
-  "primary_branch": "main",
+  "physical_fit_proven": false,
   "merge_authorized": false,
-  "cleanup_executed": false,
+  "merge_performed": false,
+  "advisor_used": false,
+  "printed_parts": [
+    "Midframe",
+    "Top cover",
+    "Bottom cover"
+  ],
+  "outer_wall_mm": 0.8,
+  "external_LWH_mm": [
+    44.3,
+    33.3,
+    19.0
+  ],
+  "pcb_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
+  "closure": "Sleeve plus short ramped snap rails; no screws/nuts/inserts or PCB enclosure mounting holes",
+  "wire": "Explicit west passage and conditional two OD1.2/R2 lead envelopes reaching BAT; vendor pack-to-entry connection unqualified",
   "open_gates": [
-    "Smooth physical alignment through NPTH; nominal 0.10mm radial clearance not a guaranteed manufacturing fit",
-    "Printed captive nut roof/beam/lid stiffness, preload and creep",
-    "Seat coplanarity, insulation and FR4 wear",
-    "Actual complete protected pack and charging suitability",
-    "User-routed lead fit and pinch/strain relief/polarity inspection; no modeled route",
-    "Physical USB buttons RGB access",
-    "Existing RF thermal magnetic qualification remains open",
-    "21.8mm battery ceiling and nut-slot bridge/sag test; not guaranteed support-free",
-    "Far lid edge lift/warpage with single central screw; no hooks"
-  ],
-  "prior_central_draft_LWH_mm": [
-    42,
-    28.8,
-    19.6
-  ],
-  "print_simplification": "Four wall-rooted stepped corners, broad lid pads, integrated front nut stop, vertical lid; no hooks/slender fences"
+    "Actual complete pack/lead exit/swelling/protection/charger suitability unknown or unqualified",
+    "Print support removal, snap insertion/extraction force, fit, creep, fatigue, impact and physical USB/button/LED access",
+    "Film/adhesive insulation and chemical compatibility; PCB deflection/IMU stability",
+    "Pack-to-west-entry wiring, wire bend rating, pull/flex restraint and pinch/polarity checks",
+    "On-body RF, magnetometer and thermal qualification; no full 15mm all-direction RF claim"
+  ]
 }

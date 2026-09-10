@@ -1,3 +1,4 @@
+# HISTORICAL TWO-PART TOOL: do not run for current screwless delivery; use housing/entry.py.
 """Read-only CAD fit verification. No PCB or FCStd saves; fail on any failed check.
 Geometric checks are NOT print, strength, insulation, pouch or RF qualification.
 """

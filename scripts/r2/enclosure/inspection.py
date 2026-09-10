@@ -1,3 +1,4 @@
+# HISTORICAL TWO-PART TOOL: do not run for current screwless delivery; use housing/entry.py.
 """Safe FreeCAD GUI inspection controls; only native display groups are moved.
 No file writes, source placement edits, constraints, downloads or automatic macros.
 """

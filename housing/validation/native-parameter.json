@@ -1,0 +1,52 @@
+{
+  "result": "PASS",
+  "checks": {
+    "exactly_three_print_roles": true,
+    "bottom-cover_manifold_oriented_connected": true,
+    "bottom-cover_native_STL_volume": true,
+    "top-cover_manifold_oriented_connected": true,
+    "top-cover_native_STL_volume": true,
+    "midframe_manifold_oriented_connected": true,
+    "midframe_native_STL_volume": true,
+    "BottomGrooved_live_wall_matches_regenerated_1_2": true,
+    "BottomGrooved_wall_actually_changes_solid": true,
+    "TopAccess_live_wall_matches_regenerated_1_2": true,
+    "TopAccess_wall_actually_changes_solid": true,
+    "Midframe_live_wall_matches_regenerated_1_2": true,
+    "Midframe_wall_actually_changes_solid": true,
+    "live_wall_roundtrip": true,
+    "exact_kicad_frame": true,
+    "native_substrate_exact_outline_and_holes": true
+  },
+  "mesh_details": {
+    "bottom-cover": {
+      "nonmanifolds": false,
+      "inconsistent_orientation": false,
+      "components": 1,
+      "volume_error_fraction": 5.6764410228732366e-05
+    },
+    "top-cover": {
+      "nonmanifolds": false,
+      "inconsistent_orientation": false,
+      "components": 1,
+      "volume_error_fraction": 4.512734674774771e-05
+    },
+    "midframe": {
+      "nonmanifolds": false,
+      "inconsistent_orientation": false,
+      "components": 1,
+      "volume_error_fraction": 3.4243546794267786e-05
+    },
+    "board_STEP": {
+      "drill_origin_native_xy_mm": [
+        100.0,
+        135.0
+      ],
+      "export_dielectric_thickness_mm": 0.91,
+      "conservative_total_board_mm": 1,
+      "note": "KiCad STEP dielectric thickness excludes copper; accepted 1mm total envelope retained."
+    }
+  },
+  "native_sha256": "102461becf4503df09c18adf888cc9d672478b8190b24e64ec43296161749d09",
+  "note": "Reopened FCStd Wall B1 changed to 1.2 and compared with independent regeneration, restored without saving."
+}
