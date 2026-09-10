@@ -1,0 +1,22 @@
+{
+  "before_sha256": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
+  "after_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
+  "unchanged_tracks_vias": 1823,
+  "unchanged_pad_records": 233,
+  "unchanged_poses": 47,
+  "protected_hashes": {
+    "PCB/main/usb.kicad_sch": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+    "PCB/main/smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+    "PCB/main/imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+    "PCB/main/power.kicad_sch": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+    "PCB/main/compute.kicad_sch": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+    "PCB/main/smove-r2-main.kicad_dru": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
+    "PCB/main/smove-r2-main.kicad_pro": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0"
+  },
+  "removed": [
+    "H1 footprint including NPTH",
+    "H1_M3_NO_COPPER rule area"
+  ],
+  "routing": "All existing tracks/vias preserved; copper zones refilled into reclaimed area. No routing generator run.",
+  "result": "PASS"
+}

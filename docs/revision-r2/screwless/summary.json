@@ -1,0 +1,21 @@
+{
+  "result": "PASS_CAD_ONLY",
+  "mechanical_checks_per_wall": 536,
+  "native_checks": 16,
+  "pcb_checks": 16,
+  "configured_drc": 0,
+  "configured_erc": 0,
+  "unconnected": 0,
+  "parity": 0,
+  "material_volume_cm3": {
+    ".8": 7.521148154800753,
+    "1.2": 9.71532026027235
+  },
+  "limits": [
+    "Actual complete pack/lead exit/swelling/protection/charger suitability unknown or unqualified",
+    "Print support removal, snap insertion/extraction force, fit, creep, fatigue, impact and physical USB/button/LED access",
+    "Film/adhesive insulation and chemical compatibility; PCB deflection/IMU stability",
+    "Pack-to-west-entry wiring, wire bend rating, pull/flex restraint and pinch/polarity checks",
+    "On-body RF, magnetometer and thermal qualification; no full 15mm all-direction RF claim"
+  ]
+}

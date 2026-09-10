@@ -1,9 +1,10 @@
 Item,Qty,Description,Acceptance
-Base,1,Nonconductive printed base with integral battery ceiling and central nut boss and solid corner seats,Print bridge and nut roof stiffness/gauges required
-Lid,1,Nonconductive printed lid with central bearing and integral entry skirt,Fit and low-preload creep qualification required
-Screw,1,ONLY M3x8 ISO4762 socket cap through H1; max head5.68x3,Length7.71..8.29mm; shank<=3.00mm; no released torque
-Nut,1,M3 hex AF5.5x2.4 envelope in central front-entry pocket,Verify thread/chamfer and pocket fit
-Floor liner,1,Smooth insulating film21.6x31.8x0.2mm,No sharp edges or pouch preload
-Seat liners,4,Smooth insulating film0.95x1.8x0.2mm front and0.95x2x0.2mm rear,Coplanar supports; no PCB preload
-Battery,1,Unqualified candidate body30x20x3mm,Complete pack<=31x21x4.3mm; NOT charging approved
-User-routed leads,not modeled,No wire specification or dedicated space supplied,User chooses and verifies route/strain relief/polarity; avoid RF and pinching
+Midframe,1,White nonconductive print with separator and battery/PCB locators and wire passage,Support removal and fit trial required
+Top cover,1,White nonconductive print with sleeve snap grooves and USB/button/LED access,Retention cycles and creep and access gauges required
+Bottom cover,1,White nonconductive print with sleeve snap grooves,No pouch preload; retention qualification required
+PCB land films,4,0.2mm dielectric film; west0.7x2 and east0.9x2 contact areas,Measure coplanarity and abrasion
+PCB adhesive or shim,4,0.2mm controlled nonconductive adhesive OR dielectric shim,Optional bonding; no glue on solder/pads/vias
+Pack floor liner,1,21x31x0.2mm smooth dielectric film,No burrs or pouch seal pressure
+Battery,1,Unqualified 30x20x3mm candidate; complete allowance31x21x4.3mm,Actual pack exit/swelling/protection/charging qualification required
+Battery leads,2,Conditional OD<=1.2mm and R2 centreline bends; no gauge selected,Actual bend rating and polarity and pull/flex test required
+Wire strain-relief adhesive,as qualified,Nonconductive compatible adhesive on vertical midframe land;0.2mm nominal gap,No adhesive type or bond process approved

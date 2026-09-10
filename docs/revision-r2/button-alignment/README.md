@@ -1,6 +1,8 @@
-# RESET / BOOT physical alignment
+# RESET / BOOT physical alignment — historical predecessor
 
-Current review update; supersedes the previous byte-identical-PCB claim in the two-part-case delivery. Manufacturing and charging remain on hold.
+**Historical snapshot, superseded by [the screwless revision](../screwless/README.md).** Button coordinates remain accepted, but the screw/two-piece artifacts and counts below describe this older snapshot only.
+
+Original review update; supersedes the previous byte-identical-PCB claim in the two-part-case delivery. Manufacturing and charging remain on hold.
 
 | Switch | Previous native XY (mm) | Updated native XY (mm) |
 |---|---|---|

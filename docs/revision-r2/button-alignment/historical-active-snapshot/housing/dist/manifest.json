@@ -1,0 +1,23 @@
+{
+  "schema": "smove.button-alignment.delivery.v1",
+  "manufacturing_release": false,
+  "report": "docs/revision-r2/button-alignment/README.md",
+  "sources": {
+    "PCB/main/smove-r2-main.kicad_pcb": "36117f7cc94ba0fc4e2f9f9da6439e7750437e63ebd843655b7b667ef05057d3",
+    "PCB/main/interface.json": "63d5ccd8c224975d5f074c53c3110f7dbb590ddd1c960099dabdb6f181a43c00",
+    "PCB/main/native-layout-contract.json": "6ef53279c8842b1c544d0a6ffe7935625b0c7838552273011032d152adfd5afb",
+    "housing/smove-r2-enclosure.FCStd": "302aaadf7acfdfcd8c2cf219185b87f5733b34f52f5ce84a3185af34cbd45d08",
+    "scripts/r2/enclosure/generate.py": "896158be12e177537544d5a790623012e7b24cfe2c2c8683d6183486eee8d06b",
+    "scripts/r2/enclosure/verify.py": "8780671174378e9c393a5f9f278adef5cb6a4aab6aea2082d96fb0e443d2d897"
+  },
+  "artifacts": {
+    "housing/dist/assembled.png": "62f4c7d9cef7f90e24368aa4c86ed4eee19e4a458638114e1e83926bee7a1cbc",
+    "housing/dist/base.stl": "0781f42d56e6f23d5ebc7f67581167b51e6ae9902d7bba64eaee9c8519486103",
+    "housing/dist/exploded.png": "2aaa0481bbea3a376ccaa4d1e6749ed25a8f3714ac34fbbffe8ca99713c5b0ef",
+    "housing/dist/lid.stl": "1c7934c3770eed56dd8e69f62dff4f4a56d40f7d65f1b8c8378984e075fdf73d",
+    "housing/dist/print-pair.png": "22a945e7c1eb393127629b8cb1bd4a3c63fb68ae6bcba54f13300e597dea0641",
+    "housing/dist/section.png": "272c5af5933f1ff61fc4266f57c48a032b4d2f44462676dc0b9075ef1d16bf02",
+    "housing/dist/smove-r2-assembly.step": "1d32b68874f41515cfc8eb8e8bdbbc5e012fd4b2702ae69205b467f350ea28be",
+    "housing/dist/smove-r2-printable.step": "95c09927dc392d2fa815bcd11ecdc9ef106cd1b023db94542adda737f1df09eb"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "baseline_commit": "b8f2836ac2fb26fc0bf774b803c6613a79e66f1b",
+  "board_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
+  "checks": {
+    "segment_identical": true,
+    "via_identical": true,
+    "arc_identical": true,
+    "gr_line_identical": true,
+    "gr_arc_identical": true,
+    "setup_identical": true,
+    "layers_identical": true,
+    "net_identical": true,
+    "only_H1_removed": true,
+    "all_remaining_footprints_byte_token_equivalent": true,
+    "only_H1_rule_removed": true,
+    "antenna_rule_retained": true,
+    "only_USB_component_NPTH_remain": true,
+    "protected_sources_identical": true,
+    "drc_clean": true,
+    "erc_clean": true
+  },
+  "track_segments": 1726,
+  "vias": 97,
+  "retained_footprints": 47,
+  "scope": "Complete track/via and remaining footprint token trees; zones refilled; frozen schematic/rules. Configured DRC/ERC is not blanket electrical release."
+}

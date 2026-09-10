@@ -1,15 +1,14 @@
-# sMove — repaired PCB + two simpler case prints
+# sMove — screwless PCB + three-piece enclosure
 
-> **Current alignment revision:** [RESET/BOOT switches and matching lid openings](docs/revision-r2/button-alignment/README.md). Supersedes the historical unchanged-PCB claims below; review only, not released.
+**Current review: white rounded Midframe + Top cover + Bottom cover. No screws, nuts, inserts or PCB enclosure-mounting holes. Default outer wall 0.8 mm; configurable and checked at 1.2 mm. No merge, manufacturing release or charging release.**
 
-**Current review design: 42.0 L × 28.8 W × 19.6 H mm. Print only Base + Lid. ONLY M3×8 through existing PCB H1.**
+- [Current enclosure and regeneration](housing/README.md): opposite-side battery/PCB pockets, insulated support, optional PCB adhesive, screwless sleeve/snap covers and an explicit west battery-wire passage to BAT pads.
+- [PCB](PCB/main/README.md): targeted H1/keepout removal and copper refill; all 1,726 tracks and 97 vias preserved. Circuit, pad geometry, aligned buttons, antenna rules and battery interface unchanged.
+- [Revision evidence](docs/revision-r2/screwless/README.md): fresh configured DRC/ERC, full native comparisons, manifold solids, collision/access checks, actual wall variation, FreeCAD images and hash manifests.
+- [Printing/assembly and physical gates](housing/PRINTING-ASSEMBLY.md): actual pack/lead exit, insulation/adhesive, print supports, snap fit/creep, PCB deflection and charging qualification still required. No proven physical fit.
 
-- [Current two-part case](housing/README.md): solid stepped corner supports, broad lid pads, plain vertical drop-on lid; no hooks, snaps, side screw/ear or tiny separate printed parts. Battery slot and insulated screw socket are integral.
-- [Complete delivery and critical diffs](docs/revision-r2/two-part-case/README.md): full PCB repair e033031 safely recovered as 0610d60; latest simple central case supersedes b49ade5. No PCB rerouting.
-- [Repaired PCB](PCB/main/README.md): unchanged 25×30×1 mm; fresh 0 ERC / DRC / opens / parity issues, BAT pads preserved.
-- [Only-two-prints / actual GUI images](docs/revision-r2/two-part-case/images.md), editable native `housing/smove-r2-enclosure.FCStd`, movable inspection macro, manifold STLs and matching STEPs.
-- [Integration/cleanup review](docs/revision-r2/two-part-case/integration-cleanup.md): main exists, not master. No merge or cleanup yet; preserve history and unrelated files.
+Default envelope including snap reinforcement: **44.3 L × 33.3 W × 19.0 H mm**. Accepted 30×20×3 mm battery candidate / 31×21×4.3 mm complete-pack allowance retained, behind the north antenna exclusion. Main underside faces the body; IMU +Z remains outward. LED, RESET/BOOT and USB-C accesses align to the current native PCB.
 
-Keep the accepted 30×20×3 mm battery candidate / 31×21×4.3 mm full-pack allowance behind the antenna exclusion. PCB underside faces body; IMU +Z outward; RGB/USB/buttons accessible. No modeled wires, channels or reserved lead space; user routes leads and fit is not verified.
+Previous [button alignment](docs/revision-r2/button-alignment/README.md), [PCB repair](docs/revision-r2/pcb-repair/README.md), and [two-part case](docs/revision-r2/two-part-case/README.md) records are historical snapshots, not current assembly instructions. Unrelated electronics and history are preserved.
 
-**Manufacturing/charging release=false.** Simpler does not mean proven support-free: the 21.8 mm battery-ceiling bridge and nut socket still need a print trial/gauges. H1 alignment, preload/creep/lid warpage, insulation, pack/charger and user-routed leads remain physical gates. Review before integrating the complete branch. No firmware work.
+![Current three-piece exploded CAD](housing/dist/exploded.png)
