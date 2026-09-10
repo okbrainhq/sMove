@@ -1,0 +1,604 @@
+{
+  "result": "PASS",
+  "baseline_commit": "5e61806cd42af599b4d791b1d310012a994043a2",
+  "scope": "Every tracked PCB file including schematic, routing, copper exclusions and exports; no PCB regeneration",
+  "file_count": 149,
+  "files": {
+    "PCB/README.md": {
+      "baseline_sha256": "8352f6e4e033f62810aecb7fcf73de19068c5ec049955c638f161b4024fead6b",
+      "after_sha256": "8352f6e4e033f62810aecb7fcf73de19068c5ec049955c638f161b4024fead6b"
+    },
+    "PCB/imu-carrier/Device.kicad_sym": {
+      "baseline_sha256": "76dd998e245970b48ede2ae086edfb0e1b1a88dbc9e08d8e3268bd34f451385b",
+      "after_sha256": "76dd998e245970b48ede2ae086edfb0e1b1a88dbc9e08d8e3268bd34f451385b"
+    },
+    "PCB/imu-carrier/README.md": {
+      "baseline_sha256": "27f601eb129bc93ed5cffe29e23c3b62defa3e50158b852db82fc9a960651b49",
+      "after_sha256": "27f601eb129bc93ed5cffe29e23c3b62defa3e50158b852db82fc9a960651b49"
+    },
+    "PCB/imu-carrier/carrier.kicad_sym": {
+      "baseline_sha256": "594f6b323e68430c820e0ead317a6f9a480357c2d00a63f4d76a8ce329a64d99",
+      "after_sha256": "594f6b323e68430c820e0ead317a6f9a480357c2d00a63f4d76a8ce329a64d99"
+    },
+    "PCB/imu-carrier/carrier.pretty/C_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7",
+      "after_sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7"
+    },
+    "PCB/imu-carrier/carrier.pretty/C_0603_1608Metric.kicad_mod": {
+      "baseline_sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee",
+      "after_sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee"
+    },
+    "PCB/imu-carrier/carrier.pretty/H1_Locator.kicad_mod": {
+      "baseline_sha256": "323071d3fb5e87562fc254ee86b6cd179d029dd3b6d6dd38f261113291992702",
+      "after_sha256": "323071d3fb5e87562fc254ee86b6cd179d029dd3b6d6dd38f261113291992702"
+    },
+    "PCB/imu-carrier/carrier.pretty/H2_Locator.kicad_mod": {
+      "baseline_sha256": "02aee33964c171b3302a5053bd76749240b2a51b1d06e804adc6843a12783cdc",
+      "after_sha256": "02aee33964c171b3302a5053bd76749240b2a51b1d06e804adc6843a12783cdc"
+    },
+    "PCB/imu-carrier/carrier.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod": {
+      "baseline_sha256": "c6b70ca9b53699f4f166e443198a7592d45b69489cf4a4725cb7f733b51cb330",
+      "after_sha256": "c6b70ca9b53699f4f166e443198a7592d45b69489cf4a4725cb7f733b51cb330"
+    },
+    "PCB/imu-carrier/carrier.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod": {
+      "baseline_sha256": "f9e45dcf004b53f4ab981101854a02b9838eac0b62d317cd5389b5f7d6c4ba10",
+      "after_sha256": "f9e45dcf004b53f4ab981101854a02b9838eac0b62d317cd5389b5f7d6c4ba10"
+    },
+    "PCB/imu-carrier/carrier.pretty/PCA9306_DCU0008A.kicad_mod": {
+      "baseline_sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52",
+      "after_sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52"
+    },
+    "PCB/imu-carrier/carrier.pretty/R_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d",
+      "after_sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d"
+    },
+    "PCB/imu-carrier/carrier.pretty/SOT-23-5.kicad_mod": {
+      "baseline_sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0",
+      "after_sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0"
+    },
+    "PCB/imu-carrier/dist/ASSEMBLY.md": {
+      "baseline_sha256": "fc57642cfb934d566c63298265da97f0242874f32e2cecb878457d61b001f685",
+      "after_sha256": "fc57642cfb934d566c63298265da97f0242874f32e2cecb878457d61b001f685"
+    },
+    "PCB/imu-carrier/dist/BOM.csv": {
+      "baseline_sha256": "deb6f633e8148842fbf713828b081dd4a589149c61f24c1c53e4ed7d274f7fd5",
+      "after_sha256": "deb6f633e8148842fbf713828b081dd4a589149c61f24c1c53e4ed7d274f7fd5"
+    },
+    "PCB/imu-carrier/dist/assembly-placements.json": {
+      "baseline_sha256": "b037eceeb8d6409dbde19260dd0d4d0bb561f0f47837eb797c200695eb533761",
+      "after_sha256": "b037eceeb8d6409dbde19260dd0d4d0bb561f0f47837eb797c200695eb533761"
+    },
+    "PCB/imu-carrier/dist/assembly-top.pdf": {
+      "baseline_sha256": "593b5ab4e0c0edf99471de218e499f529d960024fa19ef85ada8831aa700d32f",
+      "after_sha256": "593b5ab4e0c0edf99471de218e499f529d960024fa19ef85ada8831aa700d32f"
+    },
+    "PCB/imu-carrier/dist/bottom-3d.png": {
+      "baseline_sha256": "9d492d5092eef1396ca8e6c31393e5c8dbcf4b230835b820f21d9db6f18637e2",
+      "after_sha256": "9d492d5092eef1396ca8e6c31393e5c8dbcf4b230835b820f21d9db6f18637e2"
+    },
+    "PCB/imu-carrier/dist/bottom.svg": {
+      "baseline_sha256": "8048236ffc3ce59bcfb192a54742cd8d27ea9ac6027e59811fc3fd1c0706a089",
+      "after_sha256": "8048236ffc3ce59bcfb192a54742cd8d27ea9ac6027e59811fc3fd1c0706a089"
+    },
+    "PCB/imu-carrier/dist/carrier-assembly.step": {
+      "baseline_sha256": "e2aa41c39bafd56c41e889067aff3b8405f9b4fc1a3a61a15c685de81c2ed871",
+      "after_sha256": "e2aa41c39bafd56c41e889067aff3b8405f9b4fc1a3a61a15c685de81c2ed871"
+    },
+    "PCB/imu-carrier/dist/carrier-board-only.step": {
+      "baseline_sha256": "b10ad64f04dfdcd265ca4773111d6e3184b059a04b0c78198c15e5d3dd430a76",
+      "after_sha256": "b10ad64f04dfdcd265ca4773111d6e3184b059a04b0c78198c15e5d3dd430a76"
+    },
+    "PCB/imu-carrier/dist/gerbers.zip": {
+      "baseline_sha256": "e60bc7770e2c88654b3033f09dbb2abc7dfb291916ad1105dd1e767a0d2ab7ac",
+      "after_sha256": "e60bc7770e2c88654b3033f09dbb2abc7dfb291916ad1105dd1e767a0d2ab7ac"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Cu.gbl": {
+      "baseline_sha256": "65614389d57d07da9b9e1a7e8056e724a96af7800008d5074d3eb6e61e77329d",
+      "after_sha256": "65614389d57d07da9b9e1a7e8056e724a96af7800008d5074d3eb6e61e77329d"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Mask.gbs": {
+      "baseline_sha256": "7cbbacf09e357bd792b2641c3eac9621ba5bbc56e57f8321da4c3cc81cee74ab",
+      "after_sha256": "7cbbacf09e357bd792b2641c3eac9621ba5bbc56e57f8321da4c3cc81cee74ab"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-B_Silkscreen.gbo": {
+      "baseline_sha256": "5aad98d9b42ce12c25a61a4c373477959e4e1126b792bbdaca59746a9a1a4d5b",
+      "after_sha256": "5aad98d9b42ce12c25a61a4c373477959e4e1126b792bbdaca59746a9a1a4d5b"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-Edge_Cuts.gm1": {
+      "baseline_sha256": "e6de8193d1a56800c623274feb8e315359c0cd58e340a81458bc6aa8f4f9b13e",
+      "after_sha256": "e6de8193d1a56800c623274feb8e315359c0cd58e340a81458bc6aa8f4f9b13e"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Cu.gtl": {
+      "baseline_sha256": "e904d2dad3688c676c9c065b3de411ae4389e5b75d6fdb175be499bdc7913a42",
+      "after_sha256": "e904d2dad3688c676c9c065b3de411ae4389e5b75d6fdb175be499bdc7913a42"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Mask.gts": {
+      "baseline_sha256": "599184a5e60330f4b1fa40097bebdc413c6aa935d9730bc3bf409a91806a5848",
+      "after_sha256": "599184a5e60330f4b1fa40097bebdc413c6aa935d9730bc3bf409a91806a5848"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Paste.gtp": {
+      "baseline_sha256": "acf5a4a69a6ff5b5cc847381aa87d23bdd65283298aec20b7751d99b90d7aa8a",
+      "after_sha256": "acf5a4a69a6ff5b5cc847381aa87d23bdd65283298aec20b7751d99b90d7aa8a"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-F_Silkscreen.gto": {
+      "baseline_sha256": "01f3e819c7b686d4a155d3252daddf7c997e654b9a028b7878d02d814a7ee528",
+      "after_sha256": "01f3e819c7b686d4a155d3252daddf7c997e654b9a028b7878d02d814a7ee528"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In1_Cu.g1": {
+      "baseline_sha256": "4e8404f4765f8517669c506eacb144af48fe74ad0b4a2a768cf9ef85b141272a",
+      "after_sha256": "4e8404f4765f8517669c506eacb144af48fe74ad0b4a2a768cf9ef85b141272a"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-In2_Cu.g2": {
+      "baseline_sha256": "10a14dd8856333940bcebfaa15b8bbb37857d5158b0821c93efeb4a1c7bca4c0",
+      "after_sha256": "10a14dd8856333940bcebfaa15b8bbb37857d5158b0821c93efeb4a1c7bca4c0"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-NPTH.drl": {
+      "baseline_sha256": "58f0174ca309c9bad974a529f754ddf808be6b33f2426e68d87789d53c5cd7ce",
+      "after_sha256": "58f0174ca309c9bad974a529f754ddf808be6b33f2426e68d87789d53c5cd7ce"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-PTH.drl": {
+      "baseline_sha256": "b0f241a97ac2b57cbf5b8ee1777d53a7c7fc4734af71c90177ba3ab5e6950a38",
+      "after_sha256": "b0f241a97ac2b57cbf5b8ee1777d53a7c7fc4734af71c90177ba3ab5e6950a38"
+    },
+    "PCB/imu-carrier/dist/gerbers/smove-imu-carrier-job.gbrjob": {
+      "baseline_sha256": "9b76f9ad5ba06afed25bdba57a42fc632a045cbc4e4ae3e0473534b6f7211af5",
+      "after_sha256": "9b76f9ad5ba06afed25bdba57a42fc632a045cbc4e4ae3e0473534b6f7211af5"
+    },
+    "PCB/imu-carrier/dist/manifest.json": {
+      "baseline_sha256": "083089613ffe21ff30ea471980d089363c8dc10b16583423fa59498c2f20e567",
+      "after_sha256": "083089613ffe21ff30ea471980d089363c8dc10b16583423fa59498c2f20e567"
+    },
+    "PCB/imu-carrier/dist/pick-and-place.csv": {
+      "baseline_sha256": "554b2593a1417573d4455b37aeb66a11bd2b668e1b81d09729025b9eb1321390",
+      "after_sha256": "554b2593a1417573d4455b37aeb66a11bd2b668e1b81d09729025b9eb1321390"
+    },
+    "PCB/imu-carrier/dist/schematic-svg/smove-imu-carrier.svg": {
+      "baseline_sha256": "36b524d3b3515f4d4c143688c4d7f20f0aa20468da3f273644a58e679430dc97",
+      "after_sha256": "36b524d3b3515f4d4c143688c4d7f20f0aa20468da3f273644a58e679430dc97"
+    },
+    "PCB/imu-carrier/dist/schematic.pdf": {
+      "baseline_sha256": "de52928cebdddd3ae7005b02628ee461b64bc28d3a613365b8b9179b12afb9af",
+      "after_sha256": "de52928cebdddd3ae7005b02628ee461b64bc28d3a613365b8b9179b12afb9af"
+    },
+    "PCB/imu-carrier/dist/schematic.png": {
+      "baseline_sha256": "78381f4d8daa25396301b08e17d60ea7772645d3e25104664b7ddcf8ca9f15ac",
+      "after_sha256": "78381f4d8daa25396301b08e17d60ea7772645d3e25104664b7ddcf8ca9f15ac"
+    },
+    "PCB/imu-carrier/dist/top-3d.png": {
+      "baseline_sha256": "b10bae6fc1133f15aac1623a453c714ccf6dcb5409631e1414f70d946bfd8184",
+      "after_sha256": "b10bae6fc1133f15aac1623a453c714ccf6dcb5409631e1414f70d946bfd8184"
+    },
+    "PCB/imu-carrier/dist/top.svg": {
+      "baseline_sha256": "b839aa8c17c21ae3e41c33616a7e00896f8edb64f8287879b044bc1f598fd044",
+      "after_sha256": "b839aa8c17c21ae3e41c33616a7e00896f8edb64f8287879b044bc1f598fd044"
+    },
+    "PCB/imu-carrier/electrical-contract.json": {
+      "baseline_sha256": "54de4bc55ef9b3f5050df79568e7c66b832a6d9479468d9db40ddd8ee1f894e7",
+      "after_sha256": "54de4bc55ef9b3f5050df79568e7c66b832a6d9479468d9db40ddd8ee1f894e7"
+    },
+    "PCB/imu-carrier/fp-lib-table": {
+      "baseline_sha256": "a2b3011d152e9481a1ec1f37d1f2fb6fb1ed56d6769d037d529ed2428552efe6",
+      "after_sha256": "a2b3011d152e9481a1ec1f37d1f2fb6fb1ed56d6769d037d529ed2428552efe6"
+    },
+    "PCB/imu-carrier/interface.json": {
+      "baseline_sha256": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872",
+      "after_sha256": "8f7dfeb40c027448a9655cd69fe066390b340119e5d59ec9bd267e309ab90872"
+    },
+    "PCB/imu-carrier/models/C_0402_1005Metric.step": {
+      "baseline_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "after_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2"
+    },
+    "PCB/imu-carrier/models/C_0603_1608Metric.step": {
+      "baseline_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "after_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    "PCB/imu-carrier/models/J5_MAX_HEADER_ENVELOPE.step": {
+      "baseline_sha256": "c3fb020b1b768f0b3a65932ae6b74a157c599a004d42f7d865038be2fb0da599",
+      "after_sha256": "c3fb020b1b768f0b3a65932ae6b74a157c599a004d42f7d865038be2fb0da599"
+    },
+    "PCB/imu-carrier/models/R_0402_1005Metric.step": {
+      "baseline_sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "after_sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+    },
+    "PCB/imu-carrier/models/SOT-23-5.step": {
+      "baseline_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "after_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    "PCB/imu-carrier/models/U2_MAX_PACKAGE_ENVELOPE.step": {
+      "baseline_sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4",
+      "after_sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4"
+    },
+    "PCB/imu-carrier/models/VSSOP-8_2.3x2mm_P0.5mm.step": {
+      "baseline_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "after_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    "PCB/imu-carrier/models/model-status.json": {
+      "baseline_sha256": "cca1877ae9db64df231578e071847a8a45af485c5e0fdfec0797433607357555",
+      "after_sha256": "cca1877ae9db64df231578e071847a8a45af485c5e0fdfec0797433607357555"
+    },
+    "PCB/imu-carrier/parts.json": {
+      "baseline_sha256": "863fb30ef48c908f492008078e45711ae1079e6a1dac827d60793e3d326166fa",
+      "after_sha256": "863fb30ef48c908f492008078e45711ae1079e6a1dac827d60793e3d326166fa"
+    },
+    "PCB/imu-carrier/power.kicad_sym": {
+      "baseline_sha256": "348559c3c251be2ac0ced4092f7d5d5a98d45bbc1bb826c70dff7f9b886b846a",
+      "after_sha256": "348559c3c251be2ac0ced4092f7d5d5a98d45bbc1bb826c70dff7f9b886b846a"
+    },
+    "PCB/imu-carrier/smove-imu-carrier.kicad_dru": {
+      "baseline_sha256": "e8c23dc0a34e75dc027305fc64fa6bf2786674137e4069e5b8e1b03b3f6490be",
+      "after_sha256": "e8c23dc0a34e75dc027305fc64fa6bf2786674137e4069e5b8e1b03b3f6490be"
+    },
+    "PCB/imu-carrier/smove-imu-carrier.kicad_pcb": {
+      "baseline_sha256": "c9848c265e3002c91836c12b921f81c09929de486f18651b46f4fe70ff783fb8",
+      "after_sha256": "c9848c265e3002c91836c12b921f81c09929de486f18651b46f4fe70ff783fb8"
+    },
+    "PCB/imu-carrier/smove-imu-carrier.kicad_pro": {
+      "baseline_sha256": "aab7f217cc0d1d3e158895d5d65f8de0350efb80b4dd5b1c874c8955c0e74d1d",
+      "after_sha256": "aab7f217cc0d1d3e158895d5d65f8de0350efb80b4dd5b1c874c8955c0e74d1d"
+    },
+    "PCB/imu-carrier/smove-imu-carrier.kicad_sch": {
+      "baseline_sha256": "9b41ec3a0799c6f7dc1e2ef1ec23598b86c95d5b8e67702766b995f6eb12ff6c",
+      "after_sha256": "9b41ec3a0799c6f7dc1e2ef1ec23598b86c95d5b8e67702766b995f6eb12ff6c"
+    },
+    "PCB/imu-carrier/sym-lib-table": {
+      "baseline_sha256": "ec00a7766215cd965c5df32ae02fbed4b7361e4b670879c1f67b49c2af164a69",
+      "after_sha256": "ec00a7766215cd965c5df32ae02fbed4b7361e4b670879c1f67b49c2af164a69"
+    },
+    "PCB/main/Device.kicad_sym": {
+      "baseline_sha256": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee",
+      "after_sha256": "8a3bb20b355a4343faafe14a0ea01ce9e09b3b4b8f4769e283ecdc8add7c5aee"
+    },
+    "PCB/main/README.md": {
+      "baseline_sha256": "14c419ad05a0fd668030201d79904c115a3ee7c5f5262c04c4e96e6ced2d3b6d",
+      "after_sha256": "14c419ad05a0fd668030201d79904c115a3ee7c5f5262c04c4e96e6ced2d3b6d"
+    },
+    "PCB/main/compute.kicad_sch": {
+      "baseline_sha256": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306",
+      "after_sha256": "5ce76afd2e43f93e02ec408ae71db28f93803b226a4e16c30e7017d3b8990306"
+    },
+    "PCB/main/dist/ASSEMBLY.md": {
+      "baseline_sha256": "972e6fb5c50fb08c188a6793412281eff133bc30427482f8d04717353cadf8a1",
+      "after_sha256": "972e6fb5c50fb08c188a6793412281eff133bc30427482f8d04717353cadf8a1"
+    },
+    "PCB/main/dist/BOM.csv": {
+      "baseline_sha256": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e",
+      "after_sha256": "5c99796f8d541e39b2d1f1bf9fa5f595e1ba3ca2006621357b550efd8c09300e"
+    },
+    "PCB/main/dist/assembly-placements.json": {
+      "baseline_sha256": "a92287cd03114637f140c8e48b919916be4a3a7dacc3d176ced85add80388cdb",
+      "after_sha256": "a92287cd03114637f140c8e48b919916be4a3a7dacc3d176ced85add80388cdb"
+    },
+    "PCB/main/dist/assembly-top.pdf": {
+      "baseline_sha256": "eb512f1a9da4dfc7bfd34afda46238bda46b8d87b972043a029c1b44703ccc91",
+      "after_sha256": "eb512f1a9da4dfc7bfd34afda46238bda46b8d87b972043a029c1b44703ccc91"
+    },
+    "PCB/main/dist/bottom-3d.png": {
+      "baseline_sha256": "6ec55d5034be4db167fdd4c1866c8bb33bafb448cb3906fe14863f834e2fc5c4",
+      "after_sha256": "6ec55d5034be4db167fdd4c1866c8bb33bafb448cb3906fe14863f834e2fc5c4"
+    },
+    "PCB/main/dist/bottom.svg": {
+      "baseline_sha256": "89ccfed703cf658a3785ed758593ef8bd203ade26986b9621c6bfc31810eaaf1",
+      "after_sha256": "89ccfed703cf658a3785ed758593ef8bd203ade26986b9621c6bfc31810eaaf1"
+    },
+    "PCB/main/dist/conservative-step-frame.json": {
+      "baseline_sha256": "96f996cd7b4cf1ea07857ad303a53b7cfcfcfbac9c4d5e068761d50fbb31e02f",
+      "after_sha256": "96f996cd7b4cf1ea07857ad303a53b7cfcfcfbac9c4d5e068761d50fbb31e02f"
+    },
+    "PCB/main/dist/gerbers.zip": {
+      "baseline_sha256": "b4d2aa2bd63dc254a08f611378d9ec0002a8d07872435e18179e3c0ceba514ff",
+      "after_sha256": "b4d2aa2bd63dc254a08f611378d9ec0002a8d07872435e18179e3c0ceba514ff"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-B_Cu.gbl": {
+      "baseline_sha256": "f195827e6ce0b4390686ce522cb8319c5cfc4ad5580277a12ac6a4048d8ccc5a",
+      "after_sha256": "f195827e6ce0b4390686ce522cb8319c5cfc4ad5580277a12ac6a4048d8ccc5a"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-B_Mask.gbs": {
+      "baseline_sha256": "b3cac4e5dfb56e976f01c963a9429404be289ce7bc6103144f8803e1cc895c75",
+      "after_sha256": "b3cac4e5dfb56e976f01c963a9429404be289ce7bc6103144f8803e1cc895c75"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-B_Silkscreen.gbo": {
+      "baseline_sha256": "727105cbd34550e1252db299684566844f53e4057d94418640511a26fe5d00e9",
+      "after_sha256": "727105cbd34550e1252db299684566844f53e4057d94418640511a26fe5d00e9"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-Edge_Cuts.gm1": {
+      "baseline_sha256": "2e9ccb29922da2c8af3825b9831c62c1c6121a443c055586f365ad76262ab813",
+      "after_sha256": "2e9ccb29922da2c8af3825b9831c62c1c6121a443c055586f365ad76262ab813"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-F_Cu.gtl": {
+      "baseline_sha256": "f204d80318f2c1e766d091e2327b25d6b5532f6bcd668be53c593c1036be3800",
+      "after_sha256": "f204d80318f2c1e766d091e2327b25d6b5532f6bcd668be53c593c1036be3800"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-F_Mask.gts": {
+      "baseline_sha256": "c3cc8bced88462dfdb36ef10405ffeac8548f7a9712a881327d8b2f3e0e666b5",
+      "after_sha256": "c3cc8bced88462dfdb36ef10405ffeac8548f7a9712a881327d8b2f3e0e666b5"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-F_Paste.gtp": {
+      "baseline_sha256": "121ab7e2353d907b690d8a12aad3c7197b6c27c09b0157e6060ee7309301ae2f",
+      "after_sha256": "121ab7e2353d907b690d8a12aad3c7197b6c27c09b0157e6060ee7309301ae2f"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-F_Silkscreen.gto": {
+      "baseline_sha256": "666db75f543b27b1f8af0ac6d11fd420dd09305eacdbf826f31825c30320037b",
+      "after_sha256": "666db75f543b27b1f8af0ac6d11fd420dd09305eacdbf826f31825c30320037b"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-In1_Cu.g1": {
+      "baseline_sha256": "29d0a5a73d8ab7adf1659f845b5dbe4c57a69375d9cd1cfef9330bdcad6cb68b",
+      "after_sha256": "29d0a5a73d8ab7adf1659f845b5dbe4c57a69375d9cd1cfef9330bdcad6cb68b"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-In2_Cu.g2": {
+      "baseline_sha256": "ade81586dce863623935529b52a76600d7484c2ad613d34146ab34659e578804",
+      "after_sha256": "ade81586dce863623935529b52a76600d7484c2ad613d34146ab34659e578804"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-NPTH.drl": {
+      "baseline_sha256": "59d4d3782ccee446870570ad16003ad0951253508eb1e843b4a7c51475ebc3ea",
+      "after_sha256": "59d4d3782ccee446870570ad16003ad0951253508eb1e843b4a7c51475ebc3ea"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-PTH.drl": {
+      "baseline_sha256": "1845e3d879b8cf3373157dcf445bd0c5cc9cb9f0516b05d306f958ee96655bba",
+      "after_sha256": "1845e3d879b8cf3373157dcf445bd0c5cc9cb9f0516b05d306f958ee96655bba"
+    },
+    "PCB/main/dist/gerbers/smove-r2-main-job.gbrjob": {
+      "baseline_sha256": "468a5ef4fc6ee58936b1473020c8ea545fbc0dc09fbbe3e18b8ba9ab7fd754b4",
+      "after_sha256": "468a5ef4fc6ee58936b1473020c8ea545fbc0dc09fbbe3e18b8ba9ab7fd754b4"
+    },
+    "PCB/main/dist/main-board-only.step": {
+      "baseline_sha256": "31d5e79dc9f12a8c03fd8d2754d6a0eead0fcefd482df123f1a826e15849b5a3",
+      "after_sha256": "31d5e79dc9f12a8c03fd8d2754d6a0eead0fcefd482df123f1a826e15849b5a3"
+    },
+    "PCB/main/dist/main-installed-models.step": {
+      "baseline_sha256": "2a446509113fee03e0638cbbd64e402140ad28c9043ceecd0bf2388d9dd81107",
+      "after_sha256": "2a446509113fee03e0638cbbd64e402140ad28c9043ceecd0bf2388d9dd81107"
+    },
+    "PCB/main/dist/main-populated-with-conservative-envelopes.step": {
+      "baseline_sha256": "4b5adbdf0c9c1820f3cf870c43ee93a499e24f8e602a81ca0ffa532735093ba9",
+      "after_sha256": "4b5adbdf0c9c1820f3cf870c43ee93a499e24f8e602a81ca0ffa532735093ba9"
+    },
+    "PCB/main/dist/manifest.json": {
+      "baseline_sha256": "938567e1a04b853406094f77bbb52a81ecb11abdd2747d6c7c556a7d48c32cc0",
+      "after_sha256": "938567e1a04b853406094f77bbb52a81ecb11abdd2747d6c7c556a7d48c32cc0"
+    },
+    "PCB/main/dist/pick-and-place.csv": {
+      "baseline_sha256": "49ce144aa36f4693f6b4be554b81aac36bf2563e01cb14057b0f0b14d5790007",
+      "after_sha256": "49ce144aa36f4693f6b4be554b81aac36bf2563e01cb14057b0f0b14d5790007"
+    },
+    "PCB/main/dist/schematic-compute.png": {
+      "baseline_sha256": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80",
+      "after_sha256": "43ed5159c254014a9c4f9134c7746ee89426782a311742f9e167f0650ea50f80"
+    },
+    "PCB/main/dist/schematic-imu.png": {
+      "baseline_sha256": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec",
+      "after_sha256": "778a9577c87b7da4eb23ac8e46fce078fd6ec33a5a1e976394696b5c6628eaec"
+    },
+    "PCB/main/dist/schematic-power.png": {
+      "baseline_sha256": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee",
+      "after_sha256": "3745551e49c4050308a8fe11a2c2eaa360c1416a885029df46e7d1cf1a97d5ee"
+    },
+    "PCB/main/dist/schematic-svg/smove-r2-main-Compute.svg": {
+      "baseline_sha256": "71c2c8f9fe269695fd33dc85f52d3fc21b3c83b261c6233d88c0379467098a87",
+      "after_sha256": "71c2c8f9fe269695fd33dc85f52d3fc21b3c83b261c6233d88c0379467098a87"
+    },
+    "PCB/main/dist/schematic-svg/smove-r2-main-IMU.svg": {
+      "baseline_sha256": "460edafbc3b6c31986b8c5e680bd28be602558540307d3f2f8a403a9391de753",
+      "after_sha256": "460edafbc3b6c31986b8c5e680bd28be602558540307d3f2f8a403a9391de753"
+    },
+    "PCB/main/dist/schematic-svg/smove-r2-main-Power.svg": {
+      "baseline_sha256": "41ff4515faf04f4140cb9d483563ea94444d1aac9eb038b6469b6a413b40eace",
+      "after_sha256": "41ff4515faf04f4140cb9d483563ea94444d1aac9eb038b6469b6a413b40eace"
+    },
+    "PCB/main/dist/schematic-svg/smove-r2-main-USB.svg": {
+      "baseline_sha256": "b0e0eade3570f1b1f5e2940e18ef31a635697a5c24a7056f208a2891dcc24383",
+      "after_sha256": "b0e0eade3570f1b1f5e2940e18ef31a635697a5c24a7056f208a2891dcc24383"
+    },
+    "PCB/main/dist/schematic-svg/smove-r2-main.svg": {
+      "baseline_sha256": "40ee6a3c31bcedc1ddc1b180157a3b5ef135b0b3f00d70b8c3cb4f768e5d997b",
+      "after_sha256": "40ee6a3c31bcedc1ddc1b180157a3b5ef135b0b3f00d70b8c3cb4f768e5d997b"
+    },
+    "PCB/main/dist/schematic-usb.png": {
+      "baseline_sha256": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee",
+      "after_sha256": "b072936ed442be93fccb2db1591e701b1ada1e1e2c05a5f793e3520510a2feee"
+    },
+    "PCB/main/dist/schematic.pdf": {
+      "baseline_sha256": "e2980446786a38d4774bb318f03427b2943f564ba58df087c47bd1b137d7111f",
+      "after_sha256": "e2980446786a38d4774bb318f03427b2943f564ba58df087c47bd1b137d7111f"
+    },
+    "PCB/main/dist/schematic.png": {
+      "baseline_sha256": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25",
+      "after_sha256": "680b0be3311d2cfd7fccc09810333d2be9796a68f49d1dc125b5f7fdfeb88d25"
+    },
+    "PCB/main/dist/top-3d.png": {
+      "baseline_sha256": "dc1bd81aec9cd6225a4cd2e04870ae334383f59969bfbeabfb278edcd172faa1",
+      "after_sha256": "dc1bd81aec9cd6225a4cd2e04870ae334383f59969bfbeabfb278edcd172faa1"
+    },
+    "PCB/main/dist/top.svg": {
+      "baseline_sha256": "4fbd48c9d2f783914c3c66c7be22c0971aff37291437330cb6d5decf7ec91429",
+      "after_sha256": "4fbd48c9d2f783914c3c66c7be22c0971aff37291437330cb6d5decf7ec91429"
+    },
+    "PCB/main/fp-info-cache": {
+      "baseline_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "after_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "PCB/main/fp-lib-table": {
+      "baseline_sha256": "1de77361e02f417874116f76edbf1160de7945f89e532ee120525097762585ad",
+      "after_sha256": "1de77361e02f417874116f76edbf1160de7945f89e532ee120525097762585ad"
+    },
+    "PCB/main/imu-models/C_0402_1005Metric.step": {
+      "baseline_sha256": "a9d86e843af4234cc114a3c20794dd58f3f317ff3aaad7de03726b122d6da4b2",
+      "after_sha256": "a9d86e843af4234cc114a3c20794dd58f3f317ff3aaad7de03726b122d6da4b2"
+    },
+    "PCB/main/imu-models/C_0603_1608Metric.step": {
+      "baseline_sha256": "e202db88bfc46496686a9b65ac164c084e6ef5e78c91250947c09515db5f9695",
+      "after_sha256": "e202db88bfc46496686a9b65ac164c084e6ef5e78c91250947c09515db5f9695"
+    },
+    "PCB/main/imu-models/R_0402_1005Metric.step": {
+      "baseline_sha256": "728345c7f5ce90e9898faebf4958367db2c137b78ee9b9d6644d02dcdf7349a1",
+      "after_sha256": "728345c7f5ce90e9898faebf4958367db2c137b78ee9b9d6644d02dcdf7349a1"
+    },
+    "PCB/main/imu-models/SOT-23-5.step": {
+      "baseline_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "after_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    "PCB/main/imu-models/U2_MAX_PACKAGE_ENVELOPE.step": {
+      "baseline_sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4",
+      "after_sha256": "5cd1d3f5bb0ed268e95f09745a10b064fa4f705289b3aa1e3c09433789805ba4"
+    },
+    "PCB/main/imu-models/VSSOP-8_2.3x2mm_P0.5mm.step": {
+      "baseline_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "after_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    "PCB/main/imu-models/model-status.json": {
+      "baseline_sha256": "df74da29c71228b2f1ad6d4667f2a46f72bb38fd320d7cd3b6104d78328fabca",
+      "after_sha256": "df74da29c71228b2f1ad6d4667f2a46f72bb38fd320d7cd3b6104d78328fabca"
+    },
+    "PCB/main/imu.kicad_sch": {
+      "baseline_sha256": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+      "after_sha256": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025"
+    },
+    "PCB/main/imu.kicad_sym": {
+      "baseline_sha256": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd",
+      "after_sha256": "92c104488cf783adee05afc5aaa67138740b5039f275c42178a02ba031dd33fd"
+    },
+    "PCB/main/imu.pretty/C_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7",
+      "after_sha256": "77cc4af89e8e58ca485cad53bcf1782f4467ae9285211b073759869751d6d8b7"
+    },
+    "PCB/main/imu.pretty/C_0603_1608Metric.kicad_mod": {
+      "baseline_sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee",
+      "after_sha256": "c80b83e127c1fe69ced6361becf02e24c62ff79ded86789be0772241f2c998ee"
+    },
+    "PCB/main/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod": {
+      "baseline_sha256": "61406e22b771708126107b1cd36150b2ac4c04d37e0906ddbfffb46058589c04",
+      "after_sha256": "61406e22b771708126107b1cd36150b2ac4c04d37e0906ddbfffb46058589c04"
+    },
+    "PCB/main/imu.pretty/PCA9306_DCU0008A.kicad_mod": {
+      "baseline_sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52",
+      "after_sha256": "d6ba21a768842b20ad5c879ea719178e760e9ad425a6a5d9622df0b621305b52"
+    },
+    "PCB/main/imu.pretty/R_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d",
+      "after_sha256": "de667922c741188b02a69793feb8ef2bb86ea4d87a4288159db4453d6835b89d"
+    },
+    "PCB/main/imu.pretty/SOT-23-5.kicad_mod": {
+      "baseline_sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0",
+      "after_sha256": "009a8cb91b0d356582aefe21465b717a26b730d9207fa0cc2bde472183a87ef0"
+    },
+    "PCB/main/interface.json": {
+      "baseline_sha256": "775475da648e31dbe8d6ccc48bdc56fce697edfaa2eaf2cce87f407ff5d921eb",
+      "after_sha256": "775475da648e31dbe8d6ccc48bdc56fce697edfaa2eaf2cce87f407ff5d921eb"
+    },
+    "PCB/main/mechanical-envelope-source.json": {
+      "baseline_sha256": "1dcf031308d4b96287ea089e88d0042d8f5591353dbded513e64ef21053e54c6",
+      "after_sha256": "1dcf031308d4b96287ea089e88d0042d8f5591353dbded513e64ef21053e54c6"
+    },
+    "PCB/main/mechanical-pose-source.json": {
+      "baseline_sha256": "2e5b747e43a540fc871173e850f220969498d6306490d32cc70608fb2450aaf3",
+      "after_sha256": "2e5b747e43a540fc871173e850f220969498d6306490d32cc70608fb2450aaf3"
+    },
+    "PCB/main/native-layout-contract.json": {
+      "baseline_sha256": "7a59cba5c5da3291e7fe43ab68d99805b0ee4304a34783c2f0b8d31c0b271e59",
+      "after_sha256": "7a59cba5c5da3291e7fe43ab68d99805b0ee4304a34783c2f0b8d31c0b271e59"
+    },
+    "PCB/main/parts-main.json": {
+      "baseline_sha256": "68b9b79beeeff6f75c3b51332219b5cc3734751d18ea29101da5a306dee7f8cf",
+      "after_sha256": "68b9b79beeeff6f75c3b51332219b5cc3734751d18ea29101da5a306dee7f8cf"
+    },
+    "PCB/main/power.kicad_sch": {
+      "baseline_sha256": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+      "after_sha256": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb"
+    },
+    "PCB/main/power.kicad_sym": {
+      "baseline_sha256": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b",
+      "after_sha256": "12f99f02e539ce959ce95bfe9837e26799499a7e5f728f1b3cbda009524f9b2b"
+    },
+    "PCB/main/smove-r2-main-backups/smove-r2-main-2026-09-08_221244.zip": {
+      "baseline_sha256": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021",
+      "after_sha256": "7bea2fd39dc6608a84444cde0d6701f1e1b854f55706a36bcb7268f04b144021"
+    },
+    "PCB/main/smove-r2-main.kicad_dru": {
+      "baseline_sha256": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911",
+      "after_sha256": "1d03bafb26cca961bd8bae8763c948c2a67f921b0b4f00026725f3473a112911"
+    },
+    "PCB/main/smove-r2-main.kicad_pcb": {
+      "baseline_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
+      "after_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da"
+    },
+    "PCB/main/smove-r2-main.kicad_pro": {
+      "baseline_sha256": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0",
+      "after_sha256": "9acf2b29c427f2075aa7020726f56e9deb10d000cec98d1d3d9972e952359da0"
+    },
+    "PCB/main/smove-r2-main.kicad_sch": {
+      "baseline_sha256": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+      "after_sha256": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4"
+    },
+    "PCB/main/smove-r2-main.kicad_sym": {
+      "baseline_sha256": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8",
+      "after_sha256": "7cce86985bd315949605cb20a144ecae70e0cfaaaab5495f6758e7d5ead911f8"
+    },
+    "PCB/main/smove-r2-main.pretty/BQ24074_RGT.kicad_mod": {
+      "baseline_sha256": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b",
+      "after_sha256": "5017b695a8fb12036c984846342e06e3cff58a5c7d00d115a82f506fccf5cb6b"
+    },
+    "PCB/main/smove-r2-main.pretty/BatteryWire_2x_PTH_P2.54mm_D1.0mm.kicad_mod": {
+      "baseline_sha256": "a7e1681735f7901ddb15bc522b82c411092aa926916a29df8a27933ebc21060d",
+      "after_sha256": "a7e1681735f7901ddb15bc522b82c411092aa926916a29df8a27933ebc21060d"
+    },
+    "PCB/main/smove-r2-main.pretty/C_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa",
+      "after_sha256": "ebb6e3000e5f985a7b8d9af7009c7b3b75fbe1820acba38d375285ec16f9a8fa"
+    },
+    "PCB/main/smove-r2-main.pretty/C_0603_1608Metric.kicad_mod": {
+      "baseline_sha256": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497",
+      "after_sha256": "c3b65aa6d0a9e87bee705c76f5ea7116cbc3866c002b4957cee56343919af497"
+    },
+    "PCB/main/smove-r2-main.pretty/C_0805_2012Metric.kicad_mod": {
+      "baseline_sha256": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41",
+      "after_sha256": "4219ac1c51a374f81f1fc3c2f83c12fca25aaffd6b345f9ff58571a6eb858f41"
+    },
+    "PCB/main/smove-r2-main.pretty/Debug_5.kicad_mod": {
+      "baseline_sha256": "c558adc11b51476c855d463deca3d1671e9eaadc6f6396d073af2a33b18c150c",
+      "after_sha256": "c558adc11b51476c855d463deca3d1671e9eaadc6f6396d073af2a33b18c150c"
+    },
+    "PCB/main/smove-r2-main.pretty/ESP32-C3-MINI-1.kicad_mod": {
+      "baseline_sha256": "d62b385a9b9d0886ce050db386e641c039ba34ca46a78356d783ad3d0e9d9d1d",
+      "after_sha256": "d62b385a9b9d0886ce050db386e641c039ba34ca46a78356d783ad3d0e9d9d1d"
+    },
+    "PCB/main/smove-r2-main.pretty/JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal.kicad_mod": {
+      "baseline_sha256": "63154b8816179deca97a4f378a449d43daee6f2862a546c33c76d344ebb4cfea",
+      "after_sha256": "63154b8816179deca97a4f378a449d43daee6f2862a546c33c76d344ebb4cfea"
+    },
+    "PCB/main/smove-r2-main.pretty/LED_LiteOn_LTST-C19HE1WT.kicad_mod": {
+      "baseline_sha256": "011511e068b2c7d875615f0990e037f789240c85516a73006ff62f3cca7daf07",
+      "after_sha256": "011511e068b2c7d875615f0990e037f789240c85516a73006ff62f3cca7daf07"
+    },
+    "PCB/main/smove-r2-main.pretty/R_0402_1005Metric.kicad_mod": {
+      "baseline_sha256": "2b563e2f9ee44cdbd1c99712ad098d0207acd42f2efd6a156c31348f47b75ff9",
+      "after_sha256": "2b563e2f9ee44cdbd1c99712ad098d0207acd42f2efd6a156c31348f47b75ff9"
+    },
+    "PCB/main/smove-r2-main.pretty/SOT-23-5.kicad_mod": {
+      "baseline_sha256": "0d0a48fa074dad16293e0818ea42ac06a64763cb4fd2b2f11400906745a3910b",
+      "after_sha256": "0d0a48fa074dad16293e0818ea42ac06a64763cb4fd2b2f11400906745a3910b"
+    },
+    "PCB/main/smove-r2-main.pretty/SOT-23-6.kicad_mod": {
+      "baseline_sha256": "7ad52d37b14c5f2720f209f8e729a981dc96529db5832199b1b0f058dc351e75",
+      "after_sha256": "7ad52d37b14c5f2720f209f8e729a981dc96529db5832199b1b0f058dc351e75"
+    },
+    "PCB/main/smove-r2-main.pretty/SOT-23.kicad_mod": {
+      "baseline_sha256": "f387640293b6382cd818af98d207fa9bf364fb4d63d9d1b12df042859632ca22",
+      "after_sha256": "f387640293b6382cd818af98d207fa9bf364fb4d63d9d1b12df042859632ca22"
+    },
+    "PCB/main/smove-r2-main.pretty/TS1088.kicad_mod": {
+      "baseline_sha256": "2dd9a2bed110746122621c35a5fae01fc2af554227af60d05a11505bb09980ba",
+      "after_sha256": "2dd9a2bed110746122621c35a5fae01fc2af554227af60d05a11505bb09980ba"
+    },
+    "PCB/main/smove-r2-main.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod": {
+      "baseline_sha256": "d1000f83ff7f664e35bca685d1ddfbf1460b253b15b71df595cc04d041146c59",
+      "after_sha256": "d1000f83ff7f664e35bca685d1ddfbf1460b253b15b71df595cc04d041146c59"
+    },
+    "PCB/main/sym-lib-table": {
+      "baseline_sha256": "a875526915ef20dc290fa69e6a5a4a228316b7a2513c551c977c00a888be230c",
+      "after_sha256": "a875526915ef20dc290fa69e6a5a4a228316b7a2513c551c977c00a888be230c"
+    },
+    "PCB/main/usb.kicad_sch": {
+      "baseline_sha256": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f",
+      "after_sha256": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f"
+    }
+  }
+}

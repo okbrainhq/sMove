@@ -1,61 +1,49 @@
-# Three screwless prints — white rounded shell
+# Enclosure-only — RF TEST PROTOTYPE
 
-**Current review design: Midframe + Top cover + Bottom cover. No screws, nuts, inserts or PCB mounting holes. Not released for manufacture or charging.**
+Three white rounded screwless prints: **Midframe + Top cover + Bottom cover**. Existing validated **25×30 mm PCB, schematic, routing, copper RF exclusions and native module remain unchanged**. No PCB shrinking or external antenna substitution. No manufacturing/charging release, no full Espressif housing-clearance compliance. Enlarge the housing if on-player testing requires it.
 
-The default exterior envelope including the reinforced snap bands is **44.3 L × 33.3 W × 19.0 H mm**. Ordinary outer walls, roof and floor are **0.8 mm**. The rounded footprint has an inner corner radius of 3 mm; exterior offsets follow wall thickness. Snap groove bands add local reinforcement rather than thinning the wall below the configured nominal value.
+## Geometry and fit
 
-- **Midframe** separates the pouch from the electronics with a 1.2 mm insulating barrier. Battery pocket below; insulated PCB lands and loose-clearance edge locators above. Top-cover stops limit PCB lift without preload. PCB adhesive is optional, not a substitute for insulation.
-- **Covers** push onto the midframe sleeves with short ramped snap rails. Sleeve radial clearance 0.18 mm; nominal insertion flex 0.12 mm; seated groove radial clearance 0.12 mm. These are CAD dimensions, **not proven printer tolerances or retention forces**.
-- **Battery** candidate 30×20×3 mm; accepted complete-pack allowance 31×21×4.3 mm is unchanged. Pocket is 21.4×31.4 mm between flat locators, with 0.7 mm clearance between the allowance top and separator. Cover closure reacts at perimeter stops, not the pouch. Exact pack, lead exit and swelling requirements remain unknown/unqualified.
-- **Wire passage** is explicitly cut through the west midframe separator/locator. A contiguous reserved volume and two conditional OD1.2/R2-bend lead envelopes reach the unchanged BAT pads. No lead or pack enters the retained north antenna exclusion. An upstream adhesive strain-relief land is provided; no approved adhesive/harness is implied.
-- **Access** uses native RESET/BOOT/LED anchors and the native USB plug envelope. RESET/BOOT remain aligned at native X121.25 mm and 3.75 mm pitch. Their 2.9 mm access holes leave a 0.85 mm web; these are recessed tool-access openings, not finger buttons. LED aperture is 3.8 mm.
+- Default ordinary walls/roof/floor: **0.8 mm**, configurable through 1.2 mm. Main body including snap bands: **39.3 L ×34.3 W ×19.0 H mm**. Protected antenna extension makes overall **42.85 L ×34.3 W ×19.0 H mm**. At 1.2 mm: overall **43.65×35.1×19.4 mm**. Main-body length was reduced, not the PCB; the internal perimeter wire corridor adds width.
+- Existing module end extends past the main compartment into a thin nonmetallic cap: floor integral with midframe, roof/skirt integral with top cover. No fourth print or bare exposed antenna. Cap floor/roof follow wall setting. This close plastic cap is explicitly an RF compromise, not a clearance-compliant housing or liquid seal.
+- Battery candidate remains 30×20×3 mm; complete-pack allowance remains 31×21×4.3 mm (case XYZ 21×31×4.3). Pocket 21.4×31.4; separator gap 0.7. Optional qualified adhesive/insulating supports, no pouch compression. Hard perimeter stops take closure load.
+- BAT wires now leave pads **upward +Z**, opposite the inherited below-board model, bend west and run along the **internal midframe perimeter**, descend around the separator's west edge, and return through a locator-only relief to the underside battery. The separator remains continuous over the entire pack. No wire hole through the separator. Exact two routes are in `validation/mechanical.json` and visible in `dist/assembled-wire-path.png` (orange wires, cyan module).
+- Conditional wire OD≤1.2 mm, R2 centreline bends, 0.25 mm radial routing reserve; solder reserve radius 1.1 mm, height 0.55 mm above pads. Minimum nominal lead-to-print clearance 0.43 mm; reserve-to-print 0.18 mm, lead-to-lead 0.30 mm at both checked walls. Battery and wire reserves remain respectively 1.5 and 2.18 mm away from the retained forward RF exclusion. These are CAD measurements, not manufacturing tolerance guarantees.
+- Sleeve clearance 0.18 mm; insertion flex 0.12 mm; groove radial clearance 0.12 mm. Snug covers require physical printer/material calibration. RESET/BOOT holes 2.9 mm, web 0.85 mm; LED aperture 3.8 mm retained.
 
-## Current files
+## Source-derived flush USB-C
 
-| File | Purpose |
-|---|---|
-| `smove-r2-enclosure.FCStd` | Editable CSG and live `Parameters.Wall` spreadsheet; exactly three final objects with Role=`print` |
-| `dist/midframe.stl` | Frame in east-edge-down starting print orientation; supports/brim required |
-| `dist/top-cover.stl` | Roof down |
-| `dist/bottom-cover.stl` | Floor down |
-| `dist/smove-r2-printable.step` | Exactly three closed printable solids in assembled coordinates |
-| `dist/smove-r2-assembly.step` | Prints plus electronic/film/battery/conditional lead reference envelopes; not all are prints |
-| `validation/mechanical.json`, `wall-1.2.json` | Default and alternate-wall geometric checks |
-| `validation/native-parameter.json` | Reopened native, live spreadsheet sweep and independent mesh checks |
-| `dist/assembled.png`, `exploded.png`, `print-three.png`, `section.png` | FreeCAD BRep review images, not physical prototypes |
+J1 is **HRO TYPE-C-31-M-12 / LCSC C165948**, retained native footprint. `sources/hro-type-c-31-m-12.pdf` is the supplier-hosted HRO drawing copied from workspace 032's mechanical evidence only, not its failed layout. `sources/usb-mechanical-evidence.json` preserves source URLs, drawing SHA256 and dimensional evidence; its prior proposed cutout is historical, superseded here.
 
-## Set thickness and regenerate
+Drawing nominal body W×D×H = 8.94×7.35×3.26 mm; maximum W/H = 9.09/3.36 mm. Native locator datum case X18.5 + drawing front distance 6.28 puts the metal mouth at **X24.78** (native X124.78), 0.03 mm beyond the inherited simplified envelope face. The local stepped exterior surround terminates at that exact nominal mouth plane; the plastic outside it is relieved. This is not a recessed insertion tunnel. Main lower shoulder remains wider.
 
-1. Edit **`housing/screwless.json` → `outer_wall_mm`**, default `0.8`. Supported checked range is 0.8–1.2 mm. Keep dimensions in mm. Wall growth is outward, preserving battery, PCB and access datums; the roof grows upward and floor grows inward into the reserved floor clearance.
-2. From the repository root, with the pinned runtime installed:
+Opening **10×4.3 mm** exceeds the source maximum plus **0.2 mm placement +0.2 mm print/fit allowance per side** (minimum 9.89×4.16). Nominal source body/mating aperture geometry is separately modeled; component collision checks also retain the conservative native envelope. Check the actual connector placement and selected cable overmould on a print: **no “any cable” guarantee**, and exact as-built flushness cannot be guaranteed from nominal CAD.
+
+## Files and regeneration
+
+`smove-r2-enclosure.FCStd` is editable native CSG with live `Parameters.Wall`. `dist/smove-r2-printable.step` contains exactly three solids; `dist/smove-r2-assembly.step` includes reference electronics, battery, insulation, wires and solder. Three STLs have print orientations; seven PNGs include opaque assembled, transparent wire-path, exploded and section views. Prints are white; transparent presentation is diagnostic only.
+
+Edit `housing/screwless.json` → `outer_wall_mm` (default 0.8). From repository root:
 
 ```sh
 /usr/bin/python3 scripts/freecad/bootstrap.py --verify-only
-# Only if not installed: /usr/bin/python3 scripts/freecad/bootstrap.py
-/usr/bin/python3 scripts/r2/final/export.py
+# If runtime absent, run bootstrap.py without --verify-only first.
 /usr/bin/python3 scripts/r2/enclosure/extract.py
 /usr/bin/python3 scripts/freecad/run.py housing/entry.py generate
 /usr/bin/python3 scripts/freecad/run.py housing/entry.py generate 1.2
 cp .cache/wall-1.2/validation/mechanical.json housing/validation/wall-1.2.json
 /usr/bin/python3 scripts/freecad/run.py housing/check_native.py
-```
-
-`generate 1.2` writes only `.cache/wall-1.2/`, never overwriting the default delivery. `check_native.py` is specifically a **0.8→1.2→0.8 test**: run it on the default 0.8 delivery; for a new default, adapt the sweep test deliberately. `housing/entry.py verify` currently regenerates and verifies (it is **not read-only**).
-
-3. For interactive wall edits, open the FCStd, double-click `Parameters`, change **B1 / alias Wall**, and recompute. All three final solids actually change. Persist the same value in JSON and regenerate exports: a GUI-only edit does **not** update delivered STL/STEP/images. Other spreadsheet datums are diagnostic, not a fully coupled mechanical redesign; change other settings in JSON/code and revalidate. In particular, fit/snap settings require regeneration, not just spreadsheet edits.
-4. Render in a valid authorized X11 desktop session:
-
-```sh
+/usr/bin/python3 scripts/freecad/run.py housing/qualify.py
+# In an available authorized X11 display:
 /usr/bin/python3 scripts/freecad/run.py housing/render.py
-/usr/bin/python3 scripts/freecad/run.py housing/check_native.py
-/usr/bin/python3 scripts/r2/screwless/seal.py
+python3 housing/seal.py
+python3 housing/seal.py --check
 ```
 
-The renderer inherits `DISPLAY` and `XAUTHORITY` from your desktop; do not copy another session's credentials. It briefly opens the pinned FreeCAD GUI, exports images, saves assembled white styling, then closes its own window. Do not run concurrently with unsaved edits to this FCStd. The inspection macro offers visibility controls without changing engineering poses.
+**Do not regenerate PCB exports.** Generation asserts hashes of retained PCB and board STEP. Alternate wall outputs stay in `.cache/wall-1.2`; default outputs remain 0.8. `check_native.py` and `qualify.py` expect the default 0.8 delivery and alternate 1.2 build. `entry.py verify` regenerates; it is not read-only. Other dimensions/route changes require deliberate source edits and complete revalidation, not just changing Wall.
 
-**Never run legacy PCB routing generators to regenerate this housing.** The targeted one-time H1 ECO is `scripts/r2/screwless/pcb.py`. Current native-board exports and `extract.py` are read-only with respect to PCB routing. `scripts/r2/integrated/sync.py` now refuses the screwless board rather than reintroducing historical mounting claims. Old enclosure `generate.py`, `verify.py`, `present.py` and recovery tools describe historical revisions; current entry is `housing/entry.py`.
+## Evidence and qualification limits
 
-See [printing/assembly and physical gates](PRINTING-ASSEMBLY.md), [revision evidence](../docs/revision-r2/screwless/README.md), and [BOM](BOM.csv). No advisor was used; no merge performed.
+`validation/mechanical.json` and `wall-1.2.json`: 819 nominal checks each, including three valid closed solids/STEP reimport, component/pack/wire interference, measured wall, accesses and sampled insertion. `native-parameter.json`: 16 reopened-native/live-wall checks. `prototype.json`: independent manifold/orientation checks of both sets of STLs, sampled cover travel without lead collision, cap coverage rays and outward USB opening. Sampled motion/coverage are not continuous physical simulations or waterproofness proofs. `pcb-preservation.json` hashes every tracked PCB file against the unchanged Git baseline. `dist/manifest.json` binds sources, CAD, exports and reports (self excluded).
 
-![Three printable pieces](dist/print-three.png)
-![Exploded review](dist/exploded.png)
+Physical gates: actual pack lead exit and soldering process, wire bend rating/strain relief, print accuracy/support removal, snap force/creep/cycles, drop/body movement, skin contact, RF on-player in intended orientations, sweat ingress/abrasion, thermal and charging suitability. The vendor pack-to-modeled-entry connection remains conditional on the selected pack. Do not force fit, charge, or claim sweat resistance from these nominal checks. See `PRINTING-ASSEMBLY.md`.

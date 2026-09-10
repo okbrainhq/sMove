@@ -6,6 +6,12 @@
   "corner_radius_mm": 3.0,
   "pcb_bottom_z_mm": 12.6,
   "roof_inside_z_mm": 18.2,
-  "battery_allowance_mm": [21.0, 31.0, 4.3],
-  "notes": "Review prototype. Wall changes grow exterior, not internal component datums. Supported test range 0.8 to 1.2 mm. Fit and pack/lead/adhesive qualification required."
+  "battery_allowance_mm": [
+    21.0,
+    31.0,
+    4.3
+  ],
+  "notes": "ENCLOSURE ONLY RF TEST PROTOTYPE; no full housing-clearance compliance. Internal perimeter +Z BAT exit; no separator penetration. Physical print/body RF/sweat qualifications pending.",
+  "retained_board_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da",
+  "retained_board_step_sha256": "31d5e79dc9f12a8c03fd8d2754d6a0eead0fcefd482df123f1a826e15849b5a3"
 }

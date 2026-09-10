@@ -1,0 +1,117 @@
+{
+  "status": "SOURCED_PRE_ROUTING_MECHANICAL_EVIDENCE_NOT_FINAL_CUTOUT",
+  "part": {
+    "ref": "J1",
+    "manufacturer": "Korean Hroparts Elec / HRO Electronics",
+    "mpn": "TYPE-C-31-M-12",
+    "lcsc": "C165948",
+    "native_footprint": "smove-r2-main:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+  },
+  "hro_drawing": {
+    "requested_url": "https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948",
+    "final_url": "https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 118176,
+    "sha256": "6ae33d50ac47820114661138dc4e4659f40fdc5d4f485b46685dfec338da1a9e",
+    "discovered_from": "https://www.lcsc.com/datasheet/C165948.pdf iframe src",
+    "saved_as": "docs/revision-r2/compact-screwless/sources/hro-type-c-31-m-12.pdf",
+    "visually_verified": "HRO branded, exact part number in lower-right title block; orthographic drawing and tolerance table inspected. Supplier-hosted manufacturer drawing, not manufacturer-domain retrieval.",
+    "extraction_warning": "pdftotext/pdftoppm reported unknown PDFAUTOCAD character collection; geometry and dimension labels were visually readable; OCR/text extraction alone not relied upon."
+  },
+  "drawing_dimensions_mm": {
+    "body_width": {
+      "nominal": 8.94,
+      "general_tolerance_plus_minus": 0.15,
+      "max": 9.09
+    },
+    "body_depth": {
+      "nominal": 7.35,
+      "general_tolerance_plus_minus": 0.15,
+      "max": 7.5
+    },
+    "body_height_above_mounting_plane": {
+      "nominal": 3.26,
+      "general_tolerance_plus_minus": 0.1,
+      "max": 3.36
+    },
+    "internal_mating_aperture_width": {
+      "nominal": 8.34,
+      "plus": 0.06,
+      "minus": 0.02
+    },
+    "internal_mating_aperture_height": {
+      "nominal": 2.56,
+      "plus_minus": 0.04
+    },
+    "locator_centre_pitch": 5.78,
+    "locator_diameter": 0.5,
+    "recommended_locator_hole_diameter": 0.6,
+    "front_face_from_locator_longitudinal_datum": 6.28,
+    "recommended_pcb_edge_from_locator_longitudinal_datum": 5.79,
+    "tolerance_note": "General part dimensions: <=5mm +/-0.10, 5-10mm +/-0.15 unless explicitly toleranced. Recommended PCB layout tolerance separately +/-0.05. Do not substitute physical peg diameter for retained PCB hole size."
+  },
+  "native_datum_comparison": {
+    "anchor_xy_mm": [
+      121.1,
+      116.8
+    ],
+    "angle_ccw_degrees": 90,
+    "locator_centres_native_xy_mm": [
+      [
+        118.5,
+        113.91
+      ],
+      [
+        118.5,
+        119.69
+      ]
+    ],
+    "existing_locator_drill_mm": 0.65,
+    "front_face_nominal_x_from_drawing_mm": 124.78,
+    "inherited_front_face_x_mm": 124.75,
+    "difference_mm": 0.03,
+    "pcb_edge_at_port_x_mm": 124.45,
+    "nominal_overhang_from_drawing_mm": 0.33,
+    "mounting_and_placement_tolerance_not_included": true,
+    "source_pin_geometry_unchanged": true
+  },
+  "shell_only_cutout_study_not_implemented": {
+    "source_maximum_WH_mm": [
+      9.09,
+      3.36
+    ],
+    "proposed_placement_uncertainty_per_side_mm": 0.2,
+    "proposed_print_and_fit_allowance_per_side_mm": 0.2,
+    "calculated_minimum_WH_mm": [
+      9.89,
+      4.16
+    ],
+    "rounded_study_WH_mm": [
+      10.0,
+      4.2
+    ],
+    "not_a_plug_overmold_clearance": true,
+    "allowances_source": "Explicit engineering study assumptions; not HRO tolerances and not calibrated printer data."
+  },
+  "usb_if_mating": {
+    "url": "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf",
+    "final_url": "https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 10980886,
+    "sha256": "87d15160bf8bd25129b27e0b7c5e261ed0b1806b3b0d3a7b5d8b1eb783dc9981",
+    "saved_excerpt": "docs/revision-r2/compact-screwless/sources/usb-if-mating-page-136.pdf",
+    "excerpt_sha256": "7820f84a3f120868f4e6cf4655dd86643faf213bae06ec01dd6319c28d628d61",
+    "page": 136,
+    "section": "3.10.3 / Figure 3-80",
+    "interpretation": "Informative fully seated plug-to-exterior surface clearance guidance; figure labels 0.05mm minimum. Not a universal cable overmold W/H specification. Page 57 Fig3-11 was also inspected; exposed shell minimum there is 6.51mm.",
+    "current_revision_claim": false
+  },
+  "unresolved": [
+    "Actual intended cable overmold width/height/profile and minimum exposed shell length, including manufacturing variation",
+    "Final wall setback/entry pocket dimensions relative to moved connector",
+    "Printed opening tolerance, full insertion/seating and strain-load tests"
+  ],
+  "unchanged_board_sha256": "6d80ae6d0069daae650cf755f8ae4f8b31cd080a46ec90b2a230ad0dc35825da"
+}

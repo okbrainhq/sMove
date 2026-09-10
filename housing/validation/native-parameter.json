@@ -23,19 +23,19 @@
       "nonmanifolds": false,
       "inconsistent_orientation": false,
       "components": 1,
-      "volume_error_fraction": 5.6764410228732366e-05
+      "volume_error_fraction": 6.762247310564719e-05
     },
     "top-cover": {
       "nonmanifolds": false,
       "inconsistent_orientation": false,
       "components": 1,
-      "volume_error_fraction": 4.512734674774771e-05
+      "volume_error_fraction": 4.954530439851576e-05
     },
     "midframe": {
       "nonmanifolds": false,
       "inconsistent_orientation": false,
       "components": 1,
-      "volume_error_fraction": 3.4243546794267786e-05
+      "volume_error_fraction": 3.4962847862019696e-05
     },
     "board_STEP": {
       "drill_origin_native_xy_mm": [
@@ -47,6 +47,6 @@
       "note": "KiCad STEP dielectric thickness excludes copper; accepted 1mm total envelope retained."
     }
   },
-  "native_sha256": "102461becf4503df09c18adf888cc9d672478b8190b24e64ec43296161749d09",
+  "native_sha256": "5ed4f55a265086b1234f81698566b388094e12ab200ba23ea0ed498c7281a7c2",
   "note": "Reopened FCStd Wall B1 changed to 1.2 and compared with independent regeneration, restored without saving."
 }
