@@ -1,6 +1,6 @@
 # sMove — PCB + three-piece enclosure
 
-> **Current PCB workspace revision: UNROUTED placement review.** [Grouped placement, LED pin change and routing research](docs/revision-r2/placement-routing/README.md). ESP/USB/battery poses and M3 reserves are fixed; the IMU stays on its centreline, 9 mm lower. RED moves to GPIO3. **152 connections remain unrouted; do not manufacture this candidate or use the stale `dist/` exports.** The earlier routed/enclosure descriptions below are historical and do not describe this placement revision.
+> **Current PCB workspace revision: routed review candidate.** [Routing completion, plane selection and verification](docs/revision-r2/main-routing/README.md): the user's rotated-U8 USB layout is retained, remaining nets use top/bottom routing, In1 is GND and In2 contains power regions. **0 DRC errors, 0 unconnected items, 0 parity issues; one existing J2 library warning.** [Reusable routing/rotation tools](scripts/pcb_tools/README.md) include exact manual coordinates and vias. **Not a fabrication/charging release; `dist/` and enclosure exports remain stale.** Earlier enclosure descriptions below are historical. The prior RED LED GPIO3 change remains required.
 
 > **Previous PCB update:** The [LED is now fully routed on the user's revised layout](docs/revision-r2/led-routing/README.md), with top-left/bottom-right space reserved for future M3 hardware. The enclosure and `PCB/main/dist/` remain older snapshots; their alignment/manufacturing claims below do not apply to the revised PCB without regeneration and review.
 

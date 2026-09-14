@@ -1,0 +1,26 @@
+test_blocked (pcb_tools.test_tools.GeometryTests.test_blocked) ... [32mok[0m
+test_deterministic (pcb_tools.test_tools.GeometryTests.test_deterministic) ... [32mok[0m
+test_duplicates_collinear_and_reversal (pcb_tools.test_tools.GeometryTests.test_duplicates_collinear_and_reversal) ... [32mok[0m
+test_exact_endpoints_all_quadrants (pcb_tools.test_tools.GeometryTests.test_exact_endpoints_all_quadrants) ... [32mok[0m
+test_staircase_removed (pcb_tools.test_tools.GeometryTests.test_staircase_removed) ... [32mok[0m
+test_straight_preferred (pcb_tools.test_tools.GeometryTests.test_straight_preferred) ... [32mok[0m
+test_bend_aware_search (pcb_tools.test_tools.NativeTests.test_bend_aware_search) ... [32mok[0m
+test_edge_clearance (pcb_tools.test_tools.NativeTests.test_edge_clearance) ... [32mok[0m
+test_internal_layer_rejected (pcb_tools.test_tools.NativeTests.test_internal_layer_rejected) ... [32mok[0m
+test_locked_ripup_rejected (pcb_tools.test_tools.NativeTests.test_locked_ripup_rejected) ... [32mok[0m
+test_manual_two_layers (pcb_tools.test_tools.NativeTests.test_manual_two_layers) ... [32mok[0m
+test_no_diagonal_layer_change (pcb_tools.test_tools.NativeTests.test_no_diagonal_layer_change) ... [32mok[0m
+test_nonfinite_and_negative (pcb_tools.test_tools.NativeTests.test_nonfinite_and_negative) ... [32mok[0m
+test_output_guard (pcb_tools.test_tools.NativeTests.test_output_guard) ... [32mok[0m
+test_paste_via_rejected (pcb_tools.test_tools.NativeTests.test_paste_via_rejected) ... [32mok[0m
+test_route_no_mutation_until_apply (pcb_tools.test_tools.NativeTests.test_route_no_mutation_until_apply) ... [32mok[0m
+test_router_uses_bottom_and_vias (pcb_tools.test_tools.NativeTests.test_router_uses_bottom_and_vias) ... [32mok[0m
+test_stale_plan_and_no_partial_insertion (pcb_tools.test_tools.NativeTests.test_stale_plan_and_no_partial_insertion) ... [32mok[0m
+test_transaction_rollback (pcb_tools.test_tools.NativeTests.test_transaction_rollback) ... [32mok[0m
+test_unknown_net_rejected (pcb_tools.test_tools.NativeTests.test_unknown_net_rejected) ... [32mok[0m
+test_width_checked_not_just_centerline (pcb_tools.test_tools.NativeTests.test_width_checked_not_just_centerline) ... [32mok[0m
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.053s
+
+[32mOK[0m

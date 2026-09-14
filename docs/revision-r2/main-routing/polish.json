@@ -1,0 +1,112 @@
+{
+  "changes": [
+    {
+      "net": "/3V3_MAIN",
+      "before": 4,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/3V3_MAIN",
+      "before": 7,
+      "after": 2,
+      "saved_mm": -0.0
+    },
+    {
+      "net": "/3V3_MAIN",
+      "before": 6,
+      "after": 4,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/Power/PACK_P",
+      "before": 6,
+      "after": 2,
+      "saved_mm": -0.0
+    },
+    {
+      "net": "/VBUS",
+      "before": 6,
+      "after": 3,
+      "saved_mm": 0.2636
+    },
+    {
+      "net": "GND",
+      "before": 4,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "GND",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/IMU/1V8_IMU",
+      "before": 12,
+      "after": 2,
+      "saved_mm": -0.0
+    },
+    {
+      "net": "/IMU/1V8_IMU",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/IMU/1V8_IMU",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/IMU/1V8_IMU",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/IMU/IMU_REGOUT",
+      "before": 8,
+      "after": 3,
+      "saved_mm": -0.0
+    },
+    {
+      "net": "/IMU/SCL_1V8",
+      "before": 4,
+      "after": 3,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "/IMU/SDA_1V8",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.1798
+    },
+    {
+      "net": "/SCL_HOST",
+      "before": 5,
+      "after": 3,
+      "saved_mm": 0.8284
+    },
+    {
+      "net": "/SDA_HOST",
+      "before": 3,
+      "after": 2,
+      "saved_mm": 0.0
+    },
+    {
+      "net": "Net-(U1-GPIO9_{slash}_BOOT)",
+      "before": 16,
+      "after": 15,
+      "saved_mm": 0.0
+    }
+  ],
+  "drc": {
+    "errors": 0,
+    "warnings": 1,
+    "unconnected": 0,
+    "parity": 0
+  }
+}

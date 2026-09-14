@@ -1,6 +1,14 @@
 # Main PCB — 25 × 30 × 1 mm review candidate
 
-## Current: grouped placement review — UNROUTED
+## Current: routed review candidate
+
+See the [routing completion and plane-selection evidence](../../docs/revision-r2/main-routing/README.md). The user's rotated-U8 USB routing is preserved, remaining nets are connected on **F.Cu/B.Cu**, In1 is continuous GND, and In2 has bounded **3V3_MAIN / PACK_P power regions** with GND elsewhere. C7 alone is rotated 180° to fix its isolated ground connection; other placements, pad nets and keepouts are unchanged.
+
+**Fresh native checks: 0 DRC errors, 0 unconnected items, 0 schematic-parity issues, 0 ERC violations; one existing J2 footprint-library warning.** Reusable coordinate routing, via placement, rotation previews, explicit rip-up and cleanup tools are documented in [scripts/pcb_tools](../../scripts/pcb_tools/README.md). Run `/usr/bin/python3 scripts/r2/main-routing/verify.py` for current acceptance checks.
+
+**Not released for fabrication or charging.** USB impedance, current/thermal margins and return paths still need engineering review. Some low-speed paths take long perimeter detours. `dist/` and the enclosure are stale; no manufacturing exports were regenerated.
+
+## Historical: grouped placement review — UNROUTED
 
 See the [placement revision and researched routing strategy](../../docs/revision-r2/placement-routing/README.md). U1, USB, battery pads, outline and both M3 reserved positions are unchanged. The LED/buttons are upper-left, charger/regulator parts are together beside USB, and U2 remains at X112.5 with its original orientation, now at Y126.5. RED is reassigned from GPIO6 to GPIO3; GREEN=GPIO7 and BLUE=GPIO10 remain unchanged. Firmware must adopt the RED pin change.
 
