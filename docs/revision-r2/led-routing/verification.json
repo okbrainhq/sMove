@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "base_commit": "b155f033f849d78e28f899b0d9df355177c8b5ed",
+  "board_sha256": "b4697292780693d0d1d2847c9227ec287e5ecdd3e501e30405e9a4bf3b44fcfd",
+  "checks": {
+    "all_47_footprints_unchanged": true,
+    "outline_stackup_setup_nets_graphics_unchanged": true,
+    "every_retained_route_token_unchanged": true,
+    "only_obsolete_boot_stub_removed": true,
+    "only_led_routes_and_one_ground_via_added": true,
+    "no_tracks_on_reference_plane": true,
+    "existing_zone_rules_and_configuration_unchanged": true,
+    "schematics_project_and_drc_rules_unchanged": true,
+    "LED_R_mapping": true,
+    "LED_G_mapping": true,
+    "LED_B_mapping": true,
+    "LED_common_anode_3V3": true,
+    "M3_NW_RESERVE_exists": true,
+    "M3_NW_RESERVE_all_copper_and_components_excluded": true,
+    "M3_NW_RESERVE_physical_copper_and_courtyard_clear": true,
+    "M3_SE_RESERVE_exists": true,
+    "M3_SE_RESERVE_all_copper_and_components_excluded": true,
+    "M3_SE_RESERVE_physical_copper_and_courtyard_clear": true,
+    "zero_drc_errors": true,
+    "zero_unconnected_items": true,
+    "zero_schematic_parity_issues": true,
+    "only_three_known_baseline_warnings": true
+  },
+  "added_routes": {
+    "segment": 36,
+    "via": 4
+  },
+  "removed_routes": {
+    "segment": 17,
+    "via": 1
+  },
+  "preserved_route_items": 1072,
+  "reserves": [
+    {
+      "name": "M3_NW_RESERVE",
+      "centre_mm": [
+        103.15,
+        103.15
+      ],
+      "diameter_mm": 6.0,
+      "collisions": []
+    },
+    {
+      "name": "M3_SE_RESERVE",
+      "centre_mm": [
+        121.65,
+        126.85
+      ],
+      "diameter_mm": 6.0,
+      "collisions": []
+    }
+  ],
+  "removed_uuids": [
+    "2f99f375-99ad-4622-9eda-c757f23763e8",
+    "4025e7a4-d8b7-4108-96df-0180a670b21a",
+    "41ae6c9d-2f8f-4719-84cc-4737e7fa6a73",
+    "44dfd412-a61d-4c14-88c3-8f2024d2cefd",
+    "498047c7-f7b6-419a-8d52-abed30cc5d7d",
+    "4f9fca07-5bf0-46c8-8eb3-80231f451fed",
+    "5100f9b5-5909-428a-8976-47b4b3754eb5",
+    "51ea44d3-02c6-45b1-9c64-bd9105f548a4",
+    "5d27239f-f41a-4b62-ad8f-14da0e84561a",
+    "60ce2026-a575-4c06-9863-f9010d9ecc90",
+    "68cc7609-109b-4ba9-8e3b-3109774c0bad",
+    "739f6fc6-a761-4bad-9790-576531cd0574",
+    "7909bde6-5aa3-4591-b514-422f67de95ae",
+    "a38d692e-ca40-46e0-82b2-1bbb13cfc486",
+    "aa78416c-c751-488e-b32f-9a500748ad6f",
+    "ae0cc3ab-0be0-4933-8093-57e3f882c438",
+    "c80fc2be-5adf-4326-acf1-bd8c2f5df851",
+    "d99418ea-47e4-4fec-a647-b4d64a220f6e"
+  ],
+  "added_uuids": [
+    "070aa70d-44ae-4585-af1e-59314d98309e",
+    "0a0b4f4c-b1f8-4ef3-b95f-7b9b2239d7d8",
+    "0d1099cf-ec42-4f03-bec1-18ef2dd82458",
+    "13c3e6e0-1bde-43f8-ad31-49badae3515e",
+    "15788791-29ff-4094-98cb-17bf28e7b02e",
+    "182755a0-5997-4d07-aa13-c19f68b76e0d",
+    "1f466188-4a8d-4937-8d5e-5f405b6c1fd1",
+    "248400b1-1258-4468-8ff5-6dc821841dc9",
+    "3b3810cc-6f10-42c0-bab7-dfc84376b2e3",
+    "3b6246a3-399a-4fa5-99cc-37337ce210ec",
+    "3f484ff5-b8c0-4d8a-9a54-b47c60bdfa9e",
+    "46aa5a34-7afa-40e4-bcbb-b6075743c34e",
+    "4cd06318-f44b-4b38-a5a2-78ca5e13999f",
+    "4e7f0a4e-933a-41b8-8bc9-2967e0ef7098",
+    "56d36901-5a51-425e-8efa-ce054e89e364",
+    "574a3b22-6159-4bcb-a5ac-d540d2bb2302",
+    "58131af7-8112-44d3-b16c-80f5d5bc9735",
+    "6317525d-3083-4f8b-a6f1-25e2b5d59859",
+    "708d0b80-5fdb-4639-9dbb-c5bd988bc4b2",
+    "71724bfd-ea04-401f-b4bf-3c564a7e6d0a",
+    "72b6892a-7e9c-4777-bf21-01efae5bdaf6",
+    "758e956d-f706-4ef0-979a-2ebb589dfe06",
+    "773a13a0-af1d-4647-b34d-701a25fd872f",
+    "7a3a4779-ccd4-433e-aef9-cd454fee0e5a",
+    "8393a6ee-b3f9-4595-ad80-180561d38d7a",
+    "87a57488-7caf-447e-b911-9cb7f415fee6",
+    "88ac0a22-6b56-4c2e-8c61-dab0b3b8a896",
+    "8db82044-4b0e-484f-a37a-c15ba0b6648c",
+    "9cd7682f-b814-4265-98f8-f1117f975de5",
+    "9d7c6062-61f0-4dd5-a2f4-e2d15242fec3",
+    "a08a702d-d92c-4eec-9a77-aed3578d47c4",
+    "a5bd68ca-56e2-41d3-a169-45fcd98932c9",
+    "aa9d59af-2a46-456e-9cf9-5b60b1a6fbad",
+    "ae33c5c8-13f0-4d06-b037-aed256b76b9d",
+    "c603d15c-1c58-4363-abdd-7936d432d8f2",
+    "c604c918-cfeb-4b82-90ba-d87e0c1a6f2c",
+    "cc18133a-a668-41c9-905f-38fb6c3ebf85",
+    "d42586e6-0543-46b2-9b05-ca5b60556876",
+    "f10f749d-de7a-4795-b413-d92f00e5c141",
+    "faf0f934-fd5f-4ca6-8741-83afc4b0c7d2"
+  ]
+}

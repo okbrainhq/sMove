@@ -1,0 +1,44 @@
+{
+  "files": {
+    "PCB/main/smove-r2-main.kicad_pcb": {
+      "sha256": "b4697292780693d0d1d2847c9227ec287e5ecdd3e501e30405e9a4bf3b44fcfd",
+      "bytes": 761591
+    },
+    "scripts/r2/main/verify_led_routing.py": {
+      "sha256": "62c7117e23a184ddb3f7f6d20ed5c6d64b26997b2efc4ad49313d81093c5871b",
+      "bytes": 7734
+    },
+    "docs/revision-r2/led-routing/README.md": {
+      "sha256": "359410e9d117690a4af19264e6913a315cc485fdffc8d562612a6a03131739f2",
+      "bytes": 4104
+    },
+    "docs/revision-r2/led-routing/baseline-drc.json": {
+      "sha256": "9a32e0b6fa0f0c47c16582c9bee5e5506d259ad2f1483ca43c9fe7895b5f3727",
+      "bytes": 6939
+    },
+    "docs/revision-r2/led-routing/drc.json": {
+      "sha256": "7184224c156283b404128f7d1df9e234d284ddb56ab9a8e5f8072f1f45711c7f",
+      "bytes": 1922
+    },
+    "docs/revision-r2/led-routing/front-native.svg": {
+      "sha256": "8643809b76995a8a131f36493ca7b9805b1c507c3bb158855a61691064710fc5",
+      "bytes": 216391
+    },
+    "docs/revision-r2/led-routing/front-routing.png": {
+      "sha256": "d7f9faa737143d6b5673249d35013f7e8605e26035c0933514337f20f18e5a59",
+      "bytes": 96974
+    },
+    "docs/revision-r2/led-routing/inner-native.svg": {
+      "sha256": "468c1175cc4ed03011d37b966b311ffa337911461f4ad31e9fec71a28924d43c",
+      "bytes": 72737
+    },
+    "docs/revision-r2/led-routing/inner-routing.png": {
+      "sha256": "d58ff0679e8cf560e2efd85c3039404d791f807eddb8e255cd6b8cd270c23b93",
+      "bytes": 58019
+    },
+    "docs/revision-r2/led-routing/verification.json": {
+      "sha256": "4287804f1f621609720bbc6cdff050a2aac664b105331042e7aac4dd86d69bdb",
+      "bytes": 4261
+    }
+  }
+}
