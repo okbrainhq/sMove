@@ -1,0 +1,121 @@
+{
+  "status": "PASS schematic-to-PCB update and preservation checks; unrouted staging, not manufacturing-ready",
+  "before_sha256": "6dd68947088c54fabcb1048c568f01d6af402d6a3341b6b0f04c6e3524baa245",
+  "after_sha256": "b3198d74f087f0fd46c5844bfc94fe28184b02b31eb964756ccccb474e5ae2c0",
+  "diagnosis": [
+    "The screenshot showed Update Schematic from PCB (reverse direction).",
+    "The four retained footprints had an extra root-sheet UUID in their schematic paths; normal forward update would have duplicated them."
+  ],
+  "fix": "Used Update PCB from Schematic; re-linked once by reference without replacing footprints, then disabled re-link and verified a clean repeat preview.",
+  "fixed_references": [
+    "J1",
+    "J2",
+    "U1",
+    "U2"
+  ],
+  "preserved": "Four footprint positions, rotations, footprint UUIDs, geometry, pad/net assignments and other tokens unchanged except corrected linkage, added pinfunction/pintype metadata and KiCad repair of duplicate pad UUIDs. Board drawings, layers, setup, zones and keepouts unchanged from the saved board at start of this fix.",
+  "duplicate_pad_uuids_repaired": 11,
+  "added_references": [
+    "C1",
+    "C10",
+    "C11",
+    "C13",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "D1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R2",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R3",
+    "R4",
+    "R5",
+    "R7",
+    "R8",
+    "R9",
+    "SW2",
+    "SW3",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U8",
+    "U9"
+  ],
+  "added_footprints": 43,
+  "total_footprints": 47,
+  "duplicate_references": 0,
+  "staging": "All 43 added footprints lie outside the board to the right; ready for manual placement.",
+  "tracks_and_vias": 0,
+  "zones": {
+    "rule_areas": 5,
+    "copper_zones": 1,
+    "note": "The saved board already had only one copper zone, a filled In1 GND plane, at the start of this fix. This later user state was preserved rather than overwritten with the historical reset."
+  },
+  "unchanged_files": [
+    "PCB/main/usb.kicad_sch",
+    "PCB/main/smove-r2-main.kicad_sch",
+    "PCB/main/imu.kicad_sch",
+    "PCB/main/power.kicad_sch",
+    "PCB/main/smove-r2-main.kicad_dru",
+    "PCB/main/compute.kicad_sch"
+  ],
+  "gui_update": {
+    "errors": 0,
+    "warnings": 0,
+    "repeat_with_relink_disabled": "No add/relink actions with field updates off."
+  },
+  "drc": {
+    "schematic_parity_issues": 0,
+    "unconnected_items": 148,
+    "geometric_violations": [
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "Footprint J2",
+            "pos": {
+              "x": 122.5,
+              "y": 103.23
+            },
+            "uuid": "77d30cb7-256c-4e69-8d72-a4f5d795d1a6"
+          },
+          {
+            "description": "Footprint U1",
+            "pos": {
+              "x": 114.2,
+              "y": 102.9
+            },
+            "uuid": "9420fad1-3aff-4d44-913e-48326a7910ba"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      }
+    ],
+    "note": "Unrouted items are expected; the existing J2/U1 courtyard overlap was not changed because both positions must remain fixed."
+  },
+  "screenshots": {
+    "reported_error": "/uploads/4649274a-dc5a-4ab1-9bd1-e5859954418b.webp",
+    "clean_repeat": "/uploads/5724bf7d-7f72-4a3b-b423-703fdb95edc4.webp",
+    "staged_board": "/uploads/4ab8d894-c3c8-40a4-af2f-d27c512bfb72.webp"
+  }
+}
