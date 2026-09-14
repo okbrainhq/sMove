@@ -1,0 +1,34 @@
+[
+  {
+    "angle": 180.0,
+    "position": [
+      111.15,
+      129.25
+    ],
+    "approx_connection_length_mm": 1.151,
+    "removed_tracks": 163,
+    "drc": {
+      "errors": 0,
+      "warnings": 3,
+      "unconnected": 50,
+      "parity": 0
+    },
+    "board": "/home/azero/.okbrain/workspaces/smove-files/037/.cache/main-routing/rotation-isolated/position-0-angle-180/smove-r2-main.kicad_pcb"
+  },
+  {
+    "angle": 0.0,
+    "position": [
+      111.15,
+      129.25
+    ],
+    "approx_connection_length_mm": 1.594,
+    "removed_tracks": 163,
+    "drc": {
+      "errors": 0,
+      "warnings": 3,
+      "unconnected": 50,
+      "parity": 0
+    },
+    "board": "/home/azero/.okbrain/workspaces/smove-files/037/.cache/main-routing/rotation-isolated/position-0-angle-0/smove-r2-main.kicad_pcb"
+  }
+]

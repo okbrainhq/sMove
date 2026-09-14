@@ -1,0 +1,103 @@
+{
+  "sha256": "f4c75f9ed555c36cad3048aa59f3f6967fa03f3bf0547b70cc1022be063cd5d1",
+  "drc": {
+    "errors": 0,
+    "warnings": 1,
+    "unconnected": 0,
+    "parity": 0
+  },
+  "preservation": {
+    "changed_footprints": [
+      "C7"
+    ],
+    "pad_nets_sizes": true,
+    "outline_keepouts": true,
+    "all_user_usb_segments": true,
+    "baseline_sha256": "714021390576d084dc9a8907e458f6d8127e0148449d6889260d993d695f396d"
+  },
+  "segments_by_layer": {
+    "F.Cu": 411,
+    "B.Cu": 104
+  },
+  "vias": 125,
+  "footprints": 47,
+  "planes": [
+    {
+      "name": "GND_F.Cu",
+      "net": "GND",
+      "layer": "F.Cu",
+      "filled_regions": 5
+    },
+    {
+      "name": "GND_B.Cu",
+      "net": "GND",
+      "layer": "B.Cu",
+      "filled_regions": 9
+    },
+    {
+      "name": "GND_In1.Cu",
+      "net": "GND",
+      "layer": "In1.Cu",
+      "filled_regions": 1
+    },
+    {
+      "name": "GND_In2.Cu",
+      "net": "GND",
+      "layer": "In2.Cu",
+      "filled_regions": 20
+    },
+    {
+      "name": "PACK_P_DISTRIBUTION",
+      "net": "/Power/PACK_P",
+      "layer": "In2.Cu",
+      "filled_regions": 1
+    },
+    {
+      "name": "3V3_MAIN_DISTRIBUTION",
+      "net": "/3V3_MAIN",
+      "layer": "In2.Cu",
+      "filled_regions": 1
+    }
+  ],
+  "usb_reference_sampling": {
+    "spacing_mm": 0.05,
+    "samples": 1015,
+    "uncovered": 0,
+    "note": "Centerline coverage, not an impedance/return-current certification"
+  },
+  "length_by_net_mm": {
+    "/3V3_MAIN": 22.143,
+    "/BAT_ADC": 10.031,
+    "/Compute/LED_B": 12.841,
+    "/Compute/LED_B_K": 6.29,
+    "/Compute/LED_G": 18.678,
+    "/Compute/LED_G_K": 4.991,
+    "/Compute/LED_R": 12.087,
+    "/Compute/LED_R_K": 1.879,
+    "/Compute/MCU_EN": 8.919,
+    "/Compute/STRAP2": 1.537,
+    "/Compute/STRAP8": 37.823,
+    "/Compute/USB_DM_MCU": 3.364,
+    "/Compute/USB_DP_MCU": 2.999,
+    "/IMU/1V8_IMU": 25.427,
+    "/IMU/I2C_BIAS": 8.58,
+    "/IMU/IMU_REGOUT": 2.436,
+    "/IMU/SCL_1V8": 12.828,
+    "/IMU/SDA_1V8": 14.144,
+    "/Power/CHG_ILIM": 3.938,
+    "/Power/CHG_ISET": 3.633,
+    "/Power/PACK_P": 23.655,
+    "/Power/SYS": 9.644,
+    "/Power/TS_NO_CELL_SENSING": 6.344,
+    "/SCL_HOST": 16.96,
+    "/SDA_HOST": 27.979,
+    "/USB/CC1": 10.981,
+    "/USB/CC2": 19.683,
+    "/USB_DM": 21.102,
+    "/USB_DP": 20.672,
+    "/USB_POWER_N": 14.547,
+    "/VBUS": 20.916,
+    "GND": 32.518,
+    "Net-(U1-GPIO9_{slash}_BOOT)": 50.045
+  }
+}

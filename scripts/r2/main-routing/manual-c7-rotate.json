@@ -1,0 +1,52 @@
+{
+  "remove_ids": [
+    "0c911604-1c46-4945-8589-0f227d316861",
+    "1875fe41-f773-4e1c-b597-70dd87f71456",
+    "26b5298b-8b20-4421-aed1-3f5a408fd7f4",
+    "2af33e2f-b168-434e-b8fa-38531b252cf1",
+    "32f214a1-0fb6-4bb0-8932-9d8038970d51",
+    "57407136-2c58-4eef-bd8c-ad9f24b7ceff",
+    "650cb757-c881-4b81-afa7-02c5edc90f46",
+    "65e89188-2a5d-4e17-9eaa-bc663fbd13b0",
+    "8d91b2f3-d44d-4a65-93c7-13524046b1d6",
+    "c15034cc-eeb5-41c5-ad83-46c94c309ee2",
+    "c4a62744-4aa4-4a8f-a029-d32a4bf62de9",
+    "db29e5f5-d8b0-4ed4-abdf-f23773edbe8f",
+    "e698d0a4-7956-4009-ba3e-0443cd1e1ecb"
+  ],
+  "move_footprints": [
+    {
+      "reference": "C7",
+      "rotation": 180,
+      "expected_rotation": 0
+    }
+  ],
+  "routes": [
+    {
+      "net": "/IMU/1V8_IMU",
+      "width": 0.15,
+      "points": [
+        [
+          111.5,
+          128,
+          "F.Cu"
+        ],
+        [
+          111.5,
+          128.52,
+          "F.Cu"
+        ],
+        [
+          111.63,
+          128.65,
+          "F.Cu"
+        ],
+        [
+          111.63,
+          129.25,
+          "F.Cu"
+        ]
+      ]
+    }
+  ]
+}
