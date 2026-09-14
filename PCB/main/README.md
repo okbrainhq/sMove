@@ -1,6 +1,24 @@
-# Main PCB — 25 × 30 × 1 mm review candidate
+# Main PCB — 25 × 30 × 1 mm manual-layout reset
 
-## Current: routed review candidate
+## Current: schematic links repaired; components staged — UNROUTED
+
+**All 47 schematic footprints are now present.** U1 (ESP32), J1 (USB-C), U2 (IMU), and J2 (battery +/− holes) retain their poses and geometry. The other **43 footprints are staged outside the board to the right** for manual placement. No tracks or vias were added.
+
+The reported dialog was **Update Schematic from PCB**, the reverse direction. Use **Tools → Update PCB from Schematic (F8)** to bring schematic components into the board. The four old footprint paths also contained an extra root-sheet UUID; one reference-based re-link repaired them without replacing or moving the footprints. Re-link is now off for normal updates. A repeat forward-update preview reports **0 errors and 0 warnings**, without duplicate additions. KiCad also repaired duplicate pad UUIDs on save; all pad geometry/nets and footprint UUIDs remain unchanged.
+
+[Update verification](../../docs/revision-r2/manual-layout-reset/schematic-update-verification.json): **0 schematic-parity issues**, 148 expected unconnected items, and one **pre-existing J2/U1 courtyard overlap**, left unchanged to preserve both fixed positions. Schematics and design rules on disk are unchanged. The latest saved zone state was preserved: five rule areas and one filled In1 GND plane; the earlier six-unfilled-zone reset below is historical. **Not for manufacture or charging; exports remain stale.**
+
+## Historical: manual placement/routing reset — UNROUTED
+
+Only **U1 (ESP32), J1 (USB-C), U2 (IMU), and J2 (battery +/− through-hole pads)** remain in the PCB layout, with their complete footprint definitions, positions, orientations and pad/net assignments unchanged. The other **43 footprints were deleted from the PCB only**; all schematic sheets and project/rule files remain unchanged.
+
+Removed **500 track segments, 124 vias, and all 38 cached copper-fill polygons**. All six copper-zone definitions are retained **unfilled**, including In1 GND and the In2 GND / 3V3_MAIN / PACK_P regions. Board outline, stackup, drawings and all keepouts are unchanged. This is actual copper removal, not merely hidden pours.
+
+[Verification](../../docs/revision-r2/manual-layout-reset/verification.json): exact-token preservation check and native board load pass; native DRC reports **0 geometric violations**, **45 intentionally unconnected items**, and **43 expected missing-footprint parity warnings**, plus the existing J2 library-footprint mismatch warning. Previous routed-board acceptance scripts/reports below are historical and are not acceptance criteria for this reset. **Not for fabrication/assembly/charging; existing exports and enclosure placement data are stale.**
+
+For manual placement, open `smove-r2-main.kicad_pro` in KiCad and use **Update PCB from Schematic (F8)** when ready to re-add the missing footprints. Do not delete their schematic symbols. The standalone PCB Editor has this command disabled; launch the editors through the project. J2 was restored verbatim from the pre-reset board at the user’s request, retaining both battery +/− holes. The other 43 missing components have not been re-added or parked outside the board.
+
+## Historical: routed review candidate
 
 See the [routing completion and plane-selection evidence](../../docs/revision-r2/main-routing/README.md). The user's rotated-U8 USB routing is preserved, remaining nets are connected on **F.Cu/B.Cu**, In1 is continuous GND, and In2 has bounded **3V3_MAIN / PACK_P power regions** with GND elsewhere. C7 alone is rotated 180° to fix its isolated ground connection; other placements, pad nets and keepouts are unchanged.
 

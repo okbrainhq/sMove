@@ -1,0 +1,122 @@
+{
+  "status": "PASS exact token preservation",
+  "baseline_commit": "0cb29461a7d93a77ed7e18caa8e8572e98ba7f90",
+  "before_sha256": "820e08ab9b00d1f05210b536a53344428e222cd1885bcdbda1c1d45238bbdca7",
+  "after_sha256": "cae535e237475d6a968ceef75e34b26654a4e90a7a90f7be79c32413ee76f644",
+  "retained_references": [
+    "J1",
+    "J2",
+    "U1",
+    "U2"
+  ],
+  "removed_references": [
+    "C1",
+    "C10",
+    "C11",
+    "C13",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "D1",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R2",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R3",
+    "R4",
+    "R5",
+    "R7",
+    "R8",
+    "R9",
+    "SW2",
+    "SW3",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U8",
+    "U9"
+  ],
+  "removed_footprints": 43,
+  "removed_copper": {
+    "segment": 500,
+    "via": 124,
+    "unfilled_zones": 6,
+    "filled_polygon": 38
+  },
+  "preserved": "Full U1/J1/U2/J2 footprint tokens including position, orientation, UUIDs, pads/nets, models and footprint keepouts; board drawings/outline, layers/stackup/setup, net table, all zone definitions and board rule areas. Only copper fill caches/state removed from zones.",
+  "native_load": "PASS",
+  "retained_poses": {
+    "U2": {
+      "value": "ICM-20948",
+      "x_mm": 112.5,
+      "y_mm": 126.5,
+      "degrees": -90.0,
+      "layer": "F.Cu"
+    },
+    "J1": {
+      "value": "TYPE-C-31-M-12",
+      "x_mm": 121.1,
+      "y_mm": 116.8,
+      "degrees": 90.0,
+      "layer": "F.Cu"
+    },
+    "U1": {
+      "value": "ESP32-C3-MINI-1-N4",
+      "x_mm": 114.2,
+      "y_mm": 102.9,
+      "degrees": 0.0,
+      "layer": "F.Cu"
+    },
+    "J2": {
+      "value": "Battery wire pads 2.54mm",
+      "x_mm": 122.5,
+      "y_mm": 103.23,
+      "degrees": 90.0,
+      "layer": "F.Cu"
+    }
+  },
+  "final_counts": {
+    "footprints": 4,
+    "tracks_and_vias": 0,
+    "zone_definitions": 11,
+    "copper_zone_definitions": 6,
+    "rule_areas": 5,
+    "filled_zones": 0
+  },
+  "drc": {
+    "geometric_violations": 0,
+    "library_footprint_warnings": 1,
+    "unconnected_items": 45,
+    "missing_footprints": 43,
+    "note": "Unconnected items and absent schematic footprints are intentional for this placement reset; retained J2 has its existing library-footprint mismatch warning. Not a routed/manufacturing release."
+  },
+  "protected_files_unchanged": [
+    "PCB/main/compute.kicad_sch",
+    "PCB/main/imu.kicad_sch",
+    "PCB/main/power.kicad_sch",
+    "PCB/main/smove-r2-main.kicad_dru",
+    "PCB/main/smove-r2-main.kicad_pro",
+    "PCB/main/smove-r2-main.kicad_sch",
+    "PCB/main/usb.kicad_sch"
+  ],
+  "original_project_pcb_unchanged": true,
+  "j2_restoration": "PASS: J2 battery +/\u2212 through-hole footprint restored verbatim from the pre-reset board; all other current PCB tokens unchanged."
+}
