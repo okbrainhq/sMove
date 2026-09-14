@@ -1,4 +1,12 @@
-# Main PCB — screwless 25 × 30 × 1 mm review candidate
+# Main PCB — 25 × 30 × 1 mm review candidate
+
+## Current: LED routed on the revised layout
+
+The [LED routing update](../../docs/revision-r2/led-routing/README.md) builds on the user's `b155f03` routing setup. All RGB channels are connected, with D1 and every other footprint left in place. Top-left and bottom-right 6 mm clear disks are protected for future M3 hardware; no mounting holes were added. Fresh checks report **0 DRC errors, 0 unconnected items, 0 schematic-parity issues**, with three unchanged pre-existing warnings.
+
+**The native PCB is authoritative. `dist/` and the enclosure are older snapshots, not regenerated for this routing update.** Do not use the older manufacturing bundle without regeneration and review. Run `scripts/r2/main/verify_led_routing.py` for current checks; do not run historical layout generators over this board.
+
+## Historical screwless revision (before the user's reroute)
 
 **Current: [screwless revision](../../docs/revision-r2/screwless/README.md). Not released for manufacture, assembly or charging.**
 
