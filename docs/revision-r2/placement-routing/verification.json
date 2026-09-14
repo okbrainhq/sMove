@@ -1,0 +1,1019 @@
+{
+  "status": "PLACEMENT_PASS_UNROUTED",
+  "base_commit": "7128028",
+  "checks": {
+    "47_references_and_values_preserved": true,
+    "ESP_USB_BAT_poses_fixed": true,
+    "ESP_USB_BAT_pad_geometry_fixed": true,
+    "IMU_on_original_centerline_lowered_9mm_not_rotated": true,
+    "all_parts_still_front": true,
+    "no_components_replaced": true,
+    "all_local_pad_shapes_sizes_drills_and_layers_preserved": true,
+    "handoff_placement_metadata_matches_native": true,
+    "handoff_LED_pin_metadata_matches_native": true,
+    "handoff_contract_hash_matches_native": true,
+    "only_authorized_RED_pin_nets_changed": true,
+    "outline_layer_count_thickness_retained": true,
+    "all_existing_rule_areas_unchanged": true,
+    "existing_zone_definitions_retained": true,
+    "zone_fills_absent_for_placement_stage": true,
+    "obsolete_routes_removed_not_left_on_wrong_pads": true,
+    "no_courtyard_overlaps": true,
+    "both_original_M3_disks_clear": true,
+    "kicad_pro_unchanged": true,
+    "kicad_dru_unchanged": true,
+    "smove-r2-main_schematic_unchanged": true,
+    "usb_schematic_unchanged": true,
+    "power_schematic_unchanged": true,
+    "imu_schematic_unchanged": true,
+    "no_geometric_DRC_errors": true,
+    "only_existing_J2_library_warning": true,
+    "schematic_parity_clean": true,
+    "ERC_clean_all_severities": true
+  },
+  "board_sha256": "9dcd1244642bdedb7cb179b7c005024fa8c5188d43b1bb54f59419e3b0c90669",
+  "unconnected_items": 152,
+  "routed": false,
+  "manufacturing_release": false,
+  "pad_net_changes": [
+    [
+      "U1",
+      "6",
+      "unconnected-(U1-GPIO3-Pad6)",
+      "/Compute/LED_R"
+    ],
+    [
+      "U1",
+      "20",
+      "/Compute/LED_R",
+      "unconnected-(U1-GPIO6-Pad20)"
+    ]
+  ],
+  "reserve_collisions": {
+    "M3_NW_RESERVE": [],
+    "M3_SE_RESERVE": []
+  },
+  "courtyard_overlaps": [],
+  "distances": {
+    "U6-J1": {
+      "before_mm": 20.922,
+      "after_mm": 9.588
+    },
+    "U6-U1": {
+      "before_mm": 26.546,
+      "after_mm": 16.759
+    },
+    "U6-U4": {
+      "before_mm": 15.602,
+      "after_mm": 6.651
+    },
+    "U6-C13": {
+      "before_mm": 16.72,
+      "after_mm": 2.9
+    },
+    "U2-U3": {
+      "before_mm": 8.28,
+      "after_mm": 5.202
+    },
+    "U2-U5": {
+      "before_mm": 9.582,
+      "after_mm": 8.223
+    }
+  },
+  "placement_proxy": {
+    "note": "Euclidean pad MST is a placement proxy, NOT routed length or proof of signal integrity.",
+    "before_total_mm": 474.206,
+    "after_total_mm": 340.26,
+    "per_net": {
+      "/3V3_MAIN": {
+        "before_mm": 60.3479,
+        "after_mm": 38.2902
+      },
+      "/BAT_ADC": {
+        "before_mm": 7.3464,
+        "after_mm": 8.3478
+      },
+      "/Compute/LED_B": {
+        "before_mm": 18.8374,
+        "after_mm": 10.4966
+      },
+      "/Compute/LED_B_K": {
+        "before_mm": 2.6005,
+        "after_mm": 4.6799
+      },
+      "/Compute/LED_G": {
+        "before_mm": 13.7321,
+        "after_mm": 13.2472
+      },
+      "/Compute/LED_G_K": {
+        "before_mm": 2.3901,
+        "after_mm": 3.6008
+      },
+      "/Compute/LED_R": {
+        "before_mm": 13.9086,
+        "after_mm": 10.2563
+      },
+      "/Compute/LED_R_K": {
+        "before_mm": 2.5789,
+        "after_mm": 1.7381
+      },
+      "/Compute/MCU_EN": {
+        "before_mm": 25.6623,
+        "after_mm": 7.5697
+      },
+      "/Compute/STRAP2": {
+        "before_mm": 14.8637,
+        "after_mm": 1.5027
+      },
+      "/Compute/STRAP8": {
+        "before_mm": 9.5598,
+        "after_mm": 14.8452
+      },
+      "/Compute/USB_DM_MCU": {
+        "before_mm": 3.1568,
+        "after_mm": 3.1568
+      },
+      "/Compute/USB_DP_MCU": {
+        "before_mm": 2.9099,
+        "after_mm": 2.9099
+      },
+      "/IMU/1V8_IMU": {
+        "before_mm": 29.3257,
+        "after_mm": 19.3707
+      },
+      "/IMU/I2C_BIAS": {
+        "before_mm": 4.7934,
+        "after_mm": 4.9445
+      },
+      "/IMU/IMU_REGOUT": {
+        "before_mm": 1.271,
+        "after_mm": 2.1623
+      },
+      "/IMU/SCL_1V8": {
+        "before_mm": 18.8528,
+        "after_mm": 9.4132
+      },
+      "/IMU/SDA_1V8": {
+        "before_mm": 17.5667,
+        "after_mm": 8.6781
+      },
+      "/Power/CHG_ILIM": {
+        "before_mm": 4.0908,
+        "after_mm": 3.1145
+      },
+      "/Power/CHG_ISET": {
+        "before_mm": 1.0647,
+        "after_mm": 2.4495
+      },
+      "/Power/PACK_P": {
+        "before_mm": 36.8697,
+        "after_mm": 33.6785
+      },
+      "/Power/SYS": {
+        "before_mm": 21.4317,
+        "after_mm": 7.4072
+      },
+      "/Power/TS_NO_CELL_SENSING": {
+        "before_mm": 2.1959,
+        "after_mm": 3.767
+      },
+      "/SCL_HOST": {
+        "before_mm": 15.7002,
+        "after_mm": 13.0616
+      },
+      "/SDA_HOST": {
+        "before_mm": 19.5026,
+        "after_mm": 15.6586
+      },
+      "/USB/CC1": {
+        "before_mm": 11.9567,
+        "after_mm": 8.6466
+      },
+      "/USB/CC2": {
+        "before_mm": 11.8355,
+        "after_mm": 12.7037
+      },
+      "/USB_DM": {
+        "before_mm": 15.3412,
+        "after_mm": 15.3412
+      },
+      "/USB_DP": {
+        "before_mm": 15.1988,
+        "after_mm": 15.1988
+      },
+      "/USB_POWER_N": {
+        "before_mm": 23.9781,
+        "after_mm": 10.8834
+      },
+      "/VBUS": {
+        "before_mm": 22.6277,
+        "after_mm": 14.856
+      },
+      "Net-(U1-GPIO9_{slash}_BOOT)": {
+        "before_mm": 22.7083,
+        "after_mm": 18.2831
+      }
+    }
+  },
+  "placements": [
+    {
+      "reference": "C1",
+      "value": "4.7uF / 16V",
+      "group": "POWER",
+      "before": [
+        106.5,
+        125.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        111.75,
+        122.15,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C10",
+      "value": "1uF / 25V",
+      "group": "UI",
+      "before": [
+        107.25,
+        114.75,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.2,
+        110.25,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C11",
+      "value": "100nF / 16V",
+      "group": "POWER",
+      "before": [
+        106.25,
+        113.0,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.2,
+        111.35,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C13",
+      "value": "47uF / 6.3V",
+      "group": "POWER",
+      "before": [
+        106.25,
+        110.5,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        111.9,
+        116.6,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C2",
+      "value": "47uF / 6.3V",
+      "group": "POWER",
+      "before": [
+        106.35,
+        128.6,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        114.75,
+        119.6,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C3",
+      "value": "22uF / 10V",
+      "group": "POWER",
+      "before": [
+        102.75,
+        108.25,
+        180.0,
+        "F.Cu"
+      ],
+      "after": [
+        108.25,
+        116.6,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C4",
+      "value": "100nF / 16V",
+      "group": "POWER",
+      "before": [
+        105.75,
+        108.0,
+        180.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.8,
+        103.1,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C5",
+      "value": "4.7u / 16V X5R",
+      "group": "IMU",
+      "before": [
+        102.0,
+        119.25,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        104.5,
+        121.55,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C6",
+      "value": "4.7u / 16V X5R",
+      "group": "IMU",
+      "before": [
+        105.75,
+        116.25,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.5,
+        128.0,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C7",
+      "value": "100n / 16V",
+      "group": "IMU",
+      "before": [
+        111.25,
+        120.75,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        111.15,
+        129.25,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C8",
+      "value": "100n / 16V",
+      "group": "IMU",
+      "before": [
+        109.75,
+        115.5,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        109.25,
+        126.9,
+        -90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "C9",
+      "value": "100n / 16V",
+      "group": "IMU",
+      "before": [
+        109.25,
+        117.75,
+        180.0,
+        "F.Cu"
+      ],
+      "after": [
+        109.25,
+        128.449999,
+        180.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "D1",
+      "value": "LTST-C19HE1WT / CA",
+      "group": "UI",
+      "before": [
+        109.725,
+        126.025,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.7,
+        113.2,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "J1",
+      "value": "TYPE-C-31-M-12",
+      "group": "FIXED",
+      "before": [
+        121.1,
+        116.8,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        121.1,
+        116.8,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "J2",
+      "value": "Battery wire pads 2.54mm",
+      "group": "FIXED",
+      "before": [
+        122.5,
+        103.23,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        122.5,
+        103.23,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R1",
+      "value": "5.1k",
+      "group": "USB",
+      "before": [
+        115.0,
+        121.5,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        116.35,
+        126.5,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R10",
+      "value": "10k",
+      "group": "UI",
+      "before": [
+        108.5,
+        114.5,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.2,
+        119.65,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R11",
+      "value": "1k",
+      "group": "UI",
+      "before": [
+        109.5,
+        123.41,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.2,
+        115.2,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R12",
+      "value": "1k",
+      "group": "UI",
+      "before": [
+        110.7,
+        123.41,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.2,
+        116.3,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R13",
+      "value": "1k",
+      "group": "UI",
+      "before": [
+        110.5,
+        128.71,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.2,
+        117.4,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R14",
+      "value": "100k",
+      "group": "POWER",
+      "before": [
+        108.5,
+        112.75,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.2,
+        106.85,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R15",
+      "value": "100k",
+      "group": "POWER",
+      "before": [
+        110.75,
+        112.75,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.2,
+        107.95,
+        180.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R16",
+      "value": "4.7k 1%",
+      "group": "IMU",
+      "before": [
+        109.4,
+        128.71,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        115.55,
+        129.15,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R17",
+      "value": "4.7k 1%",
+      "group": "IMU",
+      "before": [
+        106.7,
+        126.9,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        113.25,
+        129.15,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R18",
+      "value": "4.7k 1%",
+      "group": "IMU",
+      "before": [
+        108.0,
+        116.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        107.8,
+        120.55,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R19",
+      "value": "4.7k 1%",
+      "group": "IMU",
+      "before": [
+        113.25,
+        120.25,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        110.5,
+        123.8,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R2",
+      "value": "5.1k",
+      "group": "USB",
+      "before": [
+        108.3,
+        123.41,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        116.35,
+        127.65,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R20",
+      "value": "200k 1%",
+      "group": "IMU",
+      "before": [
+        101.5,
+        122.0,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        107.8,
+        126.9,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R21",
+      "value": "8.2k",
+      "group": "POWER",
+      "before": [
+        101.5,
+        124.0,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        114.05,
+        122.4,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R22",
+      "value": "4.7k",
+      "group": "POWER",
+      "before": [
+        102.05,
+        129.25,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        108.0,
+        119.45,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R23",
+      "value": "10k",
+      "group": "POWER",
+      "before": [
+        103.25,
+        124.4,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        112.55,
+        123.8,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R3",
+      "value": "22R",
+      "group": "USB",
+      "before": [
+        122.25,
+        110.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        122.25,
+        110.5,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R4",
+      "value": "22R",
+      "group": "USB",
+      "before": [
+        123.0,
+        108.75,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        123.0,
+        108.75,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R5",
+      "value": "100k",
+      "group": "POWER",
+      "before": [
+        113.0,
+        121.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        108.0,
+        118.3,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R7",
+      "value": "10k",
+      "group": "UI",
+      "before": [
+        102.75,
+        121.25,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.2,
+        109.05,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R8",
+      "value": "10k",
+      "group": "UI",
+      "before": [
+        121.75,
+        108.75,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        105.2,
+        118.55,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "R9",
+      "value": "10k",
+      "group": "UI",
+      "before": [
+        122.49,
+        107.0,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        106.8,
+        105.4,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "SW2",
+      "value": "RESET",
+      "group": "UI",
+      "before": [
+        114.725,
+        124.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        102.4,
+        109.35,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "SW3",
+      "value": "BOOT / USER",
+      "group": "UI",
+      "before": [
+        114.725,
+        128.1,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        102.4,
+        115.45,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U1",
+      "value": "ESP32-C3-MINI-1-N4",
+      "group": "FIXED",
+      "before": [
+        114.2,
+        102.9,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        114.2,
+        102.9,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U2",
+      "value": "ICM-20948",
+      "group": "IMU",
+      "before": [
+        112.5,
+        117.5,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        112.5,
+        126.5,
+        -90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U3",
+      "value": "PCA9306DCUR",
+      "group": "IMU",
+      "before": [
+        105.25,
+        121.5,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        108.25,
+        123.5,
+        90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U4",
+      "value": "AP2112K-3.3TRG1",
+      "group": "POWER",
+      "before": [
+        103.0,
+        111.25,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        109.25,
+        113.4,
+        180.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U5",
+      "value": "AP2112K-1.8TRG1",
+      "group": "IMU",
+      "before": [
+        103.0,
+        116.25,
+        -90.0,
+        "F.Cu"
+      ],
+      "after": [
+        104.5,
+        124.6,
+        -90.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U6",
+      "value": "BQ24074RGTR",
+      "group": "POWER",
+      "before": [
+        102.75,
+        126.85,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        111.9,
+        119.5,
+        180.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U8",
+      "value": "USBLC6-2SC6",
+      "group": "USB",
+      "before": [
+        113.5,
+        113.5,
+        0.0,
+        "F.Cu"
+      ],
+      "after": [
+        113.5,
+        113.5,
+        0.0,
+        "F.Cu"
+      ]
+    },
+    {
+      "reference": "U9",
+      "value": "PESD5V0S2BT,215",
+      "group": "USB",
+      "before": [
+        108.5,
+        120.25,
+        90.0,
+        "F.Cu"
+      ],
+      "after": [
+        116.6,
+        123.95,
+        0.0,
+        "F.Cu"
+      ]
+    }
+  ]
+}

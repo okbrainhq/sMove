@@ -1,6 +1,14 @@
 # Main PCB — 25 × 30 × 1 mm review candidate
 
-## Current: LED routed on the revised layout
+## Current: grouped placement review — UNROUTED
+
+See the [placement revision and researched routing strategy](../../docs/revision-r2/placement-routing/README.md). U1, USB, battery pads, outline and both M3 reserved positions are unchanged. The LED/buttons are upper-left, charger/regulator parts are together beside USB, and U2 remains at X112.5 with its original orientation, now at Y126.5. RED is reassigned from GPIO6 to GPIO3; GREEN=GPIO7 and BLUE=GPIO10 remain unchanged. Firmware must adopt the RED pin change.
+
+**Placement only: 152 unconnected items; zero tracks/vias.** Obsolete routing was removed deliberately, not left connecting the wrong pads. Current zone definitions are retained but unfilled; the researched power-region strategy is not implemented yet. Placement geometry, ERC and schematic parity pass, with the existing J2 library-footprint warning. This is **not a finished reroute or manufacturing/charging release**. Existing `dist/` and enclosure openings are stale.
+
+Run `/usr/bin/python3 scripts/r2/placement-routing/review.py` for this revision's checks. Do not use the historical LED-only verifier or layout generators as current acceptance tests.
+
+## Historical: LED routed on the previous layout
 
 The [LED routing update](../../docs/revision-r2/led-routing/README.md) builds on the user's `b155f03` routing setup. All RGB channels are connected, with D1 and every other footprint left in place. Top-left and bottom-right 6 mm clear disks are protected for future M3 hardware; no mounting holes were added. Fresh checks report **0 DRC errors, 0 unconnected items, 0 schematic-parity issues**, with three unchanged pre-existing warnings.
 
