@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T21:42:26+0530",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "schematic_parity": [],
+    "source": "smove-r2-main.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'BatteryWire_2x_PTH_P2.54mm_D1.0mm' does not match copy in library 'smove-r2-main'.",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 103.23
+                    },
+                    "uuid": "77d30cb7-256c-4e69-8d72-a4f5d795d1a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/USB/CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 122.2
+                    },
+                    "uuid": "b711e05e-fc77-47c4-8784-87a180f26cb1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/IMU/SCL_1V8] on In2.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 115.3,
+                        "y": 127.6
+                    },
+                    "uuid": "b2aa4d17-9829-40e8-b5b8-05c6a4463628"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}
