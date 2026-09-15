@@ -10,6 +10,7 @@
 
 - [Current enclosure and regeneration](housing/README.md): opposite-side battery/PCB pockets, insulated support, optional PCB adhesive, screwless sleeve/snap covers and an internal perimeter BAT route around the separator edge.
 - [PCB](PCB/main/README.md): targeted H1/keepout removal and copper refill; all 1,726 tracks and 97 vias preserved. Circuit, pad geometry, aligned buttons, antenna rules and battery interface unchanged.
+- [JLCPCB fabrication/assembly export](scripts/jlcpcb/README.md): regenerates `PCB/main/dist/jlcpcb/` (`gerber.zip`, `bom.csv`, `pick_and_place.csv`, `export-report.json`) from the native KiCad `LCSC`/`MPN` fields on the symbols and footprints.
 - [Historical screwless revision evidence](docs/revision-r2/screwless/README.md): fresh configured DRC/ERC, full native comparisons, manifold solids, collision/access checks, actual wall variation, FreeCAD images and hash manifests.
 - [Printing/assembly and physical gates](housing/PRINTING-ASSEMBLY.md): actual pack/lead exit, insulation/adhesive, print supports, snap fit/creep, PCB deflection and charging qualification still required. No proven physical fit.
 

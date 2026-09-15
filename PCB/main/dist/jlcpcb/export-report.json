@@ -1,0 +1,108 @@
+{
+  "tool": "scripts/jlcpcb/export.py",
+  "generated_utc": "2026-09-15T04:04:05+00:00",
+  "manufacturing_release": false,
+  "note": "Engineering export for review; not a fabrication, assembly or charging release.",
+  "kicad_cli": {
+    "executable": "kicad-cli",
+    "version": "9.0.8"
+  },
+  "project": {
+    "directory": "/home/azero/data/projects/sMove/PCB/main",
+    "board": "smove-r2-main.kicad_pcb",
+    "schematic": "smove-r2-main.kicad_sch"
+  },
+  "sources": {
+    "smove-r2-main.kicad_pcb": "c4e46f267ff6b033eaafae2693a6bed8aabf2f2eb1f43792c47b779f313789f6",
+    "smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
+    "compute.kicad_sch": "70deb0f1e0f652875fc6e41a7c83170e3e1c3ef4c135d17c0a970822812387f8",
+    "imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
+    "power.kicad_sch": "23e5551cf699943051954507a9cf31976e95168a907a7c5ba84602273bcf9efb",
+    "usb.kicad_sch": "96568fde7c245ed5d3234c237b51420593dc2a6ea10a5158d101d039b462be0f"
+  },
+  "board": {
+    "copper_layers": [
+      "F.Cu",
+      "In1.Cu",
+      "In2.Cu",
+      "B.Cu"
+    ],
+    "aux_origin_mm": [
+      100.0,
+      135.0
+    ],
+    "footprints": 47,
+    "position_origin": "drill/place file origin"
+  },
+  "assembly": {
+    "selected": 46,
+    "bom_rows": 28,
+    "layer": "both",
+    "include_through_hole": false,
+    "skipped": [
+      {
+        "reference": "J2",
+        "reason": "excluded from BOM; excluded from position files; through-hole footprint; excluded from BOM in the schematic"
+      }
+    ],
+    "missing_part_numbers": [],
+    "rotation_offsets_applied": {},
+    "part_number_used_by_several_rows": {
+      "C1525": [
+        "100n / 16V",
+        "100nF / 16V"
+      ],
+      "C19666": [
+        "4.7u / 16V X5R",
+        "4.7uF / 16V"
+      ],
+      "C25900": [
+        "4.7k",
+        "4.7k 1%"
+      ],
+      "C720477": [
+        "BOOT / USER",
+        "RESET"
+      ]
+    },
+    "part_number_source": "schematic netlist + board footprints"
+  },
+  "fabrication": {
+    "layers": [
+      "F.Cu",
+      "In1.Cu",
+      "In2.Cu",
+      "B.Cu",
+      "F.Mask",
+      "B.Mask",
+      "F.SilkS",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Paste",
+      "B.Paste"
+    ],
+    "files": {
+      "smove-r2-main-B_Cu.gbl": "1c2158daebb4836ae0ebfc63d1ccee836b211defca08daa9c5b29af94087c81d",
+      "smove-r2-main-B_Mask.gbs": "b3ba8019c95d02a14c7a1ec30e0a984765093eecf923d4ae18568eced59845b6",
+      "smove-r2-main-B_Paste.gbp": "eb92a80ec59bac0213cf506102c12b0814c307d151ad33e43afbd4e29184918a",
+      "smove-r2-main-B_Silkscreen.gbo": "ebe9911c4fe39f2341acf38f08c80e70421880e1797db506c60cf31281f92ef5",
+      "smove-r2-main-Edge_Cuts.gm1": "2b802a5f7c12ef7b170bfb3d4bdbf525bd0f6c2afd191c9ad1b91b7d13ca2b7b",
+      "smove-r2-main-F_Cu.gtl": "49f61974c2358ea53fabcce3d40455783dd2a94c8fef09a0265cd73e71e222cb",
+      "smove-r2-main-F_Mask.gts": "15efae542c11481cff42d75e94fad8e9254205e69ba0664bee2700072e467bac",
+      "smove-r2-main-F_Paste.gtp": "e47e0137b64626f8bc9707544fd00b97039af85ff8047d545385cd754550b654",
+      "smove-r2-main-F_Silkscreen.gto": "93bd91f11156444dfb29a08bf4a27f7531266ebd616070b5e7d38c9fdaaec07d",
+      "smove-r2-main-In1_Cu.g1": "65d7fc78765058be078cfb9659426cb6867f106c13d0d5e470c772d040a04aa0",
+      "smove-r2-main-In2_Cu.g2": "bc5948558e85e1dd294099feafb2119b74220fe454f1a4cc9de60ecbe735328c",
+      "smove-r2-main-NPTH.drl": "680d0619f166156cf942e6d7dd8450f324d56c0bce224b40519d091a572c9796",
+      "smove-r2-main-PTH.drl": "56abe5f3dfe0eb784913beea1d3272bf6f7d27176b41b2bce6ac7fb7b0540041",
+      "smove-r2-main-job.gbrjob": "af80877841aa5a0816a04992e06e470899c9d391de7628fc2ec56b0dd5c48fb9"
+    },
+    "note": "KiCad writes its plot creation date into each Gerber, so these hashes change between runs; the plotted geometry does not."
+  },
+  "artifacts": {
+    "gerber.zip": "eb63f6786b2ddb7ae2d292c05fe3d15f32c0f562967c7a79385757c479ee407b",
+    "bom.csv": "296f95503bd1329f23f85f40d2337ddb2d91b6e7d8437a9b98ff492d9f1d6826",
+    "pick_and_place.csv": "8ba2f2c2f26eb30cfd21cbf9d62ce39029120e87b7c719e1b6f7964042aec427"
+  },
+  "warnings": []
+}

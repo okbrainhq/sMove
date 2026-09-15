@@ -17,6 +17,26 @@ Verified with KiCad 9.0.8: the board reloads with the same 47 footprints, 461 tr
 
 **Status note:** the headings below describe earlier working states. DRC on the currently saved `smove-r2-main.kicad_pcb` reports 0 violations, 0 unconnected items and 0 schematic-parity issues, and no footprint origin lies outside the board outline, so the "UNROUTED / components staged" wording below is stale and has not been rewritten here.
 
+## JLCPCB fabrication and assembly export
+
+`/usr/bin/python3 scripts/jlcpcb/export.py PCB/main` (add `--overwrite` to refresh an existing
+set) writes `dist/jlcpcb/`: `gerber.zip` (all four copper layers, masks, silkscreen, paste, edge
+cuts, separate PTH/NPTH millimetre drills), `bom.csv`, `pick_and_place.csv` and
+`export-report.json`. See the [export tool documentation](../../scripts/jlcpcb/README.md).
+
+- Generated from the currently saved board (47 footprints, 461 tracks, 70 vias, 7 zones, 4 copper
+  layers, aux origin 100/135) at this revision. Native DRC/parity on that same file reports
+  **0 violations, 0 unconnected items, 0 schematic-parity issues**; the export tool re-verifies
+  KiCad's own position output against the board file before writing anything.
+- All **46** assembled parts carry a JLCPCB/LCSC catalogue number in the native `LCSC` field,
+  together with `MPN`, on both the schematic symbols and the board footprints. The verified
+  numbers are recorded in [main-parts.csv](../../docs/revision-r2/main-parts.csv) and
+  [stock.json](../../docs/revision-r2/stock.json). J2 (the two plated battery wire holes) is
+  intentionally PCB-only and excluded from both BOM and CPL.
+- Engineering export only: **not a fabrication, assembly or charging release**. The tool does not
+  refill zones, run DRC/ERC, check supplier stock or qualify any purchase code, and `housing/`
+  remains a separate historical snapshot.
+
 ## Current: schematic links repaired; components staged — UNROUTED
 
 **All 47 schematic footprints are now present.** U1 (ESP32), J1 (USB-C), U2 (IMU), and J2 (battery +/− holes) retain their poses and geometry. The other **43 footprints are staged outside the board to the right** for manual placement. No tracks or vias were added.
