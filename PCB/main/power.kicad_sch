@@ -1940,14 +1940,6 @@
     (uuid 42e99d57-35c4-5f82-8e86-4760c54a5194))
   (wire
     (pts
-      (xy 106.68 106.68)
-      (xy 106.68 111.76))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid e4564612-310f-54a1-8ec8-c701a323f1f8))
-  (wire
-    (pts
       (xy 116.84 106.68)
       (xy 116.84 111.76))
     (stroke
@@ -1962,6 +1954,30 @@
       (width 0)
       (type default))
     (uuid a31467f1-2c6e-531f-b73d-8d257b81b097))
+  (wire
+    (pts
+      (xy 106.68 106.68)
+      (xy 106.68 107.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid dd6a3fa6-9741-45bc-b8d3-5ad19e82b361))
+  (wire
+    (pts
+      (xy 106.68 107.95)
+      (xy 134.62 107.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid cd589b8a-0536-49e4-962b-4d453e99da3d))
+  (wire
+    (pts
+      (xy 134.62 115.57)
+      (xy 137.16 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 6bdeb620-42f6-4d45-820e-1f6eca02ab7a))
   (wire
     (pts
       (xy 86.36 111.76)
@@ -2138,11 +2154,6 @@
     (color 0 0 0 0)
     (uuid faeeaf1a-a31f-5895-88fc-4aa1cb756406))
   (junction
-    (at 106.68 111.76)
-    (diameter 0)
-    (color 0 0 0 0)
-    (uuid 1b99e23f-82fb-50af-9838-0b52011225f9))
-  (junction
     (at 116.84 111.76)
     (diameter 0)
     (color 0 0 0 0)
@@ -2182,14 +2193,14 @@
         (size .85 .85))
       (justify left bottom))
     (uuid 7b7cd8cb-aeba-5c6d-b192-f2a83c72029c))
-  (text "USB100 fixed (90mA guaranteed-min input). Protected 4.2V pack only. No automatic cell-temperature sensing."
+  (text "USB500 input-current limit ~500mA (450mA guaranteed-min): EN1 pulled up to SYS. Protected 4.2V pack only. No automatic cell-temperature sensing."
     (at 25.4 24.13 0)
     (effects
       (font
         (size 1.05 1.05))
       (justify left))
     (uuid 77dff228-ac74-5584-a4db-0b22ded4b61b))
-  (text "NO cell sensing: TS 10k bias. TMR / ITERM open; CE / EN1 / EN2 grounded."
+  (text "NO cell sensing: TS 10k bias. TMR / ITERM open; CE / EN2 grounded; EN1 pulled up to SYS = USB500. No source/CC awareness."
     (at 25.4 170.18 0)
     (effects
       (font
@@ -2490,4 +2501,56 @@
       (font
         (size 1 1))
       (justify left))
-    (uuid "df133fa9-a98b-44fd-94d9-cde3036fd348")))
+    (uuid "df133fa9-a98b-44fd-94d9-cde3036fd348"))
+  (symbol
+    (lib_id "Device:R")
+    (at 134.62 111.76 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 08004c0b-75c8-4736-a991-1b5e7d2fad5d)
+    (property "Reference" "R25"
+      (at 142.748 110.109 0)
+      (effects
+        (font
+          (size .95 .95))))
+    (property "Value" "100k"
+      (at 142.748 113.411 0)
+      (effects
+        (font
+          (size .9 .9))))
+    (property "Footprint" "smove-r2-main:R_0402_1005Metric"
+      (at 134.62 111.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "MPN" "0402WGF1003TCE"
+      (at 134.62 111.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "LCSC" "C25741"
+      (at 134.62 111.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid cda53050-518f-4ab0-a3e5-dd80ad99842a))
+    (pin "2"
+      (uuid 6bc84f5d-5a00-43c2-b7aa-f0621d5781fe))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "R25")
+          (unit 1)))))
+  (label "SYS"
+    (at 137.16 115.57 0)
+    (effects
+      (font
+        (size .85 .85))
+      (justify left bottom))
+    (uuid 3ed5d085-4346-4e85-bcf4-63e4d4217f82)))
