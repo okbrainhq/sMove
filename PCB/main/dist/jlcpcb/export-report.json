@@ -1,6 +1,6 @@
 {
   "tool": "scripts/jlcpcb/export.py",
-  "generated_utc": "2026-09-15T05:18:09+00:00",
+  "generated_utc": "2026-09-15T05:33:16+00:00",
   "manufacturing_release": false,
   "note": "Engineering export for review; not a fabrication, assembly or charging release.",
   "kicad_cli": {
@@ -13,7 +13,7 @@
     "schematic": "smove-r2-main.kicad_sch"
   },
   "sources": {
-    "smove-r2-main.kicad_pcb": "d31fc47f3d1580f90c66d34822a9f821aa7732b9bfde5d45c3f0805c96719bc5",
+    "smove-r2-main.kicad_pcb": "ecf096fff19395ffa9193e2af54935c1e31e8c1b2325d83acbebdbb169156a9f",
     "smove-r2-main.kicad_sch": "334a1fa4f056cc50a5d7a16f4c37cc58035967c31b23cdd143369853b0a555b4",
     "compute.kicad_sch": "70deb0f1e0f652875fc6e41a7c83170e3e1c3ef4c135d17c0a970822812387f8",
     "imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
@@ -31,7 +31,7 @@
       100.0,
       135.0
     ],
-    "footprints": 47,
+    "footprints": 50,
     "position_origin": "drill/place file origin"
   },
   "assembly": {
@@ -40,6 +40,18 @@
     "layer": "both",
     "include_through_hole": false,
     "skipped": [
+      {
+        "reference": "H1",
+        "reason": "excluded from BOM; excluded from position files; through-hole footprint"
+      },
+      {
+        "reference": "H2",
+        "reason": "excluded from BOM; excluded from position files; through-hole footprint"
+      },
+      {
+        "reference": "H3",
+        "reason": "excluded from BOM; excluded from position files; through-hole footprint"
+      },
       {
         "reference": "J2",
         "reason": "excluded from BOM; excluded from position files; through-hole footprint; excluded from BOM in the schematic"
@@ -82,27 +94,31 @@
       "B.Paste"
     ],
     "files": {
-      "smove-r2-main-B_Cu.gbl": "ccbdc34a09a374c4eac2cb5a7e42361932f990d56ed06d35dac5822f27ec753c",
-      "smove-r2-main-B_Mask.gbs": "7ae8d3617ebc3d883d71b70683619ddc13094d7f7aa7e37f360211bc46d58736",
-      "smove-r2-main-B_Paste.gbp": "701f55c1ac157a83c489f2da2fd1e473914d9dce0d69d09772a76e17d0615703",
-      "smove-r2-main-B_Silkscreen.gbo": "6e591d86ef218c0da79254b2d5475c17d27fa3d9f22d4290b8b86715921bc33b",
-      "smove-r2-main-Edge_Cuts.gm1": "12fd50a0e83ad9dfa82e7b6702b9573845be50c651ef271de6a25a1ab955f403",
-      "smove-r2-main-F_Cu.gtl": "fd2291c16c55e7ce94781196a92b05d9084b0d50635c0d98fd7bd6714c4ba5b3",
-      "smove-r2-main-F_Mask.gts": "f3014856b846d36475a8bd5c1be0e4822ea355b88d0145552654ec75f7e8673e",
-      "smove-r2-main-F_Paste.gtp": "cb3cde6c45b0c7ba0f822d1b220b3612969d9a95bb54ae91de14e347e7a6dbaf",
-      "smove-r2-main-F_Silkscreen.gto": "5151183f090ad65fd5991aaeef7bc97d8b05d9991f0b85488bb0db7adaf88d80",
-      "smove-r2-main-In1_Cu.g1": "608680cb50e4168608024c5fd5a5ecf0b671860a28d8b15ea9f1ef41e93871a5",
-      "smove-r2-main-In2_Cu.g2": "e973ed0330c743f6e415b840483ecec5d643da8c1a23930716c2cf854a319588",
-      "smove-r2-main-NPTH.drl": "704f41cf89bf862cc86256cdab55068f11f10112b355824fca8e4c2fcef49af8",
-      "smove-r2-main-PTH.drl": "31beb0e1b3661b8a7119c4f8a891e964486070e39cdec6f7446a9ac227c132ee",
-      "smove-r2-main-job.gbrjob": "5c812202ab59f2009a14c3dff4c2560cbb0e1bea53d81d654b81753ac1ab3a64"
+      "smove-r2-main-B_Cu.gbl": "c80f99eecbd252243da1b9fec60aee5c60bbe1057732e45271701b5e93bb8fcb",
+      "smove-r2-main-B_Mask.gbs": "fb5475c1257337db58c1514f2a24e21552b7829df90d433ae568b174883b235b",
+      "smove-r2-main-B_Paste.gbp": "86b7d332e57e300b2b1a1549743eb67a76326c8b66169fa992d29c0933b221c6",
+      "smove-r2-main-B_Silkscreen.gbo": "2820d7fbe5064fd832f4f23f55b8fdd32fa5429ce85dbedec64bc086e32b4480",
+      "smove-r2-main-Edge_Cuts.gm1": "27d0676c17bdee54529c7f265595ad7b0edd4f0a6cbe7eea6a4444aa1444c377",
+      "smove-r2-main-F_Cu.gtl": "077c802b371439797f0554d6ee551ae1b82d0e3bf0131e47d1c34c59ffd8926c",
+      "smove-r2-main-F_Mask.gts": "058629e16b1a6d54d2810a4360956e7d3deea48ed6ca27f895bdabf55b740e57",
+      "smove-r2-main-F_Paste.gtp": "a242a9b4418f1bbeea60f90cc463459d4cbc1fae91922949433580e085c34cac",
+      "smove-r2-main-F_Silkscreen.gto": "dd9476dd2528b74f02a0b0ee7be7b37ac22c03de59a5e0fd4f1740536e43090e",
+      "smove-r2-main-In1_Cu.g1": "653577d311a07dab86ece8271aa49056157faddb7e6222b99b7a9ce247457954",
+      "smove-r2-main-In2_Cu.g2": "2aa6e61df9a1ecf4bc496370b068ead24f1ef5a24d1a8ce9a3bab41e43abe78d",
+      "smove-r2-main-NPTH.drl": "68040f8a633128e748b8ed7c55f320d399876691cdc682334c4bb731c96a243e",
+      "smove-r2-main-PTH.drl": "54408aad9db8d0446596da67c275f83bc5e8b2429637af17c09b414576ae5447",
+      "smove-r2-main-job.gbrjob": "0cadf43864fa21a49285d8fd8092ac3c7b51950ca3f1719c35c8c65f26ac4d70"
     },
     "note": "KiCad writes its plot creation date into each Gerber, so these hashes change between runs; the plotted geometry does not."
   },
   "artifacts": {
-    "gerber.zip": "90ffddb26584f5dc4d2189052beef1264d2a50fb2ea52d90ab95a9cab4c0e03d",
+    "gerber.zip": "2bcc9e9310f284f28c56aecb3080dd23b7f38888786b34cea7d765b13d3dbe53",
     "bom.csv": "099f86019fecea2446424b664b130671b66995860dd767d2c98918f5b8712b50",
     "pick_and_place.csv": "8ba2f2c2f26eb30cfd21cbf9d62ce39029120e87b7c719e1b6f7964042aec427"
   },
-  "warnings": []
+  "warnings": [
+    "H1 has a board footprint but no schematic symbol (board data used)",
+    "H2 has a board footprint but no schematic symbol (board data used)",
+    "H3 has a board footprint but no schematic symbol (board data used)"
+  ]
 }

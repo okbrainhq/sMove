@@ -17,6 +17,46 @@ Verified with KiCad 9.0.8: the board reloads with the same 47 footprints, 461 tr
 
 **Status note:** the headings below describe earlier working states. DRC on the currently saved `smove-r2-main.kicad_pcb` reports 0 violations, 0 unconnected items and 0 schematic-parity issues, and no footprint origin lies outside the board outline, so the "UNROUTED / components staged" wording below is stale and has not been rewritten here.
 
+## M3 screw mounting holes with grounded copper rings (2026-09-15)
+
+Three plated 3.2 mm M3 clearance holes were added to the three free board corners, each
+with a 5.0 mm grounded copper ring on all four copper layers:
+
+| Ref | Corner | Centre (native mm) | Hole | Ring | Net |
+|---|---|---|---|---|---|
+| **H1** | top-left | 103.20, 103.20 | 3.2 mm plated | 5.0 mm Ø, 0.90 mm annular, mask open | `GND` |
+| **H2** | bottom-left | 103.20, 126.80 | 3.2 mm plated | same | `GND` |
+| **H3** | bottom-right | 121.80, 126.80 | 3.2 mm plated | same | `GND` |
+
+* Each centre is exactly 3.20 mm in from both adjacent edges, so the three holes are
+  identical except for the corner they avoid. The top-right corner is **occupied** by J2
+  and R3/R4/U8 — 1.4 mm of clear width, less than the drill.
+* Footprint `smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm` lives in
+  `assets/smove-r2-main.pretty/`. It is a reduced-ring variant of KiCad's
+  `MountingHole:MountingHole_3.2mm_M3_Pad`: that part's 6.4 mm pad needs 3.45 mm of
+  board-edge clearance and does not fit any corner of this board. 5.0 mm is the largest
+  ring that keeps ≥0.25 mm copper-to-edge (actual 0.70 mm), ≥0.15 mm foreign-net
+  clearance (actual 0.44/1.10/0.81 mm) and a non-overlapping courtyard (actual
+  0.26/0.41/0.33 mm, courtyard = the 5.5 mm M3 head envelope) at all three positions.
+* `board_only`, excluded from BOM and position files, no schematic symbol: mounting
+  hardware is not a purchased or placed part, and schematic parity stays 0.
+* **Zones were deliberately not refilled.** The rings join the GND node by overlapping
+  the saved In1.Cu plane (all three centres are inside the fill, DRC 0 unconnected). A
+  fresh refill would re-cut 31.6 mm² of that plane even on the unmodified board, which
+  is not part of this change.
+* Board diff is **+333 lines, 0 deletions**; deleting the three footprint blocks
+  reproduces the previous board byte-for-byte. `bom.csv` and `pick_and_place.csv` are
+  byte-identical; the Gerbers gain only the three 5.0 mm rings and their mask openings,
+  and the PTH drill gains one `T4C3.200` tool with three hits.
+* DRC **0 / 0 / 0**, ERC **0**. See the
+  [change record](../../docs/revision-r2/m3-mounting-holes/README.md) and its
+  `verification.json`; reproduce with `python3 scripts/r2/final/m3_mounting_holes.py
+  --check --geometry` and `python3 scripts/r2/m3-mounting-holes/verify.py`.
+* **The enclosure does not have these holes.** `housing/` is still the screwless
+  revision (no bosses, threads or inserts); it needs a companion revision before M3
+  hardware is usable. Physical fit, torque and the RF effect of the new metal near the
+  ESP32-C3 antenna are unqualified.
+
 ## Silkscreen outlines, pin-1 markers and free-library parts (2026-09-15)
 
 All 46 assembled parts still carry verified `LCSC`+`MPN` fields, and the export

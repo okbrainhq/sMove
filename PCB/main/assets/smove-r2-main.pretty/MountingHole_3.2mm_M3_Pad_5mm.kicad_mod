@@ -1,0 +1,111 @@
+(footprint "MountingHole_3.2mm_M3_Pad_5mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "M3 mounting hole: 3.2 mm plated drill with a grounded 5.0 mm copper ring (0.90 mm annular), 2.75 mm courtyard = 5.5 mm head envelope. Project-local compact variant of KiCad's MountingHole:MountingHole_3.2mm_M3_Pad, whose 6.4 mm pad does not fit the 25 x 30 mm R2 main board corners.")
+	(tags "mountinghole M3 screw shield ground ring PTH")
+	(property "Reference" "REF**"
+		(at 0 -3.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff78cde3-ed43-51b8-b4c9-3dad86d32347")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+		(at 0 3.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83c4241f-2928-5742-a0af-e971cff47b99")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f114bfe-d10a-58cd-929c-617a9798789f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "M3 screw mounting hole, 3.2 mm PTH, 5.0 mm grounded copper ring"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4170e76d-00d6-5219-81d3-8a31de25984b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 1.6 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "8c7fc34e-4ece-5dad-837b-d9d57ae13a35")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.75 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c0919d79-35c1-5710-bfc2-88a3ec58c99b")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b2275a01-e3eb-5ab3-b174-d5113de584b1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7c82c491-db75-52be-878a-4edf22fd7a8e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 5 5)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "14745054-4c9b-5987-9ada-a8b1d31e8cd5")
+	)
+	(embedded_fonts no)
+)

@@ -11285,6 +11285,339 @@
 			)
 		)
 	)
+	(footprint "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+		(layer "F.Cu")
+		(uuid "628b4190-f4b8-521a-9c41-11be49d8410e")
+		(at 103.2 103.2)
+		(descr "M3 mounting hole: 3.2 mm plated drill with a grounded 5.0 mm copper ring (0.90 mm annular), 2.75 mm courtyard = 5.5 mm head envelope. Project-local compact variant of KiCad's MountingHole:MountingHole_3.2mm_M3_Pad, whose 6.4 mm pad does not fit the 25 x 30 mm R2 main board corners.")
+		(tags "mountinghole M3 screw shield ground ring PTH")
+		(property "Reference" "H1"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41a11879-0b04-520c-bef0-cb9cfa9ec7c6")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "106ca1c8-d750-56db-bbc2-2ac76de8e4e1")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1332781e-54ad-5673-bd8a-34d1cc298e40")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "M3 screw mounting hole, 3.2 mm PTH, 5.0 mm grounded copper ring"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07d433db-bcaf-501b-b8d4-993f3c3bf860")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 1.6 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "c3aea486-fac7-5b04-8fdf-7edd183e6a8f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.75 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "df2cba59-6fb6-5a56-bab3-ece6c6d14de2")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "dcbb11cb-6b39-55f6-aa63-6a260ca820f6")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c8625387-7bfd-5ecd-ac15-1285e0aba82c")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5 5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 18 "GND")
+			(zone_connect 2)
+			(uuid "243e9e72-7e87-56de-b6ec-adf3c7603449")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+		(layer "F.Cu")
+		(uuid "930ab1d6-6339-58f4-98a1-f732f245afc9")
+		(at 103.2 126.8)
+		(descr "M3 mounting hole: 3.2 mm plated drill with a grounded 5.0 mm copper ring (0.90 mm annular), 2.75 mm courtyard = 5.5 mm head envelope. Project-local compact variant of KiCad's MountingHole:MountingHole_3.2mm_M3_Pad, whose 6.4 mm pad does not fit the 25 x 30 mm R2 main board corners.")
+		(tags "mountinghole M3 screw shield ground ring PTH")
+		(property "Reference" "H2"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4eee5083-3d80-5c89-a1e1-58a85c06c930")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cbc5b92-febb-56e1-801c-8a3c90547d95")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f49d25b-ecc7-5808-a15c-d9943e5315c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "M3 screw mounting hole, 3.2 mm PTH, 5.0 mm grounded copper ring"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be206eec-82ec-56f3-839f-e44597f37fb5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 1.6 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "6e9f6a47-4a18-5038-8911-2918c90692e5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.75 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a6b6d428-c9ff-5b01-8ffe-f3cc3297eac1")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "5b588752-942c-5a92-b337-cb2d73de49a2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5d7c7ccd-b29a-52a8-a98b-c49f1818c1c1")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5 5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 18 "GND")
+			(zone_connect 2)
+			(uuid "9319da20-7121-527b-9761-741c00908c33")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+		(layer "F.Cu")
+		(uuid "66d8f064-f3e1-5887-8e71-554d50f0d31f")
+		(at 121.8 126.8)
+		(descr "M3 mounting hole: 3.2 mm plated drill with a grounded 5.0 mm copper ring (0.90 mm annular), 2.75 mm courtyard = 5.5 mm head envelope. Project-local compact variant of KiCad's MountingHole:MountingHole_3.2mm_M3_Pad, whose 6.4 mm pad does not fit the 25 x 30 mm R2 main board corners.")
+		(tags "mountinghole M3 screw shield ground ring PTH")
+		(property "Reference" "H3"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0dd5b41-1e9b-5619-922e-f52b24e101c6")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a55665b2-9c96-5b27-afa8-75dc8649faf3")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc7f25ea-0980-549c-8740-db8327fddf8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "M3 screw mounting hole, 3.2 mm PTH, 5.0 mm grounded copper ring"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b35fc4a0-0991-5150-aeab-57b23cb49b57")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 1.6 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "4a99a46b-40ea-5c2a-b659-7ae95696f53f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.75 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ac2aec87-8c09-5b12-bf47-0bbf106435bd")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "6cdadd9a-6967-58ab-adbe-ff1efb690589")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "fde07623-61c9-53bd-b7d6-57a679881b81")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 5 5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 18 "GND")
+			(zone_connect 2)
+			(uuid "07aef84a-f90c-5c9b-94f5-39c3152c5033")
+		)
+		(embedded_fonts no)
+	)
 	(gr_line
 		(start 100 100)
 		(end 125 100)
