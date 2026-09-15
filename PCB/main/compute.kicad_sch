@@ -1418,6 +1418,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Espressif Systems"
+      (at 203.2 118.11 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "3"
       (uuid c005d335-5405-5ee8-b11d-170b5e53af9c))
     (pin "26"
@@ -1565,6 +1571,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "XUNPU"
+      (at 121.92 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid c6c16951-4a39-53a2-8b75-67e3ed7341d3))
     (pin "2"
@@ -1610,6 +1622,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "XUNPU"
+      (at 289.56 200.66 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 35b5ce07-ded1-5371-b61a-76688a4839f0))
     (pin "2"
@@ -1650,6 +1668,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C458749"
+      (at 322.58 127 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "Lite-On"
       (at 322.58 127 0)
       (effects
         (font
@@ -1704,6 +1728,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 121.92 63.5 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 5f09daf9-e556-5679-a84e-658a50319fbb))
     (pin "2"
@@ -1744,6 +1774,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25092"
+      (at 121.92 76.2 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 121.92 76.2 0)
       (effects
         (font
@@ -1794,6 +1830,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 137.16 78.74 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 6552cb6b-e3b4-5cea-807e-a0dab1056326))
     (pin "2"
@@ -1834,6 +1876,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25744"
+      (at 147.32 215.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 147.32 215.9 0)
       (effects
         (font
@@ -1884,6 +1932,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 266.7 215.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 65a11732-4506-57f8-9de2-f27abed2de69))
     (pin "2"
@@ -1924,6 +1978,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25744"
+      (at 160.02 215.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 160.02 215.9 0)
       (effects
         (font
@@ -1974,6 +2034,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 254 215.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 765a84a7-9414-5c57-8028-cc2532b6b6ec))
     (pin "2"
@@ -2014,6 +2080,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C11702"
+      (at 259.08 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 259.08 88.9 0)
       (effects
         (font
@@ -2064,6 +2136,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 269.24 101.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid e40750a4-9490-5713-9be1-b932e09b3f24))
     (pin "2"
@@ -2104,6 +2182,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C11702"
+      (at 279.4 114.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 279.4 114.3 0)
       (effects
         (font
@@ -2154,6 +2238,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 210.82 33.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid be674e4a-a400-5679-b42b-58479ca3ddfb))
     (pin "2"
@@ -2194,6 +2284,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C52923"
+      (at 134.62 218.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
       (at 134.62 218.44 0)
       (effects
         (font

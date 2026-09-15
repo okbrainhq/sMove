@@ -630,6 +630,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Korean Hroparts Elec"
+      (at 78.74 92.71 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "A4"
       (uuid 15f902b4-1a47-5fc2-8440-ef74aaa10a68))
     (pin "A9"
@@ -705,6 +711,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "STMicroelectronics"
+      (at 149.86 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 46a72f6f-0650-5a4b-991e-2d4aa6e7db39))
     (pin "6"
@@ -758,6 +770,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Nexperia"
+      (at 149.86 128.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid b0802744-6096-59f0-833a-a555b158e46b))
     (pin "2"
@@ -805,6 +823,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 119.38 142.24 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 2f9be030-d3d7-5fe8-aa06-eafb1a92a85f))
     (pin "2"
@@ -845,6 +869,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25905"
+      (at 106.68 152.4 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 106.68 152.4 0)
       (effects
         (font
