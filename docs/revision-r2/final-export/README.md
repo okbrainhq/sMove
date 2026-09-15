@@ -2,7 +2,7 @@
 
 # Current R2 deliverables and reproduction
 
-**Engineering prototype; manufacturing_release=false.** The current work implements a unified D1 schematic symbol and an actual coplanar/body-outward enclosure redesign. This supersedes the old cleanup-only/perpendicular-assembly status, not electrical, physical-fit or charging qualification limits. [Change record](../rgb-body/README.md), [main](../../../PCB/main/README.md), [carrier](../../../PCB/imu-carrier/README.md), [housing / GUI](../../../housing/README.md).
+**Engineering prototype; manufacturing_release=false.** The current work implements a unified D1 schematic symbol and an actual coplanar/body-outward enclosure redesign. This supersedes the old cleanup-only/perpendicular-assembly status, not electrical, physical-fit or charging qualification limits. [Change record](../rgb-body/README.md), [main](../../../PCB/main/README.md), [housing / GUI](../../../housing/README.md).
 
 ## Electrical and retention regression
 
@@ -12,7 +12,6 @@ Run from the repository root with the system interpreter providing pcbnew:
 /usr/bin/python3 scripts/r2/main/unify_rgb.py --check
 /usr/bin/python3 scripts/r2/main/verify_rgb.py
 /usr/bin/python3 scripts/r2/main/verify_button_labels.py
-/usr/bin/python3 scripts/r2/imu-carrier/verify.py
 /usr/bin/python3 scripts/r2/enclosure/extract.py
 /usr/bin/python3 scripts/r2/enclosure/contact_audit.py
 /usr/bin/python3 scripts/r2/enclosure/audit_body_frame.py

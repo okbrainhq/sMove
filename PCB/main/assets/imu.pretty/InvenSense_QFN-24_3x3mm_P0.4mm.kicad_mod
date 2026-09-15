@@ -521,7 +521,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/imu-models/U2_MAX_PACKAGE_ENVELOPE.step"
+	(model "${KIPRJMOD}/assets/imu-models/U2_MAX_PACKAGE_ENVELOPE.step"
 		(offset
 			(xyz 0 0 0)
 		)

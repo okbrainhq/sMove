@@ -3,12 +3,12 @@
   (lib
     (name "smove-r2-main")
     (type "KiCad")
-    (uri "${KIPRJMOD}/smove-r2-main.pretty")
+    (uri "${KIPRJMOD}/assets/smove-r2-main.pretty")
     (options "")
     (descr "R2 main local footprints"))
   (lib
     (name "imu")
     (type "KiCad")
-    (uri "${KIPRJMOD}/imu.pretty")
+    (uri "${KIPRJMOD}/assets/imu.pretty")
     (options "")
     (descr "Project-local integrated circuit source")))

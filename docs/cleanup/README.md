@@ -8,11 +8,11 @@ Source-cleanup baseline: former main `9c7bb84cde1e7ee5842be48dd34e0169e0914b47`,
 
 CFIX archival immutability, pre-R22 reference-board comparison, pre-ECO placement preservation, old carrier export preservation and whole-release bundle smoke tests no longer define current validity. Those inputs/checkpoints are not part of the current root snapshot; saved CodeChat workspaces and retained remote history remain available. No unsafe/reference KiCad files are retained just to satisfy obsolete tests.
 
-Current equivalents are native configured ERC/DRC/net exports, main pin/net/fitted/outline/antenna/retention invariants, carrier independent pin/land/geometry audit, combined electrical/connector/endpoint checks, canonical housing extraction/contact checks, native BOM/CPL/CID/placement validation and before/after SHA256 parity. Historical test counts are not recycled as new results.
+Current equivalents are native configured ERC/DRC/net exports, main pin/net/fitted/outline/antenna/retention invariants, combined electrical/connector/endpoint checks, canonical housing extraction/contact checks, native BOM/CPL/CID/placement validation and before/after SHA256 parity. Historical test counts are not recycled as new results.
 
 ## Layout and scope
 
-`PCB/main` and `PCB/imu-carrier` each own one native project and their own dist. `housing` owns one editable FCStd and printable/reference outputs in dist. Fabrication ZIPs contain only Gerber/drill fabrication files, with separate BOM and pick-and-place CSVs. No top-level release/mega ZIP or archive junk folder.
+`PCB/main` owns one native project and its own dist. `housing` owns one editable FCStd and printable/reference outputs in dist. Fabrication ZIPs contain only Gerber/drill fabrication files, with separate BOM and pick-and-place CSVs. No top-level release/mega ZIP or archive junk folder.
 
 Current source evidence, exact Samsung curves, footprint/pin audits, original models/licenses and historical stock retrieval receipts remain. Reports written by checks are disposable `.cache/` files. Old snapshots, synthetic fixtures, build/reroute/ECO scripts and historical entrypoints are removed.
 

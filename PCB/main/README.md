@@ -1,5 +1,22 @@
 # Main PCB — 25 × 30 × 1 mm manual-layout reset
 
+## Library and asset layout
+
+All project-local KiCad libraries and models now live under `assets/` (moved from the project root; content byte-identical apart from the references below):
+
+| Path | Contents |
+|---|---|
+| `assets/smove-r2-main.pretty/` | main footprint library (nickname `smove-r2-main`) |
+| `assets/imu.pretty/` | integrated-IMU footprint library (nickname `imu`) |
+| `assets/smove-r2-main.kicad_sym`, `assets/imu.kicad_sym`, `assets/Device.kicad_sym`, `assets/power.kicad_sym` | project-local symbol libraries |
+| `assets/imu-models/` | local STEP models, referenced as `${KIPRJMOD}/assets/imu-models/...` |
+
+`fp-lib-table`/`sym-lib-table` stay at the project root and point at `${KIPRJMOD}/assets/...`. Schematic sheets, project/design-rule files and `dist/` are untouched; only the U2 3D-model path (in the board and in `assets/imu.pretty/InvenSense_QFN-24_3x3mm_P0.4mm.kicad_mod`) changed text.
+
+Verified with KiCad 9.0.8: the board reloads with the same 47 footprints, 461 tracks and 7 zones; DRC reports 0 violations / 0 unconnected / 0 schematic-parity (the DRC library check covers footprint-library resolution), ERC reports 0 violations, and all four symbol libraries parse and still contain every referenced symbol. Historical ECO scripts under `scripts/r2/` (for example `integrated/migrate.py`, `integrated/layout.py`) still name the pre-move project-root paths; they are documented as destructive historical helpers and must not be rerun on this board.
+
+**Status note:** the headings below describe earlier working states. DRC on the currently saved `smove-r2-main.kicad_pcb` reports 0 violations, 0 unconnected items and 0 schematic-parity issues, and no footprint origin lies outside the board outline, so the "UNROUTED / components staged" wording below is stale and has not been rewritten here.
+
 ## Current: schematic links repaired; components staged — UNROUTED
 
 **All 47 schematic footprints are now present.** U1 (ESP32), J1 (USB-C), U2 (IMU), and J2 (battery +/− holes) retain their poses and geometry. The other **43 footprints are staged outside the board to the right** for manual placement. No tracks or vias were added.
