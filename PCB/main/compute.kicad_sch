@@ -2347,9 +2347,6 @@
     (at 165.1 137.16)
     (uuid 82e4f730-c72f-5891-9a3a-648259f86bf8))
   (no_connect
-    (at 241.3 88.9)
-    (uuid 48ec2e02-2725-5895-829f-4c6263869cb5))
-  (no_connect
     (at 165.1 142.24)
     (uuid 856aa2c9-77b3-5087-848a-a773c8feab8e))
   (no_connect
@@ -3689,4 +3686,36 @@
     (stroke
       (width 0)
       (type default))
-    (uuid bff2bdd4-f44b-4003-81b8-e84e84479819)))
+    (uuid bff2bdd4-f44b-4003-81b8-e84e84479819))
+  (wire
+    (pts
+      (xy 241.3 88.9)
+      (xy 243.84 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f080016-60ca-49f4-80f5-ff50f1bd3672"))
+  (wire
+    (pts
+      (xy 243.84 88.9)
+      (xy 243.84 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f5811ba1-2cf5-43fa-8286-c28799bb7e4e"))
+  (wire
+    (pts
+      (xy 243.84 96.52)
+      (xy 302.26 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd7dd728-2861-4de0-9883-6cebae0b97bb"))
+  (hierarchical_label "CHG_N"
+    (shape input)
+    (at 302.26 96.52 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "56170967-3f2a-4192-befb-782a22ccdbfe")))

@@ -120,7 +120,14 @@
         (font
           (size 1.27 1.27))
         (justify right))
-      (uuid 829a8f7e-3917-5a62-a386-90046df49a01)))
+      (uuid 829a8f7e-3917-5a62-a386-90046df49a01))
+    (pin "CHG_N" output
+      (at 91.44 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify right))
+      (uuid "18eab5ef-4607-46ad-8c1e-3e811a2a1e50")))
   (sheet
     (at 177.8 45.72)
     (size 91.44 116.84)
@@ -201,7 +208,14 @@
         (font
           (size 1.27 1.27))
         (justify right))
-      (uuid 474f2a74-8195-5574-a11c-f7491174b1a3)))
+      (uuid 474f2a74-8195-5574-a11c-f7491174b1a3))
+    (pin "CHG_N" input
+      (at 177.8 144.78 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid "85104f0d-9dfd-4e16-8a96-dc1d54fc677f")))
   (wire
     (pts
       (xy 91.44 58.42)
@@ -547,4 +561,19 @@
       (font
         (size 1.27 1.27))
       (justify left bottom))
-    (uuid c0d0c39a-8d94-5361-8eb0-148481b09d7a)))
+    (uuid c0d0c39a-8d94-5361-8eb0-148481b09d7a))
+  (wire
+    (pts
+      (xy 91.44 144.78)
+      (xy 177.8 144.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ccaf976-7414-486c-af3b-727b5dc9c6e4"))
+  (label "CHG_N"
+    (at 111.76 144.78 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left bottom))
+    (uuid "f124ad9c-29c9-431d-bbf5-356de9c9db20")))

@@ -592,7 +592,54 @@
             (effects
               (font
                 (size 1.27 1.27))))))
-      (embedded_fonts no)))
+      (embedded_fonts no))
+    (symbol "smove-r2-main:SW1"
+      (pin_names
+        (offset .508))
+      (in_bom no)
+      (on_board yes)
+      (property "Reference" "SW"
+        (at 0.0 0.0 0)
+        (effects
+          (font
+            (size 1 1))))
+      (property "Value" "SW_WIRE_PADS"
+        (at 0.0 0.0 0)
+        (effects
+          (font
+            (size 1 1))))
+      (symbol "SW1_0_1"
+        (rectangle
+          (start -5.08 8.89)
+          (end 5.08 -8.89)
+          (stroke
+            (width .254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "SW1_1_1"
+        (pin passive line
+          (at 10.16 1.27 180)
+          (length 5.08)
+          (name "A"
+            (effects
+              (font
+                (size 0.85 0.85))))
+          (number "1"
+            (effects
+              (font
+                (size 0.8 0.8)))))
+        (pin passive line
+          (at 10.16 -3.81 180)
+          (length 5.08)
+          (name "B"
+            (effects
+              (font
+                (size 0.85 0.85))))
+          (number "2"
+            (effects
+              (font
+                (size 0.8 0.8))))))))
   (symbol
     (lib_id "smove-r2-main:U6")
     (at 106.68 71.12 0)
@@ -681,24 +728,24 @@
       (effects
         (font
           (size 1 1))))
-    (property "Value" "AP2112K-3.3TRG1"
+    (property "Value" "XC6220B331MR-G"
       (at 187.96 32.766 0)
       (effects
         (font
           (size 0.95 0.95))))
-    (property "Footprint" "smove-r2-main:SOT-23-5"
+    (property "Footprint" "smove-r2-main:SOT-25_XC6220"
       (at 187.96 50.8 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "MPN" "AP2112K-3.3TRG1"
+    (property "MPN" "XC6220B331MR-G"
       (at 187.96 50.8 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "LCSC" "C51118"
+    (property "LCSC" "C86534"
       (at 187.96 50.8 0)
       (effects
         (font
@@ -721,19 +768,19 @@
           (unit 1)))))
   (symbol
     (lib_id "smove-r2-main:J2")
-    (at 50.8 77.47 0)
+    (at 50.8 87.63 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid 21368572-48a5-5c87-8fc4-78e6b3ab2ef1)
     (property "Reference" "J2"
-      (at 25.4 73.66 0)
+      (at 25.4 83.82 0)
       (effects
         (font
           (size 1 1))))
     (property "Value" "Battery wire pads 2.54mm"
-      (at 25.4 77.216 0)
+      (at 25.4 87.376 0)
       (effects
         (font
           (size 0.95 0.95))))
@@ -1542,9 +1589,6 @@
     (at 195.58 66.04)
     (uuid f72aab97-247b-5621-85d2-5a564de135d4))
   (no_connect
-    (at 76.2 58.42)
-    (uuid 783568f3-0505-57fc-aa73-3b85fa8696ee))
-  (no_connect
     (at 137.16 93.98)
     (uuid c0a30e6c-eabc-5841-aad3-6338a22cd42a))
   (no_connect
@@ -1710,14 +1754,6 @@
       (width 0)
       (type default))
     (uuid 994c218f-2e5d-56ed-8fc5-5c8f50251f5b))
-  (wire
-    (pts
-      (xy 60.96 76.2)
-      (xy 66.04 76.2))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid 0382ed24-b991-5b00-a2d9-3231c3409275))
   (wire
     (pts
       (xy 66.04 76.2)
@@ -1968,7 +2004,7 @@
     (uuid 0f701458-72bf-545d-bbe4-b50c5cf44f92))
   (wire
     (pts
-      (xy 60.96 81.28)
+      (xy 60.96 91.44)
       (xy 60.96 88.9))
     (stroke
       (width 0)
@@ -2245,4 +2281,213 @@
       (font
         (size 1.52 1.52))
       (justify left))
-    (uuid 692625f9-6212-5619-ac41-24db6ecdd8f8)))
+    (uuid 692625f9-6212-5619-ac41-24db6ecdd8f8))
+  (symbol
+    (lib_id "smove-r2-main:SW1")
+    (at 50.8 66.04 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "b2b14b31-ffdb-4bd2-b75b-c964cd33fde9")
+    (property "Reference" "SW1"
+      (at 44.45 55.88 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Value" "Off-board pack toggle switch (2x wire pads 2.54mm)"
+      (at 44.45 58.42 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm"
+      (at 50.8 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "MPN" ""
+      (at 50.8 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "LCSC" ""
+      (at 50.8 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b84f44ad-2f7a-41ce-8dc4-9b77b7c3c1e2"))
+    (pin "2"
+      (uuid "f81d0196-d21a-40da-a337-386a7f728720"))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "SW1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 66.04 52.07 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7a76de67-07c1-4bf1-b58c-f8ad8f54dd01")
+    (property "Reference" "R24"
+      (at 74.168 50.419 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Value" "100k"
+      (at 74.168 53.721 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "smove-r2-main:R_0402_1005Metric"
+      (at 66.04 52.07 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "MPN" "0402WGF1003TCE"
+      (at 66.04 52.07 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "LCSC" "C25741"
+      (at 66.04 52.07 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "95b65f13-ca61-45ad-95e0-6e091b58f9fe"))
+    (pin "2"
+      (uuid "f2cbc8df-0182-414f-8864-f2012530bf75"))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "R24")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 60.96 69.85)
+      (xy 60.96 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ad8d783d-104e-4517-8df1-9657fdf2915c"))
+  (wire
+    (pts
+      (xy 60.96 64.77)
+      (xy 78.74 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e59d3ac1-5cd3-4c69-95f2-1c221e2163da"))
+  (wire
+    (pts
+      (xy 78.74 64.77)
+      (xy 78.74 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c459f174-e8f0-4b45-aed4-7802ca724d61"))
+  (wire
+    (pts
+      (xy 78.74 76.2)
+      (xy 76.2 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "46b81061-49e9-4849-87d5-fb5fb017512f"))
+  (wire
+    (pts
+      (xy 66.04 55.88)
+      (xy 66.04 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5786b159-3035-4d5c-adf2-244214fe3c18"))
+  (wire
+    (pts
+      (xy 66.04 48.26)
+      (xy 68.58 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "96b89e5c-be72-4fb7-b14a-cd0aea53d426"))
+  (wire
+    (pts
+      (xy 66.04 58.42)
+      (xy 71.12 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e138891f-f828-411d-8357-5e012263f290"))
+  (wire
+    (pts
+      (xy 71.12 58.42)
+      (xy 76.2 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "934fcf5b-d069-4214-9203-a2fa5fd100d9"))
+  (wire
+    (pts
+      (xy 71.12 58.42)
+      (xy 71.12 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ebd4c7f0-4ee0-44db-ac17-84ef44219092"))
+  (junction
+    (at 76.2 76.2)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "9b578f77-9c59-4545-b432-fb6e29a434af"))
+  (junction
+    (at 71.12 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "ffd07fcb-6ab6-4e70-adff-989263fcc8a7"))
+  (label "PACK_RAW"
+    (at 60.96 78.74 90)
+    (effects
+      (font
+        (size .85 .85))
+      (justify left bottom))
+    (uuid "97264b8c-f450-44db-8e88-f844acd4c407"))
+  (hierarchical_label "3V3_MAIN"
+    (shape output)
+    (at 68.58 48.26 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "96133c3a-6381-4271-885f-5d1a2eb7de59"))
+  (hierarchical_label "CHG_N"
+    (shape output)
+    (at 71.12 55.88 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "833a571f-30fa-4fe3-93e2-addc3fb30cb1"))
+  (text "SW1: hard pack cutoff in the J2 + lead (off-board toggle, >=0.5A, contacts <50 mOhm, >=6V DC)."
+    (at 25.4 165.1 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "aacbcdd7-b4dc-4210-9b7c-8e376987d1f2"))
+  (text "U4 = XC6220B331MR-G SOT-25 (1A, ~60mV dropout @300mA). R24 pulls charger CHG_N up to 3V3_MAIN on U1 GPIO6."
+    (at 25.4 168.91 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "df133fa9-a98b-44fd-94d9-cde3036fd348")))
