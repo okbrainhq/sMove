@@ -1,6 +1,6 @@
 {
   "tool": "scripts/jlcpcb/export.py",
-  "generated_utc": "2026-09-15T15:54:03+00:00",
+  "generated_utc": "2026-09-15T15:58:24+00:00",
   "manufacturing_release": false,
   "note": "Engineering export for review; not a fabrication, assembly or charging release.",
   "kicad_cli": {
@@ -98,25 +98,25 @@
       "B.Paste"
     ],
     "files": {
-      "smove-r2-main-B_Cu.gbl": "eeb2f7938c8cb341d3c7dc59e6d5d7b1231c2797d91f5a188bb88b966475ad8a",
-      "smove-r2-main-B_Mask.gbs": "06a36149b263845043b6063e59c5f5b7bb1777181fdd183a3731686352a30c05",
-      "smove-r2-main-B_Paste.gbp": "c7c14a2841e0987c6329b4b5bc312c749430853ff4f9aa84386911ca319b56c9",
-      "smove-r2-main-B_Silkscreen.gbo": "5eaea6290c0652d854e6fdf37776279af52338df4961984ae737f85c1c1945d3",
-      "smove-r2-main-Edge_Cuts.gm1": "d37071554962d0ef207224a7358dcf245d0358c6c7e30cf2363b48818a2f93f6",
-      "smove-r2-main-F_Cu.gtl": "1c16e72a81a35afe4b7a5f592f737cbe9d8a3bd35c16f4dc381c00e58e596605",
-      "smove-r2-main-F_Mask.gts": "926e69e7e5f48d9754c473ed6e91359835672373a4c927a7f3d70166c3abcf9b",
-      "smove-r2-main-F_Paste.gtp": "28078ce7ed2d185f035ab82e46d336070f01030830e3ae7648bbd3bfe7ccb90b",
-      "smove-r2-main-F_Silkscreen.gto": "08476d819f376a74cf2b17efa1f7c6240c2d0f34f4804e9672670afd0e756b80",
-      "smove-r2-main-In1_Cu.g1": "16cfcd1b0074f216cd9eb09c2369d168ee07b0450f7dd7b4c57e2df6545a4b92",
-      "smove-r2-main-In2_Cu.g2": "5e3630bfc24edf711b0235f3f361a6659cd7d392140cc2066bbd9e1aef512208",
-      "smove-r2-main-NPTH.drl": "017de78e0dede3261792c1b50c2ff5d93be69a5c8e91aa492386a353f560f240",
-      "smove-r2-main-PTH.drl": "230cfb67cfe73e57185995d98f576cb947dbb500882d83808cdaf28e4f1fbc76",
-      "smove-r2-main-job.gbrjob": "c027eef1768adad1256e4b7f97c140bf39607f5887adb209fe9d8ca1825b78a7"
+      "smove-r2-main-B_Cu.gbl": "d7a77289eef64d701e39b20c7a7bd0175589abb31e1c0a955bdb1bf1bc2fa8f8",
+      "smove-r2-main-B_Mask.gbs": "ce2a71edb0080fb6b4af1286d9e53b5bfd41e3a83143f8c554c16b2863ff54be",
+      "smove-r2-main-B_Paste.gbp": "4cf1af6a5d1c19f99c8eb491e55f3d2cb819881ee8c8b3febe10df4dfb6cac1b",
+      "smove-r2-main-B_Silkscreen.gbo": "d353331bbb89153099f0160108c5fbe5dc61aaa786c82a17adc88889282ce56e",
+      "smove-r2-main-Edge_Cuts.gm1": "1bfdb4a8258e28fa817b916617adbe4b30e74abbc2a50520bd6b5fc4821c346a",
+      "smove-r2-main-F_Cu.gtl": "8505f348d1fcbf58c5ea4a574e5dbbf83d264496593facfa30774e1bd5eda148",
+      "smove-r2-main-F_Mask.gts": "9b54c5a3a7bde6b47c011e141d88f8b508e63f07c8d1cbd520e2353ca36c3374",
+      "smove-r2-main-F_Paste.gtp": "3c0e4ea23579139ef54c5de7e7f23f54b068a68ad5467c9b54cecccecaf11556",
+      "smove-r2-main-F_Silkscreen.gto": "0354967429daf6da55bdc7d9a4ce30578d155d30a21849b9fa33b660a5bea694",
+      "smove-r2-main-In1_Cu.g1": "edea6faa06d3c3f88ff0948b52ec6a96d5f0b54fc10590d675a953b444f63bd2",
+      "smove-r2-main-In2_Cu.g2": "7b9d9ca4ec19bac191d694a96e17b3285ace142c6d155164b3bf6d61f9e0145b",
+      "smove-r2-main-NPTH.drl": "d707f40c700f417882d25c5b98fbed5fcee6dec61f7bfaf3164c09117c397426",
+      "smove-r2-main-PTH.drl": "4b517461ed61589ef971372c0d152c34e1708e06a155b60ce18fa5270a702ae6",
+      "smove-r2-main-job.gbrjob": "da9f791268e46cb0632e8e370c153586e9757c6485d0b0b06183bf933babea7d"
     },
     "note": "KiCad writes its plot creation date into each Gerber, so these hashes change between runs; the plotted geometry does not."
   },
   "artifacts": {
-    "gerber.zip": "f2f9e5d2517dde9709d3a164ae85de956a72850b90c310aacc4904e80fef00fb",
+    "gerber.zip": "942dcc0845e195cd1efb7857761d9fede2715efac6ad5d3427611b5a40f38e9b",
     "bom.csv": "239b5e35a592dab5a2e7bd28ca636374040667a8fbd127ea40addd9a0cfd0e03",
     "pick_and_place.csv": "a065afa75b31273f189c27d20f3ccc037094ec369e5ba455a1bb5ca44cba30b0"
   },
