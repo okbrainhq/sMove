@@ -1,5 +1,18 @@
 # Main PCB — 25 × 30 × 1 mm manual-layout reset
 
+## Current schematic ECO — pack cutoff switch, charger status, 3V3 LDO (2026-09-15, SCHEMATIC ONLY)
+
+Applied to `power.kicad_sch`, `compute.kicad_sch` and `smove-r2-main.kicad_sch`:
+
+* **SW1 — hard pack cutoff.** An off-board toggle switch in series in the battery **+** lead, upstream of the `PACK_P` node. Schematic symbol uses the same 2.54 mm two-pad wire footprint as J2 (`smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm`), `in_bom no` (user-supplied off-board part: **≥0.5 A rating, contacts <50 mΩ, ≥6 V DC**). Net split: `/Power/PACK_RAW` = J2.1 + SW1.2, `/Power/PACK_P` = SW1.1 + C2.1 + R14.1 + U6.2 + U6.3. This provides the *True OFF* that `docs/revision-r2/integrated/RADIO-BATTERY.md` records as missing.
+* **R24 (100k, LCSC C25741) + `/CHG_N` net — charger status to the MCU.** Charger open-drain `CHG_N` (U6 pin 9) is pulled up to 3V3_MAIN and routed to **U1 pad 20 = GPIO6**; `/CHG_N` = U6.9 + R24.2 + U1.20. New sheet pin added to both the Power and Compute sheet symbols.
+* **U4 = XC6220B331MR-G** (Torex, LCSC C86534) replaces `AP2112K-3.3TRG1`. The SOT-25 pin map **1=VIN 2=VSS 3=CE 4=NC 5=VOUT** is the *same function map* as the AP2112K SOT-23-5 it replaces, so no rewire and no pad remap was needed. New footprint `assets/smove-r2-main.pretty/SOT-25_XC6220.kicad_mod` (JEDEC MO-178 Var AA land pattern, identical geometry to `SOT-23-5`); the SW1 symbol was added to `assets/smove-r2-main.kicad_sym`.
+* `J2` was moved down 10.16 mm **on the sheet only** (cosmetic, no connectivity change) to make room for SW1.
+
+Verification (KiCad 9.0.8): `kicad-cli sch erc` reports **0 violations — identical to the HEAD baseline**, and `kicad-cli sch export netlist` confirms the three nets above.
+
+**Deliberately not done — no PCB change and no routing.** The board still carries the AP2112K SOT-23-5 at U4 (its footprint field now differs from the schematic) and has no SW1/R24 footprints, so a forward update (F8) plus manual placement is required before parity is restored. `dist/` and the enclosure data remain stale and must be regenerated (`python3 scripts/jlcpcb/export.py PCB/main --overwrite`) after the board is updated. **Engineering prototype — no charge or fabrication approval.**
+
 ## Library and asset layout
 
 All project-local KiCad libraries and models now live under `assets/` (moved from the project root; content byte-identical apart from the references below):
