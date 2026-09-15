@@ -400,7 +400,7 @@
 			)
 		)
 	)
-	(footprint "smove-r2-main:SOT-23-5"
+	(footprint "smove-r2-main:SOT-25_XC6220"
 		(layer "F.Cu")
 		(uuid "09169222-00af-4c8a-b199-3af3e659486d")
 		(at 110.25 119.5375 -90)
@@ -4674,7 +4674,10 @@
 				)
 			)
 		)
-		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(path "/a926f61e-132d-5af0-876e-12788077b17d/19d77d2c-0da5-58ab-bbc8-999444ed3ee0")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.6 0)
@@ -4785,7 +4788,10 @@
 				)
 			)
 		)
-		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(path "/a926f61e-132d-5af0-876e-12788077b17d/42bd4346-ec36-5d8b-b9af-7f080dbc1ad3")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.6 0)
@@ -6246,7 +6252,10 @@
 				)
 			)
 		)
-		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
+		(path "/a926f61e-132d-5af0-876e-12788077b17d/eed2f092-b6d6-5c14-8146-b94b8ab8cb73")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.6 0)

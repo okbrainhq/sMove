@@ -875,7 +875,69 @@
           (number "2"
             (effects
               (font
-                (size 1.27 1.27))))))))
+                (size 1.27 1.27)))))))
+    (symbol "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim yes)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "H"
+        (at 2.54 3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "M3 screw mounting hole: 3.2 mm plated (PTH) clearance drill with a 5.0 mm grounded copper ring on all four copper layers and a solder-mask opening over the ring, so the screw head bears on exposed GND copper. Solid zone connection (no thermal spokes). Board hardware: pad 1 is the only electrical pin, it is wired to GND, and the part is excluded from the BOM and the position files."
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "MountingHole_3.2mm_M3_Pad_5mm_0_1"
+        (circle
+          (center 0 0)
+          (radius 1.27)
+          (stroke
+            (width 1.27)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "MountingHole_3.2mm_M3_Pad_5mm_1_1"
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 1.27)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+)
   (symbol
     (lib_id "smove-r2-main:U6")
     (at 106.68 71.12 0)
@@ -2910,4 +2972,234 @@
       (project "smove-r2-main"
         (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
           (reference "R25")
-          (unit 1))))))
+          (unit 1)))))
+  (text "H1-H3 = M3 screw holes in the three free board corners: 3.2 mm plated hole, 5.0 mm ring on GND. Board hardware - no BOM or position entry."
+    (at 25.4 184.15 0)
+    (effects
+      (font
+        (size 1.02 1.02))
+      (justify left))
+    (uuid 55fde3b7-c167-54fe-bb30-60ba7fb40115))
+  (symbol
+    (lib_id "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm")
+    (at 38.1 187.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 19d77d2c-0da5-58ab-bbc8-999444ed3ee0)
+    (property "Reference" "H1"
+      (at 40.64 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+      (at 38.1 191.77 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+      (at 38.1 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Description" "M3 screw mounting hole: 3.2 mm plated (PTH) clearance drill with a 5.0 mm grounded copper ring on all four copper layers and a solder-mask opening over the ring, so the screw head bears on exposed GND copper. Solid zone connection (no thermal spokes). Board hardware: pad 1 is the only electrical pin, it is wired to GND, and the part is excluded from the BOM and the position files."
+      (at 38.1 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid e06d4c2c-0f47-5f11-9e23-de452f8b0f2e))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "H1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 38.1 190.5)
+      (xy 38.1 193.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid c752758d-556f-5cc1-bf6d-060d9aff82b2))
+  (symbol
+    (lib_id "power:GND")
+    (at 38.1 193.04 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid 28ca8f42-dc43-5acc-bfac-95dc9f58ad13)
+    (property "Reference" "#PWR28"
+      (at 38.1 185.42 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 38.1 188.976 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (hide yes)))
+    (pin "1"
+      (uuid 8bfa4570-3bd4-5e9a-b7e8-f7d5fcd67d5d))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "#PWR28")
+          (unit 1)))))
+  (symbol
+    (lib_id "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm")
+    (at 55.88 187.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid eed2f092-b6d6-5c14-8146-b94b8ab8cb73)
+    (property "Reference" "H2"
+      (at 58.42 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+      (at 55.88 191.77 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+      (at 55.88 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Description" "M3 screw mounting hole: 3.2 mm plated (PTH) clearance drill with a 5.0 mm grounded copper ring on all four copper layers and a solder-mask opening over the ring, so the screw head bears on exposed GND copper. Solid zone connection (no thermal spokes). Board hardware: pad 1 is the only electrical pin, it is wired to GND, and the part is excluded from the BOM and the position files."
+      (at 55.88 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid 850d09c7-3373-5327-b52e-fccde18f1e56))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "H2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 55.88 190.5)
+      (xy 55.88 193.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 03a7ad98-07b7-5a7f-8c7a-23794cd78ad8))
+  (symbol
+    (lib_id "power:GND")
+    (at 55.88 193.04 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid a28e14f7-1f70-5d3b-8c25-62f4c45f8b76)
+    (property "Reference" "#PWR29"
+      (at 55.88 185.42 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 55.88 188.976 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (hide yes)))
+    (pin "1"
+      (uuid f31fc2e5-b2a4-5e9d-9064-434e5000b639))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "#PWR29")
+          (unit 1)))))
+  (symbol
+    (lib_id "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm")
+    (at 73.66 187.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 42bd4346-ec36-5d8b-b9af-7f080dbc1ad3)
+    (property "Reference" "H3"
+      (at 76.2 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (justify left)))
+    (property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+      (at 73.66 191.77 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+      (at 73.66 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Description" "M3 screw mounting hole: 3.2 mm plated (PTH) clearance drill with a 5.0 mm grounded copper ring on all four copper layers and a solder-mask opening over the ring, so the screw head bears on exposed GND copper. Solid zone connection (no thermal spokes). Board hardware: pad 1 is the only electrical pin, it is wired to GND, and the part is excluded from the BOM and the position files."
+      (at 73.66 187.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid 42a3dfc1-ab2c-5794-b4f8-1f81bc4ba5ac))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "H3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 73.66 190.5)
+      (xy 73.66 193.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 6d1e6a3d-3eca-555f-bad2-beaf87f61d22))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 193.04 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid 5c0bff2b-8e87-5042-a57d-71269d58f2cb)
+    (property "Reference" "#PWR30"
+      (at 73.66 185.42 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 73.66 188.976 0)
+      (effects
+        (font
+          (size 0.95 0.95))
+        (hide yes)))
+    (pin "1"
+      (uuid fd5a25ea-0f75-5846-919f-11ab5a92c573))
+    (instances
+      (project "smove-r2-main"
+        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
+          (reference "#PWR30")
+          (unit 1)))))
+)

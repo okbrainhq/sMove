@@ -2009,4 +2009,66 @@
         (number "2"
           (effects
             (font
-              (size 1.27 1.27))))))))
+              (size 1.27 1.27)))))))
+  (symbol "MountingHole_3.2mm_M3_Pad_5mm"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 0)
+      (hide yes))
+    (exclude_from_sim yes)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "H"
+      (at 2.54 3.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "MountingHole_3.2mm_M3_Pad_5mm"
+      (at 0 -5.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "smove-r2-main:MountingHole_3.2mm_M3_Pad_5mm"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "M3 screw mounting hole: 3.2 mm plated (PTH) clearance drill with a 5.0 mm grounded copper ring on all four copper layers and a solder-mask opening over the ring, so the screw head bears on exposed GND copper. Solid zone connection (no thermal spokes). Board hardware: pad 1 is the only electrical pin, it is wired to GND, and the part is excluded from the BOM and the position files."
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (symbol "MountingHole_3.2mm_M3_Pad_5mm_0_1"
+      (circle
+        (center 0 0)
+        (radius 1.27)
+        (stroke
+          (width 1.27)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "MountingHole_3.2mm_M3_Pad_5mm_1_1"
+      (pin passive line
+        (at 0 -2.54 90)
+        (length 1.27)
+        (name "1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+)
