@@ -479,6 +479,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Torex Semicon"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bd3621a-7062-4fd8-a49d-b9f3239a7f1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/1555110c-1d31-53c3-9e59-bdb126c1727a")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -888,6 +901,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "XUNPU"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "317491bd-df28-443e-a95d-356e5db4d645")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/2a670366-1936-5aec-8f5e-8c3d3571a6ea")
 		(sheetname "/Compute/")
 		(sheetfile "compute.kicad_sch")
@@ -1013,6 +1039,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7e0ad429-4011-46a8-b844-ac7ee1a039d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1fcd0b2-5562-4e19-89eb-d88a0988215b")
 			(effects
 				(font
 					(size 1 1)
@@ -1189,6 +1228,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f822397-82ef-4bb7-b8cd-d2f149c3fbcb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/ec09f9d9-c486-5e14-a578-95693b5aed08")
 		(sheetname "/Compute/")
@@ -1351,6 +1403,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e0587610-5935-4075-ac4f-8949a8cca838")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00d321fc-6439-47f5-9651-c4c527800862")
 			(effects
 				(font
 					(size 1 1)
@@ -1887,6 +1952,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f51dc168-9afd-4076-8c72-03aa2332188e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "XUNPU"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16412751-455b-4cdf-bb0d-fad32b88d950")
 			(effects
 				(font
 					(size 1 1)
@@ -3007,6 +3085,18 @@
 				)
 			)
 		)
+(property "Manufacturer" "Korean Hroparts Elec"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "05ba3c1f-99c0-4aa8-a544-f269460a5d6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/2bda09d7-02a6-5813-8901-250e661184c8/824b74bc-0f6b-5073-82be-ae83843f2769")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
@@ -3861,6 +3951,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8a3e43e-7160-4624-8c0e-2ef671851949")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/d702c535-6d67-5fa9-9a0a-121a3ab9aa51")
 		(sheetname "/Compute/")
@@ -4023,6 +4126,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "61214c69-5fe8-4f2a-b3bc-b34f834b9fb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3486d3d-dd4f-4c50-9028-0425c6d9156e")
 			(effects
 				(font
 					(size 1 1)
@@ -4395,6 +4511,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6944af51-a8a0-4ec6-9148-092329b612c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81007f09-bf5e-447a-87ab-d07f0d5936d3")
 			(effects
 				(font
 					(size 1 1)
@@ -4793,6 +4922,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d873a0-f344-4732-997a-8a65d9f9c876")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/da7f29a5-3074-5719-a2d9-6aed95089931")
 		(sheetname "/Power/")
@@ -4955,6 +5097,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "427157f1-ec16-44e1-b624-58c49c808a8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9933dc5-f159-43da-89c3-4eb97cde05fa")
 			(effects
 				(font
 					(size 1 1)
@@ -5309,6 +5464,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1cfb33b4-4348-4ad0-8c1d-c62cb0c0c43c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c648e4af-091d-4aea-934f-b65b0905dda8")
 			(effects
 				(font
 					(size 1 1)
@@ -6206,6 +6374,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ac5d3a8b-dca0-49c4-ba7c-ce1648a93dd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "Espressif Systems"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d01861ab-43bf-4ca7-a167-34870afe7651")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7169,6 +7349,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Nexperia"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70076f04-8878-49b1-8ff9-da332c7973a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/2bda09d7-02a6-5813-8901-250e661184c8/fd3ed65c-a6f1-551c-bcf4-bfde4c1c7411")
 		(sheetname "/USB/")
 		(sheetfile "usb.kicad_sch")
@@ -7561,6 +7754,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "138d8141-71e0-4429-8c55-e7a587b7b945")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/9c09465d-3b1a-5618-8753-7dd88a3c8c8e")
 		(sheetname "/Power/")
@@ -7723,6 +7929,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cdade952-4a35-40d2-9642-3c6f4e70ef55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1360463-51fb-4063-980b-cffb6d232c84")
 			(effects
 				(font
 					(size 1 1)
@@ -7899,6 +8118,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f60389d-98fa-417c-8a29-7011713bf398")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/47e6bcb7-e31d-52ac-99bf-04a6f9153100")
 		(sheetname "/Power/")
@@ -8068,6 +8300,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfca7295-fedb-4c88-9363-b539f37ca51b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/2d62b467-ade6-4f01-b920-c6964a4c5836")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -8229,6 +8474,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "349e0a07-2e7b-4b3d-9bfa-4fdda248f198")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "900ab5c6-20e4-4e85-b43f-22ddb93fabac")
 			(effects
 				(font
 					(size 1 1)
@@ -8555,6 +8813,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "810edf29-fb22-471e-aef0-5c6b0253d3d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/f6011e9d-b5fe-58a3-9fca-949710662cde")
 		(sheetname "/Compute/")
@@ -8724,6 +8995,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbc7b270-c670-4d00-97d9-f38ab055ccf1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/eb1928cd-42fe-596f-b55e-9356c3c99c22")
 		(sheetname "/Compute/")
@@ -8886,6 +9170,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "498ea62d-35b1-4093-bd58-ca3095dc1e30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fd62301-f834-4ec3-876e-b062497e7528")
 			(effects
 				(font
 					(size 1 1)
@@ -9249,6 +9546,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Lite-On"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76dd2d9a-ca96-46a6-a7b2-b2b18504bebf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/02ba7497-9a8d-56fa-99a3-83e5b10889a3")
 		(sheetname "/Compute/")
 		(sheetfile "compute.kicad_sch")
@@ -9523,6 +9833,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2983cd0c-0420-44d8-9ade-fcf5258263f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/08004c0b-75c8-4736-a991-1b5e7d2fad5d")
 		(sheetname "/Power/")
@@ -9685,6 +10008,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b37aa873-7638-4625-87ca-0fa1788f38e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ea61f2b-34ff-46b8-a156-3ec29fc0c15c")
 			(effects
 				(font
 					(size 1 1)
@@ -9861,6 +10197,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04e02181-9a8a-4a4f-a3af-e5a69a31c15d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2bda09d7-02a6-5813-8901-250e661184c8/62249a3d-7c44-50d3-9b93-def511549c3b")
 		(sheetname "/USB/")
@@ -10030,6 +10379,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcff0fe3-c52c-4485-9dca-619c6623dfd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/eeb5ed75-de0b-5a0c-8356-c78aafd0bbd1/117d08c6-bf29-5779-83ba-3cece792d5b9")
 		(sheetname "/Compute/")
@@ -10192,6 +10554,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e456161a-a91f-42c4-a1e2-35099deec936")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "540b197f-c702-4a1b-9cad-12ba7bd0fcf8")
 			(effects
 				(font
 					(size 1 1)
@@ -10542,6 +10917,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06b2d617-c151-4030-9dc5-9cdd3e119899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/8f10a7e0-9fbe-5b5c-b185-00a79eb35593")
 		(sheetname "/Power/")
@@ -10701,6 +11089,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "82881855-0597-4c50-bfca-eb94eff807ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "Texas Instruments"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "196d19cc-3394-472c-a5f2-91b94e2fe09d")
 			(effects
 				(font
 					(size 1 1)
@@ -11128,6 +11529,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a46ea397-63aa-4738-9d51-e3e77635fd14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/d0826465-4b10-5286-85fd-e123cc439f08")
 		(sheetname "/Power/")
@@ -11297,6 +11711,19 @@
 				)
 			)
 		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2a813a2-0cb6-46e0-9eaa-e5654e6024d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a926f61e-132d-5af0-876e-12788077b17d/7a76de67-07c1-4bf1-b58c-f8ad8f54dd01")
 		(sheetname "/Power/")
@@ -11459,6 +11886,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e691a05c-a52f-4ddb-b4a9-a7d6b6cc1ddf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4dbcd96-b4fb-4a68-a09b-4ebd9a7c6a3a")
 			(effects
 				(font
 					(size 1 1)
@@ -11998,6 +12438,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "21ed1e28-b873-4065-971b-691fa990fabe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09cc98e5-f6b6-48a5-8401-fc384ea0c018")
 			(effects
 				(font
 					(size 1 1)

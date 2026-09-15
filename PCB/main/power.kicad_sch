@@ -912,6 +912,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Texas Instruments"
+      (at 106.68 71.12 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "13"
       (uuid bfe740da-a8ad-5d1c-bb60-858f3331af0d))
     (pin "2"
@@ -982,6 +988,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C86534"
+      (at 187.96 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "Torex Semicon"
       (at 187.96 50.8 0)
       (effects
         (font
@@ -1085,6 +1097,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "TDK"
+      (at 60.96 121.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (property "Description" "On-board 0402 cell thermistor on the BQ24074 TS pin: TS (U6.1) -> TH1.1, TH1.2 -> GND. Sets the charger temperature window ~0 C .. 50 C (TS 300mV / 2.1V); charging is inhibited outside it, and an open NTC lead floats TS high and also inhibits charging. Cell-bonded placement, 10k B3435."
       (at 60.96 121.92 0)
       (effects
@@ -1163,6 +1181,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 157.48 121.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 041d568e-d846-5783-9a7f-2f1e4f5dfc32))
     (pin "2"
@@ -1203,6 +1227,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25741"
+      (at 157.48 142.24 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 157.48 142.24 0)
       (effects
         (font
@@ -1253,6 +1283,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 144.78 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 6e259185-2058-594e-9220-e3dbfac0f906))
     (pin "2"
@@ -1293,6 +1329,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25900"
+      (at 129.54 137.16 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 129.54 137.16 0)
       (effects
         (font
@@ -1343,6 +1385,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 48.26 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 6cac3719-5e83-5a53-abc1-ab878c45b8cd))
     (pin "2"
@@ -1383,6 +1431,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C16780"
+      (at 63.5 101.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
       (at 63.5 101.6 0)
       (effects
         (font
@@ -1433,6 +1487,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 205.74 63.5 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid cafb467a-d5cc-5a4e-b19c-ca195baa121c))
     (pin "2"
@@ -1478,6 +1538,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 177.8 142.24 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid 0c749613-cf1f-55bf-a833-398454f24eaf))
     (pin "2"
@@ -1518,6 +1584,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C16780"
+      (at 160.02 60.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "Samsung Electro-Mechanics"
       (at 160.02 60.96 0)
       (effects
         (font
@@ -2617,6 +2689,12 @@
         (font
           (size 1 1))
         (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+      (at 66.04 52.07 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
     (pin "1"
       (uuid "95b65f13-ca61-45ad-95e0-6e091b58f9fe"))
     (pin "2"
@@ -2813,6 +2891,12 @@
           (size 1 1))
         (hide yes)))
     (property "LCSC" "C25741"
+      (at 134.62 111.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
       (at 134.62 111.76 0)
       (effects
         (font
