@@ -1,0 +1,503 @@
+{
+  "baseline": "43ee2ea",
+  "board": "PCB/main/smove-r2-main.kicad_pcb",
+  "board_sha256_before": "2a78e439350d66d9963532dc75cc404e03e8a31cec74c5306c12bc52248372e6",
+  "board_sha256_after": "ff128f0382c719d6afefba18d9321dcb72870df1f1d36a912ffb6c3a45387eba",
+  "kicad_version": "9.0.8+dfsg-1",
+  "counts_before": {
+    "tracks": 426,
+    "vias": 77,
+    "zones": 4,
+    "footprints": 53
+  },
+  "counts_after": {
+    "tracks": 426,
+    "vias": 85,
+    "zones": 6,
+    "footprints": 53
+  },
+  "existing_uuid_objects_byte_identical": 570,
+  "existing_objects_sha256_before": "2395968efe291f80d9d4094aeb9fcb709e6de5a6fb2a11288028f21f4feb7b15",
+  "existing_objects_sha256_after": "2395968efe291f80d9d4094aeb9fcb709e6de5a6fb2a11288028f21f4feb7b15",
+  "all_existing_zones_including_fills_byte_identical": true,
+  "all_other_net_geometry_byte_identical": true,
+  "all_footprints_byte_identical": true,
+  "settings_net_table_unchanged": true,
+  "added_vias": [
+    {
+      "uuid": "0f75030c-cc57-411c-b6aa-247c658dd727",
+      "xy_mm": [
+        108.5,
+        121.4
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.21588718649042898,
+      "nearest_existing_uuid": "489f0936-01c5-437a-aec7-d871b6264a78"
+    },
+    {
+      "uuid": "1ba4e017-20cb-40a5-abbf-c50e6d84da29",
+      "xy_mm": [
+        108.6,
+        119.7
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.267679917673688,
+      "nearest_existing_uuid": "4f712ff1-11b4-457b-98d6-a9094419992b"
+    },
+    {
+      "uuid": "53d1ab2b-db66-4268-a480-ecac2588395e",
+      "xy_mm": [
+        110.2,
+        120.6
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.30000000000000854,
+      "nearest_existing_uuid": "4f712ff1-11b4-457b-98d6-a9094419992b"
+    },
+    {
+      "uuid": "8afbac13-a5c3-4978-8463-36209618fdad",
+      "xy_mm": [
+        111.4,
+        121.9
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.23639564785892891,
+      "nearest_existing_uuid": "6573cd8b-d75b-4ff7-9205-639e199842f5"
+    },
+    {
+      "uuid": "943d6d6f-77d3-40a2-b965-d3a408ab6001",
+      "xy_mm": [
+        111.7,
+        119.5
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.23377275775486644,
+      "nearest_existing_uuid": "1161f331-00bd-4656-8a33-6e18a95a083e"
+    },
+    {
+      "uuid": "1a7b6906-9c7b-4bfc-aef4-b04f939dc997",
+      "xy_mm": [
+        112.1,
+        120.3
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.2999999999999943,
+      "nearest_existing_uuid": "d2114fc0-2082-4101-b03f-edfba5b1afad"
+    },
+    {
+      "uuid": "627875f2-d0ee-4d7d-8449-01839bca8263",
+      "xy_mm": [
+        112.1,
+        121.2
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.3000052333405044,
+      "nearest_existing_uuid": "d2114fc0-2082-4101-b03f-edfba5b1afad"
+    },
+    {
+      "uuid": "a2e6db55-ca4e-411a-bf2e-90c565d15b57",
+      "xy_mm": [
+        112.9,
+        121.6
+      ],
+      "net": "GND",
+      "net_code": 18,
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "min_existing_copper_gap_mm": 0.23749999999999433,
+      "nearest_existing_uuid": "9e43988e-ad61-40cb-9b00-16199a5b350f"
+    }
+  ],
+  "min_new_via_pair_gap_mm": 0.29442719099990955,
+  "zones": [
+    {
+      "uuid": "7634b627-7151-41b4-bd6f-39b253b180fa",
+      "name": "U4_THERMAL_F.Cu",
+      "layer": "F.Cu",
+      "outline_mm": [
+        [
+          104.5,
+          117
+        ],
+        [
+          113.2,
+          117
+        ],
+        [
+          113.2,
+          123.2
+        ],
+        [
+          104.5,
+          123.2
+        ]
+      ],
+      "gross_polygon_area_mm2": 53.94000000000004,
+      "all_filled_area_mm2": 27.491885416522564,
+      "clearance_and_unfilled_cutouts_mm2": 26.448114583477476,
+      "excluded_other_components_mm2": 0.7771693915685027,
+      "directly_attached_fill_before_drills_mm2": 26.71471602495406,
+      "drill_cutouts_attached_mm2": 0.7068539115825987,
+      "directly_attached_fill_net_mm2": 26.007862113371445,
+      "all_fill_net_mm2": 26.722089700285256,
+      "min_foreign_copper_gap_mm": 0.2094904718130199,
+      "antenna_keepout_distance_mm": 17.0,
+      "solid_connection": true
+    },
+    {
+      "uuid": "15637207-e452-49f1-bdf6-764a80d563d5",
+      "name": "U4_THERMAL_B.Cu",
+      "layer": "B.Cu",
+      "outline_mm": [
+        [
+          104.5,
+          117
+        ],
+        [
+          113.2,
+          117
+        ],
+        [
+          113.2,
+          123.2
+        ],
+        [
+          104.5,
+          123.2
+        ]
+      ],
+      "gross_polygon_area_mm2": 53.94000000000004,
+      "all_filled_area_mm2": 50.79497039767953,
+      "clearance_and_unfilled_cutouts_mm2": 3.1450296023205127,
+      "excluded_other_components_mm2": 0.0,
+      "directly_attached_fill_before_drills_mm2": 50.79497039767953,
+      "drill_cutouts_attached_mm2": 0.7697957162372906,
+      "directly_attached_fill_net_mm2": 50.025174681442174,
+      "all_fill_net_mm2": 50.025174681442174,
+      "min_foreign_copper_gap_mm": 0.20958464881431302,
+      "antenna_keepout_distance_mm": 17.0,
+      "solid_connection": true
+    }
+  ],
+  "front_pin2_component_before": {
+    "area_mm2": 1.0575834208759207,
+    "area_before_drill_subtraction_mm2": 1.1282688120341804,
+    "bounds_mm": [
+      109.95,
+      117.7375,
+      110.6,
+      120.0
+    ],
+    "attached_vias": [
+      {
+        "uuid": "84533de4-9e53-4210-9cdf-38a20bf1c6b0",
+        "xy_mm": [
+          110.3,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      }
+    ]
+  },
+  "front_pin2_component_after": {
+    "area_mm2": 27.802006371976162,
+    "area_before_drill_subtraction_mm2": 28.57954567471704,
+    "bounds_mm": [
+      104.5,
+      117.0,
+      114.3,
+      124.11
+    ],
+    "attached_vias": [
+      {
+        "uuid": "84533de4-9e53-4210-9cdf-38a20bf1c6b0",
+        "xy_mm": [
+          110.3,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "9185336f-e707-478a-891c-5193620abb2c",
+        "xy_mm": [
+          107.3,
+          121.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "b55e1a84-ab49-4b2a-ab72-1b773c1e4fc1",
+        "xy_mm": [
+          113.4,
+          122.8
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "0f75030c-cc57-411c-b6aa-247c658dd727",
+        "xy_mm": [
+          108.5,
+          121.4
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "1a7b6906-9c7b-4bfc-aef4-b04f939dc997",
+        "xy_mm": [
+          112.1,
+          120.3
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "1ba4e017-20cb-40a5-abbf-c50e6d84da29",
+        "xy_mm": [
+          108.6,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "53d1ab2b-db66-4268-a480-ecac2588395e",
+        "xy_mm": [
+          110.2,
+          120.6
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "627875f2-d0ee-4d7d-8449-01839bca8263",
+        "xy_mm": [
+          112.1,
+          121.2
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "8afbac13-a5c3-4978-8463-36209618fdad",
+        "xy_mm": [
+          111.4,
+          121.9
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "943d6d6f-77d3-40a2-b965-d3a408ab6001",
+        "xy_mm": [
+          111.7,
+          119.5
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "a2e6db55-ca4e-411a-bf2e-90c565d15b57",
+        "xy_mm": [
+          112.9,
+          121.6
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      }
+    ]
+  },
+  "bottom_original_via_component_before": {
+    "area_mm2": 0.21205617347477995,
+    "area_before_drill_subtraction_mm2": 0.2827415646330403,
+    "bounds_mm": [
+      110.0,
+      119.4,
+      110.6,
+      120.0
+    ],
+    "attached_vias": [
+      {
+        "uuid": "84533de4-9e53-4210-9cdf-38a20bf1c6b0",
+        "xy_mm": [
+          110.3,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      }
+    ]
+  },
+  "bottom_original_via_component_after": {
+    "area_mm2": 50.281014303349345,
+    "area_before_drill_subtraction_mm2": 51.129238997248336,
+    "bounds_mm": [
+      104.5,
+      116.8,
+      113.7,
+      123.2
+    ],
+    "attached_vias": [
+      {
+        "uuid": "5ad34436-35d9-4432-9204-3ec6113b3ed7",
+        "xy_mm": [
+          109.0,
+          117.1
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "84533de4-9e53-4210-9cdf-38a20bf1c6b0",
+        "xy_mm": [
+          110.3,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "9185336f-e707-478a-891c-5193620abb2c",
+        "xy_mm": [
+          107.3,
+          121.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "b55e1a84-ab49-4b2a-ab72-1b773c1e4fc1",
+        "xy_mm": [
+          113.4,
+          122.8
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "0f75030c-cc57-411c-b6aa-247c658dd727",
+        "xy_mm": [
+          108.5,
+          121.4
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "1a7b6906-9c7b-4bfc-aef4-b04f939dc997",
+        "xy_mm": [
+          112.1,
+          120.3
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "1ba4e017-20cb-40a5-abbf-c50e6d84da29",
+        "xy_mm": [
+          108.6,
+          119.7
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "53d1ab2b-db66-4268-a480-ecac2588395e",
+        "xy_mm": [
+          110.2,
+          120.6
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "627875f2-d0ee-4d7d-8449-01839bca8263",
+        "xy_mm": [
+          112.1,
+          121.2
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "8afbac13-a5c3-4978-8463-36209618fdad",
+        "xy_mm": [
+          111.4,
+          121.9
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "943d6d6f-77d3-40a2-b965-d3a408ab6001",
+        "xy_mm": [
+          111.7,
+          119.5
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      },
+      {
+        "uuid": "a2e6db55-ca4e-411a-bf2e-90c565d15b57",
+        "xy_mm": [
+          112.9,
+          121.6
+        ],
+        "diameter_mm": 0.6,
+        "drill_mm": 0.3
+      }
+    ]
+  },
+  "baseline_local_rectangle_ground_net_area_mm2": {
+    "F.Cu": 4.344370032121055,
+    "B.Cu": 0.5923850719920891
+  },
+  "unchanged_inner_ground_plane_filled_area_mm2": 680.1728014960506,
+  "c11_direct_ground_route": [
+    {
+      "uuid": "d8e59a01-d4bc-4fee-9aa6-d1b957c9a084",
+      "sha256_before": "3efd501127e1100831a573a04b7a733f456befd1b488be982abbc4ddbfa67016",
+      "sha256_after": "3efd501127e1100831a573a04b7a733f456befd1b488be982abbc4ddbfa67016",
+      "sexpr": "(segment\n\t\t(start 113.8 116.3)\n\t\t(end 113.8 116.127486)\n\t\t(width 0.2)\n\t\t(layer \"F.Cu\")\n\t\t(net 18)\n\t\t(uuid \"d8e59a01-d4bc-4fee-9aa6-d1b957c9a084\")\n\t)"
+    },
+    {
+      "uuid": "772e4247-d55b-4c14-9ccd-2492ecce88d9",
+      "sha256_before": "cea57377c59c4c5105f0b803d8feb91c202f6ae6ba926a14cab701b00d2d21b4",
+      "sha256_after": "cea57377c59c4c5105f0b803d8feb91c202f6ae6ba926a14cab701b00d2d21b4",
+      "sexpr": "(segment\n\t\t(start 113.8 116.127486)\n\t\t(end 113.987486 115.94)\n\t\t(width 0.2)\n\t\t(layer \"F.Cu\")\n\t\t(net 18)\n\t\t(uuid \"772e4247-d55b-4c14-9ccd-2492ecce88d9\")\n\t)"
+    },
+    {
+      "uuid": "8855345a-7815-4444-8592-dd19988b35d9",
+      "sha256_before": "7880821dcc05619653ac3cdfea56daa081877ceac84ed72dd1585ad4da671673",
+      "sha256_after": "7880821dcc05619653ac3cdfea56daa081877ceac84ed72dd1585ad4da671673",
+      "sexpr": "(via\n\t\t(at 113.987486 115.94)\n\t\t(size 0.6)\n\t\t(drill 0.3)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(net 18)\n\t\t(uuid \"8855345a-7815-4444-8592-dd19988b35d9\")\n\t)"
+    }
+  ],
+  "curve_polygonization_max_error_mm": 0.001,
+  "note": "Areas are geometric, not thermally effective areas. Drills: 1024-gon circles; reported areas rounded in README. Full before/after F.Cu components are same-layer unions; other F.Cu zone components are not counted towards the directly attached >=25 mm2 requirement."
+}

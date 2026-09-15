@@ -1,0 +1,73 @@
+{
+  "status": "Conditional engineering estimate; not measured, not validated FEM, not safety qualification",
+  "datasheet_url": "https://media.digikey.com/pdf/Data%20Sheets/Torex/XC6220.pdf",
+  "datasheet_page": 26,
+  "datasheet_reference_thetaJA_C_per_W": 166.67,
+  "reference_board": "40x40mm FR4, 50% copper each face (~800mm2/face), 1.6mm thick, four 0.8mm holes, natural convection",
+  "geometry_inputs": {
+    "before_F_Cu_component_mm2": 1.0575834208759207,
+    "after_F_Cu_component_mm2": 27.802006371976162,
+    "after_attached_bottom_zone_mm2": 50.025174681442174,
+    "neck_centerline_length_outside_pad_and_via_mm": 0.3416971899073218,
+    "neck_width_mm": 0.2,
+    "specified_outer_copper_mm": 0.035,
+    "specified_F_to_In1_center_distance_mm": 0.315
+  },
+  "assumptions": {
+    "copper_conductivity_W_per_m_K": 390.0,
+    "via_wall_plating_mm": 0.025,
+    "unchanged_parallel_bypass_C_per_W": 400.0,
+    "baseline_review_calibration_C_per_W": 250.0,
+    "after_access_C_per_W": 60.0,
+    "after_effective_parallel_vias": 4.5,
+    "bottom_spreader_extra_board_to_air_credit": "zero; conservative omission, shared board/package resistance held fixed"
+  },
+  "network_C_per_W": {
+    "old_neck": 125.16380582685778,
+    "one_barrel_to_inner_plane": 31.64263957329992,
+    "one_barrel_full_board": 100.45282404222196,
+    "fitted_shared_ground_path": 509.8602212665089,
+    "old_ground_path": 666.6666666666666,
+    "new_ground_path": 576.8919189494644
+  },
+  "thetaJA_C_per_W": {
+    "before": 250.0,
+    "after": 236.21524869193135,
+    "delta": -13.78475130806865,
+    "before_penalty_above_datasheet_reference": 83.33000000000001,
+    "after_penalty_above_datasheet_reference": 69.54524869193136
+  },
+  "sensitivity_not_confidence_interval": {
+    "fixed_baseline_250_access_40_to_120_and_effective_vias_2_to_9": [
+      232.17535554266934,
+      246.98974427830495
+    ]
+  },
+  "steady_peak_power_projections_before_thermal_protection": [
+    {
+      "power_W": 0.47,
+      "Vin_V": 5.3,
+      "Vout_V": 3.3,
+      "Iout_A": 0.235,
+      "ambient_C": 40.0,
+      "rise_before_C": 117.5,
+      "rise_after_C": 111.02116688520773,
+      "junction_before_C": 157.5,
+      "junction_after_C": 151.02116688520772,
+      "delta_junction_C": -6.478833114792265
+    },
+    {
+      "power_W": 0.7,
+      "Vin_V": 5.3,
+      "Vout_V": 3.3,
+      "Iout_A": 0.35,
+      "ambient_C": 40.0,
+      "rise_before_C": 175.0,
+      "rise_after_C": 165.35067408435194,
+      "junction_before_C": 215.0,
+      "junction_after_C": 205.35067408435194,
+      "delta_junction_C": -9.649325915648054
+    }
+  ],
+  "warning": "Both stated sustained loads exceed the Tj125 power-rating basis; projections at/above typical TSD150 are not realizable regulated operating points. Actual RF peaks require transient/duty-cycle and enclosure measurements. Ground-pin die thermal coupling is not specified in this datasheet."
+}

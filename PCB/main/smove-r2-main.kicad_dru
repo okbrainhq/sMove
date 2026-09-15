@@ -4,3 +4,9 @@
 (rule "No other component in antenna keepout"
  (condition "A.Type == 'Footprint' && A.Reference != 'U1' && A.intersectsArea('ANTENNA_ALL_LAYERS')")
  (constraint disallow footprint))
+
+# U4 thermal ECO only: the global 0.15 mm rule overrides zone-local clearance.
+# Keep both new pours >=0.20 mm from foreign copper, with 0.01 mm fill margin.
+(rule "U4 thermal pour clearance"
+ (condition "(A.Type == 'Zone' && (A.Name == 'U4_THERMAL_F.Cu' || A.Name == 'U4_THERMAL_B.Cu')) || (B.Type == 'Zone' && (B.Name == 'U4_THERMAL_F.Cu' || B.Name == 'U4_THERMAL_B.Cu'))")
+ (constraint clearance (min 0.21mm)))
