@@ -479,7 +479,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Torex Semicon"
+		(property "Manufacturer" "Torex Semicon"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -901,7 +901,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "XUNPU"
+		(property "Manufacturer" "XUNPU"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1046,7 +1046,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1228,7 +1228,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1410,7 +1410,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1959,7 +1959,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "XUNPU"
+		(property "Manufacturer" "XUNPU"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3085,7 +3085,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Korean Hroparts Elec"
+		(property "Manufacturer" "Korean Hroparts Elec"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -3951,7 +3951,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4133,7 +4133,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4518,7 +4518,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4922,7 +4922,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5104,7 +5104,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5471,7 +5471,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6381,7 +6381,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Espressif Systems"
+		(property "Manufacturer" "Espressif Systems"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7349,7 +7349,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Nexperia"
+		(property "Manufacturer" "Nexperia"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7754,7 +7754,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7936,7 +7936,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8118,7 +8118,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8300,7 +8300,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "TDK"
+		(property "Manufacturer" "TDK"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8481,7 +8481,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8813,7 +8813,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8995,7 +8995,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9177,7 +9177,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9546,7 +9546,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Lite-On"
+		(property "Manufacturer" "Lite-On"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9833,7 +9833,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10015,7 +10015,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10197,7 +10197,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10379,7 +10379,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10561,7 +10561,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10917,7 +10917,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11096,7 +11096,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11529,7 +11529,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11711,7 +11711,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11893,7 +11893,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12445,7 +12445,7 @@
 				)
 			)
 		)
-(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14415,14 +14415,6 @@
 		(uuid "16cc069f-6076-4569-a528-0581205c3c7e")
 	)
 	(segment
-		(start 113.8 117.94)
-		(end 113.86 118)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 18)
-		(uuid "1a0be0da-5401-47ba-9510-55ae5e62a4d2")
-	)
-	(segment
 		(start 108.25 110.45)
 		(end 109.1 109.6)
 		(width 0.2)
@@ -14567,6 +14559,14 @@
 		(uuid "4f08ae4a-b436-43e4-b8b8-3b27ed43685f")
 	)
 	(segment
+		(start 113.81 117.4)
+		(end 113.81 118)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "5085d027-096e-411a-a356-6cdd5943046d")
+	)
+	(segment
 		(start 113.035126 129.264874)
 		(end 113.5 128.8)
 		(width 0.2)
@@ -14679,20 +14679,20 @@
 		(uuid "75a1ddf1-cc75-4af5-80db-9b0deea49149")
 	)
 	(segment
+		(start 113.8 116.127486)
+		(end 113.987486 115.94)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "772e4247-d55b-4c14-9ccd-2492ecce88d9")
+	)
+	(segment
 		(start 111.57 112.58)
 		(end 110.92 112.58)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 18)
 		(uuid "78c733b3-8475-4d38-bf4d-501f22f05dad")
-	)
-	(segment
-		(start 113.86 118)
-		(end 113.86 118.6)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 18)
-		(uuid "7ab4cd7f-79f2-42f4-ab1f-8bf18045f1b0")
 	)
 	(segment
 		(start 107.3 122.6)
@@ -14775,14 +14775,6 @@
 		(uuid "9cd8a481-bcd8-4721-9c4a-85867032b9b6")
 	)
 	(segment
-		(start 113.8 116.3)
-		(end 113.8 117.94)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 18)
-		(uuid "9f77d14e-62cb-4742-8d34-3ced9d8ac1f5")
-	)
-	(segment
 		(start 108.25 100.65)
 		(end 109.35 100.65)
 		(width 0.2)
@@ -14863,6 +14855,22 @@
 		(uuid "ca88c53f-defd-42d4-a73c-89a389677d5a")
 	)
 	(segment
+		(start 113.81 118)
+		(end 113.81 118.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "cbe93fbd-4a06-4ac1-81c7-6b78e4b563a2")
+	)
+	(segment
+		(start 113.81 118.55)
+		(end 113.86 118.6)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "ce347090-e42b-4873-9a9c-82df4ac930c8")
+	)
+	(segment
 		(start 114.030275 113.34311)
 		(end 113.8 113.573385)
 		(width 0.2)
@@ -14893,6 +14901,14 @@
 		(layer "F.Cu")
 		(net 18)
 		(uuid "d82dfab9-a9f9-40b1-80c9-5342c83c6fa2")
+	)
+	(segment
+		(start 113.8 116.3)
+		(end 113.8 116.127486)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "d8e59a01-d4bc-4fee-9aa6-d1b957c9a084")
 	)
 	(segment
 		(start 111.8 129.1)
@@ -15119,6 +15135,14 @@
 		(uuid "84f76642-7fca-4182-b77f-5e48553de0dc")
 	)
 	(via
+		(at 113.987486 115.94)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 18)
+		(uuid "8855345a-7815-4444-8592-dd19988b35d9")
+	)
+	(via
 		(at 107.3 121.7)
 		(size 0.6)
 		(drill 0.3)
@@ -15141,14 +15165,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 18)
 		(uuid "99371930-37b9-4a03-b81b-22cc5e49357c")
-	)
-	(via
-		(at 113.86 118)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 18)
-		(uuid "9bd66e29-b69d-4cc2-bdf3-5a539097cbb5")
 	)
 	(via
 		(at 115 128.1)
@@ -15189,6 +15205,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 18)
 		(uuid "b952bbe2-85a2-4a31-aafa-8b260fb13753")
+	)
+	(via
+		(at 113.81 118)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 18)
+		(uuid "c546d10f-28bd-49d3-a77b-702c30a5f289")
 	)
 	(via
 		(at 110.154032 126.208065)
