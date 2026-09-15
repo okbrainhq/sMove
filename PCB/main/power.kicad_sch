@@ -640,7 +640,7 @@
             (effects
               (font
                 (size 0.8 0.8)))))))
-    (symbol "smove-r2-main:BatteryWire_3x_PTH_P2.54mm_D1.0mm"
+    (symbol "smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm"
       (pin_names
         (offset .508))
       (in_bom no)
@@ -650,21 +650,21 @@
         (effects
           (font
             (size 1 1))))
-      (property "Value" "Battery wire pads 3x 2.54mm"
+      (property "Value" "Battery wire pads 2x 2.54mm"
         (at 0.0 0.0 0)
         (effects
           (font
             (size 1 1))))
-      (symbol "BatteryWire_3x_PTH_P2.54mm_D1.0mm_0_1"
+      (symbol "BatteryWire_2x_PTH_P2.54mm_D1.0mm_0_1"
         (rectangle
           (start -5.08 8.89)
-          (end 5.08 -13.97)
+          (end 5.08 -8.89)
           (stroke
             (width .254)
             (type default))
           (fill
             (type background))))
-      (symbol "BatteryWire_3x_PTH_P2.54mm_D1.0mm_1_1"
+      (symbol "BatteryWire_2x_PTH_P2.54mm_D1.0mm_1_1"
         (pin passive line
           (at 10.16 1.27 180)
           (length 5.08)
@@ -686,19 +686,8 @@
           (number "2"
             (effects
               (font
-                (size 0.8 0.8)))))
-        (pin passive line
-          (at 10.16 -8.89 180)
-          (length 5.08)
-          (name "NTC"
-            (effects
-              (font
-                (size 0.85 0.85))))
-          (number "3"
-            (effects
-              (font
                 (size 0.8 0.8)))))))
-    (symbol "Device:Thermistor_NTC"
+    (symbol "smove-r2-main:NTC_10K_B3435"
       (pin_numbers
         (hide yes))
       (pin_names
@@ -707,46 +696,46 @@
       (in_bom yes)
       (on_board yes)
       (property "Reference" "TH"
-        (at -4.445 0 90)
+        (at -3.81 0 90)
         (effects
           (font
             (size 1.27 1.27))))
-      (property "Value" "Thermistor_NTC"
-        (at 3.175 0 90)
+      (property "Value" "10k B3435"
+        (at 4.445 0 90)
         (effects
           (font
             (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 1.27 0)
+      (property "Footprint" "smove-r2-main:NTC_0402_1005Metric"
+        (at 0 -1.778 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Datasheet" "~"
-        (at 0 1.27 0)
+      (property "Datasheet" ""
+        (at 0 -1.778 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Description" "Temperature dependent resistor, negative temperature coefficient"
+      (property "Description" "On-board 0402 cell thermistor on the BQ24074 TS pin: TS (U6.1) -> TH1.1, TH1.2 -> GND. Sets the charger temperature window ~0 C .. 50 C (TS 300mV / 2.1V); charging is inhibited outside it, and an open NTC lead floats TS high and also inhibits charging. Cell-bonded placement, 10k B3435."
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "ki_keywords" "thermistor NTC resistor sensor RTD"
+      (property "MPN" "NTCG103JF103FT1"
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "ki_fp_filters" "R_* RV_*"
+      (property "LCSC" "C209959"
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (symbol "Thermistor_NTC_0_1"
+      (symbol "NTC_10K_B3435_0_1"
         (arc
           (start -3.175 2.413)
           (mid -3.0506 2.3165)
@@ -864,7 +853,7 @@
             (type default))
           (fill
             (type none))))
-      (symbol "Thermistor_NTC_1_1"
+      (symbol "NTC_10K_B3435_1_1"
         (pin passive line
           (at 0 3.81 270)
           (length 1.27)
@@ -886,8 +875,7 @@
           (number "2"
             (effects
               (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no)))
+                (size 1.27 1.27))))))))
   (symbol
     (lib_id "smove-r2-main:U6")
     (at 106.68 71.12 0)
@@ -1015,7 +1003,7 @@
           (reference "U4")
           (unit 1)))))
   (symbol
-    (lib_id "smove-r2-main:BatteryWire_3x_PTH_P2.54mm_D1.0mm")
+    (lib_id "smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm")
     (at 50.8 87.63 0)
     (unit 1)
     (in_bom no)
@@ -1027,12 +1015,12 @@
       (effects
         (font
           (size 1 1))))
-    (property "Value" "Battery wire pads 3x 2.54mm"
+    (property "Value" "Battery wire pads 2x 2.54mm"
       (at 25.4 87.376 0)
       (effects
         (font
           (size 0.95 0.95))))
-    (property "Footprint" "smove-r2-main:BatteryWire_3x_PTH_P2.54mm_D1.0mm"
+    (property "Footprint" "smove-r2-main:BatteryWire_2x_PTH_P2.54mm_D1.0mm"
       (at 50.8 77.47 0)
       (effects
         (font
@@ -1054,19 +1042,17 @@
       (uuid 2357de79-295f-5a2d-a135-6807d2003c80))
     (pin "2"
       (uuid fc6b9a3b-d0d4-5dc1-81c7-62f327494244))
-    (pin "3"
-      (uuid ca0aec9d-afc2-4c56-97e6-289ab4cf4505))
     (instances
       (project "smove-r2-main"
         (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
           (reference "J2")
           (unit 1)))))
   (symbol
-    (lib_id "Device:Thermistor_NTC")
+    (lib_id "smove-r2-main:NTC_10K_B3435")
     (at 60.96 121.92 0)
     (unit 1)
-    (in_bom no)
-    (on_board no)
+    (in_bom yes)
+    (on_board yes)
     (dnp no)
     (uuid 2d62b467-ade6-4f01-b920-c6964a4c5836)
     (property "Reference" "TH1"
@@ -1075,31 +1061,31 @@
         (font
           (size 0.95 0.95))
         (justify right)))
-    (property "Value" "10k B3435 NTC (in-pack, cell-bonded, off-board)"
+    (property "Value" "10k B3435 NTC (cell-bonded)"
       (at 56.896 123.571 0)
       (effects
         (font
           (size 0.9 0.9))
         (justify right)))
-    (property "Footprint" ""
+    (property "Footprint" "smove-r2-main:NTC_0402_1005Metric"
       (at 60.96 121.92 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "MPN" "103AT-2"
+    (property "MPN" "NTCG103JF103FT1"
       (at 60.96 121.92 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "LCSC" ""
+    (property "LCSC" "C209959"
       (at 60.96 121.92 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "Description" "Off-board, cell-bonded pack thermistor (not on this PCB). Semitec 103AT-2 class: R25 = 10k, B25/85 = 3435 K. Wired TS -> pack BAT- (J2 pin 3 -> pin 2). Charger TS window ~0 C .. 51 C (TI SLUS810N sec. 8.5 / 9.3.6)."
+    (property "Description" "On-board 0402 cell thermistor on the BQ24074 TS pin: TS (U6.1) -> TH1.1, TH1.2 -> GND. Sets the charger temperature window ~0 C .. 50 C (TS 300mV / 2.1V); charging is inhibited outside it, and an open NTC lead floats TS high and also inhibits charging. Cell-bonded placement, 10k B3435."
       (at 60.96 121.92 0)
       (effects
         (font
@@ -1321,57 +1307,6 @@
         (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
           (reference "R22")
           (unit 1)))))
-  (symbol
-    (lib_id "Device:R")
-    (at 71.12 134.62 0)
-    (unit 1)
-    (in_bom no)
-    (on_board yes)
-    (dnp yes)
-    (uuid a9c1b0ab-5977-568f-be58-0258ae3fea50)
-    (property "Reference" "R23"
-      (at 79.248 132.969 0)
-      (effects
-        (font
-          (size 0.95 0.95))))
-    (property "Value" "10k"
-      (at 79.248 136.271 0)
-      (effects
-        (font
-          (size 0.9 0.9))))
-    (property "Footprint" "smove-r2-main:R_0402_1005Metric"
-      (at 71.12 134.62 0)
-      (effects
-        (font
-          (size 1 1))
-        (hide yes)))
-    (property "MPN" "0402WGF1002TCE"
-      (at 71.12 134.62 0)
-      (effects
-        (font
-          (size 1 1))
-        (hide yes)))
-    (property "LCSC" "C25744"
-      (at 71.12 134.62 0)
-      (effects
-        (font
-          (size 1 1))
-        (hide yes)))
-    (pin "1"
-      (uuid 8b7f4e4d-c16c-51e9-8ab5-3a5af9e019ab))
-    (pin "2"
-      (uuid 21b92ad5-962e-5910-9a7b-9e819ee9b1b6))
-    (instances
-      (project "smove-r2-main"
-        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
-          (reference "R23")
-          (unit 1))))
-    (property "Description" "DNP: 10k TS-to-VSS bias for 2-wire packs without an in-pack NTC (charger TS function unused, therefore no cell-temperature protection). Must NOT be fitted when the pack NTC is wired to J2 pin 3."
-      (at 71.12 134.62 0)
-      (effects
-        (font
-          (size 1 1))
-        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 48.26 50.8 0)
@@ -1761,33 +1696,6 @@
           (unit 1)))))
   (symbol
     (lib_id "power:GND")
-    (at 71.12 140.97 0)
-    (unit 1)
-    (in_bom no)
-    (on_board no)
-    (dnp no)
-    (uuid b840cb9f-63d8-5850-abe6-790bc1c4c83b)
-    (property "Reference" "#PWR19"
-      (at 71.12 133.35 0)
-      (effects
-        (font
-          (size 1 1))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 71.12 136.906 0)
-      (effects
-        (font
-          (size 0.95 0.95))
-        (hide yes)))
-    (pin "1"
-      (uuid c853dcf7-d8ff-54da-94ec-715b85d444bd))
-    (instances
-      (project "smove-r2-main"
-        (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
-          (reference "#PWR19")
-          (unit 1)))))
-  (symbol
-    (lib_id "power:GND")
     (at 48.26 57.15 0)
     (unit 1)
     (in_bom no)
@@ -1957,7 +1865,7 @@
   (wire
     (pts
       (xy 137.16 45.72)
-      (xy 142.24 45.72))
+      (xy 139.7 45.72))
     (stroke
       (width 0)
       (type default))
@@ -2253,7 +2161,7 @@
   (wire
     (pts
       (xy 71.12 91.44)
-      (xy 71.12 130.81))
+      (xy 71.12 118.11))
     (stroke
       (width 0)
       (type default))
@@ -2309,7 +2217,7 @@
   (wire
     (pts
       (xy 134.62 115.57)
-      (xy 137.16 115.57))
+      (xy 139.7 115.57))
     (stroke
       (width 0)
       (type default))
@@ -2386,14 +2294,6 @@
       (width 0)
       (type default))
     (uuid f493d658-6f20-5465-af37-7ec7fb55cfe0))
-  (wire
-    (pts
-      (xy 71.12 138.43)
-      (xy 71.12 140.97))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid 19a7c493-8d6a-5266-bcd6-a8aee959812d))
   (wire
     (pts
       (xy 48.26 54.61)
@@ -2529,28 +2429,21 @@
         (size .85 .85))
       (justify left bottom))
     (uuid 7b7cd8cb-aeba-5c6d-b192-f2a83c72029c))
-  (label "TS"
-    (at 60.96 99.06 90)
-    (effects
-      (font
-        (size .85 .85))
-      (justify left bottom))
-    (uuid 9bc27719-eb79-4d18-8859-b824306bbe09))
-  (text "USB500 input-current limit ~500mA (450mA guaranteed-min): EN1 pulled up to SYS. Protected 4.2V pack only. Cell-temperature sensing: 10k NTC in pack on U6 TS (J2 pin 3)."
+  (text "USB500 input-current limit ~500mA (450mA guaranteed-min): EN1 pulled up to SYS. Protected 4.2V pack only. Cell-temperature sensing: on-board TH1 (10k B3435 NTC, 0402, cell-bonded) on U6 TS."
     (at 25.4 24.13 0)
     (effects
       (font
         (size 1.05 1.05))
       (justify left))
     (uuid 77dff228-ac74-5584-a4db-0b22ded4b61b))
-  (text "Cell sensing: TS = 10k NTC in pack (J2 pin NTC, beta ~3435). R23 DNP (2-wire pack fallback). TMR / ITERM open; CE / EN2 grounded; EN1 pulled up to SYS = USB500. No source/CC awareness."
+  (text "Cell sensing: TS = TH1, a separate on-board 10k B3435 NTC (0402) wired directly TS -> GND. An open NTC lead floats TS high and inhibits charging. TMR / ITERM open; CE / EN2 grounded; EN1 pulled up to SYS = USB500. No source/CC awareness."
     (at 25.4 170.18 0)
     (effects
       (font
         (size 0.9 0.9))
       (justify left))
     (uuid 5e9f6675-6244-5c20-8cc4-b000e70999ed))
-  (text "J2 3x pads = 1 BAT+ / 2 BAT- / 3 NTC (10k B3435 cell-bonded, 103AT-2 class): charger suspends outside ~0C..50C (TS 300mV/2.1V). Do NOT fit R23 with an NTC pack."
+  (text "J2 = 2-contact pack connector (BAT+ / BAT- only). The cell thermistor is not routed through the pack harness: TH1 is a separate on-board part. Charger suspends outside ~0C..50C (TS 300mV/2.1V)."
     (at 25.4 173.99 0)
     (effects
       (font
@@ -2807,20 +2700,36 @@
     (uuid "ebd4c7f0-4ee0-44db-ac17-84ef44219092"))
   (wire
     (pts
-      (xy 60.96 96.52)
-      (xy 60.96 118.11))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid e7d1ab13-ed06-4cee-b989-48c49270c052))
-  (wire
-    (pts
       (xy 60.96 125.73)
       (xy 60.96 128.27))
     (stroke
       (width 0)
       (type default))
     (uuid f2321dc4-48ab-41ef-b570-751f6f8790f2))
+  (wire
+    (pts
+      (xy 71.12 118.11)
+      (xy 60.96 118.11))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e65450a0-25f9-4b4a-887c-d1daff24f03c"))
+  (wire
+    (pts
+      (xy 139.7 115.57)
+      (xy 139.7 45.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7b8b6c60-4964-4afa-abd4-4efbb3a53e02"))
+  (wire
+    (pts
+      (xy 139.7 45.72)
+      (xy 142.24 45.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3ebcfb48-cb8e-4103-b4af-edc70b855864"))
   (junction
     (at 76.2 76.2)
     (diameter 0)
@@ -2831,6 +2740,11 @@
     (diameter 0)
     (color 0 0 0 0)
     (uuid "ffd07fcb-6ab6-4e70-adff-989263fcc8a7"))
+  (junction
+    (at 139.7 45.72)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "df13d623-fa0e-4201-adbd-ef8269472244"))
   (label "PACK_RAW"
     (at 60.96 78.74 90)
     (effects
@@ -2912,11 +2826,4 @@
       (project "smove-r2-main"
         (path "/8e261347-838a-5848-981d-f693675e8aa0/a926f61e-132d-5af0-876e-12788077b17d"
           (reference "R25")
-          (unit 1)))))
-  (label "SYS"
-    (at 137.16 115.57 0)
-    (effects
-      (font
-        (size .85 .85))
-      (justify left bottom))
-    (uuid 3ed5d085-4346-4e85-bcf4-63e4d4217f82)))
+          (unit 1))))))
