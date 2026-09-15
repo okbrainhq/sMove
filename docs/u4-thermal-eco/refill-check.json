@@ -1,0 +1,8 @@
+{
+  "all_zones_refill_geometrically_identical": true,
+  "symmetric_difference_mm2": {
+    "GND_In1.Cu": 0.0,
+    "U4_THERMAL_F.Cu": 0.0,
+    "U4_THERMAL_B.Cu": 0.0
+  }
+}
