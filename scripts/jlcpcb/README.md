@@ -48,6 +48,30 @@ python3 scripts/jlcpcb/export.py PCB/main --require-part-numbers
 Fabrication layers are always plotted for the whole board, whatever `--side` selects
 for assembly. Exit status: `0` success (warnings allowed), `1` error, `2` argument error.
 
+## Cost check: Basic vs Extended parts
+
+`parts_check.py` audits a generated BOM against the live JLC component library and reports
+which parts are fee-free. JLCPCB's Economic PCBA charges **USD 3 per unique Extended
+part**; Basic parts and *Preferred Extended* parts carry no setup fee, so a Basic or
+Preferred replacement for one passive is worth more than its unit price.
+
+```sh
+python3 scripts/jlcpcb/parts_check.py PCB/main/dist/jlcpcb/bom.csv --json /tmp/audit.json
+```
+
+```text
+OK  basic              C45783     stock=   4808921 $ 0.2432 22uF / 25V         C3
+OK  preferred-extended C25924     stock=    220063 $ 0.0021 8.2k               R21
+FEE extended           C54313     stock=       621 $ 2.1254 BQ24074RGTR        U6
+
+28 BOM rows, fee-free 18, charged 10, estimated extended-part fee $30.00 (3.00/part)
+```
+
+This is a read-only query against the same public endpoint the JLC parts page uses: no
+account, upload, reservation or order. Stock and library membership change daily, so
+re-run it before ordering — the numbers in `docs/revision-r2/silk-and-basic-parts/`
+are a dated snapshot, not a guarantee.
+
 ## How JLCPCB part numbers are stored in KiCad
 
 The exporter reads **native KiCad fields**; no plugin, custom library or third-party

@@ -1092,7 +1092,7 @@
       (effects
         (font
           (size 0.95 0.95))))
-    (property "Value" "22uF / 10V"
+    (property "Value" "22uF / 25V"
       (at 213.868 65.151 0)
       (effects
         (font
@@ -1103,13 +1103,13 @@
         (font
           (size 1 1))
         (hide yes)))
-    (property "MPN" "CL21A226MPQNNNE"
+    (property "MPN" "CL21A226MAQNNNE"
       (at 205.74 63.5 0)
       (effects
         (font
           (size 1 1))
         (hide yes)))
-    (property "LCSC" "C29277"
+    (property "LCSC" "C45783"
       (at 205.74 63.5 0)
       (effects
         (font

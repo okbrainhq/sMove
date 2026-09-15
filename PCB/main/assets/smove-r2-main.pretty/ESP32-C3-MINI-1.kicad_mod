@@ -716,4 +716,28 @@
 			(xyz 0 0 0)
 		)
 	)
+	(fp_line
+		(start -6.6 8.3)
+		(end -6.6 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "fbf71c5b-7ddd-4976-a6b2-5d5654b391a7"))
+	(fp_line
+		(start 6.6 8.3)
+		(end 6.6 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "816d7270-a543-4652-97da-fb5de5c44ae2"))
+	(fp_line
+		(start -6.6 8.3)
+		(end 6.6 8.3)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "2343a96b-d601-4363-ac61-02bcfed9ba16"))
 )

@@ -17,6 +17,39 @@ Verified with KiCad 9.0.8: the board reloads with the same 47 footprints, 461 tr
 
 **Status note:** the headings below describe earlier working states. DRC on the currently saved `smove-r2-main.kicad_pcb` reports 0 violations, 0 unconnected items and 0 schematic-parity issues, and no footprint origin lies outside the board outline, so the "UNROUTED / components staged" wording below is stale and has not been rewritten here.
 
+## Silkscreen outlines, pin-1 markers and free-library parts (2026-09-15)
+
+All 46 assembled parts still carry verified `LCSC`+`MPN` fields, and the export
+(`python3 scripts/jlcpcb/export.py PCB/main`) now also reflects these changes; see the
+[change record](../../docs/revision-r2/silk-and-basic-parts/README.md) and its
+`verification.json`, renders and live BOM audit.
+
+* **U6** (BQ24074RGTR) had *no* silkscreen, so it had no pin-1 indicator: three corner
+  brackets plus the same outside pin-1 arrowhead the IMU (U2) uses now point at the
+  TS/pad-1 corner.
+* **U1** (ESP32-C3-MINI-1) body outline and antenna boundary existed only on `F.Fab`.
+  `F.Fab` is not part of the Gerber set, so JLCPCB's placement preview showed the module
+  as bare 0.4 mm pads — that is why it "did not line up" there. The body outline is now
+  copied to `F.SilkS`, clipped at the 100.0 mm board edge where the module overhangs,
+  and the `F.Fab` corner chamfer is deliberately not copied (it crosses the left anchor pad).
+* **J1** (USB-C receptacle) had no silkscreen at all — the standard shell lines were on
+  `F.Fab` — so the same problem applied. Its shell sides and pad-side end are now on
+  `F.SilkS`, offset past the `S1` shell pads and clipped at the board-edge notch.
+* **D1** (LTST-C19HE1WT) got a closed silkscreen outline outside the land pattern with a
+  gap over the pad-1 corner.
+* The same geometry was added to the project-local library footprints
+  (`assets/smove-r2-main.pretty/*.kicad_mod`), so the DRC library check stays clean.
+* **C3** moved from `C29277` (22 µF 10 V, Extended, $3 setup fee) to **`C45783`
+  (22 µF 25 V X5R 0805, Basic)**. Every other resistor and capacitor is already
+  Basic/Preferred Extended and therefore fee-free, including R21 (`C25924`); the
+  estimated extended-part fee drops from $33.00 to $30.00, and the remaining charge is
+  the ten design-fixed actives.
+
+Verification: DRC **0 violations / 0 unconnected / 0 schematic-parity**, ERC **0**, added
+silk keeps ≥0.17 mm to the nearest pad (board rule 0.10 mm), `F_Silkscreen.gto` gains 36
+draw commands, `bom.csv` differs only in the C3 row and `pick_and_place.csv` is
+byte-identical. C45783's pocket-height check and a fresh DC-bias screen are still open.
+
 ## JLCPCB fabrication and assembly export
 
 `/usr/bin/python3 scripts/jlcpcb/export.py PCB/main` (add `--overwrite` to refresh an existing
