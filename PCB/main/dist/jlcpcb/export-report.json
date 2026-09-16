@@ -1,6 +1,6 @@
 {
   "tool": "scripts/jlcpcb/export.py",
-  "generated_utc": "2026-09-15T15:58:24+00:00",
+  "generated_utc": "2026-09-16T02:11:50+00:00",
   "manufacturing_release": false,
   "note": "Engineering export for review; not a fabrication, assembly or charging release.",
   "kicad_cli": {
@@ -13,7 +13,7 @@
     "schematic": "smove-r2-main.kicad_sch"
   },
   "sources": {
-    "smove-r2-main.kicad_pcb": "206c518f541509d4c1a966e7a96c3b4caad91623a45928acffba9a9fc9c9c11e",
+    "smove-r2-main.kicad_pcb": "acffa574fd1a3c1db133e5cc03929f9a6fed4c29f8d00586f85aa9ec60f1d02e",
     "smove-r2-main.kicad_sch": "9b45d757888122717944f49328b7f9a07b001b095e783e3b7c9529d2cc0f872a",
     "compute.kicad_sch": "6c4d11474e3caae8e059c82ad8e54d78f33bdaaae9e16d3e33d8494198d8966b",
     "imu.kicad_sch": "f182189322a5f61bf7b471bf9ce78a16fd1aeac71b3f99ebdd4bbbb97c22c025",
@@ -98,25 +98,25 @@
       "B.Paste"
     ],
     "files": {
-      "smove-r2-main-B_Cu.gbl": "d7a77289eef64d701e39b20c7a7bd0175589abb31e1c0a955bdb1bf1bc2fa8f8",
-      "smove-r2-main-B_Mask.gbs": "ce2a71edb0080fb6b4af1286d9e53b5bfd41e3a83143f8c554c16b2863ff54be",
-      "smove-r2-main-B_Paste.gbp": "4cf1af6a5d1c19f99c8eb491e55f3d2cb819881ee8c8b3febe10df4dfb6cac1b",
-      "smove-r2-main-B_Silkscreen.gbo": "d353331bbb89153099f0160108c5fbe5dc61aaa786c82a17adc88889282ce56e",
-      "smove-r2-main-Edge_Cuts.gm1": "1bfdb4a8258e28fa817b916617adbe4b30e74abbc2a50520bd6b5fc4821c346a",
-      "smove-r2-main-F_Cu.gtl": "8505f348d1fcbf58c5ea4a574e5dbbf83d264496593facfa30774e1bd5eda148",
-      "smove-r2-main-F_Mask.gts": "9b54c5a3a7bde6b47c011e141d88f8b508e63f07c8d1cbd520e2353ca36c3374",
-      "smove-r2-main-F_Paste.gtp": "3c0e4ea23579139ef54c5de7e7f23f54b068a68ad5467c9b54cecccecaf11556",
-      "smove-r2-main-F_Silkscreen.gto": "0354967429daf6da55bdc7d9a4ce30578d155d30a21849b9fa33b660a5bea694",
-      "smove-r2-main-In1_Cu.g1": "edea6faa06d3c3f88ff0948b52ec6a96d5f0b54fc10590d675a953b444f63bd2",
-      "smove-r2-main-In2_Cu.g2": "7b9d9ca4ec19bac191d694a96e17b3285ace142c6d155164b3bf6d61f9e0145b",
-      "smove-r2-main-NPTH.drl": "d707f40c700f417882d25c5b98fbed5fcee6dec61f7bfaf3164c09117c397426",
-      "smove-r2-main-PTH.drl": "4b517461ed61589ef971372c0d152c34e1708e06a155b60ce18fa5270a702ae6",
-      "smove-r2-main-job.gbrjob": "da9f791268e46cb0632e8e370c153586e9757c6485d0b0b06183bf933babea7d"
+      "smove-r2-main-B_Cu.gbl": "e1fbef0f8857c8bf46908a75cec7baa9b033a236bb711f440fc4fa88eca91067",
+      "smove-r2-main-B_Mask.gbs": "304a90208724c6fec448860a12f07aa637f068b082d7963ee4f1228bd624dce5",
+      "smove-r2-main-B_Paste.gbp": "a8b61eb38e39b0cf7e9a78a1b073806f25fb1576a049bad85a0ae59818603116",
+      "smove-r2-main-B_Silkscreen.gbo": "feacb5532092b52eddcfb1b178324997c5ed81b60157f4b2684b1450a164f144",
+      "smove-r2-main-Edge_Cuts.gm1": "3d9176c056129130aeeb7500ea86d9e43aa3e6f0995eb57dcb19a0de33dfb798",
+      "smove-r2-main-F_Cu.gtl": "1f723b0d3e797eebb5a4b969bb628f5c00383e8a7f34c3fed4fd8ed3487125f6",
+      "smove-r2-main-F_Mask.gts": "87bb73d2f3602387b9a20c27c12b16b797fba5077ffb06f5d993bc36986205c3",
+      "smove-r2-main-F_Paste.gtp": "80444791af1bc9e9fadb0e9217b120f546c772fc40e9fd77c5b7e91e17ec34d4",
+      "smove-r2-main-F_Silkscreen.gto": "05b8b566fc527a28aefb0113f458152fb20aee7f94c90a2bfa31895d2d5af7a8",
+      "smove-r2-main-In1_Cu.g1": "eeb2a617341c62fcb4a1a7966910f1b80b5b8d54fffadc1677e320e0e8c01a88",
+      "smove-r2-main-In2_Cu.g2": "9cf347a296a6d65101ac6ed3568bf81b4002fc01f69a9ce9d4f2073a0ffdeac2",
+      "smove-r2-main-NPTH.drl": "5fc568d17086cb8cf0996fe482a949f6d6264ebe6e7ef0ed6b11f156c93dceee",
+      "smove-r2-main-PTH.drl": "18761d39d7fcec82260068d2aed57ed6588eb4aac3fc64094d5f0d63f7a03b43",
+      "smove-r2-main-job.gbrjob": "3370b98432c48f4900f1d500289e7dfbde058d3f54db6ca84d2278c2435dfb05"
     },
     "note": "KiCad writes its plot creation date into each Gerber, so these hashes change between runs; the plotted geometry does not."
   },
   "artifacts": {
-    "gerber.zip": "942dcc0845e195cd1efb7857761d9fede2715efac6ad5d3427611b5a40f38e9b",
+    "gerber.zip": "5b04bc50376f75673e3e00909f662beff1a4036e2fd84740893fa65c4a764bdb",
     "bom.csv": "239b5e35a592dab5a2e7bd28ca636374040667a8fbd127ea40addd9a0cfd0e03",
     "pick_and_place.csv": "a065afa75b31273f189c27d20f3ccc037094ec369e5ba455a1bb5ca44cba30b0"
   },
