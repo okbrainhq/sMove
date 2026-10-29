@@ -1,0 +1,8 @@
+# ESP-IDF build artefacts + generated config (sdkconfig.defaults is tracked)
+# Applies to both projects in this folder (tx/ and rx/).
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+managed_components/
+dependencies.lock

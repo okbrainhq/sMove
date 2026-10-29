@@ -8,6 +8,7 @@ native USB Serial/JTAG on `/dev/ttyACM0`).
 | [`01-blink/`](01-blink/README.md) | Bring-up / toolchain smoke test: cycles the on-board RGB LED (GPIO3 red, GPIO7 green, GPIO10 blue, active low) |
 | [`02-imu/`](02-imu/README.md) | IMU bring-up: reads the ICM-20948 (U2) over I2C (SDA GPIO5 / SCL GPIO4) and logs accel + gyro + die temperature (+ mag if present) every 100 ms |
 | [`03-imu-viz/`](03-imu-viz/README.md) | IMU visualisation: streams accel + gyro only as compact `S,...` lines (50 Hz) and `viz.sh` serves a 3D web view of the live data on port 3000 |
+| [`05-espnow-imu/`](05-espnow-imu/README.md) | Two firmwares in one folder: `tx/` (sMove, C3) sends the IMU over ESP-NOW at 10 Hz, `rx/` (bench ESP32 devkit) relays each frame to `/dev/ttyUSB0`; `monitor.sh` shows rate / loss / RSSI live |
 
 ## Shared conventions
 

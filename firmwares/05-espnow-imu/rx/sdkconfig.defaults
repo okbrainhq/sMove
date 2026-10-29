@@ -1,0 +1,20 @@
+# sMove 05-espnow-imu / rx defaults — ESP32-D0WD devkit (4 MB flash, CP210x).
+CONFIG_IDF_TARGET="esp32"
+
+# Console on UART0 -> CP210x -> /dev/ttyUSB0, where the S/T lines come out.
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+CONFIG_ESP_CONSOLE_UART_BAUDRATE=115200
+CONFIG_ESPTOOLPY_MONITOR_BAUD=115200
+
+# 4 MB flash, single app partition.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# ESP-NOW needs Wi-Fi; it does not need Bluetooth (frees RAM and the radio).
+CONFIG_BT_ENABLED=n
+
+# Boot lines only — the per-frame S lines are raw printf, no log prefix.
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# 1 ms tick: the 1 Hz HELLO beacon and the link summary cadence.
+CONFIG_FREERTOS_HZ=1000
