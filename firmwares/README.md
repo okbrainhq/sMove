@@ -6,6 +6,7 @@ native USB Serial/JTAG on `/dev/ttyACM0`).
 | Dir | Purpose |
 |-----|---------|
 | [`01-blink/`](01-blink/README.md) | Bring-up / toolchain smoke test: cycles the on-board RGB LED (GPIO3 red, GPIO7 green, GPIO10 blue, active low) |
+| [`02-imu/`](02-imu/README.md) | IMU bring-up: reads the ICM-20948 (U2) over I2C (SDA GPIO5 / SCL GPIO4) and logs accel + gyro + die temperature (+ mag if present) every 100 ms |
 
 ## Shared conventions
 
