@@ -1,0 +1,21 @@
+# sMove 02-imu defaults — ESP32-C3-MINI-1-N4 (4 MB embedded flash).
+CONFIG_IDF_TARGET="esp32c3"
+
+# Native USB (U1 GPIO18/19 -> USB_DM_MCU/USB_DP_MCU). The board has no
+# USB-UART bridge, so keep the console on the USB Serial/JTAG peripheral.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_UART_DEFAULT=n
+
+# 4 MB flash, single app partition.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# Keep the image small; the IMU demo does not need Bluetooth.
+CONFIG_BT_ENABLED=n
+
+# Log at INFO: one line per IMU sample (and boot/rate lines), no per-transfer noise.
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# The 100 ms sampling loop is the only task doing work; a 1 kHz tick keeps
+# vTaskDelayUntil pacing accurate without raising the idle-task overhead.
+CONFIG_FREERTOS_HZ=1000
