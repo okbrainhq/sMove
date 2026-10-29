@@ -1,0 +1,23 @@
+# sMove 03-imu-viz defaults — ESP32-C3-MINI-1-N4 (4 MB embedded flash).
+CONFIG_IDF_TARGET="esp32c3"
+
+# Native USB (U1 GPIO18/19 -> USB_DM_MCU/USB_DP_MCU). The board has no
+# USB-UART bridge, so keep the console on the USB Serial/JTAG peripheral —
+# this is also where the `S,...` sample lines go.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_UART_DEFAULT=n
+
+# 4 MB flash, single app partition.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# Keep the image small; the stream does not need Bluetooth.
+CONFIG_BT_ENABLED=n
+
+# Log at INFO: boot / attach lines only. The per-sample `S,...` lines are raw
+# printf (no log prefix) so the host bridge can parse them with a split.
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# 1 ms tick: the 20 ms sampling loop is the only task doing work, and a fine
+# tick keeps the 50 Hz pacing and the sample timestamps tight.
+CONFIG_FREERTOS_HZ=1000

@@ -7,13 +7,15 @@ native USB Serial/JTAG on `/dev/ttyACM0`).
 |-----|---------|
 | [`01-blink/`](01-blink/README.md) | Bring-up / toolchain smoke test: cycles the on-board RGB LED (GPIO3 red, GPIO7 green, GPIO10 blue, active low) |
 | [`02-imu/`](02-imu/README.md) | IMU bring-up: reads the ICM-20948 (U2) over I2C (SDA GPIO5 / SCL GPIO4) and logs accel + gyro + die temperature (+ mag if present) every 100 ms |
+| [`03-imu-viz/`](03-imu-viz/README.md) | IMU visualisation: streams accel + gyro only as compact `S,...` lines (50 Hz) and `viz.sh` serves a 3D web view of the live data on port 3000 |
 
 ## Shared conventions
 
 - One self-contained ESP-IDF project per directory (`idf.py build flash` works
   from inside the directory), plus `flash.sh` / `monitor.sh` wrappers:
   `./flash.sh` = build → flash → boot the new image, `./monitor.sh` = flash →
-  stream the console.
+  stream the console. `03-imu-viz` also ships `viz.sh` = free port 3000 →
+  flash → serve the 3D web view.
 - `sdkconfig.defaults` is committed; `sdkconfig` and `build/` are not.
 - Board pin map lives in each project's `main/smove_board.h` — derive pins from
   `PCB/main/smove-r2-main.kicad_pcb`, not from guesswork.

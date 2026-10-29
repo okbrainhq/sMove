@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sMove · IMU 3D</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2305080d'/><path d='M9 21l7-12 7 12' stroke='%234fd6ff' stroke-width='2.6' fill='none' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+<canvas id="scene"></canvas>
+
+<div class="vignette"></div>
+
+<header class="bar">
+  <div class="brand">
+    <span class="led" id="led"></span>
+    <b>sMove</b><span class="sep">/</span><span class="muted">IMU 3D</span>
+  </div>
+  <div class="chips">
+    <span class="chip" id="chipRate">— Hz</span>
+    <span class="chip" id="chipPort">waiting</span>
+  </div>
+</header>
+
+<section class="panel readout" id="readout">
+  <div class="group">
+    <div class="ghead"><span class="sw accel"></span>ACCELEROMETER<span class="unit">g</span></div>
+    <div class="row" data-axis="x"><span class="ax">X</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="row" data-axis="y"><span class="ax">Y</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="row" data-axis="z"><span class="ax">Z</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="mag"><span>|a|</span><b id="magA">—</b><span class="unit">g</span></div>
+  </div>
+
+  <div class="group">
+    <div class="ghead"><span class="sw gyro"></span>GYROSCOPE<span class="unit">°/s</span></div>
+    <div class="row" data-gyro="x"><span class="ax">X</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="row" data-gyro="y"><span class="ax">Y</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="row" data-gyro="z"><span class="ax">Z</span><span class="meter"><i></i></span><span class="val">—</span></div>
+    <div class="mag"><span>|g|</span><b id="magG">—</b><span class="unit">°/s</span></div>
+  </div>
+
+  <div class="group tiny">
+    <div class="ghead">ATTITUDE<span class="unit">deg</span></div>
+    <div class="att">
+      <div><span>pitch</span><b id="attPitch">—</b></div>
+      <div><span>roll</span><b id="attRoll">—</b></div>
+      <div><span>yaw</span><b id="attYaw">—</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="panel charts">
+  <div class="ctitle">last 4 s</div>
+  <canvas id="chartAccel" width="520" height="120"></canvas>
+  <canvas id="chartGyro" width="520" height="120"></canvas>
+</section>
+
+<footer class="hint">
+  <span class="lg accel">accel</span>
+  <span class="lg gyro">gyro</span>
+  <span class="hintsep">|</span>
+  drag&nbsp;·&nbsp;orbit&nbsp;&nbsp;&nbsp;wheel&nbsp;·&nbsp;zoom&nbsp;&nbsp;&nbsp;double-click&nbsp;·&nbsp;reset
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

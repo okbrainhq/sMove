@@ -3,6 +3,7 @@
 Reads the on-board 9-axis IMU and prints one line per sample on the USB console,
 **every 100 ms** by default. It is the second firmware for `smove-r2-main` and
 the software half of the IMU bring-up (the first is [`01-blink`](../01-blink/README.md)).
+For a live 3D view of the same sensor, see [`03-imu-viz`](../03-imu-viz/README.md).
 
 - **MCU:** U1 = `ESP32-C3-MINI-1-N4` (RISC-V, 4 MB embedded flash, revision v0.4)
 - **Framework:** ESP-IDF v5.5, target `esp32c3`
