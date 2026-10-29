@@ -1,0 +1,17 @@
+# sMove 01-blink defaults — ESP32-C3-MINI-1-N4 (4 MB embedded flash).
+CONFIG_IDF_TARGET="esp32c3"
+
+# Native USB (U1 GPIO18/19 -> USB_DM_MCU/USB_DP_MCU). The board has no
+# USB-UART bridge, so keep the console on the USB Serial/JTAG peripheral.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_UART_DEFAULT=n
+
+# 4 MB flash, single app partition.
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# Keep the image small; no Bluetooth needed for a blink.
+CONFIG_BT_ENABLED=n
+
+# Boot fast and quiet: log at INFO, no watchdog surprises during bring-up.
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y

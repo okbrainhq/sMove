@@ -1,0 +1,7 @@
+# ESP-IDF build artefacts + generated config (sdkconfig.defaults is tracked)
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+managed_components/
+dependencies.lock
