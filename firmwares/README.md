@@ -10,12 +10,16 @@ native USB Serial/JTAG on `/dev/ttyACM0`).
 ## Shared conventions
 
 - One self-contained ESP-IDF project per directory (`idf.py build flash` works
-  from inside the directory).
+  from inside the directory), plus `flash.sh` / `monitor.sh` wrappers:
+  `./flash.sh` = build → flash → boot the new image, `./monitor.sh` = flash →
+  stream the console.
 - `sdkconfig.defaults` is committed; `sdkconfig` and `build/` are not.
 - Board pin map lives in each project's `main/smove_board.h` — derive pins from
   `PCB/main/smove-r2-main.kicad_pcb`, not from guesswork.
-- **After `idf.py flash`, press the RESET (EN) button.** esptool leaves the C3 in
-  USB download mode (`boot:0x7 DOWNLOAD`), so the app does not start on its own.
+- **Never rely on `idf.py monitor` for this board.** It asserts DTR/RTS, which
+  drives EN/GPIO9 over USB-Serial/JTAG and drops the C3 back into download mode
+  (`boot:0x7 DOWNLOAD`, so the app never runs). The scripts keep both lines
+  deasserted and pulse EN themselves to boot the flashed image.
 
 ## Toolchain
 
